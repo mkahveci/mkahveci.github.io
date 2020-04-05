@@ -1,0 +1,42 @@
+I"�
+<h2 id="about">About</h2>
+
+<p>Friday Theme creates a web site that works as a personal homepage with an about section, a blog supporting tags and a collection of projects.</p>
+
+<p>It is quick to configure and simple to use. It is styled almost entirely with Bootstrap 4 so you can roll your own Bootstrap 4 theme for complete customisation.</p>
+
+<p>I’m assuming you have Jekyll installed already. If not, <a href="https://jekyllrb.com/docs/installation/">look here.</a></p>
+
+<p>The installation instructions below are Linux-flavoured instructions. There’s some notes on the Jekyll site <a href="https://jekyllrb.com/docs/windows/">about running it on Windows</a>.</p>
+
+<h2 id="download-and-install">Download and Install</h2>
+
+<ol>
+  <li>Create a directory for your new site.</li>
+  <li>Download this repo into it from <a href="https://github.com/sfreytag/friday-theme">GitHub</a>. (Sorry, this theme is not available as a theme gem yet).</li>
+  <li>cd to your directory and run <code class="highlighter-rouge">jekyll serve</code>. This theme uses <code class="highlighter-rouge">markdown</code> and <code class="highlighter-rouge">pygments</code> so if they are missing, install them with <code class="highlighter-rouge">gem install pygments</code>, etc</li>
+  <li>Open the resulting site (probably <code class="highlighter-rouge">http://localhost:4000</code>) in your browser to check it works</li>
+</ol>
+
+<p>If it does, you can begin customising it.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Open <code class="highlighter-rouge">_config.yml</code> and change the <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">name</code> fields to your settings. Copy your own avatar image to <code class="highlighter-rouge">/theme/img/avatar.jpg</code> - it helps if this image is square.</p>
+
+<p>Set a <code class="highlighter-rouge">baseurl</code> if needed. This lets you run your site under a folder like <code class="highlighter-rouge">/site</code> if need be.</p>
+
+<h2 id="tweak-the-data-files">Tweak the Data Files</h2>
+
+<p>There’s two data files that help create elements of the web site.</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">_data/nav.yml</code> - use this to build a list of links that will be in the top nav bar. The defaults expose all elements of the theme. If you delete eg the about page, don’t forget to edit this file. The Jekyll build will not warn you, because this file cannot use the <code class="highlighter-rouge">{% link %}</code> tag.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">_data/profile.yml</code> - <code class="highlighter-rouge">this</code> contains a list of links that will be in the left-hand profile bar. Typical usage would be to add your social media and other portfolio links.</p>
+  </li>
+</ol>
+
+:ET

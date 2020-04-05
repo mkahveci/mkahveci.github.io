@@ -1,0 +1,80 @@
+I"�<p>Here’s how to use the Entypo icons in the Friday Theme as SVGs It’s easy with Jekyll’s include tag and Bootstrap 4 classes.</p>
+
+<!--more-->
+
+<p>Bootstrap 3 shipped with the Glyphicons built-in as icon files and accompanying CSS classes. Bootstrap 4 doesn’t have these, but does point you to some SVG icon libraries. With Jekyll’s include and Bootstrap 4’s flex layout, it’s easy to use the SVGs inline without writing lots of icon-related CSS.</p>
+
+<!--more-->
+
+<h2 id="example">Example</h2>
+
+<p class="d-flex align-items-center">
+    <span class="icon grey mr-2">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M10,0.4c-5.303,0-9.601,4.298-9.601,9.6c0,5.303,4.298,9.601,9.601,9.601c5.301,0,9.6-4.298,9.6-9.601
+	C19.6,4.698,15.301,0.4,10,0.4z M9.999,17.6c-4.197,0-7.6-3.402-7.6-7.6c0-4.197,3.402-7.6,7.6-7.6c4.197,0,7.601,3.402,7.601,7.6
+	C17.6,14.197,14.196,17.6,9.999,17.6z M11,9.33V4H9v6.245l-3.546,2.048l1,1.732l4.115-2.377C10.807,11.511,11,11.175,11,10.9v-0.168
+	l4.24-4.166c-0.198-0.271-0.411-0.529-0.647-0.766L11,9.33z" />
+</svg>
+
+    </span>
+    A clock icon in grey left-aligned
+</p>
+
+<p class="d-flex align-items-center">
+    A cycle icon in red right-aligned
+    <span class="icon red ml-2">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Cycle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M5.516,14.224c-2.262-2.432-2.222-6.244,0.128-8.611c0.962-0.969,2.164-1.547,3.414-1.736L8.989,1.8
+	C7.234,2.013,5.537,2.796,4.192,4.151c-3.149,3.17-3.187,8.289-0.123,11.531l-1.741,1.752l5.51,0.301l-0.015-5.834L5.516,14.224z
+	 M12.163,2.265l0.015,5.834l2.307-2.322c2.262,2.434,2.222,6.246-0.128,8.611c-0.961,0.969-2.164,1.547-3.414,1.736l0.069,2.076
+	c1.755-0.213,3.452-0.996,4.798-2.35c3.148-3.172,3.186-8.291,0.122-11.531l1.741-1.754L12.163,2.265z" />
+</svg>
+
+    </span>
+</p>
+
+<h2 id="source">Source</h2>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon grey mr-2"</span><span class="nt">&gt;</span>
+        {% include entypo/clock.svg %}
+    <span class="nt">&lt;/span&gt;</span>
+    A clock icon in grey left-aligned
+<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
+    A cycle icon in red right-aligned
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon red ml-2"</span><span class="nt">&gt;</span>
+        {% include entypo/cycle.svg %}
+    <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h2 id="css">CSS</h2>
+
+<p>The markup above uses <code class="highlighter-rouge">.icon</code> to control the icon’s size and and <code class="highlighter-rouge">.red</code> or <code class="highlighter-rouge">.grey</code> as examples of controlling its colour.</p>
+
+<p>Bootstrap takes care of the layout. <code class="highlighter-rouge">d-flex align-items-center</code> ensures the icon is vertically aligned along the center line with the accompanying content and <code class="highlighter-rouge">ml-2</code> and <code class="highlighter-rouge">mr-2</code> take care of horizontal spacing.</p>
+
+<p>The following CSS is already in <code class="highlighter-rouge">theme/css/site.css</code> and can easily be extended for different colours.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.icon</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">21px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">21px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.icon.grey</span> <span class="nt">svg</span> <span class="nt">path</span> <span class="p">{</span>
+    <span class="py">fill</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.icon.red</span> <span class="nt">svg</span> <span class="nt">path</span> <span class="p">{</span>
+    <span class="py">fill</span><span class="p">:</span> <span class="m">#A00</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+:ET

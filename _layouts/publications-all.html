@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  {% include _head.html %}
+</head>
+
+<body class="post-index">
+
+  {% include _browser-upgrade.html %}
+
+  {% include _navigation.html %}
+
+  <div id="main" role="main">
+    <div id="index">
+
+
+      <h1>{{ page.title }}</h1>
+
+      <p>{{ page.excerpt | markdownify }}</p>
+
+      {% include _publication-menu.html %}
+
+      {% assign count = 0 %}
+
+      {% for publication in site.categories.publications %}
+      {% assign count = count | plus: 1 %}
+      {% endfor %}
+
+      {% capture written_year %}'None'{% endcapture %}
+      {% for publication in site.categories.publications %}
+      {% capture year %}{{ publication.date | date: '%Y' }}{% endcapture %}
+      {% if year != written_year %}
+      <h2>{{ year }}</h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+      {% endif %}
+
+        <p><b>{{ count }}</b>. {{ publication.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a href="{{ publication.url }}" title="{{ publication.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
+          <!-- {% if publication.excerpt %}<p>{{ publication.excerpt | strip_html | truncate: 10000 }}</p>{% endif %} -->
+        </p>
+      
+      {% assign count = count | minus: 1 %}
+      {% endfor %}
+
+  {% include _image.html url="https://unsplash.com/@kageyama"
+      max-width="100%" file="https://source.unsplash.com/4ByFHyNdoD4/1920x2380" alt="Butterfly"
+      caption="Yuichi Kageyama" %}
+
+    </div><!-- /#index -->
+  </div><!-- /#main -->
+
+
+  <div class="footer-wrap">
+    <footer>
+      {% include _footer.html %}
+    </footer>
+  </div><!-- /.footer-wrap -->
+
+  {% include _scripts.html %}
+
+</body>
+
+</html>

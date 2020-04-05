@@ -1,0 +1,17 @@
+<div itemscope itemtype="https://schema.org/Person">
+
+	{% if page.avatar %}<a href="{{ page.insturl }}"><img width="120" style="box-shadow: 0 0 0; border: 0px solid #ddd;" src="{{ page.avatar }}" alt="{{ page.institution }} logo"></a><p></p>{% else if %}
+	<img hspace="0" width="120" style="box-shadow: 0 0 0; border: 0px solid #ddd;" src="/images/logo.svg" alt="Kahveci Web">
+	{% endif %}
+
+	{% if page.institution %}<p><i class="fa fa-institution" ></i> <a href="{{ page.insturl }}">{{ page.institution }}</a></p>{% endif %}
+
+	{% if page.clevel %}<p><i class="fa fa-group"></i> {{ page.clevel }}</p>{% endif %}
+
+	{% if page.semester %}<p><i class="fa fa-book"></i> Taught in {{ page.semester }}</p>{% endif %}
+
+	{% if page.pdf %}<p><a  href="/pdfs/courses/{{ page.pdf }}" class="author-social" target="_blank"><i class="fa fa-fw fa-file-pdf-o"></i> {{ page.code }} Syllabus</a></p>{% endif %}
+
+	{% if page.web %}<p><a  href="{{ page.web }}" class="author-social" target="_blank"><i class="fa  fa-external-link fa-fw"></i>Course webpage</a></p>{% endif %}
+
+</div>

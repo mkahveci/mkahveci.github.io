@@ -1,0 +1,85 @@
+# Site wide configuration
+
+title: kahveci group
+locale: en_US
+logo: logo.svg
+
+# Enter the following platform usernames if you would like for them to appear on your site.
+owner:
+  subtitle: kahveci research group<br>--Chemistry Education <br> Research (CER) Advocate
+  name: Murat Kahveci
+  avatar: "images/logo.svg"
+  google:
+    analytics: UA-129160204-1
+  # internal links
+  url2 : /join
+  url2name : JOIN
+  url1 : /talks
+  url1name : TALKS
+  url3 : /contact
+  url3name : CONTACT
+  url4 :
+  url4name :
+  url5 :
+  url5name :
+  # external links
+  exturl1: https://www.depaul.edu/
+  exturl1name: DePaul U
+  exturl2: 
+  exturl2name: 
+  exturl3:
+  exturl3name:
+  exturl4:
+  exturl4name:
+  exturl5:
+  exturl5name:
+
+# The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
+# you may do so in _sass/variables.scss
+highlight-color: '#CC0000'
+lowlight-color: '#000'
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: # https-mkahveci-github-io
+
+  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
+creative-commons:
+  cc-by: #yes
+  cc-by-nc: #yes
+
+#DO NOT EDIT BEYOND THIS POINT
+# Jekyll configuration
+
+permalink:   /:title
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-feed
+  
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

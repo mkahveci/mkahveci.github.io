@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="home">
+
+{% include _browser-upgrade.html %}
+{% include _navigation.html %}
+
+
+
+<div id="main" role="main">
+
+  <div id="index">
+
+<div class="spacer"></div>
+
+    {{ content }}
+
+<div class="spacer"></div>
+
+
+    <h3>Recent posts</h3>
+
+<div class="container">
+    {% for blog in site.categories.blog limit:4 %}
+    {% cycle 'add rows': '<div class="row">','','','' %}
+      <div class="column">
+        <i class="fa fa-comment-o fa-fw"></i>&nbsp;<a href="{{ blog.url }}" title="{{ blog.title }}">{{ blog.title }}</a>
+        {% if blog.excerpt %}{{ blog.excerpt | markdownify | truncate: 250 }}{% endif %}
+      </div>
+    {% cycle 'close rows': '','','','</div>' %}
+    {% endfor %}
+</div>
+
+<h3>Recent publications</h3>
+
+<div class="container">
+    {% for paper in site.categories.publications limit:4 %}
+
+    {% cycle 'add rows': '<div class="row">','','','' %}
+      <div class="column">
+        <i class="fa fa-file-text-o fa-fw"></i>&nbsp;<a href="{{ paper.url }}" title="{{ paper.title }}">{{ paper.title }}</a>
+        {% if paper.publisher %}<p><em>{{ paper.publisher | markdownify | remove: '<p>' | remove: '</p>' }}</em> | {{paper.year}}</p>{% endif %}
+      </div>
+      {% cycle 'close rows': '','','','</div>' %}
+
+    {% endfor %}
+</div>
+
+<h3>Recent projects</h3>
+
+<div class="container">
+    {% for project in site.categories.projects limit:4 %}
+
+    {% cycle 'add rows': '<div class="row">','','','' %}
+      <div class="column">
+        <i class="fa fa-cog fa-spin"></i>&nbsp;<a href="{{ project.url }}" title="{{ paper.title }}">{{ project.title }}</a>
+        {% if project.ref %}<em>{{ project.ref | markdownify | truncate: 250 }}</em>{% endif %}
+      </div>
+      {% cycle 'close rows': '','','',</div>' %}
+
+    {% endfor %}
+</div>
+
+{% include _image.html url="https://unsplash.com/@souvenirpixels"
+max-width="100%" file="https://source.unsplash.com/Ml10OqzzdyI/1920x1372" alt="Butterfly"
+caption="James Wheeler" %}
+
+  </div><!-- /#index -->
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+</html>

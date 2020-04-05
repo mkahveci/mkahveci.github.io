@@ -1,0 +1,26 @@
+I"¤<p>Hereâ€™s how to put a single image into a post, using a Bootstrap 4 card. This shows how to mingle Markdown with HTML, too.</p>
+
+<!--more-->
+
+<p>The card allows a caption to be aligned with the photo, and the card classes contain a <code class="highlighter-rouge">card-img-top</code> that ensures the image is responsive within the grid.</p>
+
+<div class="card mb-3">
+    <img class="card-img-top" src="https://drscdn.500px.org/photo/127767019/q%3D80_m%3D1500/v2?webp=true&amp;sig=dd1fa4580c459472969cd4992068922f311f12cf263cf08b39615cfc1812286b" />
+    <div class="card-body bg-light">
+        <div class="card-text">
+            The Peak District on a mosty morning.
+        </div>
+    </div>
+</div>
+
+<p>The HTML source for this card is below, or of course you could look at the raw source for this file in the GitHub repo or on your disk after you have downloaded the repo. WHen looking at the source, you can see the Markdown mingled with the HTML.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"https://drscdn.500px.org/photo/127767019/q%3D80_m%3D1500/v2?webp=true&amp;sig=dd1fa4580c459472969cd4992068922f311f12cf263cf08b39615cfc1812286b"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body bg-light"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+            The Peak District on a mosty morning.
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+:ET

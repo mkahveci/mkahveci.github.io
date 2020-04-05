@@ -1,0 +1,3 @@
+I"N<p>Here’s an example for multiple images that uses Bootstrap’s card columns for a Masonry-like layout. It’s not perfect, but with some careful ordering of the images, you can get some good results. This example also shows some Liquid tags used in conjunction with frontmatter variables to automatically create your layout.</p>
+
+:ET

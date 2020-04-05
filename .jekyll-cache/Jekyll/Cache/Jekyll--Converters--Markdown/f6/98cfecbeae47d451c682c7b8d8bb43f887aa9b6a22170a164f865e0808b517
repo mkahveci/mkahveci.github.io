@@ -1,0 +1,216 @@
+I"O=<h2 id="what-is-it">What is it?</h2>
+
+<p>Friday Theme is a theme for Jekyll using Bootstrap 4.4 designed to build a great personal web site with a portfolio, blog and project documentation. It is compatible with GitHub Pages. It supports all the Bootstrap components, it has blogs with tags, it has syntax highlighting and it has SVG icons. It is customisable with SCSS by simply changing the default boostrap variables.</p>
+
+<p>It is maintained by Simon Freytag on <a href="https://github.com/sfreytag/friday-theme">GitHub</a> and it was built originally for <a href="http://www.freytag.org.uk">Simon’s own portfolio</a>.</p>
+
+<p><a href="/about.html">Here’s the full feature list and some quick examples of what it can do.</a></p>
+
+<h2 id="how-to-use-it">How to use it</h2>
+
+<p>This web site is the documentation for the theme and also provides examples of how you can use and modify it. TIt is built using Friday Theme directly from the <a href="https://github.com/sfreytag/friday-theme">GitHub repo</a> and published to GitHub pages.</p>
+
+<p><a href="/list/projects.html">The documentation</a> covers the basics of installing and using it, and is an example of how you could write documentation about your own projects.</p>
+
+<p><a href="/list/posts.html">The blog</a> has a bunch of tips about how to use Friday Theme. These show how the blog works, including the tags. There’s the three most-recent posts below included below.</p>
+
+<hr />
+
+<h3 id="recent-posts">Recent Posts</h3>
+
+<div class="card card-post w-100 border-top-0 border-left-0 border-right-0 rounded-0 mb-4">
+    <div class="card-body px-0 pt-0">
+        <h4 class="card-title mb-4">
+            <a href="http://localhost:4000/2020/03/02/friday-theme-carousel.html">How to use Multiple Images in a Carousel</a>
+        </h4>
+        <h6 class="card-subtitle mb-3 text-secondary">
+            02 Mar 2020
+        </h6>
+        <div class="card-text d-flex align-items-center mb-2">
+            <span class="icon grey mr-2 mb-1">
+                <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z" />
+</g>
+</svg>
+
+            </span>
+            <div>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-friday-theme">
+                        Friday Theme
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-html">
+                        HTML
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-images">
+                        images
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-markdown">
+                        Markdown
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-liquid">
+                        Liquid
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-carousel">
+                        Carousel
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-image-gallery">
+                        Image Gallery
+                    </span>
+                
+            </div>
+        </div>
+        <div class="card-text mb-0">
+            <p>Here’s an example for multiple images that uses Bootstrap’s Carousel javascript component for a photo slideshow. You don’t need to write any JavaScript, just place some Liquid tags and HTML in your Markdown.</p>
+
+
+        </div>
+        <a href="http://localhost:4000/2020/03/02/friday-theme-carousel.html">More...</a>
+    </div>
+</div>
+
+<div class="card card-post w-100 border-top-0 border-left-0 border-right-0 rounded-0 mb-4">
+    <div class="card-body px-0 pt-0">
+        <h4 class="card-title mb-4">
+            <a href="http://localhost:4000/2020/03/01/friday-theme-lightbox.html">How to set up the Masonry Layout with an Image Lightbox</a>
+        </h4>
+        <h6 class="card-subtitle mb-3 text-secondary">
+            01 Mar 2020
+        </h6>
+        <div class="card-text d-flex align-items-center mb-2">
+            <span class="icon grey mr-2 mb-1">
+                <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z" />
+</g>
+</svg>
+
+            </span>
+            <div>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-friday-theme">
+                        Friday Theme
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-html">
+                        HTML
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-images">
+                        images
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-markdown">
+                        Markdown
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-liquid">
+                        Liquid
+                    </span>
+                
+                    <span class="d-inline-block border rounded p-1 mr-1 mb-1 tag tag-image-gallery">
+                        Image Gallery
+                    </span>
+                
+            </div>
+        </div>
+        <div class="card-text mb-0">
+            <p>Here’s an example that extends the Masonry layout to add a Lightbox to show each image.</p>
+
+
+        </div>
+        <a href="http://localhost:4000/2020/03/01/friday-theme-lightbox.html">More...</a>
+    </div>
+</div>
+
+<div class="card card-post w-100 border-top-0 border-left-0 border-right-0 rounded-0 mb-4">
+    <div class="card-body px-0 pt-0">
+        <h4 class="card-title mb-4">
+            <a href="http://localhost:4000/2019/09/08/nsb-s+e.html">Higher Education in Science and Engineering</a>
+        </h4>
+        <h6 class="card-subtitle mb-3 text-secondary">
+            08 Sep 2019
+        </h6>
+        <div class="card-text d-flex align-items-center mb-2">
+            <span class="icon grey mr-2 mb-1">
+                <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z" />
+</g>
+</svg>
+
+            </span>
+            <div>
+                
+            </div>
+        </div>
+        <div class="card-text mb-0">
+            <p>This <a href="https://ncses.nsf.gov/pubs/nsb20197/assets/nsb20197.pdf">report</a> is prepared by the National Science Board.</p>
+
+<p>Key takeaways:</p>
+
+<ul>
+  <li>Containing a diversity of institutions, the U.S. higher education system serves a range of students and strives to meet many societal goals.</li>
+  <li>Science and engineering (S&amp;E) fields continue to grow across degree levels. In numbers and as a percentage of total degrees, S&amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017.</li>
+  <li>Many groups of Americans remain underrepresented among S&amp;E degree recipients.</li>
+  <li>The United States remains the destination for the largest number of internationally mobile students worldwide. However, over the past 2 years, the total number of international students enrolled in U.S. institutions has declined.</li>
+  <li>Among the major S&amp;E degree–producing countries worldwide, China has seen a rapid increase in its S&amp;E degree production over time, compared with a more moderate rise in the United States and the European Union.</li>
+</ul>
+
+<p>The U.S. higher education system consists of diverse academic institutions—including research and doctorate-granting universities, primarily undergraduate institutions, minority-serving institutions, community colleges, and others, including some that span multiple categories—that train students in S&amp;E across degree levels and fields. A small number of institutions awarded three-quarters of doctorates, nearly half of master’s degrees, and 40% of bachelor’s degrees in S&amp;E fields in 2017. These institutions are also where most university research is performed (see the forthcoming Science and Engineering Indicators 2020 report “Academic Research and Development”): integration of academic S&amp;E research and doctoral education is a key feature of the U.S. system.</p>
+
+<p>More students are earning S&amp;E degrees. In numbers and as a percentage of total degrees, S&amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017. In addition, community colleges train students in S&amp;E and related fields including technologies, contributing to the pool of talent that earns higher degrees and to the development of the skilled technical workforce.</p>
+
+<p>While the costs of higher education have increased over time, the percentages of bachelor’s and doctoral degree recipients who graduate with debt have remained roughly the same over the last 10 years. Among graduate students, sources of financial aid differ dramatically between master’s and doctoral students. In 2017, one-third of S&amp;E master’s students received funding, in contrast to around 90% of S&amp;E doctoral students. Most S&amp;E doctoral students rely on multiple funding sources (e.g., institutional, federal) and mechanisms (e.g., research and teaching assistantships and fellowships). The federal role in S&amp;E graduate training remains important, although it has diminished over time. In 2017, the federal government supported 15% of full-time S&amp;E graduate students (down from nearly 21% in 2004), including around one-quarter of doctoral students.</p>
+
+<p>Many groups of Americans remain underrepresented among S&amp;E degree recipients. Women are at or approaching parity with men at most degree levels overall, but within fields, long-standing differences persist, especially in engineering, computer sciences, and mathematics and statistics. Blacks are underrepresented at all degree levels; Hispanics and American Indians and Alaska Natives are underrepresented at all but the associate’s level. Members of different racial and ethnic groups are more likely to earn S&amp;E degrees, especially doctorates, from for-profit institutions, which may have consequences for debt levels and career outcomes.</p>
+
+<p>The U.S. higher education system remains a top destination for foreign S&amp;E students. Although 2018 marked a second year of decline in the total number of foreign students studying in the United States, the decline was small (less than 1%), and more undergraduate and graduate students were studying S&amp;E fields. Four countries—China, India, South Korea, and Saudi Arabia—account for more than half of foreign students in the United States. The number of Chinese S&amp;E graduate students studying in the United States has continued to increase (by 11% over the last 2 years), whereas the number of Indian S&amp;E graduate students sharply declined (by 22% over the last 2 years).</p>
+
+<p>Foreign students account for about one-third of U.S. S&amp;E doctorate recipients, a relatively stable proportion over time. They account for half or more of the doctorate recipients in engineering, computer sciences, and economics. China, India, and South Korea are the top three source countries for foreign recipients of U.S. S&amp;E doctoral degrees. In comparison, students on temporary visas earn a smaller share (around 5%) of S&amp;E bachelor’s degrees; however, the number of these students has more than doubled over the last 10 years.</p>
+
+<p>Other nations’ higher education systems have become increasingly competitive. S&amp;E first university degrees awarded by Chinese institutions doubled to 1.7 million between 2005 and 2015, far outpacing most other countries, including the United States. Institutions in the United States award more S&amp;E doctoral degrees than any other nation. However, in natural sciences and engineering, China surpassed the United States in 2007 as the world’s largest producer of doctoral degrees and has remained so since.</p>
+
+        </div>
+        <a href="http://localhost:4000/2019/09/08/nsb-s+e.html">More...</a>
+    </div>
+</div>
+
+:ET

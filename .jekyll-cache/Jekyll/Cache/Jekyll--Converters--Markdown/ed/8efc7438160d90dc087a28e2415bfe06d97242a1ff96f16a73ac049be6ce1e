@@ -1,0 +1,14 @@
+I"©<h2 id="changing-the-style">Changing the Style</h2>
+
+<p>The main stylesheet is <code class="highlighter-rouge">theme\css\site.scss</code>. This is the one that pulls everything together and creates the final, built output. So if you want to import other SCSS, add it here.</p>
+
+<p>This theme does not use its own SCSS or CSS apart from a few layout tweaks in <code class="highlighter-rouge">theme/_sass/_theme.css</code>.</p>
+
+<p>You can modify the appearance by customising Bootstrap directly by overriding its SCSS variables. There are some notes in the top of <code class="highlighter-rouge">theme\_sass\_variables.scss</code> about how to do this.</p>
+
+<p>This theme also bundles <code class="highlighter-rouge">syntax.css</code> for the pygments highlighting. It is the monokai theme. You can get other syntax.css files from various places. <a href="http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html">Here</a> is quite a good one, with previews of a few languages.</p>
+
+<h2 id="changing-the-themes-html">Changing the Themeâ€™s HTML</h2>
+
+<p>This is Jekyll so you are able to dive into the HTML and make this theme do what you need. The <code class="highlighter-rouge">list</code> directory contains the two files responsible for listing posts and projects. Quite a few chunks of HTML are tidied off into <code class="highlighter-rouge">_layouts/components</code>. Otherwise everything else should be standard Jekyll.</p>
+:ET

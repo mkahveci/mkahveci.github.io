@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="post">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _project.html %}
+  </div>
+  <article class="post">
+  <div class="headline-wrap">
+      <h1>{{ page.title }}</h1>
+  </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      {{ page.ref | markdownify }}
+  <hr />
+
+  {% assign content = page.content | strip_newlines %}
+  {% if content == "" %}
+
+  <p style="text-align: center; margin-top:20px;">
+
+  The content development is still in progress, please check back again.
+  </p>
+  {% else %}
+    {{ content }}
+  {% endif %}
+
+      {% for paper in site.categories.publications %}
+      {% if paper.projectid contains page.projectid %}
+      {% assign paperq = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if paperq == true %}
+
+        <h3>Project publications</h3>
+
+        {% for paper in site.categories.publications %}
+        {% if paper.projectid contains page.projectid %}
+        <p><article>
+          <i class="fa fa-file-text-o fa-fw"></i>&nbsp;<a href="{{ paper.url }}" title="{{ paper.title }}">{{ paper.title }}</a>
+        {% if paper.ref %}<br>{{ paper.ref | strip_html | truncate: 160 }}{% endif %}
+      </article></p>
+        {% endif %}
+        {% endfor %}
+
+      {% endif %}
+
+      <hr />
+
+            {% include _image.html url="https://unsplash.com/@borisworkshop"
+                                          max-width="100%" file="https://source.unsplash.com/aolmXcUxr7Y/1920x1280" alt="Butterfly"
+                                          caption="Boris Smokrovic" %}
+
+  {% if page.share != false %}
+
+    {% include _social-share.html %}
+  {% endif %}
+
+
+
+  </div><!-- /.article-wrap -->
+  {% if site.disqus.shortname %}
+    {% include _disqus_comments.html %}
+  {% endif %} 
+
+
+
+
+  </article>
+
+
+
+
+  </div><!-- /#index -->
+
+  <div class="footer-wrap">
+  <footer>
+  {% include _footer.html %}
+  </footer>
+  </div><!-- /.footer-wrap -->
+
+  {% include _scripts.html %}
+
+
+
+  </body>
+  </html>

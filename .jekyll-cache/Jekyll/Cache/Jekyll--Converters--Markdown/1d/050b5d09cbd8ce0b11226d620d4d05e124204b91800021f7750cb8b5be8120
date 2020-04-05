@@ -1,0 +1,14 @@
+I"s<h2 id="writing-content">Writing Content</h2>
+
+<ol>
+  <li><code class="highlighter-rouge">_pages/index.md</code> - this is the default home page.</li>
+  <li><code class="highlighter-rouge">_includes/components/intro.md</code> - this chunk is reused between the top of the homepage and the top of the about page.</li>
+  <li><code class="highlighter-rouge">_pages/about.md</code> reuses the intro and adds a bit more content about yourself.</li>
+  <li><code class="highlighter-rouge">_posts</code> is the default Jekyll collection of blog posts. Each post has a list of tags. These lists are combined into a tag cloud on the post list page.</li>
+  <li><code class="highlighter-rouge">_projects</code> is a directory of project pages. These are not organised into a collection. Each page can hold a description or documentation about a hobby or open-source project.</li>
+</ol>
+
+<h2 id="html-content">HTML Content</h2>
+
+<p>Jekyll lets you mix HTML into Markdown in the content, so it is possible to add HTML content. You can use this to utilise Bootstrap 4’s components. The <a href="/list/posts.html">blog posts</a> have some examples.</p>
+:ET

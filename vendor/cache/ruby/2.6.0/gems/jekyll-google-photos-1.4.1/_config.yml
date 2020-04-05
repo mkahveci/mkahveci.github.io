@@ -1,0 +1,11 @@
+title: jekyll-google-photos
+email: me@chia.ro
+description: ""
+baseurl: ""
+url: ""
+twitter_username: jekyllrb
+github_username:  jekyll
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

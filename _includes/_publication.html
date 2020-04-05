@@ -1,0 +1,19 @@
+<div itemscope itemtype="https://schema.org/Person">
+
+	{% if page.avatar %}<img width="120" src="{{ page.avatar }}" alt="{{ page.authors }} bio photo">	{% else if %}
+	<img hspace="0" width="99" style="box-shadow: none !important; border: 0px solid #ddd;" src="/images/logo.svg" alt="Kahveci Web">
+	{% endif %}
+
+	<p></p>
+
+	{% if page.isbn13 %}<p><i class="fa fa-book"></i> ISBN-13: {{ page.isbn13 }}</p>{% endif %}
+
+	{% if page.isbn10 %}<p><i class="fa fa-book"></i> ISBN-10: {{ page.isbn10 }}</p>{% endif %}
+
+	{% if page.doi %}<p><a  href="http://dx.doi.org/{{ page.doi }}" class="author-social" target="_blank"><i class="fa fa-external-link fa-fw"></i> {{ page.doi }}</a></p>{% endif %}
+
+	{% if page.pdf %}<p><a  href="{{ page.pdf }}" class="author-social" target="_blank"><i class="fa fa-fw fa-file-pdf-o"></i> Download PDF</a></p>{% endif %}
+
+	{% if page.rgpdf %}<p><a  href="https://www.researchgate.net/publication/{{ page.rgpdf }}" class="author-social" target="_blank"><i class="ai ai-fw ai-researchgate"></i> Download PDF</a></p>{% endif %}
+	
+</div>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-04T23:04:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">Research</title><link href="http://localhost:4000/mxn" rel="alternate" type="text/html" title="Research" /><published>2020-04-03T00:00:00-05:00</published><updated>2020-04-03T00:00:00-05:00</updated><id>http://localhost:4000/mxn</id><content type="html" xml:base="http://localhost:4000/mxn">&lt;p&gt;Offered a graduate research course in chemistry education research (CER) domain.&lt;/p&gt;</content><author><name></name></author><summary type="html">Offered a graduate research course in chemistry education research (CER) domain.</summary></entry><entry><title type="html">General Chemistry II</title><link href="http://localhost:4000/apl" rel="alternate" type="text/html" title="General Chemistry II" /><published>2020-04-02T00:00:00-05:00</published><updated>2020-04-02T00:00:00-05:00</updated><id>http://localhost:4000/apl</id><content type="html" xml:base="http://localhost:4000/apl">&lt;p&gt;Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.&lt;/p&gt;
+
+&lt;h3 id=&quot;textbook-and-materials&quot;&gt;Textbook and Materials&lt;/h3&gt;
+
+&lt;h4 id=&quot;required&quot;&gt;Required&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tro, N. J. Chemistry: Structure and Properties, 2nd Ed., Pearson Education, Inc., UpperSaddle River, NJ, 2017. ISBN: 9780134293936. This text is available from the bookstore in hardbound, loose-leaf, and e-text formats.&lt;/li&gt;
+  &lt;li&gt;Non-graphing calculator for use on exams. Suggested models include:
+    &lt;ul&gt;
+      &lt;li&gt;TI-30X family of calculators (available at the bookstore)&lt;/li&gt;
+      &lt;li&gt;CASIO fx-260solar or CASIO fx-250HC&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Modified Mastering Chemistry on-line homework system. This can be ordered through the bookstore with the loose-leaf textbook (ISBN 9780134777559), or e-text (ISBN 9780134565613).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;recommended&quot;&gt;Recommended&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tro, N. J.; Shaginaw, K. T.; Kramer, M. B., Solutions Manual for Chemistry:Structure and Properties, Pearson Education, Inc., Upper Saddle River, NJ, 2017. ISBN 9780134460673&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;tentative-schedule&quot;&gt;Tentative Schedule&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Session&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Topics&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Reading&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;First law of thermodynamics&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.2-4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Enthalpy and calorimetry&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.5-7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Using Hess’s law and bond dissociation energies to find heats of reaction&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.8-9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Heats of formation; Born-Haber cycles and lattice energy&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.10-11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Kinetic molecular theory; pressure; simple gas laws; ideal gas law&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.2-5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Density; molar volume and molar mass; gas stoichiometry&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.5-6, 10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Partial pressures; temperature and velocity distributions, effusion and diffusion, real gasses&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.7-9, 11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Exam 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Intermolecular forces; surface tension and viscosity; capillary action; vapor pressure&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.2-4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Vapor pressure&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Phase changes; heating curves; phase diagrams&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.6-9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;X-ray crystallography; unit cells; crystalline solids; ionic and covalent solids&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 12.2-6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Glasses and ceramics; band theory; polymers&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 12.7-9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Energetics of solutions; solubility; concentration&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 13.2-5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Colligative properties&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 13.6-7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;17&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Exam 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;19&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reaction rates&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.2-3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;20&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Rate laws; reaction order&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;21&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Integrated rate laws; half life; Arrhenius equation&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.5-6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;22&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reaction mechanisms; catalysis&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.7-8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;23&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Chemical equilibrium; introducing the equilibrium constant&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.2-3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;24&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Forms of the equilibrium constant; calculating equilibrium constants from data&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.4-6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;25&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;The reaction quotient, calculating equilibrium concentrations of reactants and products.&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.6-8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;26&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Le Châtelier’s principle&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;27&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;28&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Exam 3&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;29&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Review for the Final Exam; OTEs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;30&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Final Exam&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.</summary></entry><entry><title type="html">General Chemistry III Lab</title><link href="http://localhost:4000/tvo" rel="alternate" type="text/html" title="General Chemistry III Lab" /><published>2020-04-01T00:00:00-05:00</published><updated>2020-04-01T00:00:00-05:00</updated><id>http://localhost:4000/tvo</id><content type="html" xml:base="http://localhost:4000/tvo">&lt;p&gt;CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.&lt;/p&gt;
+
+&lt;p&gt;The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, if you have two or more laboratory absences for invalid reasons, you will fail this course.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-scientific-inquiry-learning-domain-learning-outcomes-and-writing-expectations&quot;&gt;The scientific inquiry learning domain learning outcomes and writing expectations&lt;/h3&gt;
+
+&lt;p&gt;The learning outcomes for the SI:Lab learning domain are listed below. They may also be found online on the Liberal Studies Program web site.&lt;/p&gt;
+
+&lt;p&gt;In the context of natural science content, and building on the understanding of the scientific worldview and the nature and process of science they have developed in the Science as a Way of Knowing (SWK) course:
+Students will understand how science serves as a mechanism for inquiry into the natural world through hands-on, experience-based investigation.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Students will be able to pose meaningful scientific questions and generate testable scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to plan, design and conduct scientific investigations in a collaborative environment using appropriate tools and techniques to gather relevant data in order to test and revise scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to develop and use scientific models (conceptual, physical, and mathematical) to make predictions and develop explanations of natural phenomena.&lt;/li&gt;
+  &lt;li&gt;Students will be able to address variability in the data and recognize and analyze alternative explanations and predictions.&lt;/li&gt;
+  &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">General Chemistry II Lab</title><link href="http://localhost:4000/osy" rel="alternate" type="text/html" title="General Chemistry II Lab" /><published>2020-04-01T00:00:00-05:00</published><updated>2020-04-01T00:00:00-05:00</updated><id>http://localhost:4000/osy</id><content type="html" xml:base="http://localhost:4000/osy">&lt;p&gt;Chemistry 133 is a co-requisite for Chemistry 132, General Chemistry II (or for chemistry 122). A C- or higher in CHE130 (or CHE120) and CHE131 are perquisites for this course. This course in conjunction with Chemistry 132/122 can be used by non-science majors to fulfill a Scientific Inquiry: Lab (SI:Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, lab- oratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.&lt;/p&gt;
+
+&lt;p&gt;The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, you will fail this course if you have two or more unexcused laboratory absences.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-scientific-inquiry-learning-domain-learning-outcomes-and-writing-expectations&quot;&gt;The scientific inquiry learning domain learning outcomes and writing expectations&lt;/h3&gt;
+
+&lt;p&gt;The learning outcomes for the SI:Lab learning domain are listed below. They may also be found online on the Liberal Studies Program web site.&lt;/p&gt;
+
+&lt;p&gt;In the context of natural science content, and building on the understanding of the scientific worldview and the nature and process of science they have developed in the Science as a Way of Knowing (SWK) course:
+Students will understand how science serves as a mechanism for inquiry into the natural world through hands-on, experience-based investigation.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Students will be able to pose meaningful scientific questions and generate testable scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to plan, design and conduct scientific investigations in a collaborative environment using appropriate tools and techniques to gather relevant data in order to test and revise scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to develop and use scientific models (conceptual, physical, and mathematical) to make predictions and develop explanations of natural phenomena.&lt;/li&gt;
+  &lt;li&gt;Students will be able to address variability in the data and recognize and analyze alternative explanations and predictions.&lt;/li&gt;
+  &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">Chemistry 133 is a co-requisite for Chemistry 132, General Chemistry II (or for chemistry 122). A C- or higher in CHE130 (or CHE120) and CHE131 are perquisites for this course. This course in conjunction with Chemistry 132/122 can be used by non-science majors to fulfill a Scientific Inquiry: Lab (SI:Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, lab- oratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">Affective States and Online Teaching in Chemistry Education</title><link href="http://localhost:4000/pr/5442" rel="alternate" type="text/html" title="Affective States and Online Teaching in Chemistry Education" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/pr/tgd</id><content type="html" xml:base="http://localhost:4000/pr/5442">&lt;p&gt;This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.&lt;/p&gt;</content><author><name></name></author><summary type="html">This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.</summary></entry><entry><title type="html">A message from my student: Madison</title><link href="http://localhost:4000/tta" rel="alternate" type="text/html" title="A message from my student: Madison" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/tta</id><content type="html" xml:base="http://localhost:4000/tta">&lt;p&gt;I have just received a message from Madison and with her permission I am posting it below. Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
+
+  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
+
+  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
+
+  &lt;p&gt;Sincerely,&lt;/p&gt;
+
+  &lt;p&gt;Madison&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">I have just received a message from Madison and with her permission I am posting it below. Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020.</summary></entry><entry><title type="html">Yousif</title><link href="http://localhost:4000/yousif" rel="alternate" type="text/html" title="Yousif" /><published>2020-03-23T00:00:00-05:00</published><updated>2020-03-23T00:00:00-05:00</updated><id>http://localhost:4000/yousif</id><content type="html" xml:base="http://localhost:4000/yousif">&lt;p&gt;Yousif Muten earned his B.S. in chemistry at &lt;a href=&quot;https://www.wcu.edu/learn/programs/chemistry/index.aspx&quot;&gt;Western Carolina University&lt;/a&gt;. He is currently a graduate students at the Department of &lt;a href=&quot;https://csh.depaul.edu/academics/chemistry/pages/default.aspx&quot;&gt;Chemistry and Biochemistry&lt;/a&gt; at &lt;a href=&quot;https://www.depaul.edu/Pages/default.aspx&quot;&gt;DePaul University&lt;/a&gt; and planning to pursue his doctorate education in the field of chemistry education.&lt;/p&gt;</content><author><name></name></author><summary type="html">Yousif Muten earned his B.S. in chemistry at Western Carolina University. He is currently a graduate students at the Department of Chemistry and Biochemistry at DePaul University and planning to pursue his doctorate education in the field of chemistry education.</summary></entry><entry><title type="html">I will survive…</title><link href="http://localhost:4000/qdr" rel="alternate" type="text/html" title="I will survive..." /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>http://localhost:4000/qdr</id><content type="html" xml:base="http://localhost:4000/qdr">&lt;p&gt;“Kept trying hard to mend the pieces of my syllabi &lt;br /&gt;
+And I spent so many nights just feeling sorry for myself &lt;br /&gt;
+I used to cry &lt;br /&gt;
+But now I hold my head up high &amp;amp; you’ll see me &lt;br /&gt;
+Teaching on zoom…”&lt;/p&gt;
+
+&lt;p&gt;“I will survive as long as I know how to Zoom”&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;iframe src=&quot;https://www.youtube.com/embed/CCe5PaeAeew&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Murat Kahveci</name></author><category term="blog" /><summary type="html">“Kept trying hard to mend the pieces of my syllabi And I spent so many nights just feeling sorry for myself I used to cry But now I hold my head up high &amp;amp; you’ll see me Teaching on zoom…”</summary></entry><entry><title type="html">General Chemistry I Lab</title><link href="http://localhost:4000/tfg" rel="alternate" type="text/html" title="General Chemistry I Lab" /><published>2019-12-31T00:00:00-06:00</published><updated>2019-12-31T00:00:00-06:00</updated><id>http://localhost:4000/tfg</id><content type="html" xml:base="http://localhost:4000/tfg">&lt;p&gt;CHE 131 is a co-requisite for CHE 120, General Chemistry IP, or CHE 130, General Chemistry I. This course, in conjunction with CHE 120/130, can be used by non-science majors to fulfill a Scientific Inquiry-Lab (SI-Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.
+The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, if you have two or more laboratory absences for invalid reasons, you will fail this course.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-scientific-inquiry-learning-domain-learning-outcomes-and-writing-expectations&quot;&gt;The scientific inquiry learning domain learning outcomes and writing expectations&lt;/h3&gt;
+
+&lt;p&gt;The learning outcomes for the SI:Lab learning domain are listed below. They may also be found online on the Liberal Studies Program web site.&lt;/p&gt;
+
+&lt;p&gt;In the context of natural science content, and building on the understanding of the scientific worldview and the nature and process of science they have developed in the Science as a Way of Knowing (SWK) course:
+Students will understand how science serves as a mechanism for inquiry into the natural world through hands-on, experience-based investigation.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Students will be able to pose meaningful scientific questions and generate testable scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to plan, design and conduct scientific investigations in a collaborative environment using appropriate tools and techniques to gather relevant data in order to test and revise scientific hypotheses.&lt;/li&gt;
+  &lt;li&gt;Students will be able to develop and use scientific models (conceptual, physical, and mathematical) to make predictions and develop explanations of natural phenomena.&lt;/li&gt;
+  &lt;li&gt;Students will be able to address variability in the data and recognize and analyze alternative explanations and predictions.&lt;/li&gt;
+  &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">CHE 131 is a co-requisite for CHE 120, General Chemistry IP, or CHE 130, General Chemistry I. This course, in conjunction with CHE 120/130, can be used by non-science majors to fulfill a Scientific Inquiry-Lab (SI-Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills. The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, if you have two or more laboratory absences for invalid reasons, you will fail this course.</summary></entry><entry><title type="html">Higher Education in Science and Engineering</title><link href="http://localhost:4000/sbl" rel="alternate" type="text/html" title="Higher Education in Science and Engineering" /><published>2019-09-08T00:00:00-05:00</published><updated>2019-09-08T00:00:00-05:00</updated><id>http://localhost:4000/sbl</id><content type="html" xml:base="http://localhost:4000/sbl">&lt;p&gt;This &lt;a href=&quot;https://ncses.nsf.gov/pubs/nsb20197/assets/nsb20197.pdf&quot;&gt;report&lt;/a&gt; is prepared by the National Science Board.&lt;/p&gt;
+
+&lt;p&gt;Key takeaways:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Containing a diversity of institutions, the U.S. higher education system serves a range of students and strives to meet many societal goals.&lt;/li&gt;
+  &lt;li&gt;Science and engineering (S&amp;amp;E) fields continue to grow across degree levels. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017.&lt;/li&gt;
+  &lt;li&gt;Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients.&lt;/li&gt;
+  &lt;li&gt;The United States remains the destination for the largest number of internationally mobile students worldwide. However, over the past 2 years, the total number of international students enrolled in U.S. institutions has declined.&lt;/li&gt;
+  &lt;li&gt;Among the major S&amp;amp;E degree–producing countries worldwide, China has seen a rapid increase in its S&amp;amp;E degree production over time, compared with a more moderate rise in the United States and the European Union.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The U.S. higher education system consists of diverse academic institutions—including research and doctorate-granting universities, primarily undergraduate institutions, minority-serving institutions, community colleges, and others, including some that span multiple categories—that train students in S&amp;amp;E across degree levels and fields. A small number of institutions awarded three-quarters of doctorates, nearly half of master’s degrees, and 40% of bachelor’s degrees in S&amp;amp;E fields in 2017. These institutions are also where most university research is performed (see the forthcoming Science and Engineering Indicators 2020 report “Academic Research and Development”): integration of academic S&amp;amp;E research and doctoral education is a key feature of the U.S. system.&lt;/p&gt;
+
+&lt;p&gt;More students are earning S&amp;amp;E degrees. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017. In addition, community colleges train students in S&amp;amp;E and related fields including technologies, contributing to the pool of talent that earns higher degrees and to the development of the skilled technical workforce.&lt;/p&gt;
+
+&lt;p&gt;While the costs of higher education have increased over time, the percentages of bachelor’s and doctoral degree recipients who graduate with debt have remained roughly the same over the last 10 years. Among graduate students, sources of financial aid differ dramatically between master’s and doctoral students. In 2017, one-third of S&amp;amp;E master’s students received funding, in contrast to around 90% of S&amp;amp;E doctoral students. Most S&amp;amp;E doctoral students rely on multiple funding sources (e.g., institutional, federal) and mechanisms (e.g., research and teaching assistantships and fellowships). The federal role in S&amp;amp;E graduate training remains important, although it has diminished over time. In 2017, the federal government supported 15% of full-time S&amp;amp;E graduate students (down from nearly 21% in 2004), including around one-quarter of doctoral students.&lt;/p&gt;
+
+&lt;p&gt;Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients. Women are at or approaching parity with men at most degree levels overall, but within fields, long-standing differences persist, especially in engineering, computer sciences, and mathematics and statistics. Blacks are underrepresented at all degree levels; Hispanics and American Indians and Alaska Natives are underrepresented at all but the associate’s level. Members of different racial and ethnic groups are more likely to earn S&amp;amp;E degrees, especially doctorates, from for-profit institutions, which may have consequences for debt levels and career outcomes.&lt;/p&gt;
+
+&lt;p&gt;The U.S. higher education system remains a top destination for foreign S&amp;amp;E students. Although 2018 marked a second year of decline in the total number of foreign students studying in the United States, the decline was small (less than 1%), and more undergraduate and graduate students were studying S&amp;amp;E fields. Four countries—China, India, South Korea, and Saudi Arabia—account for more than half of foreign students in the United States. The number of Chinese S&amp;amp;E graduate students studying in the United States has continued to increase (by 11% over the last 2 years), whereas the number of Indian S&amp;amp;E graduate students sharply declined (by 22% over the last 2 years).&lt;/p&gt;
+
+&lt;p&gt;Foreign students account for about one-third of U.S. S&amp;amp;E doctorate recipients, a relatively stable proportion over time. They account for half or more of the doctorate recipients in engineering, computer sciences, and economics. China, India, and South Korea are the top three source countries for foreign recipients of U.S. S&amp;amp;E doctoral degrees. In comparison, students on temporary visas earn a smaller share (around 5%) of S&amp;amp;E bachelor’s degrees; however, the number of these students has more than doubled over the last 10 years.&lt;/p&gt;
+
+&lt;p&gt;Other nations’ higher education systems have become increasingly competitive. S&amp;amp;E first university degrees awarded by Chinese institutions doubled to 1.7 million between 2005 and 2015, far outpacing most other countries, including the United States. Institutions in the United States award more S&amp;amp;E doctoral degrees than any other nation. However, in natural sciences and engineering, China surpassed the United States in 2007 as the world’s largest producer of doctoral degrees and has remained so since.&lt;/p&gt;</content><author><name>Murat Kahveci</name></author><category term="blog" /><summary type="html">This report is prepared by the National Science Board.</summary></entry></feed>

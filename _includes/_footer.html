@@ -1,0 +1,45 @@
+{% if site.owner.google.ad-client and site.owner.google.ad-slot %}
+<div class="google-ads">
+  <!-- 320 x 50 ad -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:320px;height:50px"
+       data-ad-client="{{ site.owner.google.ad-client }}"
+       data-ad-slot="{{ site.owner.google.ad-slot }}"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div><!-- /.google-ads -->
+{% endif %}
+
+<h4>MISC
+&nbsp;<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
+{% for page in site.categories.misc %}
+&nbsp;<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">
+  {{ page.title | capitalize }}</a>
+{% endfor %}
+&nbsp;<i class="fa fa-angle-right"></i> <a class="off" href="https://www.depaul.edu/">
+  DePaul U</a>
+</h4>
+
+<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} <a href="/feed.xml" title="RSS feed"><i class="fa fa-rss"></i></a></span>
+
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+    backgroundColor: '#fff',
+    innerHTML: '<i class="fa fa-chevron-up fa-1x" aria-hidden="true"></i>',
+    textColor: '#333'
+  })</script>
+<style>
+  #back-to-top {
+    border: 0px solid #ccc;
+    border-radius: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+  }
+</style>
