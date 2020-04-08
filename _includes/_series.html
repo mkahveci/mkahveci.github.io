@@ -33,7 +33,7 @@
     <small>
       <li>Part {{ count }} -
       {% if page.url == post.url %}
-      This Article
+      {{page.title}}
       {% else %}
       <a href="{{post.url}}">{{post.title}}</a>
       {% endif %}
