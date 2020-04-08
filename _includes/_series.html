@@ -1,0 +1,46 @@
+{% assign count = '0' %}
+{% assign mcount = 0 %}
+{% assign idx = '0' %}
+{% for post in site.posts reversed %}
+
+{% if post.series == page.series %}
+
+{% if page.series %}
+{% assign mcount = mcount | plus: 1 %}
+{% endif %}
+
+{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+{% if post.url == page.url %}
+{% capture idx %}{{count}}{% endcapture %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+
+
+{% if mcount > 1 %}
+
+<div class="seriesNote">
+  <p>This article is <strong>Part {{ idx }}</strong> in a <strong>{{ count }}-Part</strong> Series of <strong>{{ page.series }}</strong>.</p>
+  <ul style="list-style-type: circle;border-left: 5px solid #D70A53;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 0px 5px;">
+    {% assign count = '0' %}
+    {% for post in site.posts reversed %}
+    {% if post.series == page.series %}
+    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+    <small>
+      <li>Part {{ count }} -
+      {% if page.url == post.url %}
+      This Article
+      {% else %}
+      <a href="{{post.url}}">{{post.title}}</a>
+      {% endif %}
+    </li>
+   </small>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
