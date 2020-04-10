@@ -45,10 +45,7 @@
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
       </footer>
 
-      {% include _image.html url="https://unsplash.com/@borisworkshop"
-             max-width="100%" file="https://source.unsplash.com/hwl01nLxtA8/1920x1280" alt="Butterfly"
-             caption="Boris Smokrovic" %}
-
+  {% include _image.html %}
 
     </div><!-- /.article-wrap -->
 

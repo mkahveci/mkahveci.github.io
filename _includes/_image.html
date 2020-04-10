@@ -1,5 +1,10 @@
+
+{% if page.main-image-file-url %}
+
 <figure>
-   <img src="{{ include.file }}" style="max-width: {{ include.max-width }};"
-      alt="{{ include.alt }}"/>
-   <figcaption>Credit: <a href="{{ include.url }}">{{ include.caption }}</a> </figcaption>
+   <img src="{{ page.main-image-file-url }}" style="max-width: {{ page.main-image-max-width }};"
+      alt="{{ page.main-image-alt }}"/>
+   <figcaption>Image Credit: <a href="{{ page.main-image-credit-url }}">{{ page.main-image-caption }}</a> </figcaption>
 </figure>
+
+{% endif %}

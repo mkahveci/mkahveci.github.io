@@ -45,7 +45,6 @@
   </p>
   {% else %}
   <p>By {{ page.author }}</p>
-  
   {{ content }}
   {% endif %}
 
@@ -63,11 +62,8 @@
   {% endif %}
   {% endfor %}
 
-  {% include _image.html url="https://unsplash.com/@erinw"
-             max-width="100%" file="https://source.unsplash.com/VpA6dOkhUKg/1920x1280" alt="Butterfly"
-             caption="Erin Wilson" %}
-
-
+  {% include _image.html %}
+  
               </article>
               </div><!-- /#main -->
 <div class="footer-wrap">
