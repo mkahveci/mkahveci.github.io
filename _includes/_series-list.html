@@ -22,7 +22,7 @@
 
 {% if post.series == group.name %}
 
-<li>➢ <a href="{{ post.url }}">{{group.name}}</a></li>
+<li>▹ <a href="{{ post.url }}">{{group.name}}</a></li>
 
 {% break %}
 {% endif %} 
@@ -30,6 +30,7 @@
 {% endfor %}
 {% endfor %}
 </ul>
+
 </small>
 <!-- 
 
