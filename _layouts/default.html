@@ -43,9 +43,21 @@
 
     The content development is still in progress, please check back again.
   </p>
-  {% else %}
-  <p>By {{ page.author }}</p>
+
+  {% endif %}
+
+
+  {% if page.author == "Murat Kahveci"  %}
+<p>By <a href="/murat">{{ page.author }}</a></p>
+
   {{ content }}
+
+  {% else %}
+
+  <p>By {{ page.author }} </p>
+
+    {{ content }}
+
   {% endif %}
 
   <hr />
