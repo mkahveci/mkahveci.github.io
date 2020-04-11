@@ -33,64 +33,9 @@
 
       {{ content }}
 
-      {% assign count = 0 %}
-      {% assign pubcount = 0 %}
+      {% include _counter.html %}
 
-      {% assign lastname = page.name | split: ' ' | last %}
-      {% assign firstinitial = page.name | split: ' ' | first | slice: 0 %}
-      {% assign searchstring = lastname | append: ' ' | append: firstinitial %}
-
-      {% assign books = site.categories.publications | where: "book", "true" %}
-
-      {% for book in books %}
-      {% if book.authors contains searchstring %}
-      {% assign booksq = true %}
-      {% assign count = count | plus: 1 %}
-      {% assign pubcount = pubcount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% for course in site.categories.courses %}
-      {% if course.instructor == page.name %}
-      {% assign coursesq = true %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign journals = site.categories.publications | where: "journal", "true" %}
-
-      {% for jpaper in journals %}
-      {% if jpaper.authors contains searchstring %}
-      {% assign jpapersq = true %}
-      {% assign count = count | plus: 1 %}
-      {% assign pubcount = pubcount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign conferences = site.categories.publications | where: "conference", "true" %}
-
-      {% for cpaper in conferences %}
-      {% if cpaper.authors contains searchstring %}
-      {% assign cpapersq = true %}
-      {% assign count = count | plus: 1 %}
-      {% assign pubcount = pubcount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% for project in site.categories.projects %}
-      {% if project.contributors contains searchstring %}
-      {% assign projectsq = true %}
-      {% endif %}
-      {% endfor %}
-
-      {% for post in site.categories.blog %}
-      {% if post.author %}
-      {% if page.name == post.author %}
-      {% assign postsq = true %}
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-
-      {% if projectsq == true %}
+      {% if projectcount > 0 %}
 
       {% if page.name == 'Murat Kahveci' %}
       <h2 id="projects">Projects</h2>
@@ -102,14 +47,16 @@
 
       {% for project in site.categories.projects %}
       {% if project.contributors contains searchstring %}
-      <p><i class="fa fa-pie-chart"></i>&nbsp;<a href="{{ project.url }}" class="off">{{ project.title }}</a> |
+      <p><b>{{projectcount}}</b>.&nbsp;&nbsp;<a href="{{ project.url }}" class="off">{{ project.title }}</a> |
         {{ project.year }}
-        {% if project.excerpt %}<br>{{ project.excerpt | strip_html | truncate: 160 }}{% endif %}
+        {% if project.excerpt %}<br>&nbsp;&nbsp;&nbsp;<small>{{ project.excerpt | strip_html | truncate: 160 }}</small>{% endif %}
         {% endif %}
+        </p>
+        {% assign projectcount = projectcount | minus: 1 %}
         {% endfor %}
         {% endif %}
 
-    {% if pubcount > 0 %}
+    {% if count > 0 %}
     {% if page.name == 'Murat Kahveci' %}
     <h2 id="publications">Publications</h2>
     {% else if %}
@@ -128,9 +75,10 @@
         {% for book in books %}
         {% if book.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>. {{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
             href="{{ book.url }}" title="{{ book.title }}"><i class="fa fa-book"></i></a>
         </p>
+          {% assign count = count | minus: 1 %}
 
         {% endif %}
         {% endfor %}
@@ -143,9 +91,11 @@
         {% for jpaper in journals %}
         {% if jpaper.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>. {{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
             href="{{ jpaper.url }}" title="{{ jpaper.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
         </p>
+          
+          {% assign count = count | minus: 1 %}
 
         {% endif %}
         {% endfor %}
@@ -159,41 +109,45 @@
         {% for cpaper in conferences %}
         {% if cpaper.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>. {{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
             href="{{ cpaper.url }}" title="{{ cpaper.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
         </p>
+
+          {% assign count = count | minus: 1 %}
 
         {% endif %}
         {% endfor %}
         {% endif %}
 
 
-        {% if postsq == true %}
+        {% if postcount > 0 %}
 
         <h2 id="posts">Posts</h2>
 
         {% for post in site.categories.blog %}
         {% if post.author %}
         {% if page.name == post.author %}
-        <p><i class="fa fa-comment-o fa-fw"></i>&nbsp;<a href="{{ post.url }}" class="off">{{ post.title }}</a> |
+        <p><b>{{ postcount }}</b>.&nbsp;&nbsp;<a href="{{ post.url }}" class="off">{{ post.title }}</a> |
           {{ post.date | date: "%B %d, %Y" }}
           {% if post.excerpt %}<br>{{ post.excerpt | strip_html | truncate: 160 }}{% endif %}
           {% endif %}
           {% endif %}
+          {% assign postcount = postcount | minus: 1 %}
           {% endfor %}
           {% endif %}
 
-          {% if coursesq == true %}
+          {% if coursecount > 0 %}
 
           <h2 id="courses">Courses</h2>
 
           {% for course in site.categories.courses %}
           {% if course.instructor %}
           {% if page.name == course.instructor %}
-          <p><i class="fa fa-spinner"></i>&nbsp;{{ course.code }} | <a href="{{ course.url }}" class="off">{{ course.title }}</a> |
+          <p><b>{{ coursecount }}</b>.&nbsp;&nbsp;{{ course.code }} | <a href="{{ course.url }}" class="off">{{ course.title }}</a> |
             {{ course.institution }} | {{ course.semester }}
             {% endif %}
             {% endif %}
+            {% assign coursecount = coursecount | minus: 1 %}
             {% endfor %}
             {% endif %}
 

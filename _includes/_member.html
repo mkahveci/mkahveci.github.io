@@ -35,10 +35,12 @@
 
 {% if page.name == 'Murat Kahveci' %}
 
-<a href="#projects" class="author-social" target="_self"><i class="fa fa-pie-chart"></i> Projects</a>
-<a href="#publications" class="author-social" target="_selft"><i class="fa fa-book"></i> Publications</a>
-<a href="#posts" class="author-social" target="_self"><i class="fa fa-comment-o"></i> Posts</a>
-<a href="#courses" class="author-social" target="_self"><i class="fa fa-spinner"></i> Courses</a>
+{% include _counter.html %}
+
+<a href="#projects" class="author-social" target="_self"><i class="fa fa-pie-chart"></i> Projects ({{projectcount}})</a>
+<a href="#publications" class="author-social" target="_selft"><i class="fa fa-book"></i> Publications ({{count}})</a>
+<a href="#posts" class="author-social" target="_self"><i class="fa fa-comment-o"></i> Posts ({{postcount}})</a>
+<a href="#courses" class="author-social" target="_self"><i class="fa fa-spinner"></i> Courses ({{coursecount}})</a>
 
 
 {% endif %}
