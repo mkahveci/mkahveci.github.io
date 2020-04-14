@@ -55,6 +55,10 @@ creative-commons:
 
 permalink:   /:title
 markdown:    kramdown
+
+kramdown:
+    auto_ids: true
+
 highlighter: rouge
 sass:
   sass_dir: _sass

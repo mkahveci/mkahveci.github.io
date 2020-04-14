@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T11:24:59-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">Tools</title><link href="http://localhost:4000/xiw" rel="alternate" type="text/html" title="Tools" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/xiw</id><content type="html" xml:base="http://localhost:4000/xiw">&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-13T20:21:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">D2L Submission Folder Setup with a Rubric</title><link href="http://localhost:4000/ydt" rel="alternate" type="text/html" title="D2L Submission Folder Setup with a Rubric" /><published>2020-04-13T00:00:00-05:00</published><updated>2020-04-13T00:00:00-05:00</updated><id>http://localhost:4000/ydt</id><content type="html" xml:base="http://localhost:4000/ydt">&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#new--folder-in-submissions&quot; id=&quot;markdown-toc-new--folder-in-submissions&quot;&gt;New  Folder in Submissions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rubric&quot; id=&quot;markdown-toc-rubric&quot;&gt;Import Rubric&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with as associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
+
+&lt;h3 id=&quot;new--folder-in-submissions&quot;&gt;New  Folder in Submissions&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Submissions &amp;gt; New Folder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+   &lt;img src=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; style=&quot;max-width: 85%;&quot; alt=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;: Give a name to the folder. e.g. Lab 1.&lt;/li&gt;
+  &lt;li&gt;Select a &lt;code class=&quot;highlighter-rouge&quot;&gt;Grade Item&lt;/code&gt; from the dropdown list. You can add &lt;code class=&quot;highlighter-rouge&quot;&gt;New Grade Item&lt;/code&gt;, if needed.&lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Rubric&lt;/code&gt; button and select a rubric from the list. If you don’t see a rubric, you need to &lt;a href=&quot;/ydt#rubric&quot;&gt;import&lt;/a&gt; one.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+   &lt;img src=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; style=&quot;max-width: 75%;&quot; alt=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rubric&quot;&gt;Import Rubric&lt;/h3&gt;
+
+&lt;p&gt;You may import rubrics like any other components in D2L. I will be posting rubrics for SQ20-CHE 133 and SQ20-CHE 135 this quarter. To import a rubric:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration &amp;gt; Import / Export / Copy Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_133_303_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 133&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+   &lt;img src=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; style=&quot;max-width: 95%;&quot; alt=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">This tutorial demonstrates how to set up a Submission folder with commenting capabilities and with as associated rubric for assessment.</summary></entry><entry><title type="html">Low Cost Options for Document Cameras</title><link href="http://localhost:4000/esy" rel="alternate" type="text/html" title="Low Cost Options for Document Cameras" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/esy</id><content type="html" xml:base="http://localhost:4000/esy">&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.</summary></entry><entry><title type="html">Tools</title><link href="http://localhost:4000/xiw" rel="alternate" type="text/html" title="Tools" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/xiw</id><content type="html" xml:base="http://localhost:4000/xiw">&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -6,14 +68,7 @@
   &lt;li&gt;&lt;a href=&quot;https://padlet.com/&quot;&gt;Padlet&lt;/a&gt; (free). You open a pad and then double click to add a “post-it” note.  There are different ways to format where all posts go in a line down the center or they can be anywhere (and then moved by the instructor or students if you give permission).&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Powtoon&lt;/a&gt;. You can make animations, videos, and infographics.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Screencastify&lt;/a&gt;. Make awesome videos and presentations.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">Useful tools for online teaching.</summary></entry><entry><title type="html">Low Cost Options for Document Cameras</title><link href="http://localhost:4000/esy" rel="alternate" type="text/html" title="Low Cost Options for Document Cameras" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/esy</id><content type="html" xml:base="http://localhost:4000/esy">&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.</summary></entry><entry><title type="html">Deferments or Cancellations of Events due to COVID-19</title><link href="http://localhost:4000/kid" rel="alternate" type="text/html" title="Deferments or Cancellations of Events due to COVID-19" /><published>2020-04-06T00:00:00-05:00</published><updated>2020-04-06T00:00:00-05:00</updated><id>http://localhost:4000/kid</id><content type="html" xml:base="http://localhost:4000/kid">&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">Useful tools for online teaching.</summary></entry><entry><title type="html">Deferments or Cancellations of Events due to COVID-19</title><link href="http://localhost:4000/kid" rel="alternate" type="text/html" title="Deferments or Cancellations of Events due to COVID-19" /><published>2020-04-06T00:00:00-05:00</published><updated>2020-04-06T00:00:00-05:00</updated><id>http://localhost:4000/kid</id><content type="html" xml:base="http://localhost:4000/kid">&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -54,9 +109,22 @@
 &lt;ul&gt;
   &lt;li&gt;March 23 Video: &lt;a href=&quot;https://www.aera20.net/vanessa-discusses-the-cancellation.html&quot;&gt;AERA President Vanessa Siddle Walker Discusses The Cancellation Of The AERA 2020 Virtual Annual Meeting&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;March 23 &lt;a href=&quot;https://www.aera20.net/EXECUTIVE-DIRECTOR-LEVINE-AND-PRESIDENT-SIDDLE-WALKER-ANNOUNCE-CANCELLATION-OF-THE-2020-VIRTUAL-ANNUAL-MEETING.html&quot;&gt;Announcement of Virtual Meeting Cancellation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><category term="blog" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry><entry><title type="html">Group Specific Forums in D2L</title><link href="http://localhost:4000/bod" rel="alternate" type="text/html" title="Group Specific Forums in D2L" /><published>2020-04-05T00:00:00-05:00</published><updated>2020-04-05T00:00:00-05:00</updated><id>http://localhost:4000/bod</id><content type="html" xml:base="http://localhost:4000/bod">&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><category term="blog" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry><entry><title type="html">Forums in D2L</title><link href="http://localhost:4000/bod" rel="alternate" type="text/html" title="Forums in D2L" /><published>2020-04-05T00:00:00-05:00</published><updated>2020-04-05T00:00:00-05:00</updated><id>http://localhost:4000/bod</id><content type="html" xml:base="http://localhost:4000/bod">&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-discussion-forum&quot; id=&quot;markdown-toc-create-a-discussion-forum&quot;&gt;Create a Discussion Forum&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-discussion-topic&quot; id=&quot;markdown-toc-create-a-discussion-topic&quot;&gt;Create a Discussion Topic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#creating-groups-in-d2l&quot; id=&quot;markdown-toc-creating-groups-in-d2l&quot;&gt;Creating Groups in D2L&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#create-a-new-set-of-groups&quot; id=&quot;markdown-toc-create-a-new-set-of-groups&quot;&gt;Create a new set of Groups&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#setting-up-group-discussions-in-d2l&quot; id=&quot;markdown-toc-setting-up-group-discussions-in-d2l&quot;&gt;Setting up Group Discussions in D2L&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Forums&lt;/strong&gt; are used to house discussion topics that are similar. For example, there might be several discussions in the first week of the course, so create a forum titled “Week One Discussions” for them.&lt;/li&gt;
@@ -172,7 +240,7 @@
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">D2L uses specific terms to refer to different parts of the Discussions area, including the following:</summary></entry><entry><title type="html">Research</title><link href="http://localhost:4000/mxn" rel="alternate" type="text/html" title="Research" /><published>2020-04-03T00:00:00-05:00</published><updated>2020-04-03T00:00:00-05:00</updated><id>http://localhost:4000/mxn</id><content type="html" xml:base="http://localhost:4000/mxn">&lt;p&gt;Offered a graduate research course in chemistry education research (CER) domain.&lt;/p&gt;</content><author><name></name></author><summary type="html">Offered a graduate research course in chemistry education research (CER) domain.</summary></entry><entry><title type="html">General Chemistry II</title><link href="http://localhost:4000/apl" rel="alternate" type="text/html" title="General Chemistry II" /><published>2020-04-02T00:00:00-05:00</published><updated>2020-04-02T00:00:00-05:00</updated><id>http://localhost:4000/apl</id><content type="html" xml:base="http://localhost:4000/apl">&lt;p&gt;Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry><entry><title type="html">Research</title><link href="http://localhost:4000/mxn" rel="alternate" type="text/html" title="Research" /><published>2020-04-03T00:00:00-05:00</published><updated>2020-04-03T00:00:00-05:00</updated><id>http://localhost:4000/mxn</id><content type="html" xml:base="http://localhost:4000/mxn">&lt;p&gt;Offered a graduate research course in chemistry education research (CER) domain.&lt;/p&gt;</content><author><name></name></author><summary type="html">Offered a graduate research course in chemistry education research (CER) domain.</summary></entry><entry><title type="html">General Chemistry II</title><link href="http://localhost:4000/apl" rel="alternate" type="text/html" title="General Chemistry II" /><published>2020-04-02T00:00:00-05:00</published><updated>2020-04-02T00:00:00-05:00</updated><id>http://localhost:4000/apl</id><content type="html" xml:base="http://localhost:4000/apl">&lt;p&gt;Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.&lt;/p&gt;
 
 &lt;h3 id=&quot;textbook-and-materials&quot;&gt;Textbook and Materials&lt;/h3&gt;
 
@@ -395,18 +463,4 @@ Students will understand how science serves as a mechanism for inquiry into the 
   &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">Affective States and Online Teaching in Chemistry Education</title><link href="http://localhost:4000/pr/5442" rel="alternate" type="text/html" title="Affective States and Online Teaching in Chemistry Education" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/pr/tgd</id><content type="html" xml:base="http://localhost:4000/pr/5442">&lt;p&gt;This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.&lt;/p&gt;</content><author><name></name></author><summary type="html">This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.</summary></entry><entry><title type="html">A message from my student: Madison</title><link href="http://localhost:4000/tta" rel="alternate" type="text/html" title="A message from my student: Madison" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/tta</id><content type="html" xml:base="http://localhost:4000/tta">&lt;p&gt;I have just received a message from Madison and with her permission I am posting it below. Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
-
-  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
-
-  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
-
-  &lt;p&gt;Sincerely,&lt;/p&gt;
-
-  &lt;p&gt;Madison&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">I have just received a message from Madison and with her permission I am posting it below. Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020.</summary></entry></feed>
+&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">Affective States and Online Teaching in Chemistry Education</title><link href="http://localhost:4000/pr/5442" rel="alternate" type="text/html" title="Affective States and Online Teaching in Chemistry Education" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/pr/tgd</id><content type="html" xml:base="http://localhost:4000/pr/5442">&lt;p&gt;This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.&lt;/p&gt;</content><author><name></name></author><summary type="html">This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.</summary></entry></feed>
