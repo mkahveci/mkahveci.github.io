@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-13T20:21:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">D2L Submission Folder Setup with a Rubric</title><link href="http://localhost:4000/ydt" rel="alternate" type="text/html" title="D2L Submission Folder Setup with a Rubric" /><published>2020-04-13T00:00:00-05:00</published><updated>2020-04-13T00:00:00-05:00</updated><id>http://localhost:4000/ydt</id><content type="html" xml:base="http://localhost:4000/ydt">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-15T14:04:20-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">D2L Submission Folder Setup with a Rubric</title><link href="http://localhost:4000/ydt" rel="alternate" type="text/html" title="D2L Submission Folder Setup with a Rubric" /><published>2020-04-13T00:00:00-05:00</published><updated>2020-04-13T00:00:00-05:00</updated><id>http://localhost:4000/ydt</id><content type="html" xml:base="http://localhost:4000/ydt">&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#new--folder-in-submissions&quot; id=&quot;markdown-toc-new--folder-in-submissions&quot;&gt;New  Folder in Submissions&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rubric&quot; id=&quot;markdown-toc-rubric&quot;&gt;Import Rubric&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#new--folder-in-submissions-with-annotation-tools&quot; id=&quot;markdown-toc-new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rubric&quot; id=&quot;markdown-toc-rubric&quot;&gt;Importing a Rubric&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#method-1-copying-from-my-course&quot; id=&quot;markdown-toc-method-1-copying-from-my-course&quot;&gt;Method 1: Copying from my Course&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#method-2-importing-as-an-external-zip-file&quot; id=&quot;markdown-toc-method-2-importing-as-an-external-zip-file&quot;&gt;Method 2: Importing as an External ZIP File&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with as associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
+&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with an associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
 
-&lt;h3 id=&quot;new--folder-in-submissions&quot;&gt;New  Folder in Submissions&lt;/h3&gt;
+&lt;h2 id=&quot;new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Submissions &amp;gt; New Folder&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Submissions&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;New Folder&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure&gt;
@@ -32,12 +36,14 @@
   &lt;li&gt;Make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;rubric&quot;&gt;Import Rubric&lt;/h3&gt;
+&lt;h2 id=&quot;rubric&quot;&gt;Importing a Rubric&lt;/h2&gt;
+
+&lt;h3 id=&quot;method-1-copying-from-my-course&quot;&gt;Method 1: Copying from my Course&lt;/h3&gt;
 
 &lt;p&gt;You may import rubrics like any other components in D2L. I will be posting rubrics for SQ20-CHE 133 and SQ20-CHE 135 this quarter. To import a rubric:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration &amp;gt; Import / Export / Copy Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
@@ -52,6 +58,26 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;method-2-importing-as-an-external-zip-file&quot;&gt;Method 2: Importing as an External ZIP File&lt;/h3&gt;
+
+&lt;p&gt;This method is for those who cannot import from my course. Originally, I did not think this would be a problem but I was notified that it was not possible to import a component from my course unless you were enrolled as a TA or instructor.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, grab the rubric file as a ZIP from the shared Box folder.
+    &lt;ul&gt;
+      &lt;li&gt;In this folder, navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Online Rubrics to Import D2L&lt;/code&gt; folder.&lt;/li&gt;
+      &lt;li&gt;Any of these files must be imported to D2L as a ZIP file. So, don’t unzip. Naming convention:
+        &lt;ul&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE133-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE135-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;On D2L, go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; (again as submenu) and select and upload the ZIP file you grabbed.&lt;/li&gt;
   &lt;li&gt;Wait for copying and done!&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">This tutorial demonstrates how to set up a Submission folder with commenting capabilities and with as associated rubric for assessment.</summary></entry><entry><title type="html">Low Cost Options for Document Cameras</title><link href="http://localhost:4000/esy" rel="alternate" type="text/html" title="Low Cost Options for Document Cameras" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/esy</id><content type="html" xml:base="http://localhost:4000/esy">&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
 
@@ -190,13 +216,13 @@
   &lt;li&gt;Choose Groups from the More dropdown menu.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/nvq2fg46iVL1-u9aCysQC0G0rOCQVyPNwG2lhNiW6uPhVEurSnkc7pOW7m7kv-oECUIHRC-0w1hXlRpYlQ35Zc2UQQ5j9XAyu-x7CoX0hkqWPKNBiwYgF2SILo9BlEuTJpOq6inUM0c=w2400&quot; alt=&quot;Screen 4&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/nvq2fg46iVL1-u9aCysQC0G0rOCQVyPNwG2lhNiW6uPhVEurSnkc7pOW7m7kv-oECUIHRC-0w1hXlRpYlQ35Zc2UQQ5j9XAyu-x7CoX0hkqWPKNBiwYgF2SILo9BlEuTJpOq6inUM0c=w2400&quot; alt=&quot;Screen 4&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Select New Category.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/7f9p2X5shFkUSMQcPIrg6bSwGn0uAiucgUVc5HjC8Lx4RTLWD1oCPwbss3BWryM9TY8SvMYkpqlk34HWh2kOOnKxVHtGtsds0B6JCL2YVQEN86x2Sp3uGv7AobLTxkR6TGXEysgXbuU=w2400&quot; alt=&quot;Screen 5&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/7f9p2X5shFkUSMQcPIrg6bSwGn0uAiucgUVc5HjC8Lx4RTLWD1oCPwbss3BWryM9TY8SvMYkpqlk34HWh2kOOnKxVHtGtsds0B6JCL2YVQEN86x2Sp3uGv7AobLTxkR6TGXEysgXbuU=w2400&quot; alt=&quot;Screen 5&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Enter a name for the category.&lt;/li&gt;
