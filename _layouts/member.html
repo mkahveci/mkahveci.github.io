@@ -50,9 +50,9 @@
       <p><b>{{projectcount}}</b>.&nbsp;&nbsp;<a href="{{ project.url }}" class="off">{{ project.title }}</a> |
         {{ project.year }}
         {% if project.excerpt %}<br>&nbsp;&nbsp;&nbsp;<small>{{ project.excerpt | strip_html | truncate: 160 }}</small>{% endif %}
-        {% endif %}
         </p>
         {% assign projectcount = projectcount | minus: 1 %}
+        {% endif %}
         {% endfor %}
         {% endif %}
 
