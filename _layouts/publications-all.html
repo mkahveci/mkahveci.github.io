@@ -40,7 +40,7 @@
       {% capture written_year %}{{ year }}{% endcapture %}
       {% endif %}
 
-        <p><b>{{ count }}</b>. {{ publication.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a href="{{ publication.url }}" title="{{ publication.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
+        <p><b>{{ count }}</b>. {{ publication.ref | markdownify | remove: '<p>' | remove: '</p>' }}
           <!-- {% if publication.excerpt %}<p>{{ publication.excerpt | strip_html | truncate: 10000 }}</p>{% endif %} -->
         </p>
       

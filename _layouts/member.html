@@ -75,8 +75,7 @@
         {% for book in books %}
         {% if book.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
-            href="{{ book.url }}" title="{{ book.title }}"><i class="fa fa-book"></i></a>
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
           {% assign count = count | minus: 1 %}
 
@@ -91,8 +90,7 @@
         {% for jpaper in journals %}
         {% if jpaper.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
-            href="{{ jpaper.url }}" title="{{ jpaper.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
           
           {% assign count = count | minus: 1 %}
@@ -109,8 +107,7 @@
         {% for cpaper in conferences %}
         {% if cpaper.authors contains searchstring %}
 
-        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}<a
-            href="{{ cpaper.url }}" title="{{ cpaper.title }}"><i class="fa fa-file-text-o fa-fw"></i></a>
+        <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
 
           {% assign count = count | minus: 1 %}
