@@ -36,9 +36,13 @@
     {{ content }}
   {% endif %}
 
+
+  {% assign count = 0 %}
+
       {% for paper in site.categories.publications %}
       {% if paper.projectid contains page.projectid %}
       {% assign paperq = true %}
+      {% assign count = count | plus: 1 %}
       {% endif %}
       {% endfor %}
 
@@ -46,13 +50,14 @@
 
         <h3>Project publications</h3>
 
+       
+
         {% for paper in site.categories.publications %}
         {% if paper.projectid contains page.projectid %}
-        <p><article>
-          <i class="fa fa-file-text-o fa-fw"></i>&nbsp;<a href="{{ paper.url }}" title="{{ paper.title }}">{{ paper.title }}</a>
-        {% if paper.ref %}<br>{{ paper.ref | strip_html | truncate: 160 }}{% endif %}
-      </article></p>
-        {% endif %}
+      <p><b>{{ count }}</b>.&nbsp;&nbsp;{{ paper.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+      </p>
+      {% assign count = count | minus: 1 %}
+        {% endif %} 
         {% endfor %}
 
       {% endif %}
