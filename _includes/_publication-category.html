@@ -19,27 +19,27 @@
 {% if mcount > 0 %}
 
 <div class="seriesNote">
-<small>
+
   <p>This article is <strong>Part {{ idx }}</strong> in a <strong>{{ count }}-Part</strong> Category of <strong>{{ page.pcategory }}</strong>.</p>
 <form name="jumpopt">
-  <select name="myjumpbox" style="width:100%;list-style-type: circle;border-left: 5px solid #D70A53;
+  <small><select name="myjumpbox" style="width:100%;list-style-type: circle;border-left: 5px solid #D70A53;
   background-color: #f1f1f1;
-  list-style-type: none;" size="5" OnChange="location.href=jumpopt.myjumpbox.options[selectedIndex].value">
-    {% assign count = '0' %}
-    {% for post in site.posts reversed %}
+  list-style-type: none;" size="10" OnChange="location.href=jumpopt.myjumpbox.options[selectedIndex].value">
+    {% assign count = mcount %}
+    {% for post in site.posts %}
     {% if post.pcategory == page.pcategory %}
-    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+    
       {% if page.url == post.url %}
-      <option value="{{post.url}}" selected>Part {{ count }} - {{post.title}}</option>
+      <option disabled selected value=undefined>{{ count }}. {{post.title | truncate: 30 }}</option>
       {% else %}
-      <option value="{{post.url}}">Part {{ count }} - {{post.title}}</option>
+      <option value="{{post.url}}">{{ count }}. {{post.title | truncate: 30 }}</option>
       {% endif %}
-
+    {% capture count %}{{ count | minus: '1' }}{% endcapture %}
     {% endif %}
     {% endfor %}
-  </select>
+  </select></small>
   </form>
-   </small>
+   
   </div>   
 {% else %}
 
