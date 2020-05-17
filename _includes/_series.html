@@ -26,12 +26,12 @@
   background-color: #f1f1f1;
   list-style-type: none;
   padding: 0px 5px;">
-    {% assign count = '0' %}
-    {% for post in site.posts reversed %}
+    {% assign count = mcount %}
+    {% for post in site.posts %}
     {% if post.series == page.series %}
-    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+    
     <small>
-      <li>Part {{ count }} -
+      <li>{{ count }}.
       {% if page.url == post.url %}
       {{page.title}}
       {% else %}
@@ -39,6 +39,7 @@
       {% endif %}
     </li>
    </small>
+  {% capture count %}{{ count | minus: '1' }}{% endcapture %}
     {% endif %}
     {% endfor %}
   </ul>
