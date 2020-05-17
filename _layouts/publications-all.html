@@ -17,14 +17,18 @@
   {% include _navigation.html %}
 
   <div id="main" role="main">
-    <div id="index">
+
+  <div class="article-author-side">
+    {% include _publication-category.html %}
+  </div>
+
+    <article class="post"> 
+
 
 
       <h1>{{ page.title }}</h1>
 
       <p>{{ page.excerpt | markdownify }}</p>
-
-      {% include _publication-menu.html %}
 
       {% assign count = 0 %}
 
@@ -34,21 +38,25 @@
 
       {% capture written_year %}'None'{% endcapture %}
       {% for publication in site.categories.publications %}
-      {% capture year %}{{ publication.date | date: '%Y' }}{% endcapture %}
-      {% if year != written_year %}
-      <h2>{{ year }}</h2>
-      {% capture written_year %}{{ year }}{% endcapture %}
-      {% endif %}
 
-        <p><b>{{ count }}</b>. {{ publication.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% cycle 'add rows': '<div class="flex-container">','','','' %}
+
+        <div>        
+          <b>{{ count }}</b>. {{ publication.ref | markdownify | remove: '<p>' | remove: '</p>' }}
           <!-- {% if publication.excerpt %}<p>{{ publication.excerpt | strip_html | truncate: 10000 }}</p>{% endif %} -->
-        </p>
+                    {% if publication.avatar %}
+                    <a href="{{ publication.url }}">
+                      <img width=100% class="media-object" src="{{ publication.avatar }}">
+                    </a>
+                    {% endif %}
+        </div>
       
       {% assign count = count | minus: 1 %}
+
+      {% cycle 'close rows': '','','','</div>' %}
       {% endfor %}
 
-  {% include _image.html %}
-
+    </article>
     </div><!-- /#index -->
   </div><!-- /#main -->
 
