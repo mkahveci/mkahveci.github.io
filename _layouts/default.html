@@ -46,19 +46,7 @@
 
   {% endif %}
 
-
-  {% if page.author == "Murat Kahveci"  %}
-<p>By <a href="/murat">{{ page.author }}</a></p>
-
-  {{ content }}
-
-  {% else %}
-
-  <p>By {{ page.author }} </p>
-
     {{ content }}
-
-  {% endif %}
 
   <hr />
 {% for member in site.categories.team %}
@@ -67,7 +55,7 @@
 <footer role="contentinfo">
   {% if page.share != false %}{% include _social-share.html %}{% endif %}
   <article>
-    <p class="byline"><strong>{{ page.title }}</strong> was published on <time
+    <p class="byline"><strong>{{ page.title }}</strong> was published by <a href="/murat">{{ page.author }}</a> on <time
         datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>.</p>
   </article>
 
