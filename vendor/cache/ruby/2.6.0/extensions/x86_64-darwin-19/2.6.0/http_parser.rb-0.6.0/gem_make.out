@@ -1,16 +1,16 @@
-current directory: /Users/mkahveci/Sites/mkahveci.github.io6/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
-/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200404-82129-1gn48en.rb extconf.rb
+current directory: /Users/mkahveci/Sites/TeX/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200616-2622-3dpxse.rb extconf.rb
 creating Makefile
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io6/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/mkahveci/Sites/TeX/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" clean
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io6/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/mkahveci/Sites/TeX/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR="
 compiling ruby_http_parser.c
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.bundle
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io6/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/mkahveci/Sites/TeX/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200404-82129-a9z8jb
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200616-2622-phhssy

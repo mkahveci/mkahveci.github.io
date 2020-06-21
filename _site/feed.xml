@@ -1,39 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-19T11:49:39-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><entry><title type="html">D2L Submission Folder Setup with a Rubric</title><link href="http://localhost:4000/ydt" rel="alternate" type="text/html" title="D2L Submission Folder Setup with a Rubric" /><published>2020-04-13T00:00:00-05:00</published><updated>2020-04-13T00:00:00-05:00</updated><id>http://localhost:4000/ydt</id><content type="html" xml:base="http://localhost:4000/ydt">&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-21T14:42:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
+  &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#new--folder-in-submissions-with-annotation-tools&quot; id=&quot;markdown-toc-new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rubric&quot; id=&quot;markdown-toc-rubric&quot;&gt;Importing a Rubric&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#method-1-copying-from-my-course&quot; id=&quot;markdown-toc-method-1-copying-from-my-course&quot;&gt;Method 1: Copying from my Course&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#method-2-importing-as-an-external-zip-file&quot; id=&quot;markdown-toc-method-2-importing-as-an-external-zip-file&quot;&gt;Method 2: Importing as an External ZIP File&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with an associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
+  &lt;p&gt;Professor Kahveci,&lt;/p&gt;
+
+  &lt;p&gt;I just wanted to extend a sincere thank you to you and the entire Chemistry department, including our TA’s, for your compassion and understanding during these turbulent times. With everything going on, we’ve all been under an unusual amount of mental stress and I’m sure that extends to the teaching staff as well, so I hope you’ve all been well. The content in this class is not easy to grasp, but without the efforts of the staff making this information so comprehensible considering the short notice of this transition, I’m sure things could have been much worse. Also, I have seen a lot of leeway being given throughout this quarter in regards to grading and submission of assignments, and for me personally that has taken some of the stress out of this transition to our remote learning experience this quarter. It’s for this alleviation that I thank you all.&lt;/p&gt;
+
+  &lt;p&gt;Sincerely,&lt;/p&gt;
+
+  &lt;p&gt;Andres&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Andres is taking General Chemistry II (lecture and lab) in Spring 2020. This email correspondence was posted with Andres’s written permission via email on 6/3/2020.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="From Students" /><summary type="html">I just wanted to extend a sincere thank you to you and the entire Chemistry department, including our TA’s, for your compassion and understanding during these turbulent times. With everything going on, we’ve all been under an unusual amount of mental stress and I’m sure that extends to the teaching staff as well, so I hope you’ve all been well.</summary></entry><entry><title type="html">D2L Submission Folder Setup with a Rubric</title><link href="http://localhost:4000/ydt" rel="alternate" type="text/html" title="D2L Submission Folder Setup with a Rubric" /><published>2020-04-13T00:00:00-05:00</published><updated>2020-04-13T00:00:00-05:00</updated><id>http://localhost:4000/ydt</id><content type="html" xml:base="http://localhost:4000/ydt">&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with an associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
 
 &lt;h2 id=&quot;new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Submissions&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;New Folder&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submissions&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Folder&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure&gt;
-   &lt;img src=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; style=&quot;max-width: 85%;&quot; alt=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; /&gt;
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;: Give a name to the folder. e.g. Lab 1.&lt;/li&gt;
-  &lt;li&gt;Select a &lt;code class=&quot;highlighter-rouge&quot;&gt;Grade Item&lt;/code&gt; from the dropdown list. You can add &lt;code class=&quot;highlighter-rouge&quot;&gt;New Grade Item&lt;/code&gt;, if needed.&lt;/li&gt;
-  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Rubric&lt;/code&gt; button and select a rubric from the list. If you don’t see a rubric, you need to &lt;a href=&quot;/ydt#rubric&quot;&gt;import&lt;/a&gt; one.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;: Give a name to the folder. e.g. Lab 1.&lt;/li&gt;
+  &lt;li&gt;Select a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Grade Item&lt;/code&gt; from the dropdown list. You can add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Grade Item&lt;/code&gt;, if needed.&lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add Rubric&lt;/code&gt; button and select a rubric from the list. If you don’t see a rubric, you need to &lt;a href=&quot;/ydt#rubric&quot;&gt;import&lt;/a&gt; one.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure&gt;
-   &lt;img src=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; style=&quot;max-width: 75%;&quot; alt=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; /&gt;
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
+  &lt;li&gt;Make sure that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;rubric&quot;&gt;Importing a Rubric&lt;/h2&gt;
@@ -43,21 +39,19 @@
 &lt;p&gt;You may import rubrics like any other components in D2L. I will be posting rubrics for SQ20-CHE 133 and SQ20-CHE 135 this quarter. To import a rubric:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_133_303_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 133&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE_133_303_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE 133&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure&gt;
-   &lt;img src=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; style=&quot;max-width: 95%;&quot; alt=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; /&gt;
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
   &lt;li&gt;Wait for copying and done!&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -68,25 +62,18 @@
 &lt;ul&gt;
   &lt;li&gt;First, grab the rubric file as a ZIP from the shared Box folder.
     &lt;ul&gt;
-      &lt;li&gt;In this folder, navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Online Rubrics to Import D2L&lt;/code&gt; folder.&lt;/li&gt;
+      &lt;li&gt;In this folder, navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Online Rubrics to Import D2L&lt;/code&gt; folder.&lt;/li&gt;
       &lt;li&gt;Any of these files must be imported to D2L as a ZIP file. So, don’t unzip. Naming convention:
         &lt;ul&gt;
-          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE133-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE135-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQ20-CHE133-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQ20-CHE135-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;On D2L, go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; (again as submenu) and select and upload the ZIP file you grabbed.&lt;/li&gt;
+  &lt;li&gt;On D2L, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; (again as submenu) and select and upload the ZIP file you grabbed.&lt;/li&gt;
   &lt;li&gt;Wait for copying and done!&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">This tutorial demonstrates how to set up a Submission folder with commenting capabilities and with as associated rubric for assessment.</summary></entry><entry><title type="html">Low Cost Options for Document Cameras</title><link href="http://localhost:4000/esy" rel="alternate" type="text/html" title="Low Cost Options for Document Cameras" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/esy</id><content type="html" xml:base="http://localhost:4000/esy">&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.</summary></entry><entry><title type="html">Tools</title><link href="http://localhost:4000/xiw" rel="alternate" type="text/html" title="Tools" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/xiw</id><content type="html" xml:base="http://localhost:4000/xiw">&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial demonstrates how to set up a Submission folder with commenting capabilities and with as associated rubric for assessment.</summary></entry><entry><title type="html">Tools</title><link href="http://localhost:4000/xiw" rel="alternate" type="text/html" title="Tools" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/xiw</id><content type="html" xml:base="http://localhost:4000/xiw">&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -94,7 +81,14 @@
   &lt;li&gt;&lt;a href=&quot;https://padlet.com/&quot;&gt;Padlet&lt;/a&gt; (free). You open a pad and then double click to add a “post-it” note.  There are different ways to format where all posts go in a line down the center or they can be anywhere (and then moved by the instructor or students if you give permission).&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Powtoon&lt;/a&gt;. You can make animations, videos, and infographics.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Screencastify&lt;/a&gt;. Make awesome videos and presentations.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">Useful tools for online teaching.</summary></entry><entry><title type="html">Deferments or Cancellations of Events due to COVID-19</title><link href="http://localhost:4000/kid" rel="alternate" type="text/html" title="Deferments or Cancellations of Events due to COVID-19" /><published>2020-04-06T00:00:00-05:00</published><updated>2020-04-06T00:00:00-05:00</updated><id>http://localhost:4000/kid</id><content type="html" xml:base="http://localhost:4000/kid">&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">Useful tools for online teaching.</summary></entry><entry><title type="html">Low Cost Options for Document Cameras</title><link href="http://localhost:4000/esy" rel="alternate" type="text/html" title="Low Cost Options for Document Cameras" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>http://localhost:4000/esy</id><content type="html" xml:base="http://localhost:4000/esy">&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.</summary></entry><entry><title type="html">Deferments or Cancellations of Events due to COVID-19</title><link href="http://localhost:4000/kid" rel="alternate" type="text/html" title="Deferments or Cancellations of Events due to COVID-19" /><published>2020-04-06T00:00:00-05:00</published><updated>2020-04-06T00:00:00-05:00</updated><id>http://localhost:4000/kid</id><content type="html" xml:base="http://localhost:4000/kid">&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -135,22 +129,7 @@
 &lt;ul&gt;
   &lt;li&gt;March 23 Video: &lt;a href=&quot;https://www.aera20.net/vanessa-discusses-the-cancellation.html&quot;&gt;AERA President Vanessa Siddle Walker Discusses The Cancellation Of The AERA 2020 Virtual Annual Meeting&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;March 23 &lt;a href=&quot;https://www.aera20.net/EXECUTIVE-DIRECTOR-LEVINE-AND-PRESIDENT-SIDDLE-WALKER-ANNOUNCE-CANCELLATION-OF-THE-2020-VIRTUAL-ANNUAL-MEETING.html&quot;&gt;Announcement of Virtual Meeting Cancellation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><category term="blog" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry><entry><title type="html">Forums in D2L</title><link href="http://localhost:4000/bod" rel="alternate" type="text/html" title="Forums in D2L" /><published>2020-04-05T00:00:00-05:00</published><updated>2020-04-05T00:00:00-05:00</updated><id>http://localhost:4000/bod</id><content type="html" xml:base="http://localhost:4000/bod">&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-a-discussion-forum&quot; id=&quot;markdown-toc-create-a-discussion-forum&quot;&gt;Create a Discussion Forum&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-a-discussion-topic&quot; id=&quot;markdown-toc-create-a-discussion-topic&quot;&gt;Create a Discussion Topic&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#creating-groups-in-d2l&quot; id=&quot;markdown-toc-creating-groups-in-d2l&quot;&gt;Creating Groups in D2L&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#create-a-new-set-of-groups&quot; id=&quot;markdown-toc-create-a-new-set-of-groups&quot;&gt;Create a new set of Groups&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#setting-up-group-discussions-in-d2l&quot; id=&quot;markdown-toc-setting-up-group-discussions-in-d2l&quot;&gt;Setting up Group Discussions in D2L&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="COVID-19" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry><entry><title type="html">Forums in D2L</title><link href="http://localhost:4000/bod" rel="alternate" type="text/html" title="Forums in D2L" /><published>2020-04-05T00:00:00-06:00</published><updated>2020-04-05T00:00:00-06:00</updated><id>http://localhost:4000/bod</id><content type="html" xml:base="http://localhost:4000/bod">&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Forums&lt;/strong&gt; are used to house discussion topics that are similar. For example, there might be several discussions in the first week of the course, so create a forum titled “Week One Discussions” for them.&lt;/li&gt;
@@ -266,227 +245,95 @@
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name></author><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry><entry><title type="html">Research</title><link href="http://localhost:4000/mxn" rel="alternate" type="text/html" title="Research" /><published>2020-04-03T00:00:00-05:00</published><updated>2020-04-03T00:00:00-05:00</updated><id>http://localhost:4000/mxn</id><content type="html" xml:base="http://localhost:4000/mxn">&lt;p&gt;Offered a graduate research course in chemistry education research (CER) domain.&lt;/p&gt;</content><author><name></name></author><summary type="html">Offered a graduate research course in chemistry education research (CER) domain.</summary></entry><entry><title type="html">General Chemistry II</title><link href="http://localhost:4000/apl" rel="alternate" type="text/html" title="General Chemistry II" /><published>2020-04-02T00:00:00-05:00</published><updated>2020-04-02T00:00:00-05:00</updated><id>http://localhost:4000/apl</id><content type="html" xml:base="http://localhost:4000/apl">&lt;p&gt;Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry><entry><title type="html">‘Chemistry’ from Madison</title><link href="http://localhost:4000/tta" rel="alternate" type="text/html" title="'Chemistry' from Madison" /><published>2020-03-24T00:00:00-06:00</published><updated>2020-03-24T00:00:00-06:00</updated><id>http://localhost:4000/tta</id><content type="html" xml:base="http://localhost:4000/tta">&lt;blockquote&gt;
+  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
 
-&lt;h3 id=&quot;textbook-and-materials&quot;&gt;Textbook and Materials&lt;/h3&gt;
+  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
 
-&lt;h4 id=&quot;required&quot;&gt;Required&lt;/h4&gt;
+  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Tro, N. J. Chemistry: Structure and Properties, 2nd Ed., Pearson Education, Inc., UpperSaddle River, NJ, 2017. ISBN: 9780134293936. This text is available from the bookstore in hardbound, loose-leaf, and e-text formats.&lt;/li&gt;
-  &lt;li&gt;Non-graphing calculator for use on exams. Suggested models include:
-    &lt;ul&gt;
-      &lt;li&gt;TI-30X family of calculators (available at the bookstore)&lt;/li&gt;
-      &lt;li&gt;CASIO fx-260solar or CASIO fx-250HC&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Modified Mastering Chemistry on-line homework system. This can be ordered through the bookstore with the loose-leaf textbook (ISBN 9780134777559), or e-text (ISBN 9780134565613).&lt;/li&gt;
-&lt;/ol&gt;
+  &lt;p&gt;Sincerely,&lt;/p&gt;
 
-&lt;h4 id=&quot;recommended&quot;&gt;Recommended&lt;/h4&gt;
+  &lt;p&gt;Madison&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Tro, N. J.; Shaginaw, K. T.; Kramer, M. B., Solutions Manual for Chemistry:Structure and Properties, Pearson Education, Inc., Upper Saddle River, NJ, 2017. ISBN 9780134460673&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020. This email correspondence was posted with Madison’s written permission via email on 3/24/2020.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="From Students" /><summary type="html">I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best.</summary></entry><entry><title type="html">I Will Survive, Coronavirus version of teachers going online</title><link href="http://localhost:4000/qdr" rel="alternate" type="text/html" title="I Will Survive, Coronavirus version of teachers going online" /><published>2020-03-19T00:00:00-06:00</published><updated>2020-03-19T00:00:00-06:00</updated><id>http://localhost:4000/qdr</id><content type="html" xml:base="http://localhost:4000/qdr">&lt;p&gt;“Kept trying hard to mend the pieces of my syllabi &lt;br /&gt;
+And I spent so many nights just feeling sorry for myself &lt;br /&gt;
+I used to cry &lt;br /&gt;
+But now I hold my head up high &amp;amp; you’ll see me &lt;br /&gt;
+Teaching on zoom…”&lt;/p&gt;
 
-&lt;h3 id=&quot;tentative-schedule&quot;&gt;Tentative Schedule&lt;/h3&gt;
+&lt;p&gt;“I will survive as long as I know how to Zoom”&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;div class=&quot;extensions extensions--video&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/CCe5PaeAeew?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="COVID-19" /><summary type="html">“Kept trying hard to mend the pieces of my syllabi And I spent so many nights just feeling sorry for myself I used to cry But now I hold my head up high &amp;amp; you’ll see me Teaching on zoom…” “I will survive as long as I know how to Zoom”</summary></entry><entry><title type="html">Higher Education in Science and Engineering</title><link href="http://localhost:4000/sbl" rel="alternate" type="text/html" title="Higher Education in Science and Engineering" /><published>2019-09-08T00:00:00-05:00</published><updated>2019-09-08T00:00:00-05:00</updated><id>http://localhost:4000/sbl</id><content type="html" xml:base="http://localhost:4000/sbl">&lt;p&gt;This &lt;a href=&quot;https://ncses.nsf.gov/pubs/nsb20197/assets/nsb20197.pdf&quot;&gt;report&lt;/a&gt; is prepared by the National Science Board.&lt;/p&gt;
+
+&lt;p&gt;Key takeaways:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Containing a diversity of institutions, the U.S. higher education system serves a range of students and strives to meet many societal goals.&lt;/li&gt;
+  &lt;li&gt;Science and engineering (S&amp;amp;E) fields continue to grow across degree levels. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017.&lt;/li&gt;
+  &lt;li&gt;Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients.&lt;/li&gt;
+  &lt;li&gt;The United States remains the destination for the largest number of internationally mobile students worldwide. However, over the past 2 years, the total number of international students enrolled in U.S. institutions has declined.&lt;/li&gt;
+  &lt;li&gt;Among the major S&amp;amp;E degree–producing countries worldwide, China has seen a rapid increase in its S&amp;amp;E degree production over time, compared with a more moderate rise in the United States and the European Union.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The U.S. higher education system consists of diverse academic institutions—including research and doctorate-granting universities, primarily undergraduate institutions, minority-serving institutions, community colleges, and others, including some that span multiple categories—that train students in S&amp;amp;E across degree levels and fields. A small number of institutions awarded three-quarters of doctorates, nearly half of master’s degrees, and 40% of bachelor’s degrees in S&amp;amp;E fields in 2017. These institutions are also where most university research is performed (see the forthcoming Science and Engineering Indicators 2020 report “Academic Research and Development”): integration of academic S&amp;amp;E research and doctoral education is a key feature of the U.S. system.&lt;/p&gt;
+
+&lt;p&gt;More students are earning S&amp;amp;E degrees. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017. In addition, community colleges train students in S&amp;amp;E and related fields including technologies, contributing to the pool of talent that earns higher degrees and to the development of the skilled technical workforce.&lt;/p&gt;
+
+&lt;p&gt;While the costs of higher education have increased over time, the percentages of bachelor’s and doctoral degree recipients who graduate with debt have remained roughly the same over the last 10 years. Among graduate students, sources of financial aid differ dramatically between master’s and doctoral students. In 2017, one-third of S&amp;amp;E master’s students received funding, in contrast to around 90% of S&amp;amp;E doctoral students. Most S&amp;amp;E doctoral students rely on multiple funding sources (e.g., institutional, federal) and mechanisms (e.g., research and teaching assistantships and fellowships). The federal role in S&amp;amp;E graduate training remains important, although it has diminished over time. In 2017, the federal government supported 15% of full-time S&amp;amp;E graduate students (down from nearly 21% in 2004), including around one-quarter of doctoral students.&lt;/p&gt;
+
+&lt;p&gt;Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients. Women are at or approaching parity with men at most degree levels overall, but within fields, long-standing differences persist, especially in engineering, computer sciences, and mathematics and statistics. Blacks are underrepresented at all degree levels; Hispanics and American Indians and Alaska Natives are underrepresented at all but the associate’s level. Members of different racial and ethnic groups are more likely to earn S&amp;amp;E degrees, especially doctorates, from for-profit institutions, which may have consequences for debt levels and career outcomes.&lt;/p&gt;
+
+&lt;p&gt;The U.S. higher education system remains a top destination for foreign S&amp;amp;E students. Although 2018 marked a second year of decline in the total number of foreign students studying in the United States, the decline was small (less than 1%), and more undergraduate and graduate students were studying S&amp;amp;E fields. Four countries—China, India, South Korea, and Saudi Arabia—account for more than half of foreign students in the United States. The number of Chinese S&amp;amp;E graduate students studying in the United States has continued to increase (by 11% over the last 2 years), whereas the number of Indian S&amp;amp;E graduate students sharply declined (by 22% over the last 2 years).&lt;/p&gt;
+
+&lt;p&gt;Foreign students account for about one-third of U.S. S&amp;amp;E doctorate recipients, a relatively stable proportion over time. They account for half or more of the doctorate recipients in engineering, computer sciences, and economics. China, India, and South Korea are the top three source countries for foreign recipients of U.S. S&amp;amp;E doctoral degrees. In comparison, students on temporary visas earn a smaller share (around 5%) of S&amp;amp;E bachelor’s degrees; however, the number of these students has more than doubled over the last 10 years.&lt;/p&gt;
+
+&lt;p&gt;Other nations’ higher education systems have become increasingly competitive. S&amp;amp;E first university degrees awarded by Chinese institutions doubled to 1.7 million between 2005 and 2015, far outpacing most other countries, including the United States. Institutions in the United States award more S&amp;amp;E doctoral degrees than any other nation. However, in natural sciences and engineering, China surpassed the United States in 2007 as the world’s largest producer of doctoral degrees and has remained so since.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="STEM" /><summary type="html">This report is prepared by the National Science Board. Key takeaways: Containing a diversity of institutions, the U.S. higher education system serves a range of students and strives to meet many societal goals. Science and engineering (S&amp;amp;E) fields continue to grow across degree levels. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017. Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients. The United States remains the destination for the largest number of internationally mobile students worldwide. However, over the past 2 years, the total number of international students enrolled in U.S. institutions has declined. Among the major S&amp;amp;E degree–producing countries worldwide, China has seen a rapid increase in its S&amp;amp;E degree production over time, compared with a more moderate rise in the United States and the European Union. The U.S. higher education system consists of diverse academic institutions—including research and doctorate-granting universities, primarily undergraduate institutions, minority-serving institutions, community colleges, and others, including some that span multiple categories—that train students in S&amp;amp;E across degree levels and fields. A small number of institutions awarded three-quarters of doctorates, nearly half of master’s degrees, and 40% of bachelor’s degrees in S&amp;amp;E fields in 2017. These institutions are also where most university research is performed (see the forthcoming Science and Engineering Indicators 2020 report “Academic Research and Development”): integration of academic S&amp;amp;E research and doctoral education is a key feature of the U.S. system. More students are earning S&amp;amp;E degrees. In numbers and as a percentage of total degrees, S&amp;amp;E degrees increased at the associate’s, bachelor’s, master’s, and doctoral levels between 2000 and 2017. In addition, community colleges train students in S&amp;amp;E and related fields including technologies, contributing to the pool of talent that earns higher degrees and to the development of the skilled technical workforce. While the costs of higher education have increased over time, the percentages of bachelor’s and doctoral degree recipients who graduate with debt have remained roughly the same over the last 10 years. Among graduate students, sources of financial aid differ dramatically between master’s and doctoral students. In 2017, one-third of S&amp;amp;E master’s students received funding, in contrast to around 90% of S&amp;amp;E doctoral students. Most S&amp;amp;E doctoral students rely on multiple funding sources (e.g., institutional, federal) and mechanisms (e.g., research and teaching assistantships and fellowships). The federal role in S&amp;amp;E graduate training remains important, although it has diminished over time. In 2017, the federal government supported 15% of full-time S&amp;amp;E graduate students (down from nearly 21% in 2004), including around one-quarter of doctoral students. Many groups of Americans remain underrepresented among S&amp;amp;E degree recipients. Women are at or approaching parity with men at most degree levels overall, but within fields, long-standing differences persist, especially in engineering, computer sciences, and mathematics and statistics. Blacks are underrepresented at all degree levels; Hispanics and American Indians and Alaska Natives are underrepresented at all but the associate’s level. Members of different racial and ethnic groups are more likely to earn S&amp;amp;E degrees, especially doctorates, from for-profit institutions, which may have consequences for debt levels and career outcomes. The U.S. higher education system remains a top destination for foreign S&amp;amp;E students. Although 2018 marked a second year of decline in the total number of foreign students studying in the United States, the decline was small (less than 1%), and more undergraduate and graduate students were studying S&amp;amp;E fields. Four countries—China, India, South Korea, and Saudi Arabia—account for more than half of foreign students in the United States. The number of Chinese S&amp;amp;E graduate students studying in the United States has continued to increase (by 11% over the last 2 years), whereas the number of Indian S&amp;amp;E graduate students sharply declined (by 22% over the last 2 years). Foreign students account for about one-third of U.S. S&amp;amp;E doctorate recipients, a relatively stable proportion over time. They account for half or more of the doctorate recipients in engineering, computer sciences, and economics. China, India, and South Korea are the top three source countries for foreign recipients of U.S. S&amp;amp;E doctoral degrees. In comparison, students on temporary visas earn a smaller share (around 5%) of S&amp;amp;E bachelor’s degrees; however, the number of these students has more than doubled over the last 10 years. Other nations’ higher education systems have become increasingly competitive. S&amp;amp;E first university degrees awarded by Chinese institutions doubled to 1.7 million between 2005 and 2015, far outpacing most other countries, including the United States. Institutions in the United States award more S&amp;amp;E doctoral degrees than any other nation. However, in natural sciences and engineering, China surpassed the United States in 2007 as the world’s largest producer of doctoral degrees and has remained so since.</summary></entry><entry><title type="html">Update on Affective Dimensions in Chemistry Education</title><link href="http://localhost:4000/dwn" rel="alternate" type="text/html" title="Update on Affective Dimensions in Chemistry Education" /><published>2019-09-07T00:00:00-05:00</published><updated>2019-09-07T00:00:00-05:00</updated><id>http://localhost:4000/dwn</id><content type="html" xml:base="http://localhost:4000/dwn">&lt;p&gt;&lt;a href=&quot;/yfg&quot;&gt;Affective Dimensions in Chemistry Education&lt;/a&gt; was published in January 2015. Since then the book has received a number of citations, downloaded many times, and read by many scholars. This blog page updates these relevant stats.&lt;/p&gt;
+
+&lt;p&gt;This is a unique resource for those wishing to address the affective domain as they research and solve problems in chemistry education. Contributions by world-leading experts cover both fundamental considerations and practical case studies. This work fills a gap in the literature of chemistry education, which so far has focussed mainly on the cognitive domain. The affective domain refers to feelings-based constructs such as attitudes, values, beliefs, opinions, emotions, interests, motivation, and a degree of acceptance or rejection. It can affect students’ interest in science topics and their motivation to persevere in learning science concepts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DISCIPLINES&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chemistry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;SUBDISCIPLINES&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chemistry/Food Science&lt;/li&gt;
+  &lt;li&gt;general&lt;/li&gt;
+  &lt;li&gt;Science Education&lt;/li&gt;
+  &lt;li&gt;Teaching and Teacher Education&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;LOC SUBJECTS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chemistry&lt;/li&gt;
+  &lt;li&gt;Science&lt;/li&gt;
+  &lt;li&gt;Study and Teaching&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ADCE STATS&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Session&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Topics&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Reading&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Citations&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Readers&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Downloads&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;First law of thermodynamics&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.2-4&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Enthalpy and calorimetry&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.5-7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Using Hess’s law and bond dissociation energies to find heats of reaction&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.8-9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Heats of formation; Born-Haber cycles and lattice energy&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 9.10-11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Kinetic molecular theory; pressure; simple gas laws; ideal gas law&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.2-5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Density; molar volume and molar mass; gas stoichiometry&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.5-6, 10&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Partial pressures; temperature and velocity distributions, effusion and diffusion, real gasses&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 10.7-9, 11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 1&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Exam 1&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;10&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Intermolecular forces; surface tension and viscosity; capillary action; vapor pressure&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.2-4&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;11&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Vapor pressure&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;12&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Phase changes; heating curves; phase diagrams&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 11.6-9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;13&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;X-ray crystallography; unit cells; crystalline solids; ionic and covalent solids&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 12.2-6&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;14&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Glasses and ceramics; band theory; polymers&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 12.7-9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Energetics of solutions; solubility; concentration&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 13.2-5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;16&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Colligative properties&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 13.6-7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;17&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 2&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;18&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Exam 2&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;19&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Reaction rates&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.2-3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;20&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Rate laws; reaction order&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.4&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;21&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Integrated rate laws; half life; Arrhenius equation&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.5-6&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;22&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Reaction mechanisms; catalysis&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 14.7-8&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;23&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Chemical equilibrium; introducing the equilibrium constant&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.2-3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;24&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Forms of the equilibrium constant; calculating equilibrium constants from data&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.4-6&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;25&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;The reaction quotient, calculating equilibrium concentrations of reactants and products.&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.6-8&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;26&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Le Châtelier’s principle&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;§ 15.9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;27&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Wrap-up; review for Exam 3&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;28&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Exam 3&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;29&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Review for the Final Exam; OTEs&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;30&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Final Exam&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;20&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;133&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;13,900&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">Chemistry 132 is the second course in the three- quarter General Chemistry sequence. It is designed to give students a fundamental understanding of chemistry and may be used by non-science majors to fulfill a Scientific Inquiry learning domain requirement in the Liberal Studies Program. The topics covered in Chemistry 132 include: thermochemistry; properties of various states of matter, including gases, liquid, solids, and solutions; kinetics of chemical reactions; and basics of chemical equilibrium.</summary></entry><entry><title type="html">General Chemistry II Lab</title><link href="http://localhost:4000/osy" rel="alternate" type="text/html" title="General Chemistry II Lab" /><published>2020-04-01T00:00:00-05:00</published><updated>2020-04-01T00:00:00-05:00</updated><id>http://localhost:4000/osy</id><content type="html" xml:base="http://localhost:4000/osy">&lt;p&gt;Chemistry 133 is a co-requisite for Chemistry 132, General Chemistry II (or for chemistry 122). A C- or higher in CHE130 (or CHE120) and CHE131 are perquisites for this course. This course in conjunction with Chemistry 132/122 can be used by non-science majors to fulfill a Scientific Inquiry: Lab (SI:Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, lab- oratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.&lt;/p&gt;
-
-&lt;p&gt;The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, you will fail this course if you have two or more unexcused laboratory absences.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-scientific-inquiry-learning-domain-learning-outcomes-and-writing-expectations&quot;&gt;The scientific inquiry learning domain learning outcomes and writing expectations&lt;/h3&gt;
-
-&lt;p&gt;The learning outcomes for the SI:Lab learning domain are listed below. They may also be found online on the Liberal Studies Program web site.&lt;/p&gt;
-
-&lt;p&gt;In the context of natural science content, and building on the understanding of the scientific worldview and the nature and process of science they have developed in the Science as a Way of Knowing (SWK) course:
-Students will understand how science serves as a mechanism for inquiry into the natural world through hands-on, experience-based investigation.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Students will be able to pose meaningful scientific questions and generate testable scientific hypotheses.&lt;/li&gt;
-  &lt;li&gt;Students will be able to plan, design and conduct scientific investigations in a collaborative environment using appropriate tools and techniques to gather relevant data in order to test and revise scientific hypotheses.&lt;/li&gt;
-  &lt;li&gt;Students will be able to develop and use scientific models (conceptual, physical, and mathematical) to make predictions and develop explanations of natural phenomena.&lt;/li&gt;
-  &lt;li&gt;Students will be able to address variability in the data and recognize and analyze alternative explanations and predictions.&lt;/li&gt;
-  &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">Chemistry 133 is a co-requisite for Chemistry 132, General Chemistry II (or for chemistry 122). A C- or higher in CHE130 (or CHE120) and CHE131 are perquisites for this course. This course in conjunction with Chemistry 132/122 can be used by non-science majors to fulfill a Scientific Inquiry: Lab (SI:Lab) learning domain requirement in the Liberal Studies Program. The laboratory experiments you perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, lab- oratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">General Chemistry III Lab</title><link href="http://localhost:4000/tvo" rel="alternate" type="text/html" title="General Chemistry III Lab" /><published>2020-04-01T00:00:00-05:00</published><updated>2020-04-01T00:00:00-05:00</updated><id>http://localhost:4000/tvo</id><content type="html" xml:base="http://localhost:4000/tvo">&lt;p&gt;CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.&lt;/p&gt;
-
-&lt;p&gt;The laboratory is a critical component of your education as a scientist. Because of the importance of the laboratory, if you have two or more laboratory absences for invalid reasons, you will fail this course.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-scientific-inquiry-learning-domain-learning-outcomes-and-writing-expectations&quot;&gt;The scientific inquiry learning domain learning outcomes and writing expectations&lt;/h3&gt;
-
-&lt;p&gt;The learning outcomes for the SI:Lab learning domain are listed below. They may also be found online on the Liberal Studies Program web site.&lt;/p&gt;
-
-&lt;p&gt;In the context of natural science content, and building on the understanding of the scientific worldview and the nature and process of science they have developed in the Science as a Way of Knowing (SWK) course:
-Students will understand how science serves as a mechanism for inquiry into the natural world through hands-on, experience-based investigation.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Students will be able to pose meaningful scientific questions and generate testable scientific hypotheses.&lt;/li&gt;
-  &lt;li&gt;Students will be able to plan, design and conduct scientific investigations in a collaborative environment using appropriate tools and techniques to gather relevant data in order to test and revise scientific hypotheses.&lt;/li&gt;
-  &lt;li&gt;Students will be able to develop and use scientific models (conceptual, physical, and mathematical) to make predictions and develop explanations of natural phenomena.&lt;/li&gt;
-  &lt;li&gt;Students will be able to address variability in the data and recognize and analyze alternative explanations and predictions.&lt;/li&gt;
-  &lt;li&gt;Students will be able to communicate scientific procedures, results, and explanations and engage in arguments based on scientific evidence.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Formal writing is essential for communicating ideas and progress in science, mathematics, and computation to experts within the field and to the broader society. Courses within the Scientific Inquiry Domain should include both formal writing (for example lab reports, essays, and written responses to questions) and supplemental elements that are appropriate for the subject of the course such as mathematical equations, computer code, figures and graphs, lab notebooks, or field journals.&lt;/p&gt;</content><author><name></name></author><summary type="html">CHE 135 is a co-requisite for CHE 134, General Chemistry III. The laboratory experiments you will perform will reinforce material presented in lecture and allow you to explore lecture topics in more detail. Specific learning objectives for each experiment can be found in the laboratory manual. You will be assessed based on your level of preparedness, accuracy, laboratory technique, data analysis, and overall understanding of the experiments. Your results, analysis, and understanding will be presented in laboratory reports. The writing of laboratory reports will also offer you the opportunity to develop your scientific writing skills.</summary></entry><entry><title type="html">Affective States and Online Teaching in Chemistry Education</title><link href="http://localhost:4000/ofs" rel="alternate" type="text/html" title="Affective States and Online Teaching in Chemistry Education" /><published>2020-03-24T00:00:00-05:00</published><updated>2020-03-24T00:00:00-05:00</updated><id>http://localhost:4000/tgd</id><content type="html" xml:base="http://localhost:4000/ofs">&lt;p&gt;This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.&lt;/p&gt;</content><author><name></name></author><summary type="html">This project has just initiated and is currently at the literature review phase. Further details about the future directions and outputs will be announced in this page.</summary></entry></feed>
+&lt;/table&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Books" /><summary type="html">ADCE's recent stats from Springer.</summary></entry></feed>
