@@ -1,8 +1,0 @@
-I"×<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="p">{</span><span class="sx">% include </span><span class="n">image</span><span class="p">.</span><span class="nf">html</span>
-<span class="n">max</span><span class="o">-</span><span class="n">width</span><span class="o">=</span><span class="s2">"200px"</span> <span class="n">file</span><span class="o">=</span><span class="s2">"/images/logo.png"</span> <span class="n">alt</span><span class="o">=</span><span class="s2">"kahveci group logo"</span>
-<span class="n">caption</span><span class="o">=</span><span class="s2">"This is the kahveci group logo."</span> 
-<span class="sx">%}
-
-</span></code></pre></div></div>
-:ET
