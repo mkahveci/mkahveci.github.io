@@ -1,0 +1,40 @@
+monthyear: Jul 2018
+year: 2018
+url: /lys #  This month's file name from the collection _biking-activities
+urlannual: /wla #  This year's file name from the collection _biking-annual
+activities:
+  - date: 7/28/18
+    distance: 25.03
+    duration: 72.43
+    calories: 565
+    averagespeed: 20.7                     
+  - date: 7/18/18
+    distance: 29.11
+    duration: 72.57
+    calories: 1274
+    averagespeed: 24.1
+  - date: 7/11/18
+    distance: 8.84
+    duration: 25.53
+    calories: 283
+    averagespeed: 20.8
+  - date: 7/11/18
+    distance: 14.98
+    duration: 34.23
+    calories: 591
+    averagespeed: 22.7
+  - date: 7/11/18
+    distance: 5.00
+    duration: 13.17
+    calories: 186    
+    averagespeed: 22.7            
+  - date: 7/8/18
+    distance: 24.70
+    duration: 62.83
+    calories: 844
+    averagespeed: 23.6
+  - date: 7/3/18
+    distance: 31.48
+    duration: 82.13
+    calories: 1130
+    averagespeed: 23.0   

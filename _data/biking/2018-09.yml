@@ -1,0 +1,30 @@
+monthyear: Sep 2018
+year: 2018
+url: /vva #  This month's file name from the collection _biking-activities
+urlannual: /wla #  This year's file name from the collection _biking-annual
+activities:
+  - date: 9/23/18
+    distance: 36.32
+    duration: 90.77
+    calories: 2202
+    averagespeed: 24.0
+  - date: 9/16/18
+    distance: 47.94
+    duration: 122.78
+    calories: 2271
+    averagespeed: 23.4
+  - date: 9/9/18
+    distance: 36.22
+    duration: 89.03
+    calories: 1305
+    averagespeed: 24.4
+  - date: 9/8/18
+    distance: 61.94
+    duration: 158.57
+    calories: 2358
+    averagespeed: 23.4
+  - date: 9/2/18
+    distance: 36.41
+    duration: 99.03
+    calories: 1418
+    averagespeed: 22.0            

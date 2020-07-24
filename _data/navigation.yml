@@ -1,0 +1,24 @@
+header: 
+  - title: About
+    url: /about   
+  - title: Blog
+    url: /archive    
+  - title: Projects
+    url: /projects    
+  - title: Publications
+    url: /publications 
+  - title: Team
+    url: /team 
+  - title: Album
+    url: /album
+        
+team: 
+  - title: kahveci group
+    children:
+    - title: Team
+      url: /team
+    - title: Alumni
+      url: /alumni
+    - title: Album
+      url: /album  
+     
