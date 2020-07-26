@@ -27,3 +27,4 @@ header:
   * [Biking activities](/biking) were added.
   * Data visualizations were added using flowcharts, line and bar graphs.
   * Publication types are linked to their categories.  
+  

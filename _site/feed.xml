@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-24T18:29:45-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Experiment 1. Raoult’s Law</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="Experiment 1. Raoult's Law" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-26T10:43:34-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Experiment 1. Raoult’s Law</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="Experiment 1. Raoult's Law" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-area-values-for-the-pure-substances&quot;&gt;The area values for the pure substances&lt;/h2&gt;
 
 &lt;p&gt;These values can be extracted from the Liquid data (the first table) and Gas data (the second table) separately. So, we will read this information as follows:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;When Part A equals to 1.0, it is &lt;strong&gt;pure pentane&lt;/strong&gt;. Pure pentane has both liquid and gas phases.
+  &lt;li&gt;When Part A equals to 1.0, it is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pure pentane&lt;/code&gt;. Pure pentane has both liquid and gas phases.
     &lt;ul&gt;
       &lt;li&gt;Liquid area: $ 5.10 \times 10^4 ~pA.s $&lt;/li&gt;
       &lt;li&gt;Gas area: $ 6.19 \times 10^4 ~pA.s $&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;When Part A equals to 0.0, it is &lt;strong&gt;pure hexane&lt;/strong&gt;. Pure hexane has both liquid and gas phases.
+  &lt;li&gt;When Part A equals to 0.0, it is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pure hexane&lt;/code&gt;. Pure hexane has both liquid and gas phases.
     &lt;ul&gt;
       &lt;li&gt;Liquid area: $ 6.57 \times 10^4 ~pA.s $&lt;/li&gt;
       &lt;li&gt;Gas area: $ 2.82 \times 10^4 ~pA.s $&lt;/li&gt;
@@ -27,7 +27,21 @@
 
 &lt;h2 id=&quot;access-to-the-datasets&quot;&gt;Access to the datasets&lt;/h2&gt;
 
-&lt;p&gt;After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt;.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Some notes in response to incoming questions about Raoult's Law.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
+&lt;p&gt;After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-do-we-have-the-dcm-and-acetone-data-set&quot;&gt;Why do we have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCM&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acetone&lt;/code&gt; data set?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757294/View&quot;&gt;Experiment 1 Raoult’s Law Students&lt;/a&gt; dataset is for only practice. This data set is used for instructional video. Students should download the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCM&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acetone&lt;/code&gt; data and do the analysis while watching the video for the Excel workshop: &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757297/View&quot;&gt;Experiment 1 Raoult’s Law Excel Workshop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-data-do-i-use-for-the-worksheet&quot;&gt;What data do I use for the worksheet?&lt;/h3&gt;
+
+&lt;p&gt;The worksheet should be completed by using the &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt; dataset. This data set belongs to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hexane&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heptane&lt;/code&gt; mixture.&lt;/p&gt;
+
+&lt;h2 id=&quot;is-the-assignment-only-a-worksheet-no-lab-report&quot;&gt;Is the assignment only a worksheet, no lab report?&lt;/h2&gt;
+
+&lt;p&gt;Yes. This experiment has only worksheet. You do not write a lab report.&lt;/p&gt;
+
+&lt;p&gt;Please see the last slide of &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View&quot;&gt;Experiment 1 Raoult’s Law Lecture&lt;/a&gt; for more details.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Some notes in response to incoming questions about Raoult's Law.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
   &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
 
   &lt;p&gt;Professor Kahveci,&lt;/p&gt;

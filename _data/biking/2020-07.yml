@@ -4,6 +4,12 @@ url: /liz #  This month's file name from the collection _biking-activities
 urlannual: /fyv #  This year's file name from the collection _biking-annual
 activities:
 
+  - date: 7/25/20
+    distance: 120.82
+    duration: 324
+    calories: 3063
+    averagespeed: 22.4
+
   - date: 7/22/20
     distance: 50.48
     duration: 130.17

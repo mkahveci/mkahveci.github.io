@@ -34,7 +34,7 @@
     </tr>
     <tr>
       <td>Total duration:</td>
-      <td>{% include numberWithCommas.html number=total_duration_ %} min ({{ total_duration | divided_by: 60 | round: 2 }} h) </td>
+      <td>{% include numberWithCommas.html number=total_duration_ %} min ({{ total_duration | divided_by: 60. | round: 2 }} h) </td>
     </tr>
     <tr>
       <td>Total calories:</td>

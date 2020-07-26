@@ -29,6 +29,10 @@
 <lastmod>2015-09-03T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/auv</loc>
+<lastmod>2018-05-01T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/nkq</loc>
 <lastmod>2018-06-01T00:00:00-05:00</lastmod>
 </url>
@@ -483,6 +487,10 @@
 <url>
 <loc>http://localhost:4000/hhy</loc>
 <lastmod>2020-07-24T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/eux</loc>
+<lastmod>2020-07-25T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/sau</loc>
