@@ -1,0 +1,17 @@
+I".<h3 id="insert-image-with-max-width">Insert image with max width</h3>
+
+<p>{% include image.html max-width=”200px” file=”/images/logo.png” alt=”kahveci group logo”
+caption=”This is the kahveci group logo.” %}</p>
+
+<h3 id="list-relevant-posts-by-a-tag">List relevant posts by a tag</h3>
+
+<p>{% include list-relevant-posts.html tag=”SSQ20 CHE 139” %}</p>
+
+<h3 id="menu-button">Menu button</h3>
+
+<pre>
+    <code>
+        <a class="button button--outline-success button--pill button--xs" href="/help">kahveci group Help</a>
+    </code>
+</pre>
+:ET

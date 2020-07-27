@@ -1,0 +1,391 @@
+I"l<p>This page lists <a href="/murat#hobbies">Murat</a>’s logs about Biking Activities. This is a community sharing of his life style.</p>
+
+<pre><code class="language-mermaid">graph TB;
+    A[Am I cycling outdoor?]
+    B[I share my stats below.]
+    C[Is it road-bike only?]
+    D[Are the activities GPS based?]
+    E[Is Adidas Runtastic used?]
+    F[Is watchOS Activity used?]
+    G[Is Strava used?]
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    C--yes--&gt;B; 
+    A--yes--&gt;D; 
+    D--yes--&gt;B; 
+    D--yes--&gt;E;
+    E--yes--&gt;B;
+    D--yes--&gt;F;
+    F--yes--&gt;B;
+    D--yes--&gt;G;
+    G--yes--&gt;B;
+</code></pre>
+
+<pre><code class="language-chart">{
+  "type": "line",
+  "data": {
+    "labels": [
+          
+            
+            
+
+
+
+
+
+
+  
+  
+
+  
+  2018 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2019 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2020 
+            
+          
+    ],
+    "datasets": [
+      {
+        "label": "Cumulative distance in km",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(146,105,198,0.4)",
+        "borderColor": "rgba(146,105,198,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(146,105,198,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(146,105,198,1)",
+        "pointHoverBorderColor": "rgba(146,105,198,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          
+            
+            1132.8 
+            ,
+          
+            
+            1351.9 
+            ,
+          
+            
+            2396.2 
+            
+          
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}
+</code></pre>
+<p class="info">Figure 1. Cumulative biking distance (km) vs. time (year). Most of 2019 include indoor strength training activities, so road biking stats turned out to be fairly limited.</p>
+
+<pre><code class="language-chart">{
+  "type": "bar",
+  "data": {
+    "labels": [
+          
+            
+            
+
+
+
+
+
+
+  
+  
+
+  
+  2018 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2019 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2020 
+            
+          
+    ],
+    "datasets": [
+      {
+        "label": "Duration in minutes",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(146,105,198,0.4)",
+        "borderColor": "rgba(146,105,198,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(146,105,198,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(146,105,198,1)",
+        "pointHoverBorderColor": "rgba(146,105,198,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          
+            
+            3177.4 
+            ,
+          
+            
+            586.7 
+            ,
+          
+            
+            2900.4 
+            
+          
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}
+</code></pre>
+<p class="info">Figure 2. Biking duration (mins) vs. time (year).</p>
+
+<pre><code class="language-chart">{
+  "type": "bar",
+  "data": {
+    "labels": [
+          
+            
+            
+
+
+
+
+
+
+  
+  
+
+  
+  2018 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2019 
+            ,
+          
+            
+            
+
+  
+  
+
+  
+  2020 
+            
+          
+    ],
+    "datasets": [
+      {
+        "label": "Energy in Cal",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(146,105,198,0.4)",
+        "borderColor": "rgba(146,105,198,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(146,105,198,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(146,105,198,1)",
+        "pointHoverBorderColor": "rgba(146,105,198,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          
+            
+            43134
+   
+            ,
+          
+            
+            6850
+   
+            ,
+          
+            
+            25433
+  
+
+ 
+            
+          
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}
+</code></pre>
+<p class="info">Figure 3. Energy (Cal) vs. time (year).</p>
+
+<h2 id="all-logs">All Logs</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Year</th>
+    <th>Number of Activities</th>
+    <th>Total Distance (km)</th>
+    <th>Total Duration (min)</th>
+    <th>Total Calories (Cal)</th>
+  </tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<tr>
+  <td><a href="/fyv">2020</a></td>
+  <td><!-- _include -->
+29
+</td>
+  <td><!-- _include -->
+1,044
+</td>
+  <td><!-- _include -->
+2,900
+</td>
+  <td><!-- _include -->
+25,433
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<tr>
+  <td><a href="/osn">2019</a></td>
+  <td><!-- _include -->
+8
+</td>
+  <td><!-- _include -->
+219
+</td>
+  <td><!-- _include -->
+587
+</td>
+  <td><!-- _include -->
+6,850
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<tr>
+  <td><a href="/wla">2018</a></td>
+  <td><!-- _include -->
+32
+</td>
+  <td><!-- _include -->
+1,133
+</td>
+  <td><!-- _include -->
+3,177
+</td>
+  <td><!-- _include -->
+43,134
+</td>
+</tr>
+
+
+</tbody>
+</table>
+:ET

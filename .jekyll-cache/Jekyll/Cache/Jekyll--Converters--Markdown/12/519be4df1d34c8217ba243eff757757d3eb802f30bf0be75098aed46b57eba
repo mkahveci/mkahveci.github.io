@@ -1,0 +1,175 @@
+I"ç<p><a class="button button--outline-success button--pill button--xs" href="/biking">Biking Activities</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This page lists <a href="/murat#hobbies">Murat</a>‚Äôs logs about Biking Activities in July 2020. This is a community sharing of his life style.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Overall Statistics of July 2020 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of activities:</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Total distance:</td>
+      <td><!-- _include -->
+195
+ km (121.22 mi)</td>
+    </tr>
+    <tr>
+      <td>Total duration:</td>
+      <td><!-- _include -->
+513
+ min (8.55 h) </td>
+    </tr>
+    <tr>
+      <td>Total calories:</td>
+      <td><!-- _include -->
+4,756
+ Cal</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="daily-logs">Daily Logs</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Distance (km)</th>
+    <th>Duration (min)</th>
+    <th>Calories (Cal)</th>
+    <th>Average Speed (kph)</th>
+  </tr>
+</thead>
+<tbody>
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+  
+    
+
+
+
+
+
+
+        <tr>
+          <td>7/22/20</td>
+          <td>50</td>
+          <td>0</td>
+          <td><!-- _include -->
+1,242
+</td>
+          <td>23.3</td>
+        </tr>
+    
+
+
+
+
+
+
+        <tr>
+          <td>7/17/20</td>
+          <td>32</td>
+          <td>0</td>
+          <td><!-- _include -->
+760
+</td>
+          <td>23.0</td>
+        </tr>
+    
+
+
+
+
+
+
+        <tr>
+          <td>7/12/20</td>
+          <td>86</td>
+          <td>0</td>
+          <td><!-- _include -->
+2,104
+</td>
+          <td>22.7</td>
+        </tr>
+    
+
+
+
+
+
+
+        <tr>
+          <td>7/5/20</td>
+          <td>27</td>
+          <td>0</td>
+          <td><!-- _include -->
+650
+</td>
+          <td>22.3</td>
+        </tr>
+    
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+</tbody>
+</table>
+:ET

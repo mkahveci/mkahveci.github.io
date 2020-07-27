@@ -1,0 +1,150 @@
+I"Ô<p><a class="button button--outline-success button--pill button--xs" href="/biking">Biking Activities</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This page lists <a href="/murat#hobbies">Murat</a>â€™s logs about Biking Activities in Mar 2020. This is a community sharing of his life style.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Overall Statistics of Mar 2020 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of activities:</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Total distance:</td>
+      <td><!-- _include -->
+104
+ km (64.39 mi)</td>
+    </tr>
+    <tr>
+      <td>Total duration:</td>
+      <td><!-- _include -->
+299
+ min (4.98 h) </td>
+    </tr>
+    <tr>
+      <td>Total calories:</td>
+      <td><!-- _include -->
+2,449
+ Cal</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="daily-logs">Daily Logs</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Distance (km)</th>
+    <th>Duration (min)</th>
+    <th>Calories (Cal)</th>
+    <th>Average Speed (kph)</th>
+  </tr>
+</thead>
+<tbody>
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+  
+    
+
+
+
+        <tr>
+          <td>3/25/20</td>
+          <td>24</td>
+          <td>69</td>
+          <td><!-- _include -->
+595
+</td>
+          <td>21.2</td>
+        </tr>
+    
+
+
+
+        <tr>
+          <td>3/8/20</td>
+          <td>25</td>
+          <td>74</td>
+          <td><!-- _include -->
+578
+</td>
+          <td>19.9</td>
+        </tr>
+    
+
+
+
+        <tr>
+          <td>3/1/20</td>
+          <td>55</td>
+          <td>156</td>
+          <td><!-- _include -->
+1,276
+</td>
+          <td>21.0</td>
+        </tr>
+    
+    
+
+   
+    
+
+   
+    
+
+</tbody>
+</table>
+:ET

@@ -1,0 +1,121 @@
+I"l<p><a class="button button--outline-success button--pill button--xs" href="/biking">Biking Activities</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>This page lists <a href="/murat#hobbies">Murat</a>’s logs about Biking Activities in Aug 2019. This is a community sharing of his life style.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Overall Statistics of Aug 2019 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of activities:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Total distance:</td>
+      <td><!-- _include -->
+35
+ km (22.04 mi)</td>
+    </tr>
+    <tr>
+      <td>Total duration:</td>
+      <td><!-- _include -->
+96
+ min (1.6 h) </td>
+    </tr>
+    <tr>
+      <td>Total calories:</td>
+      <td><!-- _include -->
+896
+ Cal</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="daily-logs">Daily Logs</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Distance (km)</th>
+    <th>Duration (min)</th>
+    <th>Calories (Cal)</th>
+    <th>Average Speed (kph)</th>
+  </tr>
+</thead>
+<tbody>
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+  
+    
+
+
+
+        <tr>
+          <td>8/11/19</td>
+          <td>35</td>
+          <td>96</td>
+          <td><!-- _include -->
+896
+</td>
+          <td>22.1</td>
+        </tr>
+    
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+   
+    
+
+</tbody>
+</table>
+:ET

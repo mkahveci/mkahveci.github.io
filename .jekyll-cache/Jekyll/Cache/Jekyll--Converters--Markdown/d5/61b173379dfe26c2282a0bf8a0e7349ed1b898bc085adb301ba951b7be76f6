@@ -1,0 +1,31 @@
+I"q<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+
+<h2 id="the-area-values-for-the-pure-substances">The area values for the pure substances</h2>
+
+<p>These values can be extracted from the Liquid data (the first table) and Gas data (the second table) separately. So, we will read this information as follows:</p>
+
+<ul>
+  <li>When Part A equals to 1.0, it is <strong>pure pentane</strong>. Pure pentane has both liquid and gas phases.
+    <ul>
+      <li>Liquid area: $ 5.10 \times 10^4 ~pA.s $</li>
+      <li>Gas area: $ 6.19 \times 10^4 ~pA.s $</li>
+    </ul>
+  </li>
+  <li>When Part A equals to 0.0, it is <strong>pure hexane</strong>. Pure hexane has both liquid and gas phases.
+    <ul>
+      <li>Liquid area: $ 6.57 \times 10^4 ~pA.s $</li>
+      <li>Gas area: $ 2.82 \times 10^4 ~pA.s $</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/blog/nzx/2.jpg" alt="image-1" class="border rounded" /></p>
+
+<h2 id="prepostlab-quizzes">Pre/postlab quizzes</h2>
+
+<p>These quizzes are set for unlimited attempts because 70% or higher is needed to continue the next steps. Therefore, the feedback functionality is limited on them. You would not see which questions were answered incorrectly in a previous attempt.</p>
+
+<h2 id="access-to-the-datasets">Access to the datasets</h2>
+
+<p>After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for <a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View">Experiment 1 Raoult’s Law Data</a>.</p>
+:ET
