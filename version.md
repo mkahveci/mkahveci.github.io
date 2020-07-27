@@ -11,7 +11,6 @@ header:
 ### New ideas
 
 * Members: Add peer review data in the [Publons](https://publons.com) style.
-* System maintenance.
 
 ### Ver. 20.07
 
