@@ -11,7 +11,7 @@ header:
 ### New ideas
 
 * Members: Add peer review data in the [Publons](https://publons.com) style.
-* This change is done at GitHub
+* delete the change Debian
 
 ### Ver. 20.07
 
