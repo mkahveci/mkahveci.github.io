@@ -1,0 +1,39 @@
+I"2<p><a class="button button--outline-success button--pill button--xs" href="/help">kahveci group Help</a></p>
+
+<h3 id="new-ideas">New ideas</h3>
+
+<ul>
+  <li>Members: Add peer review data in the <a href="https://publons.com">Publons</a> style.</li>
+  <li>test Debian</li>
+</ul>
+
+<h3 id="ver-2007">Ver. 20.07</h3>
+
+<ul>
+  <li>Updates:
+    <ul>
+      <li><a href="/biking">Biking activities</a> have some improvements.
+        <ul>
+          <li>The plots are dynamically generated.</li>
+          <li>More compact logs in a single table per page.</li>
+          <li>All numbers are properly rounded following the sig. fig. rules.</li>
+          <li>Thousand separators were added to large numbers (in tables only).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="ver-2006">Ver. 20.06</h3>
+
+<ul>
+  <li>Updates:
+    <ul>
+      <li><a href="/biking">Biking activities</a> were added.</li>
+      <li>Data visualizations were added using flowcharts, line and bar graphs.</li>
+      <li>Publication types are linked to their categories.</li>
+    </ul>
+  </li>
+</ul>
+
+:ET
