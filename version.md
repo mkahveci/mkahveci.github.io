@@ -11,6 +11,7 @@ header:
 ### New ideas
 
 * Members: Add peer review data in the [Publons](https://publons.com) style.
+- test Debian
 
 ### Ver. 20.07
 
