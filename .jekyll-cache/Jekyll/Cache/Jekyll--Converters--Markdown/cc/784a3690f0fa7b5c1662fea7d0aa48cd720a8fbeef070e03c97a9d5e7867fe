@@ -1,4 +1,4 @@
-I"®<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+I"´<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
 
 <h2 id="the-area-values-for-the-pure-substances">The area values for the pure substances</h2>
 
@@ -54,6 +54,18 @@
 
 <p>Please see the last slide of <a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View">Experiment 1 Raoultâ€™s Law Lecture</a> for more details.</p>
 
+<h3 id="assignment">Assignment</h3>
+
+<ul>
+  <li>Determine the partial pressure of each component</li>
+</ul>
+
+\[P_{i,v} = A_{i,v} \frac{P^0_i}{A^0_{i,v}}\]
+
+<ul>
+  <li>Generate the Raoultâ€™s law plot (see Figure 1 in the manual)</li>
+</ul>
+
 <h2 id="team-grading">Team grading</h2>
 
 <pre><code class="language-mermaid">  graph LR;
@@ -61,17 +73,30 @@
     B[Which sections are graded by the instructor?]
     C[Which sections are graded by the teaching assistant?]
 
-    D[Proofreading and General Formatting]
-    E[Prelab Assignment]
-    F[Lab Conduct]
-    G[Example Calculations]
+    B1[Proofreading and General Formatting]
+    B2[Prelab Assignment]
+    B3[Lab Conduct]
+    B4[Example Calculations]
+    B5[Discussion Questions]
+
+    C1[Figure Formatting]
+    C2[Graph 1]
+    C3[Graph 2]
+    C4[Excel Calculations: Acetone and DCM]
+    C5[Excel Calculations: Pentane and Hexane]
 
     A--yes--&gt;B;
     A--yes--&gt;C;
-    B--&gt;D;
-    B--&gt;E;
-    B--&gt;F;
-    B--&gt;G;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
 </code></pre>
 
 <p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>

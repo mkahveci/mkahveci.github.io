@@ -1,4 +1,28 @@
-I"�<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+I"�<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+
+<h3 id="goals">Goals</h3>
+
+<ul>
+  <li>Determine the moles of each pure liquid per unit area</li>
+</ul>
+
+\[n_A = A_{i,l} \frac{V_l \rho_i}{M_i A^0_{i,l}}\]
+
+<ul>
+  <li>Determine the mole fraction of component A in the liquid phase</li>
+</ul>
+
+\[\chi_A^l = \frac{n_A}{n_{\text{total}}}\]
+
+<ul>
+  <li>Determine the partial pressure of each component</li>
+</ul>
+
+\[P_{i,v} = A_{i,v} \frac{P^0_i}{A^0_{i,v}}\]
+
+<ul>
+  <li>Generate the Raoult’s law plot (see Figure 1 in the manual)</li>
+</ul>
 
 <h2 id="the-area-values-for-the-pure-substances">The area values for the pure substances</h2>
 
@@ -29,7 +53,7 @@
 
 <p>After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for <a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View">Experiment 1 Raoult’s Law Data</a>.</p>
 
-<h3 id="why-do-we-have-the-dcm-and-acetone-data-set">Why do we have the <code class="language-plaintext highlighter-rouge">DCM</code> and <code class="language-plaintext highlighter-rouge">acetone</code> data set?</h3>
+<h3 id="why-do-we-have-the-dcm-and-acetone-data-sets">Why do we have the <code class="language-plaintext highlighter-rouge">DCM</code> and <code class="language-plaintext highlighter-rouge">acetone</code> data sets?</h3>
 
 <p><a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757294/View">Experiment 1 Raoult’s Law Students</a> dataset is for only practice. This data set is used for instructional video. Students should download the <code class="language-plaintext highlighter-rouge">DCM</code> and <code class="language-plaintext highlighter-rouge">acetone</code> data and do the analysis while watching the video for the Excel workshop: <a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757297/View">Experiment 1 Raoult’s Law Excel Workshop</a>.</p>
 
@@ -56,15 +80,36 @@
 
 <h2 id="team-grading">Team grading</h2>
 
-<pre><code class="language-mermaid">  graph TB;
+<pre><code class="language-mermaid">  graph LR;
     A[Is the assignment for Experiment 1 graded as a team?]
     B[Which sections are graded by the instructor?]
     C[Which sections are graded by the teaching assistant?]
 
-    D[Proofreading and General Formatting]
+    B1[Proofreading and General Formatting]
+    B2[Prelab Assignment]
+    B3[Lab Conduct]
+    B4[Example Calculations]
+    B5[Discussion Questions]
+
+    C1[Figure Formatting]
+    C2[Graph 1]
+    C3[Graph 2]
+    C4[Excel Calculations: Acetone and DCM]
+    C5[Excel Calculations: Pentane and Hexane]
 
     A--yes--&gt;B;
     A--yes--&gt;C;
-    A----&gt;D;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
 </code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
 :ET

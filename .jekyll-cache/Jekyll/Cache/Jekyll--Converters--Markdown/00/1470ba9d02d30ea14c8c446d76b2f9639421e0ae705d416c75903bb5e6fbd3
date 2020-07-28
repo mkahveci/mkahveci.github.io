@@ -1,4 +1,4 @@
-I"�<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+I"k<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
 
 <h2 id="the-area-values-for-the-pure-substances">The area values for the pure substances</h2>
 
@@ -54,9 +54,31 @@
 
 <p>Please see the last slide of <a href="https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View">Experiment 1 Raoult’s Law Lecture</a> for more details.</p>
 
+<h3 id="assignment">Assignment</h3>
+
+<p>\frametitle{Goals}
+  \begin{itemize}</p>
+
+<p>\item [3.] Determine the partial pressure of each component</p>
+
+<p>\begin{equation<em>}
+  P_{i,v} = A_{i,v} \frac{P^0_i}{A^0_{i,v}}
+\end{equation</em>}</p>
+
+<p>\begin{description}
+  \item[$ P_{i,v} $:] Partial pressure of component $ i $ 
+  \item[$ P^0<em>{i,v} $:] Partial pressure of pure component $ i $ given by GC
+  \item[$ A</em>{i,v} $:] Integrated peak area for vapor $ i $ given by GC
+  \item[$ A^0_{i,v} $:] Integrated peak area for pure vapor $ i $ given by GC
+\end{description}</p>
+
+<p>\item [4.] Generate the Raoult’s law plot (see Figure 1 in the manual)
+  \end{itemize}
+}</p>
+
 <h2 id="team-grading">Team grading</h2>
 
-<pre><code class="language-mermaid">  graph TB;
+<pre><code class="language-mermaid">  graph LR;
     A[Is the assignment for Experiment 1 graded as a team?]
     B[Which sections are graded by the instructor?]
     C[Which sections are graded by the teaching assistant?]
