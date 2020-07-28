@@ -24,6 +24,6 @@ header:
 ### Ver. 20.06
 
 * Updates:
-  * [Biking activities](/biking) were added.
+  * A new module, [Biking activities](/biking), was added. Coded in Ruby.
   * Data visualizations were added using flowcharts, line and bar graphs.
   * Publication types are linked to their categories.  
