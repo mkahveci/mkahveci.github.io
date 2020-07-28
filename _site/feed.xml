@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-27T22:14:16-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Experiment 1. Raoult’s Law</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="Experiment 1. Raoult's Law" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-27T22:18:48-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Experiment 1. Raoult’s Law</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="Experiment 1. Raoult's Law" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -33,41 +33,6 @@
   &lt;li&gt;Upload the Worksheet in PDF format (download the template as MS Word file and fill it out by following the instructions).&lt;/li&gt;
   &lt;li&gt;Upload all calculations and data tables in an MS Excel file.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for Experiment 1 graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Proofreading and General Formatting]
-    B2[Prelab Assignment]
-    B3[Lab Conduct]
-    B4[Example Calculations]
-    B5[Discussion Questions]
-
-    C1[Figure Formatting]
-    C2[Graph 1]
-    C3[Graph 2]
-    C4[Excel Calculations: Acetone and DCM]
-    C5[Excel Calculations: Pentane and Hexane]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
 
 &lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
 
@@ -123,7 +88,42 @@
 
 &lt;p&gt;Yes. This experiment has only worksheet. You do not write a lab report.&lt;/p&gt;
 
-&lt;p&gt;Please see the last slide of &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View&quot;&gt;Experiment 1 Raoult’s Law Lecture&lt;/a&gt; for more details.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Some notes in response to incoming questions about Raoult's Law.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
+&lt;p&gt;Please see the last slide of &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View&quot;&gt;Experiment 1 Raoult’s Law Lecture&lt;/a&gt; for more details.&lt;/p&gt;
+
+&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
+    A[Is the assignment for Experiment 1 graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Prelab Assignment]
+    B3[Lab Conduct]
+    B4[Example Calculations]
+    B5[Discussion Questions]
+
+    C1[Figure Formatting]
+    C2[Graph 1]
+    C3[Graph 2]
+    C4[Excel Calculations: Acetone and DCM]
+    C5[Excel Calculations: Pentane and Hexane]
+
+    A--yes--&amp;gt;B;
+    A--yes--&amp;gt;C;
+    B--&amp;gt;B1;
+    B--&amp;gt;B2;
+    B--&amp;gt;B3;
+    B--&amp;gt;B4;
+    B--&amp;gt;B5;
+    C--&amp;gt;C1;
+    C--&amp;gt;C2;
+    C--&amp;gt;C3;
+    C--&amp;gt;C4;
+    C--&amp;gt;C5;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Some notes in response to incoming questions about Raoult's Law.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
   &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
 
   &lt;p&gt;Professor Kahveci,&lt;/p&gt;
