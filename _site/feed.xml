@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-30T10:42:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-30T11:02:42-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -302,6 +302,12 @@
 
 &lt;h3 id=&quot;the-area-values-for-the-pure-substances&quot;&gt;The area values for the pure substances&lt;/h3&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;I noticed that we did not have the area (pA * s) values for the pure substances. This value is necessary in order to begin calculations on the rest of the data. I have watched the lab introduction videos as well as your excel tutorial but I could not find this information and am hoping for some guidance to point me in the right direction.&lt;/p&gt;
+
+  &lt;p&gt;—Grace, 7/22/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;These values can be extracted from the Liquid data (the first table) and Gas data (the second table) separately. So, we will read this information as follows:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -323,21 +329,47 @@
 
 &lt;h3 id=&quot;prepostlab-quizzes&quot;&gt;Pre/postlab quizzes&lt;/h3&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;I just completed the post lab quiz for lab 1 but it doesn’t let me see which questions I answered incorrectly. Is there any way you can turn this setting on?&lt;/p&gt;
+
+  &lt;p&gt;—Afia, 7/22/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was just wondering how I can check what 2 answers I got wrong?&lt;/p&gt;
+
+  &lt;p&gt;—Mya, 7/22/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;These quizzes are set for unlimited attempts because 70% or higher is needed to continue the next steps. Therefore, the feedback functionality is limited on them. You would not see which questions were answered incorrectly in a previous attempt.&lt;/p&gt;
 
 &lt;h3 id=&quot;access-to-the-datasets&quot;&gt;Access to the datasets&lt;/h3&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;I have completed to pre-lab, post-lab, and lab videos for Lab 1. Can I have access to the data now?&lt;/p&gt;
+
+  &lt;p&gt;—Abbey, 7/22/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;p&gt;After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;why-do-we-have-the-dcm-and-acetone-data-sets&quot;&gt;Why do we have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCM&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acetone&lt;/code&gt; data sets?&lt;/h4&gt;
+&lt;h3 id=&quot;the-data-for-the-worksheet&quot;&gt;The data for the worksheet&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757294/View&quot;&gt;Experiment 1 Raoult’s Law Students&lt;/a&gt; dataset is for only practice. This data set is used for instructional video. Students should download the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCM&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acetone&lt;/code&gt; data and do the analysis while watching the video for the Excel workshop: &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757297/View&quot;&gt;Experiment 1 Raoult’s Law Excel Workshop&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What data do I use?&lt;/p&gt;
 
-&lt;h4 id=&quot;what-data-do-i-use-for-the-worksheet&quot;&gt;What data do I use for the worksheet?&lt;/h4&gt;
+  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;The worksheet should be completed by using the &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt; dataset. This data set belongs to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hexane&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heptane&lt;/code&gt; mixture.&lt;/p&gt;
 
-&lt;h4 id=&quot;what-data-do-i-use-for-the-excel-file&quot;&gt;What data do I use for the Excel file?&lt;/h4&gt;
+&lt;h3 id=&quot;the-data-for-the-excel-file&quot;&gt;The data for the Excel file&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What data do I use?&lt;/p&gt;
+
+  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Due to the &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757287/View&quot;&gt;rubric&lt;/a&gt; and unlike the worksheet, your Excel file should include the analyses of both data sets:&lt;/p&gt;
 
@@ -348,11 +380,17 @@
 
 &lt;p&gt;You will need to choose and report one of the data sets in the worksheet. Please make sure that you indicate which data set you chose by marking the appropriate checkbox in the worksheet.&lt;/p&gt;
 
-&lt;h3 id=&quot;is-the-assignment-only-a-worksheet-no-lab-report&quot;&gt;Is the assignment only a worksheet, no lab report?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757294/View&quot;&gt;Experiment 1 Raoult’s Law Students&lt;/a&gt; dataset is for only practice. This data set is used for instructional video. Students should download the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCM&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acetone&lt;/code&gt; data and do the analysis while watching the video for the Excel workshop: &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757297/View&quot;&gt;Experiment 1 Raoult’s Law Excel Workshop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-worksheet&quot;&gt;The worksheet&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is the assignment only a worksheet, no lab report?&lt;/p&gt;
+
+  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Yes. This experiment has only worksheet. You do not write a lab report.&lt;/p&gt;
-
-&lt;p&gt;Please see the last slide of &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6768442/View&quot;&gt;Experiment 1 Raoult’s Law Lecture&lt;/a&gt; for more details.&lt;/p&gt;
 
 &lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
 
