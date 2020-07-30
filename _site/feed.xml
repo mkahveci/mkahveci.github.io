@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-30T11:02:42-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-30T13:40:17-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -167,8 +167,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;I was only given the concentration for \([H^+]\). However I believe that I need the stock concentrations of the other reactants as well in order to be able to calculate the diluted concentration of thiosulfite. Is there something that I am missing about this?&lt;/p&gt;
-
-  &lt;p&gt;—Edward, 7/29/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;\([H^+]\) concentration was given for some data sets by mistake. These affected data sets have been updated. Please re-download your data set and assume that the stock solutions are exactly prepared in the suggested values in Table 1.&lt;/p&gt;
@@ -200,8 +198,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;We’re supposed to calculate \(M_2\) using data from Table 2. I’m not sure which volume to use with regards to runs since they change for different runs. Do I need to find \(M_2\) of all reactants for all 4 runs? Or do I just need to find \(M_2\) for a specific run?&lt;/p&gt;
-
-  &lt;p&gt;—Martha, 7/29/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Using the stock concentrations listed in Table 1 and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to Equation 1.&lt;/p&gt;
@@ -304,8 +300,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;I noticed that we did not have the area (pA * s) values for the pure substances. This value is necessary in order to begin calculations on the rest of the data. I have watched the lab introduction videos as well as your excel tutorial but I could not find this information and am hoping for some guidance to point me in the right direction.&lt;/p&gt;
-
-  &lt;p&gt;—Grace, 7/22/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;These values can be extracted from the Liquid data (the first table) and Gas data (the second table) separately. So, we will read this information as follows:&lt;/p&gt;
@@ -325,20 +319,16 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/nzx/2.jpg&quot; alt=&quot;image-1&quot; class=&quot;border rounded&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./images/blog/nzx/2.jpg&quot; alt=&quot;image-1&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;prepostlab-quizzes&quot;&gt;Pre/postlab quizzes&lt;/h3&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I just completed the post lab quiz for lab 1 but it doesn’t let me see which questions I answered incorrectly. Is there any way you can turn this setting on?&lt;/p&gt;
-
-  &lt;p&gt;—Afia, 7/22/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I was just wondering how I can check what 2 answers I got wrong?&lt;/p&gt;
-
-  &lt;p&gt;—Mya, 7/22/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;These quizzes are set for unlimited attempts because 70% or higher is needed to continue the next steps. Therefore, the feedback functionality is limited on them. You would not see which questions were answered incorrectly in a previous attempt.&lt;/p&gt;
@@ -347,8 +337,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;I have completed to pre-lab, post-lab, and lab videos for Lab 1. Can I have access to the data now?&lt;/p&gt;
-
-  &lt;p&gt;—Abbey, 7/22/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;After the completion of postlab quiz with 70% or higher grade, you are allowed to download the data sets assigned to you. You may need to refresh your browser to enable the hyperlink for &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt;.&lt;/p&gt;
@@ -357,8 +345,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;What data do I use?&lt;/p&gt;
-
-  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The worksheet should be completed by using the &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757299/View&quot;&gt;Experiment 1 Raoult’s Law Data&lt;/a&gt; dataset. This data set belongs to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hexane&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heptane&lt;/code&gt; mixture.&lt;/p&gt;
@@ -367,8 +353,6 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;What data do I use?&lt;/p&gt;
-
-  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Due to the &lt;a href=&quot;https://d2l.depaul.edu/d2l/le/content/761098/viewContent/6757287/View&quot;&gt;rubric&lt;/a&gt; and unlike the worksheet, your Excel file should include the analyses of both data sets:&lt;/p&gt;
@@ -386,13 +370,25 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;Is the assignment only a worksheet, no lab report?&lt;/p&gt;
-
-  &lt;p&gt;—Irene, 7/25/20&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Yes. This experiment has only worksheet. You do not write a lab report.&lt;/p&gt;
 
-&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
+&lt;h3 id=&quot;using-the-online-version-of-ms-office-and-a-chromebook&quot;&gt;Using the online version of MS Office and a Chromebook&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was wondering if you could assist me with making the graphs for Experiment 1… This is a very short video the issue I am running into.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Watching the video, I see that you are using the online version of MS Office and a Chromebook. I have not tested Chromebook specifically but I am quite positive that you need a regular computer to complete this course assignments. Even an old laptop/desktop maybe more powerful than a Chromebook. You should download and install a copy of MS Office on your computer in order to fully follow my instructions to make graphs and calculations in Excel. Here is the &lt;a href=&quot;https://offices.depaul.edu/information-services/services/Software/Pages/Software-for-Personal-Computers.aspx&quot;&gt;link&lt;/a&gt; for students to obtain a free MS Office copy.&lt;/p&gt;
+
+&lt;h2 id=&quot;assessment&quot;&gt;Assessment&lt;/h2&gt;
+
+&lt;h3 id=&quot;common-misconceptions&quot;&gt;Common misconceptions&lt;/h3&gt;
+
+&lt;h3 id=&quot;formatting-issues&quot;&gt;Formatting issues&lt;/h3&gt;
+
+&lt;h3 id=&quot;team-grading&quot;&gt;Team grading&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
     A[Is the assignment for the Raoult's Law Experiment graded as a team?]
