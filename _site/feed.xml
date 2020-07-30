@@ -1,131 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-29T21:49:27-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Iodine Clock Experiment</title><link href="http://localhost:4000/ykf" rel="alternate" type="text/html" title="The Iodine Clock Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/ykf</id><content type="html" xml:base="http://localhost:4000/ykf">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Determine the general rate law for a chemical reaction by calculating the reaction rate for various concentrations of reactants.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Using the concentrations listed on the reagent bottles and the volumes in Table 2, calculate the diluted concentrations for each species using&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-\[M_2 = \frac{M_1V_1}{V_2}\]
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate the reaction rate for each trial using the diluted concentration of thiosulfate and the time (in seconds) it took for the blue complex to appear, using&lt;/li&gt;
-&lt;/ul&gt;
-
-\[\text{rate} = \frac{1}{2} \frac{[S_2O_3^{2-}]_i}{\Delta t}\]
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;The partial order of each reactant will be found by comparing different rates and sets of concentrations to one another, yielding the experimental rate law for this specific reaction.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use the method of initial rates and logarithms to calculate the partial order of each reactant for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt; set of runs separately. e.g. The ratio of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run 2&lt;/code&gt; over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run 1&lt;/code&gt; gives:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-\[\frac{\text{rate}_2}{\text{rate}_1}  = \frac{ k [H^{+}]^x_2 [H_2O_2^{+}]^y_2 [I^{-}]^z_2}
-    {k [H^{+}]^x_1 [^{+}]^y_1 [I^{-}]^z_1}
-    = 
-    \Big( \frac{[I^{-}]_2}
-    { [I^{-}]_1} \Big)^z\]
-
-&lt;p&gt;where \(z\) can be found by&lt;/p&gt;
-
-\[z = \frac{\log \frac{\text{rate}_2}{\text{rate}_1} }{ \log \frac{[I^{-}]_2}
-    { [I^{-}]_1} }\]
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;This process is then repeated until all of the partial orders in the rate law are determined. The average partial orders should be listed to the same number of significant figures as the individual trial partial orders.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate the rate constant at that temperature using the rate and concentration data from any run&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-\[k = \frac{\text{rate}}{[H^{+}]^x [H_2O_2^{+}]^y [I^{-}]^z }\]
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;\(k\) value should be calculated for each run, which means 4 runs \(\times\) 2 trials \(= 8\) different \(k\) values are calculated.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Report average \(k\) constant \(\pm\) standard deviation, following the rules for significant figures.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;assignment&quot;&gt;Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch the demo video for the experiment&lt;/li&gt;
-  &lt;li&gt;Download the data set and do the data analysis&lt;/li&gt;
-  &lt;li&gt;Upload the &lt;strong&gt;partial lab report&lt;/strong&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PDF&lt;/code&gt; format:
-    &lt;ul&gt;
-      &lt;li&gt;This is a deviation for the summer session only.&lt;/li&gt;
-      &lt;li&gt;Include the following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Abstract&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Procedures&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Results&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data Table&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Experimental Rate Law&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Discussion&lt;/code&gt; (not a full discussion section; just itemize and answer the questions.)&lt;/li&gt;
-      &lt;li&gt;You don’t need to include sample calculations in the &lt;strong&gt;partial report&lt;/strong&gt; (it is in Excel only), don’t need to write narrative explaining data tables and calculations.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Upload all calculations and data tables in an MS Excel file&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;i-was-only-given-the-concentration-for-h-however-i-believe-that-i-need-the-stock-concentrations-of-the-other-reactants-as-well-in-order-to-be-able-to-calculate-the-diluted-concentration-of-thiosulfite-is-there-something-that-i-am-missing-about-this&quot;&gt;I was only given the concentration for \([H^+]\). However I believe that I need the stock concentrations of the other reactants as well in order to be able to calculate the diluted concentration of thiosulfite. Is there something that I am missing about this?&lt;/h3&gt;
-
-&lt;p&gt;\([H^+]\) concentration was given for some data sets by mistake. These affected data sets have been updated. Please re-download your data set.&lt;/p&gt;
-
-&lt;p&gt;Please follow the instructions in the lecture notes. i.e. Using the concentrations listed on the reagent bottles, which are listed in Table 1, and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to the equation (1) on this page.&lt;/p&gt;
-
-&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Iodine Clock Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Overall Clarity and Flow]
-    B2[Abstract]
-    B3[Results]
-    B4[Discussion]
-    B5[Proofreading and General Formatting]
-    B6[Experimental Rate Law]
-    B7[Discussion Questions]
-
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Prelab Assignment]
-    C4[Postlab Quiz]
-    C5[Data Table]
-    C6[Average Rate Constant]
-    C7[Excel Calculations]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
-    B--&amp;gt;B7;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-    C--&amp;gt;C7;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Iodine Clock Experiment.</summary></entry><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-30T10:42:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -211,7 +84,185 @@
     C--&amp;gt;C4;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Qualitative Analysis of Anions.</summary></entry><entry><title type="html">The Raoult’s Law Experiment</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="The Raoult's Law Experiment" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Qualitative Analysis of Anions.</summary></entry><entry><title type="html">The Iodine Clock Experiment</title><link href="http://localhost:4000/ykf" rel="alternate" type="text/html" title="The Iodine Clock Experiment" /><published>2020-07-26T00:00:00-05:00</published><updated>2020-07-26T00:00:00-05:00</updated><id>http://localhost:4000/ykf</id><content type="html" xml:base="http://localhost:4000/ykf">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Determine the general rate law for a chemical reaction by calculating the reaction rate for various concentrations of reactants.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using the concentrations listed on the reagent bottles and the volumes in Table 2, calculate the diluted concentrations for each species using&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+\[M_2 = \frac{M_1V_1}{V_2}\]
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the reaction rate for each trial using the diluted concentration of thiosulfate and the time (in seconds) it took for the blue complex to appear, using&lt;/li&gt;
+&lt;/ul&gt;
+
+\[\text{rate} = \frac{1}{2} \frac{[S_2O_3^{2-}]_i}{\Delta t}\]
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The partial order of each reactant will be found by comparing different rates and sets of concentrations to one another, yielding the experimental rate law for this specific reaction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the method of initial rates and logarithms to calculate the partial order of each reactant for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt; set of runs separately. e.g. The ratio of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run 2&lt;/code&gt; over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run 1&lt;/code&gt; gives:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+\[\frac{\text{rate}_2}{\text{rate}_1}  = \frac{ k [H^{+}]^x_2 [H_2O_2^{+}]^y_2 [I^{-}]^z_2}
+    {k [H^{+}]^x_1 [^{+}]^y_1 [I^{-}]^z_1}
+    = 
+    \Big( \frac{[I^{-}]_2}
+    { [I^{-}]_1} \Big)^z\]
+
+&lt;p&gt;where \(z\) can be found by&lt;/p&gt;
+
+\[z = \frac{\log \frac{\text{rate}_2}{\text{rate}_1} }{ \log \frac{[I^{-}]_2}
+    { [I^{-}]_1} }\]
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;This process is then repeated until all of the partial orders in the rate law are determined. The average partial orders should be listed to the same number of significant figures as the individual trial partial orders.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate the rate constant at that temperature using the rate and concentration data from any run&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+\[k = \frac{\text{rate}}{[H^{+}]^x [H_2O_2^{+}]^y [I^{-}]^z }\]
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;\(k\) value should be calculated for each run, which means 4 runs \(\times\) 2 trials \(= 8\) different \(k\) values are calculated.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Report average \(k\) constant \(\pm\) standard deviation, following the rules for significant figures.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assignment&quot;&gt;Assignment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Watch the demo video for the experiment&lt;/li&gt;
+  &lt;li&gt;Download the data set and do the data analysis&lt;/li&gt;
+  &lt;li&gt;Upload the &lt;strong&gt;partial lab report&lt;/strong&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PDF&lt;/code&gt; format:
+    &lt;ul&gt;
+      &lt;li&gt;This is a deviation for the summer session only.&lt;/li&gt;
+      &lt;li&gt;Include the following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Abstract&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Procedures&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Results&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data Table&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Experimental Rate Law&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Discussion&lt;/code&gt; (not a full discussion section; just itemize and answer the questions.)&lt;/li&gt;
+      &lt;li&gt;You don’t need to include sample calculations in the &lt;strong&gt;partial report&lt;/strong&gt; (it is in Excel only), don’t need to write narrative explaining data tables and calculations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Upload all calculations and data tables in an MS Excel file&lt;/li&gt;
+  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
+
+&lt;h3 id=&quot;concentrations-of-the-stock-solutions&quot;&gt;Concentrations of the stock solutions&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was only given the concentration for \([H^+]\). However I believe that I need the stock concentrations of the other reactants as well in order to be able to calculate the diluted concentration of thiosulfite. Is there something that I am missing about this?&lt;/p&gt;
+
+  &lt;p&gt;—Edward, 7/29/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;\([H^+]\) concentration was given for some data sets by mistake. These affected data sets have been updated. Please re-download your data set and assume that the stock solutions are exactly prepared in the suggested values in Table 1.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Table 1. The concentrations of stock solutions.&lt;/em&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hydrochloric acid&lt;/td&gt;
+      &lt;td&gt;0.0500 M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hydrogen peroxide&lt;/td&gt;
+      &lt;td&gt;0.5000 M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Potassium iodide&lt;/td&gt;
+      &lt;td&gt;0.0500 M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sodium thiosulfate&lt;/td&gt;
+      &lt;td&gt;0.0100 M&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;calculating-the-initial-concentrations&quot;&gt;Calculating the initial concentrations&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We’re supposed to calculate \(M_2\) using data from Table 2. I’m not sure which volume to use with regards to runs since they change for different runs. Do I need to find \(M_2\) of all reactants for all 4 runs? Or do I just need to find \(M_2\) for a specific run?&lt;/p&gt;
+
+  &lt;p&gt;—Martha, 7/29/20&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Using the stock concentrations listed in Table 1 and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to Equation 1.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/images/blog/ykf/1.jpg&quot; style=&quot;max-width: 450px;&quot; alt=&quot;kahveci group&quot; /&gt;
+  &lt;figcaption&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For example, the concentration of hydrogen peroxide Run 1:&lt;/p&gt;
+
+&lt;p&gt;\(M_{H_2O_2} = \frac{(0.5000 \text{ M}))(10.00 \text{ mL})}{50.00 \text{ mL}} = 0.1000 \text{ M}\) (4 sig. figs.)&lt;/p&gt;
+
+&lt;p&gt;For Run 1, you will do this calculation for all species across the line. These values are the initial concentrations for Run 1. Repeat this calculation for all 4 runs.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please note that you are expected to make an Excel table and do all of these individual calculations by using Excel functions.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
+    A[Is the assignment for the Iodine Clock Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Discussion]
+    B5[Proofreading and General Formatting]
+    B6[Experimental Rate Law]
+    B7[Discussion Questions]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Prelab Assignment]
+    C4[Postlab Quiz]
+    C5[Data Table]
+    C6[Average Rate Constant]
+    C7[Excel Calculations]
+
+    A--yes--&amp;gt;B;
+    A--yes--&amp;gt;C;
+    B--&amp;gt;B1;
+    B--&amp;gt;B2;
+    B--&amp;gt;B3;
+    B--&amp;gt;B4;
+    B--&amp;gt;B5;
+    B--&amp;gt;B6;
+    B--&amp;gt;B7;
+
+    C--&amp;gt;C1;
+    C--&amp;gt;C2;
+    C--&amp;gt;C3;
+    C--&amp;gt;C4;
+    C--&amp;gt;C5;
+    C--&amp;gt;C6;
+    C--&amp;gt;C7;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Iodine Clock Experiment.</summary></entry><entry><title type="html">The Raoult’s Law Experiment</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="The Raoult's Law Experiment" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
