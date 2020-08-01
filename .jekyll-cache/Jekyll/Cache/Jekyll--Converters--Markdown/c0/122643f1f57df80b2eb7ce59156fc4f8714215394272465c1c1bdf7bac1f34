@@ -1,0 +1,71 @@
+I"!<blockquote>
+  <p><i class="fas fa-info-circle"></i> CHEM 322B/422B Physical Chemistry II Lab (Computational) (graduate, undergraduate level) was taught by 
+<a href="/murat">Murat Kahveci</a> 
+at <a href="https://www.roosevelt.edu/">Roosevelt University</a> in Spring 2018.  <a class="button button--outline-warning button--pill button--xs" href="https://blackboard.roosevelt.edu/">CHEM 322B/422B Course URL</a></p>
+</blockquote>
+
+<p>Note that the laboratory grade is factored into the lecture (CHEM 322A/422A) grade—they are not totally separate classes. There is only one grade issued for lab and lecture.</p>
+
+<h3 id="textbook">Textbook</h3>
+
+<p>Heine, Joswig, Gelessus, “Computational Chemistry Workbook: Learning through Examples” ISBN: 978-3-527-32442-2</p>
+
+<h3 id="policy-and-procedures">Policy and procedures</h3>
+
+<p>The lab portion is computational. All “experiments” will be performed on a computer using the deMon software. There are no make up labs. Unless otherwise stated, labs are due at the start of lab one week after they are performed.</p>
+
+<p>Working in your lab groups is encouraged. However, copying work for lab assignments is unacceptable. Any such assignments will not be accepted and will receive a score of zero points.</p>
+
+<p>Lab questions is generally due one week after assigned (unless otherwise noted) and solution sets will be posted on blackboard.</p>
+
+<h3 id="lab-report-guidelines">Lab report guidelines</h3>
+
+<p>Lab reports will be electronically uploaded to the designated Turnitin folder. The proper file format is MS Word, which will allow the instructor add comments. The submission folder will show the deadlines. No late submissions will be accepted.</p>
+
+<ul>
+  <li>Write in the 3rd person, past tense and use passive voice. Do not use the words ‘students,’ ‘individuals,’ or ‘persons’ to get around writing in the third person. Saying, “Students were asked to mass a sample,” is the same as saying, “We were asked to mass a sample.”</li>
+  <li>Use scientific language. Avoid flowery descriptions and conversational language. Don’t write as if you were speaking to a friend.</li>
+  <li>Pay attention to the instructions of the professor.</li>
+</ul>
+
+<h3 id="lecturelab-content">Lecture/Lab content</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left">Topics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Lab 1</td>
+      <td style="text-align: left">§3. Vibrations of Diatomic Molecules: The Harmonic Approximation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 2</td>
+      <td style="text-align: left">§4. Vibrations of Diatomic Molecules: The Schrödinger Equation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 3</td>
+      <td style="text-align: left">§5. Atomic Orbitals</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 4</td>
+      <td style="text-align: left">§6. Ionization Potentials and Electron Affinities of Atoms</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 5</td>
+      <td style="text-align: left">§7. Hückel Molecular Orbital Theory: Stability of Conjugated Carbon π Systems</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 6</td>
+      <td style="text-align: left">§8. Hückel Molecular Orbital Theory: Bond Order, Charge Order, and Molecular Orbitals</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Lab 7</td>
+      <td style="text-align: left">§9. Geometry Optimization of a Diatomic Molecule</td>
+    </tr>
+  </tbody>
+</table>
+:ET

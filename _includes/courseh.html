@@ -1,0 +1,4 @@
+> <i class="fas fa-info-circle"></i> {{ page.code }} {{ page.title }} ({{ page.clevel | downcase }} level) was taught by 
+[{{ page.instructor }}]({{ page.instructorurl }}) 
+at <a href="{{ page.insturl }}">{{ page.institution }}</a> in {{ page.semester }}. {% if page.web %} <a class="button button--outline-warning button--pill button--xs" href="{{ page.web }}">{{ page.code }} Course URL</a>
+{% endif %}
