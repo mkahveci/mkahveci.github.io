@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-02T13:23:12-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-03T01:02:14-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The KHP Titration Experiment</title><link href="http://localhost:4000/von" rel="alternate" type="text/html" title="The KHP Titration Experiment" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>http://localhost:4000/von</id><content type="html" xml:base="http://localhost:4000/von">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+
+&lt;h3 id=&quot;calculate-the-molarity-of-standardized-naoh&quot;&gt;Calculate the molarity of standardized NaOH&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Find the moles of KHP.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[n_\text{KHP} = \frac{m_\text{pure KHP}}{ 204.2212 ~\text{ g/mol}}\]
+
+&lt;ul&gt;
+  &lt;li&gt;Determine the moles of NaOH using the stoichiometric ratio for the reaction.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[n_{\text{NaOH}} = n_\text{KHP} \times  \frac{ 1 ~\text{ mol NaOH}}{ 1 ~\text{mol KHP}}\]
+
+&lt;ul&gt;
+  &lt;li&gt;Determine the molarity of NaOH&lt;/li&gt;
+&lt;/ul&gt;
+
+\[M_\text{NaOH} = \frac{ n_{\text{NaOH}}}{ V_{\text{NaOH}}}\]
+
+&lt;p&gt;where \(V_{\text{NaOH}}\) is the volume of NaOH in liters (L) to reach the endpoint.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the average molarity of NaOH and its standard deviation. Use the average concentration value for the subsequent calculations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;calculate-the-mass-of-khp-in-impure-khp&quot;&gt;Calculate the mass of KHP in impure KHP&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the moles of base delivered when analyzing the impure KPH sample.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[n_{\text{NaOH}} = V_{NaOH} \times  M_\text{NaOH}\]
+
+&lt;p&gt;where \(V_{\text{NaOH}}\) is the volume of NaOH in liters (L) to reach the endpoint for impure KHP titration.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the moles of KHP using the stoichiometric ratio for the reaction.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[n_{\text{KHP}} = n_\text{NaOH} \times  \frac{1 \text{ mol KHP }}{ 1 \text{ mol NaOH }}\]
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the mass of KHP in impure sample.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[m_\text{KHP} =  n_{\text{KHP}} ( 204.2212 \text{ g/mol})\]
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the mass percent of KHP in impure sample.&lt;/li&gt;
+&lt;/ul&gt;
+
+\[\text{mass \% KHP} = \frac{m_\text{KHP}}{ m_\text{impure sample}} \times 100\%\]
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate the average mass percent KHP and its standard deviation. Report the unknown number of the sample as well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assignment&quot;&gt;Assignment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Print out pages 7-11 of the lab manual and respond to all prompts in a clearly written and well-organized manner.&lt;/li&gt;
+  &lt;li&gt;Presentation matters; sloppy and illegible work will not score well.&lt;/li&gt;
+  &lt;li&gt;Your goal is to use the space provided to communicate your understanding of this experiment.&lt;/li&gt;
+  &lt;li&gt;Scan and upload your work as a single PDF file by its deadline. You do not need to upload an Excel file for this experiment.&lt;/li&gt;
+  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
+
+&lt;p&gt;No incoming questions about this experiment.&lt;/p&gt;
+
+&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
+    A[Is the assignment for the Qualitative Analysis of Anions Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Average NaOH concentration and Standard Deviation]
+    B3[Average %KHP and Standard Deviation]
+    B4[Discussion Questions]
+
+    C1[Prelab Assignment]
+    C2[Postlab Quiz]
+    C3[Tables 1 and 2]
+    C4[Sample Calculations]
+
+    A--yes--&amp;gt;B;
+    A--yes--&amp;gt;C;
+    B--&amp;gt;B1;
+    B--&amp;gt;B2;
+    B--&amp;gt;B3;
+    B--&amp;gt;B4;
+
+    C--&amp;gt;C1;
+    C--&amp;gt;C2;
+    C--&amp;gt;C3;
+    C--&amp;gt;C4;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the KHP Titration Experiment.</summary></entry><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -726,16 +832,4 @@
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry><entry><title type="html">‘Chemistry’ from Madison</title><link href="http://localhost:4000/tta" rel="alternate" type="text/html" title="'Chemistry' from Madison" /><published>2020-03-24T00:00:00-06:00</published><updated>2020-03-24T00:00:00-06:00</updated><id>http://localhost:4000/tta</id><content type="html" xml:base="http://localhost:4000/tta">&lt;blockquote&gt;
-  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
-
-  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
-
-  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
-
-  &lt;p&gt;Sincerely,&lt;/p&gt;
-
-  &lt;p&gt;Madison&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020. This email correspondence was posted with Madison’s written permission via email on 3/24/2020.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="From Students" /><summary type="html">I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry></feed>
