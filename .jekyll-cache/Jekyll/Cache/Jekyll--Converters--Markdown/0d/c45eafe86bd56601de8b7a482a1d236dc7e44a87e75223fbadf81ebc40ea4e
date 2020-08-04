@@ -1,0 +1,92 @@
+I"ÿ<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+
+<h2 id="goals">Goals</h2>
+
+<h3 id="examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases">Examine the effect of dilution on the pH of strong and weak acids and bases</h3>
+
+<ul>
+  <li>
+    <p>Calculate, using \(M_1V_1 = M_2V_2\), the concentration of HCl, NaOH, CH\(_3\)COOH, and NH\(_4\)OH for the 1:10 and 1:100 diluted solutions and the mixtures.</p>
+  </li>
+  <li>
+    <p>Calculate \([H_3O^+]\) for each solution using the measured pH values and Equation \(\ref{eq:H3O}\).</p>
+  </li>
+</ul>
+
+<p>\begin{equation}\label{eq:pH}
+  pH = - \log [H_3O^+]
+\end{equation}</p>
+
+<p>\begin{equation}\label{eq:H3O}
+  \text{[H}_3\text{O}^+\text{]} = 10^{-\text{pH}}
+\end{equation}</p>
+
+<ul>
+  <li>
+    <p>Make a plot of pH vs. concentration for HCl and CH\(_3\)COOH, and another for NaOH and NH\(_4\)OH.</p>
+  </li>
+  <li>
+    <p>The strong and weak species should show a different dependence of pH on concentration.</p>
+  </li>
+</ul>
+
+<h3 id="calculating-the-values-of-k_texta-and-k_textb">Calculating the values of \(K_{\text{a}}\) and \(K_{\text{b}}\)</h3>
+
+<ul>
+  <li>Calculate \(K_{\text{a}}\) using Equation \ref{eq:Ka},</li>
+  <li>Calculate \(K_{\text{b}}\) using Equation \ref{eq:Kb},</li>
+  <li>Calculate the percent dissociation of the weak acid using Equation \ref{eq:percent-ionization-acid}, and</li>
+  <li>Calculate the percent dissociation of the weak base using Equation \ref{eq:percent-ionization-base}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:percent-ionization-acid}
+  \text{\% ionization} = \frac{ [H_3O^+]}{ [HA]_0} \times 100\% =  \frac{\ch{[A^-]}}{\ch{[HA]0}} \times 100\%
+\end{equation}</p>
+
+<p>\begin{equation}\label{eq:percent-ionization-base}
+  \text{\% ionization} = \frac{\ch{[BH^+]}}{\ch{[B]0}} \times 100\% = \frac{\ch{[OH^-]}}{\ch{[B]0}} \times 100\%
+\end{equation}</p>
+
+<h2 id="assignment">Assignment</h2>
+
+<ul>
+  <li></li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="qas">Q&amp;As</h2>
+
+<p>No incoming questions about this experiment.</p>
+
+<h2 id="team-grading">Team grading</h2>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Acids and Bases Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Average NaOH concentration and Standard Deviation]
+    B3[Average %KHP and Standard Deviation]
+    B4[Discussion Questions]
+
+    C1[Prelab Assignment]
+    C2[Postlab Quiz]
+    C3[Tables 1 and 2]
+    C4[Sample Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET

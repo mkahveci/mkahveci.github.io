@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-03T12:39:46-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The KHP Titration Experiment</title><link href="http://localhost:4000/von" rel="alternate" type="text/html" title="The KHP Titration Experiment" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>http://localhost:4000/von</id><content type="html" xml:base="http://localhost:4000/von">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T11:45:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/bmk" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/bmk</id><content type="html" xml:base="http://localhost:4000/bmk">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+
+&lt;h3 id=&quot;examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot;&gt;Examine the effect of dilution on the pH of strong and weak acids and bases&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate, using \(M_1V_1 = M_2V_2\), the concentration of HCl, NaOH, CH\(_3\)COOH, and NH\(_4\)OH for the 1:10 and 1:100 diluted solutions and the mixtures.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate \([H_3O^+]\) for each solution using the measured pH values and Equation \(\ref{eq:H3O}\).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:pH}
+  pH = - \log [H_3O^+]
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:H3O}
+  \text{[H}_3\text{O}^+\text{]} = 10^{-\text{pH}}
+\end{equation}&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a plot of pH vs. concentration for HCl and CH\(_3\)COOH, and another for NaOH and NH\(_4\)OH.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The strong and weak species should show a different dependence of pH on concentration.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;calculating-the-values-of-k_a-and-k_b&quot;&gt;Calculating the values of \(K_a\) and \(K_b\)&lt;/h3&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:Ka}
+  K_a = \frac{ [A^-][H_3O^+] }{ [HA]}
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;where, \([H_2O]\) is omitted because it is pure liquid.&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:Kb}
+  K_b = \frac{ [BH^+][OH^-] }{ [B] }
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;where, \([H_2O]\) is omitted because it is pure liquid.&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:percent-ionization-acid}
+  \% \text{ ionization} = \frac{ [H_3O^+]}{ [HA]_0} \times 100\% =  \frac{ [A^-] }{ [HA]_0 } \times 100\%
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}\label{eq:percent-ionization-base}
+  \% \text{ ionization} = \frac{ [BH^+] }{ [B]_0 } \times 100\% = \frac{ [OH^-] }{ [B]_0 } \times 100\%
+\end{equation}&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calculate \(K_a\) using Equation \ref{eq:Ka},&lt;/li&gt;
+  &lt;li&gt;Calculate \(K_b\) using Equation \ref{eq:Kb},&lt;/li&gt;
+  &lt;li&gt;Calculate the percent dissociation of the weak acid using Equation \ref{eq:percent-ionization-acid}, and&lt;/li&gt;
+  &lt;li&gt;Calculate the percent dissociation of the weak base using Equation \ref{eq:percent-ionization-base}.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot;&gt;Examine the pH of mixtures of strong and weak acids and bases&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Examine the pH of mixtures of strong and weak acids and bases to see how the presence of a strong acid or base impacts the percent dissociation of the weak acid or base.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Calculate the percent dissociation of the weak acid using Equation \ref{eq:percent-ionization-acid}, and&lt;/li&gt;
+  &lt;li&gt;Calculate the percent dissociation of the weak base using Equation \ref{eq:percent-ionization-base}.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assignment&quot;&gt;Assignment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Watch pH meter calibration video&lt;/li&gt;
+  &lt;li&gt;Watch solution preparation and pH determination video
+    &lt;ul&gt;
+      &lt;li&gt;Only shown for \ch{HCl}; same process used for other solutions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Take the post-lab quiz with a 70% or higher&lt;/li&gt;
+  &lt;li&gt;Download the data set and do the data analysis&lt;/li&gt;
+  &lt;li&gt;You must upload a PDF file of &lt;strong&gt;partial lab report&lt;/strong&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;This is a deviation for the summer session only&lt;/li&gt;
+      &lt;li&gt;Include the following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Procedures&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Results&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pH Data Tables&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pH vs. Concentration Plots&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Discussion&lt;/code&gt; (not a full discussion section; just itemize and answer the questions.)&lt;/li&gt;
+      &lt;li&gt;You don’t need to include sample calculations in the partial report (it is in Excel only), don’t need to write narrative explaining data tables and calculations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You must upload all calculations and data tables in an MS Excel file&lt;/li&gt;
+  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
+
+&lt;h3 id=&quot;calculating-the-concentration-of-110-and-1100-solutions&quot;&gt;Calculating the concentration of 1:10 and 1:100 solutions&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I think \(V_1\) for stock solutions is 50 mL, but can’t figure out what \(V_1\) is for 1:10 (10 mL ?) and 1:100 dilutions. I want to confirm that \(M_1\) is 1.0 M for all calculations and \(V_2\) is 100 mL. I’ve looked at the lab procedure and lab video, but get confused about the process of dilutions regarding volumes of \(V_1\).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As an example, I will walk through the concentration calculations for the  hydrochloric acid dilutions.&lt;/p&gt;
+
+&lt;p&gt;The concentration of the stock solution,  \(M_1 = 1.00 \text{ M}\) (let’s use 3 sig. figs.)&lt;/p&gt;
+
+&lt;p&gt;where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; means initial state. Likewise,  we would use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; to indicate the final state.&lt;/p&gt;
+
+&lt;h4 id=&quot;10-fold-or-110-dilution&quot;&gt;10-fold or 1:10 dilution&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dilute the solution 10-fold by using a clean, primed, 10 mL volumetric pipette to add 10.00 mL of the stock acid solution to a 100 mL volumetric flask and filling it to the line with deionized water.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This means:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(V_1 = 10.00 \text{ mL}\), which is the amount taken from the stock solution.&lt;/li&gt;
+  &lt;li&gt;\(V_2 = 100.00 \text{ mL}\), final volume after the dilution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Calculate the concentration of 10-fold dilution as follows.&lt;/p&gt;
+
+\[M_1 V_1 = M_2 V_2 \Rightarrow M_2 = \frac{M_1 V_1}{V_2} = \frac{(1.00 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} = 0.100 \text{ M HCl solution}\]
+
+&lt;h4 id=&quot;1100-dilution&quot;&gt;1:100 dilution&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dilute this solution [i.e. 10-fold diluted colution] another 10-fold by using a 10 mL volumetric pipette to add 10 mL of the 1:10 acid solution to a 100 mL volumetric flask and filling it to the line with deionized water.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So, we are using the concentration of 10-fold dilution as the initial concentration for the second 10-fold dilution.&lt;/p&gt;
+
+\[M_1 V_1 = M_2 V_2 \Rightarrow M_2 = \frac{M_1 V_1}{V_2} = \frac{(0.100 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} = 0.0100 \text{ M HCl solution}\]
+
+&lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
+    A[Is the assignment for the Acids and Bases Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Results]
+    B3[Proofreading and General Formatting]
+    B4[pH Data Tables]
+    B5[pH vs. Concentration Plots]
+    B6[Discussion Questions]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab Quiz]
+    C5[Postlab Quiz]
+    C6[Excel Calculations]
+
+    A--yes--&amp;gt;B;
+    A--yes--&amp;gt;C;
+    B--&amp;gt;B1;
+    B--&amp;gt;B2;
+    B--&amp;gt;B3;
+    B--&amp;gt;B4;
+    B--&amp;gt;B5;
+    B--&amp;gt;B6;
+
+    C--&amp;gt;C1;
+    C--&amp;gt;C2;
+    C--&amp;gt;C3;
+    C--&amp;gt;C4;
+    C--&amp;gt;C5;
+    C--&amp;gt;C6;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Acids and Bases Experiment.</summary></entry><entry><title type="html">The KHP Titration Experiment</title><link href="http://localhost:4000/von" rel="alternate" type="text/html" title="The KHP Titration Experiment" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>http://localhost:4000/von</id><content type="html" xml:base="http://localhost:4000/von">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -716,120 +884,4 @@
 &lt;ul&gt;
   &lt;li&gt;March 23 Video: &lt;a href=&quot;https://www.aera20.net/vanessa-discusses-the-cancellation.html&quot;&gt;AERA President Vanessa Siddle Walker Discusses The Cancellation Of The AERA 2020 Virtual Annual Meeting&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;March 23 &lt;a href=&quot;https://www.aera20.net/EXECUTIVE-DIRECTOR-LEVINE-AND-PRESIDENT-SIDDLE-WALKER-ANNOUNCE-CANCELLATION-OF-THE-2020-VIRTUAL-ANNUAL-MEETING.html&quot;&gt;Announcement of Virtual Meeting Cancellation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="COVID-19" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry><entry><title type="html">Forums in D2L</title><link href="http://localhost:4000/bod" rel="alternate" type="text/html" title="Forums in D2L" /><published>2020-04-05T00:00:00-06:00</published><updated>2020-04-05T00:00:00-06:00</updated><id>http://localhost:4000/bod</id><content type="html" xml:base="http://localhost:4000/bod">&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Forums&lt;/strong&gt; are used to house discussion topics that are similar. For example, there might be several discussions in the first week of the course, so create a forum titled “Week One Discussions” for them.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Topics&lt;/strong&gt; are where the discussion actually takes place. This is where students can post threads in response to a discussion prompt.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt; are the initial comments added to a discussion topic.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Replies&lt;/strong&gt; are responses posted to a specific discussion thread.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Setting up a discussion is a two-step process: first create a forum that can hold one or more discussion topics, then create discussion topics within that forum.&lt;/p&gt;
-
-&lt;h2 id=&quot;create-a-discussion-forum&quot;&gt;Create a Discussion Forum&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Select Discussions in the course navigation bar.&lt;/li&gt;
-  &lt;li&gt;Select the New button.&lt;/li&gt;
-  &lt;li&gt;Select New Forum from the dropdown menu.&lt;/li&gt;
-  &lt;li&gt;Enter a title [A] (required).&lt;/li&gt;
-  &lt;li&gt;Enter a description [B] (optional).&lt;/li&gt;
-  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/tC5Ny5GB1epSOCEKIJ5yEixsaILEiEKht66Ei_mNLqByjt1D1El23UUqXHriojpuJazUQUDbEYch0qYUonVYpgUzrOAHLYlWDcBv2pymIwbrgG6zL_cLKi59huv_AV3LT_TLG5kG37w=w2400&quot; alt=&quot;Screen 1&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;create-a-discussion-topic&quot;&gt;Create a Discussion Topic&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Select the New button.&lt;/li&gt;
-  &lt;li&gt;Select New Topic from the dropdown menu.&lt;/li&gt;
-  &lt;li&gt;Select a forum from the Forums dropdown menu (or select the New Forum to create a new forum.)&lt;/li&gt;
-  &lt;li&gt;Choose a Topic Type [A]:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Open topic&lt;/strong&gt;: everyone can access the topic and it’s contents.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Group or section topic&lt;/strong&gt;: everyone can access the topic, but students only see threads from their group or section (course must have groups set up before setting up group- or section-based topics).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Enter a title [B] (required).&lt;/li&gt;
-  &lt;li&gt;Enter a description [C] (optional).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/qc1g9CCm1FmfBH8cgjxvCBGnW3fB2C6QqHAVtdh-w0edSWxXku1MA8SatUbaNWs6POqdBnjqHSp01K8c-EyY6-NGMSrcv6Sff6pGqysOOKKrfxcREQrbJc1VOwD5YCLODD1wDlfnO2E=w2400&quot; alt=&quot;Screen 2&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Select options [A] for the topic (optional):
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Allow anonymous posts&lt;/strong&gt;: Select this option to allow students to anonymously post to this topic (not recommended).&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;A moderator must approve individual posts before they display in the topic&lt;/strong&gt;: Select this option to approve posts before students are able to view them (or to have a TA review and approve them.)&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Users must start a thread before they can read and reply to other threads&lt;/strong&gt;: Select this option to force students to post to the topic before they can read and reply to other students’ posts (recommended).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Select option for Rate Posts [B] (optional; default No Ratings)&lt;/li&gt;
-  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/I3oKUdW6fLeeZIVSfGBU3xioYP0q0XhTk4bMbUQwlGCa3hfSGPjj0YkLhKPNmQilI9hdI2kixY0Rf9as8SXmk-xpFj084JdTrpsHLBkipL8ZlQ-4p5btLiGL4jnnQeTl6GlB7lwqQ9E=w2400&quot; alt=&quot;Screen 3&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;creating-groups-in-d2l&quot;&gt;Creating Groups in D2L&lt;/h2&gt;
-
-&lt;p&gt;In D2L, instructors can divide students into small groups for activities such as discussions and submissions.&lt;/p&gt;
-
-&lt;h3 id=&quot;create-a-new-set-of-groups&quot;&gt;Create a new set of Groups&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Choose Groups from the More dropdown menu.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/nvq2fg46iVL1-u9aCysQC0G0rOCQVyPNwG2lhNiW6uPhVEurSnkc7pOW7m7kv-oECUIHRC-0w1hXlRpYlQ35Zc2UQQ5j9XAyu-x7CoX0hkqWPKNBiwYgF2SILo9BlEuTJpOq6inUM0c=w2400&quot; alt=&quot;Screen 4&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Select New Category.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/7f9p2X5shFkUSMQcPIrg6bSwGn0uAiucgUVc5HjC8Lx4RTLWD1oCPwbss3BWryM9TY8SvMYkpqlk34HWh2kOOnKxVHtGtsds0B6JCL2YVQEN86x2Sp3uGv7AobLTxkR6TGXEysgXbuU=w2400&quot; alt=&quot;Screen 5&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Enter a name for the category.&lt;/li&gt;
-  &lt;li&gt;Choose how students will be added to the groups from the Enrollment Type dropdown menu.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;# of Groups - No Auto Enrollments&lt;/strong&gt;: Manually add students to a set number of groups.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Groups of #&lt;/strong&gt;: D2L automatically enrolls student to groups, capped at a set number of users per group.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;# of Groups&lt;/strong&gt;: D2L automatically enrolls students to a set number of groups.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Groups of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into a group, but groups are capped at a set number of users per group.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;# of Groups - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;# of Groups, Capacity of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups that are capped at a set number of users per group.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Single user, member-specific groups&lt;/strong&gt;: D2L automatically creates one group per student, where they are the only user in the group.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;After selecting an enrollment type, enter the number of groups to create and/or the number of students per group.&lt;/li&gt;
-  &lt;li&gt;Select Save.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;setting-up-group-discussions-in-d2l&quot;&gt;Setting up Group Discussions in D2L&lt;/h2&gt;
-
-&lt;p&gt;Discussion topics can be restricted to a group that has been set up in the course site. Only the students enrolled in the group will be able to see and participate in the discussion topic.&lt;/p&gt;
-
-&lt;p&gt;Note that groups must be created before creating group discussion topics.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to Discussions.&lt;/li&gt;
-  &lt;li&gt;Select the &lt;strong&gt;New&lt;/strong&gt; button.&lt;/li&gt;
-  &lt;li&gt;From the dropdown menu, select &lt;strong&gt;New Topic&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Select an existing forum or select the &lt;strong&gt;New Forum&lt;/strong&gt; link to create a new forum.&lt;/li&gt;
-  &lt;li&gt;Select the topic type “&lt;strong&gt;Group or section topic, everyone can access this topic but students only see threads from their own group or section&lt;/strong&gt;”.​&lt;/li&gt;
-  &lt;li&gt;Choose the group under “&lt;strong&gt;Group or Section Category&lt;/strong&gt;”.&lt;/li&gt;
-  &lt;li&gt;Enter a title in the text box.&lt;/li&gt;
-  &lt;li&gt;Add a description in the “Description” text box (optional).&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Attach&lt;/strong&gt; files to share with the group.&lt;/li&gt;
-  &lt;li&gt;Select Save.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial describes a method to implement group-based forums.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="COVID-19" /><summary type="html">Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.</summary></entry></feed>

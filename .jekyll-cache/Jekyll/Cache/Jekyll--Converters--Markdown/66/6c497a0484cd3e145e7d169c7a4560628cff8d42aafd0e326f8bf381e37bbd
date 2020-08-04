@@ -1,0 +1,54 @@
+I"Ø<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139 Course Info</a></p>
+
+<h2 id="goals">Goals</h2>
+
+<h3 id="examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases">Examine the effect of dilution on the pH of strong and weak acids and bases</h3>
+
+<h3 id="calculating-the-values-of-k_texta-and-k_textb">Calculating the values of \(K_{\text{a}}\) and \(K_{\text{b}}\)</h3>
+
+<h2 id="assignment">Assignment</h2>
+
+<ul>
+  <li>Print out pages 7-11 of the lab manual and respond to all prompts in a clearly written and well-organized manner.</li>
+  <li>Presentation matters; sloppy and illegible work will not score well.</li>
+  <li>Your goal is to use the space provided to communicate your understanding of this experiment.</li>
+  <li>Scan and upload your work as a single PDF file by its deadline. You do not need to upload an Excel file for this experiment.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="qas">Q&amp;As</h2>
+
+<p>No incoming questions about this experiment.</p>
+
+<h2 id="team-grading">Team grading</h2>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Acids and Bases Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Average NaOH concentration and Standard Deviation]
+    B3[Average %KHP and Standard Deviation]
+    B4[Discussion Questions]
+
+    C1[Prelab Assignment]
+    C2[Postlab Quiz]
+    C3[Tables 1 and 2]
+    C4[Sample Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET
