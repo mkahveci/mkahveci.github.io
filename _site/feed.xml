@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T13:17:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T13:28:12-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
@@ -381,7 +381,9 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-\[M_2 = \frac{M_1V_1}{V_2}\]
+&lt;p&gt;\begin{equation}\label{eq:dilution}
+  M_2 = \frac{M_1V_1}{V_2}
+\end{equation}&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Calculate the reaction rate for each trial using the diluted concentration of thiosulfate and the time (in seconds) it took for the blue complex to appear, using&lt;/li&gt;
@@ -398,11 +400,13 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-\[\frac{\text{rate}_2}{\text{rate}_1}  = \frac{ k [H^{+}]^x_2 [H_2O_2^{+}]^y_2 [I^{-}]^z_2}
+&lt;p&gt;\begin{equation}\label{eq:rateratios}
+ \frac{\text{rate}_2}{\text{rate}_1}  = \frac{ k [H^{+}]^x_2 [H_2O_2^{+}]^y_2 [I^{-}]^z_2}
     {k [H^{+}]^x_1 [^{+}]^y_1 [I^{-}]^z_1}
     = 
     \Big( \frac{[I^{-}]_2}
-    { [I^{-}]_1} \Big)^z\]
+    { [I^{-}]_1} \Big)^z
+\end{equation}&lt;/p&gt;
 
 &lt;p&gt;where \(z\) can be found by&lt;/p&gt;
 
@@ -484,7 +488,7 @@
   &lt;p&gt;We’re supposed to calculate \(M_2\) using data from Table 2. I’m not sure which volume to use with regards to runs since they change for different runs. Do I need to find \(M_2\) of all reactants for all 4 runs? Or do I just need to find \(M_2\) for a specific run?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Using the stock concentrations listed in Table 1 and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to Equation 1.&lt;/p&gt;
+&lt;p&gt;Using the stock concentrations listed in Table 1 and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to Equation \ref{eq:dilution}. These calculated concentrations are known as initial concentrations.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/images/blog/ykf/1.jpg&quot; style=&quot;max-width: 450px;&quot; alt=&quot;kahveci group&quot; /&gt;
@@ -492,11 +496,11 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;For example, the concentration of hydrogen peroxide Run 1:&lt;/p&gt;
+&lt;p&gt;For example, the intial concentration of hydrogen peroxide Run 1:&lt;/p&gt;
 
 &lt;p&gt;\(M_{H_2O_2} = \frac{(0.5000 \text{ M}))(10.00 \text{ mL})}{50.00 \text{ mL}} = 0.1000 \text{ M}\) (4 sig. figs.)&lt;/p&gt;
 
-&lt;p&gt;For Run 1, you will do this calculation for all species across the line. These values are the initial concentrations for Run 1. Repeat this calculation for all 4 runs.&lt;/p&gt;
+&lt;p&gt;For Run 1, you will do this calculation for all species across the line. These values are the initial concentrations for Run 1. Repeat this calculation for all 4 runs and plug into Equation \ref{eq:rateratios} to find the partial orders of \(x\), \(y\), and \(z\).&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Please note that you are expected to make an Excel table and do all of these individual calculations by using Excel functions.&lt;/em&gt;&lt;/p&gt;
 
