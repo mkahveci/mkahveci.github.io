@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T13:35:10-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T15:36:46-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
@@ -242,7 +242,13 @@
 
 &lt;h2 id=&quot;qas&quot;&gt;Q&amp;amp;As&lt;/h2&gt;
 
-&lt;p&gt;No incoming questions about this experiment.&lt;/p&gt;
+&lt;h3 id=&quot;having-double-burette-readings-for-a-trial&quot;&gt;Having double burette readings for a trial&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I was wondering why each trial had two initial burette volumes and two final burette volumes instead of just one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If the burette is to be refilled before the titration ends, you would have two readings of initial and final values. Another reason could be if you are delivering more than 50 mL volume. You would just sum the amount delivered for each reading.&lt;/p&gt;
 
 &lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
 
