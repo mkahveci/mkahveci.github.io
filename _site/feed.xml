@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T15:36:46-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T17:42:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
@@ -128,6 +128,14 @@
 &lt;p&gt;So, we are using the concentration of 10-fold dilution as the initial concentration for the second 10-fold dilution.&lt;/p&gt;
 
 \[M_1 V_1 = M_2 V_2 \Rightarrow M_2 = \frac{M_1 V_1}{V_2} = \frac{(0.100 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} = 0.0100 \text{ M HCl solution}\]
+
+&lt;h3 id=&quot;volumes-in-l-or-ml-for-dilution-calculations&quot;&gt;Volumes in L or mL for dilution calculations&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I noticed in your sample calculations for the 10 and 100 fold dilutions you used the volumes in mL where molarity is calculated using the units liters. I was wondering if we were to use the volumes in mL as you did in the sample calculations under the Q&amp;amp;A’s or convert these to the units of liters.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unit of volume could be mL or L in dilution calculations because the volume units cancel.&lt;/p&gt;
 
 &lt;h2 id=&quot;team-grading&quot;&gt;Team grading&lt;/h2&gt;
 
