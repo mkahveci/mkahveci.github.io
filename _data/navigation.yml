@@ -11,16 +11,6 @@ header:
     url: /team 
   - title: Album
     url: /album
-        
-team: 
-  - title: kahveci group
-    children:
-    - title: Team
-      url: /team
-    - title: Alumni
-      url: /alumni
-    - title: Album
-      url: /album  
      
 CHE139: 
   - title: CHE 139

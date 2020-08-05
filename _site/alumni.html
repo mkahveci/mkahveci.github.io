@@ -257,18 +257,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page layout--page--sidebar clearfix js-page-root">
-  <div class="page__mask d-print-none js-page-mask js-sidebar-hide"></div>
-  <div class="page__viewport">
-    <div class="page__actions d-print-none">
-      <div class="button button--circle button--lg box-shadow-2 sidebar-button js-sidebar-show">
-        <i class="fas fa-bars icon--show"></i>
-      </div>
-    </div>
-
-    <div class="grid page__grid">
-
-      <div class="page__sidebar d-print-none"><div class="sidebar-toc"><ul class="toc toc--navigator"><li class="toc-h1">kahveci group</li><li class="toc-h2"><a href="/team">Team</a></li><li class="toc-h2 active"><a href="/alumni">Alumni</a></li><li class="toc-h2"><a href="/album">Album</a></li></ul></div></div><div class="page__main js-page-main cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header header--dark"style="background: linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139));"><div class="main">
       <div class="header__title">
@@ -323,7 +312,20 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><div class="article__header"><header><h1>Alumni</h1></header></div><meta itemprop="headline" content="Alumni"><meta itemprop="author" content="Murat Kahveci"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item"><div class="item__image"><img class="image image--sm" src="/images/team/basak-oztekin.jpg" /></div><div class="item__content">
+<article itemscope itemtype="http://schema.org/WebPage"><div class="article__header"><header><h1>Alumni</h1></header></div><meta itemprop="headline" content="Alumni"><meta itemprop="author" content="Murat Kahveci"/><div class="js-article-content"> <ul class="menu">
+  <li>
+    
+      <a class="button button--outline-success button--pill button--xs" href="/team">
+    
+    Current Members</a>
+  </li>
+<li>
+    
+    <a class="button button--outline-success button--pill button--xs active" href="/alumni">
+    
+    Alumni</a>
+</li>
+</ul> <div class="layout--articles"><div class="article-list items items--divided"><article class="item"><div class="item__image"><img class="image image--sm" src="/images/team/basak-oztekin.jpg" /></div><div class="item__content">
           <header><a href="/basak"><h2 itemprop="headline" class="item__header">Basak Oztekin</h2></a></header>
           <div class="item__description"><div class="article__content" itemprop="description articleBody"><p>Graduate Student (2006 - 2007)</p> <p>Worked as a student researcher in the Integrated BS/MS program.</p></div><p><a href="/basak">Read more</a></p></div><div class="article__info clearfix"><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Sep 01, 2006</span>
             </li></ul></div><meta itemprop="author" content="Murat Kahveci"/><meta itemprop="datePublished" content="2006-09-01T00:00:00-05:00"></div>
@@ -409,7 +411,7 @@
 
 <script src="https://www.w3counter.com/tracker.js?id=133645"></script>
 </div></div>
-    </div></div></div><script>(function() {
+    </div><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $body = $('body'), $window = $(window);
@@ -926,36 +928,6 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
-</script><script>(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-
-  window.Lazyload.js(SOURCES.jquery, function() {
-    var $pageMask = $('.js-page-mask');
-    var $pageRoot = $('.js-page-root');
-    var $sidebarShow = $('.js-sidebar-show');
-    var $sidebarHide = $('.js-sidebar-hide');
-
-    function freeze(e) {
-      if (e.target === $pageMask[0]) {
-        e.preventDefault();
-      }
-    }
-    function stopBodyScrolling(bool) {
-      if (bool === true) {
-        window.addEventListener('touchmove', freeze, { passive: false });
-      } else {
-        window.removeEventListener('touchmove', freeze, { passive: false });
-      }
-    }
-
-    $sidebarShow.on('click', function() {
-      stopBodyScrolling(true); $pageRoot.addClass('show-sidebar');
-    });
-    $sidebarHide.on('click', function() {
-      stopBodyScrolling(false); $pageRoot.removeClass('show-sidebar');
-    });
-  });
-})();
 </script><script>
   window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
     var $canvas = null, $this = null, _ctx = null, _text = '';

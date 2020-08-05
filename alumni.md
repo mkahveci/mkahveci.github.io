@@ -10,9 +10,7 @@ articles:
   show_excerpt: true
   excerpt_type: html
   show_readmore: true
-  show_info: true
-sidebar:
-  nav: team   
+  show_info: true 
 ---
 
 Number of alumni: {{ site.team_alumni.size }}
