@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-04T17:42:00-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-05T10:47:57-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
@@ -119,15 +119,23 @@
 
 &lt;p&gt;Calculate the concentration of 10-fold dilution as follows.&lt;/p&gt;
 
-\[M_1 V_1 = M_2 V_2 \Rightarrow M_2 = \frac{M_1 V_1}{V_2} = \frac{(1.00 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} = 0.100 \text{ M HCl solution}\]
+\[M_1 V_1 = M_2 V_2 \notag\]
 
-&lt;h4 id=&quot;1100-dilution&quot;&gt;1:100 dilution&lt;/h4&gt;
+\[M_2 = \frac{M_1 V_1}{V_2} \notag\]
+
+\[M_2 = \frac{(1.00 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} \notag\]
+
+\[M_2 = 0.100 \text{ M HCl solution} \notag\]
+
+&lt;h4 id=&quot;second-10-fold-or-1100-dilution&quot;&gt;Second 10-fold or 1:100 dilution&lt;/h4&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dilute this solution [i.e. 10-fold diluted colution] another 10-fold by using a 10 mL volumetric pipette to add 10 mL of the 1:10 acid solution to a 100 mL volumetric flask and filling it to the line with deionized water.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;So, we are using the concentration of 10-fold dilution as the initial concentration for the second 10-fold dilution.&lt;/p&gt;
 
-\[M_1 V_1 = M_2 V_2 \Rightarrow M_2 = \frac{M_1 V_1}{V_2} = \frac{(0.100 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} = 0.0100 \text{ M HCl solution}\]
+\[M_2 = \frac{(0.100 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} \notag\]
+
+\[M_2 = 0.0100 \text{ M HCl solution} \notag\]
 
 &lt;h3 id=&quot;volumes-in-l-or-ml-for-dilution-calculations&quot;&gt;Volumes in L or mL for dilution calculations&lt;/h3&gt;
 
