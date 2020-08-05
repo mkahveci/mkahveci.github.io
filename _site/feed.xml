@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-05T10:50:51-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-05T11:54:59-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">The Acids and Bases Experiment</title><link href="http://localhost:4000/hba" rel="alternate" type="text/html" title="The Acids and Bases Experiment" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4000/hba</id><content type="html" xml:base="http://localhost:4000/hba">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#goals&quot; id=&quot;markdown-toc-goals&quot;&gt;Goals&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot; id=&quot;markdown-toc-examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot;&gt;Examine the effect of dilution on the pH of strong and weak acids and bases&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#calculating-the-values-of-k_a-and-k_b&quot; id=&quot;markdown-toc-calculating-the-values-of-k_a-and-k_b&quot;&gt;Calculating the values of \(K_a\) and \(K_b\)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot; id=&quot;markdown-toc-examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot;&gt;Examine the pH of mixtures of strong and weak acids and bases&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assignment&quot; id=&quot;markdown-toc-assignment&quot;&gt;Assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qas&quot; id=&quot;markdown-toc-qas&quot;&gt;Q&amp;amp;As&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#calculating-the-concentration-of-110-and-1100-solutions&quot; id=&quot;markdown-toc-calculating-the-concentration-of-110-and-1100-solutions&quot;&gt;Calculating the concentration of 1:10 and 1:100 solutions&lt;/a&gt;        &lt;ol&gt;
+          &lt;li&gt;&lt;a href=&quot;#10-fold-or-110-dilution&quot; id=&quot;markdown-toc-10-fold-or-110-dilution&quot;&gt;10-fold or 1:10 dilution&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#second-10-fold-or-1100-dilution&quot; id=&quot;markdown-toc-second-10-fold-or-1100-dilution&quot;&gt;Second 10-fold or 1:100 dilution&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#volumes-in-l-or-ml-for-dilution-calculations&quot; id=&quot;markdown-toc-volumes-in-l-or-ml-for-dilution-calculations&quot;&gt;Volumes in L or mL for dilution calculations&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -186,6 +208,22 @@
 &lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Acids and Bases Experiment.</summary></entry><entry><title type="html">The KHP Titration Experiment</title><link href="http://localhost:4000/von" rel="alternate" type="text/html" title="The KHP Titration Experiment" /><published>2020-07-28T00:00:00-05:00</published><updated>2020-07-28T00:00:00-05:00</updated><id>http://localhost:4000/von</id><content type="html" xml:base="http://localhost:4000/von">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 4&lt;/code&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#goals&quot; id=&quot;markdown-toc-goals&quot;&gt;Goals&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#calculate-the-molarity-of-standardized-naoh&quot; id=&quot;markdown-toc-calculate-the-molarity-of-standardized-naoh&quot;&gt;Calculate the molarity of standardized NaOH&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#calculate-the-mass-of-khp-in-impure-khp&quot; id=&quot;markdown-toc-calculate-the-mass-of-khp-in-impure-khp&quot;&gt;Calculate the mass of KHP in impure KHP&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assignment&quot; id=&quot;markdown-toc-assignment&quot;&gt;Assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qas&quot; id=&quot;markdown-toc-qas&quot;&gt;Q&amp;amp;As&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#having-double-burette-readings-for-a-trial&quot; id=&quot;markdown-toc-having-double-burette-readings-for-a-trial&quot;&gt;Having double burette readings for a trial&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
 &lt;h3 id=&quot;calculate-the-molarity-of-standardized-naoh&quot;&gt;Calculate the molarity of standardized NaOH&lt;/h3&gt;
@@ -299,6 +337,18 @@
 &lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the KHP Titration Experiment.</summary></entry><entry><title type="html">The Qualitative Analysis of Anions Experiment</title><link href="http://localhost:4000/eml" rel="alternate" type="text/html" title="The Qualitative Analysis of Anions Experiment" /><published>2020-07-27T00:00:00-05:00</published><updated>2020-07-27T00:00:00-05:00</updated><id>http://localhost:4000/eml</id><content type="html" xml:base="http://localhost:4000/eml">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 3&lt;/code&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#goals&quot; id=&quot;markdown-toc-goals&quot;&gt;Goals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assignment&quot; id=&quot;markdown-toc-assignment&quot;&gt;Assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qas&quot; id=&quot;markdown-toc-qas&quot;&gt;Q&amp;amp;As&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#lab-notebook-pages&quot; id=&quot;markdown-toc-lab-notebook-pages&quot;&gt;Lab notebook pages&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -391,6 +441,19 @@
 
 &lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Qualitative Analysis of Anions.</summary></entry><entry><title type="html">The Iodine Clock Experiment</title><link href="http://localhost:4000/ykf" rel="alternate" type="text/html" title="The Iodine Clock Experiment" /><published>2020-07-26T00:00:00-05:00</published><updated>2020-07-26T00:00:00-05:00</updated><id>http://localhost:4000/ykf</id><content type="html" xml:base="http://localhost:4000/ykf">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#goals&quot; id=&quot;markdown-toc-goals&quot;&gt;Goals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assignment&quot; id=&quot;markdown-toc-assignment&quot;&gt;Assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qas&quot; id=&quot;markdown-toc-qas&quot;&gt;Q&amp;amp;As&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#concentrations-of-the-stock-solutions&quot; id=&quot;markdown-toc-concentrations-of-the-stock-solutions&quot;&gt;Concentrations of the stock solutions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#calculating-the-initial-concentrations&quot; id=&quot;markdown-toc-calculating-the-initial-concentrations&quot;&gt;Calculating the initial concentrations&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
@@ -570,6 +633,31 @@
 
 &lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Iodine Clock Experiment.</summary></entry><entry><title type="html">The Raoult’s Law Experiment</title><link href="http://localhost:4000/nzx" rel="alternate" type="text/html" title="The Raoult's Law Experiment" /><published>2020-07-22T00:00:00-05:00</published><updated>2020-07-22T00:00:00-05:00</updated><id>http://localhost:4000/nzx</id><content type="html" xml:base="http://localhost:4000/nzx">&lt;p&gt;&lt;a class=&quot;button button--outline-success button--pill button--xs&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139 Course Info&lt;/a&gt; 
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#goals&quot; id=&quot;markdown-toc-goals&quot;&gt;Goals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assignment&quot; id=&quot;markdown-toc-assignment&quot;&gt;Assignment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qas&quot; id=&quot;markdown-toc-qas&quot;&gt;Q&amp;amp;As&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-area-values-for-the-pure-substances&quot; id=&quot;markdown-toc-the-area-values-for-the-pure-substances&quot;&gt;The area values for the pure substances&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#prepostlab-quizzes&quot; id=&quot;markdown-toc-prepostlab-quizzes&quot;&gt;Pre/postlab quizzes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#access-to-the-datasets&quot; id=&quot;markdown-toc-access-to-the-datasets&quot;&gt;Access to the datasets&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-data-for-the-worksheet&quot; id=&quot;markdown-toc-the-data-for-the-worksheet&quot;&gt;The data for the worksheet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-data-for-the-excel-file&quot; id=&quot;markdown-toc-the-data-for-the-excel-file&quot;&gt;The data for the Excel file&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-worksheet&quot; id=&quot;markdown-toc-the-worksheet&quot;&gt;The worksheet&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#using-the-online-version-of-ms-office-and-a-chromebook&quot; id=&quot;markdown-toc-using-the-online-version-of-ms-office-and-a-chromebook&quot;&gt;Using the online version of MS Office and a Chromebook&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assessment&quot; id=&quot;markdown-toc-assessment&quot;&gt;Assessment&lt;/a&gt;    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#misconceptions&quot; id=&quot;markdown-toc-misconceptions&quot;&gt;Misconceptions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#formatting-issues&quot; id=&quot;markdown-toc-formatting-issues&quot;&gt;Formatting issues&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#issues-with-calculations&quot; id=&quot;markdown-toc-issues-with-calculations&quot;&gt;Issues with calculations&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#feedback&quot; id=&quot;markdown-toc-feedback&quot;&gt;Feedback&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
 
