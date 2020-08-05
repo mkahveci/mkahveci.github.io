@@ -22,3 +22,18 @@ team:
     - title: Album
       url: /album  
      
+CHE139: 
+  - title: CHE 139
+    children:
+    - title: Course Info
+      url: /tpv
+    - title: "Experiment 1. Gas Chromatography: Raoult’s Law"
+      url: /nzx
+    - title: "Experiment 2. Iodine Clock"
+      url: /ykf  
+    - title: "Experiment 3. The Qualitative Analysis of Anions"
+      url: /eml
+    - title: "Experiment 4. The KHP Titration"
+      url: /von 
+    - title: "Experiment 5. The Acids and Bases"
+      url: /hba                         
