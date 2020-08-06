@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-05T16:15:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Request for Letter of Recommendation</title><link href="http://localhost:4000/xxz" rel="alternate" type="text/html" title="Request for Letter of Recommendation" /><published>2020-08-05T00:00:00-05:00</published><updated>2020-08-05T00:00:00-05:00</updated><id>http://localhost:4000/xxz</id><content type="html" xml:base="http://localhost:4000/xxz">&lt;p&gt;Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-05T21:05:06-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kahveci group</title><subtitle>Your Site Description</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Request for Letter of Recommendation</title><link href="http://localhost:4000/xxz" rel="alternate" type="text/html" title="Request for Letter of Recommendation" /><published>2020-08-05T00:00:00-05:00</published><updated>2020-08-05T00:00:00-05:00</updated><id>http://localhost:4000/xxz</id><content type="html" xml:base="http://localhost:4000/xxz">&lt;p&gt;Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers.&lt;/p&gt;
 
 &lt;p&gt;Important note that it is to your advantage to ask for recommendation letters from faculty who know you well outside of the classroom. If you were a student in my class and not a member of my research group, it is usually more appropriate to ask another faculty for a recommendation letter. That way, they can state specific information about your qualifications and experiences that is not already presented on your transcript.&lt;/p&gt;
 
@@ -685,6 +685,7 @@ Chicago, IL 60614&lt;/p&gt;
       &lt;li&gt;&lt;a href=&quot;#issues-with-calculations&quot; id=&quot;markdown-toc-issues-with-calculations&quot;&gt;Issues with calculations&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#team-grading&quot; id=&quot;markdown-toc-team-grading&quot;&gt;Team grading&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#feedback&quot; id=&quot;markdown-toc-feedback&quot;&gt;Feedback&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#grades&quot; id=&quot;markdown-toc-grades&quot;&gt;Grades&lt;/a&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -902,7 +903,40 @@ Chicago, IL 60614&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
   &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Raoult's Law Experiment.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;grades&quot;&gt;Grades&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;83.02%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7.16%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;83.50%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;92.50%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;66.25%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Raoult's Law Experiment.</summary></entry><entry><title type="html">‘Thank you’ from Andres</title><link href="http://localhost:4000/fxb" rel="alternate" type="text/html" title="'Thank you' from Andres" /><published>2020-06-03T00:00:00-05:00</published><updated>2020-06-03T00:00:00-05:00</updated><id>http://localhost:4000/fxb</id><content type="html" xml:base="http://localhost:4000/fxb">&lt;blockquote&gt;
   &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
 
   &lt;p&gt;Professor Kahveci,&lt;/p&gt;
