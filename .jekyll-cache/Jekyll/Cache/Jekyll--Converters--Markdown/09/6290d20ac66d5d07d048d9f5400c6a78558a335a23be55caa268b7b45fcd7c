@@ -1,0 +1,136 @@
+I"‰<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 6</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ol id="markdown-toc">
+  <li><a href="#goals" id="markdown-toc-goals">Goals</a>    <ol>
+      <li><a href="#prepare-the-buffers-a1-e1" id="markdown-toc-prepare-the-buffers-a1-e1">Prepare the buffers A1-E1</a></li>
+      <li><a href="#generate-the-plot-of-ph-vs-log-frac-base--acid-" id="markdown-toc-generate-the-plot-of-ph-vs-log-frac-base--acid-">Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)</a></li>
+      <li><a href="#generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor" id="markdown-toc-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor">Generate the plot pH vs. the logarithm of the dilution factor</a></li>
+    </ol>
+  </li>
+  <li><a href="#assignment" id="markdown-toc-assignment">Assignment</a></li>
+  <li><a href="#qas" id="markdown-toc-qas">Q&amp;As</a></li>
+  <li><a href="#team-grading" id="markdown-toc-team-grading">Team grading</a></li>
+</ol>
+
+<h2 id="goals">Goals</h2>
+
+<h4 id="prepare-the-buffers-a1-e1">Prepare the buffers A1-E1</h4>
+
+<ul>
+  <li>Calculate the concentration of each component present in buffers A1-E1 using the concentration of each stock solution, the volume of each solution delivered, and the total volume of buffer created.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Solution</th>
+      <th style="text-align: center">Volume (mL) of \(CH_3COOH\) or \(NH_4Cl\)</th>
+      <th style="text-align: center">Volume (mL) of \(CH_3COONa\) or \(NH_3\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">A1</td>
+      <td style="text-align: center">15.00</td>
+      <td style="text-align: center">15.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">B1</td>
+      <td style="text-align: center">20.00</td>
+      <td style="text-align: center">10.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C1</td>
+      <td style="text-align: center">25.00</td>
+      <td style="text-align: center">5.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">D1</td>
+      <td style="text-align: center">5.00</td>
+      <td style="text-align: center">25.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">E1</td>
+      <td style="text-align: center">10.00</td>
+      <td style="text-align: center">20.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="generate-the-plot-of-ph-vs-log-frac-base--acid-">Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)</h4>
+
+<ul>
+  <li>Fit the data to a line (i.e. trendline).</li>
+  <li>Calculate the slope (3 sig. figs required) using <code class="language-plaintext highlighter-rouge">=SLOPE()</code> function in Excel.</li>
+  <li>Calculate the intercept (3 sig. figs required) using <code class="language-plaintext highlighter-rouge">=INTERCEPT()</code> function in Excel.</li>
+</ul>
+
+<h4 id="generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor">Generate the plot pH vs. the logarithm of the dilution factor</h4>
+
+<ul>
+  <li>Generate a single scatter plot of pH vs. the logarithm of the dilution factor (1, 10, 100) for each buffer component using Excel.</li>
+  <li>Both data sets should be presented on the same plot.</li>
+  <li>Do not fit the data to a trendline.</li>
+</ul>
+
+<h2 id="assignment">Assignment</h2>
+
+<ul>
+  <li>Watch pH meter calibration video</li>
+  <li>Watch the videos, pass the postlab quiz, and download your data set for Experiment 6</li>
+  <li>Analyze the data in Excel</li>
+  <li>Submit your partial lab report in a PDF file and all calculations in an Excel file.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="qas">Q&amp;As</h2>
+
+<p>No incoming questions for this experiment.</p>
+
+<h2 id="team-grading">Team grading</h2>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Buffer Solutions Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Proofreading and General Formatting]
+    B5[Strong Acid- Strong Base Data Table]
+    B6[Henderson- Hasselbalch Plot]
+    B7[Dilution Plot]
+    B8[Discussion]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab]
+    C5[Postlab]
+    C6[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+    B--&gt;B8;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET

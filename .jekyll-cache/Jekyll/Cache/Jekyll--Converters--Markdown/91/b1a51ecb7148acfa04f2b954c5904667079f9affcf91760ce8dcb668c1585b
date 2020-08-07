@@ -1,0 +1,168 @@
+I"»<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 9</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ol id="markdown-toc">
+  <li><a href="#goals" id="markdown-toc-goals">Goals</a>    <ol>
+      <li><a href="#calculate-the-equilibrium-concentration" id="markdown-toc-calculate-the-equilibrium-concentration">Calculate the equilibrium concentration</a></li>
+      <li><a href="#calculate-the-equilibrium-constant" id="markdown-toc-calculate-the-equilibrium-constant">Calculate the equilibrium constant</a></li>
+      <li><a href="#calculate-delta-gcirc-using-k" id="markdown-toc-calculate-delta-gcirc-using-k">Calculate \(\Delta G^\circ\) using \(K\)</a></li>
+      <li><a href="#make-ln-k-vs-1t-plots" id="markdown-toc-make-ln-k-vs-1t-plots">Make \(\ln K\) vs. \(1/T\) plots</a></li>
+      <li><a href="#calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc" id="markdown-toc-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc">Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)</a></li>
+      <li><a href="#generate-a-combined-plot-of-ln-k-vs-1t" id="markdown-toc-generate-a-combined-plot-of-ln-k-vs-1t">Generate a combined plot of \(\ln K\) vs. \(1/T\)</a></li>
+    </ol>
+  </li>
+  <li><a href="#assignment" id="markdown-toc-assignment">Assignment</a></li>
+  <li><a href="#qas" id="markdown-toc-qas">Q&amp;As</a></li>
+  <li><a href="#team-grading" id="markdown-toc-team-grading">Team grading</a></li>
+</ol>
+
+<h2 id="goals">Goals</h2>
+
+<h3 id="calculate-the-equilibrium-concentration">Calculate the equilibrium concentration</h3>
+
+<ul>
+  <li>Calculate the equilibrium concentration of tetrachlorocobaltate(II) in solution at each temperature using Beerâ€™s law with the measured absorbance value at the temperature of interest.</li>
+</ul>
+
+<p>\begin{equation}
+  A = abc
+\end{equation}</p>
+
+<ul>
+  <li>Assume that the molar absorptivity, \(b\), of \(CoCl_2^-\) in water at 690 nm is constant (\(6.00 \times 10^2\) \(M^{-1}.cm^{-1}\) for all 4 temperature values.</li>
+  <li>
+    <p>The path length, \(a\), is equal to 1.00 cm.</p>
+  </li>
+  <li>The equilibrium concentration of uncomplexed cobalt(II), \(Co^{2+}\),  ions in solution at any given temperature is found using conservation of mass, the initial concentration of cobalt(II) ions in the stock solution, and the equilibrium concentration of tetrachlorocobaltate(II) at that temperature.</li>
+</ul>
+
+<h3 id="calculate-the-equilibrium-constant">Calculate the equilibrium constant</h3>
+
+<ul>
+  <li>Calculate the equilibrium constant for the reaction of interest at each temperature using Equation \ref{eq:K}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:K}
+  K = \frac{[ CoCl_4^{2-} ]}{[ Co^{2+} ][ Cl^- ]^4}
+\end{equation}</p>
+
+<p>In doing this calculation, assume that the \([Cl^-]\) is constant due to the presence of strong 6.00 M \(HCl\) acid. For the sake of significant figures in this calculation, assume the concentration of \(HCl\) is exactly 6.00 M.</p>
+
+<h3 id="calculate-delta-gcirc-using-k">Calculate \(\Delta G^\circ\) using \(K\)</h3>
+
+<ul>
+  <li>Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaG}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:deltaG}
+  \Delta G^\circ = - RT \ln K
+\end{equation}</p>
+
+<p>where \(R = 8.3145 \text{ J/mol.K}\) (use all figures to ensure proper significant figures), and all temperature values are in Kelvin.</p>
+
+<h3 id="make-ln-k-vs-1t-plots">Make \(\ln K\) vs. \(1/T\) plots</h3>
+
+<ul>
+  <li>Make \(\ln K\) vs. \(1/T\) plots for each trial separately.</li>
+  <li>Temperature values are in Kelvin.</li>
+  <li>Using the Excel formulas, calculate slope, <code class="language-plaintext highlighter-rouge">=SLOPE()</code>, and intercept <code class="language-plaintext highlighter-rouge">=INTERCEPT()</code> for the line of best fit.</li>
+  <li>Calculate \(\Delta H^\circ\) and \(\Delta S^\circ\) for each trial using Equation \ref{eq:lnK}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:lnK}
+  \ln K = - \Big( \frac{\Delta H^\circ}{R} \Big)\Big( \frac{1}{T} \Big) + \Big( \frac{\Delta S^\circ}{R} \Big)
+\end{equation}</p>
+
+<p>where \(\text{slope} =  - \Big( \frac{\Delta H^\circ}{R} \Big)\), \(y-\text{intercept} =  \Big( \frac{\Delta S^\circ}{R} \Big)\), \(R\) is in energy unit like in Equation \ref{eq:deltaG}, and temperature is in Kelvin.</p>
+
+<h3 id="calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc">Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)</h3>
+
+<ul>
+  <li>Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaGthm}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:deltaGthm}
+  \Delta G^\circ = \Delta H^\circ - T \Delta S^\circ
+\end{equation}</p>
+
+<p>where \(T\) is in Kelvin.</p>
+
+<ul>
+  <li>Assume that \(\Delta H^\circ\) and \(\Delta S^\circ\) are constant with temperature.</li>
+</ul>
+
+<h3 id="generate-a-combined-plot-of-ln-k-vs-1t">Generate a combined plot of \(\ln K\) vs. \(1/T\)</h3>
+
+<ul>
+  <li>Generate a combined plot of \(\ln K\) vs. \(1/T\). In this plot, you should include the results from all trials.</li>
+</ul>
+
+<h2 id="assignment">Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download your data set</li>
+  <li>Analyze the data in Excel</li>
+  <li>Submit your <strong>full lab report</strong> in a PDF file and <strong>calculations</strong> in an Excel file.
+    <ul>
+      <li>Be sure to fully discuss your results.</li>
+      <li>Compare the values from the two trials and discuss how similar or different they are, as well as potential reasons for differences observed.</li>
+      <li>Discuss the values of \(\Delta G^\circ\): are the values obtained similar for each type of calculation? Why might they be different?</li>
+      <li>There are two discussion prompts that should be incorporated into your overall discussion</li>
+      <li>One relates to the signs of \(\Delta H^\circ\) and \(\Delta S^\circ\), and why the signs you obtained do or do not follow your expectations.</li>
+      <li>The other relates to the conditions for spontaneity. Remember that \(\Delta H^\circ\) and \(\Delta S^\circ\)  relate to standard state conditions when you calculate the temperature range over which the reaction will occur spontaneously.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="qas">Q&amp;As</h2>
+
+<p>No incoming questions for this experiment.</p>
+
+<h2 id="team-grading">Team grading</h2>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Thermodynamics of a Cobalt Complex Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Proofreading and General Formatting]
+    B4[Results]
+    B5[Discussion]
+    B6[ln K vs. 1/T Figures]
+    B7[Discussion Prompts]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab]
+    C5[Postlab]
+    C6[Temperature Study Table]
+    C7[Free Energy Comparison Table]
+    C8[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+    C--&gt;C7;
+    C--&gt;C8;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET

@@ -257,7 +257,18 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
+      <div class="layout--page layout--page--sidebar clearfix js-page-root">
+  <div class="page__mask d-print-none js-page-mask js-sidebar-hide"></div>
+  <div class="page__viewport">
+    <div class="page__actions d-print-none">
+      <div class="button button--circle button--lg box-shadow-2 sidebar-button js-sidebar-show">
+        <i class="fas fa-bars icon--show"></i>
+      </div>
+    </div>
+
+    <div class="grid page__grid">
+
+      <div class="page__sidebar d-print-none"><div class="sidebar-toc"><ul class="toc toc--navigator"><li class="toc-h1">Murat Kahveci</li><li class="toc-h2"><a href="/murat">Curriculum Vitae</a></li><li class="toc-h2 active"><a href="/xxz">Request for Letter of Recommendation</a></li></ul></div></div><div class="page__main js-page-main has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header header--dark"style="background: linear-gradient(135deg, rgb(34, 139, 87), rgb(139, 34, 139));"><div class="main">
       <div class="header__title">
@@ -364,7 +375,7 @@ Chicago, IL 60614</p>
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/hba">The Acids and Bases Experiment</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/murat">Curriculum Vitae</a></div></div></div>
 
 </div>
 
@@ -430,7 +441,7 @@ Chicago, IL 60614</p>
 
 <script src="https://www.w3counter.com/tracker.js?id=133645"></script>
 </div></div>
-    </div><script>(function() {
+    </div></div></div><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $body = $('body'), $window = $(window);
@@ -947,43 +958,38 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
-</script><script>
-  /* toc must before affix, since affix need to konw toc' height. */(function() {
+</script><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
-  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    var $window = $(window);
-    var $articleContent = $('.js-article-content');
-    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
-    var toc;
-    var tocDisabled = false;
-    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
-    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
 
-    function disabled() {
-      return $col2.css('display') === 'none' || !hasToc;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $pageMask = $('.js-page-mask');
+    var $pageRoot = $('.js-page-root');
+    var $sidebarShow = $('.js-sidebar-show');
+    var $sidebarHide = $('.js-sidebar-hide');
+
+    function freeze(e) {
+      if (e.target === $pageMask[0]) {
+        e.preventDefault();
+      }
+    }
+    function stopBodyScrolling(bool) {
+      if (bool === true) {
+        window.addEventListener('touchmove', freeze, { passive: false });
+      } else {
+        window.removeEventListener('touchmove', freeze, { passive: false });
+      }
     }
 
-    tocDisabled = disabled();
-
-    toc = $tocRoot.toc({
-      selectors: TOC_SELECTOR,
-      container: $articleContent,
-      scrollTarget: hasSidebar ? '.js-page-main' : null,
-      scroller: hasSidebar ? '.js-page-main' : null,
-      disabled: tocDisabled
+    $sidebarShow.on('click', function() {
+      stopBodyScrolling(true); $pageRoot.addClass('show-sidebar');
     });
-
-    $window.on('resize', window.throttle(function() {
-      tocDisabled = disabled();
-      toc && toc.setOptions({
-        disabled: tocDisabled
-      });
-    }, 100));
-
+    $sidebarHide.on('click', function() {
+      stopBodyScrolling(false); $pageRoot.removeClass('show-sidebar');
+    });
   });
 })();
-(function() {
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $window = $(window), $pageFooter = $('.js-page-footer');

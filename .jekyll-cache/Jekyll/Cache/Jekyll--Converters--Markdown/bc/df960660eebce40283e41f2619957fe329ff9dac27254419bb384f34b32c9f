@@ -1,0 +1,66 @@
+I"ö<p><a class="button button--outline-success button--pill button--xs" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 10</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ol id="markdown-toc">
+  <li><a href="#goals" id="markdown-toc-goals">Goals</a></li>
+  <li><a href="#assignment" id="markdown-toc-assignment">Assignment</a></li>
+  <li><a href="#qas" id="markdown-toc-qas">Q&amp;As</a></li>
+  <li><a href="#team-grading" id="markdown-toc-team-grading">Team grading</a></li>
+</ol>
+
+<h2 id="goals">Goals</h2>
+
+<h2 id="assignment">Assignment</h2>
+
+<h2 id="qas">Q&amp;As</h2>
+
+<p>No incoming questions for this experiment.</p>
+
+<h2 id="team-grading">Team grading</h2>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Manganese in Steel graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Proofreading and General Formatting]
+    B4[Results]
+    B5[Discussion]
+    B6[Mass Percent of Mn in Unknown Sample]
+    B7[Discussion Prompts]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab]
+    C5[Postlab]
+    C6[Results Table]
+    C7[Calibration Curve]
+    C8[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+    C--&gt;C7;
+    C--&gt;C8;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET

@@ -182,6 +182,7 @@ analytics:
 markdown    : kramdown
 highlighter : rouge
 permalink   : /:title
+future: true # publish future posts
 
 exclude:
   - CHANGELOG.md

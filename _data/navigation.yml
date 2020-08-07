@@ -11,6 +11,14 @@ header:
     url: /team 
   - title: Album
     url: /album
+
+murat: 
+  - title: Murat Kahveci
+    children:
+    - title: Curriculum Vitae
+      url: /murat
+    - title: Request for Letter of Recommendation
+      url: /xxz
      
 CHE139: 
   - title: CHE 139
@@ -26,4 +34,18 @@ CHE139:
     - title: "Experiment 4. The KHP Titration"
       url: /von 
     - title: "Experiment 5. The Acids and Bases"
-      url: /hba                         
+      url: /hba  
+    - title: "Experiment 6. Buffer Solutions"
+      url: /fbo  
+    - title: "Experiment 7. The Le Châtelier’s Principle"
+      url: /bxh  
+    - title: "Experiment 8. Amino Acid Titration"
+      url: /yfh                 
+    - title: "Experiment 9. Thermodynamics of a Cobalt Complex"
+      url: /evj
+    - title: "Experiment 10. Spectrophotometric Analysis of Manganese in Steel"
+      url: /ksm  
+    - title: "Experiment 11. Electrochemistry"
+      url: /fwb 
+    - title: "Experiment 12. Coordination Chemistry"
+      url: /wrn                            
