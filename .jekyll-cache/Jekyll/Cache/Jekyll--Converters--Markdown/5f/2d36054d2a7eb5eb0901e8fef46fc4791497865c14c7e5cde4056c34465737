@@ -1,0 +1,175 @@
+I"�!<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 11</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-experimental-e-for-cu" id="markdown-toc-11-experimental-e-for-cu">1.1 Experimental \(E\) for \(Cu\)</a></li>
+      <li><a href="#12-experimental-e-for-al" id="markdown-toc-12-experimental-e-for-al">1.2 Experimental \(E\) for \(Al\)</a></li>
+      <li><a href="#13-experimental-ecirc-for-al" id="markdown-toc-13-experimental-ecirc-for-al">1.3 Experimental \(E^\circ\) for \(Al\)</a></li>
+      <li><a href="#14-experimental-e-for-zn" id="markdown-toc-14-experimental-e-for-zn">1.4 Experimental \(E\) for \(Zn\)</a></li>
+      <li><a href="#15-experimental-ecirc-for-zn" id="markdown-toc-15-experimental-ecirc-for-zn">1.5 Experimental \(E^\circ\) for \(Zn\)</a></li>
+      <li><a href="#16-experimental-e-for-pb" id="markdown-toc-16-experimental-e-for-pb">1.6 Experimental \(E\) for \(Pb\)</a></li>
+      <li><a href="#17-experimental-ecirc-for-pb" id="markdown-toc-17-experimental-ecirc-for-pb">1.7 Experimental \(E^\circ\) for \(Pb\)</a></li>
+      <li><a href="#18-internal-consistency-check" id="markdown-toc-18-internal-consistency-check">1.8 Internal Consistency Check</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-printing-off-the-worksheets" id="markdown-toc-31-printing-off-the-worksheets">3.1 Printing off the worksheets</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-feedback" id="markdown-toc-41-feedback">4.1 Feedback</a></li>
+      <li><a href="#42-grades" id="markdown-toc-42-grades">4.2 Grades</a></li>
+      <li><a href="#43-team-grading" id="markdown-toc-43-team-grading">4.3 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<ul>
+  <li>It is important that you identify the cathode and anode half-reactions for each galvanic cell before beginning the following calculations.</li>
+</ul>
+
+<h3 id="11-experimental-e-for-cu">1.1 Experimental \(E\) for \(Cu\)</h3>
+
+<ul>
+  <li>From the standard reduction potential, \(E^\circ\), of the copper half-reaction of 0.340 V and the concentration of \(Cu^2+\), calculate the actual value of \(E\) for the experimental copper half-reaction using the Nernst equation (Equation \ref{nerst}).</li>
+</ul>
+
+<p>\begin{equation}\label{nerst}
+  E_\text{red} = E_\text{red}^\circ - \Big( \frac{RT}{nF} \Big) \ln \Big( \frac{1}{[M^{n+}]} \Big)
+\end{equation}</p>
+
+<h3 id="12-experimental-e-for-al">1.2 Experimental \(E\) for \(Al\)</h3>
+
+<p>From the actual value of E for the experimental copper half-reaction and the measured value of Εcell for the copper-aluminum cell, determine the value of E for the experimental half-reaction for aluminum (Equation \ref{Ecell}).</p>
+
+<p>\begin{equation}\label{Ecell}
+  E_\text{cell} = E_\text{cathode} - E_\text{anode}
+\end{equation}</p>
+
+<h3 id="13-experimental-ecirc-for-al">1.3 Experimental \(E^\circ\) for \(Al\)</h3>
+
+<p>From the calculated value of \(E\) for the experimental aluminum half-reaction and the actual
+concentration of \(Al^{3+}\), calculate \(E^\circ\) for the aluminum half-reaction using the Nernst equation (Equation \ref{nerst}).</p>
+
+<h3 id="14-experimental-e-for-zn">1.4 Experimental \(E\) for \(Zn\)</h3>
+
+<p>From the actual value of \(E\) for the experimental copper half-reaction and the measured value of Εcell for the copper-zinc cell, determine the value of E for the experimental half-reaction for zinc (Equation \ref{Ecell}).</p>
+
+<h3 id="15-experimental-ecirc-for-zn">1.5 Experimental \(E^\circ\) for \(Zn\)</h3>
+
+<p>From the calculated value of \(E\) for the experimental zinc half-reaction and the actual concentration
+of \(Zn^{2+}\), calculate \(E^\circ\) for the zinc half-reaction using the Nernst equation (Equation \ref{nerst}).</p>
+
+<h3 id="16-experimental-e-for-pb">1.6 Experimental \(E\) for \(Pb\)</h3>
+
+<p>From the actual value of \(E\) for the experimental copper half-reaction and the measured value of Εcell for the copper-lead cell, determine the value of \(E\) for the experimental half-reaction for lead (Equation \ref{Ecell}).</p>
+
+<h3 id="17-experimental-ecirc-for-pb">1.7 Experimental \(E^\circ\) for \(Pb\)</h3>
+
+<p>From the calculated value of E for the experimental lead half-reaction and the actual concentration
+of \(Pb^{2+}\), calculate \(E^\circ\) for the lead half-reaction using the Nernst equation (Equation \ref{nerst}).</p>
+
+<h3 id="18-internal-consistency-check">1.8 Internal Consistency Check</h3>
+
+<p>Using the experimental \(E\) values for zinc and lead calculated above, calculate \(E_\text{cell}\). Compare this result to the value you measured.</p>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download your data set.</li>
+  <li>Analyze the data in Excel.</li>
+  <li>Submit your worksheet in a PDF file.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-printing-off-the-worksheets">3.1 Printing off the worksheets</h3>
+
+<blockquote>
+  <p>I was wondering if I may print off the worksheets for Experiments 11 and 12, hand write them and then upload them as a pdf file as I did for a previous experiment. In the lab guide, it says you may either write or type your responses, but other places it says that they must be typed. Thank you for the clarification!</p>
+</blockquote>
+
+<p>Yes, you may print and fill out them. However, if any part of the worksheet requires you to copy and paste a graph, you should print and attach the graphs physically. One drawback for this approach is that you may not have enough space to attach a graph. In that case, you could add your graph as a separate page and make sure that you refer to the page in the given space, where you are expected tp provide the graph.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-feedback">4.1 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="42-grades">4.2 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">82.71%</td>
+      <td style="text-align: center">9.01%</td>
+      <td style="text-align: center">85.40%</td>
+      <td style="text-align: center">96.08%</td>
+      <td style="text-align: center">62.07%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="43-team-grading">4.3 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Electrochemistry Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Questions 6-9]
+    B3[Questions 10-11]
+    B4[Questions 12-13]
+
+    C1[Prelab]
+    C2[Postlab]
+    C3[Table 1]
+    C4[Question 2]
+    C5[Questions 3-5]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

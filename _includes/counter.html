@@ -1,0 +1,55 @@
+      {% assign count = 0 %}
+      {% assign projectcount = 0 %}
+      {% assign postcount = 0 %}
+      {% assign coursecount = 0 %}
+
+      {% assign lastname = page.name | split: ' ' | last %}
+      {% assign firstinitial = page.name | split: ' ' | first | slice: 0 %}
+      {% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+      {% assign books = site.book %}
+
+      {% for book in books %}
+      {% if book.authors contains searchstring %}
+      {% assign booksq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% for course in site.courses %}
+      {% if course.instructor == page.name %}
+      {% assign coursecount = coursecount | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign journals = site.journal %}
+
+      {% for jpaper in journals %}
+      {% if jpaper.authors contains searchstring %}
+      {% assign jpapersq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign conferences = site.conference %}
+
+      {% for cpaper in conferences %}
+      {% if cpaper.authors contains searchstring %}
+      {% assign cpapersq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% for project in site.projects %}
+      {% if project.contributors contains searchstring %}
+      {% assign projectcount = projectcount | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% for post in site.posts %}
+      {% if post.author %}
+      {% if page.name == post.author %}
+      {% assign postcount = postcount | plus: 1 %}
+      {% endif %}
+      {% endif %}
+      {% endfor %} 

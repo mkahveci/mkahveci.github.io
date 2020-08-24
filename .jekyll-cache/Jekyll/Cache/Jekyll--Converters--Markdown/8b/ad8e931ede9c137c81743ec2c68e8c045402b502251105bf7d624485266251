@@ -1,0 +1,220 @@
+I"� <p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 4</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-calculate-the-molarity-of-standardized-naoh" id="markdown-toc-11-calculate-the-molarity-of-standardized-naoh">1.1 Calculate the molarity of standardized NaOH</a></li>
+      <li><a href="#12-calculate-the-mass-of-khp-in-impure-khp" id="markdown-toc-12-calculate-the-mass-of-khp-in-impure-khp">1.2 Calculate the mass of KHP in impure KHP</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-having-double-burette-readings-for-a-trial" id="markdown-toc-31-having-double-burette-readings-for-a-trial">3.1 Having double burette readings for a trial</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-misconceptions" id="markdown-toc-41-misconceptions">4.1 Misconceptions</a></li>
+      <li><a href="#42-formatting-issues" id="markdown-toc-42-formatting-issues">4.2 Formatting issues</a></li>
+      <li><a href="#42-feedback" id="markdown-toc-42-feedback">4.2 Feedback</a></li>
+      <li><a href="#43-grades" id="markdown-toc-43-grades">4.3 Grades</a></li>
+      <li><a href="#44-team-grading" id="markdown-toc-44-team-grading">4.4 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<h3 id="11-calculate-the-molarity-of-standardized-naoh">1.1 Calculate the molarity of standardized NaOH</h3>
+
+<ul>
+  <li>Find the moles of KHP.</li>
+</ul>
+
+\[n_\text{KHP} = \frac{m_\text{pure KHP}}{ 204.2212 ~\text{ g/mol}}\]
+
+<ul>
+  <li>Determine the moles of NaOH using the stoichiometric ratio for the reaction.</li>
+</ul>
+
+\[n_{\text{NaOH}} = n_\text{KHP} \times  \frac{ 1 ~\text{ mol NaOH}}{ 1 ~\text{mol KHP}}\]
+
+<ul>
+  <li>Determine the molarity of NaOH</li>
+</ul>
+
+\[M_\text{NaOH} = \frac{ n_{\text{NaOH}}}{ V_{\text{NaOH}}}\]
+
+<p>where \(V_{\text{NaOH}}\) is the volume of NaOH in liters (L) to reach the endpoint.</p>
+
+<ul>
+  <li>Calculate the average molarity of NaOH and its standard deviation. Use the average concentration value for the subsequent calculations.</li>
+</ul>
+
+<h3 id="12-calculate-the-mass-of-khp-in-impure-khp">1.2 Calculate the mass of KHP in impure KHP</h3>
+
+<ul>
+  <li>Calculate the moles of base delivered when analyzing the impure KPH sample.</li>
+</ul>
+
+\[n_{\text{NaOH}} = V_{NaOH} \times  M_\text{NaOH}\]
+
+<p>where \(V_{\text{NaOH}}\) is the volume of NaOH in liters (L) to reach the endpoint for impure KHP titration.</p>
+
+<ul>
+  <li>Calculate the moles of KHP using the stoichiometric ratio for the reaction.</li>
+</ul>
+
+\[n_{\text{KHP}} = n_\text{NaOH} \times  \frac{1 \text{ mol KHP }}{ 1 \text{ mol NaOH }}\]
+
+<ul>
+  <li>Calculate the mass of KHP in impure sample.</li>
+</ul>
+
+\[m_\text{KHP} =  n_{\text{KHP}} ( 204.2212 \text{ g/mol})\]
+
+<ul>
+  <li>Calculate the mass percent of KHP in impure sample.</li>
+</ul>
+
+\[\text{mass % KHP} = \frac{m_\text{KHP}}{ m_\text{impure sample}} \times 100\%\]
+
+<ul>
+  <li>Calculate the average mass percent KHP and its standard deviation. Report the unknown number of the sample as well.</li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Print out pages 7-11 of the lab manual and respond to all prompts in a clearly written and well-organized manner.</li>
+  <li>Presentation matters; sloppy and illegible work will not score well.</li>
+  <li>Your goal is to use the space provided to communicate your understanding of this experiment.</li>
+  <li>Scan and upload your work as a single PDF file by its deadline. You do not need to upload an Excel file for this experiment.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-having-double-burette-readings-for-a-trial">3.1 Having double burette readings for a trial</h3>
+
+<blockquote>
+  <p>I was wondering why each trial had two initial burette volumes and two final burette volumes instead of just one.</p>
+</blockquote>
+
+<p>If the burette is to be refilled before the titration ends, you would have two readings of initial and final values. Another reason could be if you are delivering more than 50 mL volume. You would just sum the amount delivered from each reading.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-misconceptions">4.1 Misconceptions</h3>
+
+<blockquote>
+  <p>If the sample did not completely dry, the mass reading would have overestimated the true value because there would be weight in water attributing to the reading.</p>
+</blockquote>
+
+<p>Should consider mathematically. <em>Hint:</em> Does moisture affect the mol amount of KHP in the sample?</p>
+
+<blockquote>
+  <p>… If the volume increases then the concentration of the sample would increase as well.</p>
+</blockquote>
+
+<p>How? Again, please consider mathematically. e.g. Consider the formula, where the mol amount, \(n\), is constant:</p>
+
+\[M = \frac{n}{V}\]
+
+<p>What do you expect about the trend when \(V\) gets larger?</p>
+
+<h3 id="42-formatting-issues">4.2 Formatting issues</h3>
+
+<blockquote>
+  <p>0.08692 M ± 0.000212</p>
+</blockquote>
+
+<p>Two issues:</p>
+<ul>
+  <li>Incorrect sig.figs.</li>
+  <li>Standard deviation has no unit</li>
+</ul>
+
+<p>Should be reported as \(0.0869 \pm 0.0002\) M or preferably using the scientific notation: \((8.69 \pm 0.02) \times 10^{-2}\) M</p>
+
+<ul>
+  <li>Rules applied:
+    <ul>
+      <li>Standard deviation is rounded to 1 sig. fig. (requirement)</li>
+      <li>Average value is matched to the decimal place in the standard deviation (requirement) (also see <a href="/ykf#42-formatting-issues">this example</a>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="42-feedback">4.2 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="43-grades">4.3 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">78.19%</td>
+      <td style="text-align: center">13.02%</td>
+      <td style="text-align: center">81.75%</td>
+      <td style="text-align: center">96.50%</td>
+      <td style="text-align: center">58.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="44-team-grading">4.4 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the KHP Titration Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Average NaOH concentration and Standard Deviation]
+    B3[Average %KHP and Standard Deviation]
+    B4[Discussion Questions]
+
+    C1[Prelab Assignment]
+    C2[Postlab Quiz]
+    C3[Tables 1 and 2]
+    C4[Sample Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

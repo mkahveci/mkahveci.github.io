@@ -1,0 +1,65 @@
+monthyear: June 2020
+year: 2020
+url: /ybo #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 6/27/20
+    distance: 45.66
+    duration: 129.45
+    calories: 1188
+    averagespeed: 21.2
+
+  - date: 6/27/20
+    distance: 7.51
+    duration: 24.80
+    calories: 154
+    averagespeed: 18.2
+
+  - date: 6/15/20
+    distance: 30.11
+    duration: 86.6
+    calories: 701
+    averagespeed: 20.9
+
+  - date: 6/13/20
+    distance: 5.82
+    duration: 17.1
+    calories: 154
+    averagespeed: 20.3
+
+  - date: 6/13/20
+    distance: 27.0
+    duration: 70.0
+    calories: 701
+    averagespeed: 23.1
+
+  - date: 6/13/20
+    distance: 5.92
+    duration: 18
+    calories: 123
+    averagespeed: 19.8    
+
+  - date: 6/5/20
+    distance: 50.61
+    duration: 148
+    calories: 1267
+    averagespeed: 20.6
+    
+  - date: 6/5/20
+    distance: 12.74
+    duration: 39
+    calories: 295
+    averagespeed: 19.6
+    
+  - date: 6/5/20
+    distance: 12.75
+    duration: 40
+    calories: 253
+    averagespeed: 19.1
+    
+  - date: 6/3/20
+    distance: 17.27
+    duration: 63.5
+    calories: 387
+    averagespeed: 16.3    

@@ -1,0 +1,52 @@
+<table>
+<thead>
+  <tr>
+    <th>Month</th>
+    <th>Number of Activities</th>
+    <th>Total Distance (km)</th>
+    <th>Total Duration (min)</th>
+    <th>Total Calories (Cal)</th>
+  </tr>
+</thead>
+<tbody>
+
+{% for activity_hash in site.data.biking["_index"] %}
+{% assign activity = site.data.biking[activity_hash] %}
+
+{% if activity.year == page.year %}
+
+  {% for activity_hash_n in site.data.biking["_index"] %}
+  {% assign activity_n = site.data.biking[activity_hash_n] %}
+
+  {% if activity_n.monthyear == activity.monthyear %}
+
+          {% assign total_distance = 0 %}
+          {% assign total_duration = 0 %}
+          {% assign total_calories = 0 %}
+
+          {% for subactivity in activity_n.activities %}
+              {% assign total_distance = total_distance | plus: subactivity.distance %}
+              {% assign total_duration = total_duration | plus: subactivity.duration  %}
+              {% assign total_calories = total_calories | plus: subactivity.calories  %}
+          {% endfor %}
+
+{% assign total_distance = total_distance | round: 0 %}
+{% assign total_duration = total_duration | round: 0  %}
+{% assign total_calories = total_calories | round: 0  %}
+
+          <tr>
+            <td><a href="{{ activity.url }}">{{ activity_n.monthyear }}</a></td>
+            <td>{{ activity_n.activities | size }}</td>
+            <td>{% include numberWithCommas.html number=total_distance %}</td>
+            <td>{% include numberWithCommas.html number=total_duration %}</td>
+            <td>{% include numberWithCommas.html number=total_calories %}</td>
+          </tr>
+
+  {% endif %}
+  {% endfor %}
+
+{% endif%}
+
+{% endfor %}
+</tbody>
+</table>  

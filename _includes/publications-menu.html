@@ -1,0 +1,36 @@
+{% assign publications = site.book | concat: site.journal | concat: site.conference  %}
+
+<ul class="menu">
+  <li>
+    {% if page.url == "/publications" %}
+      <a class="button button--primary button--pill active" href="/publications">
+    {% else %}
+      <a class="button button--primary button--pill" href="/publications">
+    {% endif %}
+    Show All ({{ publications.size }})</a>
+  </li>
+<li>
+    {% if page.url == "/book" %}
+    <a class="button button--primary button--pill active" href="/book">
+    {% else %}
+    <a class="button button--primary button--pill" href="/book">
+    {% endif %}
+    Books ({{ site.book.size }})</a>
+</li>
+<li>
+    {% if page.url == "/journal" %}
+    <a class="button button--primary button--pill active" href="/journal">
+        {% else %}
+        <a class="button button--primary button--pill" href="/journal">
+            {% endif %}
+            Journal Articles ({{ site.journal.size }})</a>
+</li>
+<li>
+    {% if page.url == "/conference" %}
+    <a class="button button--primary button--pill active" href="/conference">
+        {% else %}
+        <a class="button button--primary button--pill" href="/conference">
+            {% endif %}
+            Conceference Papers ({{ site.conference.size}})</a>
+</li>
+</ul>

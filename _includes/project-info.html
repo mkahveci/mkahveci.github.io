@@ -1,0 +1,60 @@
+
+## Project Information
+
+{% if page.duration %}
+
+### Position
+
+{{ page.position }}
+
+{% endif %}
+
+{% if page.duration %} 
+
+### Duration
+
+{{ page.duration }}[^Duration]
+
+[^Duration]: Range of years actively contributed.
+
+{% endif %}
+
+{% if page.hostedby %}
+
+### Host Institution
+
+{{ page.hostedby }}
+
+{% endif %}
+
+{% if page.fundedby %}
+
+### Funding Institution 
+
+{{ page.fundedby }}
+
+{% endif %}
+
+{% if page.budget %}
+
+### Budget
+
+{{ page.budget }}
+
+{% endif %}
+
+{% if page.pdf %}
+
+### Download 
+
+<a href="/pdfs/projects/{{ page.pdf }}" class="author-social" target="_blank">Download PDF</a>
+
+{% endif %}
+
+{% if page.web %}
+
+### URL
+
+<a href="{{ page.web }}" class="author-social" target="_blank">{{ page.web }}</a>
+
+{% endif %}

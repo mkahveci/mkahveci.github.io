@@ -1,0 +1,99 @@
+header:   
+  - title: Archive
+    url: /archive   
+  - title: Series
+    url: /series       
+  - title: Projects
+    url: /projects    
+  - title: Publications
+    url: /publications 
+  - title: Team
+    url: /team
+
+murat: 
+  - title: Dr. Kahveci
+    children:
+    - title: Curriculum Vitae
+      url: /murat
+  - title: Students
+    children:       
+    - title: Request for Letter of Recommendation
+      url: /xxz
+  - title: Hobbies
+    children:      
+    - title: Biking Activities
+      url: /biking       
+
+mystudents: 
+  - title: My Students
+    children:
+    - title: From Andres
+      url: /fxb
+    - title: From Madison
+      url: /tta
+
+CHE139: 
+  - title: CHE 139
+    children:
+    - title: Course Info
+      url: /tpv
+    - title: "Experiment 1. Gas Chromatography: Raoult’s Law"
+      url: /nzx
+    - title: "Experiment 2. Iodine Clock"
+      url: /ykf  
+    - title: "Experiment 3. The Qualitative Analysis of Anions"
+      url: /eml
+    - title: "Experiment 4. The KHP Titration"
+      url: /von 
+    - title: "Experiment 5. The Acids and Bases"
+      url: /hba  
+    - title: "Experiment 6. Buffer Solutions"
+      url: /fbo  
+    - title: "Experiment 7. The Le Châtelier’s Principle"
+      url: /bxh  
+    - title: "Experiment 8. Amino Acid Titration"
+      url: /yfh                 
+    - title: "Experiment 9. Thermodynamics of a Cobalt Complex"
+      url: /evj
+    - title: "Experiment 10. Spectrophotometric Analysis of Manganese in Steel"
+      url: /ksm  
+    - title: "Experiment 11. Electrochemistry"
+      url: /fwb 
+    - title: "Experiment 12. Coordination Chemistry"
+      url: /wrn
+
+books: 
+  - title: Books
+    children:
+    - title: Affective Dimensions in Chemistry Education
+      url: /yfg  
+    - title: "Learning physical chemistry"
+      url: /yoc
+    - title: "Instructional interactivity"
+      url: /vfy 
+    - title: "The perceptions of professors about instructional interactivity"
+      url: /jzl  
+    - title: "Softlithography and nonlinear phenomena in microchannels"
+      url: /asz  
+    - title: "The summative evaluation of the EcoVentures"
+      url: /mad
+  - title: Blog
+    children:
+    - title: ADCE Update
+      url: /wcu  
+
+biking:
+  - title: Biking Activities 
+    children: 
+    - title: Overview
+      url: /biking  
+    - title: 2020
+      url: /fyv
+    - title: 2019
+      url: /osn
+    - title: 2018
+      url: /wla
+  - title: Murat Kahveci
+    children:
+    - title: Curriculum Vitae
+      url: /murat        

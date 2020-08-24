@@ -1,0 +1,27 @@
+<table>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Distance (km)</th>
+    <th>Duration (min)</th>
+    <th>Calories (Cal)</th>
+    <th>Average Speed (kph)</th>
+  </tr>
+</thead>
+<tbody>
+{% for activity_hash in site.data.biking reversed %}
+{% assign activity = activity_hash[1] %}   
+  {% if activity.monthyear == include.monthyear %}
+    {% for subactivity in activity.activities %}
+        <tr>
+          <td>{{ subactivity.date }}</td>
+          <td>{{ subactivity.distance }}</td>
+          <td>{{ subactivity.duration | round: 0 }}</td>
+          <td>{% include numberWithCommas.html number=subactivity.calories %}</td>
+          <td>{{ subactivity.averagespeed }}</td>
+        </tr>
+    {% endfor %}
+  {% endif %}  
+{% endfor %}
+</tbody>
+</table>

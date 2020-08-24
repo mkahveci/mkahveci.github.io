@@ -1,0 +1,110 @@
+I"{<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 12</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-mass-of-copperii-sulfate-pentahydrate" id="markdown-toc-11-mass-of-copperii-sulfate-pentahydrate">1.1 Mass of Copper(II) Sulfate Pentahydrate</a></li>
+      <li><a href="#12-moles-of-copperii-sulfate-pentahydrate" id="markdown-toc-12-moles-of-copperii-sulfate-pentahydrate">1.2 Moles of Copper(II) Sulfate Pentahydrate</a></li>
+      <li><a href="#13-moles-of-ammonia-added" id="markdown-toc-13-moles-of-ammonia-added">1.3 Moles of Ammonia Added</a></li>
+      <li><a href="#14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate" id="markdown-toc-14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate">1.4 Theoretical Yield of Tetraamminecopper(II) Sulfate Monohydrate</a></li>
+      <li><a href="#15-mass-of-product-collected" id="markdown-toc-15-mass-of-product-collected">1.5 Mass of Product Collected</a></li>
+      <li><a href="#16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate" id="markdown-toc-16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate">1.6 Actual Yield of Tetraamminecopper(II) Sulfate Monohydrate</a></li>
+      <li><a href="#17-percent-yield" id="markdown-toc-17-percent-yield">1.7 Percent Yield</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-printing-off-the-worksheets" id="markdown-toc-31-printing-off-the-worksheets">3.1 Printing off the worksheets</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-team-grading" id="markdown-toc-41-team-grading">4.1 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<h3 id="11-mass-of-copperii-sulfate-pentahydrate">1.1 Mass of Copper(II) Sulfate Pentahydrate</h3>
+
+<p>Calculate the mass of copper(II) sulfate pentahydrate used in the reaction from the initial and final mass of the reagent vial.</p>
+
+<h3 id="12-moles-of-copperii-sulfate-pentahydrate">1.2 Moles of Copper(II) Sulfate Pentahydrate</h3>
+
+<p>Calculate the moles of copper(II) sulfate pentahydrate used in the reaction using the mass and the molar mass of the compound.</p>
+
+<h3 id="13-moles-of-ammonia-added">1.3 Moles of Ammonia Added</h3>
+
+<p>Calculate the moles of ammonia added using the volume added and the molarity of the solution.</p>
+
+<h3 id="14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate">1.4 Theoretical Yield of Tetraamminecopper(II) Sulfate Monohydrate</h3>
+
+<p>Calculate the theoretical yield (in moles) of tetraamminecopper(II) sulfate monohydrate produced from the limiting reagent and the relevant balanced chemical equation.</p>
+
+<h3 id="15-mass-of-product-collected">1.5 Mass of Product Collected</h3>
+
+<p>Calculate the mass of the collected product from the initial and final mass of the beaker.</p>
+
+<h3 id="16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate">1.6 Actual Yield of Tetraamminecopper(II) Sulfate Monohydrate</h3>
+
+<p>Assuming that all of the collected solid was the product of interest, calculate the actual yield (in moles) of the reaction from the mass of the product and the molar mass of tetraamminecopper(II) sulfate monohydrate.</p>
+
+<h3 id="17-percent-yield">1.7 Percent Yield</h3>
+
+<p>Calculate the percent yield of the reaction using the theoretical and actual yields.</p>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download your data set.</li>
+  <li>Analyze the data in Excel.</li>
+  <li>Submit your worksheet in a PDF file.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-printing-off-the-worksheets">3.1 Printing off the worksheets</h3>
+
+<blockquote>
+  <p>I was wondering if I may print off the worksheets for Experiments 11 and 12, hand write them and then upload them as a pdf file as I did for a previous experiment. In the lab guide, it says you may either write or type your responses, but other places it says that they must be typed. Thank you for the clarification!</p>
+</blockquote>
+
+<p>My response is posted <a href="/fwb#31-printing-off-the-worksheets">here</a>.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-team-grading">4.1 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Coordination Chemistry Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Mass and Moles of the Species]
+    B3[Theoretical Yield]
+    B4[Mass of Product, Actual Yield, Percent Yield]
+
+    C1[Prelab]
+    C2[Postlab]
+    C3[Chemical Equation]
+    C4[Data and Results Table]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+:ET

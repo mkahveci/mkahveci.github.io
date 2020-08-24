@@ -1,0 +1,73 @@
+{% capture activity_list %}
+
+{% assign total_distance = 0 %}
+
+{% assign years = page.years | reverse %}
+
+{% for year in years %}
+  {% assign total_duration = 0 %}
+  {% assign total_calories = 0 %}
+
+  {% for activity_hash in site.data.biking %}
+  {% assign activity = activity_hash[1] %}
+  {% if activity.year == year %}
+    {% for subactivity in activity.activities %}
+        {% assign total_distance = total_distance | plus: subactivity.distance %}
+        {% assign total_duration = total_duration | plus: subactivity.duration  %}
+        {% assign total_calories = total_calories | plus: subactivity.calories  %}
+    {% endfor %}
+  {% endif %}
+  {% endfor %}
+  {{ year }}|{{ total_distance | round: 1 }}|{{ total_duration | round: 1 }}|{{ total_calories | round: 1 }}
+  {% if forloop.last == false %}::{% endif%}
+{% endfor %}
+{% endcapture %}
+
+{% assign activity_array = activity_list | split: '::' %}
+
+```chart
+{
+  "type": "line",
+  "data": {
+    "labels": [
+          {% for activity in activity_array %}
+            {% assign activity_vals = activity | split: '|' %}
+            {{ activity_vals[0] }} 
+            {% if forloop.last == false %},{% endif%}
+          {% endfor %}
+    ],
+    "datasets": [
+      {
+        "label": "Cumulative distance in km",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(146,105,198,0.4)",
+        "borderColor": "rgba(146,105,198,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(146,105,198,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(146,105,198,1)",
+        "pointHoverBorderColor": "rgba(146,105,198,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          {% for activity in activity_array %}
+            {% assign activity_vals = activity | split: '|' %}
+            {{ activity_vals[1] }} 
+            {% if forloop.last == false %},{% endif%}
+          {% endfor %}
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}
+```
+Figure 2. Cumulative biking distance (km) vs. time (year).

@@ -1,0 +1,22 @@
+monthyear: Mar 2020
+year: 2020
+url: /xth #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+  - date: 3/25/20
+    distance: 24.49
+    duration: 69.3
+    calories: 595
+    averagespeed: 21.2
+
+  - date: 3/8/20
+    distance: 24.51
+    duration: 73.9
+    calories: 578
+    averagespeed: 19.9
+
+  - date: 3/1/20
+    distance: 54.62
+    duration: 155.83
+    calories: 1276
+    averagespeed: 21.0                          
