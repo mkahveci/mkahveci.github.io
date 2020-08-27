@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2020-08-24T09:40:23-05:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Kahveci Group</title><subtitle>The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research.</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Coordination Chemistry</title><link href="http://localhost:4001/wrn" rel="alternate" type="text/html" title="Coordination Chemistry" /><published>2020-08-17T00:00:00-05:00</published><updated>2020-08-17T00:00:00-05:00</updated><id>http://localhost:4001/wrn</id><content type="html" xml:base="http://localhost:4001/wrn">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2020-08-26T23:53:56-05:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Kahveci Group</title><subtitle>The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research.</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Coordination Chemistry</title><link href="http://localhost:4001/wrn" rel="alternate" type="text/html" title="Coordination Chemistry" /><published>2020-08-17T00:00:00-05:00</published><updated>2020-08-17T00:00:00-05:00</updated><id>http://localhost:4001/wrn</id><content type="html" xml:base="http://localhost:4001/wrn">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
 &lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 12&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
@@ -20,7 +20,9 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-team-grading&quot; id=&quot;markdown-toc-41-team-grading&quot;&gt;4.1 Team grading&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -76,7 +78,39 @@
 
 &lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
 
-&lt;h3 id=&quot;41-team-grading&quot;&gt;4.1 Team grading&lt;/h3&gt;
+&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
+  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;88.03%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.11%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;87.50%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;93.00%&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;83.00%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
     A[Is the assignment for the Coordination Chemistry Experiment graded as a team?]
@@ -106,7 +140,14 @@
     C--&amp;gt;C4;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Coordination Chemistry Experiment.</summary></entry><entry><title type="html">Installing a Learning Object to the D2L Environment</title><link href="http://localhost:4001/lcz" rel="alternate" type="text/html" title="Installing a Learning Object to the D2L Environment" /><published>2020-08-13T00:00:00-05:00</published><updated>2020-08-13T00:00:00-05:00</updated><id>http://localhost:4001/lcz</id><content type="html" xml:base="http://localhost:4001/lcz">&lt;p&gt;This tutorial is for the &lt;a href=&quot;https://d2l.depaul.edu/d2l/home&quot;&gt;D2L&lt;/a&gt; environment demonstrates how to import and use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning object&lt;/code&gt; prepared in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 standards&lt;/code&gt;. You may read more about what is a SCORM &lt;a href=&quot;https://scorm.com/scorm-explained/?utm_source=google&amp;amp;utm_medium=natural_search&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Coordination Chemistry Experiment.</summary></entry><entry><title type="html">Installing a Learning Object to the D2L Environment</title><link href="http://localhost:4001/lcz" rel="alternate" type="text/html" title="Installing a Learning Object to the D2L Environment" /><published>2020-08-13T00:00:00-05:00</published><updated>2020-08-13T00:00:00-05:00</updated><id>http://localhost:4001/lcz</id><content type="html" xml:base="http://localhost:4001/lcz">&lt;p&gt;This tutorial is for the &lt;a href=&quot;https://d2l.depaul.edu/d2l/home&quot;&gt;D2L&lt;/a&gt; environment demonstrates how to import and use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning object&lt;/code&gt; prepared in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 standards&lt;/code&gt;. You may read more about what is a SCORM &lt;a href=&quot;https://scorm.com/scorm-explained/?utm_source=google&amp;amp;utm_medium=natural_search&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-importing-the-package&quot;&gt;1 Importing the package&lt;/h2&gt;
 
