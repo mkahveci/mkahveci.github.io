@@ -1,157 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4001/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/" rel="alternate" type="text/html" /><updated>2020-08-26T23:55:08-05:00</updated><id>http://localhost:4001/feed.xml</id><title type="html">Kahveci Group</title><subtitle>The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research.</subtitle><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><entry><title type="html">Coordination Chemistry</title><link href="http://localhost:4001/wrn" rel="alternate" type="text/html" title="Coordination Chemistry" /><published>2020-08-17T00:00:00-05:00</published><updated>2020-08-17T00:00:00-05:00</updated><id>http://localhost:4001/wrn</id><content type="html" xml:base="http://localhost:4001/wrn">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 12&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>mkahveci.github.io</title>
+        <description>The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research.</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 07 Sep 2020 14:15:39 -0500</pubDate>
+        <lastBuildDate>Mon, 07 Sep 2020 14:15:39 -0500</lastBuildDate>
+        <generator>Jekyll v3.8.5</generator>
+        
+        <item>
+            <title>Installing a Learning Object to the D2L Environment</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 6. Installing a Learning Object to the D2L Environment&lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-mass-of-copperii-sulfate-pentahydrate&quot; id=&quot;markdown-toc-11-mass-of-copperii-sulfate-pentahydrate&quot;&gt;1.1 Mass of Copper(II) Sulfate Pentahydrate&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-moles-of-copperii-sulfate-pentahydrate&quot; id=&quot;markdown-toc-12-moles-of-copperii-sulfate-pentahydrate&quot;&gt;1.2 Moles of Copper(II) Sulfate Pentahydrate&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-moles-of-ammonia-added&quot; id=&quot;markdown-toc-13-moles-of-ammonia-added&quot;&gt;1.3 Moles of Ammonia Added&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate&quot; id=&quot;markdown-toc-14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate&quot;&gt;1.4 Theoretical Yield of Tetraamminecopper(II) Sulfate Monohydrate&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#15-mass-of-product-collected&quot; id=&quot;markdown-toc-15-mass-of-product-collected&quot;&gt;1.5 Mass of Product Collected&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate&quot; id=&quot;markdown-toc-16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate&quot;&gt;1.6 Actual Yield of Tetraamminecopper(II) Sulfate Monohydrate&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#17-percent-yield&quot; id=&quot;markdown-toc-17-percent-yield&quot;&gt;1.7 Percent Yield&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-printing-off-the-worksheets&quot; id=&quot;markdown-toc-31-printing-off-the-worksheets&quot;&gt;3.1 Printing off the worksheets&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-mass-of-copperii-sulfate-pentahydrate&quot;&gt;1.1 Mass of Copper(II) Sulfate Pentahydrate&lt;/h3&gt;
-
-&lt;p&gt;Calculate the mass of copper(II) sulfate pentahydrate used in the reaction from the initial and final mass of the reagent vial.&lt;/p&gt;
-
-&lt;h3 id=&quot;12-moles-of-copperii-sulfate-pentahydrate&quot;&gt;1.2 Moles of Copper(II) Sulfate Pentahydrate&lt;/h3&gt;
-
-&lt;p&gt;Calculate the moles of copper(II) sulfate pentahydrate used in the reaction using the mass and the molar mass of the compound.&lt;/p&gt;
-
-&lt;h3 id=&quot;13-moles-of-ammonia-added&quot;&gt;1.3 Moles of Ammonia Added&lt;/h3&gt;
-
-&lt;p&gt;Calculate the moles of ammonia added using the volume added and the molarity of the solution.&lt;/p&gt;
-
-&lt;h3 id=&quot;14-theoretical-yield-of-tetraamminecopperii-sulfate-monohydrate&quot;&gt;1.4 Theoretical Yield of Tetraamminecopper(II) Sulfate Monohydrate&lt;/h3&gt;
-
-&lt;p&gt;Calculate the theoretical yield (in moles) of tetraamminecopper(II) sulfate monohydrate produced from the limiting reagent and the relevant balanced chemical equation.&lt;/p&gt;
-
-&lt;h3 id=&quot;15-mass-of-product-collected&quot;&gt;1.5 Mass of Product Collected&lt;/h3&gt;
-
-&lt;p&gt;Calculate the mass of the collected product from the initial and final mass of the beaker.&lt;/p&gt;
-
-&lt;h3 id=&quot;16-actual-yield-of-tetraamminecopperii-sulfate-monohydrate&quot;&gt;1.6 Actual Yield of Tetraamminecopper(II) Sulfate Monohydrate&lt;/h3&gt;
-
-&lt;p&gt;Assuming that all of the collected solid was the product of interest, calculate the actual yield (in moles) of the reaction from the mass of the product and the molar mass of tetraamminecopper(II) sulfate monohydrate.&lt;/p&gt;
-
-&lt;h3 id=&quot;17-percent-yield&quot;&gt;1.7 Percent Yield&lt;/h3&gt;
-
-&lt;p&gt;Calculate the percent yield of the reaction using the theoretical and actual yields.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set.&lt;/li&gt;
-  &lt;li&gt;Analyze the data in Excel.&lt;/li&gt;
-  &lt;li&gt;Submit your worksheet in a PDF file.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-printing-off-the-worksheets&quot;&gt;3.1 Printing off the worksheets&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I was wondering if I may print off the worksheets for Experiments 11 and 12, hand write them and then upload them as a pdf file as I did for a previous experiment. In the lab guide, it says you may either write or type your responses, but other places it says that they must be typed. Thank you for the clarification!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;My response is posted &lt;a href=&quot;/fwb#31-printing-off-the-worksheets&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;88.03%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;3.11%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;87.50%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;93.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;83.00%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Coordination Chemistry Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Proofreading and General Formatting]
-    B2[Mass and Moles of the Species]
-    B3[Theoretical Yield]
-    B4[Mass of Product, Actual Yield, Percent Yield]
-
-    C1[Prelab]
-    C2[Postlab]
-    C3[Chemical Equation]
-    C4[Data and Results Table]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Coordination Chemistry Experiment.</summary></entry><entry><title type="html">Installing a Learning Object to the D2L Environment</title><link href="http://localhost:4001/lcz" rel="alternate" type="text/html" title="Installing a Learning Object to the D2L Environment" /><published>2020-08-13T00:00:00-05:00</published><updated>2020-08-13T00:00:00-05:00</updated><id>http://localhost:4001/lcz</id><content type="html" xml:base="http://localhost:4001/lcz">&lt;p&gt;This tutorial is for the &lt;a href=&quot;https://d2l.depaul.edu/d2l/home&quot;&gt;D2L&lt;/a&gt; environment demonstrates how to import and use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning object&lt;/code&gt; prepared in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 standards&lt;/code&gt;. You may read more about what is a SCORM &lt;a href=&quot;https://scorm.com/scorm-explained/?utm_source=google&amp;amp;utm_medium=natural_search&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This tutorial is for the &lt;a href=&quot;https://d2l.depaul.edu/d2l/home&quot;&gt;D2L&lt;/a&gt; environment demonstrates how to import and use a &lt;code class=&quot;highlighter-rouge&quot;&gt;learning object&lt;/code&gt; prepared in the &lt;code class=&quot;highlighter-rouge&quot;&gt;SCORM 1.2 standards&lt;/code&gt;. You may read more about what is a SCORM &lt;a href=&quot;https://scorm.com/scorm-explained/?utm_source=google&amp;amp;utm_medium=natural_search&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-importing-the-package&quot;&gt;1 Importing the package&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 packages&lt;/code&gt; are shipped with .ZIP extension. Log in to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D2L course&lt;/code&gt; and follow these steps to import a new SCORM package.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SCORM 1.2 packages&lt;/code&gt; are shipped with .ZIP extension. Log in to your &lt;code class=&quot;highlighter-rouge&quot;&gt;D2L course&lt;/code&gt; and follow these steps to import a new SCORM package.&lt;/p&gt;
 
 &lt;h3 id=&quot;11-download-the-demo-package&quot;&gt;1.1 Download the demo package&lt;/h3&gt;
 
@@ -173,15 +113,21 @@
 &lt;h3 id=&quot;12-upload-to-d2l&quot;&gt;1.2 Upload to D2L&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import / Export / Copy Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; and click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copy All Components&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Select SCORM package from your desktop. In this demonstration, the file name is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test-package.zip&lt;/code&gt;. See Figure 1.&lt;/li&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import / Export / Copy Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; and click &lt;code class=&quot;highlighter-rouge&quot;&gt;Copy All Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select SCORM package from your desktop. In this demonstration, the file name is &lt;code class=&quot;highlighter-rouge&quot;&gt;test-package.zip&lt;/code&gt;. See Figure 1.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/lcz/1.jpg&quot; alt=&quot;Figure 1&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 1&lt;/em&gt;. Import screen: File selection.&lt;/small&gt;&lt;/p&gt;
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/1.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 350px&quot; /&gt;
+
+
+&lt;figcaption&gt;Import screen: File selection.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import All Components&lt;/code&gt;. Figure 2 shows the normal progress.
+  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Import All Components&lt;/code&gt;. Figure 2 shows the normal progress.
     &lt;ul&gt;
       &lt;li&gt;Remarks:
         &lt;ul&gt;
@@ -193,46 +139,88 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/lcz/2.jpg&quot; alt=&quot;Figure 2&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 2&lt;/em&gt;. Import screen: Processing.&lt;/small&gt;&lt;/p&gt;
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/2.jpg&quot; alt=&quot;1&quot; style=&quot;max-width: 350px&quot; /&gt;
+
+
+&lt;figcaption&gt;Import screen: Processing.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;h3 id=&quot;13-viewing-the-scorm-content&quot;&gt;1.3 Viewing the SCORM content&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View Content&lt;/code&gt; to access the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content&lt;/code&gt; tab.
+  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;View Content&lt;/code&gt; to access the &lt;code class=&quot;highlighter-rouge&quot;&gt;Content&lt;/code&gt; tab.
     &lt;ul&gt;
       &lt;li&gt;Figure 3 shows that a new menu item is added to the Table of Contents.&lt;/li&gt;
-      &lt;li&gt;When the menu item is clicked, the content appears in the main block with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM object&lt;/code&gt; sign.&lt;/li&gt;
+      &lt;li&gt;When the menu item is clicked, the content appears in the main block with a &lt;code class=&quot;highlighter-rouge&quot;&gt;SCORM object&lt;/code&gt; sign.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/lcz/3.jpg&quot; alt=&quot;Figure 3&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 3&lt;/em&gt;. SCORM content appears in the Table of Contents&lt;/small&gt;&lt;/p&gt;
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/3.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;SCORM content appears in the Table of Contents&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;2-accessing-the-content&quot;&gt;2 Accessing the content&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Click the link title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General Chemistry Lab I ▹ Interactive&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Click the link title &lt;code class=&quot;highlighter-rouge&quot;&gt;General Chemistry Lab I ▹ Interactive&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Figures 4 - 8 shows the D2L snapshots of various views in D2L&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/images/blog/lcz/6.jpg&quot; alt=&quot;Figure 4&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 4&lt;/em&gt;. Text based content.&lt;/small&gt;&lt;/p&gt;
+    &lt;figure&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/images/blog/lcz/7.jpg&quot; alt=&quot;Figure 5&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 5&lt;/em&gt;. Simulation.&lt;/small&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/lcz/8.jpg&quot; alt=&quot;Figure 6&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 6&lt;/em&gt;. Fill in the blank type activity. Feedback is immediate for learning. Not graded.&lt;/small&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/lcz/9.jpg&quot; alt=&quot;Figure 7&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 7&lt;/em&gt;. SCORM quiz. Graded, no feedback. Testing the knowledge gain.&lt;/small&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;/images/blog/lcz/10.jpg&quot; alt=&quot;Figure 8&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 8&lt;/em&gt;. Upon SCORM quiz completion, a item is created in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module.&lt;/small&gt;&lt;/p&gt;
+&lt;/figure&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/6.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Text based content.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/7.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Simulation.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/8.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Fill in the blank type activity. Feedback is immediate for learning. Not graded.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/9.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;SCORM quiz. Graded, no feedback. Testing the knowledge gain.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/10.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;Upon SCORM quiz completion, a item is created in the `Grades` module.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;3-benefits&quot;&gt;3 Benefits&lt;/h2&gt;
 
@@ -241,7 +229,7 @@
   &lt;li&gt;Easy to set up an experiment in D2L.
     &lt;ul&gt;
       &lt;li&gt;All logical sequences with content and activities will be followed by all sections.&lt;/li&gt;
-      &lt;li&gt;Any content type like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pdf&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.docx&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.xlsx&lt;/code&gt; can be embedded.&lt;/li&gt;
+      &lt;li&gt;Any content type like &lt;code class=&quot;highlighter-rouge&quot;&gt;.pdf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.docx&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.xlsx&lt;/code&gt; can be embedded.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Content can be updated as needed.&lt;/li&gt;
@@ -268,703 +256,84 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blog/lcz/5.jpg&quot; alt=&quot;Figure 9&quot; style=&quot;width:400px;&quot; class=&quot;shadow&quot; /&gt;
-&lt;br /&gt;&lt;small&gt;&lt;em&gt;Figure 9&lt;/em&gt;. ACS lists PhET Interactive Simulations in the first place of their list.&lt;/small&gt;&lt;/p&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="Online Teaching" /><summary type="html">This tutorial demonstrates how to import and use a learning object prepared in SCORM 1.2 standards.</summary></entry><entry><title type="html">Electrochemistry</title><link href="http://localhost:4001/fwb" rel="alternate" type="text/html" title="Electrochemistry" /><published>2020-08-12T00:00:00-05:00</published><updated>2020-08-12T00:00:00-05:00</updated><id>http://localhost:4001/fwb</id><content type="html" xml:base="http://localhost:4001/fwb">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 11&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-experimental-e-for-cu&quot; id=&quot;markdown-toc-11-experimental-e-for-cu&quot;&gt;1.1 Experimental \(E\) for \(Cu\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-experimental-e-for-al&quot; id=&quot;markdown-toc-12-experimental-e-for-al&quot;&gt;1.2 Experimental \(E\) for \(Al\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-experimental-ecirc-for-al&quot; id=&quot;markdown-toc-13-experimental-ecirc-for-al&quot;&gt;1.3 Experimental \(E^\circ\) for \(Al\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#14-experimental-e-for-zn&quot; id=&quot;markdown-toc-14-experimental-e-for-zn&quot;&gt;1.4 Experimental \(E\) for \(Zn\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#15-experimental-ecirc-for-zn&quot; id=&quot;markdown-toc-15-experimental-ecirc-for-zn&quot;&gt;1.5 Experimental \(E^\circ\) for \(Zn\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#16-experimental-e-for-pb&quot; id=&quot;markdown-toc-16-experimental-e-for-pb&quot;&gt;1.6 Experimental \(E\) for \(Pb\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#17-experimental-ecirc-for-pb&quot; id=&quot;markdown-toc-17-experimental-ecirc-for-pb&quot;&gt;1.7 Experimental \(E^\circ\) for \(Pb\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#18-internal-consistency-check&quot; id=&quot;markdown-toc-18-internal-consistency-check&quot;&gt;1.8 Internal Consistency Check&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-printing-off-the-worksheets&quot; id=&quot;markdown-toc-31-printing-off-the-worksheets&quot;&gt;3.1 Printing off the worksheets&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It is important that you identify the cathode and anode half-reactions for each galvanic cell before beginning the following calculations.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;11-experimental-e-for-cu&quot;&gt;1.1 Experimental \(E\) for \(Cu\)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;From the standard reduction potential, \(E^\circ\), of the copper half-reaction of 0.340 V and the concentration of \(Cu^2+\), calculate the actual value of \(E\) for the experimental copper half-reaction using the Nernst equation (Equation \ref{nerst}).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{nerst}
-  E_\text{red} = E_\text{red}^\circ - \Big( \frac{RT}{nF} \Big) \ln \Big( \frac{1}{[M^{n+}]} \Big)
-\end{equation}&lt;/p&gt;
-
-&lt;h3 id=&quot;12-experimental-e-for-al&quot;&gt;1.2 Experimental \(E\) for \(Al\)&lt;/h3&gt;
-
-&lt;p&gt;From the actual value of E for the experimental copper half-reaction and the measured value of Εcell for the copper-aluminum cell, determine the value of E for the experimental half-reaction for aluminum (Equation \ref{Ecell}).&lt;/p&gt;
-
-&lt;p&gt;\begin{equation}\label{Ecell}
-  E_\text{cell} = E_\text{cathode} - E_\text{anode}
-\end{equation}&lt;/p&gt;
-
-&lt;h3 id=&quot;13-experimental-ecirc-for-al&quot;&gt;1.3 Experimental \(E^\circ\) for \(Al\)&lt;/h3&gt;
-
-&lt;p&gt;From the calculated value of \(E\) for the experimental aluminum half-reaction and the actual
-concentration of \(Al^{3+}\), calculate \(E^\circ\) for the aluminum half-reaction using the Nernst equation (Equation \ref{nerst}).&lt;/p&gt;
-
-&lt;h3 id=&quot;14-experimental-e-for-zn&quot;&gt;1.4 Experimental \(E\) for \(Zn\)&lt;/h3&gt;
-
-&lt;p&gt;From the actual value of \(E\) for the experimental copper half-reaction and the measured value of Εcell for the copper-zinc cell, determine the value of E for the experimental half-reaction for zinc (Equation \ref{Ecell}).&lt;/p&gt;
-
-&lt;h3 id=&quot;15-experimental-ecirc-for-zn&quot;&gt;1.5 Experimental \(E^\circ\) for \(Zn\)&lt;/h3&gt;
-
-&lt;p&gt;From the calculated value of \(E\) for the experimental zinc half-reaction and the actual concentration
-of \(Zn^{2+}\), calculate \(E^\circ\) for the zinc half-reaction using the Nernst equation (Equation \ref{nerst}).&lt;/p&gt;
-
-&lt;h3 id=&quot;16-experimental-e-for-pb&quot;&gt;1.6 Experimental \(E\) for \(Pb\)&lt;/h3&gt;
-
-&lt;p&gt;From the actual value of \(E\) for the experimental copper half-reaction and the measured value of Εcell for the copper-lead cell, determine the value of \(E\) for the experimental half-reaction for lead (Equation \ref{Ecell}).&lt;/p&gt;
-
-&lt;h3 id=&quot;17-experimental-ecirc-for-pb&quot;&gt;1.7 Experimental \(E^\circ\) for \(Pb\)&lt;/h3&gt;
-
-&lt;p&gt;From the calculated value of E for the experimental lead half-reaction and the actual concentration
-of \(Pb^{2+}\), calculate \(E^\circ\) for the lead half-reaction using the Nernst equation (Equation \ref{nerst}).&lt;/p&gt;
-
-&lt;h3 id=&quot;18-internal-consistency-check&quot;&gt;1.8 Internal Consistency Check&lt;/h3&gt;
-
-&lt;p&gt;Using the experimental \(E\) values for zinc and lead calculated above, calculate \(E_\text{cell}\). Compare this result to the value you measured.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set.&lt;/li&gt;
-  &lt;li&gt;Analyze the data in Excel.&lt;/li&gt;
-  &lt;li&gt;Submit your worksheet in a PDF file.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-printing-off-the-worksheets&quot;&gt;3.1 Printing off the worksheets&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I was wondering if I may print off the worksheets for Experiments 11 and 12, hand write them and then upload them as a pdf file as I did for a previous experiment. In the lab guide, it says you may either write or type your responses, but other places it says that they must be typed. Thank you for the clarification!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Yes, you may print and fill out them. However, if any part of the worksheet requires you to copy and paste a graph, you should print and attach the graphs physically. One drawback for this approach is that you may not have enough space to attach a graph. In that case, you could add your graph as a separate page and make sure that you refer to the page in the given space, where you are expected tp provide the graph.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;82.71%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;9.01%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;85.40%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;96.08%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;62.07%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Electrochemistry Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Proofreading and General Formatting]
-    B2[Questions 6-9]
-    B3[Questions 10-11]
-    B4[Questions 12-13]
-
-    C1[Prelab]
-    C2[Postlab]
-    C3[Table 1]
-    C4[Question 2]
-    C5[Questions 3-5]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Electrochemistry Experiment.</summary></entry><entry><title type="html">Spectrophotometric Analysis of Manganese in Steel</title><link href="http://localhost:4001/ksm" rel="alternate" type="text/html" title="Spectrophotometric Analysis of Manganese in Steel" /><published>2020-08-10T00:00:00-05:00</published><updated>2020-08-10T00:00:00-05:00</updated><id>http://localhost:4001/ksm</id><content type="html" xml:base="http://localhost:4001/ksm">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 10&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-generate-the-standard-curve&quot; id=&quot;markdown-toc-11-generate-the-standard-curve&quot;&gt;1.1 Generate the standard curve&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-determine-the-molar-absorptivity&quot; id=&quot;markdown-toc-12-determine-the-molar-absorptivity&quot;&gt;1.2 Determine the molar absorptivity&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-calculate-the-concentration-of-unknown-steel-solution&quot; id=&quot;markdown-toc-13-calculate-the-concentration-of-unknown-steel-solution&quot;&gt;1.3 Calculate the concentration of unknown steel solution&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#14-calculate-mn-in-the-unknown-steel-sample&quot; id=&quot;markdown-toc-14-calculate-mn-in-the-unknown-steel-sample&quot;&gt;1.4 Calculate %Mn in the unknown steel sample&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-taking-the-prelab-quiz&quot; id=&quot;markdown-toc-31-taking-the-prelab-quiz&quot;&gt;3.1 Taking the prelab quiz&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#32-calculations&quot; id=&quot;markdown-toc-32-calculations&quot;&gt;3.2 Calculations&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#33-the-unit-of-absorbance&quot; id=&quot;markdown-toc-33-the-unit-of-absorbance&quot;&gt;3.3 The unit of absorbance&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#34-the-concentration-of-undiluted-solution&quot; id=&quot;markdown-toc-34-the-concentration-of-undiluted-solution&quot;&gt;3.4 The concentration of undiluted solution&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#35-dilution-formula&quot; id=&quot;markdown-toc-35-dilution-formula&quot;&gt;3.5 Dilution formula&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-generate-the-standard-curve&quot;&gt;1.1 Generate the standard curve&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Mass by difference calculate the mass of the known steel sample.&lt;/li&gt;
-  &lt;li&gt;The percent by mass of the known steel sample is known as 0.94% Mn.
-    &lt;ul&gt;
-      &lt;li&gt;Using the mass of the known steel sample and the weight to weight percent of Mn in this sample, calculate the mass and moles of Mn in the sample. Use Equation \ref{eq:massMn} and \ref{eq:molMn}.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:massMn}
-  m_{Mn} \text{ (g)} = m_\text{known sample} \text{ (g)} \times \frac{0.94 \text{ g } Mn}{100 \text{ g steel sample}}
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:molMn}
-  n_{Mn} \text{ (mol)} = m_{Mn} \text{ (g)} \times \frac{1 \text{ mol } Mn}{54.938049 \text{ g } Mn}
-\end{equation}&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate the molarity of known steel sample solution using Equations \ref{eq:molMnO4} and \ref{eq:molarMnO4}.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:molMnO4} 
-  n_{MnO_4^-} \text{ (mol)} = n_{Mn} \text{ (mol)}
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:molarMnO4}
-  [MnO_4^-] = \frac{n_{MnO_4^-} \text{ (mol)}}{ 0.25000 \text{ L solution} }
-\end{equation}&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Using \ref{eq:dilution} calculate the concentrations of each diluted solutions of \(MnO_4^-\). Remember that the dilutions were 3:1, 2:2, and 1:3 volume to volume ratio.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:dilution}
-  M_1 V_1 = M_2 V_2
-\end{equation}&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Generate a standard curve (absorbance at  525 nm vs. concentration of \(MnO_4^-\) in M) for the solutions of known \(MnO_4^-\) concentration.
-    &lt;ul&gt;
-      &lt;li&gt;In doing so, add 0 absorbance, 0 molar values as well.&lt;/li&gt;
-      &lt;li&gt;Thus, in total there are five data points in this plot.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;12-determine-the-molar-absorptivity&quot;&gt;1.2 Determine the molar absorptivity&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Apply trendline analysis over the standard curve.&lt;/li&gt;
-  &lt;li&gt;Following Beer’s Law, Equation \ref{eq:beers}, the slope of the plot determines the molar absorptivity \(a\) of \(MnO_4^-\). See Equation \ref{eq:a}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:beers}
-A = abc
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;where the path length, \(b=1.00\) cm.&lt;/p&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:a}
-a = \frac{ \text{slope} }{ \text{1 cm} }
-\end{equation}&lt;/p&gt;
-
-&lt;h3 id=&quot;13-calculate-the-concentration-of-unknown-steel-solution&quot;&gt;1.3 Calculate the concentration of unknown steel solution&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use Equation \ref{eq:beers} to calculate the concentration, \(c\) of \(MnO_4^-\).&lt;/li&gt;
-  &lt;li&gt;Probably your data has three trials of absorbance value.&lt;/li&gt;
-  &lt;li&gt;Repeat this calculation over all trials.&lt;/li&gt;
-  &lt;li&gt;Calculate the average concentration of \(MnO_4^-\), and also report the standard deviation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;14-calculate-mn-in-the-unknown-steel-sample&quot;&gt;1.4 Calculate %Mn in the unknown steel sample&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This is a straightforward calculation as you will be plugging in the average concentration of \(MnO_4^-\) in Equation \ref{eq:percentMn}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:percentMn}
-  \text{percent Mn} = \frac{ (V_{MnO_4^-})([MnO_4^-]) }{ m_\text{sample}}
-    \Big( \frac{ \text{1 mol Mn} }{ \text{1 mol } MnO_4^- } \times \frac{ 54.938049 \text{ mol Mn} }{ \text{1 mol Mn} } \Big) \times 100
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;where \(m_\text{sample}\) is the mass of unknown sample; \(V_{MnO_4^-}\) is the total volume of unknown sample solution, which is 250.00 mL; \([MnO_4^-]\) is the average concentration of \(MnO_4^-\) in the unknown solution (calculated in subsection &lt;a href=&quot;/ksm#13-calculate-the-concentration-of-unknown-steel-solution&quot;&gt;1.3&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Compare the molar absorptivity from your plot to the literature value
-given in the lab instructions.&lt;/li&gt;
-  &lt;li&gt;Read the lab instructions carefully so you can explain why you do or do not have to worry about \(Cu^{2+}\) and \(Ni^{2+}\) ions interfering with your results.&lt;/li&gt;
-  &lt;li&gt;Think through how a molar absorptivity that is too low would affect your results. To answer this correctly, follow the computational steps to make sure you can clearly state if an a value that is too small will lead to a higher or lower percent Mn than the correct value.&lt;/li&gt;
-  &lt;li&gt;Incorporate the responses to the above prompts in your overall discussion. Be sure to discuss the quality of your fit, the spread in the absorbance readings for the unknown, etc. to ensure your discussion is complete.&lt;/li&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set.&lt;/li&gt;
-  &lt;li&gt;Submit your &lt;strong&gt;full lab report&lt;/strong&gt; in a PDF file and &lt;strong&gt;calculations&lt;/strong&gt; in an Excel file.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-taking-the-prelab-quiz&quot;&gt;3.1 Taking the prelab quiz&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Is there anyway you can give me an example of how to enter the answers for the calculations? I just can’t seem to figure that out.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Please pay attention to the values of calculations. The values should be entered with correct significant figures and units. Units are case sensitive. Use the SI unit conventions.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1250&lt;/code&gt; is not equal to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1250.&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;L&lt;/code&gt; is not equal to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;l&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;32-calculations&quot;&gt;3.2 Calculations&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I would like to attend your office hours at 4pm tomorrow to ask a couple questions about the calculations for Experiment 10.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;After this meeting, the &lt;a href=&quot;/ksm#1-goals&quot;&gt;Goals&lt;/a&gt; section was revised. Although the lecture notes were elaborate enough, now this page has more details with relevant formulae, for those of whom are confused&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;33-the-unit-of-absorbance&quot;&gt;3.3 The unit of absorbance&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I was wondering if there are units that are necessary for the absorbance values on the figure needed for this lab.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Absorbance does not have a unit. The absorbance, \(A\), is defined by the incident intensity, \(I_0\), and transmitted intensity, \(I\).&lt;/p&gt;
-
-\[A = \log_{10} \Big( \frac{I_0}{I} \Big)\]
-
-&lt;p&gt;Overall, the equation shows no unit.&lt;/p&gt;
-
-&lt;h3 id=&quot;34-the-concentration-of-undiluted-solution&quot;&gt;3.4 The concentration of undiluted solution&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I am confused on where the fifth point on the standard curve graph comes from. I know that there is supposed to be a point where it is at the origin so I added that in the curve but since the volume of the diluted water is 0 isn’t the concentration of \(MnO_4^-\) also 0? If it is then it is way off the trend line and I don’t know what I did wrong. Please let me know if you can help me figure out what I did wrong that made the point for 1.610 absorbance have 0 concentration.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I suspect a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;potential misunderstanding&lt;/code&gt; here. When there is an aqueous solution, it is mostly water. Water is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;solvent&lt;/code&gt;, so by definition solvent is in abundance. When the solution is diluted, more water added. This is an important point to understand about aqueous solutions.&lt;/p&gt;
-
-&lt;p&gt;Undiluted solution has the highest concentration. Follow Equations \ref{eq:massMn}, \ref{eq:molMn}, \ref{eq:molMnO4}, and \ref{eq:molarMnO4} to calculate the molarity of permanganate. This value is the undiluted concentration, in which the highest absorbance (\(A\)) value is observed.&lt;/p&gt;
-
-&lt;h3 id=&quot;35-dilution-formula&quot;&gt;3.5 Dilution formula&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I just wanted to follow up on my last email. I read the questions page and I am still confused on how the concentration is less than the concentration multiplied by three. Because of the dilution formula where \(M_2=\frac{M_1 \times V_1}{V_2}\) wouldn’t the one with the highest volume standard with the lowest volume DI water had the highest value. I am sorry if I am getting confused on something simple here.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You are applying the dilution formula incorrectly. You should follow the following steps to find and plug in the correct $V$ values. I am using the second row of your data table.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;\(V_1 = 30.00\) mL of the stock \(MnO_4^-\) solution.&lt;/li&gt;
-  &lt;li&gt;Add 10.00 mL of DI water.&lt;/li&gt;
-  &lt;li&gt;Final volume becomes \(V_2 = 40.00\) mL of diluted \(MnO_4^-\) solution.&lt;/li&gt;
-  &lt;li&gt;In sum, you should plug in the following values:
-    &lt;ul&gt;
-      &lt;li&gt;\(V_1 = 30.00\) mL&lt;/li&gt;
-      &lt;li&gt;\(V_2 = 40.00\) mL&lt;/li&gt;
-      &lt;li&gt;\(M_1 = 0.0005126\) M based on your first row. (Please check this calculation, the concentration value looks too low.)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;84.06%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;10.24%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;86.67%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;95.83%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;57.33%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Manganese in Steel graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Overall Clarity and Flow]
-    B2[Abstract]
-    B3[Proofreading and General Formatting]
-    B4[Results]
-    B5[Discussion]
-    B6[Mass Percent of Mn in Unknown Sample]
-    B7[Discussion Prompts]
-
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Figure Formatting]
-    C4[Prelab]
-    C5[Postlab]
-    C6[Results Table]
-    C7[Calibration Curve]
-    C8[Excel Calculations]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
-    B--&amp;gt;B7;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-    C--&amp;gt;C7;
-    C--&amp;gt;C8;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Spectrophotometric Analysis of Manganese in Steel Experiment.</summary></entry><entry><title type="html">Thermodynamics of a Cobalt Complex</title><link href="http://localhost:4001/evj" rel="alternate" type="text/html" title="Thermodynamics of a Cobalt Complex" /><published>2020-08-05T00:00:00-05:00</published><updated>2020-08-05T00:00:00-05:00</updated><id>http://localhost:4001/evj</id><content type="html" xml:base="http://localhost:4001/evj">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 9&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-calculate-the-equilibrium-concentration&quot; id=&quot;markdown-toc-11-calculate-the-equilibrium-concentration&quot;&gt;1.1 Calculate the equilibrium concentration&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-calculate-the-equilibrium-constant&quot; id=&quot;markdown-toc-12-calculate-the-equilibrium-constant&quot;&gt;1.2 Calculate the equilibrium constant&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii&quot; id=&quot;markdown-toc-13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii&quot;&gt;1.3 Calculate the equilibrium concentration of uncomplexed cobalt(II)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#14-calculate-delta-gcirc-using-k&quot; id=&quot;markdown-toc-14-calculate-delta-gcirc-using-k&quot;&gt;1.4 Calculate \(\Delta G^\circ\) using \(K\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#15-make-ln-k-vs-1t-plots&quot; id=&quot;markdown-toc-15-make-ln-k-vs-1t-plots&quot;&gt;1.5 Make \(\ln K\) vs. \(1/T\) plots&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc&quot; id=&quot;markdown-toc-16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc&quot;&gt;1.6 Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#17-generate-a-combined-plot-of-ln-k-vs-1t&quot; id=&quot;markdown-toc-17-generate-a-combined-plot-of-ln-k-vs-1t&quot;&gt;1.7 Generate a combined plot of \(\ln K\) vs. \(1/T\)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-calculating-the-equilibrium-concentration-of-co2&quot; id=&quot;markdown-toc-31-calculating-the-equilibrium-concentration-of-co2&quot;&gt;3.1 Calculating the equilibrium concentration of \(Co^{2+}\)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-calculate-the-equilibrium-concentration&quot;&gt;1.1 Calculate the equilibrium concentration&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate the equilibrium concentration of tetrachlorocobaltate(II) in solution at each temperature using Beer’s law with the measured absorbance value at the temperature of interest.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}
-  A = abc
-\end{equation}&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Assume that the molar absorptivity, \(b\), of \(CoCl_2^-\) in water at 690 nm is constant (\(6.00 \times 10^2\) \(M^{-1}.cm^{-1}\) for all 4 temperature values.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The path length, \(a\), is equal to 1.00 cm.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The equilibrium concentration of uncomplexed cobalt(II), \(Co^{2+}\),  ions in solution at any given temperature is found using conservation of mass, the initial concentration of cobalt(II) ions in the stock solution, and the equilibrium concentration of tetrachlorocobaltate(II) at that temperature.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;12-calculate-the-equilibrium-constant&quot;&gt;1.2 Calculate the equilibrium constant&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate the equilibrium constant for the reaction of interest at each temperature using Equation \ref{eq:K}.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:K}
-  K = \frac{[ CoCl_4^{2-} ]}{[ Co^{2+} ][ Cl^- ]^4}
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;In doing this calculation, assume that the \([Cl^-]\) is constant due to the presence of strong 6.00 M \(HCl\) acid. For the sake of significant figures in this calculation, assume the concentration of \(HCl\) is exactly 6.00 M.&lt;/p&gt;
-
-&lt;h3 id=&quot;13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii&quot;&gt;1.3 Calculate the equilibrium concentration of uncomplexed cobalt(II)&lt;/h3&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:CoII}
-  Co^{2+}(aq) + 4 Cl^-(aq) \Leftrightarrow CoCl_4^{2-}(aq)
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;The equilibrium concentration of uncomplexed cobalt(II), \(Co^{2+}\), ions in solution at any given temperature is found using conservation of mass (i.e. the stoichiometric calculation based on Eqation \ref{eq:CoII}), the initial concentration of cobalt(II) ions in the stock solution, and the equilibrium concentration of tetrachlorocobaltate(II) at that temperature.&lt;/p&gt;
-
-&lt;h3 id=&quot;14-calculate-delta-gcirc-using-k&quot;&gt;1.4 Calculate \(\Delta G^\circ\) using \(K\)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaG}.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:deltaG}
-  \Delta G^\circ = - RT \ln K
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;where \(R = 8.3145 \text{ J/mol.K}\) (use all figures to ensure proper significant figures), and all temperature values are in Kelvin.&lt;/p&gt;
-
-&lt;h3 id=&quot;15-make-ln-k-vs-1t-plots&quot;&gt;1.5 Make \(\ln K\) vs. \(1/T\) plots&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make \(\ln K\) vs. \(1/T\) plots for each trial separately.&lt;/li&gt;
-  &lt;li&gt;Temperature values are in Kelvin.&lt;/li&gt;
-  &lt;li&gt;Using the Excel formulas, calculate slope, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=SLOPE()&lt;/code&gt;, and intercept &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=INTERCEPT()&lt;/code&gt; for the line of best fit.&lt;/li&gt;
-  &lt;li&gt;Calculate \(\Delta H^\circ\) and \(\Delta S^\circ\) for each trial using Equation \ref{eq:lnK}.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:lnK}
-  \ln K = - \Big( \frac{\Delta H^\circ}{R} \Big)\Big( \frac{1}{T} \Big) + \Big( \frac{\Delta S^\circ}{R} \Big)
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;where \(\text{slope} =  - \Big( \frac{\Delta H^\circ}{R} \Big)\), \(y-\text{intercept} =  \Big( \frac{\Delta S^\circ}{R} \Big)\), \(R\) is in energy unit like in Equation \ref{eq:deltaG}, and temperature is in Kelvin.&lt;/p&gt;
-
-&lt;h3 id=&quot;16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc&quot;&gt;1.6 Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaGthm}.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}\label{eq:deltaGthm}
-  \Delta G^\circ = \Delta H^\circ - T \Delta S^\circ
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;where \(T\) is in Kelvin.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Assume that \(\Delta H^\circ\) and \(\Delta S^\circ\) are constant with temperature.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;17-generate-a-combined-plot-of-ln-k-vs-1t&quot;&gt;1.7 Generate a combined plot of \(\ln K\) vs. \(1/T\)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Generate a combined plot of \(\ln K\) vs. \(1/T\). In this plot, you should include the results from all trials.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set&lt;/li&gt;
-  &lt;li&gt;Analyze the data in Excel&lt;/li&gt;
-  &lt;li&gt;Submit your &lt;strong&gt;full lab report&lt;/strong&gt; in a PDF file and &lt;strong&gt;calculations&lt;/strong&gt; in an Excel file.
-    &lt;ul&gt;
-      &lt;li&gt;Be sure to fully discuss your results.
-        &lt;ul&gt;
-          &lt;li&gt;Compare the values from the two trials and discuss how similar or different they are, as well as potential reasons for differences observed.&lt;/li&gt;
-          &lt;li&gt;Discuss the values of \(\Delta G^\circ\): are the values obtained similar for each type of calculation? Why might they be different?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;There are two discussion prompts that should be incorporated into your overall discussion
-        &lt;ul&gt;
-          &lt;li&gt;One relates to the signs of \(\Delta H^\circ\) and \(\Delta S^\circ\), and why the signs you obtained do or do not follow your expectations.&lt;/li&gt;
-          &lt;li&gt;The other relates to the conditions for spontaneity. Remember that \(\Delta H^\circ\) and \(\Delta S^\circ\)  relate to standard state conditions when you calculate the temperature range over which the reaction will occur spontaneously.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-calculating-the-equilibrium-concentration-of-co2&quot;&gt;3.1 Calculating the equilibrium concentration of \(Co^{2+}\)&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I had a question on how to calculate the equilibrium concentration of \(Co^{2+}\). In the lab, it gives a brief description but no equation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;To answer this question, a new subsection was added to this document. Please &lt;a href=&quot;/evj#13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii&quot;&gt;see&lt;/a&gt;: Calculate the equilibrium concentration of uncomplexed cobalt(II)&lt;/p&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;79.30%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;13.65%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;76.17%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;97.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;52.83%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Thermodynamics of a Cobalt Complex Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Overall Clarity and Flow]
-    B2[Abstract]
-    B3[Proofreading and General Formatting]
-    B4[Results]
-    B5[Discussion]
-    B6[ln K vs. 1/T Figures]
-    B7[Discussion Prompts]
-
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Figure Formatting]
-    C4[Prelab]
-    C5[Postlab]
-    C6[Temperature Study Table]
-    C7[Free Energy Comparison Table]
-    C8[Excel Calculations]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
-    B--&amp;gt;B7;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-    C--&amp;gt;C7;
-    C--&amp;gt;C8;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Thermodynamics of a Cobalt Complex Experiment.</summary></entry><entry><title type="html">Request for Letter of Recommendation</title><link href="http://localhost:4001/xxz" rel="alternate" type="text/html" title="Request for Letter of Recommendation" /><published>2020-08-05T00:00:00-05:00</published><updated>2020-08-05T00:00:00-05:00</updated><id>http://localhost:4001/xxz</id><content type="html" xml:base="http://localhost:4001/xxz">&lt;p&gt;Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers.&lt;/p&gt;
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/5.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;ACS lists PhET Interactive Simulations in the first place of their list.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Thu, 13 Aug 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/lcz.html</link>
+            <guid isPermaLink="true">http://localhost:4000/lcz.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Request for Letter of Recommendation</title>
+            <description>&lt;p&gt;Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers.&lt;/p&gt;
 
 &lt;p&gt;Important note that it is to your advantage to ask for recommendation letters from faculty who know you well outside of the classroom. If you were a student in my class and not a member of my research group, it is usually more appropriate to ask another faculty for a recommendation letter. That way, they can state specific information about your qualifications and experiences that is not already presented on your transcript.&lt;/p&gt;
 
@@ -994,905 +363,932 @@ Chicago, IL 60614&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;After the application process is finished, please email me and let me know what graduate programs or medical schools you have been accepted to and which program you have selected.&lt;/li&gt;
   &lt;li&gt;Keep in touch and let me know how much fun you’re having in graduate or medical school.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="My Students" /><summary type="html">Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers. Important note that it is to your advantage to ask for recommendation letters from faculty who know you well outside of the classroom. If you were a student in my class and not a member of my research group, it is usually more appropriate to ask another faculty for a recommendation letter. That way, they can state specific information about your qualifications and experiences that is not already presented on your transcript. Please follow these specific guidelines: Email me as soon as possible to ask for a recommendation letter and to schedule a meeting to discuss your future career plans. It is my policy to only write letters for students who waive their rights to read the letters of recommendation. Submit your materials in person at least 1 month before the due date. The earlier you can give me your application materials, the more time I will have to work on your recommendation letters. A short typed paragraph on our previous interactions at DePaul University (e.g., in which of my classes you were in and your grade in each class, what quarters you were involved in my research group and what specific work you did, etc.) Any necessary forms from each graduate school (with as much information filled out on the form as possible). Addressed and stamped envelopes for each application. Please be sure to include the return address as well: Murat Kahveci Department of Chemistry and Biochemistry DePaul University 1110 W. Belden Ave., 100A McGowan South Chicago, IL 60614 A copy of your vita or resume. A copy of your personal statement. A document containing your GPA, Chemistry GPA, GRE score, previous research experience, specific future career plans, specific research interests you hope to pursue in graduate school or medical school, and any other relevant information about you and your academic accomplishments. Please send me an email (in addition to a printed out a list) with a PDF Document that contains all of the addresses, specific graduate or medical schools, and the due dates for each application. After the application process is finished, please email me and let me know what graduate programs or medical schools you have been accepted to and which program you have selected. Keep in touch and let me know how much fun you’re having in graduate or medical school.</summary></entry><entry><title type="html">Amino Acid Titration</title><link href="http://localhost:4001/yfh" rel="alternate" type="text/html" title="Amino Acid Titration" /><published>2020-08-04T00:00:00-05:00</published><updated>2020-08-04T00:00:00-05:00</updated><id>http://localhost:4001/yfh</id><content type="html" xml:base="http://localhost:4001/yfh">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 8&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-identification-of-the-unknown-amino-acid&quot; id=&quot;markdown-toc-11-identification-of-the-unknown-amino-acid&quot;&gt;1.1 Identification of the unknown amino acid&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-calculate-the-molar-mass-of-the-acid&quot; id=&quot;markdown-toc-12-calculate-the-molar-mass-of-the-acid&quot;&gt;1.2 Calculate the molar mass of the acid&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-determine-the-identity-of-amino-acid&quot; id=&quot;markdown-toc-13-determine-the-identity-of-amino-acid&quot;&gt;1.3 Determine the identity of amino acid&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-the-unknown-amino-acid-i-found-doesnt-match&quot; id=&quot;markdown-toc-31-the-unknown-amino-acid-i-found-doesnt-match&quot;&gt;3.1 The unknown amino acid I found doesn’t match&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+            <pubDate>Wed, 05 Aug 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/xxz.html</link>
+            <guid isPermaLink="true">http://localhost:4000/xxz.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>'Thank you' from Andres</title>
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
 
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
+  &lt;p&gt;Professor Kahveci,&lt;/p&gt;
 
-&lt;h3 id=&quot;11-identification-of-the-unknown-amino-acid&quot;&gt;1.1 Identification of the unknown amino acid&lt;/h3&gt;
+  &lt;p&gt;I just wanted to extend a sincere thank you to you and the entire Chemistry department, including our TA’s, for your compassion and understanding during these turbulent times. With everything going on, we’ve all been under an unusual amount of mental stress and I’m sure that extends to the teaching staff as well, so I hope you’ve all been well. The content in this class is not easy to grasp, but without the efforts of the staff making this information so comprehensible considering the short notice of this transition, I’m sure things could have been much worse. Also, I have seen a lot of leeway being given throughout this quarter in regards to grading and submission of assignments, and for me personally that has taken some of the stress out of this transition to our remote learning experience this quarter. It’s for this alleviation that I thank you all.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Plot a graph of \(pH\) vs. \(V(mL)\) of \(NaOH\) added.&lt;/li&gt;
-  &lt;li&gt;If a break (or breaks, in the case of polyprotic acids) is clearly visible, estimate the pKa (or multiple \(pKa\) values in the case of polyprotic acids).&lt;/li&gt;
-  &lt;li&gt;Use the example titration curve in the previous slide as a guidance:
-    &lt;ul&gt;
-      &lt;li&gt;The vertical dashed line shows equivalence point and corresponding \(NaOH\) volume.&lt;/li&gt;
-      &lt;li&gt;The horizontal dashed line shows \(pH\) value, which is equal to \(pKa\) value. So, you determined the \(pKa\) value.&lt;/li&gt;
-      &lt;li&gt;Repeat this process for each break if you have multiple breaks and determine all \(pKa\) values.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Estimate the molar mass of the acid.&lt;/li&gt;
-  &lt;li&gt;Use these data to find a match in Table 2, Table 3, or Table 4.&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;p&gt;Sincerely,&lt;/p&gt;
 
-&lt;h3 id=&quot;12-calculate-the-molar-mass-of-the-acid&quot;&gt;1.2 Calculate the molar mass of the acid&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;At the equivalence point:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}
-  \text{mol } OH^- = \text{mol amino acid}
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;which means:&lt;/p&gt;
-
-&lt;p&gt;\begin{equation}
-  \text{volume of } OH^- \times \frac{\text{mol } OH^-}{ \text{L} } \times \frac{ 1 \text{ mol amino acid}}{ 1 \text{ mol } OH^-} = \text{mol amino acid} 
-\end{equation}&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate molar mass using the moles of amino acid and the mass of sample.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;\begin{equation}
-  \text{molar mass of amino acid} = \frac{\text{g amino acid}}{\text{mol amino acid}}
-\end{equation}&lt;/p&gt;
-
-&lt;h3 id=&quot;13-determine-the-identity-of-amino-acid&quot;&gt;1.3 Determine the identity of amino acid&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Using the \(pKa\) and molar mass values determine the identity of amino acid.&lt;/li&gt;
-  &lt;li&gt;Find a match in Table 2, Table 3, or Table 4.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set.&lt;/li&gt;
-  &lt;li&gt;Analyze the data in Excel&lt;/li&gt;
-  &lt;li&gt;Submit your partial lab report in PDF and all calculations in Excel file.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-the-unknown-amino-acid-i-found-doesnt-match&quot;&gt;3.1 The unknown amino acid I found doesn’t match&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The molar mass of the unknown amino acid I found doesn’t match any of the options in Tables 2-4. My unknown number is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XYZ&lt;/code&gt; [hidden for general post]. I’m unable to figure out which calculation I am not doing correctly and have attached my Excel file. Based on my graph, I think I have a monoprotic acid and that I did do the calculation correctly since the break is approximately &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XYZ&lt;/code&gt; [hidden for general post] and my calculated molar mass is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XYZ&lt;/code&gt; [hidden for general post].&lt;/p&gt;
+  &lt;p&gt;Andres&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Reviewing your calculations in Excel reveals that you are pretty much okay with the methodology. I would double-check the values such as the mass of sample, etc. If they are okay, then you can leave this analysis as is. Hint: Your calculated molar mass is much smaller than its actual value. So, I would not rely on molar mass if everything is correct, and it stays as is. Finding the correct half-way(s) might be much more helpful.&lt;/p&gt;
+&lt;p&gt;Andres is taking General Chemistry II (lecture and lab) in Spring 2020. This email correspondence was posted with Andres’s written permission via email on 6/3/2020.&lt;/p&gt;
+</description>
+            <pubDate>Wed, 03 Jun 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/fxb.html</link>
+            <guid isPermaLink="true">http://localhost:4000/fxb.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>D2L Submission Folder Setup with a Rubric</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 5. D2L Submission Folder Setup with a Rubric&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;With respect to finding the half-way points, I would make the plot much larger. Only then, you would see that there are more than one half-way points.&lt;/p&gt;
+&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with an associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
 
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;89.47%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;8.74%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;92.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;99.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;72.50%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Amino Acid Titration Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Overall Clarity and Flow]
-    B2[Abstract]
-    B3[Results]
-    B4[Discussion]
-    B5[Proofreading and General Formatting]
-    B6[Equivalence Points]
-    B7[Discussion Prompts]
-
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Prelab]
-    C4[Postlab]
-    C5[Results Table]
-    C6[Titration Curve]
-    C7[Excel Calculations]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
-    B--&amp;gt;B7;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-    C--&amp;gt;C7;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Amino Acid Titration Experiment.</summary></entry><entry><title type="html">Le Châtelier’s Principle</title><link href="http://localhost:4001/bxh" rel="alternate" type="text/html" title="Le Châtelier’s Principle" /><published>2020-08-03T00:00:00-05:00</published><updated>2020-08-03T00:00:00-05:00</updated><id>http://localhost:4001/bxh</id><content type="html" xml:base="http://localhost:4001/bxh">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 7&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-feedback&quot; id=&quot;markdown-toc-41-feedback&quot;&gt;4.1 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-grades&quot; id=&quot;markdown-toc-42-grades&quot;&gt;4.2 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-team-grading&quot; id=&quot;markdown-toc-43-team-grading&quot;&gt;4.3 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
+&lt;h2 id=&quot;new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Observe the effect of adding mixing various solutions or changing the temperature of a solution.&lt;/li&gt;
-  &lt;li&gt;Explain the observations using the relevant chemical reactions and Le Châtelier’s principle.&lt;/li&gt;
-  &lt;li&gt;Be through!
+  &lt;li&gt;Navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Submissions&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;New Folder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;: Give a name to the folder. e.g. Lab 1.&lt;/li&gt;
+  &lt;li&gt;Select a &lt;code class=&quot;highlighter-rouge&quot;&gt;Grade Item&lt;/code&gt; from the dropdown list. You can add &lt;code class=&quot;highlighter-rouge&quot;&gt;New Grade Item&lt;/code&gt;, if needed.&lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;highlighter-rouge&quot;&gt;Add Rubric&lt;/code&gt; button and select a rubric from the list. If you don’t see a rubric, you need to &lt;a href=&quot;/ydt#rubric&quot;&gt;import&lt;/a&gt; one.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure that &lt;code class=&quot;highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;rubric&quot;&gt;Importing a Rubric&lt;/h2&gt;
+
+&lt;h3 id=&quot;method-1-copying-from-my-course&quot;&gt;Method 1: Copying from my Course&lt;/h3&gt;
+
+&lt;p&gt;You may import rubrics like any other components in D2L. I will be posting rubrics for SQ20-CHE 133 and SQ20-CHE 135 this quarter. To import a rubric:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;Do not simply state “Sodium hydroxide was added and the reaction shifted left.”&lt;/li&gt;
-      &lt;li&gt;See the lecture notes posted for more elaborate examples.&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE_133_303_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;highlighter-rouge&quot;&gt;CHE 133&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download the Word document worksheet posted.&lt;/li&gt;
-  &lt;li&gt;Make careful observations.&lt;/li&gt;
-  &lt;li&gt;Type your responses on the Word document.&lt;/li&gt;
-  &lt;li&gt;Still photos are shown in addition to the video content to allow you to see the results more clearly.
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;method-2-importing-as-an-external-zip-file&quot;&gt;Method 2: Importing as an External ZIP File&lt;/h3&gt;
+
+&lt;p&gt;This method is for those who cannot import from my course. Originally, I did not think this would be a problem but I was notified that it was not possible to import a component from my course unless you were enrolled as a TA or instructor.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, grab the rubric file as a ZIP from the shared Box folder.
     &lt;ul&gt;
-      &lt;li&gt;For precipitates, describe the color, apparent consistency.&lt;/li&gt;
-      &lt;li&gt;For translucent solutions, state the color and the depth of color (dark, light, etc.).&lt;/li&gt;
-      &lt;li&gt;Note the formation of gas bubbles and any comments regarding temperature changes.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Upload your final worksheet as a PDF document.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;p&gt;No incoming questions for this experiment.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-feedback&quot;&gt;4.1 Feedback&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;42-grades&quot;&gt;4.2 Grades&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;82.72%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;8.84%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;83.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;96.50%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;70.00%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;43-team-grading&quot;&gt;4.3 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Le Chateliers Principle Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Proofreading and General Formatting]
-    B2[Magnesium Chloride Solution]
-    B3[Cobalt II Chloride Solution]
-    B4[Silver Ion Soluion]
-
-    C1[Prelab]
-    C2[Postlab]
-    C3[Saturated Sodium Chloride Solution]
-    C4[Potassium Chromate Solution]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Le Châtelier’s Principle Experiment.</summary></entry><entry><title type="html">Buffer Solutions</title><link href="http://localhost:4001/fbo" rel="alternate" type="text/html" title="Buffer Solutions" /><published>2020-08-02T00:00:00-05:00</published><updated>2020-08-02T00:00:00-05:00</updated><id>http://localhost:4001/fbo</id><content type="html" xml:base="http://localhost:4001/fbo">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;SSQ20 CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 6&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-prepare-the-buffers-a1-e1&quot; id=&quot;markdown-toc-11-prepare-the-buffers-a1-e1&quot;&gt;1.1 Prepare the buffers A1-E1&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-generate-the-plot-of-ph-vs-log-frac-base--acid-&quot; id=&quot;markdown-toc-12-generate-the-plot-of-ph-vs-log-frac-base--acid-&quot;&gt;1.2 Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor&quot; id=&quot;markdown-toc-13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor&quot;&gt;1.3 Generate the plot pH vs. the logarithm of the dilution factor&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-total-volumes-of-buffer-solutions&quot; id=&quot;markdown-toc-31-total-volumes-of-buffer-solutions&quot;&gt;3.1 Total volumes of buffer solutions&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-misconceptions&quot; id=&quot;markdown-toc-41-misconceptions&quot;&gt;4.1 Misconceptions&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#411-henderson-hasselbalch-plot&quot; id=&quot;markdown-toc-411-henderson-hasselbalch-plot&quot;&gt;4.1.1 Henderson-Hasselbalch plot&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#412-dilution-plot&quot; id=&quot;markdown-toc-412-dilution-plot&quot;&gt;4.1.2 Dilution plot&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-formatting-issues&quot; id=&quot;markdown-toc-43-formatting-issues&quot;&gt;4.3 Formatting Issues&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#431-data-table&quot; id=&quot;markdown-toc-431-data-table&quot;&gt;4.3.1 Data table&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#44-feedback&quot; id=&quot;markdown-toc-44-feedback&quot;&gt;4.4 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#45-grades&quot; id=&quot;markdown-toc-45-grades&quot;&gt;4.5 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#46-team-grading&quot; id=&quot;markdown-toc-46-team-grading&quot;&gt;4.6 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-prepare-the-buffers-a1-e1&quot;&gt;1.1 Prepare the buffers A1-E1&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Calculate the concentration of each component present in buffers A1-E1 using the concentration of each stock solution, the volume of each solution delivered, and the total volume of buffer created.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Solution&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Volume (mL) of \(CH_3COOH\) or \(NH_4Cl\)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Volume (mL) of \(CH_3COONa\) or \(NH_3\)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;A1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;15.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;15.00&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;B1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;20.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;10.00&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;C1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;25.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;5.00&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;D1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;5.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;25.00&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;E1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;10.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;20.00&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;12-generate-the-plot-of-ph-vs-log-frac-base--acid-&quot;&gt;1.2 Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fit the data to a line (i.e. trendline).&lt;/li&gt;
-  &lt;li&gt;Calculate the slope (3 sig. figs required) using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=SLOPE()&lt;/code&gt; function in Excel.&lt;/li&gt;
-  &lt;li&gt;Calculate the intercept (3 sig. figs required) using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=INTERCEPT()&lt;/code&gt; function in Excel.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor&quot;&gt;1.3 Generate the plot pH vs. the logarithm of the dilution factor&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Generate a single scatter plot of pH vs. the logarithm of the dilution factor (1, 10, 100) for each buffer component using Excel.&lt;/li&gt;
-  &lt;li&gt;Both data sets should be presented on the same plot.&lt;/li&gt;
-  &lt;li&gt;Do not fit the data to a trendline.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Watch pH meter calibration video&lt;/li&gt;
-  &lt;li&gt;Watch the videos, pass the postlab quiz, and download your data set for Experiment 6&lt;/li&gt;
-  &lt;li&gt;Analyze the data in Excel&lt;/li&gt;
-  &lt;li&gt;Submit your partial lab report in a PDF file and all calculations in an Excel file.&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
-
-&lt;h3 id=&quot;31-total-volumes-of-buffer-solutions&quot;&gt;3.1 Total volumes of buffer solutions&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I’m not confident which volumes I should use as my volume delivered and total volume. Should I add the volumes of \(NH_4Cl\) and \(NH_3\) together as my volume delivered? In my Excel calculations, I then added 75mL from \(HCl\) for my total volume for A1, C1, and D1. The procedure mentions adding \(HCl\) to A1, C1, and D1, but I’m not sure what I need to incorporate into my total volume for B1 and E1 since the procedure doesn’t say much else about them, or what to do with A2.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;First of all, please try to make your questions more concise. It is a little hard to follow what is being asked here. Perhaps, sending your existing work might help clarify your confusion easier.&lt;/p&gt;
-
-&lt;p&gt;According to Table 2, solution A1 has the following total volume:&lt;/p&gt;
-
-\[V_{tot, A1} = V_{CH_3COOH \text{ or } NH_4Cl} + V_{CH_3COONa \text{ or } NH_3} \notag\]
-
-\[V_{tot, A1} = (15.00 \text{ mL}) + (15.00 \text{ mL}) = 30.00 \text{ mL} \notag\]
-
-&lt;p&gt;Likewise, sum the volume values of each species for B1, C1, D1, and E1 to calculate their respective \(V_{tot}\) values.&lt;/p&gt;
-
-&lt;p&gt;Next step is about addition of \(HCl\) solution. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Obtain 75 mL of 0.10 M hydrochloric acid and 75 mL of 0.10 M sodium hydroxide. Add 10 mL of hydrochloric acid to solutions A1, C1, D1, and Water 1.&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I will show the volume calculation for A1 only. 10.00 mL \(HCl\) solution is added to A1. Thus:&lt;/p&gt;
-
-\[V_{tot, A1 \text{ with } HCl} = V_{tot, A1} + V_{HCl} \notag\]
-
-\[V_{tot, A1 \text{ with } HCl} = (30.00 \text{ mL}) + (10.00 \text{ mL}) = 40.00 \text{ mL} \notag\]
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-misconceptions&quot;&gt;4.1 Misconceptions&lt;/h3&gt;
-
-&lt;h4 id=&quot;411-henderson-hasselbalch-plot&quot;&gt;4.1.1 Henderson-Hasselbalch plot&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The plot should have one data series&lt;/li&gt;
-  &lt;li&gt;Variables are confused:
-    &lt;ul&gt;
-      &lt;li&gt;\(x-\)axis should be \(\log \frac{ [base] }{ [acid] }\).
+      &lt;li&gt;In this folder, navigate to &lt;code class=&quot;highlighter-rouge&quot;&gt;Online Rubrics to Import D2L&lt;/code&gt; folder.&lt;/li&gt;
+      &lt;li&gt;Any of these files must be imported to D2L as a ZIP file. So, don’t unzip. Naming convention:
         &lt;ul&gt;
-          &lt;li&gt;One refers to this variable as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Henderson-Hasselbalch constant&lt;/code&gt;.
-            &lt;ul&gt;
-              &lt;li&gt;How can a constant be a variable at the same time, plotted in the \(x-\)axis?&lt;/li&gt;
-              &lt;li&gt;So, common sense can easily avoid some confusions&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;See the relevant instructions &lt;a href=&quot;/fbo#12-generate-the-plot-of-ph-vs-log-frac-base--acid-&quot;&gt;above&lt;/a&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Log[base/acid]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It should be \(\log \frac{ [base] }{ [acid] }\). Bracket represents molarity. Bracket of base/acid does not represent molarity.&lt;/p&gt;
-
-&lt;h4 id=&quot;412-dilution-plot&quot;&gt;4.1.2 Dilution plot&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Variables are confused:
-    &lt;ul&gt;
-      &lt;li&gt;\(x-\)axis should be \(\log (\text{dilution factor})\).&lt;/li&gt;
-      &lt;li&gt;See the relevant instructions &lt;a href=&quot;/fbo#13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor&quot;&gt;above&lt;/a&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;43-formatting-issues&quot;&gt;4.3 Formatting Issues&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NH3 and NH4&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Should be \(NH_3\) and \(NH_4\)&lt;/p&gt;
-
-&lt;h4 id=&quot;431-data-table&quot;&gt;4.3.1 Data table&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sig. fig. errors. For example:
-    &lt;ul&gt;
-      &lt;li&gt;Presented:
-        &lt;ul&gt;
-          &lt;li&gt;0 mL&lt;/li&gt;
-          &lt;li&gt;5 mL&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Expected:
-        &lt;ul&gt;
-          &lt;li&gt;0.00 mL&lt;/li&gt;
-          &lt;li&gt;5.00 mL&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE133-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;SQ20-CHE135-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Title is missing&lt;/li&gt;
+  &lt;li&gt;On D2L, go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; (again as submenu) and select and upload the ZIP file you grabbed.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;44-feedback&quot;&gt;4.4 Feedback&lt;/h3&gt;
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/lcz.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 6  Installing a Learning Object to the D2L Environment&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Mon, 13 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/ydt.html</link>
+            <guid isPermaLink="true">http://localhost:4000/ydt.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Tools</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 4. Tools&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://padlet.com/&quot;&gt;Padlet&lt;/a&gt; (free). You open a pad and then double click to add a “post-it” note.  There are different ways to format where all posts go in a line down the center or they can be anywhere (and then moved by the instructor or students if you give permission).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Powtoon&lt;/a&gt;. You can make animations, videos, and infographics.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Screencastify&lt;/a&gt;. Make awesome videos and presentations.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;45-grades&quot;&gt;4.5 Grades&lt;/h3&gt;
+&lt;p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;88.55%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;8.19%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;91.80%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;100.00%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;73.00%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/ydt.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 5  D2L Submission Folder Setup with a Rubric&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sat, 11 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/xiw.html</link>
+            <guid isPermaLink="true">http://localhost:4000/xiw.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Low Cost Options for Document Cameras</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 3. Low Cost Options for Document Cameras&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h3 id=&quot;46-team-grading&quot;&gt;4.6 Team grading&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Buffer Solutions Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
-
-    B1[Overall Clarity and Flow]
-    B2[Abstract]
-    B3[Results]
-    B4[Proofreading and General Formatting]
-    B5[Strong Acid- Strong Base Data Table]
-    B6[Henderson- Hasselbalch Plot]
-    B7[Dilution Plot]
-    B8[Discussion]
-
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Figure Formatting]
-    C4[Prelab]
-    C5[Postlab]
-    C6[Excel Calculations]
-
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
-    B--&amp;gt;B7;
-    B--&amp;gt;B8;
-
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Buffer Solutions Experiment.</summary></entry><entry><title type="html">Acids and Bases</title><link href="http://localhost:4001/hba" rel="alternate" type="text/html" title="Acids and Bases" /><published>2020-07-29T00:00:00-05:00</published><updated>2020-07-29T00:00:00-05:00</updated><id>http://localhost:4001/hba</id><content type="html" xml:base="http://localhost:4001/hba">&lt;p&gt;&lt;a class=&quot;button button--primary button--pill&quot; href=&quot;/tpv&quot;&gt;CHE 139&lt;/a&gt;
-&lt;code class=&quot;language-plaintext success highlighter-rouge&quot;&gt;Experiment 5&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-goals&quot; id=&quot;markdown-toc-1-goals&quot;&gt;1 Goals&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot; id=&quot;markdown-toc-11-examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot;&gt;1.1 Examine the effect of dilution on the pH of strong and weak acids and bases&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-calculating-the-values-of-k_a-and-k_b&quot; id=&quot;markdown-toc-12-calculating-the-values-of-k_a-and-k_b&quot;&gt;1.2 Calculating the values of \(K_a\) and \(K_b\)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#13-examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot; id=&quot;markdown-toc-13-examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot;&gt;1.3 Examine the pH of mixtures of strong and weak acids and bases&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-assignment&quot; id=&quot;markdown-toc-2-assignment&quot;&gt;2 Assignment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-qas&quot; id=&quot;markdown-toc-3-qas&quot;&gt;3 Q&amp;amp;As&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#31-calculating-the-concentration-of-110-and-1100-solutions&quot; id=&quot;markdown-toc-31-calculating-the-concentration-of-110-and-1100-solutions&quot;&gt;3.1 Calculating the concentration of 1:10 and 1:100 solutions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#32-10-fold-or-110-dilution&quot; id=&quot;markdown-toc-32-10-fold-or-110-dilution&quot;&gt;3.2 10-fold or 1:10 dilution&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#33-second-10-fold-or-1100-dilution&quot; id=&quot;markdown-toc-33-second-10-fold-or-1100-dilution&quot;&gt;3.3 Second 10-fold or 1:100 dilution&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#34-volumes-in-l-or-ml-for-dilution-calculations&quot; id=&quot;markdown-toc-34-volumes-in-l-or-ml-for-dilution-calculations&quot;&gt;3.4 Volumes in L or mL for dilution calculations&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-assessment&quot; id=&quot;markdown-toc-4-assessment&quot;&gt;4 Assessment&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#41-misconceptions&quot; id=&quot;markdown-toc-41-misconceptions&quot;&gt;4.1 Misconceptions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#42-formatting-issues&quot; id=&quot;markdown-toc-42-formatting-issues&quot;&gt;4.2 Formatting issues&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#43-feedback&quot; id=&quot;markdown-toc-43-feedback&quot;&gt;4.3 Feedback&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#44-grades&quot; id=&quot;markdown-toc-44-grades&quot;&gt;4.4 Grades&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#45-team-grading&quot; id=&quot;markdown-toc-45-team-grading&quot;&gt;4.5 Team grading&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;1-goals&quot;&gt;1 Goals&lt;/h2&gt;
-
-&lt;h3 id=&quot;11-examine-the-effect-of-dilution-on-the-ph-of-strong-and-weak-acids-and-bases&quot;&gt;1.1 Examine the effect of dilution on the pH of strong and weak acids and bases&lt;/h3&gt;
+&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate, using \(M_1V_1 = M_2V_2\), the concentration of HCl, NaOH, CH\(_3\)COOH, and NH\(_4\)OH for the 1:10 and 1:100 diluted solutions and the mixtures.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate \([H_3O^+]\) for each solution using the measured pH values and Equation \(\ref{eq:H3O}\).&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:pH}
-  pH = - \log [H_3O^+]
-\end{equation}&lt;/p&gt;
+&lt;p&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:H3O}
-  \text{[H}_3\text{O}^+\text{]} = 10^{-\text{pH}}
-\end{equation}&lt;/p&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/xiw.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 4  Tools&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sat, 11 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/esy.html</link>
+            <guid isPermaLink="true">http://localhost:4000/esy.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Deferments or Cancellations of Events due to COVID-19</title>
+            <description>&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;ioste-2020&quot;&gt;IOSTE 2020&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ioste2020korea.kr&quot;&gt;XIX OISTE&lt;/a&gt; International Symposium is originally planned to meet on August 23-28, 2020 in &lt;a href=&quot;https://en.knu.ac.kr/main/main.htm&quot;&gt;Kyungpook National University&lt;/a&gt;, Daegu, Korea. It was postponed to meet on February 1-5, 2021.&lt;/p&gt;
+
+&lt;p&gt;Important dates:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make a plot of pH vs. concentration for HCl and CH\(_3\)COOH, and another for NaOH and NH\(_4\)OH.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The strong and weak species should show a different dependence of pH on concentration.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Open for Paper Submissions: August 1, 2020&lt;/li&gt;
+  &lt;li&gt;Deadline for Submissions: September 15, 2020&lt;/li&gt;
+  &lt;li&gt;Notification of acceptance: October 15, 2020&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;12-calculating-the-values-of-k_a-and-k_b&quot;&gt;1.2 Calculating the values of \(K_a\) and \(K_b\)&lt;/h3&gt;
+&lt;p&gt;I attended &lt;a href=&quot;/hnw&quot;&gt;IOSTE in Istanbul&lt;/a&gt; to present a project idea in 2015. The conference gathers many scholars across the Globe and provides high interactivity through lecture series, new project ideas, and poster sessions.&lt;/p&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:Ka}
-  K_a = \frac{ [A^-][H_3O^+] }{ [HA]}
-\end{equation}&lt;/p&gt;
+&lt;h3 id=&quot;bcce-2020&quot;&gt;BCCE 2020&lt;/h3&gt;
 
-&lt;p&gt;where, \([H_2O]\) is omitted because it is pure liquid.&lt;/p&gt;
+&lt;p&gt;The 26&lt;sup&gt;th&lt;/sup&gt; Biennial Conference on Chemical Education was cancelled with Official ACS abd DivCHED statement:&lt;/p&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:Kb}
-  K_b = \frac{ [BH^+][OH^-] }{ [B] }
-\end{equation}&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Safety is a core value of the &lt;a href=&quot;https://www.acs.org/content/acs/en.html&quot;&gt;American Chemical Society&lt;/a&gt; and their Divisions and as such the health and well-being of &lt;a href=&quot;http://www.divched.org/&quot;&gt;DivCHED&lt;/a&gt; members, the Chemical Education community, and our volunteers are paramount. After careful deliberation and discussion with the 2020 Biennial Conference on Chemical Education (BCCE) program committee and the DivCHED Biennial Conference Committee, the Executive Committee for the Division of Chemical Education has decided to cancel (terminate) the 2020 Biennial Conference on Chemical Education scheduled for July 18-23, 2020, at Oregon State University in Corvallis, OR.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;where, \([H_2O]\) is omitted because it is pure liquid.&lt;/p&gt;
+&lt;h3 id=&quot;2020-narst&quot;&gt;2020 NARST&lt;/h3&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:percent-ionization-acid}
-  \% \text{ ionization} = \frac{ [H_3O^+]}{ [HA]_0} \times 100\% =  \frac{ [A^-] }{ [HA]_0 } \times 100\%
-\end{equation}&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://narst.org/conferences/2020-annual-conference&quot;&gt;2020 NARST&lt;/a&gt; conference was going to be held in Portland, OR but it was cancelled with a message sent by the Executive Committee on March 4, 2020:&lt;/p&gt;
 
-&lt;p&gt;\begin{equation}\label{eq:percent-ionization-base}
-  \% \text{ ionization} = \frac{ [BH^+] }{ [B]_0 } \times 100\% = \frac{ [OH^-] }{ [B]_0 } \times 100\%
-\end{equation}&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;We regret to inform you of the cancellation of the 2020 NARST conference in Portland, OR. This decision was made by the NARST Executive Board after much discussion and in light of our primary concern, which is the health and well-being of our members, located in the U.S. and abroad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2020-aera&quot;&gt;2020 AERA&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.aera20.net&quot;&gt;2020 AERA Annual Meeting&lt;/a&gt; was cancelled.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Calculate \(K_a\) using Equation \ref{eq:Ka},&lt;/li&gt;
-  &lt;li&gt;Calculate \(K_b\) using Equation \ref{eq:Kb},&lt;/li&gt;
-  &lt;li&gt;Calculate the percent dissociation of the weak acid using Equation \ref{eq:percent-ionization-acid}, and&lt;/li&gt;
-  &lt;li&gt;Calculate the percent dissociation of the weak base using Equation \ref{eq:percent-ionization-base}.&lt;/li&gt;
+  &lt;li&gt;March 23 Video: &lt;a href=&quot;https://www.aera20.net/vanessa-discusses-the-cancellation.html&quot;&gt;AERA President Vanessa Siddle Walker Discusses The Cancellation Of The AERA 2020 Virtual Annual Meeting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;March 23 &lt;a href=&quot;https://www.aera20.net/EXECUTIVE-DIRECTOR-LEVINE-AND-PRESIDENT-SIDDLE-WALKER-ANNOUNCE-CANCELLATION-OF-THE-2020-VIRTUAL-ANNUAL-MEETING.html&quot;&gt;Announcement of Virtual Meeting Cancellation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Mon, 06 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/kid.html</link>
+            <guid isPermaLink="true">http://localhost:4000/kid.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Forums in D2L</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 2. Forums in D2L&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Forums&lt;/strong&gt; are used to house discussion topics that are similar. For example, there might be several discussions in the first week of the course, so create a forum titled “Week One Discussions” for them.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Topics&lt;/strong&gt; are where the discussion actually takes place. This is where students can post threads in response to a discussion prompt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt; are the initial comments added to a discussion topic.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Replies&lt;/strong&gt; are responses posted to a specific discussion thread.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;13-examine-the-ph-of-mixtures-of-strong-and-weak-acids-and-bases&quot;&gt;1.3 Examine the pH of mixtures of strong and weak acids and bases&lt;/h3&gt;
+&lt;p&gt;Setting up a discussion is a two-step process: first create a forum that can hold one or more discussion topics, then create discussion topics within that forum.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Examine the pH of mixtures of strong and weak acids and bases to see how the presence of a strong acid or base impacts the percent dissociation of the weak acid or base.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Calculate the percent dissociation of the weak acid using Equation \ref{eq:percent-ionization-acid}, and&lt;/li&gt;
-  &lt;li&gt;Calculate the percent dissociation of the weak base using Equation \ref{eq:percent-ionization-base}.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;create-a-discussion-forum&quot;&gt;Create a Discussion Forum&lt;/h2&gt;
 
-&lt;h2 id=&quot;2-assignment&quot;&gt;2 Assignment&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Select Discussions in the course navigation bar.&lt;/li&gt;
+  &lt;li&gt;Select the New button.&lt;/li&gt;
+  &lt;li&gt;Select New Forum from the dropdown menu.&lt;/li&gt;
+  &lt;li&gt;Enter a title [A] (required).&lt;/li&gt;
+  &lt;li&gt;Enter a description [B] (optional).&lt;/li&gt;
+  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Watch pH meter calibration video&lt;/li&gt;
-  &lt;li&gt;Watch solution preparation and pH determination video
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/tC5Ny5GB1epSOCEKIJ5yEixsaILEiEKht66Ei_mNLqByjt1D1El23UUqXHriojpuJazUQUDbEYch0qYUonVYpgUzrOAHLYlWDcBv2pymIwbrgG6zL_cLKi59huv_AV3LT_TLG5kG37w=w2400&quot; alt=&quot;Screen 1&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-discussion-topic&quot;&gt;Create a Discussion Topic&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select the New button.&lt;/li&gt;
+  &lt;li&gt;Select New Topic from the dropdown menu.&lt;/li&gt;
+  &lt;li&gt;Select a forum from the Forums dropdown menu (or select the New Forum to create a new forum.)&lt;/li&gt;
+  &lt;li&gt;Choose a Topic Type [A]:
     &lt;ul&gt;
-      &lt;li&gt;Only shown for HCl; same process used for other solutions&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Open topic&lt;/strong&gt;: everyone can access the topic and it’s contents.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Group or section topic&lt;/strong&gt;: everyone can access the topic, but students only see threads from their group or section (course must have groups set up before setting up group- or section-based topics).&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Take the post-lab quiz with a 70% or higher&lt;/li&gt;
-  &lt;li&gt;Download the data set and do the data analysis&lt;/li&gt;
-  &lt;li&gt;You must upload a PDF file of &lt;strong&gt;partial lab report&lt;/strong&gt;:
+  &lt;li&gt;Enter a title [B] (required).&lt;/li&gt;
+  &lt;li&gt;Enter a description [C] (optional).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/qc1g9CCm1FmfBH8cgjxvCBGnW3fB2C6QqHAVtdh-w0edSWxXku1MA8SatUbaNWs6POqdBnjqHSp01K8c-EyY6-NGMSrcv6Sff6pGqysOOKKrfxcREQrbJc1VOwD5YCLODD1wDlfnO2E=w2400&quot; alt=&quot;Screen 2&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select options [A] for the topic (optional):
     &lt;ul&gt;
-      &lt;li&gt;This is a deviation for the summer session only&lt;/li&gt;
-      &lt;li&gt;Include the following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Procedures&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Results&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pH Data Tables&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pH vs. Concentration Plots&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Discussion&lt;/code&gt; (not a full discussion section; just itemize and answer the questions.)&lt;/li&gt;
-      &lt;li&gt;You don’t need to include sample calculations in the partial report (it is in Excel only), don’t need to write narrative explaining data tables and calculations.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Allow anonymous posts&lt;/strong&gt;: Select this option to allow students to anonymously post to this topic (not recommended).&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;A moderator must approve individual posts before they display in the topic&lt;/strong&gt;: Select this option to approve posts before students are able to view them (or to have a TA review and approve them.)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Users must start a thread before they can read and reply to other threads&lt;/strong&gt;: Select this option to force students to post to the topic before they can read and reply to other students’ posts (recommended).&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;You must upload all calculations and data tables in an MS Excel file&lt;/li&gt;
-  &lt;li&gt;You should review the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lab Report Guidelines&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sample General Chemistry Lab Report&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Appendix E&lt;/code&gt; on D2L while writing to ensure that your drafts are correctly formatted.&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;Select option for Rate Posts [B] (optional; default No Ratings)&lt;/li&gt;
+  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;3-qas&quot;&gt;3 Q&amp;amp;As&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/I3oKUdW6fLeeZIVSfGBU3xioYP0q0XhTk4bMbUQwlGCa3hfSGPjj0YkLhKPNmQilI9hdI2kixY0Rf9as8SXmk-xpFj084JdTrpsHLBkipL8ZlQ-4p5btLiGL4jnnQeTl6GlB7lwqQ9E=w2400&quot; alt=&quot;Screen 3&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;31-calculating-the-concentration-of-110-and-1100-solutions&quot;&gt;3.1 Calculating the concentration of 1:10 and 1:100 solutions&lt;/h3&gt;
+&lt;h2 id=&quot;creating-groups-in-d2l&quot;&gt;Creating Groups in D2L&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;I think \(V_1\) for stock solutions is 50 mL, but can’t figure out what \(V_1\) is for 1:10 (10 mL ?) and 1:100 dilutions. I want to confirm that \(M_1\) is 1.0 M for all calculations and \(V_2\) is 100 mL. I’ve looked at the lab procedure and lab video, but get confused about the process of dilutions regarding volumes of \(V_1\).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;In D2L, instructors can divide students into small groups for activities such as discussions and submissions.&lt;/p&gt;
 
-&lt;p&gt;As an example, I will walk through the concentration calculations for the  hydrochloric acid dilutions.&lt;/p&gt;
+&lt;h3 id=&quot;create-a-new-set-of-groups&quot;&gt;Create a new set of Groups&lt;/h3&gt;
 
-&lt;p&gt;The concentration of the stock solution,  \(M_1 = 1.00 \text{ M}\) (let’s use 3 sig. figs.)&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Choose Groups from the More dropdown menu.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; means initial state. Likewise,  we would use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; to indicate the final state.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/nvq2fg46iVL1-u9aCysQC0G0rOCQVyPNwG2lhNiW6uPhVEurSnkc7pOW7m7kv-oECUIHRC-0w1hXlRpYlQ35Zc2UQQ5j9XAyu-x7CoX0hkqWPKNBiwYgF2SILo9BlEuTJpOq6inUM0c=w2400&quot; alt=&quot;Screen 4&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;32-10-fold-or-110-dilution&quot;&gt;3.2 10-fold or 1:10 dilution&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Select New Category.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dilute the solution 10-fold by using a clean, primed, 10 mL volumetric pipette to add 10.00 mL of the stock acid solution to a 100 mL volumetric flask and filling it to the line with deionized water.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/7f9p2X5shFkUSMQcPIrg6bSwGn0uAiucgUVc5HjC8Lx4RTLWD1oCPwbss3BWryM9TY8SvMYkpqlk34HWh2kOOnKxVHtGtsds0B6JCL2YVQEN86x2Sp3uGv7AobLTxkR6TGXEysgXbuU=w2400&quot; alt=&quot;Screen 5&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This means:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Enter a name for the category.&lt;/li&gt;
+  &lt;li&gt;Choose how students will be added to the groups from the Enrollment Type dropdown menu.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups - No Auto Enrollments&lt;/strong&gt;: Manually add students to a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Groups of #&lt;/strong&gt;: D2L automatically enrolls student to groups, capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups&lt;/strong&gt;: D2L automatically enrolls students to a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Groups of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into a group, but groups are capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups, Capacity of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups that are capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Single user, member-specific groups&lt;/strong&gt;: D2L automatically creates one group per student, where they are the only user in the group.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After selecting an enrollment type, enter the number of groups to create and/or the number of students per group.&lt;/li&gt;
+  &lt;li&gt;Select Save.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;\(V_1 = 10.00 \text{ mL}\), which is the amount taken from the stock solution.&lt;/li&gt;
-  &lt;li&gt;\(V_2 = 100.00 \text{ mL}\), final volume after the dilution.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;setting-up-group-discussions-in-d2l&quot;&gt;Setting up Group Discussions in D2L&lt;/h2&gt;
 
-&lt;p&gt;Calculate the concentration of 10-fold dilution as follows.&lt;/p&gt;
+&lt;p&gt;Discussion topics can be restricted to a group that has been set up in the course site. Only the students enrolled in the group will be able to see and participate in the discussion topic.&lt;/p&gt;
 
-\[M_1 V_1 = M_2 V_2 \notag\]
+&lt;p&gt;Note that groups must be created before creating group discussion topics.&lt;/p&gt;
 
-\[M_2 = \frac{M_1 V_1}{V_2} \notag\]
+&lt;ol&gt;
+  &lt;li&gt;Go to Discussions.&lt;/li&gt;
+  &lt;li&gt;Select the &lt;strong&gt;New&lt;/strong&gt; button.&lt;/li&gt;
+  &lt;li&gt;From the dropdown menu, select &lt;strong&gt;New Topic&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Select an existing forum or select the &lt;strong&gt;New Forum&lt;/strong&gt; link to create a new forum.&lt;/li&gt;
+  &lt;li&gt;Select the topic type “&lt;strong&gt;Group or section topic, everyone can access this topic but students only see threads from their own group or section&lt;/strong&gt;”.​&lt;/li&gt;
+  &lt;li&gt;Choose the group under “&lt;strong&gt;Group or Section Category&lt;/strong&gt;”.&lt;/li&gt;
+  &lt;li&gt;Enter a title in the text box.&lt;/li&gt;
+  &lt;li&gt;Add a description in the “Description” text box (optional).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Attach&lt;/strong&gt; files to share with the group.&lt;/li&gt;
+  &lt;li&gt;Select Save.&lt;/li&gt;
+&lt;/ol&gt;
 
-\[M_2 = \frac{(1.00 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} \notag\]
-
-\[M_2 = 0.100 \text{ M HCl solution} \notag\]
-
-&lt;h3 id=&quot;33-second-10-fold-or-1100-dilution&quot;&gt;3.3 Second 10-fold or 1:100 dilution&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dilute this solution [i.e. 10-fold diluted colution] another 10-fold by using a 10 mL volumetric pipette to add 10 mL of the 1:10 acid solution to a 100 mL volumetric flask and filling it to the line with deionized water.&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;So, we are using the concentration of 10-fold dilution as the initial concentration for the second 10-fold dilution.&lt;/p&gt;
-
-\[M_2 = \frac{(0.100 \text{ M}) (10.00 \text{ mL})}{100.00 \text{ mL}} \notag\]
-
-\[M_2 = 0.0100 \text{ M HCl solution} \notag\]
-
-&lt;h3 id=&quot;34-volumes-in-l-or-ml-for-dilution-calculations&quot;&gt;3.4 Volumes in L or mL for dilution calculations&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I noticed in your sample calculations for the 10 and 100 fold dilutions you used the volumes in mL where molarity is calculated using the units liters. I was wondering if we were to use the volumes in mL as you did in the sample calculations under the Q&amp;amp;A’s or convert these to the units of liters.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The unit of analysis for volume could be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mL&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;L&lt;/code&gt; in dilution calculations because the volume units cancel.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-assessment&quot;&gt;4 Assessment&lt;/h2&gt;
-
-&lt;h3 id=&quot;41-misconceptions&quot;&gt;4.1 Misconceptions&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The ratio of the hydronium ion concentration that was calculated came out to be 0.645%
-for the weak base and 0.912% for the weak acid. Based on the data gathered for the combination
-of a strong acid and weak acid, the percent dissociation of a weak acid affected the presence of a
-strong yield by caused the weak acid to dissociate. The calculated pKa is less than the pKb which
-would mean there was an error that occurred&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Chemical species are not clearly defined. Arguments are not supported by the experimental findings.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;When the strong acid and the weak acid are combined, the concentration of the hydronium
-ions increases for the weak acid. This increase of hydronium ions would increase the percent
-ionization for the weak acid. This is shown in the calculated percent ionization of the combined
-strong and weak acid.&lt;/li&gt;
-    &lt;li&gt;…Therefore, the percent dissociation of the weak acid increases in the presence of a stronger acid because…&lt;/li&gt;
-    &lt;li&gt;The percent dissociation of a weak acid in the presence of a strong acid causes the weak acid to dissociate more than usual.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;What is the evidence for supporting these arguments? &lt;em&gt;Hint&lt;/em&gt;: Perhaps \(pH\) is only affected by the strong acid.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Based on the data for \(CH_3COOH\), as the concentrations of the weak acid decreases,
-the percent dissociation of the acid increases.[ more explanation continues based on experimental values.]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Nice that you are using experimental values to justify your argument. However, it would be nicer to explain this phenomenon by considering the Le Châtelier’s Principle. &lt;em&gt;Hint&lt;/em&gt;: What happens to the equilibrium condition when you dilute the solution?&lt;/p&gt;
-
-&lt;h3 id=&quot;42-formatting-issues&quot;&gt;4.2 Formatting issues&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;3.31 * 10−14&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Should be: \(3.31 \times 10^{-14}\)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;2.82E-14&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Should be: \(2.82 \times 10^{-14}\)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NH4OH&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Should be: \(NH_4OH\)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Figures with missing legends.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;All legends should be present when there are more than one data series.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Figures with gridlines.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;All gridlines should be removed. Formatting requirement.&lt;/p&gt;
-
-&lt;h3 id=&quot;43-feedback&quot;&gt;4.3 Feedback&lt;/h3&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The PDF file you uploaded: annotations are highlighted with gray background and pink font.&lt;/li&gt;
-  &lt;li&gt;E-Rubric: D2L will show the rubric with scores and any feedback provided.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;44-grades&quot;&gt;4.4 Grades&lt;/h3&gt;
+&lt;p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Term Statistics&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Average&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Stdev&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Median&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Maximum&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Minimum&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SSQ 2020&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;79.26%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;14.96%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;77.42%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;95.83%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;43.83%&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/esy.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 3  Low Cost Options for Document Cameras&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sun, 05 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/bod.html</link>
+            <guid isPermaLink="true">http://localhost:4000/bod.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>'Chemistry' from Madison</title>
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
 
-&lt;h3 id=&quot;45-team-grading&quot;&gt;4.5 Team grading&lt;/h3&gt;
+  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;  graph LR;
-    A[Is the assignment for the Acids and Bases Experiment graded as a team?]
-    B[Which sections are graded by the instructor?]
-    C[Which sections are graded by the teaching assistant?]
+  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
 
-    B1[Overall Clarity and Flow]
-    B2[Results]
-    B3[Proofreading and General Formatting]
-    B4[pH Data Tables]
-    B5[pH vs. Concentration Plots]
-    B6[Discussion Questions]
+  &lt;p&gt;Sincerely,&lt;/p&gt;
 
-    C1[Procedure]
-    C2[Table Formatting]
-    C3[Figure Formatting]
-    C4[Prelab Quiz]
-    C5[Postlab Quiz]
-    C6[Excel Calculations]
+  &lt;p&gt;Madison&lt;/p&gt;
+&lt;/blockquote&gt;
 
-    A--yes--&amp;gt;B;
-    A--yes--&amp;gt;C;
-    B--&amp;gt;B1;
-    B--&amp;gt;B2;
-    B--&amp;gt;B3;
-    B--&amp;gt;B4;
-    B--&amp;gt;B5;
-    B--&amp;gt;B6;
+&lt;p&gt;Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020. This email correspondence was posted with Madison’s written permission via email on 3/24/2020.&lt;/p&gt;
+</description>
+            <pubDate>Tue, 24 Mar 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/tta.html</link>
+            <guid isPermaLink="true">http://localhost:4000/tta.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>I Will Survive, Coronavirus version of teachers going online</title>
+            <description>&lt;p&gt;“Kept trying hard to mend the pieces of my syllabi &lt;br /&gt;
+And I spent so many nights just feeling sorry for myself &lt;br /&gt;
+I used to cry &lt;br /&gt;
+But now I hold my head up high &amp;amp; you’ll see me &lt;br /&gt;
+Teaching on zoom…”&lt;/p&gt;
 
-    C--&amp;gt;C1;
-    C--&amp;gt;C2;
-    C--&amp;gt;C3;
-    C--&amp;gt;C4;
-    C--&amp;gt;C5;
-    C--&amp;gt;C6;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;“I will survive as long as I know how to Zoom”&lt;/p&gt;
 
-&lt;p&gt;If you have any questions regarding your scores, please let &lt;a href=&quot;mailto:mkahveci@depaul.edu&quot;&gt;me&lt;/a&gt; or your &lt;a href=&quot;mailto:brownt1129@gmail.com&quot;&gt;TA&lt;/a&gt; know.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;All zero values are excluded. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Murat Kahveci</name><email>mkahveci@gmail.com</email></author><category term="SSQ20 CHE 139" /><summary type="html">Goals, assignments, and Q&amp;As about the Acids and Bases Experiment.</summary></entry></feed>
+&lt;!--more--&gt;
+&lt;div class=&quot;extensions extensions--video&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/CCe5PaeAeew?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+            <pubDate>Thu, 19 Mar 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/qdr.html</link>
+            <guid isPermaLink="true">http://localhost:4000/qdr.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
+        
+    </channel>
+</rss>

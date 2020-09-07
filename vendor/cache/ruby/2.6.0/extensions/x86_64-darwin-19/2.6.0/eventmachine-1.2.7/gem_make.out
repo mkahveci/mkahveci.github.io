@@ -1,16 +1,16 @@
-current directory: /Users/mkahveci/Sites/mkahveci.github.io/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200822-41871-atufxp.rb extconf.rb
+current directory: /Users/mkahveci/Sites/doc/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200902-79962-zn6km7.rb extconf.rb
 creating Makefile
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/mkahveci/Sites/doc/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" clean
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/mkahveci/Sites/doc/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR="
 compiling mapper.cpp
 compiling rubymain.cpp
 linking shared-object fastfilereaderext.bundle
 
-current directory: /Users/mkahveci/Sites/mkahveci.github.io/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/mkahveci/Sites/doc/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20200822-41871-10g7sp6
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20200902-79962-ixwh20

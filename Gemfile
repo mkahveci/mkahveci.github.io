@@ -1,6 +1,9 @@
 source "https://rubygems.org"
 
-# gem "github-pages", group: :jekyll_plugins
-gemspec
+# to publish on github page
+gem 'github-pages', group: :jekyll_plugins
+
+# to publich without github page
+#gem "jekyll"
+
 gem 'jekyll-redirect-from'
-gem "kramdown", ">= 2.3.0"

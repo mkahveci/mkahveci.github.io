@@ -1,799 +1,1279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4001/auv</loc>
-<lastmod>2018-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/nkq</loc>
-<lastmod>2018-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/lys</loc>
-<lastmod>2018-07-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/nzf</loc>
-<lastmod>2018-08-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vva</loc>
-<lastmod>2018-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hyw</loc>
-<lastmod>2018-10-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/mgz</loc>
-<lastmod>2019-04-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wue</loc>
-<lastmod>2019-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/jlc</loc>
-<lastmod>2019-07-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ivn</loc>
-<lastmod>2019-08-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wnc</loc>
-<lastmod>2019-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xfz</loc>
-<lastmod>2020-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xth</loc>
-<lastmod>2020-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/uqz</loc>
-<lastmod>2020-04-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/cak</loc>
-<lastmod>2020-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ybo</loc>
-<lastmod>2020-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/liz</loc>
-<lastmod>2020-07-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wla</loc>
-<lastmod>2018-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/osn</loc>
-<lastmod>2019-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fyv</loc>
-<lastmod>2020-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/mad</loc>
-<lastmod>2001-04-30T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/asz</loc>
-<lastmod>2003-04-30T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/jzl</loc>
-<lastmod>2005-08-12T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vfy</loc>
-<lastmod>2009-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/yoc</loc>
-<lastmod>2015-01-02T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/yfg</loc>
-<lastmod>2015-01-03T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xcz</loc>
-<lastmod>2000-02-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rnr</loc>
-<lastmod>2000-04-12T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pfe</loc>
-<lastmod>2001-03-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qoj</loc>
-<lastmod>2002-04-07T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/cdk</loc>
-<lastmod>2003-01-29T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/dxs</loc>
-<lastmod>2004-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ljl</loc>
-<lastmod>2004-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/mpb</loc>
-<lastmod>2004-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bnw</loc>
-<lastmod>2004-06-21T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/njh</loc>
-<lastmod>2006-04-04T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/cnj</loc>
-<lastmod>2006-06-30T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/utu</loc>
-<lastmod>2006-09-07T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/crm</loc>
-<lastmod>2007-03-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/zad</loc>
-<lastmod>2007-03-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ezg</loc>
-<lastmod>2007-04-15T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/uqq</loc>
-<lastmod>2007-04-15T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/cfo</loc>
-<lastmod>2008-03-24T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tqf</loc>
-<lastmod>2008-03-30T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fgb</loc>
-<lastmod>2008-06-30T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/uds</loc>
-<lastmod>2009-04-17T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bkd</loc>
-<lastmod>2009-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/sqs</loc>
-<lastmod>2009-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ugd</loc>
-<lastmod>2011-04-03T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rwo</loc>
-<lastmod>2012-05-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ftt</loc>
-<lastmod>2012-07-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/jbq</loc>
-<lastmod>2012-07-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/uej</loc>
-<lastmod>2012-07-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/mgv</loc>
-<lastmod>2012-09-17T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/dxf</loc>
-<lastmod>2013-09-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fho</loc>
-<lastmod>2013-09-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hvm</loc>
-<lastmod>2013-09-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bfb</loc>
-<lastmod>2013-11-04T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fck</loc>
-<lastmod>2014-08-03T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ihi</loc>
-<lastmod>2015-01-28T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/jcv</loc>
-<lastmod>2015-01-28T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/liv</loc>
-<lastmod>2015-04-11T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hnw</loc>
-<lastmod>2015-04-24T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tcm</loc>
-<lastmod>2015-05-22T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/zyc</loc>
-<lastmod>2015-08-31T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rol</loc>
-<lastmod>2016-09-07T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/csn</loc>
-<lastmod>2017-05-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ekj</loc>
-<lastmod>2017-05-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/aai</loc>
-<lastmod>2018-07-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bhc</loc>
-<lastmod>2005-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hhi</loc>
-<lastmod>2006-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xig</loc>
-<lastmod>2006-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hsb</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ivk</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qjn</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/srb</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/jsj</loc>
-<lastmod>2008-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pdh</loc>
-<lastmod>2008-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/oej</loc>
-<lastmod>2010-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tvf</loc>
-<lastmod>2010-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/zkc</loc>
-<lastmod>2010-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ylu</loc>
-<lastmod>2011-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fvq</loc>
-<lastmod>2011-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wxq</loc>
-<lastmod>2012-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/gto</loc>
-<lastmod>2014-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/swb</loc>
-<lastmod>2014-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vqv</loc>
-<lastmod>2014-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wyu</loc>
-<lastmod>2014-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rrq</loc>
-<lastmod>2015-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/uyl</loc>
-<lastmod>2015-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/zxi</loc>
-<lastmod>2015-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ptm</loc>
-<lastmod>2017-08-31T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qap</loc>
-<lastmod>2017-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/cke</loc>
-<lastmod>2018-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pjm</loc>
-<lastmod>2018-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/kpe</loc>
-<lastmod>2018-01-15T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qqj</loc>
-<lastmod>2018-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/gjw</loc>
-<lastmod>2018-05-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/lwl</loc>
-<lastmod>2018-08-28T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wxl</loc>
-<lastmod>2018-08-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/nsu</loc>
-<lastmod>2018-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/usr</loc>
-<lastmod>2019-01-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hpb</loc>
-<lastmod>2019-01-02T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bhc</loc>
-<lastmod>2019-01-03T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/dwy</loc>
-<lastmod>2019-07-18T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tgr</loc>
-<lastmod>2019-07-19T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fgu</loc>
-<lastmod>2019-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tfg</loc>
-<lastmod>2019-12-31T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/osy</loc>
-<lastmod>2020-04-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tvo</loc>
-<lastmod>2020-04-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/apl</loc>
-<lastmod>2020-04-02T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/mxn</loc>
-<lastmod>2020-04-03T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tpv</loc>
-<lastmod>2020-07-20T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/anm</loc>
-<lastmod>2020-06-23T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hhy</loc>
-<lastmod>2020-07-24T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/eux</loc>
-<lastmod>2020-07-25T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/sau</loc>
-<lastmod>2004-11-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/imx</loc>
-<lastmod>2006-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qgb</loc>
-<lastmod>2007-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wyt</loc>
-<lastmod>2007-05-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bdd</loc>
-<lastmod>2010-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/auh</loc>
-<lastmod>2012-06-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ivl</loc>
-<lastmod>2014-03-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/oux</loc>
-<lastmod>2014-03-21T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/oyc</loc>
-<lastmod>2016-01-20T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qra</loc>
-<lastmod>2018-12-25T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ypa</loc>
-<lastmod>2020-06-20T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ugh</loc>
-<lastmod>2018-08-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vdu</loc>
-<lastmod>2018-12-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rpm</loc>
-<lastmod>2018-12-15T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pfw</loc>
-<lastmod>2018-12-30T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wcu</loc>
-<lastmod>2019-09-07T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/sbl</loc>
-<lastmod>2019-09-08T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/qdr</loc>
-<lastmod>2020-03-19T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tta</loc>
-<lastmod>2020-03-24T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bod</loc>
-<lastmod>2020-04-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/kid</loc>
-<lastmod>2020-04-06T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/esy</loc>
-<lastmod>2020-04-11T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xiw</loc>
-<lastmod>2020-04-11T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ydt</loc>
-<lastmod>2020-04-13T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fxb</loc>
-<lastmod>2020-06-03T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/nzx</loc>
-<lastmod>2020-07-22T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ykf</loc>
-<lastmod>2020-07-26T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/eml</loc>
-<lastmod>2020-07-27T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/von</loc>
-<lastmod>2020-07-28T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/hba</loc>
-<lastmod>2020-07-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fbo</loc>
-<lastmod>2020-08-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/bxh</loc>
-<lastmod>2020-08-03T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/yfh</loc>
-<lastmod>2020-08-04T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/xxz</loc>
-<lastmod>2020-08-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/evj</loc>
-<lastmod>2020-08-05T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ksm</loc>
-<lastmod>2020-08-10T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/fwb</loc>
-<lastmod>2020-08-12T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/lcz</loc>
-<lastmod>2020-08-13T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/wrn</loc>
-<lastmod>2020-08-17T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vhr</loc>
-<lastmod>2000-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/rqj</loc>
-<lastmod>2006-12-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/vzm</loc>
-<lastmod>2012-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/dgq</loc>
-<lastmod>2013-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/upv</loc>
-<lastmod>2014-01-05T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/zhm</loc>
-<lastmod>2015-04-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/drc</loc>
-<lastmod>2017-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/gbv</loc>
-<lastmod>2017-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tgd</loc>
-<lastmod>2020-03-24T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/basak</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/elif</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/sirin</loc>
-<lastmod>2006-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/didem</loc>
-<lastmod>2006-09-02T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/yesim</loc>
-<lastmod>2006-10-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/kerstin</loc>
-<lastmod>2010-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/annemarie</loc>
-<lastmod>2010-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/marykay</loc>
-<lastmod>2012-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/maher</loc>
-<lastmod>2012-07-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/nasser</loc>
-<lastmod>2012-07-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/murat</loc>
-<lastmod>2005-09-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/ajda</loc>
-<lastmod>2005-10-01T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/lihua</loc>
-<lastmod>2017-02-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/tim</loc>
-<lastmod>2017-03-01T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/yousif</loc>
-<lastmod>2020-03-23T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/404</loc>
-</url>
-<url>
-<loc>http://localhost:4001/alumni</loc>
-</url>
-<url>
-<loc>http://localhost:4001/archive</loc>
-</url>
-<url>
-<loc>http://localhost:4001/biking</loc>
-</url>
-<url>
-<loc>http://localhost:4001/book</loc>
-</url>
-<url>
-<loc>http://localhost:4001/conference</loc>
-</url>
-<url>
-<loc>http://localhost:4001/help</loc>
-</url>
-<url>
-<loc>http://localhost:4001/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/journal</loc>
-</url>
-<url>
-<loc>http://localhost:4001/projects</loc>
-</url>
-<url>
-<loc>http://localhost:4001/publications</loc>
-</url>
-<url>
-<loc>http://localhost:4001/series</loc>
-</url>
-<url>
-<loc>http://localhost:4001/team</loc>
-</url>
-<url>
-<loc>http://localhost:4001/version</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page2/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page3/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page4/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page5/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page6/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/page7/</loc>
-</url>
-<url>
-<loc>http://localhost:4001/pdfs/books/kahveci-affective-dimensions.pdf</loc>
-<lastmod>2020-08-22T11:26:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pdfs/papers/2012-pchemlo-dortmund.pdf</loc>
-<lastmod>2020-08-22T11:26:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pdfs/papers/2014-03-20-pisa-math.pdf</loc>
-<lastmod>2020-08-22T11:26:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pdfs/papers/2014-03-21-attitudes-tech.pdf</loc>
-<lastmod>2020-08-22T11:26:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4001/pdfs/papers/eurasia_2015_1417a.pdf</loc>
-<lastmod>2020-08-22T11:26:54-05:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://localhost:4000/lcz.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/xxz.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fxb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ydt.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/xiw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/esy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/kid.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bod.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tta.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qdr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sbl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wcu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pfw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rpm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vdu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ugh.html</loc>
+  </url>
+  
+  
+
+
+  
+  
+  <url>
+    <loc>http://localhost:4000/xcz.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vhr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rnr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pfe.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mad.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qoj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cdk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/asz.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dxs.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ljl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mpb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bnw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sau.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jzl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bhc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/murat.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ajda.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hhi.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/xig.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/njh.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/imx.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cnj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/basak.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/elif.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hsb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ivk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qjn.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sirin.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/srb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/didem.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/utu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/yesim.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rqj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qgb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/crm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zad.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ezg.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uqq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wyt.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cfo.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tqf.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fgb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jsj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdh.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vfy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uds.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bkd.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sqs.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bdd.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/kerstin.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/annemarie.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/oej.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tvf.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zkc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ylu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ugd.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fvq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vzm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/marykay.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rwo.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/auh.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/maher.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/nasser.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ftt.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jbq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uej.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wxq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mgv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dgq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dxf.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fho.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hvm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bfb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/gto.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/swb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vqv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/upv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ivl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/oux.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fck.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wyu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rrq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/yoc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/yfg.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ihi.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jcv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zhm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/liv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hnw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tcm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zyc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uyl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zxi.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/oyc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rol.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/drc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/lihua.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/gbv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tim.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/csn.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ekj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ptm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qap.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cke.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pjm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/kpe.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qqj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/gjw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/aai.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/lwl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wxl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/nsu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/qra.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/usr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hpb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uoq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dwy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tgr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fgu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/yousif.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tgd.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/osy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/apl.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mxn.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ypa.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tpv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/nzx.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ykf.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/eml.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/von.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hba.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fbo.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/bxh.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/yfh.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/evj.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ksm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/fwb.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wrn.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tfg.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tvo.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ukc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/chv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/enu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dar.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mbm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vaq.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/wti.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hzv.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/moi.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cyc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/nsk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/rpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vtw.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/igf.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/kwm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/irc.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ovg.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/aao.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/baz.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/biking</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog_archive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/book.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/conference.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/download.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/dze.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/elw.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/introduction.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/journal.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jpz.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/project.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/publication.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tag_archives_overview.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/team.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/assets/css/style.css</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/team/murat-kahveci/</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/publications/kahveci-affective-dimensions/</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/p/10761</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf/</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf/</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pdf/</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/redirects.json</loc>
+  </url>
+  
+  
 </urlset>

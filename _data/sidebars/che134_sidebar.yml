@@ -1,0 +1,34 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: General Chemistry III
+  version: CHE 134
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+  
+  - title: Course Details
+    output: web, pdf
+    folderitems:
+
+    - title: Course Overview
+      url: /ukc.html
+      output: web, pdf 
+      
+    - title: PDF Download
+      url: /elw.html
+      output: web 
+ 

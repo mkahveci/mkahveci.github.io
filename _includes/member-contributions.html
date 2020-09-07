@@ -2,7 +2,7 @@
 
 {% if projectcount > 0 %}
 
-{% if page.name == 'Murat Kahveci' %}
+{% if page.authorname == 'Murat Kahveci' %}
 
 ## Projects
 
@@ -10,15 +10,15 @@
 
 ## Joint Projects
 
-Please note that this page includes only joint projects with the kahveci group. {{ page.name }}'s
+Please note that this page includes only joint projects with the kahveci group. {{ page.authorname }}'s
     webpage would probably have the complete list of projects.
 
 {% endif %}
 
-{% for project in site.projects reversed %}
+{% for project in projects %}
 {% if project.contributors contains searchstring %}
 
-__{{projectcount}}__. [{{ project.title }}]({{ project.url }}) ({{ project.duration }})
+__{{projectcount}}__. {{ project.title }} ({{ project.duration }}) <a class="noCrossRef" href="{{ site.urlx }}{{project.url}}"><i class="fa fa-link"></i></a>
 {% if project.excerpt %}
 
 * {{ project.excerpt | strip_html }}{% endif %}
@@ -30,7 +30,7 @@ __{{projectcount}}__. [{{ project.title }}]({{ project.url }}) ({{ project.durat
 
 
 {% if count > 0 %}
-{% if page.name == 'Murat Kahveci' %}
+{% if page.authorname == 'Murat Kahveci' %}
 
 ## Publications
 
@@ -38,7 +38,7 @@ __{{projectcount}}__. [{{ project.title }}]({{ project.url }}) ({{ project.durat
 
 ## Joint Publications
 
-Please note that this page includes only joint publications with the kahveci group. {{ page.name }}'s
+Please note that this page includes only joint publications with the kahveci group. {{ page.authorname }}'s
     webpage would probably have the complete list of publications.
 
 {% endif %}
@@ -49,10 +49,10 @@ Please note that this page includes only joint publications with the kahveci gro
 
 ### Books
 
-{% for book in books reversed %}
+{% for book in books %}
 {% if book.authors contains searchstring %}
 
-__{{ count }}__. {{ book.ref }}
+__{{ count }}__. {{ book.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{book.url}}"><i class="fa fa-link"></i></a>
 
 {% assign count = count | minus: 1 %}
 
@@ -64,10 +64,10 @@ __{{ count }}__. {{ book.ref }}
 
 ### Journal Articles
 
-{% for jpaper in journals reversed %}
+{% for jpaper in journals %}
 {% if jpaper.authors contains searchstring %}
 
-__{{ count }}__. {{ jpaper.ref }}
+__{{ count }}__. {{ jpaper.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{jpaper.url}}"><i class="fa fa-link"></i></a>
 
 {% assign count = count | minus: 1 %}
 
@@ -80,10 +80,10 @@ __{{ count }}__. {{ jpaper.ref }}
 
 ### Conference Papers
 
-{% for cpaper in conferences reversed %}
+{% for cpaper in conferences %}
 {% if cpaper.authors contains searchstring %}
 
-__{{ count }}__. {{ cpaper.ref }}
+__{{ count }}__. {{ cpaper.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{cpaper.url}}"><i class="fa fa-link"></i></a>
 
 {% assign count = count | minus: 1 %}
 
@@ -95,13 +95,12 @@ __{{ count }}__. {{ cpaper.ref }}
 
 ## Courses
 
-{% for course in site.courses reversed %}
+{% for course in courses %}
 {% if course.instructor %}
-{% if page.name == course.instructor %}
+{% if page.authorname == course.instructor %}
 
-__{{ coursecount }}__. {{ course.code }} ▹ <a href="{{ course.url }}"
-        class="off">{{ course.title }}</a> ▹
-    {{ course.institution }} ▹ {{ course.semester }}
+__{{ coursecount }}__. {{ course.code }} ▹ {{ course.title }} ▹
+    {{ course.institution }} ▹ {{ course.semester }} <a class="noCrossRef" href="{{ site.urlx }}{{course.url}}"><i class="fa fa-link"></i></a>
 
     {% endif %}
     {% endif %}
@@ -115,10 +114,10 @@ __{{ coursecount }}__. {{ course.code }} ▹ <a href="{{ course.url }}"
 
 {% for post in site.posts %}
 {% if post.author %}
-{% if page.name == post.author %}
+{% if page.authorname == post.author %}
 
-__{{ postcount }}__. <a href="{{ post.url }}" class="off">{{ post.title }}</a> ▹
-    {{ post.date | date: "%B %d, %Y" }}
+__{{ postcount }}__. {{ post.title }} ▹
+    {{ post.date | date: "%B %d, %Y" }} <a class="noCrossRef" href="{{ site.urlx }}{{post.url}}"><i class="fa fa-link"></i></a>
     {% if post.excerpt %}<br>{{ post.excerpt | strip_html | truncate: 160 }}{% endif %}
     {% endif %}
     {% endif %}

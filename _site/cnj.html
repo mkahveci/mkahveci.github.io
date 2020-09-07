@@ -1,1426 +1,3020 @@
-<!DOCTYPE html><html lang="en">
-  <head><meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Turkish high-school students’ attitudes toward learning mathematics - Kahveci Group</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Attitudes towards mathematics, mathematics self concept and motivation to learn mathematics of 79 students coming from two high schools in Istanbul were meas...">
+<meta name="keywords" content="affective_dimensionsmathematics_educationfull_text_article,  ">
+<title>Turkish high-school students’ attitudes toward learning mathematics | Kahveci Group</title>
+<link rel="stylesheet" href="css/syntax.css">
 
-<meta name="description" content="CitationKahveci M, &amp; Imamoglu Y. (2006). Turkish high-school students’ attitudes toward learning mathematics. Paper presented at the International Confer...">
-<link rel="canonical" href="http://localhost:4001/cnj"><link rel="alternate" type="application/rss+xml" title="Kahveci Group" href="/feed.xml"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-<link rel="manifest" href="/assets/site.webmanifest">
-<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" ><!-- start custom head snippets -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-murat.css">
+<!--<link rel="stylesheet" href="css/customstyles.min.css">-->
 
-<!-- end custom head snippets --><script>(function() {
-  window.isArray = function(val) {
-    return Object.prototype.toString.call(val) === '[object Array]';
-  };
-  window.isString = function(val) {
-    return typeof val === 'string';
-  };
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  window.hasEvent = function(event) {
-    return 'on'.concat(event) in window.document;
-  };
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
 
-  window.isOverallScroller = function(node) {
-    return node === document.documentElement || node === document.body || node === window;
-  };
 
-  window.isFormElement = function(node) {
-    var tagName = node.tagName;
-    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
-  };
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
 
-  window.pageLoad = (function () {
-    var loaded = false, cbs = [];
-    window.addEventListener('load', function () {
-      var i;
-      loaded = true;
-      if (cbs.length > 0) {
-        for (i = 0; i < cbs.length; i++) {
-          cbs[i]();
-        }
-      }
-    });
-    return {
-      then: function(cb) {
-        cb && (loaded ? cb() : (cbs.push(cb)));
-      }
-    };
-  })();
-})();
-(function() {
-  window.throttle = function(func, wait) {
-    var args, result, thisArg, timeoutId, lastCalled = 0;
+<link rel="shortcut icon" href="images/favicon.ico">
 
-    function trailingCall() {
-      lastCalled = new Date;
-      timeoutId = null;
-      result = func.apply(thisArg, args);
-    }
-    return function() {
-      var now = new Date,
-        remaining = wait - (now - lastCalled);
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
-      args = arguments;
-      thisArg = this;
+<link rel="alternate" type="application/rss+xml" title="mkahveci.github.io" href="http://localhost:4000/feed.xml">
 
-      if (remaining <= 0) {
-        clearTimeout(timeoutId);
-        timeoutId = null;
-        lastCalled = now;
-        result = func.apply(thisArg, args);
-      } else if (!timeoutId) {
-        timeoutId = setTimeout(trailingCall, remaining);
-      }
-      return result;
-    };
-  };
-})();
-(function() {
-  var Set = (function() {
-    var add = function(item) {
-      var i, data = this._data;
-      for (i = 0; i < data.length; i++) {
-        if (data[i] === item) {
-          return;
-        }
-      }
-      this.size ++;
-      data.push(item);
-      return data;
-    };
 
-    var Set = function(data) {
-      this.size = 0;
-      this._data = [];
-      var i;
-      if (data.length > 0) {
-        for (i = 0; i < data.length; i++) {
-          add.call(this, data[i]);
-        }
-      }
-    };
-    Set.prototype.add = add;
-    Set.prototype.get = function(index) { return this._data[index]; };
-    Set.prototype.has = function(item) {
-      var i, data = this._data;
-      for (i = 0; i < data.length; i++) {
-        if (this.get(i) === item) {
-          return true;
-        }
-      }
-      return false;
-    };
-    Set.prototype.is = function(map) {
-      if (map._data.length !== this._data.length) { return false; }
-      var i, j, flag, tData = this._data, mData = map._data;
-      for (i = 0; i < tData.length; i++) {
-        for (flag = false, j = 0; j < mData.length; j++) {
-          if (tData[i] === mData[j]) {
-            flag = true;
-            break;
-          }
-        }
-        if (!flag) { return false; }
-      }
-      return true;
-    };
-    Set.prototype.values = function() {
-      return this._data;
-    };
-    return Set;
-  })();
 
-  window.Lazyload = (function(doc) {
-    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
-    var createNode = function(name, attrs) {
-      var node = doc.createElement(name), attr;
-      for (attr in attrs) {
-        if (attrs.hasOwnProperty(attr)) {
-          node.setAttribute(attr, attrs[attr]);
-        }
-      }
-      return node;
-    };
-    var end = function(type, url) {
-      var s, q, qi, cbs, i, j, cur, val, flag;
-      if (type === 'js' || type ==='css') {
-        s = sources[type], q = queue[type];
-        s[url] = true;
-        for (i = 0; i < q.length; i++) {
-          cur = q[i];
-          if (cur.urls.has(url)) {
-            qi = cur, val = qi.urls.values();
-            qi && (cbs = qi.callbacks);
-            for (flag = true, j = 0; j < val.length; j++) {
-              cur = val[j];
-              if (!s[cur]) {
-                flag = false;
-              }
-            }
-            if (flag && cbs && cbs.length > 0) {
-              for (j = 0; j < cbs.length; j++) {
-                cbs[j].call(context);
-              }
-              qi.load = true;
-            }
-          }
-        }
-      }
-    };
-    var load = function(type, urls, callback) {
-      var s, q, qi, node, i, cur,
-        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
-      if (type === 'js' || type ==='css') {
-        s = sources[type], q = queue[type];
-        for (i = 0; i < q.length; i++) {
-          cur = q[i];
-          if (_urls.is(cur.urls)) {
-            qi = cur;
-            break;
-          }
-        }
-        val = _urls.values();
-        if (qi) {
-          callback && (qi.load || qi.callbacks.push(callback));
-          callback && (qi.load && callback());
-        } else {
-          q.push({
-            urls: _urls,
-            callbacks: callback ? [callback] : [],
-            load: false
-          });
-          for (i = 0; i < val.length; i++) {
-            node = null, url = val[i];
-            if (s[url] === undefined) {
-              (type === 'js' ) && (node = createNode('script', { src: url }));
-              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
-              if (node) {
-                node.onload = (function(type, url) {
-                  return function() {
-                    end(type, url);
-                  };
-                })(type, url);
-                (doc.head || doc.body).appendChild(node);
-                s[url] = false;
-              }
-            }
-          }
-        }
-      }
-    };
-    return {
-      js: function(url, callback) {
-        load('js', url, callback);
-      },
-      css: function(url, callback) {
-        load('css', url, callback);
-      }
-    };
-  })(this.document);
-})();
-</script><script>
-  (function() {
-    var TEXT_VARIABLES = {
-      version: '2.2.6',
-      sources: {
-        font_awesome: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
-        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
-        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
-        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
-        gitalk: {
-          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
-          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
-        },
-        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
-        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
-        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
-      },
-      site: {
-        toc: {
-          selectors: 'h1,h2,h3'
-        }
-      },
-      paths: {
-        search_js: '/assets/search.js'
-      }
-    };
-    window.TEXT_VARIABLES = TEXT_VARIABLES;
-  })();
-</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
 </head>
-  <body>
-    <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
-
-      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header header--dark"style="background: linear-gradient(0deg, rgb(0, 0, 0), rgb(77, 77, 77));"><div class="main">
-      <div class="header__title">
-        <div class="header__brand">
-          <a href="http://localhost:4001""><?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.095pt" height="29.066pt" viewBox="0 0 31.095 29.066" version="1.1">
-<defs>
-<g>
-<symbol overflow="visible" id="glyph0-0">
-<path style="stroke:none;" d=""/>
-</symbol>
-<symbol overflow="visible" id="glyph0-1">
-<path style="stroke:none;" d="M 3.734375 -10.359375 L 1.734375 -8.328125 L 2 -8.0625 L 3.734375 -9.59375 L 5.453125 -8.0625 L 5.71875 -8.328125 Z M 3.734375 -10.359375 "/>
-</symbol>
-<symbol overflow="visible" id="glyph0-2">
-<path style="stroke:none;" d="M 6.375 -9.015625 C 6.375 -9.53125 6.375 -9.734375 7.796875 -9.734375 L 8.296875 -9.734375 L 8.296875 -10.203125 C 7.75 -10.15625 6.375 -10.15625 5.765625 -10.15625 C 5.15625 -10.15625 3.765625 -10.15625 3.21875 -10.203125 L 3.21875 -9.734375 L 3.71875 -9.734375 C 5.140625 -9.734375 5.140625 -9.546875 5.140625 -9.015625 L 5.140625 -2.390625 C 3.1875 -2.90625 3.109375 -5.21875 3.109375 -6.1875 C 3.09375 -7.984375 2.4375 -8.28125 1.78125 -8.28125 L 1.21875 -8.28125 C 1 -8.28125 0.84375 -8.28125 0.84375 -8.109375 C 0.84375 -8.03125 0.890625 -7.96875 0.984375 -7.953125 C 1.484375 -7.890625 1.859375 -7.671875 1.859375 -5.921875 C 1.859375 -5.578125 1.90625 -4.390625 2.625 -3.390625 C 3.21875 -2.578125 4.125 -2.15625 5.140625 -2.015625 L 5.140625 -1.1875 C 5.140625 -0.671875 5.140625 -0.46875 3.71875 -0.46875 L 3.21875 -0.46875 L 3.21875 0 C 3.765625 -0.046875 5.140625 -0.046875 5.75 -0.046875 C 6.359375 -0.046875 7.75 -0.046875 8.296875 0 L 8.296875 -0.46875 L 7.796875 -0.46875 C 6.375 -0.46875 6.375 -0.65625 6.375 -1.1875 L 6.375 -2.015625 C 7.453125 -2.15625 8.359375 -2.59375 8.953125 -3.375 C 9.71875 -4.4375 9.734375 -5.609375 9.734375 -6.28125 C 9.734375 -6.515625 9.75 -7.84375 10.5625 -7.953125 C 10.65625 -7.96875 10.75 -7.984375 10.75 -8.109375 C 10.75 -8.28125 10.640625 -8.28125 10.390625 -8.28125 L 9.828125 -8.28125 C 9.25 -8.28125 8.515625 -8.171875 8.5 -6 C 8.484375 -4.359375 7.984375 -2.78125 6.375 -2.390625 Z M 6.375 -9.015625 "/>
-</symbol>
-<symbol overflow="visible" id="glyph1-0">
-<path style="stroke:none;" d=""/>
-</symbol>
-<symbol overflow="visible" id="glyph1-1">
-<path style="stroke:none;" d="M 11.390625 -9.046875 C 11.53125 -9.59375 11.5625 -9.734375 12.65625 -9.734375 C 13.046875 -9.734375 13.15625 -9.734375 13.15625 -10.03125 C 13.15625 -10.203125 13 -10.203125 12.953125 -10.203125 C 12.53125 -10.203125 11.453125 -10.15625 11.03125 -10.15625 C 10.609375 -10.15625 9.546875 -10.203125 9.109375 -10.203125 C 9 -10.203125 8.828125 -10.203125 8.828125 -9.90625 C 8.828125 -9.734375 8.96875 -9.734375 9.25 -9.734375 C 9.28125 -9.734375 9.5625 -9.734375 9.8125 -9.703125 C 10.078125 -9.671875 10.21875 -9.671875 10.21875 -9.46875 C 10.21875 -9.40625 10.203125 -9.375 10.15625 -9.1875 L 9.265625 -5.546875 L 4.703125 -5.546875 L 5.59375 -9.046875 C 5.71875 -9.59375 5.765625 -9.734375 6.84375 -9.734375 C 7.234375 -9.734375 7.34375 -9.734375 7.34375 -10.03125 C 7.34375 -10.203125 7.1875 -10.203125 7.140625 -10.203125 C 6.71875 -10.203125 5.640625 -10.15625 5.234375 -10.15625 C 4.796875 -10.15625 3.734375 -10.203125 3.296875 -10.203125 C 3.1875 -10.203125 3.015625 -10.203125 3.015625 -9.90625 C 3.015625 -9.734375 3.15625 -9.734375 3.4375 -9.734375 C 3.46875 -9.734375 3.75 -9.734375 4 -9.703125 C 4.265625 -9.671875 4.40625 -9.671875 4.40625 -9.46875 C 4.40625 -9.40625 4.390625 -9.359375 4.34375 -9.1875 L 2.34375 -1.171875 C 2.203125 -0.578125 2.171875 -0.46875 0.984375 -0.46875 C 0.71875 -0.46875 0.578125 -0.46875 0.578125 -0.171875 C 0.578125 0 0.765625 0 0.796875 0 C 1.203125 0 2.265625 -0.046875 2.6875 -0.046875 C 3 -0.046875 3.328125 -0.03125 3.640625 -0.03125 C 3.96875 -0.03125 4.296875 0 4.609375 0 C 4.734375 0 4.921875 0 4.921875 -0.296875 C 4.921875 -0.46875 4.78125 -0.46875 4.5 -0.46875 C 3.9375 -0.46875 3.53125 -0.46875 3.53125 -0.734375 C 3.53125 -0.828125 3.5625 -0.890625 3.5625 -0.984375 L 4.578125 -5.078125 L 9.140625 -5.078125 C 8.515625 -2.59375 8.171875 -1.1875 8.109375 -0.953125 C 7.96875 -0.484375 7.671875 -0.46875 6.75 -0.46875 C 6.53125 -0.46875 6.390625 -0.46875 6.390625 -0.171875 C 6.390625 0 6.578125 0 6.609375 0 C 7.015625 0 8.078125 -0.046875 8.5 -0.046875 C 8.8125 -0.046875 9.140625 -0.03125 9.453125 -0.03125 C 9.78125 -0.03125 10.109375 0 10.421875 0 C 10.546875 0 10.71875 0 10.71875 -0.296875 C 10.71875 -0.46875 10.59375 -0.46875 10.3125 -0.46875 C 9.75 -0.46875 9.328125 -0.46875 9.328125 -0.734375 C 9.328125 -0.828125 9.359375 -0.890625 9.375 -0.984375 Z M 11.390625 -9.046875 "/>
-</symbol>
-</g>
-<clipPath id="clip1">
-  <path d="M 1 0 L 30 0 L 30 29.066406 L 1 29.066406 Z M 1 0 "/>
-</clipPath>
-</defs>
-<g id="surface1">
-<g clip-path="url(#clip1)" clip-rule="nonzero">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(19.999695%,19.999695%,19.999695%);fill-opacity:1;" d="M 29.375 14.894531 C 29.375 7.066406 23.027344 0.71875 15.199219 0.71875 C 7.371094 0.71875 1.027344 7.066406 1.027344 14.894531 C 1.027344 22.722656 7.371094 29.066406 15.199219 29.066406 C 23.027344 29.066406 29.375 22.722656 29.375 14.894531 Z M 29.375 14.894531 "/>
-</g>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 26.824219 14.894531 C 26.824219 7.378906 21.617188 1.285156 15.199219 1.285156 C 8.78125 1.285156 3.578125 7.378906 3.578125 14.894531 C 3.578125 22.40625 8.78125 28.5 15.199219 28.5 C 21.617188 28.5 26.824219 22.40625 26.824219 14.894531 Z M 26.824219 14.894531 "/>
-<g style="fill:rgb(11.999512%,29.998779%,16.999817%);fill-opacity:1;">
-  <use xlink:href="#glyph0-1" x="8.893" y="15.3575"/>
-</g>
-<g style="fill:rgb(11.999512%,29.998779%,16.999817%);fill-opacity:1;">
-  <use xlink:href="#glyph1-1" x="4.981" y="19.136"/>
-</g>
-<g style="fill:rgb(83.999634%,3.999329%,32.998657%);fill-opacity:1;">
-  <use xlink:href="#glyph0-2" x="14.491" y="21.983"/>
-</g>
-</g>
-</svg>
-</a><a title="The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research." href="/">Kahveci Group</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
-        <ul><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/series">Series</a></li><li class="navigation__item"><a href="/projects">Projects</a></li><li class="navigation__item"><a href="/publications">Publications</a></li><li class="navigation__item"><a href="/team">Team</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
-      </nav></div>
-  </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
-
-              <div class="col-aside d-print-none js-col-aside"></div>
-
-              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
-
-<!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Turkish high-school students’ attitudes toward learning mathematics</h1></header></div><meta itemprop="headline" content="Turkish high-school students’ attitudes toward learning mathematics"><meta itemprop="author" content="Murat Kahveci"/><meta itemprop="datePublished" content="2006-06-30T00:00:00-05:00"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
-
-
- <a class="button button--primary button--pill" href="/conference">Conference Papers</a>  
-
-
-
-<!-- end custom article top snippet --><div class="article__content" itemprop="articleBody">
-<p><img src="/images/gifs/working.gif" alt="wip" /></p>
-
-<h4 id="citation">Citation</h4>
-
-<p class="info"><a href="/murat">Kahveci M</a>, &amp; <a href="/yesim">Imamoglu Y</a>. (2006). <em>Turkish high-school students’ attitudes toward learning mathematics</em>. Paper presented at the International Conference on the Teaching of Mathematics (ICTM). Istanbul, Turkey. June 30 - July 5, 2006.</p>
-
-</div><section class="article__sharing d-print-none"><!-- Addthis BEGIN --><script type="text/javascript"
-    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59e82038be0cb7a3"></script>
-  <div class="addthis_inline_share_toolbox addthis_default_style"></div><!-- Addthis END -->
-</section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2006-06-30T00:00:00-05:00"><!-- start custom article footer snippet -->
-
-<!-- end custom article footer snippet -->
-</footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/njh">Working to measure the impact of professional development activities: Developing an instrument to quantify pedagogical discontentment</a></div><div class="next"><span>NEXT</span><a href="/utu">Self-perception in learning mathematics</a></div></div></div>
-
-</div>
-
-<script>(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    $(function() {
-      var $this ,$scroll;
-      var $articleContent = $('.js-article-content');
-      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
-      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
-      $scroll = $(scroll);
-
-      $articleContent.find('.highlight').each(function() {
-        $this = $(this);
-        $this.attr('data-lang', $this.find('code').attr('data-lang'));
-      });
-      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
-        $this = $(this);
-        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
-      });
-      $articleContent.on('click', '.anchor', function() {
-        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
-      });
-    });
-  });
-})();
-</script>
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
-
-<!-- end custom main bottom snippet -->
-</div>
-            </div></div></div><div class="page__footer d-print-none">
-<footer class="footer py-4 js-page-footer">
-  <div class="main"><div itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Murat Kahveci"><meta itemprop="url" content="/murat"><meta itemprop="description" content="Professor of Chemistry Education"><div class="footer__author-links"><div class="author-links">
-  <ul class="menu menu--nowrap menu--inline"><link itemprop="url" href="/murat"><li title="Send me an Email.">
-      <a class="button button--circle mail-button" itemprop="email" href="mailto:mkahveci@gmail.com" target="_blank">
-        <i class="fas fa-envelope"></i>
-      </a><li title="Follow me on Twitter.">
-        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/iMuratKahveci" target="_blank">
-          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1024.032 194.432c-37.664 16.704-78.176 28-120.672 33.088 43.36-26.016 76.672-67.168 92.384-116.224-40.608 24.064-85.568 41.568-133.408 50.976-38.336-40.832-92.928-66.336-153.344-66.336-116.032 0-210.08 94.048-210.08 210.08 0 16.48 1.856 32.512 5.44 47.872-174.592-8.768-329.408-92.416-433.024-219.52-18.08 31.04-28.448 67.104-28.448 105.632 0 72.896 37.088 137.184 93.472 174.88-34.432-1.088-66.816-10.528-95.168-26.272-0.032 0.864-0.032 1.76-0.032 2.656 0 101.792 72.416 186.688 168.512 205.984-17.632 4.8-36.192 7.36-55.36 7.36-13.536 0-26.688-1.312-39.52-3.776 26.72 83.456 104.32 144.192 196.256 145.888-71.904 56.352-162.496 89.92-260.928 89.92-16.96 0-33.664-0.992-50.112-2.944 92.96 59.616 203.392 94.4 322.048 94.4 386.432 0 597.728-320.128 597.728-597.76 0-9.12-0.192-18.176-0.608-27.168 41.056-29.632 76.672-66.624 104.832-108.736z" />
-</svg>
-</div>
-        </a>
-      </li><li title="Follow me on Linkedin.">
-        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/murat-kahveci-b125251a8" target="_blank">
-          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0" />
-</svg>
-</div>
-        </a>
-      </li></ul>
-</div>
-</div>
-    </div><div class="site-info mt-2">
-      <div>© <a href="/team">Kahveci Group 2020</a> <a href="/version">Ver. 20.07</a> ▹ <a href="/feed.xml">RSS</a> ▹ <a href="https://www.depaul.edu">DePaul U</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="https://www.w3counter.com/tracker.js?id=133645"></script>
-</div></div>
-    </div><script>(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    var $body = $('body'), $window = $(window);
-    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
-    var activeCount = 0;
-    function modal(options) {
-      var $root = this, visible, onChange, hideWhenWindowScroll = false;
-      var scrollTop;
-      function setOptions(options) {
-        var _options = options || {};
-        visible = _options.initialVisible === undefined ? false : show;
-        onChange = _options.onChange;
-        hideWhenWindowScroll = _options.hideWhenWindowScroll;
-      }
-      function init() {
-        setState(visible);
-      }
-      function setState(isShow) {
-        if (isShow === visible) {
-          return;
-        }
-        visible = isShow;
-        if (visible) {
-          activeCount++;
-          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
-          $root.addClass('modal--show');
-          $pageMain.scrollTop(scrollTop);
-          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
-          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
-          $window.on('keyup', handleKeyup);
-        } else {
-          activeCount > 0 && activeCount--;
-          $root.removeClass('modal--show');
-          $window.scrollTop(scrollTop);
-          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
-          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
-          $window.off('keyup', handleKeyup);
-        }
-        onChange && onChange(visible);
-      }
-      function show() {
-        setState(true);
-      }
-      function hide() {
-        setState(false);
-      }
-      function handleKeyup(e) {
-        // Char Code: 27  ESC
-        if (e.which ===  27) {
-          hide();
-        }
-      }
-      setOptions(options);
-      init();
-      return {
-        show: show,
-        hide: hide,
-        $el: $root
-      };
-    }
-    $.fn.modal = modal;
-  });
-})();
-</script><div class="modal d-print-none js-page-gallery-modal"><div class="gallery"></div></div><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
-(function () {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    // search panel
-    var search = (window.search || (window.search = {}));
-    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ?
-      true : window.useDefaultSearchBox ;
-
-    var $searchModal = $('.js-page-search-modal');
-    var $searchToggle = $('.js-search-toggle');
-    var searchModal = $searchModal.modal({ onChange: handleModalChange, hideWhenWindowScroll: true });
-    var modalVisible = false;
-    search.searchModal = searchModal;
-
-    var $searchBox = null;
-    var $searchInput = null;
-    var $searchClear = null;
-
-    function getModalVisible() {
-      return modalVisible;
-    }
-    search.getModalVisible = getModalVisible;
-
-    function handleModalChange(visible) {
-      modalVisible = visible;
-      if (visible) {
-        search.onShow && search.onShow();
-        useDefaultSearchBox && $searchInput[0] && $searchInput[0].focus();
-      } else {
-        search.onShow && search.onHide();
-        useDefaultSearchBox && $searchInput[0] && $searchInput[0].blur();
-        setTimeout(function() {
-          useDefaultSearchBox && ($searchInput.val(''), $searchBox.removeClass('not-empty'));
-          search.clear && search.clear();
-          window.pageAsideAffix && window.pageAsideAffix.refresh();
-        }, 400);
-      }
-    }
-
-    $searchToggle.on('click', function() {
-      modalVisible ? searchModal.hide() : searchModal.show();
-    });
-    // Char Code: 83  S, 191 /
-    $(window).on('keyup', function(e) {
-      if (!modalVisible && !window.isFormElement(e.target || e.srcElement) && (e.which === 83 || e.which === 191)) {
-        modalVisible || searchModal.show();
-      }
-    });
-
-    if (useDefaultSearchBox) {
-      $searchBox = $('.js-search-box');
-      $searchInput = $searchBox.children('input');
-      $searchClear = $searchBox.children('.js-icon-clear');
-      search.getSearchInput = function() {
-        return $searchInput.get(0);
-      };
-      search.getVal = function() {
-        return $searchInput.val();
-      };
-      search.setVal = function(val) {
-        $searchInput.val(val);
-      };
-
-      $searchInput.on('focus', function() {
-        $(this).addClass('focus');
-      });
-      $searchInput.on('blur', function() {
-        $(this).removeClass('focus');
-      });
-      $searchInput.on('input', window.throttle(function() {
-        var val = $(this).val();
-        if (val === '' || typeof val !== 'string') {
-          search.clear && search.clear();
-        } else {
-          $searchBox.addClass('not-empty');
-          search.onInputNotEmpty && search.onInputNotEmpty(val);
-        }
-      }, 400));
-      $searchClear.on('click', function() {
-        $searchInput.val(''); $searchBox.removeClass('not-empty');
-        search.clear && search.clear();
-      });
-    }
-  });
-})();
-</script><div class="search search--dark">
-  <div class="main">
-    <div class="search__header">Search</div>
-    <div class="search-bar">
-      <div class="search-box js-search-box">
-        <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
-        <input type="text" />
-        <div class="search-box__icon-clear js-icon-clear">
-          <a><i class="fas fa-times"></i></a>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"/><img src="images/logo-title.svg" alt="logo"/></a>
         </div>
-      </div>
-      <button class="button button--theme-dark button--pill search__cancel js-search-toggle">
-        Cancel</button>
-    </div>
-    <div class="search-result js-search-result"></div>
-  </div>
-</div>
-<script>var SOURCES = window.TEXT_VARIABLES.sources;
-var PAHTS = window.TEXT_VARIABLES.paths;
-window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
-  var search = (window.search || (window.search = {}));
-  var searchData = window.TEXT_SEARCH_DATA || {};
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
 
-  function memorize(f) {
-    var cache = {};
-    return function () {
-      var key = Array.prototype.join.call(arguments, ',');
-      if (key in cache) return cache[key];
-      else return cache[key] = f.apply(this, arguments);
-    };
-  }
 
-  /// search
-  function searchByQuery(query) {
-    var i, j, key, keys, cur, _title, result = {};
-    keys = Object.keys(searchData);
-    for (i = 0; i < keys.length; i++) {
-      key = keys[i];
-      for (j = 0; j < searchData[key].length; j++) {
-        cur = searchData[key][j], _title = cur.title;
-        if ((result[key] === undefined || result[key] && result[key].length < 4 )
-          && _title.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
-          if (result[key] === undefined) {
-            result[key] = [];
-          }
-          result[key].push(cur);
-        }
-      }
-    }
-    return result;
-  }
 
-  var renderHeader = memorize(function(header) {
-    return $('<p class="search-result__header">' + header + '</p>');
-  });
 
-  var renderItem = function(index, title, url) {
-    return $('<li class="search-result__item" data-index="' + index + '"><a class="button" href="' + url + '">' + title + '</a></li>');
-  };
+                
+                
+                
+                <li><a href="blog.html">Blog</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="rpm.html">Online Teaching</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="ukc.html">CHE 134 General Chemistry III</a></li>
+                        
+                        
+                        
+                        <li><a href="tvo.html">CHE 135 General Chemistry III Lab</a></li>
+                        
+                        
+                        
+                        <li><a href="tfg.html">CHE 131 General Chemistry I Lab</a></li>
+                        
+                        
+                        
+                        <li><a href="tpv.html">CHE 139 General Chemistry II Lab</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="index.html">Introduction</a></li>
+                        
+                        
+                        
+                        <li><a href="project.html">Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="publication.html">Publications</a></li>
+                        
+                        
+                        
+                        <li><a href="team.html">Team</a></li>
+                        
+                        
+                        
+                        <li><a href="tag_archives_overview.html">Tag Archives</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
 
-  function render(data) {
-    if (!data) { return null; }
-    var $root = $('<ul></ul>'), i, j, key, keys, cur, itemIndex = 0;
-    keys = Object.keys(data);
-    for (i = 0; i < keys.length; i++) {
-      key = keys[i];
-      $root.append(renderHeader(key));
-      for (j = 0; j < data[key].length; j++) {
-        cur = data[key][j];
-        $root.append(renderItem(itemIndex++, cur.title, cur.url));
-      }
-    }
-    return $root;
-  }
 
-  // search box
-  var $result = $('.js-search-result'), $resultItems;
-  var lastActiveIndex, activeIndex;
 
-  function clear() {
-    $result.html(null);
-    $resultItems = $('.search-result__item'); activeIndex = 0;
-  }
-  function onInputNotEmpty(val) {
-    $result.html(render(searchByQuery(val)));
-    $resultItems = $('.search-result__item'); activeIndex = 0;
-    $resultItems.eq(0).addClass('active');
-  }
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:murat@kahveci.pw?subject=Kahveci Group feedback&body=I have some feedback about the Turkish high-school students’ attitudes toward learning mathematics page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
-  search.clear = clear;
-  search.onInputNotEmpty = onInputNotEmpty;
+</li>
 
-  function updateResultItems() {
-    lastActiveIndex >= 0 && $resultItems.eq(lastActiveIndex).removeClass('active');
-    activeIndex >= 0 && $resultItems.eq(activeIndex).addClass('active');
-  }
+		
+                <!--comment out this block if you want to hide search-->
+                
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
 
-  function moveActiveIndex(direction) {
-    var itemsCount = $resultItems ? $resultItems.length : 0;
-    if (itemsCount > 1) {
-      lastActiveIndex = activeIndex;
-      if (direction === 'up') {
-        activeIndex = (activeIndex - 1 + itemsCount) % itemsCount;
-      } else if (direction === 'down') {
-        activeIndex = (activeIndex + 1 + itemsCount) % itemsCount;
-      }
-      updateResultItems();
-    }
-  }
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
 
-  // Char Code: 13  Enter, 37  ⬅, 38  ⬆, 39  ➡, 40  ⬇
-  $(window).on('keyup', function(e) {
-    var modalVisible = search.getModalVisible && search.getModalVisible();
-    if (modalVisible) {
-      if (e.which === 38) {
-        modalVisible && moveActiveIndex('up');
-      } else if (e.which === 40) {
-        modalVisible && moveActiveIndex('down');
-      } else if (e.which === 13) {
-        modalVisible && $resultItems && activeIndex >= 0 && $resultItems.eq(activeIndex).children('a')[0].click();
-      }
-    }
-  });
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Kahveci Group </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Introduction" href="index.html">Introduction</a></li>
+          
+          
+          
+          
+          
+          
+          
+          
+          <li><a title="PDF download" href="download.html">PDF download</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Projects" href="#">Projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Projects Overview" href="project.html">Projects Overview</a></li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Publications" href="#">Publications</a>
+      <ul>
+          
+          
+          
+          <li><a title="Publications Overview" href="publication.html">Publications Overview</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Books" href="book.html">Books</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Journal Articles" href="journal.html">Journal Articles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Conference Papers" href="conference.html">Conference Papers</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Blog Posts" href="blog_archive.html">Blog Posts</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+      
+  
+      
+  
+      
+  
+  <li>
+      <a title="Team" href="#">Team</a>
+      <ul>
+          
+          
+          
+          <li><a title="Team Overview" href="team.html">Team Overview</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Murat Kahveci" href="murat.html">Murat Kahveci</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Ajda Kahveci" href="ajda.html">Ajda Kahveci</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lihua Jin" href="lihua.html">Lihua Jin</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Timothy French" href="tim.html">Timothy French</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Yousif Muten" href="yousif.html">Yousif Muten</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="Alumni" href="#">Alumni</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Basak Oztekin" href="basak.html">Basak Oztekin</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Elif Algedik" href="elif.html">Elif Algedik</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sirin Coskun" href="sirin.html">Sirin Coskun</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rukiye Didem Taylan" href="didem.html">Rukiye Didem Taylan</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Yesim Imamoglu" href="yesim.html">Yesim Imamoglu</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Kerstin Kremer" href="kerstin.html">Kerstin Kremer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Annemarie Kegler" href="annemarie.html">Annemarie Kegler</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="MaryKay Orgill" href="marykay.html">MaryKay Orgill</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Maher Mohammed Alarfaj" href="maher.html">Maher Mohammed Alarfaj</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Nasser Mansour" href="nasser.html">Nasser Mansour</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Tag archives" href="#">Tag archives</a>
+      <ul>
+          
+          
+          
+          <li><a title="Tag archives overview" href="tag_archives_overview.html">Tag archives overview</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Affective dimensions pages" href="tag_affective_dimensions.html">Affective dimensions pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Full-text articles pages" href="tag_full_text_article.html">Full-text articles pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pedagogical discontentment pages" href="tag_pedagogical_discontentment.html">Pedagogical discontentment pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Interactivity pages" href="tag_interactivity.html">Interactivity pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Remote learning pages" href="tag_remote_learning.html">Remote learning pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Mathematics education pages" href="tag_mathematics_education.html">Mathematics education pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Microdevice pages" href="tag_microdevice.html">Microdevice pages</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nonlinear dynamics pages" href="tag_nonlinear_dynamics.html">Nonlinear dynamics pages</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
 
-  $result.on('mouseover', '.search-result__item > a', function() {
-    var itemIndex = $(this).parent().data('index');
-    itemIndex >= 0 && (lastActiveIndex = activeIndex, activeIndex = itemIndex, updateResultItems());
-  });
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Turkish high-school students’ attitudes toward learning mathematics</h1>
+    <p class="post-meta"><time datetime="" itemprop="datePublished"></time> 
+    
+    
+    <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="https://kahveci.pw/doc/conference.html">Conference Papers</a></span></span>
+    
+    
+    
+    
+     /
+        
+        
+        
+        <a href="https://kahveci.pw/doc/tag_affective_dimensions.html">affective_dimensions</a>, 
+        
+        
+        
+        <a href="https://kahveci.pw/doc/tag_mathematics_education.html">mathematics_education</a>, 
+        
+        
+        
+        <a href="https://kahveci.pw/doc/tag_full_text_article.html">full_text_article</a>
+        
+        
+        
+
+    </p>
+
+
+</header> 
+
+  
+
+<div class="post-content">
+
+   
+    <div class="summary">Attitudes towards mathematics, mathematics self concept and motivation to learn mathematics of 79 students coming from two high schools in Istanbul were measured. Three surveys were administered to the students at their schools; Fennema-Sherman scale, Self Description Questionnaire (SDQ II) and Students’ Motivation to Learn Mathematics (SMOT); having Cronbach alpha reliabilities of .92, .92 and .93 respectively. Factorial analyses were conducted for the three scales. As a result, attitudes towards mathematics was decomposed into eight factors, labeled usefulness of mathematics content, mathematics perceived as male domain, perceived mathematics success, teacher support, perceived mathematics ability and teacher’s belief about mathematics competency.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
 });
 </script>
-</div></div>
+
+<div id="toc"></div>
+
+    
 
 
-<script>(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    function scrollToAnchor(anchor, duration, callback) {
-      var $root = this;
-      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
-        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
-        callback && callback();
-      });
-    }
-    $.fn.scrollToAnchor = scrollToAnchor;
-  });
-})();
-(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    function affix(options) {
-      var $root = this, $window = $(window), $scrollTarget, $scroll,
-        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
-        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
-        hasInit = false, curState;
+    
 
-      function setOptions(options) {
-        var _options = options || {};
-        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
-        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
-        _options.scroll && (scroll = _options.scroll);
-        _options.disabled !== undefined && (disabled = _options.disabled);
-        $scrollTarget = $(scrollTarget);
-        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
-        $scroll = $(scroll);
-      }
-      function preCalc() {
-        top();
-        rootHeight = $root.outerHeight();
-        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
-        rootLeft = $root.offset().left;
-      }
-      function calc(needPreCalc) {
-        needPreCalc && preCalc();
-        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
-        rootBottomTop = scrollBottom - rootTop;
-      }
-      function top() {
-        if (curState !== 'top') {
-          $root.removeClass('fixed').css({
-            left: 0,
-            top: 0
-          });
-          curState = 'top';
-        }
-      }
-      function fixed() {
-        if (curState !== 'fixed') {
-          $root.addClass('fixed').css({
-            left: rootLeft + 'px',
-            top: 0
-          });
-          curState = 'fixed';
-        }
-      }
-      function bottom() {
-        if (curState !== 'bottom') {
-          $root.removeClass('fixed').css({
-            left: 0,
-            top: rootBottomTop + 'px'
-          });
-          curState = 'bottom';
-        }
-      }
-      function setState() {
-        var scrollTop = $scrollTarget.scrollTop();
-        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
-          fixed();
-        } else if (scrollTop < rootTop) {
-          top();
-        } else {
-          bottom();
-        }
-      }
-      function init() {
-        if(!hasInit) {
-          var interval, timeout;
-          calc(true); setState();
-          // run calc every 100 millisecond
-          interval = setInterval(function() {
-            calc();
-          }, 100);
-          timeout = setTimeout(function() {
-            clearInterval(interval);
-          }, 45000);
-          window.pageLoad.then(function() {
-            setTimeout(function() {
-              clearInterval(interval);
-              clearTimeout(timeout);
-            }, 3000);
-          });
-          $scrollTarget.on('scroll', function() {
-            disabled || setState();
-          });
-          $window.on('resize', function() {
-            disabled || (calc(true), setState());
-          });
-          hasInit = true;
-        }
-      }
 
-      setOptions(options);
-      if (!disabled) {
-        init();
-      }
-      $window.on('resize', window.throttle(function() {
-        init();
-      }, 200));
-      return {
-        setOptions: setOptions,
-        refresh: function() {
-          calc(true, { animation: false }); setState();
-        }
-      };
-    }
-    $.fn.affix = affix;
-  });
-})();
-(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    function toc(options) {
-      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
-        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
-        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
 
-      function setOptions(options) {
-        var _options = options || {};
-        _options.selectors && (selectors = _options.selectors);
-        _options.container && (container = _options.container);
-        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
-        _options.scroller && (scroller = _options.scroller);
-        _options.disabled !== undefined && (disabled = _options.disabled);
-        $headings = $(container).find(selectors).filter('[id]');
-        $scrollTarget = $(scrollTarget);
-        $scroller = $(scroller);
-      }
-      function calc() {
-        headingsPos = [];
-        $headings.each(function() {
-          headingsPos.push(Math.floor($(this).position().top));
-        });
-      }
-      function setState(element, disabled) {
-        var scrollTop = $scrollTarget.scrollTop(), i;
-        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
-        if (element) {
-          $activeCur = element;
-        } else {
-          for (i = 0; i < headingsPos.length; i++) {
-            if (scrollTop >= headingsPos[i]) {
-              $activeCur = $tocLi.eq(i);
-            } else {
-              $activeCur || ($activeCur = $tocLi.eq(i));
-              break;
-            }
-          }
-        }
-        $activeLast && $activeLast.removeClass('active');
-        ($activeLast = $activeCur).addClass('active');
-      }
-      function render() {
-        if(!hasRendered) {
-          $root.append($tocUl);
-          $headings.each(function() {
-            var $this = $(this);
-            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
-              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
-          });
-          $tocLi = $tocUl.children('li');
-          $tocUl.on('click', 'a', function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            scrolling = true;
-            setState($this.parent());
-            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
-              scrolling = false;
-            });
-          });
-        }
-        hasRendered = true;
-      }
-      function init() {
-        var interval, timeout;
-        if(!hasInit) {
-          render(); calc(); setState(null, scrolling);
-          // run calc every 100 millisecond
-          interval = setInterval(function() {
-            calc();
-          }, 100);
-          timeout = setTimeout(function() {
-            clearInterval(interval);
-          }, 45000);
-          window.pageLoad.then(function() {
-            setTimeout(function() {
-              clearInterval(interval);
-              clearTimeout(timeout);
-            }, 3000);
-          });
-          $scrollTarget.on('scroll', function() {
-            disabled || setState(null, scrolling);
-          });
-          $window.on('resize', window.throttle(function() {
-            if (!disabled) {
-              render(); calc(); setState(null, scrolling);
-            }
-          }, 100));
-        }
-        hasInit = true;
-      }
 
-      setOptions(options);
-      if (!disabled) {
-        init();
-      }
-      $window.on('resize', window.throttle(function() {
-        init();
-      }, 200));
-      return {
-        setOptions: setOptions
-      };
-    }
-    $.fn.toc = toc;
-  });
-})();
-(function() {(function() {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    function swiper(options) {
-      var $window = $(window), $root = this, $swiperWrapper, $swiperSlides, $swiperButtonPrev, $swiperButtonNext,
-        initialSlide, animation, onChange, onChangeEnd,
-        rootWidth, count, preIndex, curIndex, translateX, CRITICAL_ANGLE = Math.PI / 3;
-
-      function setOptions(options) {
-        var _options = options || {};
-        initialSlide = _options.initialSlide || 0;
-        animation = _options.animation === undefined && true;
-        onChange = onChange || _options.onChange;
-        onChangeEnd = onChangeEnd || _options.onChangeEnd;
-      }
-
-      function init() {
-        $swiperWrapper = $root.find('.swiper__wrapper');
-        $swiperSlides = $root.find('.swiper__slide');
-        $swiperButtonPrev = $root.find('.swiper__button--prev');
-        $swiperButtonNext = $root.find('.swiper__button--next');
-        animation && $swiperWrapper.addClass('swiper__wrapper--animation');
-        calc(true);
-      }
-
-      function preCalc() {
-        rootWidth = $root.width();
-        count = $swiperWrapper.children('.swiper__slide').length;
-        if (count < 2) {
-          $swiperButtonPrev.addClass('d-none');
-          $swiperButtonNext.addClass('d-none');
-        }
-        curIndex = initialSlide || 0;
-        translateX = getTranslateXFromCurIndex();
-      }
-
-      var calc = (function() {
-        var preAnimation, $swiperSlide, $preSwiperSlide;
-        return function (needPreCalc, params) {
-          needPreCalc && preCalc();
-          var _animation = (params && params.animation !== undefined) ? params.animation : animation;
-          if (preAnimation === undefined || preAnimation !== _animation) {
-            preAnimation = _animation ? $swiperWrapper.addClass('swiper__wrapper--animation') :
-              $swiperWrapper.removeClass('swiper__wrapper--animation');
-          }
-          if (preIndex !== curIndex) {
-            ($preSwiperSlide = $swiperSlides.eq(preIndex)).removeClass('active');
-            ($swiperSlide = $swiperSlides.eq(curIndex)).addClass('active');
-            onChange && onChange(curIndex, $swiperSlides.eq(curIndex), $swiperSlide, $preSwiperSlide);
-            if (onChangeEnd) {
-              if (_animation) {
-                setTimeout(function() {
-                  onChangeEnd(curIndex, $swiperSlides.eq(curIndex), $swiperSlide, $preSwiperSlide);
-                }, 400);
-              } else {
-                onChangeEnd(curIndex, $swiperSlides.eq(curIndex), $swiperSlide, $preSwiperSlide);
-              }
-            }
-            preIndex = curIndex;
-          }
-          $swiperWrapper.css('transform', 'translate(' + translateX + 'px, 0)');
-          if (count > 1) {
-            if (curIndex <= 0) {
-              $swiperButtonPrev.addClass('disabled');
-            } else {
-              $swiperButtonPrev.removeClass('disabled');
-            }
-            if (curIndex >= count - 1) {
-              $swiperButtonNext.addClass('disabled');
-            } else {
-              $swiperButtonNext.removeClass('disabled');
-            }
-          }
-        };
-      })();
-
-      function getTranslateXFromCurIndex() {
-        return curIndex <= 0 ? 0 : - rootWidth * curIndex;
-      }
-
-      function moveToIndex(index ,params) {
-        preIndex = curIndex;
-        curIndex = index;
-        translateX = getTranslateXFromCurIndex();
-        calc(false, params);
-      }
-
-      function move(type) {
-        var nextIndex = curIndex, unstableTranslateX;
-        if (type === 'prev') {
-          nextIndex > 0 && nextIndex--;
-        } else if (type === 'next') {
-          nextIndex < count - 1 && nextIndex++;
-        }
-        if (type === 'cur') {
-          moveToIndex(curIndex, { animation: true });
-          return;
-        }
-        unstableTranslateX = translateX % rootWidth !== 0;
-        if (nextIndex !== curIndex || unstableTranslateX) {
-          unstableTranslateX ? moveToIndex(nextIndex, { animation: true }) : moveToIndex(nextIndex);
-        }
-      }
-
-      setOptions(options);
-      init();
-      preIndex = curIndex;
-
-      $swiperButtonPrev.on('click', function(e) {
-        e.stopPropagation();
-        move('prev');
-      });
-      $swiperButtonNext.on('click', function(e) {
-        e.stopPropagation();
-        move('next');
-      });
-      $window.on('resize', function() {
-        calc(true, { animation: false });
-      });
-
-      (function() {
-        var pageX, pageY, velocityX, preTranslateX = translateX, timeStamp, touching;
-        function handleTouchstart(e) {
-          var point = e.touches ? e.touches[0] : e;
-          pageX = point.pageX;
-          pageY = point.pageY;
-          velocityX = 0;
-          preTranslateX = translateX;
-        }
-        function handleTouchmove(e) {
-          if (e.touches && e.touches.length > 1) {
-            return;
-          }
-          var point = e.touches ? e.touches[0] : e;
-          var deltaX = point.pageX - pageX;
-          var deltaY = point.pageY - pageY;
-          velocityX = deltaX / (e.timeStamp - timeStamp);
-          timeStamp = e.timeStamp;
-          if (e.cancelable && Math.abs(Math.atan(deltaY / deltaX)) < CRITICAL_ANGLE) {
-            touching = true;
-            translateX += deltaX;
-            calc(false, { animation: false });
-          }
-          pageX = point.pageX;
-          pageY = point.pageY;
-        }
-        function handleTouchend() {
-          touching = false;
-          var deltaX = translateX - preTranslateX;
-          var distance = deltaX + velocityX * rootWidth;
-          if (Math.abs(distance) > rootWidth / 2) {
-            distance > 0 ? move('prev') : move('next');
-          } else {
-            move('cur');
-          }
-        }
-        $swiperWrapper.on('touchstart', handleTouchstart);
-        $swiperWrapper.on('touchmove', handleTouchmove);
-        $swiperWrapper.on('touchend', handleTouchend);
-        $swiperWrapper.on('touchcancel', handleTouchend);
-
-        (function() {
-          var pressing = false, moved = false;
-          $swiperWrapper.on('mousedown', function(e) {
-            pressing = true; handleTouchstart(e);
-          });
-          $swiperWrapper.on('mousemove', function(e) {
-            pressing && (e.preventDefault(), moved = true, handleTouchmove(e));
-          });
-          $swiperWrapper.on('mouseup', function(e) {
-            pressing && (pressing = false, handleTouchend(e));
-          });
-          $swiperWrapper.on('mouseleave', function(e) {
-            pressing && (pressing = false, handleTouchend(e));
-          });
-          $swiperWrapper.on('click', function(e) {
-            moved && (e.stopPropagation(), moved = false);
-          });
-        })();
-
-        $root.on('touchmove', function(e) {
-          if (e.cancelable & touching) {
-            e.preventDefault();
-          }
-        });
-      })();
-
-      return {
-        setOptions: setOptions,
-        previous: function(){
-          move('prev');
-        },
-        next: function(){
-          move('next');
-        },
-        refresh: function() {
-          calc(true, { animation: false });
-        }
-      };
-    }
-    $.fn.swiper = swiper;
-  });
-})();
-var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    var template =
-      '<div class="swiper gallery__swiper">' +
-        '<div class="swiper__wrapper">' +
-        '</div>' +
-        '<div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>' +
-        '<div class="swiper__button swiper__button--next fas fa-chevron-right"></div>' +
-      '</div>';
-    function setState($item, zoom, translate) {
-      $item.css('transform', 'scale(' + zoom + ') translate(' + translate.x +  'px,' + translate.y + 'px)');
-    }
-    function Gallery(root, items) {
-      this.$root = $(root);
-      this.$swiper = null;
-      this.$swiperWrapper = null;
-      this.$activeItem = null;
-      this.$items = [];
-      this.contentWidth = 0;
-      this.contentHeight = 0;
-      this.swiper = null;
-      this.items = items;
-      this.disabled = false;
-      this.curIndex = 0;
-      this.touchCenter = null;
-      this.lastTouchCenter = null;
-      this.zoomRect = null;
-      this.lastZoomRect = null;
-      this.lastTranslate = null;
-      this.translate = null;
-      this.lastZoom = 1;
-      this.preZoom = 1;
-      this.zoom = 1;
-    }
-    Gallery.prototype.init = function() {
-      var i, item, items = this.items, size, self = this, touchstartFingerCount = 0;
-      this.$root.append(template);
-      this.$swiper = this.$root.find('.gallery__swiper');
-      this.$swiperWrapper = this.$root.find('.swiper__wrapper');
-      this.contentWidth = this.$swiperWrapper && this.$swiperWrapper.width();
-      this.contentHeight = this.$swiperWrapper && this.$swiperWrapper.height();
-      for (i = 0; i < items.length; i++) {
-        item = items[i];
-        size = this._calculateImageSize(item.w, item.h);
-        this.$items.push($(
-          '<div class="swiper__slide">' +
-            '<div class="gallery-item">' +
-              '<div class="gallery-item__content">' +
-                '<img src="' + item.src + '" style="width:' + size.w + 'px;height:' + size.h +  'px"/>' +
-              '</div>' +
-            '</div>' +
-          '</div>'
-        ));
-      }
-      this.$swiperWrapper && this.$swiperWrapper.append(this.$items);
-      this.swiper = this.$swiper && this.$swiper.swiper({
-        onChangeEnd: function() {
-          self._handleChangeEnd.apply(self, Array.prototype.slice.call(arguments));
-        }
-      });
-      $(window).on('resize', function() {
-        if (self.disabled) { return; }
-        self._resizeImageSize();
-      });
-      // Char Code: 37  ⬅, 39  ➡
-      $(window).on('keyup', function(e) {
-        if (window.isFormElement(e.target || e.srcElement) || self.disabled) { return; }
-        if (e.which === 37) {
-          self.swiper && self.swiper.previous();
-        } else if (e.which === 39) {
-          self.swiper && self.swiper.next();
-        }
-      });
-      function getRect(touch0, touch1) {
-        return {
-          o: {
-            x: (touch0.pageX + touch1.pageX) / 2,
-            y: (touch0.pageY + touch1.pageY) / 2
-          },
-          w: Math.abs(touch0.pageX - touch1.pageX),
-          h: Math.abs(touch0.pageY - touch1.pageY)
-        };
-      }
-      function getTouches(e) {
-        return e.touches || e;
-      }
-      function getTouchesCount(e) {
-        if (e.touches) {
-          return e.touches.length;
-        } else {
-          return 1;
-        }
-      }
-      this.$swiperWrapper.on('touchstart', function(e) {
-        var touch0, touch1, rect;
-        touchstartFingerCount = getTouchesCount(e);
-        if (touchstartFingerCount > 1) {
-          touch0 = e.touches[0];
-          touch1 = e.touches[1];
-          rect = getRect(touch0, touch1);
-          self.lastZoomRect = { w: rect.w, h: rect.h };
-          self.lastTouchCenter = rect.o;
-        } else {
-          var touch = getTouches(e)[0];
-          self.lastTouchCenter = { x: touch.pageX, y: touch.pageY };
-        }
-      });
-      this.$swiperWrapper.on('touchmove', function(e) {
-        if (touchstartFingerCount === getTouchesCount(e)) {
-          if (touchstartFingerCount > 1) {
-            var touch0 = e.touches[0];
-            var touch1 = e.touches[1];
-            var rect = getRect(touch0, touch1);
-            self.zoomRect = { w: rect.w, h: rect.h };
-            self.touchCenter = rect.o;
-            self._zoom(); self._translate();
-            setState(self.$activeItem, self.zoom, self.translate);
-          } else {
-            var touch = getTouches(e)[0];
-            self.touchCenter = { x: touch.pageX, y: touch.pageY };
-            self._translate();
-            setState(self.$activeItem, self.zoom, self.translate);
-          }
-        }
-      });
-      this.$swiperWrapper.on('touchend', function(e) {
-        self.lastZoom = self.zoom;
-        self.lastTranslate = self.translate;
-        touchstartFingerCount = 0;
-      });
-      this.$root.on('touchmove', function(e) {
-        if (self.disabled) { return; }
-        e.preventDefault();
-      });
-    };
-
-    Gallery.prototype._translate = function() {
-      this.translate = this.touchCenter && this.lastTouchCenter && this.lastTranslate ? {
-        x: (this.touchCenter.x - this.lastTouchCenter.x) / this.zoom + this.lastTranslate.x,
-        y: (this.touchCenter.y - this.lastTouchCenter.y) / this.zoom + this.lastTranslate.y
-      } : { x: 0, y: 0 };
-    }
-    Gallery.prototype._zoom = function() {
-      this.zoom = (this.zoomRect.w + this.zoomRect.h) / (this.lastZoomRect.w + this.lastZoomRect.h) * this.lastZoom;
-      this.zoom > 1 ? this.$activeItem.addClass('zoom') : this.$activeItem.removeClass('zoom');
-      this.preZoom = this.zoom;
-    }
-
-    Gallery.prototype._calculateImageSize = function(w, h) {
-      var scale = 1;
-      if (this.contentWidth > 0 && this.contentHeight > 0 && w > 0 && h > 0) {
-        scale = Math.min(
-          Math.min(w, this.contentWidth) / w,
-          Math.min(h, this.contentHeight) / h);
-      }
-      return { w: Math.floor(w * scale), h: Math.floor(h * scale) };
-    };
-
-    Gallery.prototype._resizeImageSize = function() {
-      var i, $item, $items = this.$items, item, size;
-      this.contentWidth = this.$swiperWrapper && this.$swiperWrapper.width();
-      this.contentHeight = this.$swiperWrapper && this.$swiperWrapper.height();
-      if ($items.length < 1) { return; }
-      for (i = 0; i < $items.length; i++) {
-        item = this.items[i], $item = $items[i];
-        size = this._calculateImageSize(item.w, item.h);
-        item.width = size.w; item.height = size.h;
-        $item && $item.find('img').css({ width: size.w, height: size.h });
-      }
-    };
-    Gallery.prototype._handleChangeEnd = function(index, $dom, preIndex, $preDom) {
-      this.curIndex = index;
-      this.lastZoomRect = null; this.lastZoomRect = null;
-      this.lastTranslate = this.translate = { x: 0, y:0 };
-      this.lastZoom = this.preZoom = this.zoom = 1;
-      this.$activeItem = $dom.find('.gallery-item__content');
-      setState($preDom.find('.gallery-item__content'), this.zoom, this.translate);
-    };
-
-    Gallery.prototype.refresh = function() {
-      this.swiper && this.swiper.refresh();
-      this._resizeImageSize();
-    };
-    Gallery.prototype.setOptions = function(options) {
-      this.disabled = options.disabled;
-      this.swiper && this.swiper.setOptions(options);
-    };
-    window.Gallery = Gallery;
-  });
-})();(function() {
-  window.imagesLoad = function(images) {
-    images = images || document.getElementsByTagName('img');
-    var imagesCount = images.length, loadedCount = 0, image;
-    var i, j, loaded = false, cbs = [];
-    imagesCount < 1 && (loaded = true);
-    for (i = 0; i < imagesCount; i++) {
-      image = images[i];
-      image.complete ? handleImageLoad() : image.addEventListener('load', handleImageLoad);
-    }
-    function handleImageLoad() {
-      loadedCount++;
-      if (loadedCount === imagesCount) {
-        loaded = true;
-        if (cbs.length > 0) {
-          for (j = 0; j < cbs.length; j++) {
-            cbs[j]();
-          }
-        }
-      }
-    }
-    return {
-      then: function(cb) {
-        cb && (loaded ? cb() : (cbs.push(cb)));
-      }
-    };
-  };
-})();
-(function () {
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    var $pageGalleryModal = $('.js-page-gallery-modal');
-    var $images = $('.page__content').find('img:not(.lightbox-ignore)');
-    window.imagesLoad($images).then(function() {
-      /* global Gallery */
-      var pageGalleryModal = $pageGalleryModal.modal({ onChange: handleModalChange });
-      var gallery = null;
-      var modalVisible = false;
-      var i, items = [], image, item;
-      if($images && $images.length > 0) {
-        for (i = 0; i < $images.length; i++) {
-          image = $images.eq(i);
-          if (image.get(0).naturalWidth > 800) {
-            items.push({ src: image.attr('src'), w: image.get(0).naturalWidth, h: image.get(0).naturalHeight, $el: image});
-          }
-        }
-      }
-
-      if(items.length > 0) {
-        gallery = new Gallery('.gallery', items);
-        gallery.setOptions({ disabled: !modalVisible });
-        gallery.init();
-        for (i = 0; i < items.length; i++) {
-          item = items[i];
-          item.$el && (item.$el.addClass('popup-image'), item.$el.on('click', (function() {
-            var index = i;
-            return function() {
-              pageGalleryModal.show();
-              gallery.setOptions({ initialSlide: index });
-              gallery.refresh(true, { animation: false });
-            };
-          })()));
-        }
-      }
-
-      function handleModalChange(visible) {
-        modalVisible = visible;
-        gallery && gallery.setOptions({ disabled: !modalVisible });
-      }
-
-      $pageGalleryModal.on('click', function() {
-        pageGalleryModal.hide();
-      });
-    });
-  });
-})();
-/*(function () {
-
-})();*/
-</script><script>
-  window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
-    var $canvas = null, $this = null, _ctx = null, _text = '';
-    $('.language-chart').each(function(){
-      $this = $(this);
-      $canvas = $('<canvas></canvas>');
-      _text = $this.text();
-      $this.text('').append($canvas);
-      _ctx = $canvas.get(0).getContext('2d');
-      (_ctx && _text) && (new Chart(_ctx, JSON.parse(_text)) && $this.attr('data-processed', true));
-    });
-  });
-</script>
-<script type="text/x-mathjax-config">
-	var _config = { tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']]
-	}};_config.TeX = { equationNumbers: { autoNumber: "all" } };MathJax.Hub.Config(_config);
-</script>
-<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-<script>
-  window.Lazyload.js('https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js', function() {
-    mermaid.initialize({
-      startOnLoad: true
-    });
-    mermaid.init(undefined, '.language-mermaid');
-  });
-</script>
-
+    <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Conference Papers <span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+            
+            
+            <li>
+                <a href="aai.html">43. Measuring conceptual understanding on oxygen bi...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ekj.html">42. Alternative assessment method in biochemistry e...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="csn.html">41. Integrating learning objects into D2L to promot...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="rol.html">40. Advancing chemistry education research: Dual-Pr...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="zyc.html">39. An account for Inquiry-Based Science Education ...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="tcm.html">38. A project idea on working definition of IBSE in...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="hnw.html">37. A project idea on working definition of IBSE in...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="liv.html">36. Construct validity and reliability measures of ...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="jcv.html">35. Affective factors and instructional interactivi...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ihi.html">34. Introduction to Moodle Learning Management Syst...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="fck.html">33. Affective dimensions in chemistry education: Fo...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="bfb.html">32. Experiences in reviewing proposals under FP7 Pr...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="hvm.html">31. Phase diagrams and conceptual learning</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="fho.html">30. Preparing a grant proposal for funding by the E...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="dxf.html">29. Adaptation of learning objects to inquiry-based...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="mgv.html">28. Einstellungen zur Chemie und zum Chemielernen b...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="uej.html">27. Affective dimensions in chemistry education: Mu...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="jbq.html">26. Physical chemistry education and learning objec...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ftt.html">25. Affective dimensions in chemistry education</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="rwo.html">24. Physical chemistry education and learning objec...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ugd.html">23. Depicting chemistry majors’ self-perceptions in...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="sqs.html">22. Analysis of Turkish high-school chemistry exami...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="bkd.html">21. FP7 Science in Society Program: The evaluation ...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="uds.html">20. Quantifying high school students’ self- percept...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="fgb.html">19. Students’ motivation to use technology for lear...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="tqf.html">18. A framework for measuring fidelity of implement...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="cfo.html">17. A conceptual framework for fidelity of implemen...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="uqq.html">16. Investigating the existence of interactivity in...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ezg.html">15. A finer grain understanding of teachers’ adopti...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="zad.html">14. Interactive learning in mathematics education: ...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="crm.html">13. An instrument development: Interactivity Survey...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="utu.html">12. Matematiği öğrenmede kendi-kendini kavrama</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="active"> → 11. Turkish high-school students’ attitudes toward ...</li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="njh.html">10. Working to measure the impact of professional d...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="bnw.html">9. Instructional interactivity endeavor and the Sp...</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="mpb.html">8. The significance of interactivity in gender equ...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ljl.html">7. Instructional interactivity and technology comp...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="dxs.html">6. The use of interactivity in a graduate class: A...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="cdk.html">5. The significance of interactivity, learning cyc...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="qoj.html">4. Micro-patterning of reaction arrays for self-or...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="pfe.html">3. Letting teachers to interact with the idea of I...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="rnr.html">2. An on-line evaluation system for curriculum mat...</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="xcz.html">1. Interactivity in mathematics and science education</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="conference.html">0. Conference Papers Overview</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ol>
     </div>
-    <script>(function () {
-  var $root = document.getElementsByClassName('root')[0];
-  if (window.hasEvent('touchstart')) {
-    $root.dataset.isTouch = true;
-    document.addEventListener('touchstart', function(){}, false);
-  }
-})();
-</script>
-  </body>
-</html>
+</div>
 
+
+
+   <div class="alert alert-success" role="alert"><i class="fa fa-paw"></i> Kahveci M, Imamoglu Y. (2006). International Conference on the Teaching of Mathematics (ICTM).</div>
+
+<p><em>Keywords</em>. Mathematics self-concept, motivation, attitude, factor analysis, Fennema-Sherman scale, Self Description Questionnaire, SMOT</p>
+
+<h2 id="1-introduction">1 Introduction</h2>
+
+<p>As mathematics is one of the components of basic education, every student has to develop mathematics skills to some extent. At the same time, it is generally accepted as a difficult subject because of its abstract nature and many students struggle to relate the mathematics they learn at school to real life situations. The necessities of current educational system in Turkey, national tests such as OKS and OSS (administered to enter high schools and universities, respectively) add the pressure on the students to be successful at mathematics. Still, students cannot perform well in both national and international tests. 2005 OSS results show that mathematics average was only 7.5 out of 25 questions, with standard deviation on 11.5 (OSYM, 2005). The results of international studies TIMSS 1999 (Mullis et al., 2000) and PISA 2003 (OECD, 2004) indicate that Turkish students’ mathematics average is significantly below than international average in all content areas (Turkey M=423, SD=105; international M=500, SD=100 in PISA 2003). Looking at the means according to school type show that private schools have higher mean (M=557, SE= 6.47) than public schools (M=418, SE= 53.68), even higher international average for private schools (M=526, SE= 1.49).</p>
+
+<p>In PISA 2003, apart from the achievement test, students were asked about the following aspects of their approaches to learning mathematics: motivation, self related beliefs (self-concept and self- efficacy), mathematics anxiety and learning strategies. Results show that Turkish students coming from private and public schools (where students selected by national tests) have motivation, self-concept and self-efficacy in learning mathematics higher than international average (OECD, 2004). In addition, Turkish students exhibited lower mathematics anxiety compared to other nations in Europe (OECD, 2004). However, in state schools, self-concept and self-efficacy are lower than international average, with higher mathematics anxiety. Feeling of belonging to the school is lower than international average in both types of schools (Berberoglu, 2004).</p>
+
+<p>This study aims at looking more closely to students’ motivational attitudes towards mathematics at two Turkish private schools. Another aim is to investigate whether these attitudes are affected by gender, age, and mathematics grade.</p>
+
+<h3 id="11-motivation">1.1 Motivation</h3>
+
+<p>Motivation can be defined as “an internal state that arouses, directs and maintains behavior”(Woolfolk, 2004). Causes of motivation can be internal, such as personal values or interests (intrinsic motivation) or they can be external, like rewards or punishments (extrinsic motivation). Attribution theory of motivation suggests that, students’ explanations for causes of academic success or failure can be categorized by the following dimensions: locus, referring to whether the causes come from the individual or from other people; stability, referring to whether the causes change over time; and controllability, whether the individual is able to control the cause (Weiner, as cited in Kloosterman, 1988). Students’ reasons for the cause of success or failure effects their motivation to attempt academic tasks. Students’ goal orientations also effect their motivation. Students having task-focused (learning) goals show personal interest in the task and believe that the task itself is rewarding, whereas students with performance goals either try to be best performer or be more successful than others (performance approach), or try not to be the least competent or be the poorest performer (performance avoidance)(Skaalvik &amp; Skaalvik, 2004).</p>
+
+<h3 id="12-self-concept-self-efficacy-and-self-esteem">1.2 Self-Concept, Self-Efficacy, and Self-Esteem</h3>
+
+<p>Self-concept is “the composite of ideas, feelings and attitudes people have about themselves” (Woolfolk, 2004). Self-concept is divided into sub-categories of general, academic, social, emotional and physical self-concepts (Shavelson et al., 1976). Academic self- concept can be subject or course specific, but they are not item or task specific. Mathematics self- concept can be defined as “positive or negative orientation toward one’s ability, performance, and success in the learning of mathematics” (Ma &amp; Kishor, 1997b). Self-efficacy, on the other hand, is a judgment of one’s ability to perform a specific task (Pajares &amp; Miller, 1994). Self-esteem refers to the one’s judgments of self-worth (Woolfolk, 2004).</p>
+
+<h3 id="13-attitude-toward-mathematics">1.3 Attitude toward Mathematics</h3>
+
+<p>In their meta-analysis, Ma and Kishor (1997b) state that attitude toward mathematics refers to students’ affective responses to whether they find mathematics easy/difficult or important/unimportant. They also quote the following definition by (Neale, 1969):</p>
+
+<blockquote>
+  <p>Attitude toward mathematics refers to students’ affective responses to “a liking or disliking of mathematics, a tendency to engage in or avoid mathematical activities, a belief that one is good or bad at mathematics and a belief that mathematics is useful or useless.”</p>
+</blockquote>
+
+<h2 id="2-related-literature">2 Related Literature</h2>
+
+<p>Studies investigating motivation, self-concept, self-efficacy, mathematics attitude and mathematics achievement concentrates on the following topics: relationship between motivation and achievement (Greene et al., 1999), relationship between self-concept, self-efficacy, and mathematics achievement (Ma &amp; Kishor, 1997b; Norwich, 1987; Pajares &amp; Miller, 1994; Pietsch et al., 2003), relationship between mathematics attitude and achievement (Ma &amp; Kishor, 1997a), and gender differences in these constructs (Githua &amp; Mwangi, 2003; Skaalvik &amp; Skaalvik, 2004; Stipek &amp; Gralinski, 1991).</p>
+
+<p>Greene et al. (1999) used a modified version of expectancy –value model (Ecless et al., as cited in Greene et al., 1999) which shows the relationships of values, beliefs and goals with effort and achievement, with respect to gender. Results show that task achievement goals predicted effort stronger than the other constructs. Prediction of achievement and effort differed according to gender and mathematics class type.</p>
+
+<p>Kloosterman (1988) measured attribution style, effort as a mediator of mathematical ability, and failure as an acceptable phase in learning mathematics in order to explain self-confidence of 7<sup>th</sup> grade students. He concluded that attribution style was the strongest predictor of confidence, followed by effort as a mediator of mathematical ability. The results also showed that students were making attributions for failure more often than success. As an attempt to investigate predictive relations between self-efficacy and subsequent attainment in a mathematics task, Norwich (1987) assessed self-efficacy of primary school students (9-10 year-olds) over four trials. Between trials, students attempted mathematics tasks. Self-efficacy made no independent contribution to predicting task performance. However, prior self-efficacy and mathematics performance, independently predicted relations with self-efficacy when students were not familiar with the task but self-concept did not. When the students were familiar with the task, only prior self-efficacy had predictive relation with subsequent self-efficacy. In addition, mathematics self-concept and prior mathematics performance made significant contributions to predicting subsequent task performance. Another study about the effects of self-efficacy and self- concept on mathematics success was conducted by Pajares and Miller (1994) on undergraduate students. They concluded that, self-efficacy has stronger direct effects on performance than mathematics self- concept, perceived usefulness of mathematics, prior experience with mathematics or gender. Mathematics self-concept and high school level had modest direct effects. Self-efficacy was also reported to mediate the effect of gender and prior experience on mathematics self-concept, perceived usefulness of mathematics and mathematics performance. A more recent study on high school students (Pietsch et al., 2003) showed that competency component of self-concept was differentiated with affective component but overlapped with self-efficacy when they were measured at the same level of generality. Social comparison (students comparing themselves with other students) had equal effect on both self-concept and self-efficacy. Self-efficacy beliefs were more strongly related with mathematics performance.</p>
+
+<p>In their meta analysis of the relationship of attitudes towards self and achievement in mathematics,
+Ma and Kishor (1997b) considered self-concept, gender role and family support to be the main
+indicators of attitude. They reached the following conclusions:</p>
+
+<ul>
+  <li>The self-concept-achievement, the family support-achievement, and the male domain-achievement relationships were all statistically reliable;</li>
+  <li>The three relationships did not show evident gender differences;</li>
+  <li>The three relationships consistently decreased from the junior high grades to the senior high grades;</li>
+  <li>The self-concept-achievement relationship varied as a function of ethnicity, whereas the family support achievement relationship was consistent across ethnic backgrounds;</li>
+  <li>The three relationships were not consistent across sample selection;</li>
+  <li>The self-concept-achievement relationship varied with sample size, whereas the family support- achievement and the male domain-achievement relationships were sample-size invariant;</li>
+  <li>The self-concept-achievement relationship varied over time, whereas the family support-achievement and the male domain-achievement relationships remained almost unchanged over time; and</li>
+  <li>There were no statistically significant interaction effects on any of the three relationships.</li>
+</ul>
+
+<p>Gender differences were the basic concern in Stipek and Gralinski’s study (1991). They measured achievement related beliefs of 3<sup>rd</sup> grade (8-9 year-olds) and high school (13-14 year-olds) students before and after a regular mathematics exam. Girls reported lower ability and expectation of success. They were less likely to attribute success to high ability and failure to luck; instead, they were more likely to attribute failure to low-ability than boys. Gender differences were also found in the study of Githua &amp; Mwangi (2003), in favor of boys, in students’ perception of likelihood of success and satisfaction in learning mathematics. They also concluded that girls in co-educational secondary schools in Kenya have the least self-concept and motivation to learn mathematics. Comparing mathematics and verbal self-concept of boys and girls in Norwegian high schools, Skaalvik &amp; Skaalvik (2004) also encountered gender differences: Boys had higher self-concept, performance expectations, intrinsic motivation and self-enhancing ego orientation than girls in mathematics; while girls had higher intrinsic motivation to learn language than boys. Verbal self-concept of older students was higher than their mathematical self-concept, regardless of gender.</p>
+
+<p>As can be understood from the above literature, relationships between motivational aspects, self- concept, self-efficacy and mathematics performance are complex in nature. In order to explain these relationships, Barker et al. (2004) proposed a model that relates achievement motivation (mastery, performance and social purposes) and academic self-concept (English and mathematics). The model fitted their data, however, not equally well across both sex groups.</p>
+
+<h2 id="3-method">3 Method</h2>
+
+<h3 id="31-participants-and-procedures">3.1 Participants and Procedures</h3>
+
+<p>Participants for this study were selected from two high schools, A and B, in Istanbul, Turkey. Both schools are private schools, students of which come from upper-class families. 40 students were chosen from school A and 39 students were chosen from school B using proportional stratified sampling with levels of grade and gender. Data were collected by administrating a paper-based survey to the students at their schools. Surveys asked for demographic information about gender, age, class and mathematics grade. Confidentiality of the students was protected and mathematics teachers in the schools helped to administer the instruments. Table 1 shows the distributions of participants with respect to their gender and grade level.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Grade</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9<sup>th</sup></td>
+      <td>10</td>
+      <td>11</td>
+      <td><strong>21</strong></td>
+    </tr>
+    <tr>
+      <td>10<sup>th</sup></td>
+      <td>9</td>
+      <td>17</td>
+      <td><strong>26</strong></td>
+    </tr>
+    <tr>
+      <td>11<sup>th</sup></td>
+      <td>15</td>
+      <td>17</td>
+      <td><strong>32</strong></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td><strong>34</strong></td>
+      <td><strong>45</strong></td>
+      <td><strong>79</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 1. Distribution of the participants. Please note that there are no parametric comparisons done between male and female students with respect to their grade level. i.e. Mean comparisons are carried out among the total values showed in bold.</figcaption>
+
+<h3 id="32-instruments">3.2 Instruments</h3>
+
+<p>A modified version of Fennema-Sherman Scale (Doepken et al., 1993) was administered to the students. This scale measures participants’ attitudes towards mathematics. The test consists of 47 items, divided into the following categories: personal confidence about subject matter, usefulness of subject’s content, subject perceived as male domain, and perception of teacher attitudes. Items were translated into Turkish for this study and its overall reliability including all items turned out to be very high internal consistency (Cronbach alpha; ⍺ = .92).</p>
+
+<p>Secondly, mathematics self-concept of participants was measured using the related self-concept items in SDQ II: Academic Self Description Survey II, which was originally developed by Marsh (1990) and then adapted by Githua and Mwangi (2003). These items were combined with items taken from ASDQ II, as adopted by Barker et al. (2004). All items in the adapted form were translated into Turkish language. Overall Cronbach alpha of the scale was found to be highly reliable (⍺ = .92).</p>
+
+<p>Furthermore, another survey measuring students’ motivation to learn mathematics (SMOT) by a 28- item scale (Githua &amp; Mwangi, 2003) was applied. The instrument originally measured the following categories: interest in learning mathematics, satisfaction, relevance, and perceived probability of success. 28 items were transcribed into Turkish language. The data collected showed strong internal consistency, having ⍺ = .93.</p>
+
+<p>Response categories for all scales were from strongly agree to strongly disagree as follows:</p>
+
+<ul>
+  <li>Strongly Disagree (1)</li>
+  <li>Disagree (2)</li>
+  <li>Neutral (3)</li>
+  <li>Agree (4)</li>
+  <li>Strongly Agree (5)</li>
+  <li>Items reflecting negative attitude were scored in reverse order.</li>
+</ul>
+
+<h3 id="33-data-analysis">3.3 Data Analysis</h3>
+
+<p>Principal component factor analyses with varimax rotation were conducted for the three scales. Rotation method was done with Kaiser Normalization. To construct factor categories, factor loadings equal to or higher than .40 were accounted for a factor component. Categories containing less than
+three items were removed from the analyses. A further mean comparison analysis, GLM, will be carried out although their results will not be presented in this paper.</p>
+
+<h2 id="4-results">4 Results</h2>
+
+<h3 id="41-attitudes-toward-mathematics">4.1 Attitudes toward Mathematics</h3>
+
+<p>Bartlett’s test of sphericity (p=.000 &lt; .05) indicated high correlation among items in the Fennema- Sherman scale. Thus, factor analysis over 47 items were performed. As a result, twelve factors were extracted, seven of which were interpretable due to the internal consistency condition (see Table 3). Categories corresponding to these factors are labeled as follows: Usefulness of mathematics content (U), mathematics perceived as a male domain (M), perceived mathematics success (PS), teacher support (TS), perceived mathematics ability (PA), perceived mathematics performance (PP), teachers’ belief of competency in mathematics (TB). The first two categories coincide with the original categories as of Doepken et al.(1993)’s study, while the items in the category of personal confidence in subject matter (as used by Doepken et al.) was further divided into three categories, namely, PA, PP, and PS. Perception of teacher attitude was also divided into two categories: TS and TB. Means, standard deviations and reliability coefficients of the categories, as well as the corresponding item numbers are given in Table 2.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor Category</th>
+      <th>Mean</th>
+      <th>Standard Deviation</th>
+      <th>Cronbach Alpha</th>
+      <th>Contributing Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U</td>
+      <td>3.04</td>
+      <td>1.26</td>
+      <td>.91</td>
+      <td>3, 5, 10, 13, 14, 21, 27, 29, 34, 39, 42, 44</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>4.29</td>
+      <td>1.04</td>
+      <td>.90</td>
+      <td>9, 11, 15, 18, 24, 28, 31, 38, 46</td>
+    </tr>
+    <tr>
+      <td>PS</td>
+      <td>3.47</td>
+      <td>1.16</td>
+      <td>.84</td>
+      <td>7, 19, 23, 32, 43</td>
+    </tr>
+    <tr>
+      <td>TS</td>
+      <td>3.76</td>
+      <td>.99</td>
+      <td>.80</td>
+      <td>2, 20, 45</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>4.03</td>
+      <td>.91</td>
+      <td>.76</td>
+      <td>1, 7, 16, 33, 37,40</td>
+    </tr>
+    <tr>
+      <td>PP</td>
+      <td>3.05</td>
+      <td>.97</td>
+      <td>.80</td>
+      <td>12, 25, 41</td>
+    </tr>
+    <tr>
+      <td>TB</td>
+      <td>3.66</td>
+      <td>1.01</td>
+      <td>.64</td>
+      <td>16, 21, 22, 26</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 2. Mean, standard deviation and reliability coefficients of the extracted factors from Fennema-Sherman survey.</figcaption>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>U</th>
+      <th>M</th>
+      <th>PS</th>
+      <th>TS</th>
+      <th>PA</th>
+      <th>PP</th>
+      <th>TB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I1</td>
+      <td>.185</td>
+      <td>-.104</td>
+      <td>.229</td>
+      <td>-.136</td>
+      <td><strong>.548</strong></td>
+      <td>.329</td>
+      <td>.183</td>
+    </tr>
+    <tr>
+      <td>I2</td>
+      <td>-.013</td>
+      <td>.056</td>
+      <td>.041</td>
+      <td><strong>.863</strong></td>
+      <td>.128</td>
+      <td>.153</td>
+      <td>.147</td>
+    </tr>
+    <tr>
+      <td>I3</td>
+      <td><strong>.776</strong></td>
+      <td>.171</td>
+      <td>.035</td>
+      <td>.114</td>
+      <td>-.111</td>
+      <td>.292</td>
+      <td>.021</td>
+    </tr>
+    <tr>
+      <td>I5</td>
+      <td><strong>.822</strong></td>
+      <td>.193</td>
+      <td>.038</td>
+      <td>.056</td>
+      <td>-.072</td>
+      <td>.363</td>
+      <td>.091</td>
+    </tr>
+    <tr>
+      <td>I7</td>
+      <td>-.004</td>
+      <td>.016</td>
+      <td>.451</td>
+      <td>.140</td>
+      <td><strong>.581</strong></td>
+      <td>-.094</td>
+      <td>-.073</td>
+    </tr>
+    <tr>
+      <td>I9</td>
+      <td>.151</td>
+      <td><strong>.689</strong></td>
+      <td>.257</td>
+      <td>.133</td>
+      <td>-.132</td>
+      <td>-.109</td>
+      <td>-.182</td>
+    </tr>
+    <tr>
+      <td>I10</td>
+      <td><strong>.759</strong></td>
+      <td>-.031</td>
+      <td>.124</td>
+      <td>.086</td>
+      <td>.101</td>
+      <td>.261</td>
+      <td>-.012</td>
+    </tr>
+    <tr>
+      <td>I11</td>
+      <td>.016</td>
+      <td><strong>.742</strong></td>
+      <td>.121</td>
+      <td>-.109</td>
+      <td>-.026</td>
+      <td>-.092</td>
+      <td>.396</td>
+    </tr>
+    <tr>
+      <td>I12</td>
+      <td>.234</td>
+      <td>-.108</td>
+      <td>.314</td>
+      <td>.189</td>
+      <td>.257</td>
+      <td><strong>.636</strong></td>
+      <td>.141</td>
+    </tr>
+    <tr>
+      <td>I13</td>
+      <td><strong>.839</strong></td>
+      <td>.091</td>
+      <td>.035</td>
+      <td>-.112</td>
+      <td>-.033</td>
+      <td>-.161</td>
+      <td>.040</td>
+    </tr>
+    <tr>
+      <td>I14</td>
+      <td><strong>.420</strong></td>
+      <td>.039</td>
+      <td>-.086</td>
+      <td>.377</td>
+      <td>-.093</td>
+      <td>.182</td>
+      <td>.216</td>
+    </tr>
+    <tr>
+      <td>I15</td>
+      <td>-.035</td>
+      <td><strong>.885</strong></td>
+      <td>-.077</td>
+      <td>.069</td>
+      <td>.065</td>
+      <td>.042</td>
+      <td>.050</td>
+    </tr>
+    <tr>
+      <td>I16</td>
+      <td>.100</td>
+      <td>.001</td>
+      <td>.253</td>
+      <td>.348</td>
+      <td><strong>.426</strong></td>
+      <td>-.152</td>
+      <td><strong>.432</strong></td>
+    </tr>
+    <tr>
+      <td>I18</td>
+      <td>.141</td>
+      <td><strong>.754</strong></td>
+      <td>-.069</td>
+      <td>.268</td>
+      <td>-.084</td>
+      <td>-.013</td>
+      <td>-.047</td>
+    </tr>
+    <tr>
+      <td>I19</td>
+      <td>.227</td>
+      <td>.091</td>
+      <td><strong>.724</strong></td>
+      <td>.222</td>
+      <td>.053</td>
+      <td>.065</td>
+      <td>.349</td>
+    </tr>
+    <tr>
+      <td>I20</td>
+      <td>.122</td>
+      <td>.074</td>
+      <td>.134</td>
+      <td><strong>.810</strong></td>
+      <td>-.004</td>
+      <td>.008</td>
+      <td>-.004</td>
+    </tr>
+    <tr>
+      <td>I21</td>
+      <td><strong>.573</strong></td>
+      <td>.206</td>
+      <td>.167</td>
+      <td>.012</td>
+      <td>.240</td>
+      <td>.076</td>
+      <td><strong>.480</strong></td>
+    </tr>
+    <tr>
+      <td>I22</td>
+      <td>.181</td>
+      <td>.134</td>
+      <td>.239</td>
+      <td>.192</td>
+      <td>-.065</td>
+      <td>.129</td>
+      <td><strong>.566</strong></td>
+    </tr>
+    <tr>
+      <td>I23</td>
+      <td>.290</td>
+      <td>.194</td>
+      <td><strong>.714</strong></td>
+      <td>.073</td>
+      <td>.067</td>
+      <td>.108</td>
+      <td>.177</td>
+    </tr>
+    <tr>
+      <td>I24</td>
+      <td>.040</td>
+      <td><strong>.621</strong></td>
+      <td>.062</td>
+      <td>-.137</td>
+      <td>-.018</td>
+      <td>.078</td>
+      <td><strong>.517</strong></td>
+    </tr>
+    <tr>
+      <td>I25</td>
+      <td>.335</td>
+      <td>.086</td>
+      <td>.379</td>
+      <td>-.035</td>
+      <td>.152</td>
+      <td><strong>.593</strong></td>
+      <td>-.114</td>
+    </tr>
+    <tr>
+      <td>I26</td>
+      <td>.162</td>
+      <td>.237</td>
+      <td>.067</td>
+      <td>.309</td>
+      <td>.224</td>
+      <td>.131</td>
+      <td><strong>.516</strong></td>
+    </tr>
+    <tr>
+      <td>I27</td>
+      <td><strong>.805</strong></td>
+      <td>.180</td>
+      <td>.171</td>
+      <td>-.027</td>
+      <td>.069</td>
+      <td>.269</td>
+      <td>-.119</td>
+    </tr>
+    <tr>
+      <td>I28</td>
+      <td>-.058</td>
+      <td><strong>.793</strong></td>
+      <td>.273</td>
+      <td>-.025</td>
+      <td>.018</td>
+      <td>-.012</td>
+      <td>.026</td>
+    </tr>
+    <tr>
+      <td>I29</td>
+      <td><strong>.652</strong></td>
+      <td>-.060</td>
+      <td>.034</td>
+      <td>.215</td>
+      <td>.217</td>
+      <td>-.076</td>
+      <td>-.262</td>
+    </tr>
+    <tr>
+      <td>I31</td>
+      <td>.141</td>
+      <td><strong>.785</strong></td>
+      <td>.014</td>
+      <td>-.129</td>
+      <td>-.023</td>
+      <td>.047</td>
+      <td>.012</td>
+    </tr>
+    <tr>
+      <td>I32</td>
+      <td>.266</td>
+      <td>.121</td>
+      <td><strong>.685</strong></td>
+      <td>.180</td>
+      <td>.194</td>
+      <td>.358</td>
+      <td>.155</td>
+    </tr>
+    <tr>
+      <td>I33</td>
+      <td>.026</td>
+      <td>-.088</td>
+      <td>.132</td>
+      <td>.082</td>
+      <td><strong>.781</strong></td>
+      <td>.271</td>
+      <td>-.012</td>
+    </tr>
+    <tr>
+      <td>I34</td>
+      <td><strong>.816</strong></td>
+      <td>-.121</td>
+      <td>.054</td>
+      <td>-.060</td>
+      <td>.213</td>
+      <td>.045</td>
+      <td>.125</td>
+    </tr>
+    <tr>
+      <td>I37</td>
+      <td>.246</td>
+      <td>.037</td>
+      <td>.077</td>
+      <td>.070</td>
+      <td><strong>.851</strong></td>
+      <td>.179</td>
+      <td>.007</td>
+    </tr>
+    <tr>
+      <td>I38</td>
+      <td>.158</td>
+      <td><strong>.675</strong></td>
+      <td>.159</td>
+      <td>.224</td>
+      <td>.026</td>
+      <td>.191</td>
+      <td>.027</td>
+    </tr>
+    <tr>
+      <td>I39</td>
+      <td><strong>.765</strong></td>
+      <td>.076</td>
+      <td>.151</td>
+      <td>.162</td>
+      <td>.081</td>
+      <td>.003</td>
+      <td>.110</td>
+    </tr>
+    <tr>
+      <td>I40</td>
+      <td>-.051</td>
+      <td>.063</td>
+      <td>.019</td>
+      <td>.332</td>
+      <td><strong>.515</strong></td>
+      <td>-.143</td>
+      <td>.128</td>
+    </tr>
+    <tr>
+      <td>I41</td>
+      <td>.379</td>
+      <td>.114</td>
+      <td>.150</td>
+      <td>.085</td>
+      <td>.257</td>
+      <td><strong>.733</strong></td>
+      <td>.147</td>
+    </tr>
+    <tr>
+      <td>I42</td>
+      <td><strong>.689</strong></td>
+      <td>.075</td>
+      <td>.327</td>
+      <td>.039</td>
+      <td>.256</td>
+      <td>.160</td>
+      <td>.241</td>
+    </tr>
+    <tr>
+      <td>I43</td>
+      <td>.089</td>
+      <td>.114</td>
+      <td><strong>.806</strong></td>
+      <td>.101</td>
+      <td>.228</td>
+      <td>.170</td>
+      <td>-.126</td>
+    </tr>
+    <tr>
+      <td>I44</td>
+      <td><strong>.640</strong></td>
+      <td>.132</td>
+      <td>.308</td>
+      <td>.353</td>
+      <td>.057</td>
+      <td>-.231</td>
+      <td>.114</td>
+    </tr>
+    <tr>
+      <td>I45</td>
+      <td>.081</td>
+      <td>.238</td>
+      <td>.286</td>
+      <td><strong>.674</strong></td>
+      <td>.179</td>
+      <td>.006</td>
+      <td>-.035</td>
+    </tr>
+    <tr>
+      <td>I46</td>
+      <td>.108</td>
+      <td><strong>.860</strong></td>
+      <td>-.006</td>
+      <td>.118</td>
+      <td>.092</td>
+      <td>.032</td>
+      <td>.051</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 3. Factor loadings of Fennema-Sherman survey.</figcaption>
+
+<h3 id="42-mathematics-self-concept">4.2 Mathematics Self-Concept</h3>
+
+<p>Bartlett’s test of sphericity (p=.000 &lt; .05) indicated high correlation among items in the combined ASDQ II and SDQ II scale. Thus, factor analysis over 17 items were performed. As a result, three factors were extracted and all of them were interpretable (see Table 4). Categories corresponding to these factors are: perceived performance and success (PS); feelings towards mathematics (F); perceived mathematics ability (PA). There two items appeared in more than one category. Means, standard deviations and reliability coefficients of the categories, as well as the corresponding item numbers are given in Table 5.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>PS</th>
+      <th>F</th>
+      <th>PA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A1</td>
+      <td><strong>.785</strong></td>
+      <td>.345</td>
+      <td>.278</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td><strong>.844</strong></td>
+      <td>.097</td>
+      <td>.095</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td><strong>.561</strong></td>
+      <td><strong>.511</strong></td>
+      <td>.243</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td><strong>.784</strong></td>
+      <td>.288</td>
+      <td>.308</td>
+    </tr>
+    <tr>
+      <td>A5</td>
+      <td><strong>.676</strong></td>
+      <td>.338</td>
+      <td>.217</td>
+    </tr>
+    <tr>
+      <td>S1</td>
+      <td><strong>.751</strong></td>
+      <td>.157</td>
+      <td>.269</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td><strong>.679</strong></td>
+      <td>.378</td>
+      <td>.431</td>
+    </tr>
+    <tr>
+      <td>S3</td>
+      <td><strong>.460</strong></td>
+      <td>.146</td>
+      <td><strong>.475</strong></td>
+    </tr>
+    <tr>
+      <td>S4</td>
+      <td>.025</td>
+      <td>.001</td>
+      <td><strong>.756</strong></td>
+    </tr>
+    <tr>
+      <td>S5</td>
+      <td>.233</td>
+      <td><strong>.796</strong></td>
+      <td>.015</td>
+    </tr>
+    <tr>
+      <td>S6</td>
+      <td>.180</td>
+      <td>.380</td>
+      <td><strong>.647</strong></td>
+    </tr>
+    <tr>
+      <td>S7</td>
+      <td><strong>.652</strong></td>
+      <td>.396</td>
+      <td>-.121</td>
+    </tr>
+    <tr>
+      <td>S8</td>
+      <td>.373</td>
+      <td><strong>.706</strong></td>
+      <td>.068</td>
+    </tr>
+    <tr>
+      <td>S9</td>
+      <td><strong>.628</strong></td>
+      <td>.111</td>
+      <td>.093</td>
+    </tr>
+    <tr>
+      <td>S10</td>
+      <td>.330</td>
+      <td>.067</td>
+      <td><strong>.676</strong></td>
+    </tr>
+    <tr>
+      <td>S11</td>
+      <td><strong>.725</strong></td>
+      <td>.317</td>
+      <td>.257</td>
+    </tr>
+    <tr>
+      <td>S12</td>
+      <td>.147</td>
+      <td><strong>.746</strong></td>
+      <td>.395</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 4. Factor loadings of ASDQ II &amp; SDQ II.</figcaption>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor Category</th>
+      <th>Mean</th>
+      <th>Standard Deviation</th>
+      <th>Cronbach Alpha</th>
+      <th>Contributing Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PS</td>
+      <td>2.77</td>
+      <td>.98</td>
+      <td>.98</td>
+      <td>A1, A2, A3, A4, A5, S1, S2, S3, S7, S9, S11</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>2.53</td>
+      <td>1.02</td>
+      <td>.80</td>
+      <td>A3, S5, S8, S12</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>3.00</td>
+      <td>1.09</td>
+      <td>.65</td>
+      <td>S3, S4, S6, S10</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 5. Mean, standard deviation and reliability coefficients of extracted factors from ASDQ II &amp; SDQ II.</figcaption>
+
+<h3 id="43-students-motivation-to-learn-mathematics">4.3 Students’ Motivation to Learn Mathematics</h3>
+
+<p>Bartlett’s test of sphericity (p=.000 &lt; .05) indicated high correlation among items in the SMOT scale. Thus, factor analysis over 28 items were performed (see Table 6).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>U</th>
+      <th>IM</th>
+      <th>PS</th>
+      <th>S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>.420</td>
+      <td><strong>.692</strong></td>
+      <td>.082</td>
+      <td>.117</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>.117</td>
+      <td><strong>.736</strong></td>
+      <td>.156</td>
+      <td>-.022</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>.301</td>
+      <td><strong>.656</strong></td>
+      <td>.020</td>
+      <td>-.062</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>.178</td>
+      <td><strong>.694</strong></td>
+      <td>.192</td>
+      <td>.252</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-.061</td>
+      <td>.336</td>
+      <td><strong>.484</strong></td>
+      <td>-.197</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>.108</td>
+      <td>.415</td>
+      <td><strong>.733</strong></td>
+      <td>.080</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><strong>.621</strong></td>
+      <td>.284</td>
+      <td>.150</td>
+      <td>-.043</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>.019</td>
+      <td>.228</td>
+      <td>.007</td>
+      <td>.121</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>-.051</td>
+      <td>.092</td>
+      <td><strong>.759</strong></td>
+      <td>.065</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>.159</td>
+      <td><strong>.676</strong></td>
+      <td>.176</td>
+      <td>.058</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>.168</td>
+      <td><strong>.525</strong></td>
+      <td>-.163</td>
+      <td>.288</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><strong>.823</strong></td>
+      <td>.142</td>
+      <td>-.001</td>
+      <td>.076</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>.322</td>
+      <td>.346</td>
+      <td>.064</td>
+      <td>-.005</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>.320</td>
+      <td>.075</td>
+      <td>-.101</td>
+      <td><strong>.783</strong></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><strong>.568</strong></td>
+      <td>.204</td>
+      <td>.188</td>
+      <td>.230</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>.068</td>
+      <td><strong>.614</strong></td>
+      <td>.228</td>
+      <td>.329</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>.190</td>
+      <td>.188</td>
+      <td>.139</td>
+      <td><strong>.780</strong></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>-.206</td>
+      <td>.093</td>
+      <td><strong>.493</strong></td>
+      <td><strong>.557</strong></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>.131</td>
+      <td>.090</td>
+      <td><strong>.714</strong></td>
+      <td>.055</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>.294</td>
+      <td>.166</td>
+      <td>-.009</td>
+      <td>.408</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td><strong>.825</strong></td>
+      <td>.000</td>
+      <td>-.062</td>
+      <td>.233</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td><strong>.863</strong></td>
+      <td>.197</td>
+      <td>-.080</td>
+      <td>.122</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><strong>.708</strong></td>
+      <td>.351</td>
+      <td>.091</td>
+      <td>.118</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><strong>.493</strong></td>
+      <td><strong>.511</strong></td>
+      <td>.231</td>
+      <td>-.003</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>.385</td>
+      <td>.077</td>
+      <td>.324</td>
+      <td>-.035</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 6. Factor loadings for SMOT survey.</figcaption>
+
+<p>Eight factors were extracted from the factor analysis. Due to the internal consistency condition, four of these factors were interpreted. Categories corresponding to these four factors are: usefulness of mathematics (Utility value) (U), intrinsic motivation (IM), perceived probability of success (PS), and satisfaction (S). Means, standard deviations and reliability coefficients of the categories, as well as the corresponding item numbers are given in Table 7.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor Category</th>
+      <th>Mean</th>
+      <th>Standard Deviation</th>
+      <th>Cronbach Alpha</th>
+      <th>Contributing Items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U</td>
+      <td>3.09</td>
+      <td>1.07</td>
+      <td>.83</td>
+      <td>8, 14, 17, 24, 25, 26, 27</td>
+    </tr>
+    <tr>
+      <td>IM</td>
+      <td>3.57</td>
+      <td>1.02</td>
+      <td>.85</td>
+      <td>1,2,3,4,12,13,18,27</td>
+    </tr>
+    <tr>
+      <td>PS</td>
+      <td>2.51</td>
+      <td>1.05</td>
+      <td>.72</td>
+      <td>6,7,10,20,21.S:16,19,20,23</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>3.09</td>
+      <td>.88</td>
+      <td>.70</td>
+      <td>16, 19, 20</td>
+    </tr>
+  </tbody>
+</table>
+
+<figcaption>Table 7. Mean, standard deviation and reliability coefficients of the extracted factors from SMOT.</figcaption>
+
+<h2 id="5-conclusion">5 Conclusion</h2>
+
+<p>Three different scales were administered to students of two high schools in Turkey, in order to examine their attitudes towards mathematics, mathematics self-concept and motivation to learn mathematics. A series of factor analyses were conducted to the obtained data.</p>
+
+<p>Attitudes towards mathematics was decomposed into eight factors, labeled usefulness of mathematics content, mathematics perceived as male domain, perceived mathematics success, teacher support, perceived mathematics ability and teacher’s belief about mathematics competency.
+Mathematics self-concept was decomposed into three factors: Perceived performance and success, feelings towards mathematics and perceived mathematics ability. Among these factors, mean differences with respect to mathematics grade occurred in perceived performance and success, and feelings towards mathematics.</p>
+
+<p>Motivation to learn mathematics items were decomposed into four factors labeled usefulness of mathematics, intrinsic motivation, perceived probability of success and satisfaction. Significant mean differences were found in scores of intrinsic motivation with respect to class and mathematics grade, while perceived probability of success scores had significant differences with respect to age.</p>
+
+<p>Overall, the categories have means higher than 3.00; with the exception of perceived performance and success in SDQII (PS) (M= 2.77, SD= .98), feelings toward mathematics (F) (M= 2.53, SD=1.02) and perceived probability of success in SMOT (PS) (M= 2.2.51, SD=1.05). It can be concluded that, in general, these students have a positive attitude towards mathematics, and they are highly motivated. This coincides with the findings of PISA 2003; Turkish students coming from private schools have higher motivation and mathematics self-concept than the international average (Berbero”lu, 2004). The reason for this difference could be due to the better educational opportunities offered by private schools.</p>
+
+<p>Looking at the means of the extracted factors across the three surveys, the category mathematics perceived as male domain (M) has the highest mean (M= 4.29, SD= 1.04). Keeping in mind that items reflecting negative attitude were scored in reverse order, this means students do not see mathematics as a male domain.</p>
+
+<p>This study investigated the motivational attitudes toward mathematics of students in two private schools. Similar studies should be conducted public schools in order to compare and contrast the situation, because there seems to be a big gap between different types of schools in Turkey, especially in mathematics education, as suggested by PISA 2003 results.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>Barker, K. L., Dowson, M., &amp; McInerey, D. M. (2004). Evolvement of students’ goals and academic self-concept: A multidimensional and hierarchical conceptualisation, The Australian Association for Research in Education. Melbourne, Australia.</li>
+  <li>Berberoglu, G. (2004). Türk bakıs açısından PISA arastırma sonuçları. Retrieved May 17, 2006, from <a href="http://www.konrad.org.tr/Egitimturk/07girayberberoglu">http://www.konrad.org.tr/Egitimturk/07girayberberoglu.pdf</a>.</li>
+  <li>Doepken, D., Lawsky, E., &amp; Padwa, L. (1993). Modified Fennema-Sherman attitude scales. Retrieved 26 May, 2006, from <a href="http://www.woodrow.org/teachers/math/gender/08scale.html">http://www.woodrow.org/teachers/math/gender/08scale.html</a></li>
+  <li>Githua, B. N., &amp; Mwangi, J. G. (2003). Students’ mathematics self-concept and motivation to learn mathematics: Relationship and gender differences among Kenya’s secondary-school students in Nairobi and Rift Valley provinces. International Journal of Educational Development, 23(5), 487-499.</li>
+  <li>Greene, B. A., DeBacker, T. K., Ravindran, B., &amp; Krows, A. J. (1999). Goals, values, and beliefs as predictors of achievement and effort in high school mathematics classes. Sex Roles, 40(5-6), 421- 458.</li>
+  <li>Kloosterman, P. (1988). Self-confidence and motivation in mathematics. Journal of Educational Psychology, 80(3), 345-351.</li>
+  <li>Ma, X., &amp; Kishor, N. (1997a). Assessing the relationship between attitude toward mathematics and achievement in mathematics: A meta-analysis. Journal for Research in Mathematics Education, 28(1), 26-47.</li>
+  <li>Ma, X., &amp; Kishor, N. (1997b). Attitude toward self, social factors, and achievement in mathematics: A meta-analytic review. Educational Psychology Review, 9(2), 89-120.</li>
+  <li>Marsh, H. W. (1990). SDQ II: Manual &amp; research monograph. New York: The Psychological Corporation, Harcourt Brace Jovanovich.</li>
+  <li>Mullis, V. S., Martin, M. O., Gonzalez, E. J., Gregory, K., Garden, R. A., O’Connor, K. M., et al.
+(2000). TIMSS 1999 international mathematics report. Retrieved May 17, 2006, from
+<a href="http://timss.bc.edu/timss1999i/pdf/T99i_Math_TOC.pdf">http://timss.bc.edu/timss1999i/pdf/T99i_Math_TOC.pdf</a>.</li>
+  <li>Neale, D. C. (1969). The role of attitudes in learning mathematics. Arith. Teacher, 16, 631-640. Norwich, B. (1987). Self-efficacy and mathematics achievement - A Study Of Their Relation. Journal of Educational Psychology, 79(4), 384-387.</li>
+  <li>OECD. (2004). Learning for tomorrow’s world-first results from PISA 2003. Retrieved May 17, 2006, from <a href="http://www.pisa.oecd.org/dataoecd/1/60/34002216.pdf">http://www.pisa.oecd.org/dataoecd/1/60/34002216.pdf</a>.</li>
+  <li>OSYM. (2005). ÖSS Ham puan ortalamaları. Retrieved May 17, 2006, from
+<a href="http://www.osym.gov.tr/BelgeGoster.aspx?F6E10F8892433CFF7A2395174CFB32E12858DA1
+8F4388CDD">http://www.osym.gov.tr/BelgeGoster.aspx?F6E10F8892433CFF7A2395174CFB32E12858DA1
+8F4388CDD</a>.</li>
+  <li>Pajares, F., &amp; Miller, M. D. (1994). Role of self-efficacy and self-concept beliefs in mathematical
+problem-solving - A path-analysis. Journal of Educational Psychology, 86(2), 193-203.</li>
+  <li>Pietsch, J., Walker, R., &amp; Chapman, E. (2003). The relationship among self-concept, self-efficacy, and
+performance in mathematics during secondary school. Journal of Educational Psychology,
+95(3), 589-603.</li>
+  <li>Shavelson, R. J., Hubner, J. J., &amp; Stanton, G. C. (1976). Self-concept - validation of construct
+interpretations. Review of Educational Research, 46(3), 407-441.</li>
+  <li>Skaalvik, S., &amp; Skaalvik, E. M. (2004). Gender differences in math and verbal self-concept,
+performance expectations, and motivation. Sex Roles, 50(3-4), 241-252.</li>
+  <li>Stipek, D. J., &amp; Gralinski, J. H. (1991). Gender differences in childrens’ achievement-related beliefs and
+emotional responses to success and failure in mathematics. Journal of Educational Psychology,
+83(3), 361-371.</li>
+  <li>Woolfolk, A. (2004). Educational psychology (9th ed.). Boston: Pearson.</li>
+</ul>
+
+<div class="bs-callout bs-callout-success">
+<b>Citation</b><br /><br />
+Kahveci M, &amp; Imamoglu Y. (2006). <i>Turkish high-school students’ attitudes toward learning mathematics</i>. Paper presented at the International Conference on the Teaching of Mathematics (ICTM). Istanbul, Turkey. June 30 - July 5, 2006.
+</div>
+
+
+
+
+
+
+<p>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="/njh.html"><button type="button" class="btn btn-primary">Previous: 10  Working to measure the impact of professional d...</button></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</p> 
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_affective_dimensions.html" class="btn btn-default navbar-btn cursorNorm" role="button">affective_dimensions</a>
+        
+        
+        
+        <a href="tag_mathematics_education.html" class="btn btn-default navbar-btn cursorNorm" role="button">mathematics_education</a>
+        
+        
+        
+        <a href="tag_full_text_article.html" class="btn btn-default navbar-btn cursorNorm" role="button">full_text_article</a>
+        
+        
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+          <p><img src="images/logo-large.svg" alt="logo"/></p>      
+               &copy;2020 Kahveci Group. All rights reserved. <br />
+<span>Page last updated:</span> Aug 26, 2020<br/> 
+Site last generated: Sep 7, 2020 <br />
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-129160204-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

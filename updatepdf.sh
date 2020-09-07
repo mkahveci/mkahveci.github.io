@@ -1,0 +1,14 @@
+cd pdf;
+cp portfolio.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-portfolio.pdf;
+cp cv_murat_kahveci.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-cv_murat_kahveci.pdf;
+cp CHE139.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-CHE139.pdf;
+cp CHE134.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-CHE134.pdf;
+cp CHE135.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-CHE135.pdf;
+cp CHE131.pdf ~/Sites/pdf-backups/`date +"%Y-%m-%d"`-CHE131.pdf;
+cd ..;
+. pdf-portfolio.sh; 
+. pdf-murat.sh;
+. pdf-che139.sh;
+. pdf-che134.sh;
+. pdf-che135.sh;
+. pdf-che131.sh;

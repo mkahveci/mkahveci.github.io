@@ -1,0 +1,20 @@
+destination: _site/
+url: "http://127.0.0.1:4013"
+baseurl: "/che134-pdf"
+port: 4011
+output: pdf
+product: portfolio
+print_title: CHE 134. General Chemistry III  
+print_subtitle: Kahveci Group
+output: pdf
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page_print"
+      comments: true
+      search: true
+
+pdf_sidebar: che134_sidebar

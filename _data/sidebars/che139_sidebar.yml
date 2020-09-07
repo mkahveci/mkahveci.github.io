@@ -1,0 +1,85 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: General Chemistry II Lab
+  version: CHE 139
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+  
+  - title: Course Details
+    output: web, pdf
+    folderitems:
+
+    - title: Course Overview
+      url: /tpv.html
+      output: web, pdf 
+      
+    - title: PDF Download
+      url: /baz.html
+      output: web 
+      
+  - title: Experiments
+    output: web, pdf
+    folderitems:      
+
+    - title: "Experiment 1. Gas Chromatography: Raoult's Law"
+      url: /nzx.html
+      output: web, pdf  
+
+    - title: Experiment 2. Iodine Clock
+      url: /ykf.html
+      output: web, pdf
+
+    - title: Experiment 3. Qualitative Analysis of Anions
+      url: /eml.html
+      output: web, pdf
+
+    - title: Experiment 4. KHP Titration
+      url: /von.html
+      output: web, pdf
+
+    - title: Experiment 5. Acids and Bases
+      url: /hba.html
+      output: web, pdf
+
+    - title: Experiment 6. Buffer Solutions
+      url: /fbo.html
+      output: web, pdf
+
+    - title: Experiment 7. Le Châtelier’s Principle
+      url: /bxh.html
+      output: web, pdf
+
+    - title: Experiment 8. Amino Acid Titration
+      url: /yfh.html
+      output: web, pdf
+
+    - title: Experiment 9. Thermodynamics of a Cobalt Complex
+      url: /evj.html
+      output: web, pdf
+      
+    - title: Experiment 10. Spectrophotometric Analysis of Manganese in Steel
+      url: /ksm.html
+      output: web, pdf
+
+    - title: Experiment 11. Electrochemistry
+      url: /fwb.html
+      output: web, pdf
+
+    - title: Experiment 12. Coordination Chemistry
+      url: /wrn.html
+      output: web, pdf            

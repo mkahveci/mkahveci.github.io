@@ -1,0 +1,69 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: General Chemistry I Lab
+  version: CHE 131
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+  
+  - title: Course Details
+    output: web, pdf
+    folderitems: 
+
+    - title: Course Overview
+      url: /tfg.html
+      output: web, pdf 
+      
+    - title: PDF Download
+      url: /jpz.html
+      output: web 
+      
+  - title: Experiments
+    output: web, pdf
+    folderitems:
+
+    - title: Experiment 1. Workshop
+      url: /chv.html
+      output: web, pdf
+
+    - title: Experiment 2. Density and Volumetric Glassware
+      url: /mbm.html
+      output: web, pdf
+
+    - title: Experiment 3. Avogadro’s Number
+      url: /vaq.html
+      output: web, pdf      
+
+    - title: Experiment 4. Introduction to Spectroscopy
+      url: /hzv.html
+      output: web, pdf
+      
+    - title: Experiment 5. Empirical Formula of a Compound
+      url: /nsk.html
+      output: web, pdf
+
+    - title: Experiment 6. Qualitative Analysis
+      url: /vtw.html
+      output: web, pdf      
+
+    - title: Experiment 7. The Copper Cycle
+      url: /igf.html
+      output: web, pdf
+
+    - title: Experiment 8. Introduction to Titration
+      url: /ovg.html
+      output: web, pdf            

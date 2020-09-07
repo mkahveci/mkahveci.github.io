@@ -1,2 +1,15 @@
-<img src="{{ include.file }}" alt="{{ include.title }}" style="width:400px;">{:.shadow}
-<br><small>_{{ include.title }}_. {{ include.caption }}</small>
+<figure>
+{% if {{include.url}} %}
+<a class="no_icon" target="_blank" rel="noopener" href="{{include.url}}">
+{% endif %}
+<img class="docimage" src="images/{{include.file}}" alt="{{include.alt}}" 
+{% if {{include.max-width}} %}
+style="max-width: {{include.max-width}}px"
+{% endif %} />
+{% if {{include.url}} %}
+</a>
+{% endif %}
+{% if {{include.caption}} %}
+<figcaption>{{include.caption}}</figcaption>
+{% endif %}
+</figure>

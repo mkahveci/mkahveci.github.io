@@ -2,21 +2,29 @@
 {% assign journal-count = 0 %}
 {% assign conference-count = 0 %}
 
-{% for book in site.book %}
+{% assign sorted = site.pages | sort: 'year' | reverse %}
+
+{% for book in sorted %}
+{% if book.book %}
 {% if book.projectid contains page.projectid %}
 {% assign book-count = book-count | plus: 1 %}
 {% endif %}
-{% endfor %}
-
-{% for journal in site.journal %}
-{% if journal.projectid contains page.projectid %}
-{% assign journal-count = journal-count | plus: 1 %}
 {% endif %}
 {% endfor %}
 
-{% for conference in site.conference %}
+{% for journal in sorted %}
+{% if journal.journal %}
+{% if journal.projectid contains page.projectid %}
+{% assign journal-count = journal-count | plus: 1 %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% for conference in sorted %}
+{% if conference.conference %}
 {% if conference.projectid contains page.projectid %}
 {% assign conference-count = conference-count | plus: 1 %}
+{% endif %}
 {% endif %}
 {% endfor %}
 
@@ -29,13 +37,15 @@
 
 {% if book-count > 0 %}
 
-### Book
+### Books
 
-{% for book in site.book reversed %}
+{% for book in sorted %}
+{% if book.book %}
 {% if book.projectid contains page.projectid %}
-<p><b>{{ book-count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+<p><b>{{ book-count }}</b>.&nbsp;&nbsp;{{ book.ref }}  <a class="noCrossRef" href="{{ site.urlx }}{{ book.url }}"><i class="fa fa-link"></i></a>
 </p>
 {% assign book-count = book-count | minus: 1 %}
+{% endif %}
 {% endif %}
 {% endfor %}
 
@@ -44,13 +54,15 @@
 
 {% if journal-count > 0 %}
 
-### Journal Article
+### Journal Articles
 
-{% for journal in site.journal reversed %}
+{% for journal in sorted %}
+{% if journal.journal %}
 {% if journal.projectid contains page.projectid %}
-<p><b>{{ journal-count }}</b>.&nbsp;&nbsp;{{ journal.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+<p><b>{{ journal-count }}</b>.&nbsp;&nbsp;{{ journal.ref }}  <a class="noCrossRef" href="{{ site.urlx }}{{ journal.url }}"><i class="fa fa-link"></i></a>
 </p>
 {% assign journal-count = journal-count | minus: 1 %}
+{% endif %}
 {% endif %}
 {% endfor %}
 
@@ -59,16 +71,16 @@
 
 {% if conference-count > 0 %}
 
-### Conference Paper
+### Conference Papers
 
-{% for conference in site.conference reversed %}
+{% for conference in sorted %}
+{% if conference.conference %}
 {% if conference.projectid contains page.projectid %}
-<p><b>{{ conference-count }}</b>.&nbsp;&nbsp;{{ conference.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+<p><b>{{ conference-count }}</b>.&nbsp;&nbsp;{{ conference.ref }}  <a class="noCrossRef" href="{{ site.urlx }}{{ conference.url }}"><i class="fa fa-link"></i></a>
 </p>
 {% assign conference-count = conference-count | minus: 1 %}
+{% endif %}
 {% endif %}
 {% endfor %}
 
 {% endif %}
-
-

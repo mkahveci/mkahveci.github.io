@@ -1,42 +1,13 @@
 
 {% if page.wip %} {% include sip.html %}{% endif %}
 
-{% if page.ref %} {% assign _ref = page.ref | markdownify %}{% endif %}
+{% if page.ref %}
 
-{% if _ref %} 
+{% capture _ref %}
+<b>Citation</b><br><br>
+{{page.ref}}
+{% endcapture %}
 
-#### Citation 
-
-{{ _ref }}{:.info}
+{% include callout.html content=_ref type="success" %} 
 
 {% endif %}
-
-{% if page.isbn13 %}
-
-#### ISBN-13
-
-<p>{{ page.isbn13 }}</p>{:.info}{% endif %}
-
-{% if page.isbn10 %}
-
-#### ISBN-10
-
-<p>{{ page.isbn10 }}</p>{:.info}{% endif %}
-
-{% if page.doi %}
-
-#### DOI
-
-<p><a href="http://dx.doi.org/{{ page.doi }}" target="_blank">{{ page.doi }}</a></p>{:.info}{% endif %}
-
-{% if page.pdf %}
-
-#### Download
-
-<p><a href="{{ page.pdf }}" target="_blank">PDF</a></p>{:.info}{% endif %}
-
-{% if page.web %}
-
-#### URL
-
-<p><a href="{{ page.web }}" target="_blank">{{ page.web }}</a></p>{:.info}{% endif %}

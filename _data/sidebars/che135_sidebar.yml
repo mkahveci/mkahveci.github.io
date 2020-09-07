@@ -1,0 +1,69 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: General Chemistry III Lab
+  version: CHE 135
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+  
+  - title: Course Details
+    output: web, pdf
+    folderitems:
+
+    - title: Course Overview
+      url: /tvo.html
+      output: web, pdf 
+      
+    - title: PDF Download
+      url: /dze.html
+      output: web 
+      
+  - title: Experiments
+    output: web, pdf
+    folderitems:
+
+    - title: Experiment 1. Acids and Bases
+      url: /enu.html
+      output: web, pdf
+
+    - title: Experiment 2. Buffer Solutions
+      url: /dar.html
+      output: web, pdf
+
+    - title: Experiment 3. Amino Acid Titration
+      url: /wti.html
+      output: web, pdf      
+
+    - title: Experiment 4. Le Châtelier’s Principle
+      url: /moi.html
+      output: web, pdf
+      
+    - title: Experiment 5. Spectrophotometric Analysis of Manganese in Steel
+      url: /cyc.html
+      output: web, pdf
+
+    - title: Experiment 6. Thermodynamics of a Cobalt Complex
+      url: /rpu.html
+      output: web, pdf      
+
+    - title: Experiment 7. Electrochemistry
+      url: /kwm.html
+      output: web, pdf
+
+    - title: Experiment 8. Coordination Chemistry
+      url: /irc.html
+      output: web, pdf            

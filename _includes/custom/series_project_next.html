@@ -1,0 +1,11 @@
+<p>{% assign series_pages = site.tags.series_project %}
+{% assign pages = site.pages | sort:"weight" | reverse  %}
+    {% for p in pages %}
+    {% if p.series == "Project" %}
+    {% assign nextTopic = page.weight | minus: "1"  %}
+    {% if p.weight == nextTopic  %}
+    <a href="{{p.url}}"><button type="button" class="btn btn-primary">Previous: {{p.weight}}  {{p.title}}</button></a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</p>
