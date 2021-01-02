@@ -1,0 +1,96 @@
+{% include image.html file=page.cover alt=page.title max-width="120" %}
+
+    {%- if page.email or page.facebook or page.twitter or page.weibo or page.googleplus or page.googlescholar or 
+    page.researchgate or page.telegram or page.medium or page.zhihu or page.douban or page.linkedin or page.github or 
+page.npm -%}
+
+<h2 id="contact">Contact Info</h2>
+
+    {%- endif -%}
+  
+    {%- if page.email -%}
+      <a class="button button--circle mail-button" itemprop="email" href="mailto:{{ page.email }}" target="_blank">
+        Email
+      </a>
+    {%- endif -%}
+
+    {%- if page.facebook -%}
+        <a class="button button--circle facebook-button" itemprop="sameAs" href="https://www.facebook.com/{{ page.facebook }}" target="_blank">
+          Facebook
+        </a>  
+    {%- endif -%}
+
+    {%- if page.twitter -%}
+        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+          Twitter
+        </a>
+    {%- endif -%}
+
+    {%- if page.weibo -%}
+        <a class="button button--circle weibo-button" itemprop="sameAs" href="https://weibo.com/{{ page.weibo }}" target="_blank">
+          Weibo
+        </a>
+    {%- endif -%}
+
+    {%- if page.googleplus -%}
+        <a class="button button--circle googlepluse-button" itemprop="sameAs" href="https://plus.google.com/u/0/{{ page.googleplus }}" target="_blank">
+          Google Plus
+        </a>
+    {%- endif -%}
+
+    {%- if page.googlescholar -%}
+      <a class="button button--circle googlepluse-button" itemprop="sameAs"
+        href="https://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank">
+        Google Scholar
+      </a>
+    {%- endif -%}
+
+    {%- if page.researchgate -%}
+      <a class="button button--circle googlepluse-button" itemprop="sameAs"
+        href="https://www.researchgate.net/profile/{{ page.researchgate }}" target="_blank">
+        ResearchGate
+      </a>
+    {%- endif -%}
+
+    {%- if page.telegram -%}
+        <a class="button button--circle telegram-button" itemprop="sameAs" href="https://t.me/{{ page.telegram }}" target="_blank">
+          Telegram
+        </a>
+    {%- endif -%}
+
+    {%- if page.medium -%}
+        <a class="button button--circle medium-button" itemprop="sameAs" href="https://medium.com/{{ page.medium }}" target="_blank">
+          Medium
+        </a>
+    {%- endif -%}
+
+    {%- if page.zhihu -%}
+        <a class="button button--circle zhihu-button" itemprop="sameAs" href="https://www.zhihu.com/people/{{ page.zhihu }}" target="_blank">
+          Zhihu
+        </a>
+    {%- endif -%}
+
+    {%- if page.douban -%}
+        <a class="button button--circle douban-button" itemprop="sameAs" href="https://www.douban.com/people/{{ page.douban }}" target="_blank">
+          Douban
+        </a>
+    {%- endif -%}
+
+    {%- if page.linkedin -%}
+        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank">
+          LinkedIn
+        </a>
+    {%- endif -%}
+
+    {%- if page.github -%}
+      <li title="{{ _locale_string_follow | replace: '[NAME]', 'Github' }}">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/{{ page.github }}" target="_blank">
+          GitHub
+        </a>
+    {%- endif -%}
+
+    {%- if page.npm -%}
+        <a class="button button--circle npm-button" itemprop="sameAs" href="https://www.npmjs.com/~{{ page.npm }}" target="_blank">
+          npm
+        </a>
+    {%- endif -%}

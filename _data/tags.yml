@@ -1,0 +1,24 @@
+# Note:
+# If you are using the createtag script, don't leave an blank line at the end of this file.
+# In other words, the last line must be the last tag in the allowed-tags list.
+allowed-tags:
+  - portfolio
+  - interactivity
+  - pedagogical_discontentment
+  - affective_dimensions 
+  - nonlinear_dynamics 
+  - microdevice
+  - remote_learning
+  - mathematics_education
+  - full_text_article  
+  - standards-based_science_and_mathematics_education 
+  - eu
+  - project_proposal_evaluation
+  - diversity
+  - pchem_ed
+  - conceptual_learning
+  - keynote_lecture
+  - team 
+  - my_students
+  - online_teaching
+  - news

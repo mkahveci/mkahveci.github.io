@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / {{ page.author }}</span></span>{% endif %}
+    {% if page.book %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/book.html">Books</a></span></span>{% endif %}
+    {% if page.journal %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/journal.html">Journal Articles</a></span></span>{% endif %}
+    {% if page.conference %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/conference.html">Conference Papers</a></span></span>{% endif %}
+    {% if page.course %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/murat.html#courses">Courses</a></span></span>{% endif %}
+    {% if page.team %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/team.html">Team</a></span></span>{% endif %}
+    {% if page.alumni %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / <a href="{{ site.urlx }}/team.html">Alumni</a></span></span>{% endif %}
+    {% if page.course_name %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / {{ page. course_name }} </span></span>{% endif %}
+    {% if page.tags != null %} /
+        {% assign projectTags = site.data.tags.allowed-tags %}
+        {% for tag in page.tags %}
+        {% if projectTags contains tag %}
+        <a href="{{ site.urlx }}/{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+    </p>
+
+
+</header> 
+
+{% if page.simple_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.box{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% elsif page.complex_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.modalButton{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% endif %}  
+
+<div class="post-content">
+
+   {% if page.summary %}
+    <div class="summary">{{page.summary}}</div>
+   {% endif %}
+
+    {% unless page.toc == false %}
+    {% include toc.html %}
+    {% endunless %}
+
+
+    {% if site.github_editme_path %}
+
+    <a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    {% endif %}
+
+   {{content}}
+
+    <div class="tags">
+        {% if page.tags != null %}
+        <b>Tags: </b>
+        {% assign projectTags = site.data.tags.allowed-tags %}
+        {% for tag in page.tags %}
+        {% if projectTags contains tag %}
+        <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+
+{% include commento.html %}
+
+</div>
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}

@@ -1,0 +1,13 @@
+I"<pre><code class="language-mermaid">  graph TB;
+    A[Can contents be logically grouped?]
+    B[Use pages.]
+    C[Are they grouped by date?]
+    D[Use a collection.]
+    E[Use posts.]
+    A--no--&gt;B;
+    A--yes--&gt;C;
+    C--no--&gt;D;
+    C--yes--&gt;E;
+</code></pre>
+
+:ET

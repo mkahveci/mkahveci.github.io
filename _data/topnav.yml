@@ -1,0 +1,41 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Blog
+      url: /blog.html       
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:  
+
+    - title: Series
+      folderitems:
+        - title: Online Teaching
+          url: /rpm.html
+
+##     - title: Courses
+##       folderitems:
+        # - title: CHE 134 General Chemistry III
+        #   url: /ukc.html 
+        # - title: CHE 135 General Chemistry III Lab
+        #   url: /tvo.html 
+        # - title: CHE 131 General Chemistry I Lab
+        #   url: /tfg.html                           
+        # - title: CHE 139 General Chemistry II Lab
+        #   url: /tpv.html
+
+    - title: Portfolio
+      folderitems:
+        - title: Overview
+          url: /index.html
+        - title: Projects
+          url: /project.html   
+        - title: Publications
+          url: /publication.html
+        - title: Team
+          url: /team.html
+        - title: Tag Archives
+          url: /tag_archives_overview.html               

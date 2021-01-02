@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="This page presents Dr. Kahveci's biking exercise logs.">
+<meta name="keywords" content="news,  projects">
+<title>Biking Activities | Kahveci Group</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-murat.css">
+<!--<link rel="stylesheet" href="css/customstyles.min.css">-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="mkahveci.github.io" href="http://localhost:4000/feed.xml">
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+    <!-- Include the standard DataTables bits -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <!-- First, this walks through the tables that occur between ...-begin
+         and ...-end and add the "datatable" class to them.
+         Then it invokes DataTable's standard initializer
+         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
+      -->
+    <script>
+      $(document).ready(function(){
+          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+          $('table.display').DataTable( {
+              paging: true,
+              stateSave: true,
+              searching: true
+          });
+       });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"/><img src="images/logo-title.svg" alt="logo"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="blog.html">Blog</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="rpm.html">Online Teaching</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="index.html">Overview</a></li>
+                        
+                        
+                        
+                        <li><a href="project.html">Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="publication.html">Publications</a></li>
+                        
+                        
+                        
+                        <li><a href="team.html">Team</a></li>
+                        
+                        
+                        
+                        <li><a href="tag_archives_overview.html">Tag Archives</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:murat@kahveci.pw?subject=Kahveci Group feedback&body=I have some feedback about the Biking Activities page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Murat Kahveci, Ph.D. </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="About" href="#">About</a>
+      <ul>
+          
+          
+          
+          <li><a title="Curriculum Vitae" href="murat.html">Curriculum Vitae</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="PDF download" href="aao.html">PDF download</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Biking Activities" href="biking">Biking Activities</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Request for Letter of Recommendation" href="xxz.html">Request for Letter of Recommendation</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Biking Activities</h1>
+    <p class="post-meta"><time datetime="" itemprop="datePublished"></time> 
+    
+    
+    
+    
+    
+    
+    
+     /
+        
+        
+        
+        <a href="https://kahveci.pw/tag_news.html">news</a>
+        
+        
+        
+
+    </p>
+
+
+</header> 
+
+  
+
+<div class="post-content">
+
+   
+    <div class="summary">This page presents Dr. Kahveci's biking exercise logs.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+   <h2 id="data-sources">Data Sources</h2>
+
+<figure>
+
+<img class="docimage" src="images//blog/biking-data-logic.jpg" alt="" style="max-width: 700px" />
+
+
+<figcaption>Data logic for biking activities.</figcaption>
+
+</figure>
+
+<h2 id="recent-stats">Recent Stats</h2>
+
+<div class="datatable-begin"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date (YYYY-MM-DD)</th>
+      <th>Distance (km)</th>
+      <th>Duration (HH:MM:SS)</th>
+      <th>Average Speed (km/h)</th>
+      <th>Energy (Cal)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2020-09-26</td>
+      <td>38.72</td>
+      <td>01:42:46</td>
+      <td>22.6</td>
+      <td>934</td>
+    </tr>
+    <tr>
+      <td>2020-09-25</td>
+      <td>27.09</td>
+      <td>01:12:23</td>
+      <td>22.5</td>
+      <td>718</td>
+    </tr>
+    <tr>
+      <td>2020-09-19</td>
+      <td>74.47</td>
+      <td>03:06:31</td>
+      <td>24.0</td>
+      <td>2085</td>
+    </tr>
+    <tr>
+      <td>2020-09-12</td>
+      <td>50.83</td>
+      <td>02:07:29</td>
+      <td>23.9</td>
+      <td>1415</td>
+    </tr>
+    <tr>
+      <td>2020-09-07</td>
+      <td>27.24</td>
+      <td>01:08:46</td>
+      <td>23.8</td>
+      <td>751</td>
+    </tr>
+    <tr>
+      <td>2020-08-29</td>
+      <td>27.24</td>
+      <td>00:55:36</td>
+      <td>29.4</td>
+      <td>927</td>
+    </tr>
+    <tr>
+      <td>2020-08-29</td>
+      <td>30.16</td>
+      <td>01:20:24</td>
+      <td>22.5</td>
+      <td>785</td>
+    </tr>
+    <tr>
+      <td>2020-08-23</td>
+      <td>26.79</td>
+      <td>01:17:51</td>
+      <td>20.6</td>
+      <td>638</td>
+    </tr>
+    <tr>
+      <td>2020-08-16</td>
+      <td>26.78</td>
+      <td>01:10:46</td>
+      <td>22.7</td>
+      <td>686</td>
+    </tr>
+    <tr>
+      <td>2020-08-04</td>
+      <td>38.79</td>
+      <td>01:39:30</td>
+      <td>23.4</td>
+      <td>968</td>
+    </tr>
+    <tr>
+      <td>2020-07-25</td>
+      <td>120.82</td>
+      <td>05:34:18</td>
+      <td>22.4</td>
+      <td>3063</td>
+    </tr>
+    <tr>
+      <td>2020-07-22</td>
+      <td>50.48</td>
+      <td>02:10:10</td>
+      <td>23.3</td>
+      <td>1242</td>
+    </tr>
+    <tr>
+      <td>2020-07-17</td>
+      <td>31.77</td>
+      <td>01:23:01</td>
+      <td>23.0</td>
+      <td>760</td>
+    </tr>
+    <tr>
+      <td>2020-07-12</td>
+      <td>85.54</td>
+      <td>03:56:22</td>
+      <td>22.7</td>
+      <td>2104</td>
+    </tr>
+    <tr>
+      <td>2020-07-05</td>
+      <td>27.29</td>
+      <td>01:13:24</td>
+      <td>22.3</td>
+      <td>650</td>
+    </tr>
+    <tr>
+      <td>2020-06-27</td>
+      <td>45.66</td>
+      <td>02:09:27</td>
+      <td>21.2</td>
+      <td>1188</td>
+    </tr>
+    <tr>
+      <td>2020-06-27</td>
+      <td>7.51</td>
+      <td>00:24:48</td>
+      <td>18.2</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>2020-06-15</td>
+      <td>30.11</td>
+      <td>01:26:36</td>
+      <td>20.9</td>
+      <td>701</td>
+    </tr>
+    <tr>
+      <td>2020-06-13</td>
+      <td>5.82</td>
+      <td>00:17:13</td>
+      <td>20.3</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>2020-06-13</td>
+      <td>27.01</td>
+      <td>01:10:05</td>
+      <td>23.1</td>
+      <td>701</td>
+    </tr>
+    <tr>
+      <td>2020-06-13</td>
+      <td>5.92</td>
+      <td>00:17:59</td>
+      <td>19.8</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>2020-06-05</td>
+      <td>50.61</td>
+      <td>02:27:28</td>
+      <td>20.6</td>
+      <td>1267</td>
+    </tr>
+    <tr>
+      <td>2020-06-05</td>
+      <td>12.74</td>
+      <td>00:39:05</td>
+      <td>19.6</td>
+      <td>295</td>
+    </tr>
+    <tr>
+      <td>2020-06-05</td>
+      <td>12.75</td>
+      <td>00:40:00</td>
+      <td>19.1</td>
+      <td>253</td>
+    </tr>
+    <tr>
+      <td>2020-06-03</td>
+      <td>17.27</td>
+      <td>01:03:31</td>
+      <td>16.3</td>
+      <td>387</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="datatable-end"></div>
+
+<figure>
+
+<img class="docimage" src="images//gifs/biking.gif" alt="" style="max-width: 700px" />
+
+
+</figure>
+
+<h2 id="tweets">Tweets</h2>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Nice afternoon biking exercise ends. <a href="https://t.co/DQWWK5PEQF">pic.twitter.com/DQWWK5PEQF</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1309994578695651330?ref_src=twsrc%5Etfw">September 26, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ended up with a 74.47 km in 3 hr 6 min ride in a beautiful sunny day. I was having flat tire issues last month. It seems all are resolved by replacing the rim strips. Also, I replaced the tires to 700cx25 for more pro-like experience.</p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1307699947320610819?ref_src=twsrc%5Etfw">September 20, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">32 KM in 1:22:00 and counting... <a href="https://t.co/JgGQ05su1O">pic.twitter.com/JgGQ05su1O</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1307394351945994242?ref_src=twsrc%5Etfw">September 19, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bug free, light rainy afternoon. Had a nice <a href="https://twitter.com/hashtag/biking?src=hash&amp;ref_src=twsrc%5Etfw">#biking</a> <a href="https://twitter.com/hashtag/exercise?src=hash&amp;ref_src=twsrc%5Etfw">#exercise</a>! <a href="https://t.co/C2bJVQ3fpb">pic.twitter.com/C2bJVQ3fpb</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1304937837608022016?ref_src=twsrc%5Etfw">September 13, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very nice Saturday morning. It has been three hours of biking, starting from 7:15 am. I think I will go a few hours more. <a href="https://t.co/AuU4sBRhWx">pic.twitter.com/AuU4sBRhWx</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1299728586673467392?ref_src=twsrc%5Etfw">August 29, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Best distance of 2020: 120 km in a single trip. I post my biking activities at <a href="https://t.co/lrEe8H9Nxw">https://t.co/lrEe8H9Nxw</a>. <a href="https://t.co/jZMhPbMyuX">pic.twitter.com/jZMhPbMyuX</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1287464088721924098?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My biking exercise turned out to be very nice yesterday. Here is an informative image of me with some vital stats. <a href="https://t.co/ob7gFIKtr7">pic.twitter.com/ob7gFIKtr7</a></p>&mdash; Murat Kahveci (@iMuratKahveci) <a href="https://twitter.com/iMuratKahveci/status/1267517868167626752?ref_src=twsrc%5Etfw">June 1, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_news.html" class="btn btn-default navbar-btn cursorNorm" role="button">news</a>
+        
+        
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+          <p><img src="images/logo-large.svg" alt="logo"/></p>      
+               &copy;2021 Kahveci Group. All rights reserved. <br />
+<span>Page last updated:</span> Aug 26, 2020<br/> 
+Site last generated: Jan 2, 2021 <br />
+                </div>
+            </div>
+</footer>
+<script src="https://www.w3counter.com/tracker.js?id=133645"></script>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-129160204-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

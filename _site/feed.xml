@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>mkahveci.github.io</title>
+        <description>The Kahveci Group at the DePaul University works at the interface of affective dimensions in chemistry education research. We apply quantitative research methods to analyze data and understand how learning complex chemistry topics is influenced by affective variables. We are also studying diversity issues in chemistry education and gaining new insights on pure computational chemistry research.</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 02 Jan 2021 08:33:54 -0600</pubDate>
+        <lastBuildDate>Sat, 02 Jan 2021 08:33:54 -0600</lastBuildDate>
+        <generator>Jekyll v3.9.0</generator>
+        
+        <item>
+            <title>Installing a Learning Object to the D2L Environment</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 6. Installing a Learning Object to the D2L Environment&lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This tutorial is for the &lt;a href=&quot;https://d2l.depaul.edu/d2l/home&quot;&gt;D2L&lt;/a&gt; environment demonstrates how to import and use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;learning object&lt;/code&gt; prepared in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 standards&lt;/code&gt;. You may read more about what is a SCORM &lt;a href=&quot;https://scorm.com/scorm-explained/?utm_source=google&amp;amp;utm_medium=natural_search&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-importing-the-package&quot;&gt;1 Importing the package&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM 1.2 packages&lt;/code&gt; are shipped with .ZIP extension. Log in to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D2L course&lt;/code&gt; and follow these steps to import a new SCORM package.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-download-the-demo-package&quot;&gt;1.1 Download the demo package&lt;/h3&gt;
+
+&lt;p&gt;&lt;a class=&quot;button button--success button--rounded button--lg&quot; href=&quot;/scorm-packages/test-package.zip&quot;&gt;&lt;i class=&quot;fas fa-download&quot;&gt;&lt;/i&gt; Download the demo SCORM package&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Remarks:
+    &lt;ul&gt;
+      &lt;li&gt;Flash based simulations will not be used.&lt;/li&gt;
+      &lt;li&gt;HTML5 based simulations will be preferred.
+        &lt;ul&gt;
+          &lt;li&gt;They should be compatible with all modern devices including tablets and phones.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-upload-to-d2l&quot;&gt;1.2 Upload to D2L&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import / Export / Copy Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; and click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copy All Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select SCORM package from your desktop. In this demonstration, the file name is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test-package.zip&lt;/code&gt;. See Figure 1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/1.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 350px&quot; /&gt;
+
+
+&lt;figcaption&gt;Import screen: File selection.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import All Components&lt;/code&gt;. Figure 2 shows the normal progress.
+    &lt;ul&gt;
+      &lt;li&gt;Remarks:
+        &lt;ul&gt;
+          &lt;li&gt;D2L supports file sizes up to 1 GB.&lt;/li&gt;
+          &lt;li&gt;This demo uses a file with 283 KB. Very practical!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/2.jpg&quot; alt=&quot;1&quot; style=&quot;max-width: 350px&quot; /&gt;
+
+
+&lt;figcaption&gt;Import screen: Processing.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;13-viewing-the-scorm-content&quot;&gt;1.3 Viewing the SCORM content&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View Content&lt;/code&gt; to access the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content&lt;/code&gt; tab.
+    &lt;ul&gt;
+      &lt;li&gt;Figure 3 shows that a new menu item is added to the Table of Contents.&lt;/li&gt;
+      &lt;li&gt;When the menu item is clicked, the content appears in the main block with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SCORM object&lt;/code&gt; sign.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/3.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;SCORM content appears in the Table of Contents&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;2-accessing-the-content&quot;&gt;2 Accessing the content&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click the link title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General Chemistry Lab I ▹ Interactive&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Figures 4 - 8 shows the D2L snapshots of various views in D2L&lt;/p&gt;
+
+    &lt;figure&gt;
+
+&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/6.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Text based content.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/7.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Simulation.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/8.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Fill in the blank type activity. Feedback is immediate for learning. Not graded.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/9.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;SCORM quiz. Graded, no feedback. Testing the knowledge gain.&lt;/figcaption&gt;
+
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/10.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;Upon SCORM quiz completion, a item is created in the `Grades` module.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;3-benefits&quot;&gt;3 Benefits&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;All of the content is free for students.&lt;/li&gt;
+  &lt;li&gt;Easy to set up an experiment in D2L.
+    &lt;ul&gt;
+      &lt;li&gt;All logical sequences with content and activities will be followed by all sections.&lt;/li&gt;
+      &lt;li&gt;Any content type like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pdf&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.docx&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.xlsx&lt;/code&gt; can be embedded.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Content can be updated as needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-limitations&quot;&gt;4 Limitations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Videos are hosted by &lt;a href=&quot;https://www.youtube.com&quot;&gt;YouTube&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Panopto sometimes imposes strict share limitations.&lt;/li&gt;
+      &lt;li&gt;Copying movies from one course to another often produces broken links.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;We don’t make new simulations so we cannot change them.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;This particular demo uses a simulation from &lt;a href=&quot;https://phet.colorado.edu&quot;&gt;PhET Interactive Simulations&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;I have been following PhET Interactive Simulations since it has started and &lt;a href=&quot;https://www.acs.org/content/acs/en/education/students/highschool/chemistryclubs/activities/simulations.html&quot;&gt;ACS&lt;/a&gt; lists PhET Interactive Simulations in the first place of their list (see Figure 9).&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+
+&lt;img class=&quot;docimage&quot; src=&quot;images//blog/lcz/5.jpg&quot; alt=&quot;1&quot; /&gt;
+
+
+&lt;figcaption&gt;ACS lists PhET Interactive Simulations in the first place of their list.&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Thu, 13 Aug 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/lcz.html</link>
+            <guid isPermaLink="true">http://localhost:4000/lcz.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Request for Letter of Recommendation</title>
+            <description>&lt;p&gt;Excellent students who have worked in my research group and who have received a high grade in my classes will be able to ask for recommendation letters for graduate school, medical school, or other future employers.&lt;/p&gt;
+
+&lt;p&gt;Important note that it is to your advantage to ask for recommendation letters from faculty who know you well outside of the classroom. If you were a student in my class and not a member of my research group, it is usually more appropriate to ask another faculty for a recommendation letter. That way, they can state specific information about your qualifications and experiences that is not already presented on your transcript.&lt;/p&gt;
+
+&lt;p&gt;Please follow these specific guidelines:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Email me as soon as possible to ask for a recommendation letter and to schedule a meeting to discuss your future career plans.&lt;/li&gt;
+  &lt;li&gt;It is my policy to only write letters for students who waive their rights to read the letters of recommendation.&lt;/li&gt;
+  &lt;li&gt;Submit your materials in person at least 1 month before the due date. The earlier you can give me your application materials, the more time I will have to work on your recommendation letters.
+    &lt;ol&gt;
+      &lt;li&gt;A short typed paragraph on our previous interactions at DePaul University
+(e.g., in which of my classes you were in and your grade in each class, what quarters you were involved in my research group and what specific work you did, etc.)&lt;/li&gt;
+      &lt;li&gt;Any necessary forms from each graduate school (with as much information filled out on the form as possible).&lt;/li&gt;
+      &lt;li&gt;Addressed and stamped envelopes for each application. Please be sure to include the return address as well:
+        &lt;blockquote&gt;
+          &lt;p&gt;Murat Kahveci&lt;br /&gt;
+Department of Chemistry and Biochemistry DePaul University&lt;br /&gt;
+1110 W. Belden Ave., 100A McGowan South&lt;br /&gt; 
+Chicago, IL 60614&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;A copy of your vita or resume.&lt;/li&gt;
+      &lt;li&gt;A copy of your personal statement.&lt;/li&gt;
+      &lt;li&gt;A document containing your GPA, Chemistry GPA, GRE score, previous research experience, specific future career plans, specific research interests you hope to pursue in graduate school or medical school, and any other relevant information about you and your academic accomplishments.&lt;/li&gt;
+      &lt;li&gt;Please send me an email (in addition to a printed out a list) with a PDF Document that contains all of the addresses, specific graduate or medical schools, and the due dates for each application.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After the application process is finished, please email me and let me know what graduate programs or medical schools you have been accepted to and which program you have selected.&lt;/li&gt;
+  &lt;li&gt;Keep in touch and let me know how much fun you’re having in graduate or medical school.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Wed, 05 Aug 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/xxz.html</link>
+            <guid isPermaLink="true">http://localhost:4000/xxz.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>'Thank you' from Andres</title>
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;On Jun 3, 2020&lt;/p&gt;
+
+  &lt;p&gt;Professor Kahveci,&lt;/p&gt;
+
+  &lt;p&gt;I just wanted to extend a sincere thank you to you and the entire Chemistry department, including our TA’s, for your compassion and understanding during these turbulent times. With everything going on, we’ve all been under an unusual amount of mental stress and I’m sure that extends to the teaching staff as well, so I hope you’ve all been well. The content in this class is not easy to grasp, but without the efforts of the staff making this information so comprehensible considering the short notice of this transition, I’m sure things could have been much worse. Also, I have seen a lot of leeway being given throughout this quarter in regards to grading and submission of assignments, and for me personally that has taken some of the stress out of this transition to our remote learning experience this quarter. It’s for this alleviation that I thank you all.&lt;/p&gt;
+
+  &lt;p&gt;Sincerely,&lt;/p&gt;
+
+  &lt;p&gt;Andres&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Andres is taking General Chemistry II (lecture and lab) in Spring 2020. This email correspondence was posted with Andres’s written permission via email on 6/3/2020.&lt;/p&gt;
+</description>
+            <pubDate>Wed, 03 Jun 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/fxb.html</link>
+            <guid isPermaLink="true">http://localhost:4000/fxb.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>D2L Submission Folder Setup with a Rubric</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 5. D2L Submission Folder Setup with a Rubric&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This tutorial demonstrates how to set up a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submission&lt;/code&gt; folder with commenting capabilities and with an associated rubric for assessment. The rubric will be tied to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Grades&lt;/code&gt; module so that the rubric-based assessment  is automatically translated to an associated grade.&lt;/p&gt;
+
+&lt;h2 id=&quot;new--folder-in-submissions-with-annotation-tools&quot;&gt;New  Folder in Submissions with Annotation Tools&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submissions&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Folder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/RO8wz-Yk-zEWLY8T4hDW_MwijWkt9FZvRU3awtCO0ZnXzl8XchwhftRwUClP0NSB2CX1Ana9OcpNZRytc-3SxK1hYer3fm4SdjzSRZpWtYqKQjDk5cDtcpZAtDMYtMxvIf_8xpqOZ3k=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;: Give a name to the folder. e.g. Lab 1.&lt;/li&gt;
+  &lt;li&gt;Select a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Grade Item&lt;/code&gt; from the dropdown list. You can add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Grade Item&lt;/code&gt;, if needed.&lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add Rubric&lt;/code&gt; button and select a rubric from the list. If you don’t see a rubric, you need to &lt;a href=&quot;/ydt#rubric&quot;&gt;import&lt;/a&gt; one.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/E8GcpGqbGk4_0M193wpGcSw9EzSQMuU2RZP08AabWHpaaE6HdU2GpGTfAjxYczxZ8UpuYpGyTfhaikm8FLmHjv74HCo7fLfilRW9pOIyQixNO2ewg1wNo2220tD-jXWj3ci12Lu722Q=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Annotation Tools&lt;/code&gt; is checked. This is very important if you want to open the files submitted (without downloading) and give feedback.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;rubric&quot;&gt;Importing a Rubric&lt;/h2&gt;
+
+&lt;h3 id=&quot;method-1-copying-from-my-course&quot;&gt;Method 1: Copying from my Course&lt;/h3&gt;
+
+&lt;p&gt;You may import rubrics like any other components in D2L. I will be posting rubrics for SQ20-CHE 133 and SQ20-CHE 135 this quarter. To import a rubric:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Search for offering&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE_135_901_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE 135&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE_133_303_1050&lt;/code&gt; in the search box to import a rubric for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHE 133&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/FtkR0eeILqBRZ8IjZwo04U1l7vRuj8r6ate0ceCsmr3VHHEsjSOMX54QVEZLLu5ZANGEm5UoURcm6hQi-tBdSLWN7qLRm3OoDiRhJCmPDzgNS63YmLcWinZjRiLzpw_4-0STtZ34j8Y=w2400&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Select Components&lt;/code&gt; and then check &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rubrics&lt;/code&gt; to import.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;method-2-importing-as-an-external-zip-file&quot;&gt;Method 2: Importing as an External ZIP File&lt;/h3&gt;
+
+&lt;p&gt;This method is for those who cannot import from my course. Originally, I did not think this would be a problem but I was notified that it was not possible to import a component from my course unless you were enrolled as a TA or instructor.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, grab the rubric file as a ZIP from the shared Box folder.
+    &lt;ul&gt;
+      &lt;li&gt;In this folder, navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Online Rubrics to Import D2L&lt;/code&gt; folder.&lt;/li&gt;
+      &lt;li&gt;Any of these files must be imported to D2L as a ZIP file. So, don’t unzip. Naming convention:
+        &lt;ul&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQ20-CHE133-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQ20-CHE135-lab-1-online-rubric-to-import-as-ZIP-file.zip&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;On D2L, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Course Administration&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import Components&lt;/code&gt; (again as submenu) and select and upload the ZIP file you grabbed.&lt;/li&gt;
+  &lt;li&gt;Wait for copying and done!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/lcz.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 6  Installing a Learning Object to the D2L Environment&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Mon, 13 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/ydt.html</link>
+            <guid isPermaLink="true">http://localhost:4000/ydt.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Tools</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 4. Tools&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Useful tools for online teaching.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://padlet.com/&quot;&gt;Padlet&lt;/a&gt; (free). You open a pad and then double click to add a “post-it” note.  There are different ways to format where all posts go in a line down the center or they can be anywhere (and then moved by the instructor or students if you give permission).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Powtoon&lt;/a&gt;. You can make animations, videos, and infographics.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.powtoon.com/home/&quot;&gt;Screencastify&lt;/a&gt;. Make awesome videos and presentations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/ydt.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 5  D2L Submission Folder Setup with a Rubric&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sat, 11 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/xiw.html</link>
+            <guid isPermaLink="true">http://localhost:4000/xiw.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Low Cost Options for Document Cameras</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;bod.html&quot;&gt;2. Forums in D2L&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 3. Low Cost Options for Document Cameras&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you need to write equations, etc during a Zoom lecture, a low cost document camera is useful to have – you can select it as a source in Zoom. Here are a couple on Amazon.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/IPEVO-Definition-Document-Camera-5-880-4-01-00/dp/B079DLTG9F/ref=sr_1_3?keywords=document+camera&amp;amp;qid=1584109725&amp;amp;sr=8-3&quot;&gt;$99 – IPEVO V4K Ultra High Definition 8MP USB Document Camera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Gooseneck-Bed-Phone-Holder-Mount/dp/B07S9JXQP2/ref=sr_1_1?keywords=document+camera+phone+hold&amp;amp;qid=1584108860&amp;amp;sr=8-1&quot;&gt;$16.99 - Gooseneck Bed Phone Holder Mount&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/xiw.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 4  Tools&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sat, 11 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/esy.html</link>
+            <guid isPermaLink="true">http://localhost:4000/esy.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Deferments or Cancellations of Events due to COVID-19</title>
+            <description>&lt;p&gt;Unfortunately nowadays we hear all international conferences are being cancelled or postponed in response to the COVID-19 pandemic.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;ioste-2020&quot;&gt;IOSTE 2020&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ioste2020korea.kr&quot;&gt;XIX OISTE&lt;/a&gt; International Symposium is originally planned to meet on August 23-28, 2020 in &lt;a href=&quot;https://en.knu.ac.kr/main/main.htm&quot;&gt;Kyungpook National University&lt;/a&gt;, Daegu, Korea. It was postponed to meet on February 1-5, 2021.&lt;/p&gt;
+
+&lt;p&gt;Important dates:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open for Paper Submissions: August 1, 2020&lt;/li&gt;
+  &lt;li&gt;Deadline for Submissions: September 15, 2020&lt;/li&gt;
+  &lt;li&gt;Notification of acceptance: October 15, 2020&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I attended &lt;a href=&quot;/hnw&quot;&gt;IOSTE in Istanbul&lt;/a&gt; to present a project idea in 2015. The conference gathers many scholars across the Globe and provides high interactivity through lecture series, new project ideas, and poster sessions.&lt;/p&gt;
+
+&lt;h3 id=&quot;bcce-2020&quot;&gt;BCCE 2020&lt;/h3&gt;
+
+&lt;p&gt;The 26&lt;sup&gt;th&lt;/sup&gt; Biennial Conference on Chemical Education was cancelled with Official ACS abd DivCHED statement:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Safety is a core value of the &lt;a href=&quot;https://www.acs.org/content/acs/en.html&quot;&gt;American Chemical Society&lt;/a&gt; and their Divisions and as such the health and well-being of &lt;a href=&quot;http://www.divched.org/&quot;&gt;DivCHED&lt;/a&gt; members, the Chemical Education community, and our volunteers are paramount. After careful deliberation and discussion with the 2020 Biennial Conference on Chemical Education (BCCE) program committee and the DivCHED Biennial Conference Committee, the Executive Committee for the Division of Chemical Education has decided to cancel (terminate) the 2020 Biennial Conference on Chemical Education scheduled for July 18-23, 2020, at Oregon State University in Corvallis, OR.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2020-narst&quot;&gt;2020 NARST&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://narst.org/conferences/2020-annual-conference&quot;&gt;2020 NARST&lt;/a&gt; conference was going to be held in Portland, OR but it was cancelled with a message sent by the Executive Committee on March 4, 2020:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We regret to inform you of the cancellation of the 2020 NARST conference in Portland, OR. This decision was made by the NARST Executive Board after much discussion and in light of our primary concern, which is the health and well-being of our members, located in the U.S. and abroad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2020-aera&quot;&gt;2020 AERA&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.aera20.net&quot;&gt;2020 AERA Annual Meeting&lt;/a&gt; was cancelled.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;March 23 Video: &lt;a href=&quot;https://www.aera20.net/vanessa-discusses-the-cancellation.html&quot;&gt;AERA President Vanessa Siddle Walker Discusses The Cancellation Of The AERA 2020 Virtual Annual Meeting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;March 23 &lt;a href=&quot;https://www.aera20.net/EXECUTIVE-DIRECTOR-LEVINE-AND-PRESIDENT-SIDDLE-WALKER-ANNOUNCE-CANCELLATION-OF-THE-2020-VIRTUAL-ANNUAL-MEETING.html&quot;&gt;Announcement of Virtual Meeting Cancellation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Mon, 06 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/kid.html</link>
+            <guid isPermaLink="true">http://localhost:4000/kid.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Forums in D2L</title>
+            <description>&lt;div class=&quot;seriesContext&quot;&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; class=&quot;btn btn-primary dropdown-toggle&quot;&gt;Online Teaching &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;ol class=&quot;dropdown-menu&quot;&gt;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;rpm.html&quot;&gt;1. Critical Chemistry&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li class=&quot;active&quot;&gt; → 2. Forums in D2L&lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;esy.html&quot;&gt;3. Low Cost Options for Document Cameras&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;xiw.html&quot;&gt;4. Tools&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;ydt.html&quot;&gt;5. D2L Submission Folder Setup with a Rubric&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;lcz.html&quot;&gt;6. Installing a Learning Object to the D2L Environment&lt;/a&gt;
+            &lt;/li&gt;
+            
+            
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;D2L uses specific terms to refer to different parts of the Discussions area, including the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Forums&lt;/strong&gt; are used to house discussion topics that are similar. For example, there might be several discussions in the first week of the course, so create a forum titled “Week One Discussions” for them.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Topics&lt;/strong&gt; are where the discussion actually takes place. This is where students can post threads in response to a discussion prompt.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt; are the initial comments added to a discussion topic.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Replies&lt;/strong&gt; are responses posted to a specific discussion thread.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Setting up a discussion is a two-step process: first create a forum that can hold one or more discussion topics, then create discussion topics within that forum.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-discussion-forum&quot;&gt;Create a Discussion Forum&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select Discussions in the course navigation bar.&lt;/li&gt;
+  &lt;li&gt;Select the New button.&lt;/li&gt;
+  &lt;li&gt;Select New Forum from the dropdown menu.&lt;/li&gt;
+  &lt;li&gt;Enter a title [A] (required).&lt;/li&gt;
+  &lt;li&gt;Enter a description [B] (optional).&lt;/li&gt;
+  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/tC5Ny5GB1epSOCEKIJ5yEixsaILEiEKht66Ei_mNLqByjt1D1El23UUqXHriojpuJazUQUDbEYch0qYUonVYpgUzrOAHLYlWDcBv2pymIwbrgG6zL_cLKi59huv_AV3LT_TLG5kG37w=w2400&quot; alt=&quot;Screen 1&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-discussion-topic&quot;&gt;Create a Discussion Topic&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select the New button.&lt;/li&gt;
+  &lt;li&gt;Select New Topic from the dropdown menu.&lt;/li&gt;
+  &lt;li&gt;Select a forum from the Forums dropdown menu (or select the New Forum to create a new forum.)&lt;/li&gt;
+  &lt;li&gt;Choose a Topic Type [A]:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Open topic&lt;/strong&gt;: everyone can access the topic and it’s contents.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Group or section topic&lt;/strong&gt;: everyone can access the topic, but students only see threads from their group or section (course must have groups set up before setting up group- or section-based topics).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Enter a title [B] (required).&lt;/li&gt;
+  &lt;li&gt;Enter a description [C] (optional).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/qc1g9CCm1FmfBH8cgjxvCBGnW3fB2C6QqHAVtdh-w0edSWxXku1MA8SatUbaNWs6POqdBnjqHSp01K8c-EyY6-NGMSrcv6Sff6pGqysOOKKrfxcREQrbJc1VOwD5YCLODD1wDlfnO2E=w2400&quot; alt=&quot;Screen 2&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select options [A] for the topic (optional):
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Allow anonymous posts&lt;/strong&gt;: Select this option to allow students to anonymously post to this topic (not recommended).&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;A moderator must approve individual posts before they display in the topic&lt;/strong&gt;: Select this option to approve posts before students are able to view them (or to have a TA review and approve them.)&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Users must start a thread before they can read and reply to other threads&lt;/strong&gt;: Select this option to force students to post to the topic before they can read and reply to other students’ posts (recommended).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Select option for Rate Posts [B] (optional; default No Ratings)&lt;/li&gt;
+  &lt;li&gt;Select the Save and Close [C] button.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/I3oKUdW6fLeeZIVSfGBU3xioYP0q0XhTk4bMbUQwlGCa3hfSGPjj0YkLhKPNmQilI9hdI2kixY0Rf9as8SXmk-xpFj084JdTrpsHLBkipL8ZlQ-4p5btLiGL4jnnQeTl6GlB7lwqQ9E=w2400&quot; alt=&quot;Screen 3&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-groups-in-d2l&quot;&gt;Creating Groups in D2L&lt;/h2&gt;
+
+&lt;p&gt;In D2L, instructors can divide students into small groups for activities such as discussions and submissions.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-new-set-of-groups&quot;&gt;Create a new set of Groups&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Choose Groups from the More dropdown menu.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/nvq2fg46iVL1-u9aCysQC0G0rOCQVyPNwG2lhNiW6uPhVEurSnkc7pOW7m7kv-oECUIHRC-0w1hXlRpYlQ35Zc2UQQ5j9XAyu-x7CoX0hkqWPKNBiwYgF2SILo9BlEuTJpOq6inUM0c=w2400&quot; alt=&quot;Screen 4&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Select New Category.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/7f9p2X5shFkUSMQcPIrg6bSwGn0uAiucgUVc5HjC8Lx4RTLWD1oCPwbss3BWryM9TY8SvMYkpqlk34HWh2kOOnKxVHtGtsds0B6JCL2YVQEN86x2Sp3uGv7AobLTxkR6TGXEysgXbuU=w2400&quot; alt=&quot;Screen 5&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enter a name for the category.&lt;/li&gt;
+  &lt;li&gt;Choose how students will be added to the groups from the Enrollment Type dropdown menu.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups - No Auto Enrollments&lt;/strong&gt;: Manually add students to a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Groups of #&lt;/strong&gt;: D2L automatically enrolls student to groups, capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups&lt;/strong&gt;: D2L automatically enrolls students to a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Groups of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into a group, but groups are capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;# of Groups, Capacity of # - Self-Enrollment&lt;/strong&gt;: Students enroll themselves into one of a set number of groups that are capped at a set number of users per group.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Single user, member-specific groups&lt;/strong&gt;: D2L automatically creates one group per student, where they are the only user in the group.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After selecting an enrollment type, enter the number of groups to create and/or the number of students per group.&lt;/li&gt;
+  &lt;li&gt;Select Save.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;setting-up-group-discussions-in-d2l&quot;&gt;Setting up Group Discussions in D2L&lt;/h2&gt;
+
+&lt;p&gt;Discussion topics can be restricted to a group that has been set up in the course site. Only the students enrolled in the group will be able to see and participate in the discussion topic.&lt;/p&gt;
+
+&lt;p&gt;Note that groups must be created before creating group discussion topics.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to Discussions.&lt;/li&gt;
+  &lt;li&gt;Select the &lt;strong&gt;New&lt;/strong&gt; button.&lt;/li&gt;
+  &lt;li&gt;From the dropdown menu, select &lt;strong&gt;New Topic&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Select an existing forum or select the &lt;strong&gt;New Forum&lt;/strong&gt; link to create a new forum.&lt;/li&gt;
+  &lt;li&gt;Select the topic type “&lt;strong&gt;Group or section topic, everyone can access this topic but students only see threads from their own group or section&lt;/strong&gt;”.​&lt;/li&gt;
+  &lt;li&gt;Choose the group under “&lt;strong&gt;Group or Section Category&lt;/strong&gt;”.&lt;/li&gt;
+  &lt;li&gt;Enter a title in the text box.&lt;/li&gt;
+  &lt;li&gt;Add a description in the “Description” text box (optional).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Attach&lt;/strong&gt; files to share with the group.&lt;/li&gt;
+  &lt;li&gt;Select Save.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/creating-discussions.aspx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/groups/Pages/Creating-Groups.aspx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&quot;&gt;https://resources.depaul.edu/teaching-commons/teaching-guides/technology/desire2learn/tools/discussions/Pages/discussion-groups.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;a href=&quot;/esy.html&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Next: 3  Low Cost Options for Document Cameras&lt;/button&gt;&lt;/a&gt;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+&lt;/p&gt;
+</description>
+            <pubDate>Sun, 05 Apr 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/bod.html</link>
+            <guid isPermaLink="true">http://localhost:4000/bod.html</guid>
+            
+            <category>news</category>
+            
+            <category>online_teaching</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>'Chemistry' from Madison</title>
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;On Mar 24, 2020&lt;/p&gt;
+
+  &lt;p&gt;Hi Dr. Kahveci,&lt;/p&gt;
+
+  &lt;p&gt;I just wanted to say thank you for being an awesome chemistry teacher the past 2 classes. You truly are amazing and one of the best. I had to take chemistry 2 times and you truly helped me feel like I could do my best. I just wanted to say you’re amazing at your job and made a huge impact on my college course. I hope you have a wonderful break and get through all the craziness of this next quarter.&lt;/p&gt;
+
+  &lt;p&gt;Sincerely,&lt;/p&gt;
+
+  &lt;p&gt;Madison&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Madison took General Chemistry I (lecture) in Autumn 2019 and General Chemistry II (lecture and lab) in Winter 2020. This email correspondence was posted with Madison’s written permission via email on 3/24/2020.&lt;/p&gt;
+</description>
+            <pubDate>Tue, 24 Mar 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/tta.html</link>
+            <guid isPermaLink="true">http://localhost:4000/tta.html</guid>
+            
+            <category>news</category>
+            
+            <category>my_students</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>I Will Survive, Coronavirus version of teachers going online</title>
+            <description>&lt;p&gt;“Kept trying hard to mend the pieces of my syllabi &lt;br /&gt;
+And I spent so many nights just feeling sorry for myself &lt;br /&gt;
+I used to cry &lt;br /&gt;
+But now I hold my head up high &amp;amp; you’ll see me &lt;br /&gt;
+Teaching on zoom…”&lt;/p&gt;
+
+&lt;p&gt;“I will survive as long as I know how to Zoom”&lt;/p&gt;
+
+&lt;!--more--&gt;
+&lt;div class=&quot;extensions extensions--video&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/CCe5PaeAeew?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+            <pubDate>Thu, 19 Mar 2020 00:00:00 -0500</pubDate>
+            <link>http://localhost:4000/qdr.html</link>
+            <guid isPermaLink="true">http://localhost:4000/qdr.html</guid>
+            
+            <category>news</category>
+            
+            
+        </item>
+        
+    </channel>
+</rss>
