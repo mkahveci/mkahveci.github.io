@@ -1,0 +1,473 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Kahveci Group
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Portfolio
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /index.html
+      output: web
+    - title: Overview
+      url: /introduction.html
+      output: pdf         
+    - title: PDF download
+      url: /download.html
+      output: web
+
+  - title: Projects
+    output: web, pdf
+
+    folderitems: 
+
+    - title: Projects Overview
+      url: /project.html
+      output: web, pdf
+ 
+    - title: Affective states and online teaching in chemistry education
+      url: /tgd.html
+      output: pdf      
+
+    - title: 'Alternative assessment method in biochemistry education: Graphical representation of oxygen binding and delivery'
+      url: /drc.html
+      output: pdf  
+
+    - title: Integrating learning objects into D2L to promote student learning of difficult scientific concepts
+      url: /gbv.html
+      output: pdf        
+
+    - title: Impact of instructional interactivity in chemistry education
+      url: /zhm.html
+      output: pdf      
+
+    - title: Workshop for in-service science teachers
+      url: /upv.html
+      output: pdf  
+
+    - title: Pedagogical discontentment and self-efficacy of science teachers
+      url: /dgq.html
+      output: pdf 
+      
+    - title: Physical chemistry education and learning objects
+      url: /vzm.html
+      output: pdf      
+
+    - title: 'Applying research on science materials implementation: Bringing measurement of fidelity of implementation (FOI) to scale'
+      url: /rqj.html
+      output: pdf  
+
+    - title: 'EcoVentures: Focus on the Gulf' 
+      url: /vhr.html
+      output: pdf       
+
+  - title: Publications
+    output: web, pdf
+
+    folderitems: 
+    - title: Publications Overview
+      url: /publication.html
+      output: web, pdf
+
+    - title: Books
+      url: /book.html
+      output: web, pdf
+
+    - title: Journal Articles
+      url: /journal.html
+      output: web, pdf
+
+    - title: Conference Papers
+      url: /conference.html
+      output: web, pdf
+      
+    - title: Blog Posts
+      url: /blog_archive.html
+      output: web, pdf       
+      
+  - title: Books
+    output: pdf
+
+    folderitems:
+    - title: Affective dimensions in chemistry education
+      url: /yfg.html
+      output: pdf 
+
+    - title: Majors’ gender-based affective states toward learning physical chemistry
+      url: /yoc.html
+      output: pdf 
+
+    - title: Shared perceptions of professors about instructional interactivity
+      url: /vfy.html
+      output: pdf 
+
+    - title: Instructional interactivity
+      url: /jzl.html
+      output: pdf 
+
+    - title: Microdevice fabrication by softlithography
+      url: /asz.html
+      output: pdf 
+
+    - title: The summative evaluation of the EcoVentures program
+      url: /mad.html
+      output: pdf   
+
+  - title: Journal Articles
+    output: pdf
+
+    folderitems:
+    - title: Remote learning in chemistry education
+      url: /ypa.html
+      output: pdf 
+
+    - title: Exploring science teachers’ affective states
+      url: /qra.html
+      output: pdf  
+
+    - title: Science Teachers’ Pedagogical Discontentment scale
+      url: /oyc.html
+      output: pdf  
+
+    - title: Use of technology and attitudes towards technology
+      url: /oux.html
+      output: pdf 
+
+    - title: "Mathematics anxiety, self-efficacy, and motivation"
+      url: /ivl.html 
+      output: pdf  
+
+    - title: Measuring one aspect of teachers’ affective states
+      url: /auh.html
+      output: pdf  
+
+    - title: Students’ perceptions to use technology for learning
+      url: /bdd.html
+      output: pdf  
+
+    - title: Interactive learning in mathematics education
+      url: /wyt.html
+      output: pdf  
+
+    - title: "Interactivity Survey (IS)"
+      url: /qgb.html
+      output: pdf 
+
+    - title: Instructional interactivity endeavor and Spiral Dynamics
+      url: /imx.html
+      output: pdf  
+
+    - title: Microfluidic devices
+      url: /sau.html
+      output: pdf      
+     
+
+  - title: Conference Papers
+    output: pdf
+
+    folderitems:   
+
+    - title: Measuring conceptual understanding on oxygen binding and delivery in a biochemistry course
+      url: /aai.html
+      output: pdf       
+
+    - title: "Alternative assessment method in biochemistry education: Graphical representation of oxygen binding and delivery"
+      url: /ekj.html
+      output: pdf 
+
+    - title: Integrating learning objects into D2L to promote student learning of difficult scientific concepts
+      url: /csn.html
+      output: pdf 
+      
+    - title: "Advancing chemistry education research: Dual-Process Theories, Learning Objects and Student Response Systems (Keynote Lecture)"
+      url: /rol.html
+      output: pdf 
+      
+    - title: An account for Inquiry-Based Science Education through Dual-Process Theories
+      url: /zyc.html
+      output: pdf    
+      
+    - title: A project idea on working definition of IBSE in Europe through artificial intelligence
+      url: /tcm.html
+      output: pdf       
+
+    - title: A project idea on working definition of IBSE in Europe through artificial intelligence
+      url: /hnw.html
+      output: pdf 
+
+    - title: "Construct validity and reliability measures of scores from the Science Teachers’ Pedagogical Discontentment (STPD) Scale"
+      url: /liv.html
+      output: pdf 
+      
+    - title: Affective factors and instructional interactivity in education
+      url: /jcv.html
+      output: pdf
+
+    - title: Introduction to Moodle Learning Management System and use of learning objects
+      url: /ihi.html
+      output: pdf    
+      
+    - title: "Affective dimensions in chemistry education: Focus on educational technology and learning objects"
+      url: /fck.html
+      output: pdf       
+
+    - title: Phase diagrams
+      url: /dxf.html
+      output: pdf 
+
+    - title: Experiences in reviewing proposals under FP7 Program and some tips for improving proposals
+      url: /bfb.html
+      output: pdf 
+      
+    - title: Phase diagrams and conceptual learning
+      url: /hvm.html
+      output: pdf 
+      
+    - title: Preparing a grant proposal for funding by the European Commission and presenting a grant proposal in chemistry education
+      url: /fho.html
+      output: pdf    
+      
+    - title: "Physical chemistry education and learning objects (PChemLO): A technological implementation to foster inquiry-based learning and diminish gender differences at higher education"
+      url: /rwo.html
+      output: pdf       
+
+    - title: Einstellungen zur Chemie und zum Chemielernen bei türkischen und deutschen Jugendlichen
+      url: /mgv.html
+      output: pdf 
+
+    - title: "Affective dimensions in chemistry education: Much left for future research"
+      url: /uej.html
+      output: pdf 
+      
+    - title: Physical chemistry education and learning objects
+      url: /jbq.html
+      output: pdf      
+      
+    - title: Affective dimensions in chemistry education
+      url: /ftt.html
+      output: pdf    
+      
+    - title: "Depicting chemistry majors’ self-perceptions in learning chemistry"
+      url: /ugd.html
+      output: pdf       
+
+    - title: Analysis of Turkish high-school chemistry examination questions
+      url: /sqs.html
+      output: pdf 
+
+    - title: The evaluation process of large scale proposals
+      url: /bkd.html
+      output: pdf 
+      
+    - title: "Quantifying high school students’ self- perceptions in learning chemistry"
+      url: /uds.html
+      output: pdf 
+      
+    - title: A conceptual framework for fidelity of implementation of instructional materials
+      url: /cfo.html
+      output: pdf    
+      
+    - title: "Students’ motivation to use technology for learning"
+      url: /fgb.html
+      output: pdf       
+
+    - title: A framework for measuring fidelity of implementation of science instructional materials
+      url: /tqf.html
+      output: pdf 
+
+    - title: Investigating the existence of interactivity in various instructional settings
+      url: /uqq.html
+      output: pdf 
+      
+    - title: Development of an instrument to assess science teachers’ pedagogical discontentment
+      url: /ezg.html
+      output: pdf
+
+    - title: Interactive learning in mathematics education
+      url: /zad.html
+      output: pdf       
+
+    - title: "An instrument development: Interactivity Survey (the IS)"
+      url: /crm.html
+      output: pdf    
+      
+    - title: "Working to measure the impact of professional development activities"
+      url: /njh.html
+      output: pdf         
+
+    - title: Matematiği öğrenmede kendi-kendini kavrama
+      url: /utu.html
+      output: pdf 
+
+    - title: Turkish high-school students’ attitudes toward learning mathematics
+      url: /cnj.html
+      output: pdf
+
+    - title: 'The use of interactivity in a graduate class: A case study'
+      url: /dxs.html
+      output: pdf 
+
+    - title: Instructional interactivity endeavor and the Spiral’s Value MEMEs
+      url: /bnw.html
+      output: pdf 
+
+    - title: The significance of interactivity in gender equitable education
+      url: /mpb.html
+      output: pdf 
+            
+    - title: Instructional interactivity and technology components of a freshman chemistry course
+      url: /ljl.html
+      output: pdf           
+
+    - title: The significance of interactivity, learning cycle, and content knowledge
+      url: /cdk.html
+      output: pdf 
+
+    - title: Micro-patterning of reaction arrays for self-organizing systems
+      url: /qoj.html
+      output: pdf 
+
+    - title: Letting teachers to interact with the idea of interactivity
+      url: /pfe.html
+      output: pdf 
+
+    - title: An on-line evaluation system for curriculum materials development
+      url: /rnr.html
+      output: pdf 
+
+    - title: Interactivity in mathematics and science education
+      url: /xcz.html
+      output: pdf     
+
+  - title: Team
+    output: web, pdf
+
+    folderitems: 
+
+    - title: Team Overview
+      url: /team.html
+      output: web, pdf
+
+    - title: Murat Kahveci
+      url: /murat.html
+      output: web, pdf
+
+    - title: Ajda Kahveci
+      url: /ajda.html
+      output: web, pdf  
+
+    - title: Lihua Jin
+      url: /lihua.html
+      output: web, pdf 
+
+    - title: Timothy French
+      url: /tim.html
+      output: web, pdf  
+          
+    - title: Yousif Muten
+      url: /yousif.html
+      output: web, pdf  
+
+      subfolders:
+      - title: Alumni
+        output: web, pdf
+        subfolderitems:
+
+        - title: Basak Oztekin
+          url: /basak.html
+          output: web, pdf  
+              
+        - title: Elif Algedik
+          url: /elif.html
+          output: web, pdf 
+
+        - title: Sirin Coskun
+          url: /sirin.html
+          output: web, pdf  
+
+        - title: Rukiye Didem Taylan
+          url: /didem.html
+          output: web, pdf 
+
+        - title: Yesim Imamoglu
+          url: /yesim.html
+          output: web, pdf  
+              
+        - title: Kerstin Kremer
+          url: /kerstin.html
+          output: web, pdf 
+
+        - title: Annemarie Kegler
+          url: /annemarie.html
+          output: web, pdf  
+              
+        - title: MaryKay Orgill
+          url: /marykay.html
+          output: web, pdf 
+          
+        - title: Maher Mohammed Alarfaj
+          url: /maher.html
+          output: web, pdf  
+
+        - title: Nasser Mansour
+          url: /nasser.html
+          output: web, pdf     
+
+  - title: Tag archives
+    output: web 
+    folderitems:
+
+    - title: Tag archives overview
+      url: /tag_archives_overview.html
+      output: web
+
+    - title: Affective dimensions pages
+      url: /tag_affective_dimensions.html
+      output: web      
+
+    - title: Full-text articles pages
+      url: /tag_full_text_article.html
+      output: web
+
+    - title: Pedagogical discontentment pages
+      url: /tag_pedagogical_discontentment.html
+      output: web 
+
+    - title: Interactivity pages
+      url: /tag_interactivity.html
+      output: web 
+
+    - title: Remote learning pages
+      url: /tag_remote_learning.html
+      output: web
+
+    - title: Mathematics education pages
+      url: /tag_mathematics_education.html
+      output: web 
+
+    - title: Microdevice pages
+      url: /tag_microdevice.html
+      output: web 
+
+    - title: Nonlinear dynamics pages
+      url: /tag_nonlinear_dynamics.html
+      output: web         
+
+   

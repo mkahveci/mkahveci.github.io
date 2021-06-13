@@ -1,0 +1,22 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+entries:
+- title: Sidebar
+  product: "SDET"
+  version: 
+  folders:
+
+  - title: Live Lecture Notes
+    output: web, pdf
+    folderitems:
+    - title: "Week 2: 6/12/21"
+      url: /vtt.html
+      output: web, pdf
+
+  # - title: Projects
+  #   output: web, pdf
+
+  #   folderitems: 
+
+  #   - title: Projects Overview
+  #     url: /project.html
+  #     output: web, pdf              

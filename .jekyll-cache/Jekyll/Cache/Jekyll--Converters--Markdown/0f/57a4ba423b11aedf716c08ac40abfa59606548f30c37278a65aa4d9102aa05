@@ -1,0 +1,399 @@
+I"�P<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 2</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a></li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-concentrations-of-the-stock-solutions" id="markdown-toc-31-concentrations-of-the-stock-solutions">3.1 Concentrations of the stock solutions</a></li>
+      <li><a href="#32-calculating-the-initial-concentrations" id="markdown-toc-32-calculating-the-initial-concentrations">3.2 Calculating the initial concentrations</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-misconceptions" id="markdown-toc-41-misconceptions">4.1 Misconceptions</a>        <ul>
+          <li><a href="#411-determining-partial-orders" id="markdown-toc-411-determining-partial-orders">4.1.1 Determining partial orders</a></li>
+          <li><a href="#412-if-the-concentration-of-hcl-were-doubled-how-would-the-reaction-time-change-how-does-the-concentration-of-h_2o_2-affect-the-reaction-time-how-does-the-concentration-of-ki-affect-the-reaction-time" id="markdown-toc-412-if-the-concentration-of-hcl-were-doubled-how-would-the-reaction-time-change-how-does-the-concentration-of-h_2o_2-affect-the-reaction-time-how-does-the-concentration-of-ki-affect-the-reaction-time">4.1.2 If the concentration of HCl were doubled, how would the reaction time change? How does the concentration of \(H_2O_2\) affect the reaction time? How does the concentration of \(KI\) affect the reaction time?</a></li>
+          <li><a href="#413-would-you-expect-the-rate-constant-to-change-if-you-heated-up-the-reactants-before-mixing-why-or-why-not-if-the-rate-constant-would-change-would-it-be-larger-or-smaller-than-at-room-temperature" id="markdown-toc-413-would-you-expect-the-rate-constant-to-change-if-you-heated-up-the-reactants-before-mixing-why-or-why-not-if-the-rate-constant-would-change-would-it-be-larger-or-smaller-than-at-room-temperature">4.1.3 Would you expect the rate constant to change if you heated up the reactants before mixing? Why or why not? If the rate constant would change, would it be larger or smaller than at room temperature?</a></li>
+          <li><a href="#414-how-would-a-wet-pipette-affect-the-experimental-results" id="markdown-toc-414-how-would-a-wet-pipette-affect-the-experimental-results">4.1.4 How would a wet pipette affect the experimental results?</a></li>
+        </ul>
+      </li>
+      <li><a href="#42-formatting-issues" id="markdown-toc-42-formatting-issues">4.2 Formatting issues</a></li>
+      <li><a href="#43-issues-with-calculations" id="markdown-toc-43-issues-with-calculations">4.3 Issues with calculations</a></li>
+      <li><a href="#44-feedback" id="markdown-toc-44-feedback">4.4 Feedback</a></li>
+      <li><a href="#45-grades" id="markdown-toc-45-grades">4.5 Grades</a></li>
+      <li><a href="#46-team-grading" id="markdown-toc-46-team-grading">4.6 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<ul>
+  <li>
+    <p>Determine the general rate law for a chemical reaction by calculating the reaction rate for various concentrations of reactants.</p>
+  </li>
+  <li>
+    <p>Using the concentrations listed on the reagent bottles and the volumes in Table 2, calculate the diluted concentrations for each species using</p>
+  </li>
+</ul>
+
+<p>\begin{equation}\label{eq:dilution}
+  M_2 = \frac{M_1V_1}{V_2}
+\end{equation}</p>
+
+<ul>
+  <li>Calculate the reaction rate for each trial using the diluted concentration of thiosulfate and the time (in seconds) it took for the blue complex to appear, using</li>
+</ul>
+
+\[\text{rate} = \frac{1}{2} \frac{[S_2O_3^{2-}]_i}{\Delta t}\]
+
+<ul>
+  <li>
+    <p>The partial order of each reactant will be found by comparing different rates and sets of concentrations to one another, yielding the experimental rate law for this specific reaction.</p>
+  </li>
+  <li>
+    <p>Use the method of initial rates and logarithms to calculate the partial order of each reactant for the <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> set of runs separately. e.g. The ratio of <code class="language-plaintext highlighter-rouge">run 2</code> over <code class="language-plaintext highlighter-rouge">run 1</code> gives:</p>
+  </li>
+</ul>
+
+<p>\begin{equation}\label{eq:rateratios}
+ \frac{\text{rate}_2}{\text{rate}_1}  = \frac{ k [H^{+}]^x_2 [H_2O_2^{+}]^y_2 [I^{-}]^z_2}
+    {k [H^{+}]^x_1 [^{+}]^y_1 [I^{-}]^z_1}
+    = 
+    \Big( \frac{[I^{-}]_2}
+    { [I^{-}]_1} \Big)^z
+\end{equation}</p>
+
+<p>where \(z\) can be found by</p>
+
+<p>\begin{equation}\label{eq:porder}
+   z = \frac{\log \frac{\text{rate}_2}{\text{rate}_1} }{ \log \frac{[I^{-}]_2}
+    { [I^{-}]_1} }
+\end{equation}</p>
+
+<ul>
+  <li>
+    <p>This process is then repeated until all of the partial orders in the rate law are determined. The average partial orders should be listed to the same number of significant figures as the individual trial partial orders.</p>
+  </li>
+  <li>
+    <p>Calculate the rate constant at that temperature using the rate and concentration data from any run</p>
+  </li>
+</ul>
+
+\[k = \frac{\text{rate}}{[H^{+}]^x [H_2O_2^{+}]^y [I^{-}]^z }\]
+
+<ul>
+  <li>
+    <p>\(k\) value should be calculated for each run, which means 4 runs \(\times\) 2 trials \(= 8\) different \(k\) values are calculated.</p>
+  </li>
+  <li>
+    <p>Report average \(k\) constant \(\pm\) standard deviation, following the rules for significant figures.</p>
+  </li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the demo video for the experiment</li>
+  <li>Download the data set and do the data analysis</li>
+  <li>Upload the <strong>partial lab report</strong> in the <code class="language-plaintext highlighter-rouge">PDF</code> format:
+    <ul>
+      <li>This is a deviation for the summer session only.</li>
+      <li>Include the following sections: <code class="language-plaintext highlighter-rouge">Abstract</code>, <code class="language-plaintext highlighter-rouge">Procedures</code>, <code class="language-plaintext highlighter-rouge">Results</code>, <code class="language-plaintext highlighter-rouge">Data Table</code>, <code class="language-plaintext highlighter-rouge">Experimental Rate Law</code>, and <code class="language-plaintext highlighter-rouge">Discussion</code> (not a full discussion section; just itemize and answer the questions.)</li>
+      <li>You don’t need to include sample calculations in the <strong>partial report</strong> (it is in Excel only), don’t need to write narrative explaining data tables and calculations.</li>
+    </ul>
+  </li>
+  <li>Upload all calculations and data tables in an MS Excel file</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-concentrations-of-the-stock-solutions">3.1 Concentrations of the stock solutions</h3>
+
+<blockquote>
+  <p>I was only given the concentration for \([H^+]\). However I believe that I need the stock concentrations of the other reactants as well in order to be able to calculate the diluted concentration of thiosulfite. Is there something that I am missing about this?</p>
+</blockquote>
+
+<p>\([H^+]\) concentration was given for some data sets by mistake. These affected data sets have been updated. Please re-download your data set and assume that the stock solutions are exactly prepared in the suggested values in Table 1.</p>
+
+<p><em>Table 1. The concentrations of stock solutions.</em></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Hydrochloric acid</td>
+      <td>0.0500 M</td>
+    </tr>
+    <tr>
+      <td>Hydrogen peroxide</td>
+      <td>0.5000 M</td>
+    </tr>
+    <tr>
+      <td>Potassium iodide</td>
+      <td>0.0500 M</td>
+    </tr>
+    <tr>
+      <td>Sodium thiosulfate</td>
+      <td>0.0100 M</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="32-calculating-the-initial-concentrations">3.2 Calculating the initial concentrations</h3>
+
+<blockquote>
+  <p>We’re supposed to calculate \(M_2\) using data from Table 2. I’m not sure which volume to use with regards to runs since they change for different runs. Do I need to find \(M_2\) of all reactants for all 4 runs? Or do I just need to find \(M_2\) for a specific run?</p>
+</blockquote>
+
+<p>Using the stock concentrations listed in Table 1 and the volumes in Table 2, calculate the diluted concentrations for each species by plugging in the values to Equation \ref{eq:dilution}. These calculated concentrations are known as initial concentrations.</p>
+
+<p><img src="/images/blog/ykf/1.jpg" alt="Figure 1" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 1</em>. Table 2 from the lab manual.</small></p>
+
+<p>For example, the intial concentration of hydrogen peroxide Run 1:</p>
+
+<p>\(M_{H_2O_2} = \frac{(0.5000 \text{ M}))(10.00 \text{ mL})}{50.00 \text{ mL}} = 0.1000 \text{ M}\) (4 sig. figs.)</p>
+
+<p>For Run 1, you will do this calculation for all species across the line. These values are the initial concentrations for Run 1. Repeat this calculation for all 4 runs and plug into Equation \ref{eq:rateratios} to find the partial orders of \(x\), \(y\), and \(z\).</p>
+
+<p><em>Please note that you are expected to make an Excel table and do all of these individual calculations by using Excel functions.</em></p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-misconceptions">4.1 Misconceptions</h3>
+
+<h4 id="411-determining-partial-orders">4.1.1 Determining partial orders</h4>
+
+<blockquote>
+  <p>The partial order of each reactant is the same value of the stoichiometric number or the exponent linked to a particular reactant.</p>
+</blockquote>
+
+<p>Incorrect. Partial orders are experimentally determined using the initial concentrations. See Equations \ref{eq:rateratios} and \ref{eq:porder} for more details.</p>
+
+<blockquote>
+  <p>If the concentration of \(HCl\) were doubled, the reaction time would not change because
+thiosulfate is the limiting reactant and therefore the reaction time is dependent upon the
+consumption of thiosulfate. The concentration of \(H_2O_2\) and \(KI\) do not effect the reaction
+time since the reaction time depends on the consumption of thiosulfate, the limiting
+reactant.</p>
+</blockquote>
+
+<p>This explanation is based on the following rate law:  \(rate = k [H_2O_2]^1 [HCl]^1[KI]^1\). If all partial orders are determined as 1, which is incorrect for this experiment, then every species would affect the reaction rate in the same proportion. e.g. If the concentration of \(HCl\) or \(H_2O_2\) or \(KI\) were doubled, the reaction time would be half.</p>
+
+<h4 id="412-if-the-concentration-of-hcl-were-doubled-how-would-the-reaction-time-change-how-does-the-concentration-of-h_2o_2-affect-the-reaction-time-how-does-the-concentration-of-ki-affect-the-reaction-time">4.1.2 If the concentration of HCl were doubled, how would the reaction time change? How does the concentration of \(H_2O_2\) affect the reaction time? How does the concentration of \(KI\) affect the reaction time?</h4>
+
+<blockquote>
+  <p>If the concentration of \(HCl\) were doubled, the reaction time would increase. The concentration of \(H_2O_2\) would slow down the reaction time. The concentration of \(KI\) would speed up the reaction time.</p>
+</blockquote>
+
+<blockquote>
+  <p>This would increase the reaction time because there is more concentration so the reaction
+would take longer than it would have originally.</p>
+</blockquote>
+
+<p>You would need to base your discussion on the experimental rate law that you discovered. If the species of interest has nonzero partial oder, than you would be able to relate its concentration to the overall reaction rate.</p>
+
+<p>Please remember that scientific argument is only valid (i.e. viable) if it is based on evidence. Thefore, you must use all the evidences you gathered in this experiment to answer these questions.</p>
+
+<p>Another hint is that the question itself guides you to talk about some species, like \(H_2O_2\) and \(KI\).</p>
+
+<blockquote>
+  <p>Increasing any of the concentrations would allow for a faster rate to be observed. The reason behind
+this is that there are more particles in an increased concentration which allows for more collisions to
+happen. This would entail a faster reaction rate.</p>
+</blockquote>
+
+<p>The rate law should be experimentally determined to answer this question.</p>
+
+<blockquote>
+  <p>The experimental rate law for the reaction was \(k = [H_2O_2]^0[H^+]^0[I^-]^1\). If the concentration of \(HCl\) was doubled, The rate constant would increase. This is because the rate constant is relative to the temperature.</p>
+</blockquote>
+
+<p>Two issues:</p>
+
+<ol>
+  <li>The rate law should be written as \(rate = k [H_2O_2]^0[H^+]^0[I^-]^1\) (may show some incorrect partial orders for this experiment)</li>
+  <li>You just experimentally determined that acid concentration does not affect the rate of the reaction. Mathematically speaking, $0^{th}$ power of \([H^+]\) means that \([H^+]\) does not affect the reaction rate. e.g. \((.5 \text{ M})^0 = (.05 \text{ M})^0 = ... = 1\)</li>
+</ol>
+
+<h4 id="413-would-you-expect-the-rate-constant-to-change-if-you-heated-up-the-reactants-before-mixing-why-or-why-not-if-the-rate-constant-would-change-would-it-be-larger-or-smaller-than-at-room-temperature">4.1.3 Would you expect the rate constant to change if you heated up the reactants before mixing? Why or why not? If the rate constant would change, would it be larger or smaller than at room temperature?</h4>
+
+<blockquote>
+  <p>Yes, the rate constant would change if it were heated up. This would make the heat
+constant smaller because the time of the reaction would decrease.</p>
+</blockquote>
+
+<p>I see two issues here.</p>
+
+<ol>
+  <li>
+    <p>You say that <code class="language-plaintext highlighter-rouge">if the rate constant were heated up</code>. Well, the rate constant is a concept; you cannot heat it up. Perhaps you meant the reaction vessel was heated up but it was not clear. Again, in a scientific argument we read what you say, as you say it. You have the observations and you have the power to make claims.</p>
+  </li>
+  <li>
+    <p>You said <code class="language-plaintext highlighter-rouge">the heat constant</code>. What do you mean? We did not define <code class="language-plaintext highlighter-rouge">heat constant</code> as a term in this context.</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>The rate constant would change if the reactants were to be heated up before mixing, the heat would increase the concentration which then would also increase the rate constant.</p>
+</blockquote>
+
+<p>Again, there are two issues here:</p>
+
+<ol>
+  <li>You have no evidence to claim that <code class="language-plaintext highlighter-rouge">the heat would increase the concentration</code>.</li>
+  <li>Even if so, increasing concentration does not necessarily increase the rate constant. Hint: consider \(0^{th}\) order reaction.</li>
+</ol>
+
+<h4 id="414-how-would-a-wet-pipette-affect-the-experimental-results">4.1.4 How would a wet pipette affect the experimental results?</h4>
+
+<blockquote>
+  <p>A wet pipette would change the experimental results in that it would increase the concentrations of the mixtures.</p>
+</blockquote>
+
+<p>A wet pipette means that the solution is diluted.</p>
+
+<blockquote>
+  <p>A wet pipette could affect the experimental results significantly by increasing the delivered
+volume value, therefore making the experimental results inaccurate and inconsistent.</p>
+</blockquote>
+
+<p>Disagree. Volume is measured correctly all the time by the use of pipette.</p>
+
+<h3 id="42-formatting-issues">4.2 Formatting issues</h3>
+
+<blockquote>
+  <p>If the concentration of HCl, H2O2, and KI were doubled the reaction time would also
+double (increase).</p>
+</blockquote>
+
+<p>You should use an equation editor to write equations and chemical formulas properly. i.e. I expect to see \(H_2O_2\) rather than H2O2.</p>
+
+<blockquote>
+  <p>H202(aq) + 2I-(aq) yields 2 H20(l) + I2(aq)</p>
+</blockquote>
+
+<p>You must use the equation editor for all equations and chemical formulas. So, I expect:</p>
+
+\[H_20_2\text{(aq)} + 2I^-\text{(aq)} \rightarrow 2 H_20\text{(l)} + I_2\text{(aq)} \notag\]
+
+<h3 id="43-issues-with-calculations">4.3 Issues with calculations</h3>
+
+<blockquote>
+  <p>The overall reaction for Reaction 3 is determined by the sum of x, y and z. The sum is equal to
+2.212.</p>
+</blockquote>
+
+<p>Although the sum of partial orders can be a fractional number in rare cases, normally at this level yu learn whole numbers only. So, it would be in a sense necessary to properly round your final results. Remember that you learnt only \(0^{th}\), \(1^{st}\), and \(2^{nd}\) order reactions. We do not always explicitly say all details but you can use common sense when you do experiments and data analysis.</p>
+
+<blockquote>
+  <p>…the rate constant being \(1.39 \times 10^{−6} \text{ M}^{−1} \text{.s} \pm 2.64 \times 10^{−6}\).</p>
+</blockquote>
+
+<p>There issues:</p>
+
+<ol>
+  <li>Value and standard deviation do not share a common multiplier, when a multiplier is present.</li>
+  <li>Standard deviation does not have a unit.</li>
+  <li>Rules for significant figures are not followed.</li>
+</ol>
+
+<p>The expected format is: \((1 \pm 3) \times 10^{−6} \text{ M}^{−1} \text{.s}\)</p>
+
+<ul>
+  <li>Standard deviation has 1 sig. fig. (requirement)</li>
+  <li>The value has zero decimal place —same as the standard deviation (requirement)</li>
+</ul>
+
+<blockquote>
+  <p>[A value from a table cell given as] 5.88E-05</p>
+</blockquote>
+
+<p>This format is how Excel handles exponential values however it is not the scientific notation. Instead, you should use: \(5.88 \times 10^{-5}\).</p>
+
+<h3 id="44-feedback">4.4 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="45-grades">4.5 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">76.06%</td>
+      <td style="text-align: center">8.51%</td>
+      <td style="text-align: center">73.50%</td>
+      <td style="text-align: center">95.50%</td>
+      <td style="text-align: center">61.50%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="46-team-grading">4.6 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Iodine Clock Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Discussion]
+    B5[Proofreading and General Formatting]
+    B6[Experimental Rate Law]
+    B7[Discussion Questions]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Prelab Assignment]
+    C4[Postlab Quiz]
+    C5[Data Table]
+    C6[Average Rate Constant]
+    C7[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+    C--&gt;C7;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

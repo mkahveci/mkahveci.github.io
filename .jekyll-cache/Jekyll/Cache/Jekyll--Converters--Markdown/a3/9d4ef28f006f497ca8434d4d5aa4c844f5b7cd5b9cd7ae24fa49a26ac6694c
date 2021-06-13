@@ -1,0 +1,162 @@
+I"u<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 3</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a></li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-lab-notebook-pages" id="markdown-toc-31-lab-notebook-pages">3.1 Lab notebook pages</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-formatting-issues" id="markdown-toc-41-formatting-issues">4.1 Formatting issues</a></li>
+      <li><a href="#42-feedback" id="markdown-toc-42-feedback">4.2 Feedback</a></li>
+      <li><a href="#43-grades" id="markdown-toc-43-grades">4.3 Grades</a></li>
+      <li><a href="#44-team-grading" id="markdown-toc-44-team-grading">4.4 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<ul>
+  <li>Analysis of known solutions
+    <ul>
+      <li>For this experiment, you will first test a series of known samples, each containing a particular anion, according to the prescribed test for it and record your observations.</li>
+      <li>Download the lab notebook from the course web page, and take notes  while watching the lab video recording. So, you will rely on your careful observations and own notes. This page will not be uploaded, it is for self-study only.</li>
+      <li>Lab manual has enough details for preparing the sample test solutions.</li>
+    </ul>
+  </li>
+  <li>Analysis of unknown solutions
+    <ul>
+      <li>You will then carry out the same analysis for two unknown samples, one from each batch of unknowns (i.e., NA #, NB #).</li>
+      <li>Using the figure below, determine the unknown sample.</li>
+      <li>Do not forget to note the unknown number in your lab report.</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code class="language-mermaid">  graph TD;
+    A[Unknown]
+    B[Chloride test]
+    C1[If bubbles are present]
+    C2[If neither bubbles nor precipitate is present]
+    C3[If precipitate is present]
+    D1[Unknown contains carbonade]
+    D2[Carry on to sulfate, phophate, acetate, and nirate tests]
+    D3[Carry on bromide, iodide, thiocyanate, and sulfide tests]
+    A--&gt;B;
+    B--&gt;C1;
+    B--&gt;C2;
+    B--&gt;C3;
+    C1--yes--&gt;D1;
+    C2--yes--&gt;D2;
+    C3--yes--&gt;D3;
+</code></pre>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Download the lab notebook from the course web page and fill it up while watching the demo video for the experiment.</li>
+  <li>Download the data set and do the data analysis.</li>
+  <li>You must upload a PDF file of <strong>partial lab report</strong>.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-lab-notebook-pages">3.1 Lab notebook pages</h3>
+
+<blockquote>
+  <p>I see in the Lab 3 instructions on your website that the lab notebook pages are used to collect the observations necessary to transfer them to the main data table in the partial lab report, would you like us to submit that file with the notebook page as well or will just the PDF of the lab report suffice?</p>
+</blockquote>
+
+<p>Just the PDF of the lab report, with the required observations tables, is sufficient. The file for lab notebook pages is posted for your own use.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-formatting-issues">4.1 Formatting issues</h3>
+
+<blockquote>
+  <p>2H (aq) + S^-2 (aq) &lt;-&gt; H2(g</p>
+</blockquote>
+
+<p>Should be \(2 H (aq) + S^{2-} (aq) \Leftrightarrow H_2(g)\)</p>
+
+<h3 id="42-feedback">4.2 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="43-grades">4.3 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">92.64%</td>
+      <td style="text-align: center">6.94%</td>
+      <td style="text-align: center">95.00%</td>
+      <td style="text-align: center">100.00%</td>
+      <td style="text-align: center">76.39%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="44-team-grading">4.4 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Qualitative Analysis of Anions Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Results Table for Known Samples]
+    B5[Unknown Identification]
+    B6[Discussion Questions]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Prelab Assignment]
+    C4[Postlab Quiz]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
