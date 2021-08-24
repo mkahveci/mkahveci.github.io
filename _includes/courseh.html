@@ -1,0 +1,6 @@
+{{site.data.alerts.note}}
+{{ page.code }} {{ page.title }} ({{ page.clevel | downcase }} level) was taught by 
+<a href="{{ site.urlx }}{{ page.instructorurl }}">{{ page.instructor }}</a> 
+at <a href="{{ page.insturl }}">{{ page.institution }}</a> in {{ page.semester }}. {% if page.web %} <a class="button button--outline-warning button--pill button--xs" href="{{ page.web }}">{{ page.code }} Course URL</a>
+{% endif %}
+{{site.data.alerts.end}}

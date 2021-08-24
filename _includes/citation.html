@@ -1,0 +1,13 @@
+
+{% if page.wip %} {% include sip.html %}{% endif %}
+
+{% if page.ref %}
+
+{% capture _ref %}
+<b>Citation</b><br><br>
+{{page.ref}}
+{% endcapture %}
+
+{% include callout.html content=_ref type="success" %} 
+
+{% endif %}

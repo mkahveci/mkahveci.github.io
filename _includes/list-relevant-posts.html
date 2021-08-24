@@ -1,0 +1,16 @@
+<ul class="tags">
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+{% endfor %}
+</ul>
+
+<ul>
+{% for post in posts %}
+  {% if post.tags contains include.tag %}
+  <li>
+    {{ post.title }} <a class="button button--secondary button--pill button--sm" href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y"  }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

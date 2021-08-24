@@ -1,0 +1,180 @@
+I"�<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 8</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-identification-of-the-unknown-amino-acid" id="markdown-toc-11-identification-of-the-unknown-amino-acid">1.1 Identification of the unknown amino acid</a></li>
+      <li><a href="#12-calculate-the-molar-mass-of-the-acid" id="markdown-toc-12-calculate-the-molar-mass-of-the-acid">1.2 Calculate the molar mass of the acid</a></li>
+      <li><a href="#13-determine-the-identity-of-amino-acid" id="markdown-toc-13-determine-the-identity-of-amino-acid">1.3 Determine the identity of amino acid</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-the-unknown-amino-acid-i-found-doesnt-match" id="markdown-toc-31-the-unknown-amino-acid-i-found-doesnt-match">3.1 The unknown amino acid I found doesn’t match</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-feedback" id="markdown-toc-41-feedback">4.1 Feedback</a></li>
+      <li><a href="#42-grades" id="markdown-toc-42-grades">4.2 Grades</a></li>
+      <li><a href="#43-team-grading" id="markdown-toc-43-team-grading">4.3 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<h3 id="11-identification-of-the-unknown-amino-acid">1.1 Identification of the unknown amino acid</h3>
+
+<ul>
+  <li>Plot a graph of \(pH\) vs. \(V(mL)\) of \(NaOH\) added.</li>
+  <li>If a break (or breaks, in the case of polyprotic acids) is clearly visible, estimate the pKa (or multiple \(pKa\) values in the case of polyprotic acids).</li>
+  <li>Use the example titration curve in the previous slide as a guidance:
+    <ul>
+      <li>The vertical dashed line shows equivalence point and corresponding \(NaOH\) volume.</li>
+      <li>The horizontal dashed line shows \(pH\) value, which is equal to \(pKa\) value. So, you determined the \(pKa\) value.</li>
+      <li>Repeat this process for each break if you have multiple breaks and determine all \(pKa\) values.</li>
+    </ul>
+  </li>
+  <li>Estimate the molar mass of the acid.</li>
+  <li>Use these data to find a match in Table 2, Table 3, or Table 4.</li>
+</ul>
+
+<h3 id="12-calculate-the-molar-mass-of-the-acid">1.2 Calculate the molar mass of the acid</h3>
+
+<ul>
+  <li>At the equivalence point:</li>
+</ul>
+
+<p>\begin{equation}
+  \text{mol } OH^- = \text{mol amino acid}
+\end{equation}</p>
+
+<p>which means:</p>
+
+<p>\begin{equation}
+  \text{volume of } OH^- \times \frac{\text{mol } OH^-}{ \text{L} } \times \frac{ 1 \text{ mol amino acid}}{ 1 \text{ mol } OH^-} = \text{mol amino acid} 
+\end{equation}</p>
+
+<ul>
+  <li>Calculate molar mass using the moles of amino acid and the mass of sample.</li>
+</ul>
+
+<p>\begin{equation}
+  \text{molar mass of amino acid} = \frac{\text{g amino acid}}{\text{mol amino acid}}
+\end{equation}</p>
+
+<h3 id="13-determine-the-identity-of-amino-acid">1.3 Determine the identity of amino acid</h3>
+
+<ul>
+  <li>Using the \(pKa\) and molar mass values determine the identity of amino acid.</li>
+  <li>Find a match in Table 2, Table 3, or Table 4.</li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download your data set.</li>
+  <li>Analyze the data in Excel</li>
+  <li>Submit your partial lab report in PDF and all calculations in Excel file.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-the-unknown-amino-acid-i-found-doesnt-match">3.1 The unknown amino acid I found doesn’t match</h3>
+
+<blockquote>
+  <p>The molar mass of the unknown amino acid I found doesn’t match any of the options in Tables 2-4. My unknown number is <code class="language-plaintext highlighter-rouge">XYZ</code> [hidden for general post]. I’m unable to figure out which calculation I am not doing correctly and have attached my Excel file. Based on my graph, I think I have a monoprotic acid and that I did do the calculation correctly since the break is approximately <code class="language-plaintext highlighter-rouge">XYZ</code> [hidden for general post] and my calculated molar mass is <code class="language-plaintext highlighter-rouge">XYZ</code> [hidden for general post].</p>
+</blockquote>
+
+<p>Reviewing your calculations in Excel reveals that you are pretty much okay with the methodology. I would double-check the values such as the mass of sample, etc. If they are okay, then you can leave this analysis as is. Hint: Your calculated molar mass is much smaller than its actual value. So, I would not rely on molar mass if everything is correct, and it stays as is. Finding the correct half-way(s) might be much more helpful.</p>
+
+<p>With respect to finding the half-way points, I would make the plot much larger. Only then, you would see that there are more than one half-way points.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-feedback">4.1 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="42-grades">4.2 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">89.47%</td>
+      <td style="text-align: center">8.74%</td>
+      <td style="text-align: center">92.00%</td>
+      <td style="text-align: center">99.00%</td>
+      <td style="text-align: center">72.50%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="43-team-grading">4.3 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Amino Acid Titration Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Discussion]
+    B5[Proofreading and General Formatting]
+    B6[Equivalence Points]
+    B7[Discussion Prompts]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Prelab]
+    C4[Postlab]
+    C5[Results Table]
+    C6[Titration Curve]
+    C7[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+    C--&gt;C7;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

@@ -1,0 +1,35 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: "Series: Online Teaching"
+  version: 
+  folders:
+
+  - title: Content
+    output: web, pdf
+    folderitems:
+    - title: Critical Chemistry
+      url: /rpm.html
+      output: web
+
+    - title: Forums in D2L
+      url: /bod.html
+      output: web       
+
+    - title: Low Cost Options for Document Cameras
+      url: /esy.html
+      output: web    
+      
+    - title: Tools
+      url: /xiw.html
+      output: web     
+
+    - title: D2L Submission Folder Setup with a Rubric
+      url: /ydt.html
+      output: web  
+
+    - title: Installing a Learning Object to the D2L Environment
+      url: /lcz.html
+      output: web                

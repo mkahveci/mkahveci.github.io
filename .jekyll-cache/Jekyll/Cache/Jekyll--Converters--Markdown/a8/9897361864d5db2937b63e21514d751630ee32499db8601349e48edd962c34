@@ -1,0 +1,239 @@
+I"�,<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 9</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-calculate-the-equilibrium-concentration" id="markdown-toc-11-calculate-the-equilibrium-concentration">1.1 Calculate the equilibrium concentration</a></li>
+      <li><a href="#12-calculate-the-equilibrium-constant" id="markdown-toc-12-calculate-the-equilibrium-constant">1.2 Calculate the equilibrium constant</a></li>
+      <li><a href="#13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii" id="markdown-toc-13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii">1.3 Calculate the equilibrium concentration of uncomplexed cobalt(II)</a></li>
+      <li><a href="#14-calculate-delta-gcirc-using-k" id="markdown-toc-14-calculate-delta-gcirc-using-k">1.4 Calculate \(\Delta G^\circ\) using \(K\)</a></li>
+      <li><a href="#15-make-ln-k-vs-1t-plots" id="markdown-toc-15-make-ln-k-vs-1t-plots">1.5 Make \(\ln K\) vs. \(1/T\) plots</a></li>
+      <li><a href="#16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc" id="markdown-toc-16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc">1.6 Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)</a></li>
+      <li><a href="#17-generate-a-combined-plot-of-ln-k-vs-1t" id="markdown-toc-17-generate-a-combined-plot-of-ln-k-vs-1t">1.7 Generate a combined plot of \(\ln K\) vs. \(1/T\)</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-calculating-the-equilibrium-concentration-of-co2" id="markdown-toc-31-calculating-the-equilibrium-concentration-of-co2">3.1 Calculating the equilibrium concentration of \(Co^{2+}\)</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-feedback" id="markdown-toc-41-feedback">4.1 Feedback</a></li>
+      <li><a href="#42-grades" id="markdown-toc-42-grades">4.2 Grades</a></li>
+      <li><a href="#43-team-grading" id="markdown-toc-43-team-grading">4.3 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<h3 id="11-calculate-the-equilibrium-concentration">1.1 Calculate the equilibrium concentration</h3>
+
+<ul>
+  <li>Calculate the equilibrium concentration of tetrachlorocobaltate(II) in solution at each temperature using Beer’s law with the measured absorbance value at the temperature of interest.</li>
+</ul>
+
+<p>\begin{equation}
+  A = abc
+\end{equation}</p>
+
+<ul>
+  <li>Assume that the molar absorptivity, \(b\), of \(CoCl_2^-\) in water at 690 nm is constant (\(6.00 \times 10^2\) \(M^{-1}.cm^{-1}\) for all 4 temperature values.</li>
+  <li>
+    <p>The path length, \(a\), is equal to 1.00 cm.</p>
+  </li>
+  <li>The equilibrium concentration of uncomplexed cobalt(II), \(Co^{2+}\),  ions in solution at any given temperature is found using conservation of mass, the initial concentration of cobalt(II) ions in the stock solution, and the equilibrium concentration of tetrachlorocobaltate(II) at that temperature.</li>
+</ul>
+
+<h3 id="12-calculate-the-equilibrium-constant">1.2 Calculate the equilibrium constant</h3>
+
+<ul>
+  <li>Calculate the equilibrium constant for the reaction of interest at each temperature using Equation \ref{eq:K}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:K}
+  K = \frac{[ CoCl_4^{2-} ]}{[ Co^{2+} ][ Cl^- ]^4}
+\end{equation}</p>
+
+<p>In doing this calculation, assume that the \([Cl^-]\) is constant due to the presence of strong 6.00 M \(HCl\) acid. For the sake of significant figures in this calculation, assume the concentration of \(HCl\) is exactly 6.00 M.</p>
+
+<h3 id="13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii">1.3 Calculate the equilibrium concentration of uncomplexed cobalt(II)</h3>
+
+<p>\begin{equation}\label{eq:CoII}
+  Co^{2+}(aq) + 4 Cl^-(aq) \Leftrightarrow CoCl_4^{2-}(aq)
+\end{equation}</p>
+
+<p>The equilibrium concentration of uncomplexed cobalt(II), \(Co^{2+}\), ions in solution at any given temperature is found using conservation of mass (i.e. the stoichiometric calculation based on Eqation \ref{eq:CoII}), the initial concentration of cobalt(II) ions in the stock solution, and the equilibrium concentration of tetrachlorocobaltate(II) at that temperature.</p>
+
+<h3 id="14-calculate-delta-gcirc-using-k">1.4 Calculate \(\Delta G^\circ\) using \(K\)</h3>
+
+<ul>
+  <li>Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaG}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:deltaG}
+  \Delta G^\circ = - RT \ln K
+\end{equation}</p>
+
+<p>where \(R = 8.3145 \text{ J/mol.K}\) (use all figures to ensure proper significant figures), and all temperature values are in Kelvin.</p>
+
+<h3 id="15-make-ln-k-vs-1t-plots">1.5 Make \(\ln K\) vs. \(1/T\) plots</h3>
+
+<ul>
+  <li>Make \(\ln K\) vs. \(1/T\) plots for each trial separately.</li>
+  <li>Temperature values are in Kelvin.</li>
+  <li>Using the Excel formulas, calculate slope, <code class="language-plaintext highlighter-rouge">=SLOPE()</code>, and intercept <code class="language-plaintext highlighter-rouge">=INTERCEPT()</code> for the line of best fit.</li>
+  <li>Calculate \(\Delta H^\circ\) and \(\Delta S^\circ\) for each trial using Equation \ref{eq:lnK}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:lnK}
+  \ln K = - \Big( \frac{\Delta H^\circ}{R} \Big)\Big( \frac{1}{T} \Big) + \Big( \frac{\Delta S^\circ}{R} \Big)
+\end{equation}</p>
+
+<p>where \(\text{slope} =  - \Big( \frac{\Delta H^\circ}{R} \Big)\), \(y-\text{intercept} =  \Big( \frac{\Delta S^\circ}{R} \Big)\), \(R\) is in energy unit like in Equation \ref{eq:deltaG}, and temperature is in Kelvin.</p>
+
+<h3 id="16-calculate-delta-gcirc-using-delta-hcirc-and-delta-scirc">1.6 Calculate \(\Delta G^\circ\) using \(\Delta H^\circ\) and \(\Delta S^\circ\)</h3>
+
+<ul>
+  <li>Calculate \(\Delta G^\circ\) at each temperature studied for each trial using Equation \ref{eq:deltaGthm}.</li>
+</ul>
+
+<p>\begin{equation}\label{eq:deltaGthm}
+  \Delta G^\circ = \Delta H^\circ - T \Delta S^\circ
+\end{equation}</p>
+
+<p>where \(T\) is in Kelvin.</p>
+
+<ul>
+  <li>Assume that \(\Delta H^\circ\) and \(\Delta S^\circ\) are constant with temperature.</li>
+</ul>
+
+<h3 id="17-generate-a-combined-plot-of-ln-k-vs-1t">1.7 Generate a combined plot of \(\ln K\) vs. \(1/T\)</h3>
+
+<ul>
+  <li>Generate a combined plot of \(\ln K\) vs. \(1/T\). In this plot, you should include the results from all trials.</li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download your data set</li>
+  <li>Analyze the data in Excel</li>
+  <li>Submit your <strong>full lab report</strong> in a PDF file and <strong>calculations</strong> in an Excel file.
+    <ul>
+      <li>Be sure to fully discuss your results.
+        <ul>
+          <li>Compare the values from the two trials and discuss how similar or different they are, as well as potential reasons for differences observed.</li>
+          <li>Discuss the values of \(\Delta G^\circ\): are the values obtained similar for each type of calculation? Why might they be different?</li>
+        </ul>
+      </li>
+      <li>There are two discussion prompts that should be incorporated into your overall discussion
+        <ul>
+          <li>One relates to the signs of \(\Delta H^\circ\) and \(\Delta S^\circ\), and why the signs you obtained do or do not follow your expectations.</li>
+          <li>The other relates to the conditions for spontaneity. Remember that \(\Delta H^\circ\) and \(\Delta S^\circ\)  relate to standard state conditions when you calculate the temperature range over which the reaction will occur spontaneously.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-calculating-the-equilibrium-concentration-of-co2">3.1 Calculating the equilibrium concentration of \(Co^{2+}\)</h3>
+
+<blockquote>
+  <p>I had a question on how to calculate the equilibrium concentration of \(Co^{2+}\). In the lab, it gives a brief description but no equation.</p>
+</blockquote>
+
+<p>To answer this question, a new subsection was added to this document. Please <a href="/evj#13-calculate-the-equilibrium-concentration-of-uncomplexed-cobaltii">see</a>: Calculate the equilibrium concentration of uncomplexed cobalt(II)</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-feedback">4.1 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="42-grades">4.2 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">79.30%</td>
+      <td style="text-align: center">13.65%</td>
+      <td style="text-align: center">76.17%</td>
+      <td style="text-align: center">97.00%</td>
+      <td style="text-align: center">52.83%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="43-team-grading">4.3 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Thermodynamics of a Cobalt Complex Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Proofreading and General Formatting]
+    B4[Results]
+    B5[Discussion]
+    B6[ln K vs. 1/T Figures]
+    B7[Discussion Prompts]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab]
+    C5[Postlab]
+    C6[Temperature Study Table]
+    C7[Free Energy Comparison Table]
+    C8[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+    C--&gt;C7;
+    C--&gt;C8;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

@@ -1,0 +1,83 @@
+      {% assign count = 0 %}
+      {% assign projectcount = 0 %}
+      {% assign postcount = 0 %}
+      {% assign coursecount = 0 %}
+
+      {% assign lastname = page.authorname | split: ' ' | last %}
+      {% assign firstinitial = page.authorname | split: ' ' | first | slice: 0 %}
+      {% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+      {% 
+    assign books = site.pages 
+    | sort:"year"
+    | reverse
+    | where_exp: "item", "item.book == true" 
+%} 
+
+      {% for book in books %}
+      {% if book.authors contains searchstring %}
+      {% assign booksq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% 
+    assign courses = site.pages 
+    | sort:"date"
+    | reverse
+    | where_exp: "item", "item.course == true" 
+%} 
+      {% for course in courses %}
+      {% if course.instructor == page.authorname %}
+      {% assign coursecount = coursecount | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% 
+    assign journals = site.pages 
+    | sort:"year"
+    | reverse
+    | where_exp: "item", "item.journal == true" 
+%} 
+
+      {% for jpaper in journals %}
+      {% if jpaper.authors contains searchstring %}
+      {% assign jpapersq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+{% 
+    assign conferences = site.pages 
+    | sort:"year"
+    | reverse
+    | where_exp: "item", "item.conference == true" 
+%} 
+
+      {% for cpaper in conferences %}
+      {% if cpaper.authors contains searchstring %}
+      {% assign cpapersq = true %}
+      {% assign count = count | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+{% 
+    assign projects = site.pages 
+    | sort:"year"
+    | reverse
+    | where_exp: "item", "item.project == true" 
+%}
+
+      {% for project in projects %}
+      {% if project.contributors contains searchstring %}
+      {% assign projectcount = projectcount | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+
+      {% for post in site.posts %}
+      {% if post.author %}
+      {% if page.authorname == post.author %}
+      {% assign postcount = postcount | plus: 1 %}
+      {% endif %}
+      {% endif %}
+      {% endfor %} 

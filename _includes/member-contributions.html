@@ -1,0 +1,127 @@
+{%- include counter.html -%}
+
+{% if projectcount > 0 %}
+
+{% if page.authorname == 'Murat Kahveci' %}
+
+## Projects
+
+{% else if %} 
+
+## Joint Projects
+
+Please note that this page includes only joint projects with the kahveci group. {{ page.authorname }}'s
+    webpage would probably have the complete list of projects.
+
+{% endif %}
+
+{% for project in projects %}
+{% if project.contributors contains searchstring %}
+
+__{{projectcount}}__. {{ project.title }} ({{ project.duration }}) <a class="noCrossRef" href="{{ site.urlx }}{{project.url}}"><i class="fa fa-link"></i></a>
+{% if project.excerpt %}
+
+* {{ project.excerpt | strip_html }}{% endif %}
+
+{% assign projectcount = projectcount | minus: 1 %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+{% if count > 0 %}
+{% if page.authorname == 'Murat Kahveci' %}
+
+## Publications
+
+{% else if %}
+
+## Joint Publications
+
+Please note that this page includes only joint publications with the kahveci group. {{ page.authorname }}'s
+    webpage would probably have the complete list of publications.
+
+{% endif %}
+{% endif %}
+
+
+{% if booksq == true %}
+
+### Books
+
+{% for book in books %}
+{% if book.authors contains searchstring %}
+
+__{{ count }}__. {{ book.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{book.url}}"><i class="fa fa-link"></i></a>
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if jpapersq == true %}
+
+### Journal Articles
+
+{% for jpaper in journals %}
+{% if jpaper.authors contains searchstring %}
+
+__{{ count }}__. {{ jpaper.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{jpaper.url}}"><i class="fa fa-link"></i></a>
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+{% if cpapersq == true %}
+
+### Conference Papers
+
+{% for cpaper in conferences %}
+{% if cpaper.authors contains searchstring %}
+
+__{{ count }}__. {{ cpaper.ref }} <a class="noCrossRef" href="{{ site.urlx }}{{cpaper.url}}"><i class="fa fa-link"></i></a>
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if coursecount > 0 %}
+
+## Courses
+
+{% for course in courses %}
+{% if course.instructor %}
+{% if page.authorname == course.instructor %}
+
+__{{ coursecount }}__. {{ course.code }} ▹ {{ course.title }} ▹
+    {{ course.institution }} ▹ {{ course.semester }} <a class="noCrossRef" href="{{ site.urlx }}{{course.url}}"><i class="fa fa-link"></i></a>
+
+    {% endif %}
+    {% endif %}
+    {% assign coursecount = coursecount | minus: 1 %}
+    {% endfor %}
+{% endif %}
+
+{% if postcount > 0 %}
+
+## Posts
+
+{% for post in site.posts %}
+{% if post.author %}
+{% if page.authorname == post.author %}
+
+__{{ postcount }}__. {{ post.title }} ▹
+    {{ post.date | date: "%B %d, %Y" }} <a class="noCrossRef" href="{{ site.urlx }}{{post.url}}"><i class="fa fa-link"></i></a>
+    {% if post.excerpt %}<br>{{ post.excerpt | strip_html | truncate: 160 }}{% endif %}
+    {% endif %}
+    {% endif %}
+    {% assign postcount = postcount | minus: 1 %}
+    {% endfor %}
+{% endif %}
+

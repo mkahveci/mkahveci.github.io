@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SCORM package implementations in D2L.">
+<meta name="keywords" content="newsonline_teaching,  ">
+<title>Installing a Learning Object to the D2L Environment | Kahveci Group</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-murat.css">
+<!--<link rel="stylesheet" href="css/customstyles.min.css">-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="mkahveci.github.io" href="http://localhost:4011/feed.xml">
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"/><img src="images/logo-title.svg" alt="logo"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:murat@kahveci.pw?subject=Kahveci Group feedback&body=I have some feedback about the Installing a Learning Object to the D2L Environment page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Series: Online Teaching </li>
+  
+  
+  
+  <li>
+      <a title="Content" href="#">Content</a>
+      <ul>
+          
+          
+          
+          <li><a title="Critical Chemistry" href="rpm.html">Critical Chemistry</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Forums in D2L" href="bod.html">Forums in D2L</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Low Cost Options for Document Cameras" href="esy.html">Low Cost Options for Document Cameras</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Tools" href="xiw.html">Tools</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="D2L Submission Folder Setup with a Rubric" href="ydt.html">D2L Submission Folder Setup with a Rubric</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Installing a Learning Object to the D2L Environment" href="lcz.html">Installing a Learning Object to the D2L Environment</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Installing a Learning Object to the D2L Environment</h1>
+        <p class="post-meta"><time datetime="2020-08-13T00:00:00-05:00" itemprop="datePublished">Aug 13, 2020</time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"> / Murat Kahveci</span></span> /
+            
+            
+            
+            <a href="tag_news.html">news</a>, 
+            
+            
+            
+            <a href="tag_online_teaching.html">online_teaching</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">SCORM package implementations in D2L.</div>
+        
+
+        <p>This tutorial is for the <a href="https://d2l.depaul.edu/d2l/home">D2L</a> environment demonstrates how to import and use a <code class="language-plaintext highlighter-rouge">learning object</code> prepared in the <code class="language-plaintext highlighter-rouge">SCORM 1.2 standards</code>. You may read more about what is a SCORM <a href="https://scorm.com/scorm-explained/?utm_source=google&amp;utm_medium=natural_search">here</a>.</p>
+
+<h2 id="1-importing-the-package">1 Importing the package</h2>
+
+<p><code class="language-plaintext highlighter-rouge">SCORM 1.2 packages</code> are shipped with .ZIP extension. Log in to your <code class="language-plaintext highlighter-rouge">D2L course</code> and follow these steps to import a new SCORM package.</p>
+
+<h3 id="11-download-the-demo-package">1.1 Download the demo package</h3>
+
+<p><a class="button button--success button--rounded button--lg" href="/scorm-packages/test-package.zip"><i class="fas fa-download"></i> Download the demo SCORM package</a></p>
+
+<ul>
+  <li>Remarks:
+    <ul>
+      <li>Flash based simulations will not be used.</li>
+      <li>HTML5 based simulations will be preferred.
+        <ul>
+          <li>They should be compatible with all modern devices including tablets and phones.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="12-upload-to-d2l">1.2 Upload to D2L</h3>
+
+<ul>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Course Administration</code> &gt; <code class="language-plaintext highlighter-rouge">Import / Export / Copy Components</code> &gt; <code class="language-plaintext highlighter-rouge">Import Components</code> and click <code class="language-plaintext highlighter-rouge">Copy All Components</code></li>
+  <li>Select SCORM package from your desktop. In this demonstration, the file name is <code class="language-plaintext highlighter-rouge">test-package.zip</code>. See Figure 1.</li>
+</ul>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/1.jpg" alt="" style="max-width: 350px" />
+
+
+<figcaption>Figure 1. Import screen: File selection.</figcaption>
+
+</figure>
+
+<ul>
+  <li>Click <code class="language-plaintext highlighter-rouge">Import All Components</code>. Figure 2 shows the normal progress.
+    <ul>
+      <li>Remarks:
+        <ul>
+          <li>D2L supports file sizes up to 1 GB.</li>
+          <li>This demo uses a file with 283 KB. Very practical!</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/2.jpg" alt="1" style="max-width: 350px" />
+
+
+<figcaption>Figure 2. Import screen: Processing.</figcaption>
+
+</figure>
+
+<h3 id="13-viewing-the-scorm-content">1.3 Viewing the SCORM content</h3>
+
+<ul>
+  <li>Click <code class="language-plaintext highlighter-rouge">View Content</code> to access the <code class="language-plaintext highlighter-rouge">Content</code> tab.
+    <ul>
+      <li>Figure 3 shows that a new menu item is added to the Table of Contents.</li>
+      <li>When the menu item is clicked, the content appears in the main block with a <code class="language-plaintext highlighter-rouge">SCORM object</code> sign.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/3.jpg" alt="1" />
+
+
+<figcaption>Figure 3. SCORM content appears in the Table of Contents</figcaption>
+
+</figure>
+
+<h2 id="2-accessing-the-content">2 Accessing the content</h2>
+
+<ul>
+  <li>Click the link title <code class="language-plaintext highlighter-rouge">General Chemistry Lab I ▹ Interactive</code></li>
+  <li>Figures 4 - 8 shows the D2L snapshots of various views in D2L. TEST ++++=====</li>
+</ul>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/6.jpg" alt="1" />
+
+
+<figcaption>Figure 4. Text based content.</figcaption>
+
+</figure>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/7.jpg" alt="1" />
+
+
+<figcaption>Figure 5. Simulation.</figcaption>
+
+</figure>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/8.jpg" alt="1" />
+
+
+<figcaption>Figure 6. Fill in the blank type activity. Feedback is immediate for learning. Not graded.</figcaption>
+
+</figure>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/9.jpg" alt="1" />
+
+
+<figcaption>Figure 7. SCORM quiz. Graded, no feedback. Testing the knowledge gain.</figcaption>
+
+</figure>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/10.jpg" alt="1" />
+
+
+<figcaption>Figure 8. Upon SCORM quiz completion, a item is created in the `Grades` module.</figcaption>
+
+</figure>
+
+<h2 id="3-benefits">3 Benefits</h2>
+
+<ul>
+  <li>All of the content is free for students.</li>
+  <li>Easy to set up an experiment in D2L.
+    <ul>
+      <li>All logical sequences with content and activities will be followed by all sections.</li>
+      <li>Any content type like <code class="language-plaintext highlighter-rouge">.pdf</code>, <code class="language-plaintext highlighter-rouge">.docx</code>, <code class="language-plaintext highlighter-rouge">.xlsx</code> can be embedded.</li>
+    </ul>
+  </li>
+  <li>Content can be updated as needed.</li>
+</ul>
+
+<h2 id="4-limitations">4 Limitations</h2>
+
+<ul>
+  <li>Videos are hosted by <a href="https://www.youtube.com">YouTube</a>.
+    <ul>
+      <li>Panopto sometimes imposes strict share limitations.</li>
+      <li>Copying movies from one course to another often produces broken links.</li>
+    </ul>
+  </li>
+  <li>We don’t make new simulations so we cannot change them.
+    <ul>
+      <li>
+        <p>This particular demo uses a simulation from <a href="https://phet.colorado.edu">PhET Interactive Simulations</a></p>
+      </li>
+      <li>
+        <p>I have been following PhET Interactive Simulations since it has started and <a href="https://www.acs.org/content/acs/en/education/students/highschool/chemistryclubs/activities/simulations.html">ACS</a> lists PhET Interactive Simulations in the first place of their list (see Figure 9).</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+
+<img class="docimage" src="images//blog/lcz/5.jpg" alt="1" />
+
+
+<figcaption>Figure 9. ACS lists PhET Interactive Simulations in the first place of their list.</figcaption>
+
+</figure>
+
+    </div>
+
+
+
+</article>
+
+
+<div id="commento"></div>
+<script src="https://cdn.commento.io/js/commento.js"></script>
+<noscript>Please enable JavaScript to load the comments.</noscript>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+          <p><img src="images/logo-large.svg" alt="logo"/></p>      
+               &copy;2021 Kahveci Group. All rights reserved. <br />
+ 
+Site last generated: Aug 23, 2021 <br />
+                </div>
+            </div>
+</footer>
+<script src="https://www.w3counter.com/tracker.js?id=133645"></script>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-129160204-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

@@ -1,0 +1,286 @@
+I"�,<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 6</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a>    <ul>
+      <li><a href="#11-prepare-the-buffers-a1-e1" id="markdown-toc-11-prepare-the-buffers-a1-e1">1.1 Prepare the buffers A1-E1</a></li>
+      <li><a href="#12-generate-the-plot-of-ph-vs-log-frac-base--acid-" id="markdown-toc-12-generate-the-plot-of-ph-vs-log-frac-base--acid-">1.2 Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)</a></li>
+      <li><a href="#13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor" id="markdown-toc-13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor">1.3 Generate the plot pH vs. the logarithm of the dilution factor</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a>    <ul>
+      <li><a href="#31-total-volumes-of-buffer-solutions" id="markdown-toc-31-total-volumes-of-buffer-solutions">3.1 Total volumes of buffer solutions</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-misconceptions" id="markdown-toc-41-misconceptions">4.1 Misconceptions</a>        <ul>
+          <li><a href="#411-henderson-hasselbalch-plot" id="markdown-toc-411-henderson-hasselbalch-plot">4.1.1 Henderson-Hasselbalch plot</a></li>
+          <li><a href="#412-dilution-plot" id="markdown-toc-412-dilution-plot">4.1.2 Dilution plot</a></li>
+        </ul>
+      </li>
+      <li><a href="#43-formatting-issues" id="markdown-toc-43-formatting-issues">4.3 Formatting Issues</a>        <ul>
+          <li><a href="#431-data-table" id="markdown-toc-431-data-table">4.3.1 Data table</a></li>
+        </ul>
+      </li>
+      <li><a href="#44-feedback" id="markdown-toc-44-feedback">4.4 Feedback</a></li>
+      <li><a href="#45-grades" id="markdown-toc-45-grades">4.5 Grades</a></li>
+      <li><a href="#46-team-grading" id="markdown-toc-46-team-grading">4.6 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<h3 id="11-prepare-the-buffers-a1-e1">1.1 Prepare the buffers A1-E1</h3>
+
+<ul>
+  <li>Calculate the concentration of each component present in buffers A1-E1 using the concentration of each stock solution, the volume of each solution delivered, and the total volume of buffer created.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Solution</th>
+      <th style="text-align: center">Volume (mL) of \(CH_3COOH\) or \(NH_4Cl\)</th>
+      <th style="text-align: center">Volume (mL) of \(CH_3COONa\) or \(NH_3\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">A1</td>
+      <td style="text-align: center">15.00</td>
+      <td style="text-align: center">15.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">B1</td>
+      <td style="text-align: center">20.00</td>
+      <td style="text-align: center">10.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C1</td>
+      <td style="text-align: center">25.00</td>
+      <td style="text-align: center">5.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">D1</td>
+      <td style="text-align: center">5.00</td>
+      <td style="text-align: center">25.00</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">E1</td>
+      <td style="text-align: center">10.00</td>
+      <td style="text-align: center">20.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="12-generate-the-plot-of-ph-vs-log-frac-base--acid-">1.2 Generate the plot of pH vs. \(\log \frac{ [base] }{ [acid] }\)</h3>
+
+<ul>
+  <li>Fit the data to a line (i.e. trendline).</li>
+  <li>Calculate the slope (3 sig. figs required) using <code class="language-plaintext highlighter-rouge">=SLOPE()</code> function in Excel.</li>
+  <li>Calculate the intercept (3 sig. figs required) using <code class="language-plaintext highlighter-rouge">=INTERCEPT()</code> function in Excel.</li>
+</ul>
+
+<h3 id="13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor">1.3 Generate the plot pH vs. the logarithm of the dilution factor</h3>
+
+<ul>
+  <li>Generate a single scatter plot of pH vs. the logarithm of the dilution factor (1, 10, 100) for each buffer component using Excel.</li>
+  <li>Both data sets should be presented on the same plot.</li>
+  <li>Do not fit the data to a trendline.</li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch pH meter calibration video</li>
+  <li>Watch the videos, pass the postlab quiz, and download your data set for Experiment 6</li>
+  <li>Analyze the data in Excel</li>
+  <li>Submit your partial lab report in a PDF file and all calculations in an Excel file.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<h3 id="31-total-volumes-of-buffer-solutions">3.1 Total volumes of buffer solutions</h3>
+
+<blockquote>
+  <p>I’m not confident which volumes I should use as my volume delivered and total volume. Should I add the volumes of \(NH_4Cl\) and \(NH_3\) together as my volume delivered? In my Excel calculations, I then added 75mL from \(HCl\) for my total volume for A1, C1, and D1. The procedure mentions adding \(HCl\) to A1, C1, and D1, but I’m not sure what I need to incorporate into my total volume for B1 and E1 since the procedure doesn’t say much else about them, or what to do with A2.</p>
+</blockquote>
+
+<p>First of all, please try to make your questions more concise. It is a little hard to follow what is being asked here. Perhaps, sending your existing work might help clarify your confusion easier.</p>
+
+<p>According to Table 2, solution A1 has the following total volume:</p>
+
+\[V_{tot, A1} = V_{CH_3COOH \text{ or } NH_4Cl} + V_{CH_3COONa \text{ or } NH_3} \notag\]
+
+\[V_{tot, A1} = (15.00 \text{ mL}) + (15.00 \text{ mL}) = 30.00 \text{ mL} \notag\]
+
+<p>Likewise, sum the volume values of each species for B1, C1, D1, and E1 to calculate their respective \(V_{tot}\) values.</p>
+
+<p>Next step is about addition of \(HCl\) solution. <code class="language-plaintext highlighter-rouge">Obtain 75 mL of 0.10 M hydrochloric acid and 75 mL of 0.10 M sodium hydroxide. Add 10 mL of hydrochloric acid to solutions A1, C1, D1, and Water 1.</code></p>
+
+<p>I will show the volume calculation for A1 only. 10.00 mL \(HCl\) solution is added to A1. Thus:</p>
+
+\[V_{tot, A1 \text{ with } HCl} = V_{tot, A1} + V_{HCl} \notag\]
+
+\[V_{tot, A1 \text{ with } HCl} = (30.00 \text{ mL}) + (10.00 \text{ mL}) = 40.00 \text{ mL} \notag\]
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-misconceptions">4.1 Misconceptions</h3>
+
+<h4 id="411-henderson-hasselbalch-plot">4.1.1 Henderson-Hasselbalch plot</h4>
+
+<ul>
+  <li>The plot should have one data series</li>
+  <li>Variables are confused:
+    <ul>
+      <li>\(x-\)axis should be \(\log \frac{ [base] }{ [acid] }\).
+        <ul>
+          <li>One refers to this variable as <code class="language-plaintext highlighter-rouge">Henderson-Hasselbalch constant</code>.
+            <ul>
+              <li>How can a constant be a variable at the same time, plotted in the \(x-\)axis?</li>
+              <li>So, common sense can easily avoid some confusions<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>See the relevant instructions <a href="/fbo#12-generate-the-plot-of-ph-vs-log-frac-base--acid-">above</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Log[base/acid]</p>
+</blockquote>
+
+<p>It should be \(\log \frac{ [base] }{ [acid] }\). Bracket represents molarity. Bracket of base/acid does not represent molarity.</p>
+
+<h4 id="412-dilution-plot">4.1.2 Dilution plot</h4>
+
+<ul>
+  <li>Variables are confused:
+    <ul>
+      <li>\(x-\)axis should be \(\log (\text{dilution factor})\).</li>
+      <li>See the relevant instructions <a href="/fbo#13-generate-the-plot-ph-vs-the-logarithm-of-the-dilution-factor">above</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="43-formatting-issues">4.3 Formatting Issues</h3>
+
+<blockquote>
+  <p>NH3 and NH4</p>
+</blockquote>
+
+<p>Should be \(NH_3\) and \(NH_4\)</p>
+
+<h4 id="431-data-table">4.3.1 Data table</h4>
+
+<ul>
+  <li>Sig. fig. errors. For example:
+    <ul>
+      <li>Presented:
+        <ul>
+          <li>0 mL</li>
+          <li>5 mL</li>
+        </ul>
+      </li>
+      <li>Expected:
+        <ul>
+          <li>0.00 mL</li>
+          <li>5.00 mL</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Title is missing</li>
+</ul>
+
+<h3 id="44-feedback">4.4 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="45-grades">4.5 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">88.55%</td>
+      <td style="text-align: center">8.19%</td>
+      <td style="text-align: center">91.80%</td>
+      <td style="text-align: center">100.00%</td>
+      <td style="text-align: center">73.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="46-team-grading">4.6 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Buffer Solutions Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Overall Clarity and Flow]
+    B2[Abstract]
+    B3[Results]
+    B4[Proofreading and General Formatting]
+    B5[Strong Acid- Strong Base Data Table]
+    B6[Henderson- Hasselbalch Plot]
+    B7[Dilution Plot]
+    B8[Discussion]
+
+    C1[Procedure]
+    C2[Table Formatting]
+    C3[Figure Formatting]
+    C4[Prelab]
+    C5[Postlab]
+    C6[Excel Calculations]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+    B--&gt;B5;
+    B--&gt;B6;
+    B--&gt;B7;
+    B--&gt;B8;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+    C--&gt;C5;
+    C--&gt;C6;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
+:ET

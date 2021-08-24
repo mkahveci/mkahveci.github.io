@@ -1,0 +1,40 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Murat Kahveci, Ph.D.
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output:
+      type: frontmatter
+
+  - title: About
+    output: web, pdf
+    folderitems:
+    - title: Curriculum Vitae
+      url: /murat.html
+      output: web, pdf
+
+    - title: PDF download
+      url: /aao.html
+      output: web       
+
+    - title: Biking Activities
+      url: /biking
+      output: web    
+      
+    - title: Request for Letter of Recommendation
+      url: /xxz.html
+      output: web       

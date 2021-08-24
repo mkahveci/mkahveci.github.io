@@ -1,0 +1,124 @@
+I";<p><a class="button button--primary button--pill" href="/tpv">SSQ20 CHE 139</a>
+<code class="language-plaintext success highlighter-rouge">Experiment 7</code></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#1-goals" id="markdown-toc-1-goals">1 Goals</a></li>
+  <li><a href="#2-assignment" id="markdown-toc-2-assignment">2 Assignment</a></li>
+  <li><a href="#3-qas" id="markdown-toc-3-qas">3 Q&amp;As</a></li>
+  <li><a href="#4-assessment" id="markdown-toc-4-assessment">4 Assessment</a>    <ul>
+      <li><a href="#41-feedback" id="markdown-toc-41-feedback">4.1 Feedback</a></li>
+      <li><a href="#42-grades" id="markdown-toc-42-grades">4.2 Grades</a></li>
+      <li><a href="#43-team-grading" id="markdown-toc-43-team-grading">4.3 Team grading</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1-goals">1 Goals</h2>
+
+<ul>
+  <li>Observe the effect of adding mixing various solutions or changing the temperature of a solution.</li>
+  <li>Explain the observations using the relevant chemical reactions and Le Châtelier’s principle.</li>
+  <li>Be through!
+    <ul>
+      <li>Do not simply state “Sodium hydroxide was added and the reaction shifted left.”</li>
+      <li>See the lecture notes posted for more elaborate examples.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="2-assignment">2 Assignment</h2>
+
+<ul>
+  <li>Watch the videos, pass the postlab quiz, and download the Word document worksheet posted.</li>
+  <li>Make careful observations.</li>
+  <li>Type your responses on the Word document.</li>
+  <li>Still photos are shown in addition to the video content to allow you to see the results more clearly.
+    <ul>
+      <li>For precipitates, describe the color, apparent consistency.</li>
+      <li>For translucent solutions, state the color and the depth of color (dark, light, etc.).</li>
+      <li>Note the formation of gas bubbles and any comments regarding temperature changes.</li>
+    </ul>
+  </li>
+  <li>Upload your final worksheet as a PDF document.</li>
+  <li>You should review the <code class="language-plaintext highlighter-rouge">Lab Report Guidelines</code>, <code class="language-plaintext highlighter-rouge">Sample General Chemistry Lab Report</code>, and <code class="language-plaintext highlighter-rouge">Appendix E</code> on D2L while writing to ensure that your drafts are correctly formatted.</li>
+</ul>
+
+<h2 id="3-qas">3 Q&amp;As</h2>
+
+<p>No incoming questions for this experiment.</p>
+
+<h2 id="4-assessment">4 Assessment</h2>
+
+<h3 id="41-feedback">4.1 Feedback</h3>
+
+<ul>
+  <li>The PDF file you uploaded: annotations are highlighted with gray background and pink font.</li>
+  <li>E-Rubric: D2L will show the rubric with scores and any feedback provided.</li>
+</ul>
+
+<h3 id="42-grades">4.2 Grades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Term Statistics<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></th>
+      <th style="text-align: center">Average</th>
+      <th style="text-align: center">Stdev</th>
+      <th style="text-align: center">Median</th>
+      <th style="text-align: center">Maximum</th>
+      <th style="text-align: center">Minimum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">SSQ 2020</td>
+      <td style="text-align: center">82.72%</td>
+      <td style="text-align: center">8.84%</td>
+      <td style="text-align: center">83.00%</td>
+      <td style="text-align: center">96.50%</td>
+      <td style="text-align: center">70.00%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="43-team-grading">4.3 Team grading</h3>
+
+<pre><code class="language-mermaid">  graph LR;
+    A[Is the assignment for the Le Chateliers Principle Experiment graded as a team?]
+    B[Which sections are graded by the instructor?]
+    C[Which sections are graded by the teaching assistant?]
+
+    B1[Proofreading and General Formatting]
+    B2[Magnesium Chloride Solution]
+    B3[Cobalt II Chloride Solution]
+    B4[Silver Ion Soluion]
+
+    C1[Prelab]
+    C2[Postlab]
+    C3[Saturated Sodium Chloride Solution]
+    C4[Potassium Chromate Solution]
+
+    A--yes--&gt;B;
+    A--yes--&gt;C;
+    B--&gt;B1;
+    B--&gt;B2;
+    B--&gt;B3;
+    B--&gt;B4;
+
+    C--&gt;C1;
+    C--&gt;C2;
+    C--&gt;C3;
+    C--&gt;C4;
+</code></pre>
+
+<p>If you have any questions regarding your scores, please let <a href="mailto:mkahveci@depaul.edu">me</a> or your <a href="mailto:brownt1129@gmail.com">TA</a> know.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>All zero values are excluded. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
