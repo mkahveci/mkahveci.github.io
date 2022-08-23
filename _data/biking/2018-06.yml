@@ -1,0 +1,40 @@
+monthyear: Jun 2018
+year: 2018
+url: /nkq #  This month's file name from the collection _biking-activities
+urlannual: /wla #  This year's file name from the collection _biking-annual
+activities:
+  - date: 6/29/18
+    distance: 24.59
+    duration: 67.72
+    calories: 937
+    averagespeed: 21.8                     
+  - date: 6/27/18
+    distance: 10.34
+    duration: 30.52
+    calories: 346
+    averagespeed: 20.3
+  - date: 6/27/18
+    distance: 31.39
+    duration: 73.68
+    calories: 1278
+    averagespeed: 25.6
+  - date: 6/23/18
+    distance: 60.24
+    duration: 252.45
+    calories: 2697
+    averagespeed: 14.3
+  - date: 6/16/18
+    distance: 48.30
+    duration: 132.95
+    calories: 1613
+    averagespeed: 21.8
+  - date: 6/15/18
+    distance: 44.34
+    duration: 116.93
+    calories: 1763
+    averagespeed: 22.7
+  - date: 6/3/18
+    distance: 39.54
+    duration: 109.65
+    calories: 1001
+    averagespeed: 21.6                               

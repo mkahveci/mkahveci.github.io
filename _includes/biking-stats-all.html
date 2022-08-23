@@ -1,0 +1,17 @@
+{% assign total_distance = 0 %}
+{% assign total_duration = 0 %}
+{% assign total_calories = 0 %}
+
+{% for activity_hash in site.data.biking %}
+{% assign activity = activity_hash[1] %}
+
+{% if activity.year == include.year %}
+
+        {% for subactivity in activity.activities %}
+            {% assign total_distance = total_distance | plus: subactivity.distance %}
+            {% assign total_duration = total_duration | plus: subactivity.duration  %}
+            {% assign total_calories = total_calories | plus: subactivity.calories  %}
+        {% endfor %}
+
+{% endif %}
+{% endfor %}

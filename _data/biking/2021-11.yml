@@ -1,0 +1,11 @@
+monthyear: November 2021
+year: 2021
+url: /iqk #  This month's file name from the collection _biking-activities
+urlannual: /pfj #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 11/7/21
+    distance: 4.48
+    duration: 13
+    calories: 124
+    averagespeed: 21.0

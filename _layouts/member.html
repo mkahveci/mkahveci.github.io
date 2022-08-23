@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+{% assign member = page %}
+
+<div class="row">
+	<div class="col-lg-12">
+		{% if member.image %}
+		<img width="170px" class="pull-left pad-right media-object d-none d-sm-block" src="{{ member.image }}">
+		{% endif %}
+		<div class="titlebox">
+			<div class="bigtitle">
+				{{ member.title }}
+			</div>
+			<p>
+			<div class="smallhead">
+				{{ member.position }}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		{% if member.cv %}
+		<div class="smallhead">
+			CV
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-file-text-o fa-fw"></i>
+			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.twitter %}
+		<div class="smallhead">
+			Twitter
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-twitter fa-fw"></i>
+			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.github %}
+		<div class="smallhead">
+			GitHub
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-github-alt fa-fw"></i>
+			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.googlescholar %}
+		<div class="smallhead">
+			Google Scholar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-book fa-fw"></i>
+			<a class="off" href="http://scholar.google.com/citations?user={{ member.googlescholar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.calendar %}
+		<div class="smallhead">
+			Calendar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-calendar fa-fw"></i>
+			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.website %}
+		<div class="smallhead">
+			Website
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-globe fa-fw"></i>
+			<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+		<div class="smallhead">
+			Email
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-inbox fa-fw"></i>
+			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			{{ content }}
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>

@@ -1,0 +1,9 @@
+<!-- start custom article top snippet -->
+<!-- {% if page.ref %} {{ page.ref | markdownify }} {% endif %} -->
+
+{% if page.book %} <a class="button button--outline-success button--pill" href="/book">Book</a> {% endif %}
+{% if page.journal %} <a class="button button--outline-success button--pill" href="/journal">Journal Article</a> {% endif %}
+{% if page.conference %} <a class="button button--outline-success button--pill" href="/conference">Conference Paper</a> {% endif %}
+{% if page.project %} <a class="button button--outline-success button--pill" href="/projects">Project</a> {% endif %}
+{% if page.short_name %} {% include member-links.html %} {% endif %}
+<!-- end custom article top snippet -->

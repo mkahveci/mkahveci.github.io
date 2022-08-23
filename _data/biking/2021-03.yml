@@ -1,0 +1,17 @@
+monthyear: March 2021
+year: 2021
+url: /jcm #  This month's file name from the collection _biking-activities
+urlannual: /pfj #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 3/21/21
+    distance: 27.35
+    duration: 78
+    calories: 697
+    averagespeed: 21.1
+
+  - date: 3/3/21
+    distance: 11.54
+    duration: 42
+    calories: 263
+    averagespeed: 16.4

@@ -1,0 +1,11 @@
+monthyear: Feb 2020
+year: 2020
+url: /xfz #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+  - date: 2/23/20
+    distance: 24.53
+    duration: 71.0
+    calories: 610
+    averagespeed: 20.7
+                    

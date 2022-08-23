@@ -1,0 +1,35 @@
+monthyear: September 2020
+year: 2020
+url: /qgl #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 9/26/20
+    distance: 38.72
+    duration: 103
+    calories: 934
+    averagespeed: 22.6
+
+  - date: 9/25/20
+    distance: 27.09
+    duration: 72
+    calories: 718
+    averagespeed: 22.5
+
+  - date: 9/19/20
+    distance: 74.47
+    duration: 187
+    calories: 2085
+    averagespeed: 24.0
+
+  - date: 9/12/20
+    distance: 50.83
+    duration: 127
+    calories: 1415
+    averagespeed: 23.9
+
+  - date: 9/7/20
+    distance: 27.24
+    duration: 69
+    calories: 751
+    averagespeed: 23.8

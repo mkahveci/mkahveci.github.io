@@ -1,0 +1,110 @@
+---
+layout: default
+categories:
+ - projects
+---
+
+{% for test in site.data.projects %}
+	{% if test.title == page.project %}
+		{% assign project = test %}
+	{% endif %}
+{% endfor %}
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			{% assign crumbs = page.title | breadcrumb_array %}
+  			{% for crumb in crumbs %}
+  				{% assign name = crumb | split: '/' | last %}
+  				{% for page in site.pages %}
+  					{% if page.title == crumb %}
+  						{% assign url = page.url %}
+  					{% endif %}
+  				{% endfor %}
+  				{% if crumb == page.title %}
+  				<li class="breadcrumb-item active">
+            {{ name }}
+          </li>
+  				{% else %}
+  				<li class="breadcrumb-item">
+            <a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a>
+          </li>
+  				{% endif %}
+  			{% endfor %}
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			{{ project.description }}
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			  <div>
+    				{{ page.position | markdownify | remove: "<p>" | remove: "</p>" }}
+ 			  </div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Duration
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			  <div>
+    				{{ page.duration | markdownify | remove: "<p>" | remove: "</p>" }}
+ 			  </div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Host Institution
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			  <div>
+    				{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}
+ 			  </div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Funding Institution
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			  <div>
+    				{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}
+ 			  </div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Budget
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			  <div>
+    				{{ page.budget | markdownify | remove: "<p>" | remove: "</p>" }}
+ 			  </div>
+		</div>
+
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			{{ content }}
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>

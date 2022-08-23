@@ -1,0 +1,16 @@
+.DS_Store
+_site/
+.sass-cache/
+.jekyll-metadata
+/_site/
+/.idea/
+/.jekyll-cache/
+/.sass-cache/
+/.vscode/
+/.bundle/
+/vendor/
+/_site/
+/.vscode/
+/.sass-cache/
+/.jekyll-cache/
+/_site/

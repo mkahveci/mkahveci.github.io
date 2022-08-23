@@ -1,0 +1,18 @@
+<ul class="menu">
+  <li>
+    {% if page.url == "/team" %}
+      <a class="button button--outline-primary button--pill active" href="/team">
+    {% else %}
+      <a class="button button--outline-primary button--pill" href="/team">
+    {% endif %}
+    Current Members</a>
+  </li>
+<li>
+    {% if page.url == "/alumni" %}
+    <a class="button button--outline-primary button--pill active" href="/alumni">
+    {% else %}
+    <a class="button button--outline-primary button--pill" href="/alumni">
+    {% endif %}
+    Alumni</a>
+</li>
+</ul>

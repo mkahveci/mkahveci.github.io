@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Installing a Learning Object to the D2L Environment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Kahveci Group" href="https://kahveci.pw/new/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129160204-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129160204-1');
+</script>
+
+	<!-- w3counter.com -->
+	<script src="https://www.w3counter.com/tracker.js?id=133645"></script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					kahveci group
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">publications</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">projects</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/team/">team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	<div class="blog-post">
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/lcz" class="off">Installing a Learning Object to the D2L Environment</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						13 Aug 2020
+						
+						by <a class="off" href="
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									/murat
+								
+							
+						">
+						Murat Kahveci
+						</a>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			
+			<div class="post">
+				<p>This tutorial is for the <a href="https://d2l.depaul.edu/d2l/home">D2L</a> environment demonstrates how to import and use a <code class="language-plaintext highlighter-rouge">learning object</code> prepared in the <code class="language-plaintext highlighter-rouge">SCORM 1.2 standards</code>. You may read more about what is a SCORM <a href="https://scorm.com/scorm-explained/?utm_source=google&amp;utm_medium=natural_search">here</a>.</p>
+
+<h2 id="importing-the-package">Importing the package</h2>
+
+<p><code class="language-plaintext highlighter-rouge">SCORM 1.2 packages</code> are shipped with .ZIP extension. Log in to your <code class="language-plaintext highlighter-rouge">D2L course</code> and follow these steps to import a new SCORM package.</p>
+
+<h3 id="download-the-demo-package">Download the demo package</h3>
+
+<p><a class="button button--success button--rounded button--lg" href="/scorm-packages/test-package.zip"><i class="fas fa-download"></i> Download the demo SCORM package</a></p>
+
+<ul>
+  <li>Remarks:
+    <ul>
+      <li>Flash based simulations will not be used.</li>
+      <li>HTML5 based simulations will be preferred.
+        <ul>
+          <li>They should be compatible with all modern devices including tablets and phones.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="upload-to-d2l">Upload to D2L</h3>
+
+<ul>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Course Administration</code> &gt; <code class="language-plaintext highlighter-rouge">Import / Export / Copy Components</code> &gt; <code class="language-plaintext highlighter-rouge">Import Components</code> and click <code class="language-plaintext highlighter-rouge">Copy All Components</code></li>
+  <li>Select SCORM package from your desktop. In this demonstration, the file name is <code class="language-plaintext highlighter-rouge">test-package.zip</code>. See Figure 1.</li>
+</ul>
+
+<p><img src="/images/blog/lcz/1.jpg" alt="Figure 1" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 1</em>. Import screen: File selection.</small></p>
+
+<ul>
+  <li>Click <code class="language-plaintext highlighter-rouge">Import All Components</code>. Figure 2 shows the normal progress.
+    <ul>
+      <li>Remarks:
+        <ul>
+          <li>D2L supports file sizes up to 1 GB.</li>
+          <li>This demo uses a file with 283 KB. Very practical!</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/blog/lcz/2.jpg" alt="Figure 2" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 2</em>. Import screen: Processing.</small></p>
+
+<h3 id="viewing-the-scorm-content">Viewing the SCORM content</h3>
+
+<ul>
+  <li>Click <code class="language-plaintext highlighter-rouge">View Content</code> to access the <code class="language-plaintext highlighter-rouge">Content</code> tab.
+    <ul>
+      <li>Figure 3 shows that a new menu item is added to the Table of Contents.</li>
+      <li>When the menu item is clicked, the content appears in the main block with a <code class="language-plaintext highlighter-rouge">SCORM object</code> sign.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/blog/lcz/3.jpg" alt="Figure 3" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 3</em>. SCORM content appears in the Table of Contents</small></p>
+
+<h2 id="accessing-the-content">Accessing the content</h2>
+
+<ul>
+  <li>Click the link title <code class="language-plaintext highlighter-rouge">General Chemistry Lab I ▹ Interactive</code></li>
+  <li>
+    <p>Figures 4 - 8 shows the D2L snapshots of various views in D2L</p>
+
+    <p><img src="/images/blog/lcz/6.jpg" alt="Figure 4" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 4</em>. Text based content.</small></p>
+
+    <p><img src="/images/blog/lcz/7.jpg" alt="Figure 5" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 5</em>. Simulation.</small></p>
+
+    <p><img src="/images/blog/lcz/8.jpg" alt="Figure 6" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 6</em>. Fill in the blank type activity. Feedback is immediate for learning. Not graded.</small></p>
+
+    <p><img src="/images/blog/lcz/9.jpg" alt="Figure 7" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 7</em>. SCORM quiz. Graded, no feedback. Testing the knowledge gain.</small></p>
+
+    <p><img src="/images/blog/lcz/10.jpg" alt="Figure 8" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 8</em>. Upon SCORM quiz completion, a item is created in the <code class="language-plaintext highlighter-rouge">Grades</code> module.</small></p>
+  </li>
+</ul>
+
+<h2 id="benefits">Benefits</h2>
+
+<ul>
+  <li>All of the content is free for students.</li>
+  <li>Easy to set up an experiment in D2L.
+    <ul>
+      <li>All logical sequences with content and activities will be followed by all sections.</li>
+      <li>Any content type like <code class="language-plaintext highlighter-rouge">.pdf</code>, <code class="language-plaintext highlighter-rouge">.docx</code>, <code class="language-plaintext highlighter-rouge">.xlsx</code> can be embedded.</li>
+    </ul>
+  </li>
+  <li>Content can be updated as needed.</li>
+</ul>
+
+<h2 id="limitations">Limitations</h2>
+
+<ul>
+  <li>Videos are hosted by <a href="https://www.youtube.com">YouTube</a>.
+    <ul>
+      <li>Panopto sometimes imposes strict share limitations.</li>
+      <li>Copying movies from one course to another often produces broken links.</li>
+    </ul>
+  </li>
+  <li>We don’t make new simulations so we cannot change them.
+    <ul>
+      <li>
+        <p>This particular demo uses a simulation from <a href="https://phet.colorado.edu">PhET Interactive Simulations</a></p>
+      </li>
+      <li>
+        <p>I have been following PhET Interactive Simulations since it has started and <a href="https://www.acs.org/content/acs/en/education/students/highschool/chemistryclubs/activities/simulations.html">ACS</a> lists PhET Interactive Simulations in the first place of their list (see Figure 9).</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/blog/lcz/5.jpg" alt="Figure 9" style="width:400px;" class="shadow" />
+<br /><small><em>Figure 9</em>. ACS lists PhET Interactive Simulations in the first place of their list.</small></p>
+
+
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>
+
+</div>
+
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

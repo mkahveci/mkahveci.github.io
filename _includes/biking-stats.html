@@ -1,0 +1,51 @@
+{% for activity_hash in site.data.biking["_index"] %}
+{% assign activity = site.data.biking[activity_hash] %}
+
+{% if activity.monthyear == include.monthyear %}
+
+        {% assign total_distance = 0 %}
+        {% assign total_duration = 0 %}
+        {% assign total_calories = 0 %}
+
+        {% for subactivity in activity.activities %}
+            {% assign total_distance = total_distance | plus: subactivity.distance %}
+            {% assign total_duration = total_duration | plus: subactivity.duration  %}
+            {% assign total_calories = total_calories | plus: subactivity.calories  %}
+        {% endfor %}
+
+{% assign total_distance_ = total_distance | round: 0  %}
+{% assign total_duration_ = total_duration | round: 0  %}
+{% assign total_calories = total_calories | round: 0  %}
+   
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Overall Statistics of {{ include.monthyear }} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of activities:</td>
+      <td>{{ activity.activities | size }}</td>
+    </tr>
+    <tr>
+      <td>Total distance:</td>
+      <td>{% include numberWithCommas.html number=total_distance_ %} km ({{ total_distance | times: 0.621371 | round: 2 }} mi)</td>
+    </tr>
+    <tr>
+      <td>Total duration:</td>
+      <td>{% include numberWithCommas.html number=total_duration_ %} min ({{ total_duration | divided_by: 60. | round: 2 }} h) </td>
+    </tr>
+    <tr>
+      <td>Total calories:</td>
+      <td>{% include numberWithCommas.html number=total_calories %} Cal</td>
+    </tr>
+  </tbody>
+</table>
+
+{% if activity.url != page.url %}
+<a class="button button--outline-primary button--pill" href="{{ activity.url }}">Read more</a>
+{% endif %}
+
+{% endif %}
+{% endfor %}

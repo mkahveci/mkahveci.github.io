@@ -1,0 +1,113 @@
+{%- include counter.html -%}
+
+{% if projectcount > 0 %}
+
+{% if page.name == 'Murat Kahveci' %}
+
+## Projects
+
+{% else if %} 
+
+## Joint Projects
+
+{% endif %}
+
+{% for project in site.categories.projects %}
+{% if project.contributors contains searchstring %}
+
+_{{projectcount}}_. [{{ project.title }}]({{ project.url }}) ({{ project.duration }})
+
+{% assign projectcount = projectcount | minus: 1 %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+{% if count > 0 %}
+{% if page.name == 'Murat Kahveci' %}
+
+## Publications
+
+{% else if %}
+
+## Joint Publications
+
+{% endif %}
+{% endif %}
+
+
+{% if booksq == true %}
+
+### Books
+
+{% for book in books %}
+{% if book.authors contains searchstring %}
+
+_{{ count }}_. {{ book.ref }}
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if jpapersq == true %}
+
+### Journal Articles
+
+{% for jpaper in journals reversed %}
+{% if jpaper.authors contains searchstring %}
+
+_{{ count }}_. {{ jpaper.ref }}
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+{% if cpapersq == true %}
+
+### Conference Papers
+
+{% for cpaper in conferences reversed %}
+{% if cpaper.authors contains searchstring %}
+
+_{{ count }}_. {{ cpaper.ref }}
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if coursecount > 0 %}
+
+## Courses
+
+{% for course in site.categories.courses %}
+{% if course.instructor %}
+{% if page.name == course.instructor %}
+_{{ coursecount }}_. <a href="{{ course.url }}" class="off">{{ course.code }}</a> {{ course.title }}, taught at {{ course.institution }} in {{ course.semester }}.
+    {% endif %}
+    {% endif %}
+    {% assign coursecount = coursecount | minus: 1 %}
+    {% endfor %}
+{% endif %}
+
+{% if postcount > 0 %}
+
+## Posts
+
+{% for post in site.categories.blog %}
+{% if post.author %}
+{% if page.name == post.author %}
+
+_{{ postcount }}_. <a href="{{ post.url }}" class="off">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y"  }}
+    {% endif %}
+    {% endif %}
+    {% assign postcount = postcount | minus: 1 %}
+    {% endfor %}
+{% endif %}
+

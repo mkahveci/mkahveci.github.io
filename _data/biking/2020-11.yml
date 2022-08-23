@@ -1,0 +1,11 @@
+monthyear: November 2020
+year: 2020
+url: /fpc #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 11/7/20
+    distance: 27.20
+    duration: 68
+    calories: 740
+    averagespeed: 23.9

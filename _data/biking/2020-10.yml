@@ -1,0 +1,11 @@
+monthyear: October 2020
+year: 2020
+url: /nha #  This month's file name from the collection _biking-activities
+urlannual: /fyv #  This year's file name from the collection _biking-annual
+activities:
+
+  - date: 10/10/20
+    distance: 27.16
+    duration: 71
+    calories: 656
+    averagespeed: 23.0

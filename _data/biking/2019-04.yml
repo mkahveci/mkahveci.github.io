@@ -1,0 +1,16 @@
+monthyear: Apr 2019
+year: 2019
+url: /mgz #  This month's file name from the collection _biking-activities
+urlannual: /osn #  This year's file name from the collection _biking-annual
+activities:
+  - date: 4/21/19
+    distance: 24.82
+    duration: 65.10
+    calories: 1040
+    averagespeed: 22.9 
+
+  - date: 4/21/19
+    distance: 5.65
+    duration: 15.93
+    calories: 237
+    averagespeed: 21.3                  

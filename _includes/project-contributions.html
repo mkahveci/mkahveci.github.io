@@ -1,0 +1,80 @@
+{% assign book-count = 0 %}
+{% assign journal-count = 0 %}
+{% assign conference-count = 0 %}
+
+{% assign books = site.categories.papers | where: "book","true" %}
+
+{% for book in books %}
+{% if book.projectid contains page.projectid %}
+{% assign book-count = book-count | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% assign journals = site.categories.papers | where: "journal","true" %}
+
+{% for journal in journals %}
+{% if journal.projectid contains page.projectid %}
+{% assign journal-count = journal-count | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% assign conferences = site.categories.papers | where: "conference","true" %}
+
+{% for conference in conferences %}
+{% if conference.projectid contains page.projectid %}
+{% assign conference-count = conference-count | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% if book-count > 0 or journal-count > 0 or conference-count > 0  %}
+
+## Project Publications
+
+{% endif %}
+
+
+{% if book-count > 0 %}
+
+### Book
+
+{% for book in books %}
+{% if book.projectid contains page.projectid %}
+<p><b>{{ book-count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+{% assign book-count = book-count | minus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+
+{% if journal-count > 0 %}
+
+### Journal Article
+
+{% for journal in journals %}
+{% if journal.projectid contains page.projectid %}
+<p><b>{{ journal-count }}</b>.&nbsp;&nbsp;{{ journal.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+{% assign journal-count = journal-count | minus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+
+{% if conference-count > 0 %}
+
+### Conference Paper
+
+{% for conference in conferences %}
+{% if conference.projectid contains page.projectid %}
+<p><b>{{ conference-count }}</b>.&nbsp;&nbsp;{{ conference.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+{% assign conference-count = conference-count | minus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+

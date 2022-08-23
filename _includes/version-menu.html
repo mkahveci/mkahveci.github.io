@@ -1,0 +1,18 @@
+<ul class="menu">
+  <li>
+    {% if page.url == "/version" %}
+      <a class="button button--outline-primary button--pill active" href="/version">
+    {% else %}
+      <a class="button button--outline-primary button--pill" href="/version">
+    {% endif %}
+    Version History</a>
+  </li>
+<li>
+    {% if page.url == "/help" %}
+    <a class="button button--outline-primary button--pill active" href="/help">
+    {% else %}
+    <a class="button button--outline-primary button--pill" href="/help">
+    {% endif %}
+    Help</a>
+</li>
+</ul>
