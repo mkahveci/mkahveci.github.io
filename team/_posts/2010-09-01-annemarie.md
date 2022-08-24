@@ -5,8 +5,7 @@ short_name: annemarie
 title: Annemarie Kegler
 image: /images/team/annemarie-kegler.png
 position: Visiting Graduate Student
-excerpt: "<p>Visiting Graduate Student (Summer 2010)</p>
-<p>Visited our group in Summer 2010 and gathered data for her thesis research in chemistry education.</p>"
+active: Summer 2010
 modify_date: 2020-06-20    
 alumni: true
 ---
