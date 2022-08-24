@@ -55,7 +55,7 @@ _{{ count }}_. {{ book.ref }}
 
 ### Journal Articles
 
-{% for jpaper in journals reversed %}
+{% for jpaper in journals %}
 {% if jpaper.authors contains searchstring %}
 
 _{{ count }}_. {{ jpaper.ref }}
@@ -71,7 +71,7 @@ _{{ count }}_. {{ jpaper.ref }}
 
 ### Conference Papers
 
-{% for cpaper in conferences reversed %}
+{% for cpaper in conferences %}
 {% if cpaper.authors contains searchstring %}
 
 _{{ count }}_. {{ cpaper.ref }}
@@ -89,7 +89,7 @@ _{{ count }}_. {{ cpaper.ref }}
 {% for course in site.categories.courses %}
 {% if course.instructor %}
 {% if page.name == course.instructor %}
-_{{ coursecount }}_. <a href="{{ course.url }}" class="off">{{ course.code }}</a> {{ course.title }}, taught at {{ course.institution }} in {{ course.semester }}.
+_{{ coursecount }}_. <a href="{{ course.url }}">{{ course.code }}</a> {{ course.title }}, taught at {{ course.institution }} in {{ course.semester }}.
     {% endif %}
     {% endif %}
     {% assign coursecount = coursecount | minus: 1 %}
@@ -104,7 +104,7 @@ _{{ coursecount }}_. <a href="{{ course.url }}" class="off">{{ course.code }}</a
 {% if post.author %}
 {% if page.name == post.author %}
 
-_{{ postcount }}_. <a href="{{ post.url }}" class="off">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y"  }}
+_{{ postcount }}_. <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y"  }}
     {% endif %}
     {% endif %}
     {% assign postcount = postcount | minus: 1 %}

@@ -6,7 +6,8 @@ years:
   - 2021
   - 2020
   - 2019
-  - 2018 
+  - 2018
+permalink: /biking
 modify_date: 2022-06-28       
 ---
 

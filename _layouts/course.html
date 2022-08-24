@@ -50,12 +50,23 @@ layout: default
 			{% endif %}
 			{% if page.clevel %}
 			<div class="smallhead">
-				Course Level @ Instituion
+				Course Level
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa fa-university fa-fw"></i>
-				{{ page.clevel }} at <a class="off" href="{{ page.institutionurl }}" target=”_blank”>{{ page.institution }}</a>
+				{{ page.clevel }}
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+			{% if page.institution %}
+			<div class="smallhead">
+				Institution
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa fa-university fa-fw"></i>
+				<a class="off" href="{{ page.institutionurl }}" target=”_blank”>{{ page.institution }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
@@ -92,6 +103,15 @@ layout: default
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
+						<div class="smallhead">
+				Lifetime Support
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="/xxz">Request for Reference Letter</a>
+			</div>
+			<div class="bigspacer"></div>
 		</div>
 	</div>
 	<div class="col-lg-8">
