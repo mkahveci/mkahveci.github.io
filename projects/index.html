@@ -12,7 +12,10 @@ categories:
     <div class="media">
       <div class="media-body">
         <div class="smallhead mb-1"><a href="{{ project.url }}" class="off">{{ project.projectid }}</a></div>
-        <p class="note">{{ project.title }}<br><small>Contributors: {{ project.contributors }}</small></p>
+        <p class="note">{{ project.title }}<br>
+          <small>Contributors: {{ project.contributors }}<br>
+          {{ project.date | date_to_string }}</small>
+        </p>
       </div>
       <img class="ml-3" width=100 class="media-object" src="{{ project.image }}">
     </div>

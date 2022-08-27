@@ -1,0 +1,56 @@
+---
+layout: default
+title: kahveci group / blog / tags
+categories:
+ - blog
+---
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link off" href="/blog/">
+						<i class="fa fa-refresh fa-fw"></i> Timeline
+					</a>
+				</li>
+				<li role="presentation" class="nav-item">
+					<a class="nav-link active" href="/blog/archive/">
+						<i class="fa fa-list-ul fa-fw"></i> Index
+					</a>
+				</li>
+				<li role="presentation" class="nav-item">
+					<a class="nav-link off" href="/blog/tags/">
+						<i class="fa fa-tags fa-fw"></i> Tags
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+<div class="tags-expo">
+  <div class="tags-expo-list">
+    {% for tag in site.tags reversed %}
+    <i class="fa fa-check-square"></i> <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+  <hr/>
+  <div class="tags-expo-section">
+    {% for tag in site.tags reversed %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
+    <ul class="tags-expo-posts">
+      {% for post in tag[1] %}
+
+      <li>
+        <a class="post-title" href="{{ post.url }}">
+            {{ post.title }}
+        </a>
+      <small class="post-date">{{ post.date | date_to_string }}</small>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

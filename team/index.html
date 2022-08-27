@@ -25,7 +25,9 @@ categories:
   				</a>
  			 	<div class="media-body">
     				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
+    				<p class="note">{{ member.position }}<br>
+					<small class="post-date">{{ member.date | date_to_string }}</small>
+					</p>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
@@ -58,7 +60,9 @@ categories:
   				-->
  			 	<div class="media-body">
     				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
+    				<p class="note">{{ member.position }}<br>
+					<small class="post-date">{{ member.date | date_to_string }}</small>
+					</p>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
