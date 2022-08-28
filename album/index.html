@@ -3,7 +3,7 @@ layout: default
 title: kahveci group / album
 categories:
  - album
-published: false
+published: true
 ---
 
 {% for picture in site.categories.album %}
@@ -13,7 +13,16 @@ published: false
     <div class="media">
       <div class="media-body">
         <div class="smallhead mb-1"><a href="{{ picture.url }}" class="off">{{ picture.title }}</a></div>
-        <p class="note">{{ picture.authors }} ({{ picture.year }}). {{ picture.publisher }}</p>
+        <p class="note">by <a class="off" href="
+							{% for member in site.categories.team %}
+								{% if member.title == picture.author %}
+									{{ member.url }}
+								{% endif %}
+							{% endfor %}
+						">
+						{{ picture.author }}</a><br>
+          <small>{{ picture.date | date_to_string }}</small>
+        </p>
       </div>
       <a href="{{ picture.url }}">
         <img class="ml-3" class="media-object" src="{{ picture.image }}">

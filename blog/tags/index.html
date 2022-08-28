@@ -15,12 +15,12 @@ categories:
 					</a>
 				</li>
 				<li role="presentation" class="nav-item">
-					<a class="nav-link active" href="/blog/archive/">
+					<a class="nav-link off" href="/blog/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
 				<li role="presentation" class="nav-item">
-					<a class="nav-link off" href="/blog/tags/">
+					<a class="nav-link active" href="/blog/tags/">
 						<i class="fa fa-tags fa-fw"></i> Tags
 					</a>
 				</li>
@@ -31,11 +31,25 @@ categories:
 </div>
 
 <div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.tags reversed %}
-    <i class="fa fa-check-square"></i> <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-  </div>
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}&#x1F;{{ tag | first }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+{% assign site_tags = site_tags | split: '&#x1E;' | sort %}
+{% capture site_tags %}{% for tag in site_tags %}{{ tag | split: '&#x1F;' | last }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+{% assign site_tags = site_tags | split: '&#x1E;' %}
+
+{% assign post_count = site.posts | size %}
+{% capture tag_counts %}{% for tag in site_tags %}{{site.tags[tag] | size | times: 10 | plus: post_count | minus: 1 | divided_by: post_count }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_counts = tag_counts | split: ',' %}
+
+<ul class="tags quick-links">
+{% for tag in site_tags %}
+    {% assign tag_data = site.data.tags[tag] %}
+    {% capture tag_classes %}tag tag-size-{{ tag_counts[forloop.index0] }} tag-{{ tag | slugify }}{% endcapture %}
+    {% capture tag_name %}{% if tag_data.title %}{{ tag_data.title }}{% else %}{{ tag }}{% endif %}{% endcapture %}
+    <li><a href="{{ include.baseurl }}#{{ tag | slugify }}" class="{{ tag_classes }}">{{ tag_name }}</a> (<span class="count">{{ site.tags[tag] | size }})</span></li>
+{% endfor %}
+</ul>
+
   <hr/>
   <div class="tags-expo-section">
     {% for tag in site.tags reversed %}
