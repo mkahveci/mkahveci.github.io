@@ -47,6 +47,13 @@ layout: default
 						{{ page.authors.last }}
 						</a>
 						{% endif %}
+						{% if page.tags %}
+							<br><small>
+							{% for tag in page.tags %}
+								<i class="fa fa-tags fa-fw"></i> <a class="off" href="/blog/tags/#{{ tag | slugify }}">{{ tag }}</a>
+							{% endfor %}
+							</small>
+						{% endif %}
 					</div>
 				</div>
 			</div>
