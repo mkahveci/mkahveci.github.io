@@ -108,10 +108,12 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    unf_ext (0.0.8.2-x64-mingw-ucrt)
     unicode-display_width (1.7.0)
     webrick (1.7.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-darwin-21
 
 DEPENDENCIES
