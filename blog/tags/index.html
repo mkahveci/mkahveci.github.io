@@ -41,16 +41,35 @@ categories:
 {% capture tag_counts %}{% for tag in site_tags %}{{site.tags[tag] | size | times: 10 | plus: post_count | minus: 1 | divided_by: post_count }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_counts = tag_counts | split: ',' %}
 
-<ul class="tags quick-links">
+
 {% for tag in site_tags %}
     {% assign tag_data = site.data.tags[tag] %}
     {% capture tag_classes %}tag tag-size-{{ tag_counts[forloop.index0] }} tag-{{ tag | slugify }}{% endcapture %}
     {% capture tag_name %}{% if tag_data.title %}{{ tag_data.title }}{% else %}{{ tag }}{% endif %}{% endcapture %}
-    <li><a class="off" href="{{ include.baseurl }}#{{ tag | slugify }}" class="{{ tag_classes }}">{{ tag_name }}</a> (<span class="count">{{ site.tags[tag] | size }})</span></li>
+
+	   {% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-lg-4 postbox">
+			<div class="smallhead">
+				<i class="fa fa-tags fa-fw"></i> <a class="off" href="{{ include.baseurl }}#{{ tag | slugify }}" class="{{ tag_classes }}">{{ tag_name }}</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+			{% capture tag_size %} {{ site.tags[tag] | size }} {% endcapture %}
+			{% assign tag_size = tag_size | plus: 0 %}
+			{% if tag_size > 1 %}
+				 {{ tag_size }} posts
+			{% else %}
+				 {{ tag_size }} post
+			{% endif %}
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+        </div>
+    {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
-</ul>
 
   <hr/>
+
   <div class="tags-expo-section">
     {% for tag in site.tags reversed %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
