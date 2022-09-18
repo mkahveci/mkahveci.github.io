@@ -399,31 +399,3 @@ blockquote {
     opacity: 0;
   }
 }
-
-.section-nav {
-  background-color: #fff;
-  margin: 5px 0;
-  padding: 10px 30px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-    /* unvisited link */
-    a:link {
-      color: $gray;
-    }
-
-    /* visited link */
-    a:visited {
-      color: $gray;
-    }
-    /* mouse over link */
-    a:hover {
-      color: $primary;
-      text-decoration: none;
-    }
-
-    /* selected link */
-    a:active {
-      color: $primary;
-      text-decoration: none;
-    }
-}
