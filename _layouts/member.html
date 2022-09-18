@@ -114,6 +114,16 @@ layout: default
 			</div>
 			<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.toc %}
+			<div class="smallhead">
+				Contents
+			</div>
+			<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{{ content | toc_only }}
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
 	</div>
 	<div class="col-lg-8">
 		<div class="post">

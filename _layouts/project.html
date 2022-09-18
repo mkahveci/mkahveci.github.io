@@ -97,7 +97,17 @@ categories:
     				{{ page.budget | markdownify | remove: "<p>" | remove: "</p>" }}
  			  </div>
 		</div>
-
+		<div class="bigspacer"></div>
+		{% if page.toc %}
+			<div class="smallhead">
+				Contents
+			</div>
+			<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{{ content | toc_only }}
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
 
 	</div>
 	<div class="col-lg-8">
