@@ -69,6 +69,46 @@ layout: default
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
+    		{% if page.isbn13 %}
+				<div class="smallhead">
+					ISBN-13
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{{ page.isbn13 }}
+				</div>
+				<div class="bigspacer"></div>
+    		{% endif %}
+    		{% if page.isbn10 %}
+				<div class="smallhead">
+					ISBN-10
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{{ page.isbn10 }}
+				</div>
+				<div class="bigspacer"></div>
+    		{% endif %}
+    		{% if page.web %}
+				<div class="smallhead">
+					URL
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					<a class="off" href="{{ page.web }}">{{ page.web }}</a>
+				</div>
+				<div class="bigspacer"></div>
+    		{% endif %}
+    		{% if page.ref %}
+				<div class="smallhead">
+					Cite as
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{{ page.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+				</div>
+				<div class="bigspacer"></div>
+    		{% endif %}
 		</div>
 	</div>
 	<div class="col-lg-8">

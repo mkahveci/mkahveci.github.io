@@ -1,0 +1,62 @@
+
+{% if page.wip %} {% include sip.html %}{% else %}
+
+<table>
+    <thead>
+    <tr>
+        <th colspan="2">Publication Details</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% if page.ref %}
+    <tr>
+        <td class="fitwidth" valign="top">Cite as:</td>
+        <td valign="top">{{ page.ref | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.isbn13 %}
+    <tr>
+        <td class="fitwidth">ISBN-13:</td>
+        <td valign="top">{{ page.isbn13 }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.isbn10 %}
+    <tr>
+        <td class="fitwidth">ISBN-10:</td>
+        <td valign="top">{{ page.isbn10 }}</td>
+    </tr>
+    {% endif %}
+
+    {% if page.doi %}
+    <tr>
+        <td class="fitwidth">DOI:</td>
+        <td valign="top"><a href="http://dx.doi.org/{{ page.doi }}" target="_blank">{{ page.doi }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if page.pdf %}
+    <tr>
+        <td class="fitwidth">PDF:</td>
+        <td valign="top">
+
+        {% include pdf.html pdf_file=page.pdf %}
+
+        <br><a href="{{ page.pdf }}" download><i class="fa fa-download" aria-hidden="true"></i></a>
+
+        </td>
+    </tr>
+    {% endif %}
+
+    {% if page.web %}
+    <tr>
+        <td class="fitwidth">URL:</td>
+        <td valign="top"><a href="{{ page.web }}" target="_blank">{{ page.web }}</a></td>
+    </tr>
+    {% endif %}
+
+    </tbody>
+</table>
+{% endif %}
