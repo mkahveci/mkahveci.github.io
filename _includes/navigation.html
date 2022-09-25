@@ -1,0 +1,31 @@
+
+{% if include.category == "album" %}{% assign search = site.categories.album %}{% endif %}
+{% if include.category == "courses" %}{% assign search = site.categories.courses %}{% endif %}
+{% if include.category == "blog" %}{% assign search = site.categories.blog %}{% endif %}
+{% if include.category == "papers" %}{% assign search = site.categories.papers %}{% endif %}
+{% if include.category == "projects" %}{% assign search = site.categories.projects %}{% endif %}
+{% if include.category == "team" %}{% assign search = site.categories.team %}{% endif %}
+
+   {% for post in search %}
+        {% if post.url == page.url %}
+            {% assign post_index0 = forloop.index0 %}
+            {% assign post_index1 = forloop.index %}
+        {% endif %}
+    {% endfor %}
+    {% for post in search %}
+        {% if post_index0 == forloop.index %}
+            {% assign next_post = post.url %}
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+            {% assign prev_post = post.url %}
+        {% endif %}
+    {% endfor %}
+
+<div id="wrapper">
+{% if prev_post %}
+	<div id="c1"><a href="{{ prev_post }}"><i class="fa fa-arrow-circle-left" style="font-size:24px;color:black"></i></a></div>
+{% endif %}
+{% if next_post %}
+	<div id="c2"><a href="{{ next_post }}"><i class="fa fa-arrow-circle-right" style="font-size:24px;color:black"></i></a></div>
+{% endif %}
+</div>
