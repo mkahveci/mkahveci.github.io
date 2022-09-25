@@ -400,22 +400,7 @@ blockquote {
   }
 }
 
-#wrapper{
-    background:white;
-    overflow:auto;
-}
-
-#c1{
-   float:left;
-   background:white;
-}
-
-#c2{
-    background:white;
-    float:right;
-}
-
 #container{width:100%;}
-#left{float:left;width:100px;}
-#right{float:right;width:100px;}
-#center{margin:0 auto;width:100px;}
+#left{float:left; width:0px;}
+#right{float:right; width:0px;}
+#center{margin:0 auto;width:0px;}
