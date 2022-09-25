@@ -1,0 +1,8 @@
+<div id="wrapper">
+{% if page.next_in_category != nil %}
+	<div id="c1"><a href="{{page.next_in_category.url}}"><i class="fa fa-arrow-circle-left" style="font-size:24px;color:black"></i></a></div>
+{% endif %}
+{% if page.previous_in_category != nil %}
+	<div id="c2"><a href="{{page.previous_in_category.url}}"><i class="fa fa-arrow-circle-right" style="font-size:24px;color:black"></i></a></div>
+{% endif %}
+</div>

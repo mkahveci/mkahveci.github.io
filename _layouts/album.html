@@ -59,19 +59,18 @@ layout: default
 	<div class="row">
 		<div class="col-lg-1"></div>
 		<div class="col-lg-10">
-			{% if page.imageHighResolution %}
-			<img class="offset" src="{{ page.imageHighResolution }}"><br>
-			{{ page. caption }}<br>
-			<small>Place: {{ page.place }}</small>
-			{% endif %}
+			<img src="{{ page.image }}"><br>
+			<small>Place: {{ page.place }}</small><br>
+			{{ page. caption }}
+			<div class="bigspacer"></div>
 			<div class="post">
 				{{ content }}
 			</div>
+
 		</div>
 		<div class="col-lg-1"></div>
 	</div>
 
-	<div class="bigspacer"></div>
 	<div class="spacer"></div>
 
 </div>
