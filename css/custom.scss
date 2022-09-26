@@ -258,6 +258,7 @@ table {
 
 img {
 	@extend .img-fluid;
+	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 img.offset {
@@ -402,7 +403,7 @@ blockquote {
 
 #container{width:100%;}
 #left{float:left; width:0px;}
-#right{float:right; width:0px;}
+#right{float:right; width:20px;}
 #center{margin:0 auto;width:0px;}
 
 h2 {

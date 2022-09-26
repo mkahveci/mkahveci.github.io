@@ -103,9 +103,10 @@ layout: default
 				<div class="smallhead">
 					Cite as
 				</div>
+				{% assign nref = page.ref | markdownify | remove: '<p>' | remove: '</p>' %}
 				<div class="pad-left note">
 					<div class="smallspacer"></div>
-					{{ page.ref | markdownify | remove: '<p>' | remove: '</p>' }}
+					{{ nref | replace: '<a','<a class="off"' }}
 				</div>
 				<div class="bigspacer"></div>
     		{% endif %}
