@@ -7,8 +7,8 @@ email: 'murat@kahveci.pw'
 
 markdown: kramdown
 #permalink: /:categories/:title/
-permalink: /:title.html # use for static pages like AWS
-#permalink: /:title # use for github
+#permalink: /:title.html # use for static pages like AWS
+permalink: /:title # use for github
 future: true
 sass:
   sass_dir: css
