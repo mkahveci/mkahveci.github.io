@@ -36,6 +36,17 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.facebook %}
+		<div class="smallhead">
+			Facebook
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-facebook fa-fw"></i>
+			<a class="off" href="https://www.facebook.com/{{ member.facebook }}">{{ member.facebook }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.twitter %}
 		<div class="smallhead">
 			Twitter
