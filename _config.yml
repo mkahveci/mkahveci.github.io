@@ -10,6 +10,9 @@ future: true
 sass:
   sass_dir: css
 
+input: GFM
+math_engine: mathjax
+
 plugins:
   - jekyll-twitter-plugin
 
