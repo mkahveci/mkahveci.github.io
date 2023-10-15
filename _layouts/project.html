@@ -13,6 +13,7 @@ categories:
 <div class="row">
 	<div class="col-lg-12">
 		<div class="bigtitle titlebox">
+
       <nav aria-label="breadcrumb">
   			<ol class="breadcrumb">
   			{% assign crumbs = page.title | breadcrumb_array %}
@@ -25,7 +26,9 @@ categories:
   				{% endfor %}
   				{% if crumb == page.title %}
   				<li class="breadcrumb-item active">
-            {{ name }}
+            		{% if page.image %}
+		<img class="pull-left pad-right media-object d-none d-sm-block" src="{{ page.image }}">
+		{% endif %} {{ name }}
           </li>
   				{% else %}
   				<li class="breadcrumb-item">

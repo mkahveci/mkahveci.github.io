@@ -120,10 +120,17 @@ categories:
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ paper.url }}">
+				{% if paper.image %}
+					<img class="pull-right pad-left media-object d-none d-sm-block" src="{{ paper.image }}" style="width:75px;height:auto;">
+				{% else %}
+					<i class="fa fa-file-text-o fa-fw"></i>
+				{% endif %}
+					</a>
 				<a class="off" href="{{ paper.url }}">
 				{{ paper.title }}
-				</a>
+				</a><br>
+				<i>{{ paper.authors }}</i>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
@@ -152,7 +159,12 @@ categories:
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
+				{% if project.image %}
+					<img class="pull-right pad-left media-object d-none d-sm-block" src="{{ project.image }}" style="width:75px;height:auto;">
+				{% else %}
+					<i class="fa fa-edit fa-fw"></i>
+				{% endif %}
+					</a>
 				<a class="off" href="{{ project.url }}">
 				{{ project.projectid }} - {{ project.title }}
 				</a>
