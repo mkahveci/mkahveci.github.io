@@ -26,7 +26,15 @@
 {% endif %}
 {% endfor %}
 
-{% if book-count > 0 or journal-count > 0 or conference-count > 0  %}
+{% assign blog = site.categories.blog | where: "projectid",page.projectid %}
+
+{% for post in blog %}
+{% if post.projectid contains page.projectid %}
+{% assign post-count = post-count | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% if book-count > 0 or journal-count > 0 or conference-count > 0 or post-count > 0  %}
 
 ## Project Publications
 
@@ -77,4 +85,16 @@
 
 {% endif %}
 
+{% if post-count > 0 %}
+
+### Blog
+
+{% for post in blog %}
+{% if post.projectid contains page.projectid %}
+<p><b>{{ forloop.index }}</b>.&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+</p>
+{% endif %}
+{% endfor %}
+
+{% endif %}
 
