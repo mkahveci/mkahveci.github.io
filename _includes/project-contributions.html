@@ -91,7 +91,8 @@
 
 {% for post in blog %}
 {% if post.projectid contains page.projectid %}
-<p><b>{{ forloop.index }}</b>.&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+<p><b>{{ forloop.index }}</b>.&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>&nbsp;&nbsp;
+<small class="post-date">{{ post.date | date_to_string }}</small>
 </p>
 {% endif %}
 {% endfor %}
