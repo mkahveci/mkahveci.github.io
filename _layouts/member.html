@@ -5,21 +5,23 @@ layout: default
 {% assign member = page %}
 
 <div class="row">
-	<div class="col-lg-12">
-		{% if member.image %}
-		<img width="170px" class="pull-left pad-right media-object d-none d-sm-block" src="{{ member.image }}">
-		{% endif %}
-		<div class="titlebox">
-			<div class="bigtitle">
-				{{ member.title }}
-			</div>
-			<p>
-			<div class="smallhead">
-				{{ member.position }} | {{ member.active }}
-			</div>
-		</div>
-	</div>
+    <div class="col-lg-12">
+        {% if member.image %}
+            <img width="170px" class="float-left mr-3 mb-3 rounded-circle border shadow" src="{{ member.image }}" alt="{{ member.title }}">
+        {% endif %}
+        <div class="titlebox">
+            <div class="bigtitle">
+                {{ member.title }}
+            </div>
+            <p>
+                <div class="smallhead">
+                    {{ member.position }} | {{ member.active }}
+                </div>
+            </p>
+        </div>
+    </div>
 </div>
+
 
 <div class="bigspacer"></div>
 

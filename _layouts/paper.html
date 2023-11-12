@@ -3,21 +3,25 @@ layout: default
 ---
 
 <div class="row">
-	<div class="col-lg-12">
-		{% if page.image %}
-		<img class="pull-left pad-right media-object d-none d-sm-block" src="{{ page.image }}">
-		{% endif %}
-		<div class="titlebox">
-			<div class="title">
-				{{ page.title }}
-			</div>
-			<p>
-			<div class="smallhead">
-			{% if page.authors %} {{ page.authors }}. {% endif %} {% if page.year %} ({{ page.year }}). {% endif %} {% if page.publisher %} {{ page.publisher }}. {% endif %}
-			</div>
-		</div>
-	</div>
+    <div class="col-lg-12">
+        {% if page.image %}
+            <img class="float-left mr-3 media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}" alt="{{ page.title }}">
+        {% endif %}
+        <div class="titlebox">
+            <div class="title">
+                {{ page.title }}
+            </div>
+            <p>
+                <div class="smallhead">
+                    {% if page.authors %} {{ page.authors }}. {% endif %}
+                    {% if page.year %} ({{ page.year }}). {% endif %}
+                    {% if page.publisher %} {{ page.publisher }}. {% endif %}
+                </div>
+            </p>
+        </div>
+    </div>
 </div>
+
 
 <div class="bigspacer"></div>
 

@@ -122,7 +122,7 @@ categories:
 			<div class="note">
 				<a class="off" href="{{ paper.url }}">
 				{% if paper.image %}
-					<img class="pull-right pad-left media-object d-none d-sm-block" src="{{ paper.image }}" style="width:75px;height:auto;">
+					<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ paper.image }}" style="width:75px;height:auto;">
 				{% else %}
 					<i class="fa fa-file-text-o fa-fw"></i>
 				{% endif %}
@@ -160,7 +160,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				{% if project.image %}
-					<img class="pull-right pad-left media-object d-none d-sm-block" src="{{ project.image }}" style="width:75px;height:auto;">
+					<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ project.image }}" style="width:75px;height:auto;">
 				{% else %}
 					<i class="fa fa-edit fa-fw"></i>
 				{% endif %}
