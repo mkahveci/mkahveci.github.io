@@ -404,3 +404,28 @@ blockquote {
 #left{float:left; width:0px;}
 #right{float:right; width:20px;}
 #center{margin:0 auto;width:0px;}
+
+        .custom-footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .custom-nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .custom-nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .custom-nav a:hover {
+            color: $primary;
+            text-decoration: none;
+        }
