@@ -118,35 +118,35 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav nav-pills">
-				{% if page.url == '/about' %}
+				{% if page.url contains '/about' %}
 				<li class="nav-link active">
 				{% else %}
 				<li class="nav-link">
 				{% endif %}
 				<a class="mx-1" href="/about">about</a></li>
 
-				{% if page.url == '/join' %}
+				{% if page.url contains '/join' %}
 				<li class="nav-link active">
 				{% else %}
 				<li class="nav-link">
 				{% endif %}
 				<a class="mx-1" href="/join">join</a></li>
 
-				{% if page.url == '/contact' %}
+				{% if page.url contains '/contact' %}
 				<li class="nav-link active">
 				{% else %}
 				<li class="nav-link">
 				{% endif %}
 				<a class="mx-1" href="/contact">contact</a></li>
 
-				{% if page.url == '/album' %}
+				{% if page.url contains '/album' %}
 				<li class="nav-link active">
 				{% else %}
 				<li class="nav-link">
 				{% endif %}
 				<a class="mx-1" href="/album">album</a></li>
 
-				{% if page.url == '/courses/' %}
+				{% if page.url contains '/courses/' %}
 				<li class="nav-link active">
 				{% else %}
 				<li class="nav-link">
