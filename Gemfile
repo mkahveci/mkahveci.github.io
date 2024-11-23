@@ -13,6 +13,6 @@ gem 'netrc'
 # Twitter
 gem 'jekyll-twitter-plugin'
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
 
 gem "twitter", "~> 7.0"

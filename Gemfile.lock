@@ -110,7 +110,7 @@ GEM
     unf_ext (0.0.8.2)
     unf_ext (0.0.8.2-x64-unknown)
     unicode-display_width (1.7.0)
-    webrick (1.7.0)
+    webrick (1.8.2)
 
 PLATFORMS
   universal-darwin-22
@@ -118,6 +118,7 @@ PLATFORMS
   x64-unknown
   x64-unknown
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   execjs
@@ -126,7 +127,7 @@ DEPENDENCIES
   netrc
   octokit
   twitter (~> 7.0)
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.16
