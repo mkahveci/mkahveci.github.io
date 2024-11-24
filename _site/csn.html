@@ -228,21 +228,47 @@
 	<div class="spacer"></div>
 	<div class="spacer"></div>
 
-	<footer style="text-align: center; padding: 10px 0; background-color: #333; color: #fff; font-size: 14px;">
-		<div style="margin-bottom: 5px;">
-			<a href="/about" style="text-decoration: none; color: #fff; margin: 0 10px;">About</a>
-			<a href="/join" style="text-decoration: none; color: #fff; margin: 0 10px;">Join</a>
-			<a href="/contact" style="text-decoration: none; color: #fff; margin: 0 10px;">Contact</a>
-			<a href="/reference" style="text-decoration: none; color: #fff; margin: 0 10px;">Request for Reference Letter</a>
-		</div>
-		<div style="font-size: 12px; color: #aaa; margin-top: 5px;">
-			<a href="/privacy-policy" style="text-decoration: none; color: #aaa; margin: 0 10px;">Privacy Policy</a>
-			<a href="/terms-of-service" style="text-decoration: none; color: #aaa; margin: 0 10px;">Terms of Service</a>
+	<footer style="background-color: #333; color: #fff; padding: 20px 0; font-size: 14px;">
+		<div class="container">
+			<!-- Main Footer Links -->
+			<ul style="display: flex; justify-content: center; gap: 25px; list-style: none; padding: 0; margin: 0;">
+				<li>
+					<a href="/about" style="color: #fff; text-decoration: none; font-size: 16px;">About</a>
+				</li>
+				<li>
+					<a href="/join" style="color: #fff; text-decoration: none; font-size: 16px;">Join</a>
+				</li>
+				<li>
+					<a href="/contact" style="color: #fff; text-decoration: none; font-size: 16px;">Contact</a>
+				</li>
+				<li>
+					<a href="/reference" style="color: #fff; text-decoration: none; font-size: 16px;">Request for Reference Letter</a>
+				</li>
+			</ul>
+
+			<!-- Secondary Footer Links -->
+			<ul style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0; margin: 15px 0 0;">
+				<li>
+					<a href="/privacy-policy" style="color: #aaa; text-decoration: none; font-size: 14px;">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="/terms-of-service" style="color: #aaa; text-decoration: none; font-size: 14px;">Terms of Service</a>
+				</li>
+			</ul>
+
+			<!-- Copyright Notice -->
+			<div style="text-align: center; font-size: 12px; color: #aaa; margin-top: 10px;">
+				<span>© <span id="current-year"></span> by <a style="color: #aaa; text-decoration: none;" href="/murat">Murat Kahveci</a>. All rights reserved.</span>
+			</div>
 		</div>
 	</footer>
 
+	<!-- Dynamic Year Script -->
+	<script>
+		document.getElementById('current-year').textContent = new Date().getFullYear();
+	</script>
+
+
+
 </body>
 </html>
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
