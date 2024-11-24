@@ -16,6 +16,8 @@ math_engine: mathjax
 plugins:
   - jekyll-twitter-plugin
 
+
+
 exclude:
   - "*.branches"
   - "*.class"
