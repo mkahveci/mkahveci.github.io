@@ -1,9 +1,11 @@
 ---
 layout: talk_reveal4
-title: Directions for SARS-CoV-2 evolutionary forecasting
-venue: Fred Hutch
-event: Bloom Bedford Retreat 2022
-author: Trevor Bedford
+title: Construct Validity and Reliability Measures of Scores from the Science Teachers’ Pedagogical Discontentment (STPD) Scale
+venue: Chicago
+event: NARST 2015
+author: Murat Kahveci
+projectid: pdse
+talk: true
 widescreen: true
 draft: true
 ---
@@ -13,18 +15,7 @@ draft: true
 <!--
 Outline:
 
-- SARS-CoV-2 vaccine strain selection will be necessary
-  - VRBPAC meeting and where we currently stand
-- Influenza strain selection and history of fitness models
-- SARS-CoV-2 and amazing consistency of frequency dynamics
-- Multinomial logistic regression models
-- Marlin's variant Rt work
-- Obermeyer hierarchical MLR work
-- But new variants are appearing too quickly and so prediction threshold is poor\
-  - Analogy to weather fronts
-- Project direction to systematize prediction thresholds
-- Project direction to automate MLR and Rt models on Nextstrain clades / PANGO lineages
-- Project direction to revisit influenza forecasting using MLR models and Nextclade calls
+- Introduction
 -->
 
 <!-- Color ramp: [#5097BA", "#60AA9E", "#75B681", "#8EBC66", "#AABD52", "#C4B945", "#D9AD3D", "#E59637", "#E67030", "#DF4327"] -->
@@ -33,10 +24,19 @@ Outline:
 	<h2 class="title">{{ page.title }}</h2>
 	<br>&nbsp;<br>
 	<p class="title">
-	Trevor Bedford (@trvrb)
+	Murat Kahveci (@iMuratKahveci)
 	<br>
-	Fred Hutchinson Cancer Center / Howard Hughes Medical Institute
-	<br>
+		Ajda Kahveci
+		<br>
+		Canakkale Onsekiz Mart University
+		<br><br>
+		Nasser Mansour
+		<br>
+		Exeter University
+		<br><br>
+		Maher Mohammed Alarfaj<br>
+		King Faisal University
+	<br><br>
 	{{ page.date | date: "%-d %b %Y" }}
 	<br>
 	{{ page.event }}
@@ -44,28 +44,42 @@ Outline:
 	{{ page.venue }}
 </section>
 
-<!-- <section data-transition-speed="slow" data-background="/images/talks/ncov_tree_unrooted_2021_09_11.png">
-</section>
+<!--<section data-transition="fade" data-background="#5097BA">-->
+<!--	<h1 class="title">SARS-CoV-2 evolution and variant-specific vaccines</h1>-->
+<!--</section>-->
 
-<section class="left-align">
-	<h3>1. SARS-CoV-2 evolution and variant-specific vaccines</h3>
-	<h3>2. Forecasting seasonal influenza evolution</h3>
-	<h3>3. SARS-CoV-2 variant frequency dynamics</h3>
-	<h3>4. Recent modeling advances</h3>
-	<h3>5. Project directions</h3>
-</section> -->
-
-<!-- Need for SARS-CoV-2 variant vaccines -->
-
-<section data-transition="fade" data-background="#5097BA">
-	<h1 class="title">SARS-CoV-2 evolution and variant-specific vaccines</h1>
+<section>
+	<h3>Introduction</h3>
+	<ul>
+		<li>Research suggests that teachers’ affective states are closely linked to success in professional development movements (Schmidt & Datnow, 2005; Van Driel, Beijaard, & Verloop, 2011).</li>
+		<li>Developed as part of a project about Saudi Arabian teachers’ affective states towards reforms in science education.</li>
+		<li> Three aspects were investigated in the project. Science teachers’
+			<ul>
+				<li>pedagogical discontentment (STPD),</li>
+				<li>self-efficacy (STEBI), and</li>
+				<li>intentions to reform (IRSTS).</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="citation">
+		<a href="/dgq">kahveci.pw/dgq</a>
+	</div>
 </section>
 
 <section>
-	<h3>Genetic relationships of globally sampled SARS-CoV-2 to present</h3>
-	<img class="stretch" data-src="/images/talks/ncov_variants_tree_unrooted_2022_08_08.png">
+	<h3>Conceptualisation of Pedagogical Discontentment</h3>
+
+	<ul>
+		<li> Pedagogical discontentment means
+			<ul>
+				<li>teachers’ assessment of contextual aspects, and</li>
+				<li>a state of cognitive conflict.</li>
+			</ul>
+		</li>
+		<li>High levels of pedagogical discontentment might be interpreted as an important precursor to change.</li>
+	</ul>
 	<div class="citation">
-		<a href="https://nextstrain.org/ncov/gisaid/global?l=unrooted&m=div">nextstrain.org</a>
+		<a href="/dgq">kahveci.pw/dgq</a>
 	</div>
 </section>
 
