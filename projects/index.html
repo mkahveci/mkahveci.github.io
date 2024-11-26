@@ -25,25 +25,22 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% assign years = site.categories.projects | group_by_exp: 'project', 'project.year' %}
-{% for year in years %}
-<section style="background-color: {% cycle 'light-gray': '#f2f2f2', 'white': '#ffffff' %}">
-  <h1>{{ year.name }}</h1>
-  <div class="row">
-    {% for project in year.items %}
-    <div class="col-lg-4 paperbox">
-      <div class="media">
-        <div class="media-body">
-          <div class="smallhead mb-1"><a href="{{ project.url }}" class="off">{{ project.projectid }}</a></div>
-          <p class="note">{{ project.title }}<br>
-            <small>Contributors: {{ project.contributors }}<br>
-              {{ project.date | date_to_string }}</small>
-          </p>
-        </div>
-        <a href="{{ project.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=100 class="media-object" src="{{ project.image }}"></a>
+{% for project in site.categories.projects %}
+{% cycle 'add rows': '<div class="row">', '', '' %}
+  <div class="col-lg-4 paperbox" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="{{ project.url }}" class="off">{{ project.projectid }}</a></div>
+        <p class="note"><a href="{{ project.url }}" class="off">{{ project.title }}</a><br>
+          <small>Contributors: {{ project.contributors }}<br>
+            {{ project.date | date_to_string }}</small>
+        </p>
       </div>
+      <a href="{{ project.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=100 class="media-object" src="{{ project.image }}"></a>
     </div>
-    {% endfor %}
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
   </div>
-</section>
+  {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}

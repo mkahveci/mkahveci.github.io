@@ -25,21 +25,24 @@ categories:
 
 {% assign years = site.categories.courses | group_by_exp: 'course', 'course.year' %}
 {% for year in years %}
-<section style="background-color: {% cycle 'light-gray': '#f2f2f2', 'white': '#ffffff' %}">
-  <h1>{{ year.name }}</h1>
-  <div class="row">
-    {% for course in year.items %}
-    <div class="col-lg-4 paperbox d-flex align-items-start">
-      <a href="{{ course.url }}" class="off">
-        <img class="mr-3 rounded-circle border shadow" width=100 class="media-object" src="{{ course.image }}">
-      </a>
-      <div>
-        <div class="smallhead mb-1"><a href="{{ course.url }}" class="off">{{ course.code }}</a></div>
-        <p class="note">{{ course.title }}<br>
-          <small>{{ course.semester }}</small></p>
-      </div>
+{% if forloop.first %}
+<h1>{{ year.name }}</h1>
+{% else %}
+<div class="bigspacer"></div><div class="bigspacer"></div>
+<h1>{{ year.name }}</h1>
+{% endif %}
+<div class="row">
+  {% for course in year.items %}
+  <div class="col-lg-4 paperbox d-flex align-items-start" style="background-color: {% cycle 'light-gray1': '#fff', 'light-gray2': '#fff' %}">
+    <a href="{{ course.url }}" class="off">
+      <img class="mr-3 rounded-circle border shadow" width=100 class="media-object" src="{{ course.image }}">
+    </a>
+    <div>
+      <div class="smallhead mb-1"><a href="{{ course.url }}" class="off">{{ course.code }}</a></div>
+      <p class="note">{{ course.title }}<br>
+        <small>{{ course.semester }}</small></p>
     </div>
-    {% endfor %}
   </div>
-</section>
+  {% endfor %}
+</div>
 {% endfor %}
