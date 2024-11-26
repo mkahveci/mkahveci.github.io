@@ -2,7 +2,7 @@
 layout: default
 title: kahveci group / publications
 categories:
- - papers
+- papers
 ---
 
 <div class="title media-heading">
@@ -25,22 +25,27 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% for paper in site.categories.papers %}
-
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-  <div class="col-lg-4 paperbox">
-    <div class="media">
-      <div class="media-body">
-        <div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-        <p class="note">{{ paper.authors }} ({{ paper.year }}). {{ paper.publisher }}</p>
+{% assign years = site.categories.papers | group_by_exp: 'paper', 'paper.year' %}
+{% for year in years %}
+<section style="background-color: {% cycle 'light-gray': '#f2f2f2', 'white': '#ffffff' %}">
+  <h1>{{ year.name }}</h1>
+  <div class="row">
+    {% for paper in year.items %}
+    <div class="col-lg-4 paperbox">
+      <div class="media">
+        <div class="media-body">
+          <div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
+          <p class="note">{{ paper.authors }} ({{ paper.year }}). {{ paper.publisher }}</p>
+        </div>
+        <a href="{{ paper.url }}">
+          <img class="ml-3 rounded-circle border shadow" class="media-object" src="{{ paper.image }}" style="width:75px;height:auto;">
+        </a>
       </div>
-      <a href="{{ paper.url }}">
-        <img class="ml-3 rounded-circle border shadow" class="media-object" src="{{ paper.image }}" style="width:75px;height:auto;">
-      </a>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
     </div>
-    <div class="bigspacer"></div>
-    <div class="spacer"></div>
+    {% endfor %}
   </div>
-    {% cycle 'close rows': '', '', '</div>' %}
+  <hr>
+</section>
 {% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}

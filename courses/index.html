@@ -2,11 +2,11 @@
 layout: default
 title: kahveci group / courses
 categories:
- - courses
+- courses
 ---
 
 <div class="title media-heading">
-Teaching Philosophy
+  Teaching Philosophy
 </div>
 <div class="smallhead">
   By <a class="off" href="/murat">Murat Kahveci</a>
@@ -23,20 +23,23 @@ Teaching Philosophy
 
 <div class="bigspacer"></div>
 
-{% for course in site.categories.courses %}
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-  <div class="col-lg-4 paperbox">
-    <div class="media">
-      <div class="media-body">
+{% assign years = site.categories.courses | group_by_exp: 'course', 'course.year' %}
+{% for year in years %}
+<section style="background-color: {% cycle 'light-gray': '#f2f2f2', 'white': '#ffffff' %}">
+  <h1>{{ year.name }}</h1>
+  <div class="row">
+    {% for course in year.items %}
+    <div class="col-lg-4 paperbox d-flex align-items-start">
+      <a href="{{ course.url }}" class="off">
+        <img class="mr-3 rounded-circle border shadow" width=100 class="media-object" src="{{ course.image }}">
+      </a>
+      <div>
         <div class="smallhead mb-1"><a href="{{ course.url }}" class="off">{{ course.code }}</a></div>
         <p class="note">{{ course.title }}<br>
           <small>{{ course.semester }}</small></p>
       </div>
-      <a href="{{ course.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=100 class="media-object" src="{{ course.image }}"></a>
     </div>
-    <div class="bigspacer"></div>
-    <div class="spacer"></div>
+    {% endfor %}
   </div>
-    {% cycle 'close rows': '', '', '</div>' %}
+</section>
 {% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
