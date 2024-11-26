@@ -42,59 +42,59 @@ categories:
 </div>
 
 <div class="row">
-	{% for post in site.categories.blog limit:4 %}
+	{% for post in site.categories.blog limit:3 %}
 
 	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
+	{% if member.title == post.author %}
+	{% assign author = member %}
+	{% endif %}
 	{% endfor %}
 
-	<div class="col-lg-3 reduced-gutter">
+	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-comment-o fa-fw"></i>
 				<a class="off" href="{{ post.url }}">
-				{{ post.title }}
+					{{ post.title }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
-        {% if post.author %}
-        by <a class="off" href="
+				{% if post.author %}
+				by <a class="off" href="
           {% for member in site.categories.team %}
             {% if member.title == post.author %}
               {{ member.url }}
             {% endif %}
           {% endfor %}
         ">
-        {{ post.author }}
-        </a>
-        {% endif %}
-        {% if post.authors %}
-        by
-        <a class="off" href="
+				{{ post.author }}
+			</a>
+				{% endif %}
+				{% if post.authors %}
+				by
+				<a class="off" href="
           {% for member in site.categories.team %}
             {% if member.title == post.authors.first %}
               {{ member.url }}
             {% endif %}
           {% endfor %}
         ">
-        {{ post.authors.first }}
-        </a>
-        and
-        <a class="off" href="
+					{{ post.authors.first }}
+				</a>
+				and
+				<a class="off" href="
           {% for member in site.categories.team %}
             {% if member.title == post.authors.last %}
               {{ member.url }}
             {% endif %}
           {% endfor %}
         ">
-        {{ post.authors.last }}
-        </a>
-        {% endif %}
+					{{ post.authors.last }}
+				</a>
+				{% endif %}
 			</div>
 			<div class="bigspacer"></div>
 		</div>
@@ -114,19 +114,17 @@ categories:
 </div>
 
 <div class="row">
-	{% for paper in site.categories.papers limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
+	{% for paper in site.categories.papers limit:3 %}
+	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
 		<div class="pad-left">
 			<div class="note">
 				<a class="off" href="{{ paper.url }}">
-				{% if paper.image %}
+					{% if paper.image %}
 					<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ paper.image }}" style="width:75px;height:auto;">
-				{% else %}
+					{% else %}
 					<i class="fa fa-file-text-o fa-fw"></i>
-				{% endif %}
-					</a>
-				<a class="off" href="{{ paper.url }}">
-				{{ paper.title }}
+					{% endif %}
+					{{ paper.title }}
 				</a><br>
 				<i>{{ paper.authors }}</i>
 			</div>
@@ -153,18 +151,17 @@ categories:
 </div>
 
 <div class="row">
-	{% for project in site.categories.projects limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
+	{% for project in site.categories.projects limit:3 %}
+	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
 		<div class="pad-left">
 			<div class="note">
 				{% if project.image %}
-					<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ project.image }}" style="width:75px;height:auto;">
+				<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ project.image }}" style="width:75px;height:auto;">
 				{% else %}
-					<i class="fa fa-edit fa-fw"></i>
+				<i class="fa fa-edit fa-fw"></i>
 				{% endif %}
-					</a>
 				<a class="off" href="{{ project.url }}">
-				{{ project.projectid }} - {{ project.title }}
+					{{ project.projectid }} - {{ project.title }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
