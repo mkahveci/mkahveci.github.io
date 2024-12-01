@@ -82,18 +82,18 @@ b, strong {
 /* logo */
 
 .logo {
-	width: 50px;
-	height: 50px;
+	width: 120px;
+	height: auto;
 }
 
 .biglogo {
-	width: 170px;
-	height: 170px;
-	padding: 5px;
+	width: 180px;
+	height: auto;
+	padding: 0px;
 }
 
 .logobox {
-	height: 170px;
+	height: auto;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -468,7 +468,7 @@ footer ul:nth-of-type(2) a:hover { /* Add this hover rule */
 
 .knx {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .knx .k {
