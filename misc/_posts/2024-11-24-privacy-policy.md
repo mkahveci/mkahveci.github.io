@@ -9,7 +9,7 @@ title: Privacy Policy
 
 ## Introduction
 
-Welcome to The Kahveci Nexus. This Privacy Policy outlines how we handle any information collected during your visit to this website.
+Welcome to <span class="knx"><span class="k">K</span><span class="nx">NX</span></span>. This Privacy Policy outlines how we handle any information collected during your visit to this website.
 
 ---
 
