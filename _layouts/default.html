@@ -17,7 +17,7 @@
   <link href="/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/logo-231221.png"/>
+	<link rel="shortcut icon" href="/images/logo.png"/>
 
 	<!-- Typekit -->
 	<script>
@@ -58,10 +58,17 @@
 		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
 			<div class="container">
 				{% if page.categories.first != 'home' %}
-				<a class="navbar-brand" href="/">
-					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo-231221.png">
-					The Kahveci Nexus
+				<a class="navbar-brand" href="/" style="display: flex; align-items: center;">
+					<img
+							class="logo navbar-brand d-inline-block align-top ml-0 mr-1"
+							src="/images/logo.png"
+							alt="Logo"
+							style="max-width: 200px; height: auto;">
+					<span class="knx" style="font-size: .8em; margin-left: 5px;">
+        <span style="color: #6A0DAD;">K</span>ahveci <span style="color: #555;">N</span>e<span style="color: #555;">x</span>us
+    </span>
 				</a>
+
 				{% else %}
 				<a class="navbar-brand" href="/">
 				</a>

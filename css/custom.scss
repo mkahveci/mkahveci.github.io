@@ -465,3 +465,17 @@ footer ul:nth-of-type(2) a:hover { /* Add this hover rule */
   color: $primary;
   text-decoration: none;
 }
+
+.knx {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.knx .k {
+    color: #7F00FF; /* Purple */
+}
+
+.knx .nx {
+    color: #555; /* Neutral Gray */
+}
+
