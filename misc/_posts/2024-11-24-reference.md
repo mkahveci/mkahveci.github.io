@@ -41,3 +41,5 @@ Submit the following materials to me **in person** at least one month before the
 
 By following these steps, you help ensure I have the information needed to craft a strong, personalized recommendation letter that reflects your achievements and potential. I look forward to supporting your academic and professional journey.
 
+<a href="/contact" class="btn btn-primary">Contact</a>
+<a href="/murat" class="btn btn-secondary">Dr. Kahveci</a>
