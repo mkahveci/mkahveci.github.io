@@ -50,4 +50,5 @@ We may update these Terms of Service from time to time. Changes will be posted o
 
 If you have any questions about these Terms of Service, please contact us at:
 
-[Murat Kahveci](/contact)  
+<a href="/contact" class="btn btn-primary">Contact</a>
+<a href="/murat" class="btn btn-secondary">Dr. Kahveci</a>

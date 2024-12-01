@@ -37,4 +37,5 @@ We use Google Analytics or equivalent tools, which may store cookies on your dev
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-[Murat Kahveci](/contact)  
+<a href="/contact" class="btn btn-primary">Contact</a>
+<a href="/murat" class="btn btn-secondary">Dr. Kahveci</a> 
