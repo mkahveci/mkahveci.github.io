@@ -479,3 +479,56 @@ footer ul:nth-of-type(2) a:hover { /* Add this hover rule */
     color: #555; /* Neutral Gray */
 }
 
+
+/* Styling for Code Snippet Container */
+.code-snippet {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Code Header */
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Code Type on Left */
+.code-type {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #6A0DAD; /* Purple for branding */
+    padding: 2px 8px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Copy Button with Square */
+button.copy-button {
+    position: relative;
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button.copy-button:hover {
+    background-color: #5a0da0;
+}
+
+button.copy-button::before {
+    content: "■";
+    color: #ffffff;
+    font-size: 0.8em;
+}
