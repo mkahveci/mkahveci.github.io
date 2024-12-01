@@ -1,2 +1,4 @@
-<img src="{{ include.file }}" alt="{{ include.title }}" style="width:800px;">{:.shadow}
-<br><small>_{{ include.title }}_. {{ include.caption }}</small>
+<figure class="image-with-shadow" style="max-width: {{ include.width | default: '800px' }};">
+    <img src="{{ include.file }}" alt="{{ include.title }}" style="width: 100%;">
+    <figcaption><small><em>{{ include.title }}. {{ include.caption }}</em></small></figcaption>
+</figure>

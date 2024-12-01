@@ -532,3 +532,21 @@ button.copy-button::before {
     color: #ffffff;
     font-size: 0.8em;
 }
+
+.image-with-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.image-with-shadow img {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-with-shadow figcaption {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #555;
+}
+
