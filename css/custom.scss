@@ -502,7 +502,7 @@ footer ul:nth-of-type(2) a:hover { /* Add this hover rule */
 .code-type {
     font-size: 0.9em;
     font-weight: bold;
-    color: #6A0DAD; /* Purple for branding */
+    color: $gray;
     padding: 2px 8px;
     background-color: #f0f0f0;
     border-radius: 3px;
@@ -511,7 +511,7 @@ footer ul:nth-of-type(2) a:hover { /* Add this hover rule */
 /* Copy Button with Square */
 button.copy-button {
     position: relative;
-    background-color: #6A0DAD;
+    background-color: $gray;
     color: white;
     border: none;
     border-radius: 5px;
@@ -550,3 +550,25 @@ button.copy-button::before {
   color: #555;
 }
 
+.knx-logo {
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-flex; /* Keeps letters inline */
+  align-items: baseline; /* Aligns letters properly */
+}
+.knx-logo .k {
+  font-size: 1em;
+  color: #7F00FF; /* Purple */
+}
+.knx-logo .n {
+  font-size: 1em;
+  color: #555; /* Neutral Gray */
+  position: relative;
+  top: 0.2em;
+}
+.knx-logo .x {
+  font-size: 1em;
+  color: #555; /* Neutral Gray */
+  position: relative;
+  top: 0em;
+}
