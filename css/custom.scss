@@ -551,24 +551,29 @@ button.copy-button::before {
 }
 
 .knx-logo {
-  font-size: 1em;
-  font-weight: bold;
-  display: inline-flex; /* Keeps letters inline */
-  align-items: baseline; /* Aligns letters properly */
+    font-family: sans-serif;
+  font-weight: 900; /* Extra-bold or black font weight */
+  display: inline-flex;
+  align-items: baseline;
+  /* letter-spacing: -1px;  Slightly tighten the overall spacing */
 }
+
 .knx-logo .k {
-  font-size: 1em;
-  color: #7F00FF; /* Purple */
+  color: $primary;
+  font-size: 1em; /* Full size for K */
+  margin-right: -1px; /* Reduce space between K and N */
 }
+
 .knx-logo .n {
-  font-size: 1em;
-  color: #555; /* Neutral Gray */
+  font-size: 0.8em; /* Slightly smaller for N */
+  color: $gray;
   position: relative;
-  top: 0.2em;
+  top: 0.2em; /* Raise the N */
+  margin-right: -1px; /* Reduce space between N and X */
 }
+
 .knx-logo .x {
-  font-size: 1em;
-  color: #555; /* Neutral Gray */
+  color: $gray;
+  font-size: 0.8em; /* Slightly smaller for X */
   position: relative;
-  top: 0em;
 }

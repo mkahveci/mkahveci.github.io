@@ -9,7 +9,7 @@ title: Terms of Service
 
 ## Introduction
 
-Welcome to <span class="knx"><span class="k">K</span><span class="nx">NX</span></span>. By accessing or using this website, you agree to the following terms and conditions. Please read them carefully before using the site.
+Welcome to {% include knx.html %}. By accessing or using this website, you agree to the following terms and conditions. Please read them carefully before using the site.
 
 ---
 
