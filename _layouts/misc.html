@@ -2,23 +2,51 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-lg-12">
-		<div class="bigtitle">
-			{{ page.title }}
-		</div>
-	</div>
-</div>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-2">
-	</div>
-	<div class="col-lg-8">
-		<div class="post">
-			{{ content }}
+	<header class="post-header">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="bigtitle">
+					<h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+				</div>
+			</div>
 		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<p class="post-meta">
+					{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+					<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+						{{ page.date | date: date_format }}
+					</time>
+					{%- if page.author -%}
+					• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+					{%- endif -%}
+					{%- if page.permalink -%}
+					• <a href="{{ page.permalink | prepend: site.baseurl | prepend: site.url }}" class="u-url" itemprop="mainEntityOfPage">{{ page.permalink }}</a>
+					{%- endif -%}
+				</p>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+	</header>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<div class="post-content e-content" itemprop="articleBody">
+				{{ content }}
+			</div>
+		</div>
+		<div class="col-lg-2"></div>
 	</div>
-	<div class="col-lg-2"></div>
-</div>
+
+	{%- if site.disqus.shortname -%}
+	{%- include disqus_comments.html -%}
+	{%- endif -%}
+
+</article>
