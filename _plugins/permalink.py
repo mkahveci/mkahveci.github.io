@@ -1,5 +1,6 @@
 import os
 import random
+import datetime  # Import the datetime module
 
 def find_existing_permalinks(root_dir):
     permalinks = []
@@ -45,4 +46,33 @@ if __name__ == "__main__":
             f.write(permalink + '\n')
 
     new_permalink = generate_permalink()
-    print(new_permalink)
+#     print(new_permalink)
+
+def create_new_post(filename):
+    # Create the new .md file with the pre-formatted content
+    with open(filename, "w") as f:
+        permalink = filename.split('-')[-1].split('.')[0]  # Extract permalink from filename
+        f.write(f"---\n")
+        f.write(f"layout: post\n")
+        f.write(f"title:  \"Title of your post\"\n")
+        f.write(f"permalink: /{permalink}\n")
+        f.write(f"---\n\n")
+        f.write("Your content here.\n")
+
+    print(f"New post created: {filename}")
+
+if __name__ == "__main__":
+    existing_permalinks = find_existing_permalinks('.')
+
+    os.makedirs("_plugins", exist_ok=True)
+    with open('_plugins/existing_permalinks.txt', 'w') as f:
+        for permalink in existing_permalinks:
+            f.write(permalink + '\n')
+
+    new_permalink = generate_permalink()
+
+    # Generate the filename with the current date
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    filename = f"{current_date}-{new_permalink}.md"
+
+    create_new_post(filename)  # Create the new post file
