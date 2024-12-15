@@ -16,4 +16,3 @@ gem 'jekyll-twitter-plugin'
 gem "webrick", "~> 1.7"
 
 gem "twitter", "~> 7.0"
-
