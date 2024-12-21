@@ -61,28 +61,23 @@
 			<div class="container">
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/" style="display: flex; align-items: center;">
-					<img
-							class="logo navbar-brand d-inline-block align-top ml-0 mr-1"
-							src="/images/logo.png"
-							alt="Logo"
-							style="max-width: 75px; height: auto;">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.png" alt="Logo" style="max-width: 75px; height: auto;">
 					{% include knx.html %}
 				</a>
-
 				{% else %}
 				<a class="navbar-brand" href="/">
 				</a>
 				{% endif %}
+
+				<a href="#" id="dark-mode-toggle">
+					<i class="fas fa-moon" id="dark-mode-icon"></i>
+				</a>
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav nav-pills ml-auto">
-						<li class="nav-link">
-							<a href="#" id="dark-mode-toggle">
-								<i class="fas fa-moon"></i>
-							</a>
-						</li>
 						{% if page.categories.first == 'blog' %}
 						<li class="nav-link active">
 						{% else %}
