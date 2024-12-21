@@ -57,7 +57,7 @@ categories:
 	{% endif %}
 	{% endfor %}
 
-	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
+	<div class="col-lg-4 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-comment-o fa-fw"></i>
@@ -123,15 +123,11 @@ categories:
 
 <div class="row">
 	{% for paper in site.categories.papers limit:3 %}
-	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
+	<div class="col-lg-4 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
 				<a class="off" href="{{ paper.url }}">
-					{% if paper.image %}
-					<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ paper.image }}" style="width:75px;height:auto;">
-					{% else %}
 					<i class="fa fa-file-text-o fa-fw"></i>
-					{% endif %}
 					{{ paper.title }}
 				</a><br>
 				<i>{{ paper.authors }}</i>
@@ -161,14 +157,10 @@ categories:
 
 <div class="row">
 	{% for project in site.categories.projects limit:3 %}
-	<div class="col-lg-4 reduced-gutter" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
+	<div class="col-lg-4 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				{% if project.image %}
-				<img class="pull-right pad-left media-object d-none d-sm-block rounded-circle border shadow" src="{{ project.image }}" style="width:75px;height:auto;">
-				{% else %}
 				<i class="fa fa-edit fa-fw"></i>
-				{% endif %}
 				<a class="off" href="{{ project.url }}">
 					{{ project.projectid }} - {{ project.title }}
 				</a>
@@ -197,15 +189,6 @@ categories:
 </div>
 
 	<div class="col-lg-12">
-		<!-- YouTube Banner -->
-		<div>
-			<a class="off" href="https://www.youtube.com/@KahveciResearchGroup">
-				<img src="images/YouTube-channel-banner.jpg" alt="The Kahveci Research Group YouTube Banner" style="width:100%; height:auto;">
-			</a>
-		</div>
-
-		<div class="bigspacer"></div>
-
 		<!-- Videos Row -->
 		<div class="row g-3">
 			<!-- First Video -->

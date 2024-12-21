@@ -26,26 +26,23 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% assign years = site.categories.courses | group_by_exp: 'course', 'course.year' %}
-{% for year in years %}
-{% if forloop.first %}
-<h1>{{ year.name }}</h1>
-{% else %}
-<div class="bigspacer"></div><div class="bigspacer"></div>
-<h1>{{ year.name }}</h1>
-{% endif %}
+{% assign courses_sorted = site.categories.courses | sort: 'year' | reverse %}
 <div class="row">
-  {% for course in year.items %}
-  <div class="col-lg-4 paperbox d-flex align-items-start" style="background-color: {% cycle 'light-gray1': '#fff', 'light-gray2': '#fff' %}">
-    <a href="{{ course.url }}" class="off">
-      <img class="mr-3 rounded-circle border shadow" width=100 class="media-object" src="{{ course.image }}">
-    </a>
+  {% for course in courses_sorted %}
+  <div class="col-lg-4 paperbox d-flex align-items-start">
     <div>
       <div class="smallhead mb-1"><a href="{{ course.url }}" class="off">{{ course.code }}</a></div>
       <p class="note">{{ course.title }}<br>
-        <small>{{ course.semester }}</small></p>
+        <small>{{ course.semester }}</small><br>
+        <span style="font-size: larger;">{{ course.institution }}</span>
+      </p>
     </div>
+    <a href="{{ course.url }}" class="off">
+      <img class="ml-3 rounded-circle border shadow" width=75 class="media-object" src="{{ course.image }}">
+    </a>
   </div>
+  {% if forloop.index0 == 2 %}
+</div><div class="row">
+  {% endif %}
   {% endfor %}
 </div>
-{% endfor %}

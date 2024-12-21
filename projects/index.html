@@ -27,7 +27,7 @@ categories:
 
 {% for project in site.categories.projects %}
 {% cycle 'add rows': '<div class="row">', '', '' %}
-  <div class="col-lg-4 paperbox" style="background-color: {% cycle 'light-gray1': '#f2f2f2', 'light-gray2': '#e0e0e0' %}">
+  <div class="col-lg-4 paperbox">
     <div class="media">
       <div class="media-body">
         <div class="smallhead mb-1"><a href="{{ project.url }}" class="off">{{ project.projectid }}</a></div>
@@ -36,7 +36,7 @@ categories:
             {{ project.date | date_to_string }}</small>
         </p>
       </div>
-      <a href="{{ project.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=100 class="media-object" src="{{ project.image }}"></a>
+      <a href="{{ project.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=75 class="media-object" src="{{ project.image }}"></a>
     </div>
     <div class="bigspacer"></div>
     <div class="spacer"></div>

@@ -1,10 +1,10 @@
-$primary: #7F00FF;
-$gray: #555;
-$gray-light: #777;
+$primary: #BF00FF;
+$gray: #fff;
+$gray-light: #fff;
 $line-height-base: 1.6;
 $font-size-base: 0.875rem;
 $font-weight-bolder: bold;
-$body-bg: #ffffff;
+$body-bg: #000;
 $code-color: #586E75;
 $pre-color: #586E75;
 $code-font-size: 90%;
@@ -21,12 +21,20 @@ $nav-pills-link-active-color: #555;
 $nav-pills-link-active-bg: #e7e7e7;
 $nav-pills-border-radius: 0px;
 
-h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
-h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
-h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
-h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
-h5, .h5 { font-size: $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
+body {
+    background-image: url('/images/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Or 'contain' if you want to avoid cropping */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps background in place on scroll */
+    color: #f5f5f5 !important;
+}
+
+h1, .h1 { font-size: floor($font-size-base * 2.50); color: #fff;} /* ~34px */
+h2, .h2 { font-size: floor($font-size-base * 2.15); color: #fff;} /* ~30px */
+h3, .h3 { font-size: ceil($font-size-base * 1.70); color: #fff;}  /* ~24px */
+h4, .h4 { font-size: ceil($font-size-base * 1.25); color: #fff;}  /* ~18px */
+h5, .h5 { font-size: $font-size-base; color: #fff;}
+h6, .h6 { font-size: ceil($font-size-base * 0.85); color: #fff;}  /* ~12px */
 
 // 20px gutter
 .reduced-gutter.row {
@@ -577,3 +585,29 @@ button.copy-button::before {
   font-size: 0.8em; /* Slightly smaller for X */
   position: relative;
 }
+
+// Fixing the dark background font colors ==>
+
+#header {
+    background: transparent; /* Make the header background transparent */
+    border-bottom: none; /* Remove any border on the header */
+}
+
+.bg-navbar {
+    background: transparent !important; /* Make the navbar background transparent */
+    border-bottom: none; /* Remove any border on the navbar */
+}
+
+footer {
+    background: transparent; /* Make the footer background transparent */
+    border-top: none; /* Remove any border on the footer */
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgba(127, 0, 255, 0.2) !important; /* Use your $primary color with transparency */
+    color: #fff; /* White text for contrast */
+}
+
+
+
+// End of fixing the dark background font colors ==>
