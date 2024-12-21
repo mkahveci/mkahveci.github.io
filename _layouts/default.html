@@ -78,6 +78,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav nav-pills ml-auto">
+						<li class="nav-link">
+							<a href="#" id="dark-mode-toggle">
+								<i class="fas fa-moon"></i>
+							</a>
+						</li>
 						{% if page.categories.first == 'blog' %}
 						<li class="nav-link active">
 						{% else %}
@@ -177,5 +182,7 @@
 		document.getElementById('current-year').textContent = new Date().getFullYear();
 	</script>
 	<script src="/js/copy-code.js"></script>
+	<script src="/js/darkmode.js"></script>
+
 </body>
 </html>
