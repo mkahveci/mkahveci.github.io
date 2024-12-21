@@ -26,13 +26,18 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% assign courses_sorted = site.categories.courses | sort: 'year' | reverse %}
+{% assign courses = site.categories.courses %}
+{% assign courses_sorted = courses | sort: "date" | reverse %}
+
 <div class="row">
   {% for course in courses_sorted %}
   <div class="col-lg-4 paperbox d-flex align-items-start">
     <div>
-      <div class="smallhead mb-1"><a href="{{ course.url }}" class="off">{{ course.code }}</a></div>
-      <p class="note">{{ course.title }}<br>
+      <div class="smallhead mb-1">
+        <a href="{{ course.url }}" class="off">{{ course.code }}</a>
+      </div>
+      <p class="note">
+        {{ course.title }}<br>
         <small>{{ course.semester }}</small><br>
         <span style="font-size: larger;">{{ course.institution }}</span>
       </p>
@@ -41,8 +46,10 @@ categories:
       <img class="ml-3 rounded-circle border shadow" width=75 class="media-object" src="{{ course.image }}">
     </a>
   </div>
-  {% if forloop.index0 == 2 %}
-</div><div class="row">
+  {% assign forloop_index_mod_3 = forloop.index0 | modulo: 3 %}
+  {% if forloop_index_mod_3 == 2 %}
+</div>
+<div class="row">
   {% endif %}
   {% endfor %}
 </div>
