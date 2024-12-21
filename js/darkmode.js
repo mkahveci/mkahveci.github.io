@@ -12,8 +12,10 @@ function toggleDarkMode() {
 
 // Check user's preference on page load
 const darkMode = localStorage.getItem('darkMode');
-if (darkMode === 'enabled') {
-  document.body.classList.add('dark-mode');
+if (darkMode === 'disabled') { // Check if dark mode is explicitly disabled
+  document.body.classList.remove('dark-mode');
+} else {
+  document.body.classList.add('dark-mode'); // Enable dark mode by default
 }
 
 // Add an event listener to a button or link to toggle dark mode
