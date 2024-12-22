@@ -622,6 +622,18 @@ body.dark-mode { /* Styles for dark mode */
     color: var(--primary);
   }
 
+  .knx-logo .k {
+    color: var(--primary); /* Example: Lighter red */
+  }
+
+  .knx-logo .n {
+    color: #f5f5f5; /* Example: Lighter green */
+  }
+
+  .knx-logo .x {
+    color: #f5f5f5; /* Example: Lighter blue */
+  }
+
 }
 
 // End of fixing the dark background font colors ==>
