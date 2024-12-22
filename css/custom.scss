@@ -581,6 +581,12 @@ button.copy-button::before {
 // Fixing the dark background font colors ==>
 
 body.dark-mode { /* Styles for dark mode */
+
+  /* Color variables for dark mode */
+  --primary: #C084FC; /* Lighter purple with better contrast */
+  --gray: #999;      /* Lighter gray for better readability */
+  --gray-light: #BBB; /* Even lighter gray for subtle elements */
+
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -589,27 +595,31 @@ body.dark-mode { /* Styles for dark mode */
 
   /* Dark mode styles for header, navbar, footer, etc. */
   #header {
-    background: transparent !important;  /* Added !important */
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-bottom: none;
   }
 
   .bg-navbar {
-    background: transparent !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-bottom: none;
   }
 
   footer {
-    background: transparent !important;  /* Added !important */
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-top: none;
   }
 
-  .nav-pills .nav-link.active,
-  .nav-pills .show > .nav-link {
-    background-color: rgba(127, 0, 255, 0.2) !important;
-  }
+.nav-pills .note .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: rgba(192, 132, 252, 0.5); /* 50% transparent --primary */
+}
 
   table {
     color: #eee !important;
+  }
+
+  a { /* Style all links */
+    color: var(--primary);
   }
 
 }
