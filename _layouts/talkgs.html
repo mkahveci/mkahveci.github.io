@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-lg-12">
+        {% if page.image %}
+            <img class="float-left mr-3 media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}" alt="{{ page.title }}">
+        {% endif %}
+        <div class="titlebox">
+            <div class="title">
+                {{ page.title }}
+            </div>
+            <p>
+                <div class="smallhead">
+                    {% if page.authors %} {{ page.authors }}. {% endif %}
+                    {% if page.year %} ({{ page.year }}). {% endif %}
+                    {% if page.publisher %} {{ page.publisher }}. {% endif %}
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="bigspacer"></div>
+
+	<div class="responsive-iframe-container">
+            <iframe src="{{ page.slides_url }}"     frameborder="0"
+                    allowfullscreen></iframe>
+	</div>
+
+<style>
+    /* Full-width responsive iframe */
+    .responsive-iframe-container {
+      position: relative;
+      width: 100%; /* Full width */
+      padding-top: 56.25%; /* Aspect ratio: 16:9 */
+      overflow: hidden;
+    }
+
+    .responsive-iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Aspect ratio height */
+      border: 0;
+    }
+</style>

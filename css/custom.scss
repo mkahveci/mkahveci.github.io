@@ -609,10 +609,10 @@ body.dark-mode { /* Styles for dark mode */
     border-top: none;
   }
 
-.nav-pills .note .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: rgba(192, 132, 252, 0.5); /* 50% transparent --primary */
-}
+  .nav-pills .note .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: rgba(192, 132, 252, 0.5); /* 50% transparent --primary */
+  }
 
   table {
     color: #eee !important;
@@ -634,10 +634,41 @@ body.dark-mode { /* Styles for dark mode */
     color: #f5f5f5; /* Example: Lighter blue */
   }
 
+  .container.mt-4 { /* Targets the main content area */
+    background-color: rgba(0, 0, 0, 0.7); /* 50% transparent black background */
+    padding: 20px; /* Add some padding for better readability */
+    border-radius: 5px; /* Optional: Add a subtle border radius */
+  }
+
+  /* Force correct color for Privacy Policy and Terms of Service links */
+  footer ul:last-of-type a {
+    color: var(--primary) !important;
+  }
 }
+
 
 // End of fixing the dark background font colors ==>
 
+// dark mode icon swith adjustment
 #dark-mode-icon {
   font-size: 1.5rem; /* Adjust the value as needed */
+}
+
+/* Ensure the container spans full width */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%; /* Full width */
+  padding-top: 56.25%; /* Aspect ratio: 16:9 */
+  overflow: hidden;
+  max-width: 100%; /* Prevent any unintentional constraining */
+  margin: 0 auto; /* Center align, optional */
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Matches the aspect ratio height */
+  border: 0; /* Remove any border */
 }
