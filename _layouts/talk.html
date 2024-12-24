@@ -11,24 +11,26 @@ layout: default
             <div class="title">
                 {{ page.title }}
             </div>
+            <div class="spacer"></div>
+            <div class="smallhead">
+              {% if page.event %} {{ page.event }} ({{ page.year }}) {% endif %}
+            </div>
+            <div class="spacer"></div>
             <p>
-                <div class="smallhead">
-                    {% if page.authors %} {{ page.authors }}. {% endif %}
-                    {% if page.year %} ({{ page.year }}). {% endif %}
-                    {% if page.publisher %} {{ page.publisher }}. {% endif %}
-                </div>
+                {% if page.venue %} <i class="fas fa-map-marker-alt"></i> {{ page.venue }} {% endif %}
+                {% if page.paper_link %} <a href="/{{ page.paper_link }}" class="btn btn-outline-secondary"> <i class="fas fa-file-alt"></i> Paper</a> {% endif %}
+                {% if page.project_link %} <a href="/{{ page.project_link }}" class="btn btn-outline-secondary"><i class="fas fa-folder"></i> Project</a>  {% endif %}
             </p>
         </div>
     </div>
 </div>
 
-<div class="bigspacer"></div>
+<div class="pacer"></div>
 
 {{ content }}
 
 	<div class="responsive-iframe-container">
-            <iframe src="{{ page.slides_url }}"     frameborder="0"
-                    allowfullscreen></iframe>
+            <iframe src="https://docs.google.com/presentation/d/e/{{ page.slides_id }}/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 <style>

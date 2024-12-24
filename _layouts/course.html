@@ -116,7 +116,17 @@ layout: default
 	</div>
 	<div class="col-lg-8">
 		<div class="post">
-			{{ content }}
+			<div class="row">
+				<div class="col-lg-3 toc-column order-lg-first">
+					<div id="table-of-contents">
+						<h2>Contents</h2>
+						{{ content | toc_only }}
+					</div>
+				</div>
+				<div class="col-lg-9 content-column">
+					{{ content | inject_anchors }}
+				</div>
+			</div>
 		</div>
 
 {% include navigation.html category="courses" %}

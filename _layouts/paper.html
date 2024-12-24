@@ -112,7 +112,13 @@ layout: default
 					<div class="smallspacer"></div>
 					{{ nref | replace: '<a','<a class="off"' }}
 				</div>
+				{% if page.slides %}
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					<a href="/{{ page.slides }}" class="btn btn-outline-secondary"><i class="far fa-images"></i> Slides</a>
+				</div>
 				<div class="bigspacer"></div>
+				{% endif %}
     		{% endif %}
 		</div>
 	</div>

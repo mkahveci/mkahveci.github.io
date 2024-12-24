@@ -56,6 +56,10 @@
 
 <body>
 
+<button id="scroll-to-top" title="Go to top">
+	<i class="fas fa-arrow-up"></i>
+</button>
+
 	<div id="header">
 		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
 			<div class="container">
@@ -179,5 +183,20 @@
 	<script src="/js/copy-code.js"></script>
 	<script src="/js/darkmode.js"></script>
 
+<script>
+	window.addEventListener('scroll', function () {
+      var scrollToTopButton = document.getElementById('scroll-to-top');
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('scroll-to-top').addEventListener('click', function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+</script>
 </body>
 </html>

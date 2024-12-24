@@ -644,8 +644,12 @@ body.dark-mode { /* Styles for dark mode */
   footer ul:last-of-type a {
     color: var(--primary) !important;
   }
-}
+  .btn-outline-primary {
+    color: var(--primary) !important;  /* Set the text color to your primary dark mode color */
+    border-color: var(--primary) !important; /* Set the border color to your primary dark mode color */
+  }
 
+}
 
 // End of fixing the dark background font colors ==>
 
@@ -671,4 +675,31 @@ body.dark-mode { /* Styles for dark mode */
   width: 100%; /* Full width */
   height: 100%; /* Matches the aspect ratio height */
   border: 0; /* Remove any border */
+}
+
+/* On larger screens (adjust breakpoint as needed) */
+@media (min-width: 992px) {
+  .toc-column {
+    position: sticky;
+    top: 20px;
+  }
+}
+
+#scroll-to-top {
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; /* Ensure it's on top of other elements */
+  background-color: #333; /* Customize color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#scroll-to-top:hover {
+  opacity: 1;
 }
