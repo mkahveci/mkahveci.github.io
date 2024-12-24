@@ -1,57 +1,51 @@
-<!doctype html>
-<html lang="en">
+---
+layout: default
+---
 
-	<head>
-		<meta charset="utf-8">
+<div class="row">
+    <div class="col-lg-12">
+        {% if page.image %}
+            <img class="float-left mr-3 media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}" alt="{{ page.title }}">
+        {% endif %}
+        <div class="titlebox">
+            <div class="title">
+                {{ page.title }}
+            </div>
+            <p>
+                <div class="smallhead">
+                    {% if page.authors %} {{ page.authors }}. {% endif %}
+                    {% if page.year %} ({{ page.year }}). {% endif %}
+                    {% if page.publisher %} {{ page.publisher }}. {% endif %}
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
 
-		<title>{{ page.title }}</title>
+<div class="bigspacer"></div>
 
-		<meta name="author" content="{{ page.author }}">
+{{ content }}
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<div class="responsive-iframe-container">
+            <iframe src="{{ page.slides_url }}"     frameborder="0"
+                    allowfullscreen></iframe>
+	</div>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+    /* Full-width responsive iframe */
+    .responsive-iframe-container {
+      position: relative;
+      width: 100%; /* Full width */
+      padding-top: 56.25%; /* Aspect ratio: 16:9 */
+      overflow: hidden;
+    }
 
-		<link rel="stylesheet" href="/talks/reveal-v2/css/reveal.min.css">
-		<link rel="stylesheet" href="/talks/reveal-v2/css/theme/trvrb.css" id="theme">
-		<link rel="stylesheet" href="/talks/reveal-v2/css/font-awesome/css/font-awesome.min.css">			
-
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="/talks/reveal-v2/lib/css/zenburn.css">
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div style="position: absolute; top:10px; left:10px; z-index:100;">
-			<a href="/talks/">
-				<i class="fa fa-times-circle" style="color: #bbb;"></i>
-			</a>
-		</div>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-
-				{{ content }}
-				
-			</div>
-
-		</div>
-
-		<script src="/talks/reveal-v2/lib/js/head.min.js"></script>
-		<script src="/talks/reveal-v2/js/reveal.min.js"></script>
-		<script src="/talks/reveal-v2/js/config.js"></script>
-
-	</body>
-</html>
-
-
-
-
-
+    .responsive-iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Aspect ratio height */
+      border: 0;
+    }
+</style>
