@@ -76,17 +76,7 @@ layout: default
 			{% endif %}
 			{% endif %}
 			<div class="post">
-				<div class="row">
-					<div class="col-lg-3 toc-column order-lg-first">
-						<div id="table-of-contents">
-							<h2>Contents</h2>
-							{{ content | toc_only }}
-						</div>
-					</div>
-					<div class="col-lg-9 content-column">
-						{{ content | inject_anchors }}
-					</div>
-				</div>
+				{{ content }}
 			</div>
 {% include navigation.html category="blog" %}
 		</div>

@@ -649,6 +649,16 @@ body.dark-mode { /* Styles for dark mode */
     border-color: var(--primary) !important; /* Set the border color to your primary dark mode color */
   }
 
+  .btn-primary {
+    background-color: #64B5F6; /* Lighter blue */
+    color: #212529; /* Dark gray */
+  }
+
+  .btn-secondary {
+    background-color: #ced4da; /* Lighter gray */
+    color: #212529; /* Dark gray */
+  }
+
 }
 
 // End of fixing the dark background font colors ==>
