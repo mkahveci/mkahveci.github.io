@@ -2,6 +2,7 @@
       {% assign projectcount = 0 %}
       {% assign postcount = 0 %}
       {% assign coursecount = 0 %}
+      {% assign talkcount = 0 %}
 
       {% assign lastname = page.name | split: ' ' | last %}
       {% assign firstinitial = page.name | split: ' ' | first | slice: 0 %}
@@ -52,4 +53,13 @@
       {% assign postcount = postcount | plus: 1 %}
       {% endif %}
       {% endif %}
-      {% endfor %} 
+      {% endfor %}
+
+      {% assign talks = site.categories.talks | where: "talk","true" %}
+
+      {% for talk in talks %}
+      {% if talk.author contains searchstring %}
+      {% assign talkq = true %}
+      {% assign talkcount = talkcount | plus: 1 %}
+      {% endif %}
+      {% endfor %}

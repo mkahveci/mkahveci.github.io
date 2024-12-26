@@ -82,6 +82,21 @@ _{{ count }}_. {{ cpaper.ref }}
 {% endfor %}
 {% endif %}
 
+{% if talkq == true %}
+
+### Talks
+
+{% for talk in talks %}
+{% if talk.author contains searchstring %}
+
+_{{ talkcount }}_. [{{ talk.title }}]({{ talk.permalink }}). {{ talk.event }} ({{ talk.year }}), {{ talk.venue }}.
+
+{% assign count = count | minus: 1 %}
+
+{% endif %}
+{% endfor %}
+{% endif %}
+
 {% if coursecount > 0 %}
 
 ## Courses

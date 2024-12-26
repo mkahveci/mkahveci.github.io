@@ -60,8 +60,8 @@ categories:
 	<div class="col-lg-4 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
 				<a class="off" href="{{ post.url }}">
+					<i class="fa fa-comment-o fa-fw"></i>
 					{{ post.title }}
 				</a>
 			</div>
@@ -109,7 +109,6 @@ categories:
 	{% endfor %}
 </div>
 
-<div class="spacer"></div>
 <div class="bigspacer"></div>
 
 <div class="row">
@@ -129,8 +128,7 @@ categories:
 				<a class="off" href="{{ paper.url }}">
 					<i class="fa fa-file-text-o fa-fw"></i>
 					{{ paper.title }}
-				</a><br>
-				<i>{{ paper.authors }}</i>
+				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
@@ -143,7 +141,6 @@ categories:
 	{% endfor %}
 </div>
 
-<div class="spacer"></div>
 <div class="bigspacer"></div>
 
 <div class="row">
@@ -160,8 +157,8 @@ categories:
 	<div class="col-lg-4 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
 				<a class="off" href="{{ project.url }}">
+					<i class="fa fa-edit fa-fw"></i>
 					{{ project.projectid }} - {{ project.title }}
 				</a>
 			</div>
@@ -177,6 +174,38 @@ categories:
 </div>
 
 <div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href="/talks/">Recent talks</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for talk in site.categories.talks limit:3 %}
+	<div class="col-lg-4 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+
+				<a class="off" href="{{ talk.permalink }}">
+					<i class="fas fa-chalkboard-teacher"></i>
+					{{ talk.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ talk.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
 <div class="bigspacer"></div>
 
 <div class="row">

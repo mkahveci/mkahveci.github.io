@@ -51,6 +51,7 @@ def create_new_post(filename, post_type):
             "pdf": "",
             "rgpdf": "",
             "doi": "",
+            "slides": "",
             "journal": True,
             "permalink": "/" + filename.split('-')[-1].split('.')[0],
         },
@@ -104,13 +105,28 @@ def create_new_post(filename, post_type):
             "title": "",
             "tags": ["Misc"],
             "permalink": "/" + filename.split('-')[-1].split('.')[0],
+        },
+        "talk": {
+            "layout": "talk",
+            "title": "",
+            "author": "Kahveci M",
+            "slides_id": "2PACX-1vQe_l-4D1fSnJl18tt0nO5czuVWtpAzrS0cTOHdTFxt31JHv2OZQzeRXEQd29BWCWzvwLqvCfDh4BqQ",
+            "event": "",
+            "venue": "",
+            "author": "Kahveci M",
+            "year": "",
+            "paper_link": "",
+            "project_link": "",
+            "permalink": "/" + filename.split('-')[-1].split('.')[0],
+            "talk": True,
+            "published": True,
         }
     }
 
     front_matter = yaml_data.get(post_type, yaml_data["blog"])
 
     # Create the new .md file in the appropriate folder
-    if post_type in ["course", "project", "paper"]:  # Add "s" only for these post types
+    if post_type in ["course", "project", "paper", "paper", "talk"]:  # Add "s" only for these post types
         post_dir = os.path.join(post_type + "s", "_posts")
     else:
         post_dir = os.path.join(post_type, "_posts")
@@ -193,7 +209,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Create a new post with YAML front matter.")
-    parser.add_argument("post_type", choices=["paper", "project", "course", "album", "blog"], help="Type of the post")
+    parser.add_argument("post_type", choices=["paper", "project", "course", "album", "blog", "talk"], help="Type of the post")
     args = parser.parse_args()
 
     existing_permalinks = find_existing_permalinks('.')

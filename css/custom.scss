@@ -595,23 +595,23 @@ body.dark-mode { /* Styles for dark mode */
 
   /* Dark mode styles for header, navbar, footer, etc. */
   #header {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     border-bottom: none;
   }
 
   .bg-navbar {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     border-bottom: none;
   }
 
   footer {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     border-top: none;
   }
 
   .nav-pills .note .nav-link.active,
   .nav-pills .show > .nav-link {
-    background-color: rgba(192, 132, 252, 0.5); /* 50% transparent --primary */
+    background-color: rgba(192, 132, 252, 0.9); /* 50% transparent --primary */
   }
 
   table {
@@ -635,7 +635,7 @@ body.dark-mode { /* Styles for dark mode */
   }
 
   .container.mt-4 { /* Targets the main content area */
-    background-color: rgba(0, 0, 0, 0.7); /* 50% transparent black background */
+    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black background */
     padding: 20px; /* Add some padding for better readability */
     border-radius: 5px; /* Optional: Add a subtle border radius */
   }
@@ -650,18 +650,28 @@ body.dark-mode { /* Styles for dark mode */
   }
 
   .btn-primary {
-    background-color: #64B5F6; /* Lighter blue */
-    color: #212529; /* Dark gray */
+    background-color:var(--primary) !important; /* Light purple */
+    color: #fff; /* Dark gray */
   }
 
   .btn-secondary {
     background-color: #ced4da; /* Lighter gray */
-    color: #212529; /* Dark gray */
+    color: #000; /* Dark gray */
+  }
+
+  .image-with-shadow figcaption {
+    color: #f8f9fa; /* Light color for caption text */
+  }
+
+  #container i { /* Targeting the <i> directly */
+    color: var(--secondary) !important;
+  }
+
+  hr { /* Targets all horizontal rules */
+    border-color: var(--gray-light); /* Use a lighter color for better visibility */
   }
 
 }
-
-// End of fixing the dark background font colors ==>
 
 // dark mode icon swith adjustment
 #dark-mode-icon {
