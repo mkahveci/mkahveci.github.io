@@ -697,14 +697,6 @@ body.dark-mode { /* Styles for dark mode */
   border: 0; /* Remove any border */
 }
 
-/* On larger screens (adjust breakpoint as needed) */
-@media (min-width: 992px) {
-  .toc-column {
-    position: sticky;
-    top: 20px;
-  }
-}
-
 #scroll-to-top {
   display: none; /* Initially hidden */
   position: fixed;

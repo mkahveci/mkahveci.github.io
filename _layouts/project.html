@@ -12,36 +12,18 @@ categories:
 
 <div class="row">
 	<div class="col-lg-12">
-		<div class="bigtitle titlebox">
-
-      <nav aria-label="breadcrumb">
-  			<ol class="breadcrumb">
-  			{% assign crumbs = page.title | breadcrumb_array %}
-  			{% for crumb in crumbs %}
-  				{% assign name = crumb | split: '/' | last %}
-  				{% for page in site.pages %}
-  					{% if page.title == crumb %}
-  						{% assign url = page.url %}
-  					{% endif %}
-  				{% endfor %}
-  				{% if crumb == page.title %}
-  				<li class="breadcrumb-item active">
-            		{% if page.image %}
-		<img class="pull-left pad-right media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}">
-		{% endif %} {{ name }}
-          </li>
-  				{% else %}
-  				<li class="breadcrumb-item">
-            <a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a>
-          </li>
-  				{% endif %}
-  			{% endfor %}
-  			</ol>
-      </nav>
-    </div>
-		<p>
-		<div class="head">
-			{{ project.description }}
+		{% if page.image %}
+		<img class="float-left mr-3 media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}" alt="{{ page.title }}">
+		{% endif %}
+		<div class="titlebox">
+			<div class="title">
+				{{ page.title }}
+			</div>
+			<p>
+			<div class="smallhead">
+				{% if page.excerpt %} Overview. {{ page.excerpt }} {% endif %}
+			</div>
+			</p>
 		</div>
 	</div>
 </div>
