@@ -595,17 +595,17 @@ body.dark-mode { /* Styles for dark mode */
 
   /* Dark mode styles for header, navbar, footer, etc. */
   #header {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     border-bottom: none;
   }
 
   .bg-navbar {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     border-bottom: none;
   }
 
   .container.mt-4 { /* Targets the main content area */
-    background-color: rgba(0, 0, 0, 0.75); /* 50% transparent black background */
+    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black background */
     padding: 20px; /* Add some padding for better readability */
     border-radius: 5px; /* Optional: Add a subtle border radius */
   }
