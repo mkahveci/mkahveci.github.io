@@ -24,25 +24,15 @@ function toggleDarkMode() {
 
 // Check user's preference on page load
 const darkMode = localStorage.getItem('darkMode');
-
-// --- MODIFICATION START ---
-// If the user's preference is 'enabled', apply dark mode.
-// Otherwise (if 'disabled' or no preference found), default to light mode.
-if (darkMode === 'enabled') {
+if (darkMode === 'disabled') {
+  document.body.classList.remove('dark-mode');
+} else {
   document.body.classList.add('dark-mode');
   const darkModeIcon = document.getElementById('dark-mode-icon');
   darkModeIcon.classList.remove('fa-moon');
   darkModeIcon.classList.add('fa-sun');
   darkModeIcon.style.color = '#fff';
-} else {
-  // This block now represents the default behavior: light mode
-  document.body.classList.remove('dark-mode');
-  const darkModeIcon = document.getElementById('dark-mode-icon');
-  darkModeIcon.classList.remove('fa-sun');
-  darkModeIcon.classList.add('fa-moon');
-  darkModeIcon.style.color = '#333';
 }
-// --- MODIFICATION END ---
 
 // Add an event listener to the toggle to call the function
 const darkModeToggle = document.getElementById('dark-mode-toggle');
