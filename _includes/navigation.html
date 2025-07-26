@@ -5,6 +5,7 @@
 {% if include.category == "papers" %}{% assign search = site.categories.papers reverse %}{% endif %}
 {% if include.category == "projects" %}{% assign search = site.categories.projects reverse %}{% endif %}
 {% if include.category == "team" %}{% assign search = site.categories.team reverse %}{% endif %}
+{% if include.category == "trading" %}{% assign search = site.categories.trading reverse %}{% endif %}
 
    {% for post in search %}
         {% if post.url == page.url %}
