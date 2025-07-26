@@ -1,0 +1,167 @@
+---
+layout: trading
+title: "Day Trade Share Size Calculator"
+excerpt: "Quick risk-based share size tool" 
+---
+
+Calculate your optimal position size quickly and easily based on your account size, risk tolerance, entry price, and stop loss. This tool helps you manage risk effectively and set realistic profit targets for smarter day trading decisions.
+
+
+<div>
+  <label>Account Size ($):<br />
+    <input type="text" id="account" value="30,000.00" />
+  </label><br /><br />
+
+<label>Risk Percentage:<br />
+<label><input type="radio" name="risk" value="0.01" checked /> 1%</label>
+<label><input type="radio" name="risk" value="0.02" /> 2%</label>
+</label><br /><br />
+
+<label>Entry Price ($):<br />
+<input type="text" id="entry" />
+</label><br /><br />
+
+<label>Stop Loss Price ($):<br />
+<input type="text" id="stop" />
+</label><br /><br />
+
+  <div id="results" style="font-weight: bold; margin-top: 1rem;"></div>
+
+<canvas id="chart" height="150" style="margin-top: 2rem;"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const accountInput = document.getElementById('account');
+  const entryInput = document.getElementById('entry');
+  const stopInput = document.getElementById('stop');
+  const resultsDiv = document.getElementById('results');
+  const chartCanvas = document.getElementById('chart');
+
+  function parseNumber(value) {
+    return parseFloat(value.replace(/,/g, '')) || 0;
+  }
+
+  function formatNumber(value) {
+    return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function updateChart(entry, stop, target2, target3, isLong) {
+    const ctx = chartCanvas.getContext('2d');
+    const color = isLong ? 'green' : 'red';
+
+    const labels = ['Stop Loss', 'Entry', 'Target 2:1', 'Target 3:1'];
+    const dataPoints = [stop, entry, target2, target3];
+
+    if (window.shareChart) {
+      window.shareChart.destroy();
+    }
+
+    window.shareChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Price Levels',
+          data: dataPoints,
+          borderColor: color,
+          backgroundColor: 'transparent',
+          tension: 0.1,
+          pointRadius: 5,
+          pointBackgroundColor: color,
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: false,
+            ticks: {
+              callback: val => '$' + formatNumber(val)
+            }
+          }
+        },
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  }
+
+  function updateCalc() {
+    const account = parseNumber(accountInput.value);
+    const entry = parseNumber(entryInput.value);
+    const stop = parseNumber(stopInput.value);
+    const riskPercent = parseFloat(document.querySelector('input[name="risk"]:checked').value);
+
+    if (account <= 0 || entry <= 0 || stop <= 0 || entry === stop) {
+      resultsDiv.textContent = '';
+      if (window.shareChart) window.shareChart.destroy();
+      return;
+    }
+
+    // Determine position type automatically
+    const isLong = entry > stop;
+
+    const maxRiskDollars = account * riskPercent;
+    const perShareRisk = Math.abs(entry - stop);
+    const maxShares = Math.floor(maxRiskDollars / perShareRisk);
+
+    const target2 = isLong ? entry + 2 * perShareRisk : entry - 2 * perShareRisk;
+    const target3 = isLong ? entry + 3 * perShareRisk : entry - 3 * perShareRisk;
+
+    // Profit amount calculation
+    const profit2 = Math.abs(target2 - entry) * maxShares;
+    const profit3 = Math.abs(target3 - entry) * maxShares;
+
+    resultsDiv.style.color = isLong ? 'green' : 'red';
+
+    resultsDiv.innerHTML = `
+      Max Dollar Risk: $${formatNumber(maxRiskDollars)}<br />
+      Risk per Share: $${formatNumber(perShareRisk)}<br />
+      Max Shares Allowed: ${maxShares.toLocaleString()}<br />
+      Target (2:1): $${formatNumber(target2)} ($${formatNumber(profit2)} profit)<br />
+      Target (3:1): $${formatNumber(target3)} ($${formatNumber(profit3)} profit)
+    `;
+
+    updateChart(entry, stop, target2, target3, isLong);
+  }
+
+  // Format inputs on blur and allow only numbers + comma + decimal point
+  function formatInput(input) {
+    let val = input.value.replace(/[^\d.,]/g, '');
+    // Remove extra commas, only one decimal allowed
+    const parts = val.split('.');
+    parts[0] = parts[0].replace(/,/g, '');
+    val = parts[0];
+    if(parts.length > 1) {
+      val += '.' + parts[1].slice(0, 2); // max two decimals
+    }
+    if(val) {
+      const numVal = parseFloat(val);
+      if(!isNaN(numVal)) {
+        input.value = numVal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      }
+    } else {
+      input.value = '';
+    }
+  }
+
+  [accountInput, entryInput, stopInput].forEach(input => {
+    input.addEventListener('input', () => {
+      // Allow only digits, dot, comma as user types (basic filter)
+      input.value = input.value.replace(/[^\d.,]/g, '');
+      updateCalc();
+    });
+    input.addEventListener('blur', () => {
+      formatInput(input);
+      updateCalc();
+    });
+  });
+
+  document.querySelectorAll('input[name="risk"]').forEach(radio => {
+    radio.addEventListener('change', updateCalc);
+  });
+
+  updateCalc();
+</script>
