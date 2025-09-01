@@ -559,21 +559,21 @@ button.copy-button::before {
 }
 
 .knx-logo .k {
-  color: $primary;
+  color: #4A4A4A; /* Graphite */
   font-size: 1em; /* Full size for K */
   margin-right: -1px; /* Reduce space between K and N */
 }
 
 .knx-logo .n {
   font-size: 0.8em; /* Slightly smaller for N */
-  color: $gray;
+  color: #008080; /* Deep Teal */
   position: relative;
-  top: 0.2em; /* Raise the N */
+  top: 0.1em; /* Raise the N */
   margin-right: -1px; /* Reduce space between N and X */
 }
 
 .knx-logo .x {
-  color: $gray;
+  color: #008080; /* Deep Teal */
   font-size: 0.8em; /* Slightly smaller for X */
   position: relative;
 }
