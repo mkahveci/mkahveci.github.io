@@ -1,8 +1,8 @@
-$primary: #BF00FF;
+$primary: #1127DB;
 $gray: #555;
 $gray-light: #777;
 $line-height-base: 1.6;
-$font-size-base: 0.875rem;
+$font-size-base: 1rem;
 $font-weight-bolder: bold;
 $body-bg: #ffffff;
 $code-color: #586E75;
@@ -17,16 +17,9 @@ $navbar-brand-font-size: 30px;
 $navbar-brand-padding-y: 0.0rem;
 $navbar-light-color: $gray-light;
 $navbar-padding-y: 0.0rem;
-$nav-pills-link-active-color: #555;
+$nav-pills-link-active-color: $primary;
 $nav-pills-link-active-bg: #e7e7e7;
 $nav-pills-border-radius: 0px;
-
-h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
-h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
-h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
-h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
-h5, .h5 { font-size: $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 
 // 20px gutter
 .reduced-gutter.row {
@@ -54,15 +47,6 @@ h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
   padding-right: 25px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 300;
-	/* Museo */
-}
 
 .center {
   float: none;
@@ -123,7 +107,7 @@ b, strong {
 }
 
 .nav-brand a {
-  color: $gray;
+  color: $primary;
 }
 
 .nav-brand a:hover {
@@ -148,14 +132,14 @@ b, strong {
 /* headings */
 
 .bigtitle {
-	font-size: 60px;
+	font-size: 44px;
 	line-height: 55px;
 	font-weight: 100;
 	/* Museo */
 }
 
 .title {
-	font-size: 36px;
+	font-size: 34px;
 	line-height: 40px;
 	font-weight: 100;
 	/* Museo */
@@ -550,133 +534,6 @@ button.copy-button::before {
   color: #555;
 }
 
-.knx-logo {
-    font-family: sans-serif;
-  font-weight: 900; /* Extra-bold or black font weight */
-  display: inline-flex;
-  align-items: baseline;
-  /* letter-spacing: -1px;  Slightly tighten the overall spacing */
-}
-
-.knx-logo .k {
-  color: #4A4A4A; /* Graphite */
-  font-size: 1em; /* Full size for K */
-  margin-right: -1px; /* Reduce space between K and N */
-}
-
-.knx-logo .n {
-  font-size: 0.8em; /* Slightly smaller for N */
-  color: #008080; /* Deep Teal */
-  position: relative;
-  top: 0.1em; /* Raise the N */
-  margin-right: -1px; /* Reduce space between N and X */
-}
-
-.knx-logo .x {
-  color: #008080; /* Deep Teal */
-  font-size: 0.8em; /* Slightly smaller for X */
-  position: relative;
-}
-
-// Fixing the dark background font colors ==>
-
-body.dark-mode { /* Styles for dark mode */
-
-  /* Color variables for dark mode */
-  --primary: #C084FC; /* Lighter purple with better contrast */
-  --gray: #999;      /* Lighter gray for better readability */
-  --gray-light: #BBB; /* Even lighter gray for subtle elements */
-
-  background-image: url('/images/background1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #f5f5f5;
-
-  /* Dark mode styles for header, navbar, footer, etc. */
-  #header {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    border-bottom: none;
-  }
-
-  .bg-navbar {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    border-bottom: none;
-  }
-
-  .container.mt-4 { /* Targets the main content area */
-    background-color: rgba(0, 0, 0, 0.9); /* 50% transparent black background */
-    padding: 20px; /* Add some padding for better readability */
-    border-radius: 5px; /* Optional: Add a subtle border radius */
-  }
-
-  footer {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    border-top: none;
-  }
-
-  .nav-pills .note .nav-link.active,
-  .nav-pills .show > .nav-link {
-    background-color: rgba(192, 132, 252, 0.75); /* 50% transparent --primary */
-  }
-
-  table {
-    color: #eee !important;
-  }
-
-  a { /* Style all links */
-    color: var(--primary);
-  }
-
-  .knx-logo .k {
-    color: var(--primary); /* Example: Lighter red */
-  }
-
-  .knx-logo .n {
-    color: #f5f5f5; /* Example: Lighter green */
-  }
-
-  .knx-logo .x {
-    color: #f5f5f5; /* Example: Lighter blue */
-  }
-
-  /* Force correct color for Privacy Policy and Terms of Service links */
-  footer ul:last-of-type a {
-    color: var(--primary) !important;
-  }
-  .btn-outline-primary {
-    color: var(--primary) !important;  /* Set the text color to your primary dark mode color */
-    border-color: var(--primary) !important; /* Set the border color to your primary dark mode color */
-  }
-
-  .btn-primary {
-    background-color:var(--primary) !important; /* Light purple */
-    color: #fff; /* Dark gray */
-  }
-
-  .btn-secondary {
-    background-color: #ced4da; /* Lighter gray */
-    color: #000; /* Dark gray */
-  }
-
-  .image-with-shadow figcaption {
-    color: #f8f9fa; /* Light color for caption text */
-  }
-
-  #container i { /* Targeting the <i> directly */
-    color: var(--secondary) !important;
-  }
-
-  hr { /* Targets all horizontal rules */
-    border-color: var(--gray-light); /* Use a lighter color for better visibility */
-  }
-
-}
-
-// dark mode icon swith adjustment
-#dark-mode-icon {
-  font-size: 1.5rem; /* Adjust the value as needed */
-}
 
 /* Ensure the container spans full width */
 .responsive-iframe-container {
@@ -716,3 +573,106 @@ body.dark-mode { /* Styles for dark mode */
   opacity: 1;
 }
 
+// MODIFIED: Combined and optimized heading styles
+h1, .h1 {
+    font-size: floor($font-size-base * 2.20);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h2, .h2 {
+    font-size: floor($font-size-base * 2.00);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h3, .h3 {
+    font-size: ceil($font-size-base * 1.70);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h4, .h4 {
+    font-size: ceil($font-size-base * 1.25);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h5, .h5 {
+    font-size: $font-size-base;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h6, .h6 {
+    font-size: ceil($font-size-base * 0.85);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+// Override for the light mode active nav link
+body .nav-pills .nav-link.active,
+body .nav-pills .show > .nav-link {
+    background-color: #E7E7E7 !important;
+    color: #1127DB !important;
+}
+
+
+body {
+    font-family: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+// Override to ensure all links and icons use the primary color on hover
+a:hover,
+i:hover,
+.nav-link a:hover {
+    color: $primary !important;
+    text-decoration: none !important;
+}
+
+/* Set all hyperlinks to primary color */
+
+a {
+  color: $primary;
+}
+
+/* Buttons: Change to primary color and remove hover effect */
+
+// Set normal state for both buttons to primary color
+.btn-outline-primary,
+.btn-outline-secondary {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+// Remove hover effect by setting the hover state to the same primary color
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+// Ensure the icons within the buttons also change color
+.btn-outline-primary .fas,
+.btn-outline-secondary .fas {
+  color: #fff !important;
+}
+
+/* Set the Curriculum Vitae button to primary color and remove hover effect */
+
+// Set normal state to primary color
+.btn-secondary {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+// Remove hover effect by setting the hover state to the same primary color
+.btn-secondary:hover {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}

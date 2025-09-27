@@ -30,7 +30,7 @@ categories:
 <div class="row">
 	<div class="col-lg-12">
 		<div class="smallhead">
-			<p>Our work integrates innovative research, impactful teaching, and dedicated service to advance science education. Founded at <a class="off" href="https://www.luc.edu">Loyola University Chicago</a> (<a class="off" href="https://www.luc.edu">LUC</a>), we focus on the intersection of education, technology, and psychology, particularly in chemistry education. Our research explores the affective states of teachers and students, instructional interactivity, and the use of technology in learning, resulting in impactful publications like the co-edited book "<a class="off" href="/yfg">Affective Dimensions in Chemistry Education</a>." As a science teacher at Chicago Public Schools, I focus on inquiry-based, student-centered learning to enhance engagement and understanding in chemistry and biology, while as an instructor at Wheeling University, I deliver online organic chemistry instruction fostering foundational mastery in a virtual setting. We develop innovative tools, such as <a class="off" href="/drc">graphical representations</a>, to improve conceptual understanding, and contribute to global education reform through collaborations like EU-funded projects and conference presentations. At Kahveci Nexus ({% include knx.html %}), we are committed to preparing future educators, creating equitable learning environments, and advancing the integration of research and teaching to address diverse educational needs.</p>
+			<p>Our work integrates innovative research, impactful teaching, and dedicated service to advance science education. Founded at <a class="off" href="https://www.luc.edu">Loyola University Chicago</a> (<a class="off" href="https://www.luc.edu">LUC</a>), we focus on the intersection of education, technology, and psychology, particularly in chemistry education. Our research explores the affective states of teachers and students, instructional interactivity, and the use of technology in learning, resulting in impactful publications like the co-edited book "<a class="off" href="/yfg">Affective Dimensions in Chemistry Education</a>." As a science teacher at Chicago Public Schools, I focus on inquiry-based, student-centered learning to enhance engagement and understanding in chemistry and biology, while as an instructor at Wheeling University, I deliver online organic chemistry instruction fostering foundational mastery in a virtual setting. We develop innovative tools, such as <a class="off" href="/drc">graphical representations</a>, to improve conceptual understanding, and contribute to global education reform through collaborations like EU-funded projects and conference presentations. At Kahveci Nexus, we are committed to preparing future educators, creating equitable learning environments, and advancing the integration of research and teaching to address diverse educational needs.</p>
 		</div>
 	</div>
 </div>
@@ -169,138 +169,6 @@ categories:
 		</div>
 	</div>
 	{% endfor %}
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/talks/">Recent talks</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for talk in site.categories.talks limit:3 %}
-	<div class="col-lg-4 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-
-				<a class="off" href="{{ talk.permalink }}">
-					<i class="fas fa-chalkboard-teacher"></i>
-					{{ talk.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ talk.date | date: "%-d %b %Y" }}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			{% include knx.html %} on <a class="off" href="https://www.youtube.com/@KahveciNexus">YouTube</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="col-lg-12">
-	<!-- Videos Row -->
-	<div class="row g-3">
-		<!-- First Video -->
-		<div class="col-lg-4 col-md-4 col-sm-12">
-			<div class="pad-left">
-				<div class="note">
-					<a class="off" href="https://www.youtube.com/watch?v=gW9zy9u0KYQ">
-						<i class="fa fa-youtube-play fa-fw"></i>
-						Unveilling Kahveci Nexus
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					8 Jan 2024
-					by <a class="off" href="https://www.youtube.com/@KahveciNexus">Kahveci Nexus</a>
-				</div>
-				<div class="bigspacer"></div>
-			</div>
-			<div style="position: relative; padding-top: 56.25%; margin-bottom: 10px;">
-				<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-						src="https://www.youtube.com/embed/gW9zy9u0KYQ?si=oJPdaO3BRGCCDzEu"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-				</iframe>
-			</div>
-		</div>
-		<!-- Second Video -->
-		<div class="col-lg-4 col-md-4 col-sm-12">
-			<div class="pad-left">
-				<div class="note">
-					<a class="off" href="https://www.youtube.com/watch?v=fBHswyk4iTk">
-						<i class="fa fa-youtube-play fa-fw"></i>
-						Affective Dimensions in Chemistry
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					23 Nov 2024
-					by <a class="off" href="https://www.youtube.com/@KahveciNexus">Kahveci Nexus</a>
-				</div>
-				<div class="bigspacer"></div>
-			</div>
-			<div style="position: relative; padding-top: 56.25%; margin-bottom: 10px;">
-				<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-						src="https://www.youtube.com/embed/fBHswyk4iTk?si=uiutyu2bWSYOrdi4"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
-						allowfullscreen>
-				</iframe>
-			</div>
-		</div>
-		<!-- Third Video (Added for a full three-column example) -->
-		<div class="col-lg-4 col-md-4 col-sm-12">
-			<div class="pad-left">
-				<div class="note">
-					<a class="off" href="https://www.youtube.com/watch?v=JO-YsscOaCQ">
-						<i class="fa fa-youtube-play fa-fw"></i>
-						Teacher Appreciation Week 2025
-					</a>
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					9 May 2025
-					by <a class="off" href="https://www.youtube.com/@KahveciNexus">Kahveci Nexus</a>
-				</div>
-				<div class="bigspacer"></div>
-			</div>
-			<div style="position: relative; padding-top: 56.25%; margin-bottom: 10px;">
-				<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-						src="https://www.youtube.com/embed/6uFnVO2s9L0?si=QGolTHEVn5g4Vztw"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-				</iframe>
-			</div>
-		</div>
-	</div>
 </div>
 
 
