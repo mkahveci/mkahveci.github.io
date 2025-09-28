@@ -23,7 +23,7 @@ This project pioneers the development and validation of adaptable **AI-driven pe
 ### Repository Structure
 
 - `README.md`: Contains project details.
-- `/data`: Contains files with examples of custom prompts.
+- `/docs`: Contains files with examples of custom prompts.
 
 ### Custom Prompt Library
 
@@ -33,8 +33,7 @@ This project includes a curated library of custom prompts designed for specific 
  |-----------------------------------| ----- | ----- |---------------------------------------------------------------------------------|  
 | **Socratic Chemistry Tutor**      | Stoichiometry | Guides students through complex calculations step-by-step using only guiding questions. | [View Prompt](/projectsgit/ai-in-education/docs/socratic_chemistry_tutor)                  | 
 | **ELL Text Simplifier  & Vocabulary Scaffolder**          | Vocabulary / Reading | Takes a dense scientific paragraph and outputs a simplified version with a target vocabulary list. | [View Prompt](/projectsgit/ai-in-education/docs/ell_text_simplifier)  | 
-| **Reaction Mechanism Explainer**  | Organic Chemistry | Acts as a visual aid describer, explaining reaction steps in accessible language. | [View Prompt](https://www.google.com/search?q=_prompts/reaction_mechanism.html)   | 
-| **Balancing Equation Scaffolder** | General Chemistry | Breaks down the steps for balancing complex equations, asking the user to confirm each step. | [View Prompt](https://www.google.com/search?q=_prompts/balancing_scaffolder.html) |
+
 
 ### Usage Information
 

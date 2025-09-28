@@ -12,6 +12,11 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-09-28 17:59:57.000000000 Z
+    message: README content update
+    url: https://github.com/mkahveci/ai-in-education/commit/d625ba9503fdf58221ff3ce907931a9c3c12d4c4
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-09-28 17:51:39.000000000 Z
     message: README content update
     url: https://github.com/mkahveci/ai-in-education/commit/08a8165b7971c577942922fc8716001f3e8732a3
@@ -32,11 +37,6 @@
       README content update
       New prompt ELL Text Simplifier & Vocabulary Scaffolder
     url: https://github.com/mkahveci/ai-in-education/commit/425d6de54b8dddb8ec802205874694e690245bd6
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-09-28 15:56:46.000000000 Z
-    message: README content update
-    url: https://github.com/mkahveci/ai-in-education/commit/f93012cb5482a31a437583fab20b3b7c5f913ebb
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
