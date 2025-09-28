@@ -1,0 +1,44 @@
+---
+layout: default
+title: Kahveci Nexus / projects
+categories:
+- projectsgit
+---
+
+<!-- Custom link to the automated, code-based projects (The primary reason for this page update) -->
+<div class="alert alert-info border shadow-sm p-4 mb-4">
+    <h4 class="alert-heading">Technical & Automation Projects</h4>
+    <p>
+        Our complete, dynamically updated list of technical projects and code repositories, including <b>AI prompt tools for education</b>, maintained directly through GitHub.
+    </p>
+</div>
+<!-- End Custom link -->
+
+{% for project in site.data.projectsgit %}
+
+{% cycle 'add rows': '<div class="row">', '', '' %}
+    <div class="col-md-4 projectbox">
+        <div class="head">
+            <a href="{{ project.url }}" class="off">{{ project.title }}</a>
+        </div>
+        <div class="smallspacer"></div>
+        <div class="note">
+            <a href="{{ project.url }}" class="off">{{ project.description }}</a>
+        </div>
+        <div class="smallspacer"></div>
+        <div class="smallnote">
+            Updated
+            <a class="off" href="{{ project.commits.first.url }}">
+                {{ project.commits.first.date | date: "%-d %b %Y" }}
+            </a>
+            by
+            <a class="off" href="{{ project.commits.first.author_url }}">
+                {{ project.commits.first.author_login }}
+            </a>
+        </div>
+        <div class="bigspacer"></div>
+        <div class="spacer"></div>
+    </div>
+    {% cycle 'close rows': '', '', '</div>' %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}

@@ -676,3 +676,19 @@ a {
   background-color: $primary !important;
   border-color: $primary !important;
 }
+
+/* Styling for headings inside the main content area */
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post h1 { font-size: 2.5rem; }
+.post h2 { font-size: 2rem; }
+.post h3 { font-size: 1.75rem; }
+.post h4 { font-size: 1.5rem; }
+.post h5 { font-size: 1.25rem; }
+.post h6 { font-size: 1rem; }

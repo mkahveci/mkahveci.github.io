@@ -1,0 +1,78 @@
+---
+- repo: mkahveci/ai-in-education
+  title: ai-in-education
+  owner: mkahveci
+  description: Designing scalable AI prompt architectures for diverse learning contexts,
+    from K-12 chemistry scaffolding to undergraduate research assistance. This project
+    validates custom prompts that maximize student self-efficacy, minimize factual
+    error, and provide equitable linguistic support across educational levels.
+  url: "/projectsgit/ai-in-education/"
+  contributors:
+  - login: mkahveci
+    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
+    url: https://github.com/mkahveci
+  commits:
+  - date: 2025-09-28 17:51:39.000000000 Z
+    message: README content update
+    url: https://github.com/mkahveci/ai-in-education/commit/08a8165b7971c577942922fc8716001f3e8732a3
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-09-28 17:49:55.000000000 Z
+    message: README content update
+    url: https://github.com/mkahveci/ai-in-education/commit/ba260f56a5316417d39d1363e11c3fd16b6f3ef3
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-09-28 17:39:07.000000000 Z
+    message: README content update
+    url: https://github.com/mkahveci/ai-in-education/commit/da3ac9d34461f20736a4d1c9b561909d0364192c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-09-28 16:23:10.000000000 Z
+    message: |-
+      README content update
+      New prompt ELL Text Simplifier & Vocabulary Scaffolder
+    url: https://github.com/mkahveci/ai-in-education/commit/425d6de54b8dddb8ec802205874694e690245bd6
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-09-28 15:56:46.000000000 Z
+    message: README content update
+    url: https://github.com/mkahveci/ai-in-education/commit/f93012cb5482a31a437583fab20b3b7c5f913ebb
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  readme_only: true
+- repo: mkahveci/loyola-beamer-template
+  title: loyola-beamer-template
+  owner: mkahveci
+  description: A Loyola LaTeX Beamer Template
+  url: "/projectsgit/loyola-beamer-template/"
+  contributors:
+  - login: mkahveci
+    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
+    url: https://github.com/mkahveci
+  commits:
+  - date: 2022-11-08 15:20:33.000000000 Z
+    message: Updates from Overleaf
+    url: https://github.com/mkahveci/loyola-beamer-template/commit/a7555c3782a2e67bbdc37dda33ff0445291598f8
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2022-11-08 15:19:16.000000000 Z
+    message: Updates from Overleaf
+    url: https://github.com/mkahveci/loyola-beamer-template/commit/e1f8ba41238d83f1ebc22373b659e48836b49cd7
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2022-11-08 15:14:14.000000000 Z
+    message: README updates
+    url: https://github.com/mkahveci/loyola-beamer-template/commit/0f11dc93bee4c56a48a41b07d24db3ee187201b7
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2022-11-08 15:12:31.000000000 Z
+    message: README updates
+    url: https://github.com/mkahveci/loyola-beamer-template/commit/75e4e3c8847892d5571034520bd9d822ee1930a3
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2022-11-08 15:09:14.000000000 Z
+    message: README updates
+    url: https://github.com/mkahveci/loyola-beamer-template/commit/c6ca13095b85eace3f12010d93b10a3e06205a8d
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  readme_only: true

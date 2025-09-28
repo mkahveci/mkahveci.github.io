@@ -1,0 +1,121 @@
+---
+layout: default
+categories:
+- projectsgit
+---
+
+{% comment %}
+CRITICAL FIX: Use the title set by the script (e.g., 'ai-in-education') to find the project data.
+The page.title will either be the short name (for index.md) or the full prompt title.
+We use the 'project' variable set by the preprocessor for the safest match.
+{% endcomment %}
+
+{% assign project_id = page.project | default: "" %}
+{% assign project = site.data.projectsgit | where: "title", project_id | first %}
+
+{% if project == nil and page.url contains '/docs/' %}
+{% assign project_repo_name = page.url | split: '/' | slice: 2 %}
+{% assign project = site.data.projectsgit | where: "title", project_repo_name | first %}
+{% endif %}
+
+
+<div class="container-fluid top-space">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="bigtitle titlebox">
+                <!-- SIMPLE BREADCRUMB (Replaced complex, failing logic) -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="off" href="/{{ page.categories.first | default: 'projectsgit' | append: '/'}}">GitHub Projects</a></li>
+                        <li class="breadcrumb-item active">{{ page.title | replace: '_', ' ' | capitalize }}</li>
+                    </ol>
+                </nav>
+            </div>
+            <p>
+            <div class="head">
+                <!-- Uses description from metadata -->
+                {{ project.description }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid top-space">
+    <div class="row">
+        <!-- START LEFT COLUMN: SIDEBAR -->
+        <div class="col-lg-3 sidebar">
+            <div class="bigspacer"></div>
+
+            <!-- Source Code Link -->
+            <div class="smallhead">Source code</div>
+            <div class="pad-left note">
+                <div class="smallspacer"></div>
+                <i class="fa-solid fa-gears fa-fw"></i>
+                <a class="off" href="https://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
+            </div>
+
+            <!-- Contributors List -->
+            <div class="bigspacer"></div>
+            <div class="smallhead">Contributors</div>
+            <div class="pad-left note">
+                {% for contributor in project.contributors %}
+                <div class="smallspacer"></div>
+                <div>
+                    <a class="off" href="{{ contributor.url }}">
+                        <img class="pull-left avatar" src="{{ contributor.avatar }}">
+                        <div class="handlebox" style="padding-left:5px;">
+                            {{ contributor.login }}
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Latest Commits List -->
+            <div class="bigspacer"></div>
+            <div class="smallhead">Latest commits</div>
+            <div class="pad-left smallnote">
+                <ul class="list-unstyled">
+                    {% for commit in project.commits %}
+                    <div class="smallspacer"></div>
+                    <li>
+                        <i class="fa-solid fa-code-commit fa-fw"></i>
+                        <a class="off" href="{{ commit.url }}">
+                            {{ commit.date | date: "%-d %b %Y" }} - <span class="text-gray">{{ commit.message | truncatewords: 5 }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="spacer"></div>
+
+            <!-- PROJECT DOCUMENTS LIST (The Prompts) -->
+            {% assign project_documents = site.pages | where: "project", project.title | where_exp: "item", "item.path contains '/docs/'" %}
+            {% if project_documents.size > 0 %}
+            <div class="smallhead">Project Documents</div>
+            <div class="pad-left smallnote">
+                <ul class="list-unstyled">
+                    {% for doc in project_documents %}
+                    <div class="smallspacer"></div>
+                    <li>
+                        <i class="fa-regular fa-file-lines fa-fw"></i>
+                        <a class="off" href="{{ doc.url }}">{{ doc.title | replace: '_', ' ' | capitalize }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+        </div>
+        <!-- END LEFT COLUMN: SIDEBAR -->
+
+        <!-- START RIGHT COLUMN: MAIN CONTENT -->
+        <div class="col-lg-8">
+            <div class="post">
+                {{ content }}
+            </div>
+        </div>
+        <!-- END RIGHT COLUMN -->
+        <div class="col-lg-1"></div>
+    </div>
+</div>
