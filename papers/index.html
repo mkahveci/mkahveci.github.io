@@ -1,9 +1,27 @@
 ---
 layout: default
 title: kahveci group / publications
-categories:
-- papers
 ---
+<!--
+  This page has been updated to remove the image functionality.
+  Each card will now consistently display the year block.
+  Spacing has been adjusted to match the projects page.
+-->
+
+<style>
+  .year-block {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef; /* A neutral gray, similar to Bootstrap's theme */
+    color: #495057;
+    font-weight: bold;
+    border-radius: 0.25rem;
+  }
+</style>
 
 <div class="container my-5">
 
@@ -18,52 +36,117 @@ categories:
   {% assign journals = site.categories.papers | where: "journal", true | sort: "year" | reverse %}
   {% assign conferences = site.categories.papers | where: "conference", true | sort: "year" | reverse %}
 
+  <!-- Section: Books & Book Chapters -->
   {% if books.size > 0 %}
-  <h2 class="display-6 mb-4 mt-5"><i class="fas fa-book fa-fw text-muted"></i> Books &amp; Book Chapters</h2>
-  <div class="list-group shadow-sm">
-    {% for paper in books %}
-    <a href="{{ paper.url }}" class="list-group-item list-group-item-action py-3">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">{{ paper.title }}</h5>
-        <small class="text-muted">{{ paper.year }}</small>
+  <section id="books" class="mb-5">
+    <h2 class="display-6 mb-4 mt-5"><i class="fas fa-book fa-fw text-muted me-2"></i> Books &amp; Book Chapters</h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+      {% for paper in books %}
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex">
+            <div class="year-block me-3">{{ paper.year }}</div>
+            <div class="flex-grow-1">
+              <h5 class="card-title h6">{{ paper.title }}</h5>
+              <p class="card-text small text-muted">{{ paper.authors }}</p>
+              <p class="card-text small fst-italic mt-2">In: {{ paper.publisher }}</p>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 pt-0">
+            <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+              {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
+              {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
+              {% if paper.github %}<a href="https://github.com/{{ paper.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github fa-fw me-1"></i> GitHub</a>{% endif %}
+              {% if paper.projectid %}
+              {% assign linked_project = site.documents | where: "projectid", paper.projectid | first %}
+              {% if linked_project %}<a href="{{ linked_project.url | relative_url }}" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-diagram-project fa-fw me-1"></i> Project</a>{% endif %}
+              {% endif %}
+              <a href="{{ paper.url | relative_url }}" class="btn btn-sm btn-outline-info"><i class="fas fa-info-circle fa-fw me-1"></i> Details</a>
+              <button onclick="copyBibtex(this)" class="btn btn-sm btn-outline-secondary" title="Copy BibTeX citation"><i class="fas fa-quote-right fa-fw me-1"></i> Copy</button>
+              <div class="bibtex-data" style="display: none;">@incollection{kahveci{{paper.year}}, author="{{ paper.authors }}", title="{{ paper.title }}", publisher="{{ paper.publisher }}", year="{{ paper.year }}"}</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="mb-1">{{ paper.authors }}</p>
-      <small class="text-muted fst-italic">{{ paper.publisher }}</small>
-    </a>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 
+  <!-- Section: Peer-Reviewed Journal Articles -->
   {% if journals.size > 0 %}
-  <h2 class="display-6 mb-4 mt-5"><i class="fas fa-flask-vial fa-fw text-muted"></i> Peer-Reviewed Journal Articles</h2>
-  <div class="list-group shadow-sm">
-    {% for paper in journals %}
-    <a href="{{ paper.url }}" class="list-group-item list-group-item-action py-3">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">{{ paper.title }}</h5>
-        <small class="text-muted">{{ paper.year }}</small>
+  <section id="journals" class="mb-5">
+    <h2 class="display-6 mb-4 mt-5"><i class="fas fa-flask-vial fa-fw text-muted me-2"></i> Peer-Reviewed Journal Articles</h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+      {% for paper in journals %}
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex">
+            <div class="year-block me-3">{{ paper.year }}</div>
+            <div class="flex-grow-1">
+              <h5 class="card-title h6">{{ paper.title }}</h5>
+              <p class="card-text small text-muted">{{ paper.authors }}</p>
+              <p class="card-text small fst-italic mt-2">
+                {{ paper.publisher }}{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.issue %}({{ paper.issue }}){% endif %}{% if paper.pages %}, pp. {{ paper.pages }}{% endif %}.
+              </p>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 pt-0">
+            <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+              {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
+              {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
+              {% if paper.github %}<a href="https://github.com/{{ paper.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github fa-fw me-1"></i> GitHub</a>{% endif %}
+              {% if paper.projectid %}
+              {% assign linked_project = site.documents | where: "projectid", paper.projectid | first %}
+              {% if linked_project %}<a href="{{ linked_project.url | relative_url }}" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-diagram-project fa-fw me-1"></i> Project</a>{% endif %}
+              {% endif %}
+              <a href="{{ paper.url | relative_url }}" class="btn btn-sm btn-outline-info"><i class="fas fa-info-circle fa-fw me-1"></i> Details</a>
+              <button onclick="copyBibtex(this)" class="btn btn-sm btn-outline-secondary" title="Copy BibTeX citation"><i class="fas fa-quote-right fa-fw me-1"></i> Copy</button>
+              <div class="bibtex-data" style="display: none;">@article{kahveci{{paper.year}}, author="{{ paper.authors }}", title="{{ paper.title }}", journal="{{ paper.publisher }}", year="{{ paper.year }}", volume="{{ paper.volume }}", number="{{ paper.issue }}", pages="{{ paper.pages }}", doi="{{ paper.doi }}"}</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="mb-1">{{ paper.authors }}</p>
-      <small class="text-muted fst-italic">{{ paper.publisher }}</small>
-    </a>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 
+  <!-- Section: Conference Proceedings -->
   {% if conferences.size > 0 %}
-  <h2 class="display-6 mb-4 mt-5"><i class="fas fa-users fa-fw text-muted"></i> Conference Proceedings &amp; Presentations</h2>
-  <div class="list-group shadow-sm">
-    {% for paper in conferences %}
-    <a href="{{ paper.url }}" class="list-group-item list-group-item-action py-3">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">{{ paper.title }}</h5>
-        <small class="text-muted">{{ paper.year }}</small>
+  <section id="conferences">
+    <h2 class="display-6 mb-4 mt-5"><i class="fas fa-users fa-fw text-muted me-2"></i> Conference Proceedings &amp; Presentations</h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+      {% for paper in conferences %}
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex">
+            <div class="year-block me-3">{{ paper.year }}</div>
+            <div class="flex-grow-1">
+              <h5 class="card-title h6">{{ paper.title }}</h5>
+              <p class="card-text small text-muted">{{ paper.authors }}</p>
+              <p class="card-text small fst-italic mt-2">Presented at: {{ paper.publisher }}</p>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 pt-0">
+            <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+              {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
+              {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
+              {% if paper.github %}<a href="https://github.com/{{ paper.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github fa-fw me-1"></i> GitHub</a>{% endif %}
+              {% if paper.projectid %}
+              {% assign linked_project = site.documents | where: "projectid", paper.projectid | first %}
+              {% if linked_project %}<a href="{{ linked_project.url | relative_url }}" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-diagram-project fa-fw me-1"></i> Project</a>{% endif %}
+              {% endif %}
+              <a href="{{ paper.url | relative_url }}" class="btn btn-sm btn-outline-info"><i class="fas fa-info-circle fa-fw me-1"></i> Details</a>
+              <button onclick="copyBibtex(this)" class="btn btn-sm btn-outline-secondary" title="Copy BibTeX citation"><i class="fas fa-quote-right fa-fw me-1"></i> Copy</button>
+              <div class="bibtex-data" style="display: none;">@inproceedings{kahveci{{paper.year}}, author="{{ paper.authors }}", title="{{ paper.title }}", booktitle="{{ paper.publisher }}", year="{{ paper.year }}"}</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="mb-1">{{ paper.authors }}</p>
-      <small class="text-muted fst-italic">{{ paper.publisher }}</small>
-    </a>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
-
 </div>
+
