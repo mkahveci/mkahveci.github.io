@@ -20,26 +20,21 @@ categories:
 		<h2 class="display-5">Current Team</h2>
 	</div>
 
-	<div class="row">
+	<div class="row row-cols-1 row-cols-lg-2 g-4">
 		{% for member in site.categories.team reversed %}
 		{% if member.alumni != true %}
-		<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-			<div class="card h-100 shadow-sm text-center w-100">
-				<div class="card-body d-flex flex-column">
-					<img src="{{ member.image }}" class="rounded-circle border shadow-sm mx-auto mb-3" width="120" height="120" alt="{{ member.title }}" style="object-fit: cover;">
-					<h5 class="card-title">
-						<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
-					</h5>
-					<p class="card-subtitle mb-2 text-muted">{{ member.position }}</p>
-					<div class="mt-auto">
-						<a href="{{ member.url }}" class="btn btn-sm btn-outline-primary">View Profile</a>
+		<div class="col">
+			<div class="card h-100 shadow-sm">
+				<div class="card-body d-flex align-items-center">
+					<img src="{{ member.image }}" class="rounded-circle border shadow-sm me-3" width="90" height="90" alt="{{ member.title }}" style="object-fit: cover; flex-shrink: 0;">
+					<div class="flex-grow-1">
+						<h5 class="card-title h6">
+							<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
+						</h5>
+						<p class="card-subtitle mb-2 small text-muted">{{ member.position }}</p>
+						<a href="{{ member.url }}" class="btn btn-sm btn-outline-primary mt-2">View Profile</a>
 					</div>
 				</div>
-				{% if member.date %}
-				<div class="card-footer bg-transparent border-top-0">
-					<small class="text-muted">{{ member.date | date_to_string }}</small>
-				</div>
-				{% endif %}
 			</div>
 		</div>
 		{% endif %}
@@ -52,26 +47,21 @@ categories:
 		<h2 class="display-5">Alumni of Excellence</h2>
 	</div>
 
-	<div class="row">
+	<div class="row row-cols-1 row-cols-lg-2 g-4">
 		{% for member in site.categories.team reversed %}
 		{% if member.alumni == true %}
-		<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-			<div class="card h-100 shadow-sm text-center w-100">
-				<div class="card-body d-flex flex-column">
-					<img src="{{ member.image }}" class="rounded-circle border shadow-sm mx-auto mb-3" width="120" height="120" alt="{{ member.title }}" style="object-fit: cover;">
-					<h5 class="card-title">
-						<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
-					</h5>
-					<p class="card-subtitle mb-2 text-muted">{{ member.position }}</p>
-					<div class="mt-auto">
-						<a href="{{ member.url }}" class="btn btn-sm btn-outline-secondary">View Profile</a>
+		<div class="col">
+			<div class="card h-100 shadow-sm">
+				<div class="card-body d-flex align-items-center">
+					<img src="{{ member.image }}" class="rounded-circle border shadow-sm me-3" width="90" height="90" alt="{{ member.title }}" style="object-fit: cover; flex-shrink: 0;">
+					<div class="flex-grow-1">
+						<h5 class="card-title h6">
+							<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
+						</h5>
+						<p class="card-subtitle mb-2 small text-muted">{{ member.position }}</p>
+						<a href="{{ member.url }}" class="btn btn-sm btn-outline-secondary mt-2">View Profile</a>
 					</div>
 				</div>
-				{% if member.date %}
-				<div class="card-footer bg-transparent border-top-0">
-					<small class="text-muted">{{ member.date | date_to_string }}</small>
-				</div>
-				{% endif %}
 			</div>
 		</div>
 		{% endif %}
