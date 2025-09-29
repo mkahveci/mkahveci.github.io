@@ -4,181 +4,82 @@ layout: default
 
 {% assign member = page %}
 
-<div class="row">
-    <div class="col-lg-12">
-        {% if member.image %}
-            <img width="170px" class="float-left mr-3 mb-3 rounded-circle border shadow" src="{{ member.image }}" alt="{{ member.title }}">
-        {% endif %}
-        <div class="titlebox">
-            <div class="bigtitle">
-                {{ member.title }}
-            </div>
-            <p>
-                <div class="smallhead">
-                    {{ member.position }} | {{ member.active }}
-                </div>
-            </p>
-        </div>
-    </div>
-</div>
+<div class="container my-5">
 
-
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-3">
-		{% if member.cv %}
-		<div class="smallhead">
-			CV
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>
-			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.facebook %}
-		<div class="smallhead">
-			Facebook
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-facebook fa-fw"></i>
-			<a class="off" href="https://www.facebook.com/{{ member.facebook }}">{{ member.facebook }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.twitter %}
-		<div class="smallhead">
-			Twitter
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-twitter fa-fw"></i>
-			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.linkedin %}
-		<div class="smallhead">
-			LinkedIn
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-github-alt fa-fw"></i>
-			<a class="off" href="https://www.linkedin.com/in/{{ member.github }}">{{ member.linkedin }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.github %}
-		<div class="smallhead">
-			GitHub
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-github-alt fa-fw"></i>
-			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.googlescholar %}
-		<div class="smallhead">
-			Google Scholar
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-book fa-fw"></i>
-			<a class="off" href="http://scholar.google.com/citations?user={{ member.googlescholar }}">{{ member.title }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.calendar %}
-		<div class="smallhead">
-			Calendar
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-calendar fa-fw"></i>
-			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.website %}
-		<div class="smallhead">
-			Website
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-globe fa-fw"></i>
-			<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
-		<div class="smallhead">
-			Email
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-inbox fa-fw"></i>
-			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		{% if member.name == "Murat Kahveci" %}
-			<div class="smallhead">
-				Discover More
+	<div class="p-5 mb-4 bg-light rounded-3">
+		<div class="row align-items-center">
+			<div class="col-lg-3 text-center">
+				{% if member.image %}
+				<img class="img-fluid rounded-circle border shadow-sm" src="{{ member.image }}" alt="{{ member.title }}" style="width: 180px; height: 180px; object-fit: cover;">
+				{% endif %}
 			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/about">About</a>
+			<div class="col-lg-9">
+				<h1 class="display-4">{{ member.title }}</h1>
+				<p class="lead">{{ member.position }}</p>
+				<p class="text-muted fst-italic">{{ member.active }}</p>
 			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/join">Join</a>
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/courses">Courses</a>
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/album">Album</a>
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/biking">Biking Activities</a>
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/reference">Letter Request</a>
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
-				<a class="off" href="/contact">Contact</a>
-			</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-external-link fa-fw"></i>
-			<a class="off" href="https://kahveci.icu">iLearnChem: Interactive Chemistry Understanding (.icu)</a>
 		</div>
-			<div class="bigspacer"></div>
-		{% endif %}
 	</div>
-	<div class="col-lg-8">
-		<div class="post">
-			{{ content }}
+
+	<div class="row">
+
+		<div class="col-lg-8">
+			<div class="post">
+				{{ content }}
+			</div>
+			{% include navigation.html category="team" %}
 		</div>
-		{% include navigation.html category="team" %}
+
+		<div class="col-lg-4">
+
+			<div class="card shadow-sm mb-4">
+				<div class="card-header">
+					<h5 class="mb-0">Contact & Links</h5>
+				</div>
+				<div class="list-group list-group-flush">
+					{% if member.cv %}
+					<a href="{{ member.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-text-o fa-fw me-2 text-muted"></i>View CV</a>
+					{% endif %}
+					{% if member.email %}
+					{% assign emailarray = member.email | split: '@' %}
+					<a href="mailto:{{ member.email }}" class="list-group-item list-group-item-action"><i class="fas fa-inbox fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
+					{% endif %}
+					{% if member.website %}
+					<a href="{{ member.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
+					{% endif %}
+					{% if member.googlescholar %}
+					<a href="http://scholar.google.com/citations?user={{ member.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
+					{% endif %}
+					{% if member.linkedin %}
+					<a href="https://www.linkedin.com/in/{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
+					{% endif %}
+					{% if member.github %}
+					<a href="https://github.com/{{ member.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
+					{% endif %}
+					{% if member.twitter %}
+					<a href="https://twitter.com/{{ member.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
+					{% endif %}
+					{% if member.calendar %}
+					<a href="{{ member.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
+					{% endif %}
+				</div>
+			</div>
+
+			{% if member.name == "Murat Kahveci" %}
+			<div class="card shadow-sm">
+				<div class="card-header">
+					<h5 class="mb-0">Discover More</h5>
+				</div>
+				<div class="list-group list-group-flush">
+					<a href="/about" class="list-group-item list-group-item-action">About</a>
+					<a href="/courses" class="list-group-item list-group-item-action">Courses</a>
+					<a href="/reference" class="list-group-item list-group-item-action">Request a Letter</a>
+					<a href="/contact" class="list-group-item list-group-item-action">Contact</a>
+					<a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a>
+				</div>
+			</div>
+			{% endif %}
+
+		</div>
 	</div>
-	<div class="col-lg-1"></div>
 </div>

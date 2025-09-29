@@ -2,74 +2,80 @@
 layout: default
 title: kahveci group / team
 categories:
- - team
+- team
 ---
 
-<div class="row">
-	<div class="col-lg-12">
-		<div class="bigtitle">
-			Team
-		</div>
+<div class="container my-5">
+
+	<div class="text-center mb-5">
+		<h1 class="display-4">Our Team & Collaborators</h1>
+		<p class="lead col-lg-8 mx-auto">
+			Our group is a diverse network of passionate educators and researchers. Meet the current members driving our initiatives and the esteemed alumni who have shaped our journey.
+		</p>
 	</div>
+
+	<hr>
+
+	<div class="text-center my-5">
+		<h2 class="display-5">Current Team</h2>
+	</div>
+
+	<div class="row">
+		{% for member in site.categories.team reversed %}
+		{% if member.alumni != true %}
+		<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+			<div class="card h-100 shadow-sm text-center w-100">
+				<div class="card-body d-flex flex-column">
+					<img src="{{ member.image }}" class="rounded-circle border shadow-sm mx-auto mb-3" width="120" height="120" alt="{{ member.title }}" style="object-fit: cover;">
+					<h5 class="card-title">
+						<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
+					</h5>
+					<p class="card-subtitle mb-2 text-muted">{{ member.position }}</p>
+					<div class="mt-auto">
+						<a href="{{ member.url }}" class="btn btn-sm btn-outline-primary">View Profile</a>
+					</div>
+				</div>
+				{% if member.date %}
+				<div class="card-footer bg-transparent border-top-0">
+					<small class="text-muted">{{ member.date | date_to_string }}</small>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+
+	<hr class="my-5">
+
+	<div class="text-center my-5">
+		<h2 class="display-5">Alumni of Excellence</h2>
+	</div>
+
+	<div class="row">
+		{% for member in site.categories.team reversed %}
+		{% if member.alumni == true %}
+		<div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+			<div class="card h-100 shadow-sm text-center w-100">
+				<div class="card-body d-flex flex-column">
+					<img src="{{ member.image }}" class="rounded-circle border shadow-sm mx-auto mb-3" width="120" height="120" alt="{{ member.title }}" style="object-fit: cover;">
+					<h5 class="card-title">
+						<a href="{{ member.url }}" class="text-dark text-decoration-none">{{ member.title }}</a>
+					</h5>
+					<p class="card-subtitle mb-2 text-muted">{{ member.position }}</p>
+					<div class="mt-auto">
+						<a href="{{ member.url }}" class="btn btn-sm btn-outline-secondary">View Profile</a>
+					</div>
+				</div>
+				{% if member.date %}
+				<div class="card-footer bg-transparent border-top-0">
+					<small class="text-muted">{{ member.date | date_to_string }}</small>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+
 </div>
-
-<div class="bigspacer"></div>
-<p>
-	Our team represents a diverse group of passionate educators, researchers, and innovators who have contributed to advancing chemistry education and STEM learning. Together, we bring a wealth of expertise and dedication to addressing educational challenges, fostering inquiry, and inspiring learners worldwide.
-</p>
-<p>
-	This section highlights both current members driving ongoing initiatives and past collaborators who have played pivotal roles in shaping our journey. Each member, past and present, has left a lasting impact, contributing to the success and vision of our group. Explore the list to learn more about the incredible individuals who have been part of this team.
-</p>
-
-<h3>Our Expert Team</h3>
-
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-	{% if member.alumni != true %}
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
-			<div class="media">
-  				<a class="float-left" href="{{ member.url }}">
-    				<img width=100 class="mr-3 rounded-circle border shadow" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}<br>
-					<small class="post-date">{{ member.date | date_to_string }}</small>
-					</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
-
-<h3>Alumni of Excellence</h3>
-
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-	{% if member.alumni == true %}
-    {% cycle 'add rows 2': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=100 class="mr-3 rounded-circle border shadow" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}<br>
-					<small class="post-date">{{ member.date | date_to_string }}</small>
-					</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows 2': '', '', '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows 2': '', '</div>', '</div>' %}

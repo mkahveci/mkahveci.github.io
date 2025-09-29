@@ -2,125 +2,87 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-lg-12">
-		{% if page.image %}
-		<img width="170px"  class="pull-left pad-right media-object d-none d-sm-block" src="{{ page.image }}">
-		<img width="170px"  class="float-left pad-right d-block d-sm-none" src="{{ page.image }}">
-		{% endif %}
-		<div class="titlebox">
-			<div class="title">
-				{{ page.title }}
+<div class="container my-5">
+
+	<div class="p-5 mb-5 bg-light rounded-3">
+		<div class="row align-items-center">
+			<div class="col-md-3 text-center">
+				{% if page.image %}
+				<img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Course Image">
+				{% else %}
+				<i class="fas fa-chalkboard-teacher fa-6x text-muted"></i>
+				{% endif %}
 			</div>
-			<p>
-			<div class="smallhead">
-				{{ page.code }}
+			<div class="col-md-9">
+				<h3 class="text-muted">{{ page.code }}</h3>
+				<h1 class="display-4">{{ page.title }}</h1>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
+	<div class="row">
 
-<div class="row">
-	<div class="col-lg-3">
-		<div class="bigspacer"></div>
-		<div class="glyphbox note">
-			{% if page.instructor %}
-			<div class="smallhead">
-				Instructor
+		<div class="col-lg-8">
+			<div class="post-content">
+				{{ content }}
 			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="{{ page.instructorurl }}" target=”_blank”>{{ page.instructor }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.semester %}
-			<div class="smallhead">
-				Taught in
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa fa-calendar fa-fw"></i>
-				{{ page.semester }}
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.clevel %}
-			<div class="smallhead">
-				Course Level
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa fa-university fa-fw"></i>
-				{{ page.clevel }}
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.institution %}
-			<div class="smallhead">
-				Institution
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa fa-university fa-fw"></i>
-				<a class="off" href="{{ page.insturl }}" target=”_blank”>{{ page.institution }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.web %}
-			<div class="smallhead">
-				LMS
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="{{ page.web }}" target=”_blank”>{{ page.code }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.pdf %}
-			<div class="smallhead">
-				PDF
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.supplement %}
-			<div class="smallhead">
-				Supplement
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-paperclip fa-fw"></i>
-				<a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			<div class="smallhead">
-				Lifelong Support
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="/xxz">Request for Reference Letter</a>
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	<div class="col-lg-8">
-		<div class="post">
-			{{ content }}
+			<hr class="my-4">
+			{% include navigation.html category="courses" %}
 		</div>
 
-{% include navigation.html category="courses" %}
+		<div class="col-lg-4">
 
+			<div class="card shadow-sm mb-4">
+				<div class="card-header">
+					<h5 class="mb-0">Course Details</h5>
+				</div>
+				<ul class="list-group list-group-flush">
+					{% if page.instructor %}
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						<strong>Instructor</strong>
+						<a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
+					</li>
+					{% endif %}
+					{% if page.institution %}
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						<strong>Institution</strong>
+						<a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
+					</li>
+					{% endif %}
+					{% if page.semester %}
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						<strong>Semester</strong>
+						<span class="text-end">{{ page.semester }}</span>
+					</li>
+					{% endif %}
+					{% if page.clevel %}
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+						<strong>Level</strong>
+						<span class="text-end">{{ page.clevel }}</span>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+
+			<div class="card shadow-sm">
+				<div class="card-header">
+					<h5 class="mb-0">Course Materials</h5>
+				</div>
+				<div class="card-body">
+					<div class="d-grid gap-2">
+						{% if page.web %}
+						<a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
+						{% endif %}
+						{% if page.pdf %}
+						<a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
+						{% endif %}
+						{% if page.supplement %}
+						<a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
-	<div class="col-lg-1"></div>
 </div>

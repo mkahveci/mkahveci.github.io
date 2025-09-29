@@ -2,57 +2,47 @@
 layout: default
 title: kahveci group / album
 categories:
- - album
+- album
 published: true
 ---
-<div class="row">
-  <div class="col-lg-12">
-    <div class="bigtitle">
-      Album
-    </div>
-  </div>
+
+<div class="container text-center mt-5 mb-5">
+  <h1 class="display-4">Photo Album</h1>
+  <p class="lead text-muted">A curated collection of moments that capture the essence of our work, collaborations, and milestones.</p>
+  <p>Explore the gallery to get a glimpse of our passion, dedication, and the stories behind our research journey.</p>
 </div>
 
-<div class="bigspacer"></div>
-<p>
-  Welcome to our album, a curated collection of moments that capture the essence of our work, collaborations, and milestones. Each image tells a story—whether it’s a snapshot from a groundbreaking conference, a hands-on chemistry experiment, or a memorable interaction with students and colleagues.
-</p>
-<p>
-  These visuals not only celebrate our journey but also reflect our commitment to advancing science education and fostering meaningful connections within the global academic community. Explore the gallery to get a glimpse of our passion, dedication, and impact.
-</p>
+<hr>
 
-<h3>
-  Our Impact in Frames
-</h3>
+<div class="container mt-5">
+  <div class="row">
 
-<div class="bigspacer"></div>
-
-
-{% for picture in site.categories.album %}
-
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-  <div class="col-lg-4 paperbox">
-    <div class="media">
-      <div class="media-body">
-        <div class="smallhead mb-1"><a href="{{ picture.url }}" class="off">{{ picture.title }}</a></div>
-        <p class="note">by <a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == picture.author %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ picture.author }}</a><br>
-          <small>{{ picture.date | date_to_string }}</small>
-        </p>
+    {% for picture in site.categories.album %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 shadow-sm border-0">
+        <a href="{{ picture.url }}">
+          <img src="{{ picture.image }}" class="card-img-top" alt="{{ picture.title }}" style="object-fit: cover; height: 225px;">
+        </a>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <a href="{{ picture.url }}" class="text-dark text-decoration-none">{{ picture.title }}</a>
+          </h5>
+          <p class="card-text small text-muted mt-auto">
+            by <a class="text-muted" href="
+              {% for member in site.categories.team %}
+                {% if member.title == picture.author %}
+                  {{ member.url }}
+                {% endif %}
+              {% endfor %}">
+            {{ picture.author }}
+          </a>
+            <br>
+            {{ picture.date | date_to_string }}
+          </p>
+        </div>
       </div>
-      <a href="{{ picture.url }}">
-        <img class="ml-3 border shadow" width="120px" class="media-object" src="{{ picture.image }}">
-      </a>
     </div>
-    <div class="bigspacer"></div>
-    <div class="spacer"></div>
+    {% endfor %}
+
   </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-{% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
+</div>

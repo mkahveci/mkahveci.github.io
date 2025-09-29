@@ -12,6 +12,16 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-09-29 01:09:59.000000000 Z
+    message: 'Update: Physics ELL Content Modification Template'
+    url: https://github.com/mkahveci/ai-in-education/commit/aba32cb50a077e9f75ed3eb2b689449e39090110
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-09-29 01:05:03.000000000 Z
+    message: 'Update: Physics ELL Content Modification Template'
+    url: https://github.com/mkahveci/ai-in-education/commit/c5cbf8bf1fab90f75e161beb98b1105b9da68107
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-09-28 17:59:57.000000000 Z
     message: README content update
     url: https://github.com/mkahveci/ai-in-education/commit/d625ba9503fdf58221ff3ce907931a9c3c12d4c4
@@ -25,18 +35,6 @@
   - date: 2025-09-28 17:49:55.000000000 Z
     message: README content update
     url: https://github.com/mkahveci/ai-in-education/commit/ba260f56a5316417d39d1363e11c3fd16b6f3ef3
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-09-28 17:39:07.000000000 Z
-    message: README content update
-    url: https://github.com/mkahveci/ai-in-education/commit/da3ac9d34461f20736a4d1c9b561909d0364192c
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-09-28 16:23:10.000000000 Z
-    message: |-
-      README content update
-      New prompt ELL Text Simplifier & Vocabulary Scaffolder
-    url: https://github.com/mkahveci/ai-in-education/commit/425d6de54b8dddb8ec802205874694e690245bd6
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true

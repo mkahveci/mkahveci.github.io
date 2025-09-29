@@ -5,117 +5,87 @@ categories:
 ---
 
 {% comment %}
-CRITICAL FIX: Use the title set by the script (e.g., 'ai-in-education') to find the project data.
-The page.title will either be the short name (for index.md) or the full prompt title.
-We use the 'project' variable set by the preprocessor for the safest match.
+This is your original, working logic to find the correct project data. It will be preserved.
 {% endcomment %}
-
 {% assign project_id = page.project | default: "" %}
 {% assign project = site.data.projectsgit | where: "title", project_id | first %}
-
 {% if project == nil and page.url contains '/docs/' %}
 {% assign project_repo_name = page.url | split: '/' | slice: 2 %}
 {% assign project = site.data.projectsgit | where: "title", project_repo_name | first %}
 {% endif %}
 
-
-<div class="container-fluid top-space">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="bigtitle titlebox">
-                <!-- SIMPLE BREADCRUMB (Replaced complex, failing logic) -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="off" href="/{{ page.categories.first | default: 'projectsgit' | append: '/'}}">GitHub Projects</a></li>
-                        <li class="breadcrumb-item active">{{ page.title | replace: '_', ' ' | capitalize }}</li>
-                    </ol>
-                </nav>
-            </div>
-            <p>
-            <div class="head">
-                <!-- Uses description from metadata -->
-                {{ project.description }}
-            </div>
-        </div>
+<header class="p-5 mb-5 bg-light rounded-3">
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/projectsgit/">GitHub Projects</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ page.title | replace: '_', ' ' | capitalize }}</li>
+            </ol>
+        </nav>
+        <h1 class="display-4">{{ page.title | replace: '_', ' ' | capitalize }}</h1>
+        <p class="lead">{{ project.description }}</p>
     </div>
-</div>
+</header>
 
-<div class="container-fluid top-space">
+<div class="container-fluid">
     <div class="row">
-        <!-- START LEFT COLUMN: SIDEBAR -->
-        <div class="col-lg-3 sidebar">
-            <div class="bigspacer"></div>
-
-            <!-- Source Code Link -->
-            <div class="smallhead">Source code</div>
-            <div class="pad-left note">
-                <div class="smallspacer"></div>
-                <i class="fa-solid fa-gears fa-fw"></i>
-                <a class="off" href="https://github.com/{{ project.repo }}">github.com/{{ project.repo }}</a>
+        <main class="col-lg-8">
+            <div class="post-content">
+                {{ content }}
             </div>
+        </main>
 
-            <!-- Contributors List -->
-            <div class="bigspacer"></div>
-            <div class="smallhead">Contributors</div>
-            <div class="pad-left note">
-                {% for contributor in project.contributors %}
-                <div class="smallspacer"></div>
-                <div>
-                    <a class="off" href="{{ contributor.url }}">
-                        <img class="pull-left avatar" src="{{ contributor.avatar }}">
-                        <div class="handlebox" style="padding-left:5px;">
-                            {{ contributor.login }}
-                        </div>
+        <aside class="col-lg-4">
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header"><h5 class="mb-0">Source Code</h5></div>
+                <div class="list-group list-group-flush">
+                    <a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+                        <i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}
                     </a>
                 </div>
-                {% endfor %}
             </div>
 
-            <!-- Latest Commits List -->
-            <div class="bigspacer"></div>
-            <div class="smallhead">Latest commits</div>
-            <div class="pad-left smallnote">
-                <ul class="list-unstyled">
-                    {% for commit in project.commits %}
-                    <div class="smallspacer"></div>
-                    <li>
-                        <i class="fa-solid fa-code-commit fa-fw"></i>
-                        <a class="off" href="{{ commit.url }}">
-                            {{ commit.date | date: "%-d %b %Y" }} - <span class="text-gray">{{ commit.message | truncatewords: 5 }}</span>
+            {% assign project_documents = site.pages | where: "project", project.title | where_exp: "item", "item.path contains '/docs/'" %}
+            {% if project_documents.size > 0 %}
+            <div class="card shadow-sm mb-4">
+                <div class="card-header"><h5 class="mb-0">Project Documents</h5></div>
+                <div class="list-group list-group-flush">
+                    {% for doc in project_documents %}
+                    <a href="{{ doc.url }}" class="list-group-item list-group-item-action {% if page.url == doc.url %}active{% endif %}">
+                        <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | replace: '_', ' ' | capitalize }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header"><h5 class="mb-0">Contributors</h5></div>
+                <div class="card-body">
+                    {% for contributor in project.contributors %}
+                    <a href="{{ contributor.url }}" class="d-flex align-items-center text-dark text-decoration-none mb-2">
+                        <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
+                        <span>{{ contributor.login }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header"><h5 class="mb-0">Latest Commits</h5></div>
+                <ul class="list-group list-group-flush">
+                    {% for commit in project.commits limit: 5 %}
+                    <li class="list-group-item small">
+                        <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">
+                            <p class="mb-1 fw-bold">{{ commit.message | truncatewords: 8 }}</p>
+                            <p class="mb-0 text-muted">{{ commit.date | date: "%-d %b %Y" }}</p>
                         </a>
                     </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="spacer"></div>
 
-            <!-- PROJECT DOCUMENTS LIST (The Prompts) -->
-            {% assign project_documents = site.pages | where: "project", project.title | where_exp: "item", "item.path contains '/docs/'" %}
-            {% if project_documents.size > 0 %}
-            <div class="smallhead">Project Documents</div>
-            <div class="pad-left smallnote">
-                <ul class="list-unstyled">
-                    {% for doc in project_documents %}
-                    <div class="smallspacer"></div>
-                    <li>
-                        <i class="fa-regular fa-file-lines fa-fw"></i>
-                        <a class="off" href="{{ doc.url }}">{{ doc.title | replace: '_', ' ' | capitalize }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-        </div>
-        <!-- END LEFT COLUMN: SIDEBAR -->
-
-        <!-- START RIGHT COLUMN: MAIN CONTENT -->
-        <div class="col-lg-8">
-            <div class="post">
-                {{ content }}
-            </div>
-        </div>
-        <!-- END RIGHT COLUMN -->
-        <div class="col-lg-1"></div>
+        </aside>
     </div>
 </div>

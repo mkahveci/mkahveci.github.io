@@ -29,10 +29,11 @@ This project pioneers the development and validation of adaptable **AI-driven pe
 
 This project includes a curated library of custom prompts designed for specific educational challenges in the high school science classroom, particularly Chemistry and ELL support.
 
-| **Prompt Title**                  | **Focus Area** | **Description** | **Link**                                                                        | 
- |-----------------------------------| ----- | ----- |---------------------------------------------------------------------------------|  
-| **Socratic Chemistry Tutor**      | Stoichiometry | Guides students through complex calculations step-by-step using only guiding questions. | [View Prompt](/projectsgit/ai-in-education/docs/socratic_chemistry_tutor)                  | 
+| **Prompt Title**                  | **Focus Area**       | **Description** | **Link**                                                                        | 
+ |-----------------------------------|----------------------| ----- |---------------------------------------------------------------------------------|  
+| **Socratic Chemistry Tutor**      | Stoichiometry        | Guides students through complex calculations step-by-step using only guiding questions. | [View Prompt](/projectsgit/ai-in-education/docs/socratic_chemistry_tutor)                  | 
 | **ELL Text Simplifier  & Vocabulary Scaffolder**          | Vocabulary / Reading | Takes a dense scientific paragraph and outputs a simplified version with a target vocabulary list. | [View Prompt](/projectsgit/ai-in-education/docs/ell_text_simplifier)  | 
+|**Physics ELL Content Modification Template**| ELL                  |This template helps you modify physics content, such as problem sets, diagrams, and lab procedures, for English Language Learners (ELLs) based on the **REACH proficiency scale**. It focuses on making abstract principles and mathematical concepts accessible.|[View Prompt](/projectsgit/ai-in-education/docs/physics-ell-template-prompt)|
 
 
 ### Usage Information

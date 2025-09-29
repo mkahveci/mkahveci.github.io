@@ -2,87 +2,70 @@
 layout: default
 title: kahveci group / blog / tags
 categories:
- - blog
+- blog
 ---
 
-<div class="row">
-	<div class="col-lg-12">
-		<div class="centered-pills">
-			<ul class="nav nav-pills note">
-				<li role="presentation" class="nav-item">
-					<a class="nav-link off" href="/blog/">
-						<i class="fa fa-refresh fa-fw"></i> Timeline
-					</a>
-				</li>
-				<li role="presentation" class="nav-item">
-					<a class="nav-link off" href="/blog/archive/">
-						<i class="fa fa-list-ul fa-fw"></i> Index
-					</a>
-				</li>
-				<li role="presentation" class="nav-item">
-					<a class="nav-link active" href="/blog/tags/">
-						<i class="fa fa-tags fa-fw"></i> Tags
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="bigspacer"></div>
+<div class="container my-5">
+	<ul class="nav nav-pills justify-content-center">
+		<li class="nav-item">
+			<a class="nav-link" href="/blog/">
+				<i class="fa fa-refresh fa-fw"></i> Timeline
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/blog/archive/">
+				<i class="fa fa-list-ul fa-fw"></i> Index
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="/blog/tags/" aria-current="page">
+				<i class="fa fa-tags fa-fw"></i> Tags
+			</a>
+		</li>
+	</ul>
+</div>
+
+<hr>
+
+<div class="container text-center my-5">
+	<h2 class="mb-4">Tag Index</h2>
+	<div class="tags-expo">
+		{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}&#x1F;{{ tag | first }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+		{% assign site_tags = site_tags | split: '&#x1E;' | sort %}
+		{% capture site_tags %}{% for tag in site_tags %}{{ tag | split: '&#x1F;' | last }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+		{% assign site_tags = site_tags | split: '&#x1E;' %}
+
+		{% for tag in site_tags %}
+		<a href="#{{ tag | slugify }}" class="btn btn-outline-secondary btn-sm m-1">
+			{{ tag }}
+			<span class="badge bg-dark ms-1">{{ site.tags[tag] | size }}</span>
+		</a>
+		{% endfor %}
 	</div>
 </div>
 
-<div class="tags-expo">
+<hr>
 
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}&#x1F;{{ tag | first }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
-{% assign site_tags = site_tags | split: '&#x1E;' | sort %}
-{% capture site_tags %}{% for tag in site_tags %}{{ tag | split: '&#x1F;' | last }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
-{% assign site_tags = site_tags | split: '&#x1E;' %}
-
-{% assign post_count = site.posts | size %}
-{% capture tag_counts %}{% for tag in site_tags %}{{site.tags[tag] | size | times: 10 | plus: post_count | minus: 1 | divided_by: post_count }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tag_counts = tag_counts | split: ',' %}
-
-
-{% for tag in site_tags %}
-    {% assign tag_data = site.data.tags[tag] %}
-    {% capture tag_classes %}tag tag-size-{{ tag_counts[forloop.index0] }} tag-{{ tag | slugify }}{% endcapture %}
-    {% capture tag_name %}{% if tag_data.title %}{{ tag_data.title }}{% else %}{{ tag }}{% endif %}{% endcapture %}
-
-	   {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-lg-4 postbox">
-			<div class="smallhead">
-				<i class="fa fa-tags fa-fw"></i> <a class="off" href="{{ include.baseurl }}#{{ tag | slugify }}" class="{{ tag_classes }}">{{ tag_name }}</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-			{% capture tag_size %} {{ site.tags[tag] | size }} {% endcapture %}
-			{% assign tag_size = tag_size | plus: 0 %}
-			{% if tag_size > 1 %}
-				 {{ tag_size }} posts
-			{% else %}
-				 {{ tag_size }} post
-			{% endif %}
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
-        </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-{% endfor %}
-
-<hr width="100%" />
-
-  <div class="tags-expo-section">
-    {% for tag in site.tags reversed %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-
-      <li>
-        <a class="off" href="{{ post.url }}">
-            {{ post.title }}</a>
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
+<div class="container my-5">
+	{% for tag in site.tags reversed %}
+	<div class="card shadow-sm mb-4">
+		<div class="card-header" id="{{ tag[0] | slugify }}">
+			<h4 class="mb-0 d-flex justify-content-between align-items-center">
+				<span><i class="fa fa-tag fa-fw text-muted"></i> {{ tag | first }}</span>
+				<span class="badge bg-primary rounded-pill">
+                        {% assign tag_size = tag[1] | size %}
+                        {{ tag_size }} {% if tag_size > 1 %}Posts{% else %}Post{% endif %}
+                    </span>
+			</h4>
+		</div>
+		<div class="list-group list-group-flush">
+			{% for post in tag[1] %}
+			<a href="{{ post.url }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+				{{ post.title }}
+				<small class="text-muted">{{ post.date | date_to_string }}</small>
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
 </div>

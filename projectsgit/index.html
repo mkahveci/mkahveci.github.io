@@ -1,44 +1,52 @@
 ---
 layout: default
-title: Kahveci Nexus / projects
+title: Kahveci Nexus / Git Projects
 categories:
 - projectsgit
 ---
 
-<!-- Custom link to the automated, code-based projects (The primary reason for this page update) -->
-<div class="alert alert-info border shadow-sm p-4 mb-4">
-    <h4 class="alert-heading">Technical & Automation Projects</h4>
-    <p>
-        Our complete, dynamically updated list of technical projects and code repositories, including <b>AI prompt tools for education</b>, maintained directly through GitHub.
-    </p>
-</div>
-<!-- End Custom link -->
+<div class="container my-5">
 
-{% for project in site.data.projectsgit %}
-
-{% cycle 'add rows': '<div class="row">', '', '' %}
-    <div class="col-md-4 projectbox">
-        <div class="head">
-            <a href="{{ project.url }}" class="off">{{ project.title }}</a>
-        </div>
-        <div class="smallspacer"></div>
-        <div class="note">
-            <a href="{{ project.url }}" class="off">{{ project.description }}</a>
-        </div>
-        <div class="smallspacer"></div>
-        <div class="smallnote">
-            Updated
-            <a class="off" href="{{ project.commits.first.url }}">
-                {{ project.commits.first.date | date: "%-d %b %Y" }}
-            </a>
-            by
-            <a class="off" href="{{ project.commits.first.author_url }}">
-                {{ project.commits.first.author_login }}
-            </a>
-        </div>
-        <div class="bigspacer"></div>
-        <div class="spacer"></div>
+    <div class="p-5 text-center bg-light rounded-3 mb-5">
+        <i class="fab fa-github fa-3x mb-3"></i>
+        <h1 class="display-5">Technical & Automation Projects</h1>
+        <p class="lead col-lg-8 mx-auto">
+            This is a dynamically updated list of our technical projects and code repositories, including AI prompt tools for education, maintained directly through GitHub.
+        </p>
     </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-{% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
+
+    <div class="row">
+        {% for project in site.data.projectsgit %}
+        <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+            <div class="card h-100 shadow-sm w-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">
+                        <i class="fas fa-book-bookmark fa-fw text-muted"></i>
+                        <a href="{{ project.local_url | default: project.url }}" class="text-dark text-decoration-none">{{ project.title }}</a>
+                    </h5>
+                    <p class="card-text small flex-grow-1">{{ project.description }}</p>
+
+                    {% if project.topics %}
+                    <div class="mb-3">
+                        {% for topic in project.topics %}
+                        <span class="badge bg-light text-dark me-1">#{{ topic }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <a href="{{ project.url }}" target="_self" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-auto">View GitHub Project <i class="fab fa-github ms-1"></i></a>
+                </div>
+                <div class="card-footer bg-white border-top-0">
+                    <small class="text-muted">
+                        Last updated on
+                        <a href="{{ project.commits.first.url }}" target="_blank" rel="noopener noreferrer">
+                            {{ project.commits.first.date | date: "%-d %b %Y" }}
+                        </a>
+                        by {{ project.commits.first.author_login }}
+                    </small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

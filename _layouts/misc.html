@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<div class="row">
-	<div class="col-lg-12">
-		<div class="bigtitle">
-			{{ page.title | escape }}
+
+<div class="container my-5">
+
+	<header class="text-center mb-5">
+		<h1 class="display-4">{{ page.title | escape }}</h1>
+	</header>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-lg-8 mx-auto">
+			<main>
+				{{ content }}
+			</main>
 		</div>
 	</div>
+
 </div>
-
-<div class="bigspacer"></div>
-
-{{ content }}
-

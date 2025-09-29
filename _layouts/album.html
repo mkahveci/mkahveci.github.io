@@ -2,73 +2,37 @@
 layout: default
 ---
 
-<div class="blog-post">
+<div class="container my-5">
 	<div class="row">
-		<div class="col-lg-1"></div>
-		<div class="col-lg-10">
-			<div class="media">
-				<div class="media-body">
-					<div class="title media-heading">
-						{{ page.title }}
-					</div>
-					<p>
-					<div class="smallhead">
-						{{ page.date | date: "%-d %b %Y" }}
-						{% if page.author %}
-						by <a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.author %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.author }}
-						</a>
-						{% endif %}
-						{% if page.authors %}
-						by
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.first %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.first }}
-						</a>
-						and
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.last %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.last }}
-						</a>
-						{% endif %}
-					</div>
-				</div>
+		<div class="col-lg-10 mx-auto">
+
+			<header class="text-center mb-5">
+				<h1 class="display-4">{{ page.title }}</h1>
+				<p class="lead text-muted">
+					Posted on {{ page.date | date: "%-d %b %Y" }}
+					{% if page.author %}
+					by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
+					{% endif %}
+					{% if page.place %}
+					| <i class="fas fa-map-marker-alt fa-fw"></i> {{ page.place }}
+					{% endif %}
+				</p>
+			</header>
+
+			{% if page.image %}
+			<div class="text-center mb-5">
+				<img src="{{ page.image }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
 			</div>
-		</div>
-		<div class="col-lg-1"></div>
-	</div>
+			{% endif %}
 
-	<div class="bigspacer"></div>
-
-	<div class="row">
-		<div class="col-lg-1"></div>
-		<div class="col-lg-10">
-			<img class="border shadow" src="{{ page.image }}">
-			<div class="spacer"></div>
-			<small>Location: {{ page.place }}</small>
-			<div class="bigspacer"></div>
-			<div class="post">
+			<div class="post-content">
 				{{ content }}
 			</div>
-{% include navigation.html category="album" %}
+
+			<hr class="my-5">
+
+			{% include navigation.html category="album" %}
+
 		</div>
-		<div class="col-lg-1"></div>
 	</div>
-	<div class="spacer"></div>
 </div>

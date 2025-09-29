@@ -2,87 +2,43 @@
 layout: default
 ---
 
-<div class="blog-post">
+<div class="container my-5">
 	<div class="row">
-		<div class="col-lg-1"></div>
-		<div class="col-lg-10">
-			<div class="media">
-				<div class="media-body">
-					<div class="title media-heading">
-						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
-					</div>
-					<p>
-					<div class="smallhead">
-						{{ page.date | date: "%-d %b %Y" }}
-						{% if page.author %}
-						by <a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.author %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.author }}
-						</a>
-						{% endif %}
-						{% if page.authors %}
-						by
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.first %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.first }}
-						</a>
-						and
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.last %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.last }}
-						</a>
-						{% endif %}
-						{% if page.tags %}
-							<br><small>
-							{% for tag in page.tags %}
-								<i class="fa fa-tags fa-fw"></i> <a class="off" href="/blog/tags/#{{ tag | slugify }}">{{ tag }}</a>
-							{% endfor %}
-							</small>
-						{% endif %}
-					</div>
+		<div class="col-lg-8 mx-auto">
+
+			<header class="blog-post-header mb-4">
+				<h1 class="display-5 mb-3">{{ page.title }}</h1>
+				<p class="lead text-muted">
+					Posted on {{ page.date | date: "%-d %b %Y" }}
+					{% if page.author %}
+					by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
+					{% endif %}
+				</p>
+				{% if page.tags %}
+				<div>
+					{% for tag in page.tags %}
+					<a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-decoration-none me-1">#{{ tag }}</a>
+					{% endfor %}
 				</div>
-			</div>
-		</div>
-		<div class="col-lg-1"></div>
-	</div>
+				{% endif %}
+			</header>
 
-	<div class="bigspacer"></div>
+			<hr>
 
-	<div class="row">
-		<div class="col-lg-1"></div>
-		<div class="col-lg-10">
 			{% if page.image %}
-			{% if page.link %}
-			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}">
-			</a>
-			{% else %}
-			<img class="offset" src="{{ page.image }}">
-			{% endif %}
-			{% endif %}
-			<div class="post">
-				{{ content }}
+			<div class="my-4">
+				<img src="{{ page.image }}" class="img-fluid rounded shadow-sm" alt="{{ page.title }}">
 			</div>
-{% include navigation.html category="blog" %}
-		</div>
-		<div class="col-lg-1"></div>
-	</div>
+			{% endif %}
 
-	<div class="bigspacer"></div>
-	<div class="spacer"></div>
+			<article class="post-content mt-4">
+				{{ content }}
+			</article>
+
+			<hr class="my-5">
+
+			{% include navigation.html category="blog" %}
+
+		</div>
+	</div>
 </div>

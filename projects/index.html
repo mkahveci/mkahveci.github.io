@@ -4,57 +4,73 @@ title: kahveci group / projects
 categories:
 - projects
 ---
-<div class="row">
-  <div class="col-lg-12">
-    <div class="bigtitle">
-      Projects
-    </div>
+
+<div class="container my-5">
+
+  <div class="text-center mb-5">
+    <h1 class="display-4">Research & Development Projects</h1>
+    <p class="lead col-lg-8 mx-auto">
+      Our work is dedicated to advancing STEM education by bridging innovative research with practical application, from AI in education to alternative assessment tools.
+    </p>
   </div>
-</div>
 
-<div class="bigspacer"></div>
-
-<p>
-  Our projects reflect a dedication to advancing education, fostering innovation, and addressing critical challenges in science and chemistry education. Rooted in a commitment to bridging research and practice, we have led initiatives that range from investigating <a class="off" href="/aita">artificial intelligence in academic integrity</a> to developing <a class="off" href="/aabe">alternative assessment tools</a> for conceptual understanding in biochemistry. Through our work on <a class="off" href="/pdse">pedagogical discontentment and self-efficacy</a>, we contribute to global education reform and cross-cultural validation efforts.
-</p>
-<p>
-  Each project underscores our mission to empower educators, inspire learners, and create lasting impacts on STEM education. At the Kahveci Group, we are driven to innovate, collaborate, and create solutions that resonate across diverse educational contexts. These efforts are part of our larger vision to support equitable learning environments and to inspire meaningful advancements in teaching and learning through evidence-based practices.
-</p>
-
-
-<div class="bigspacer"></div>
-
-<!-- Custom link to the automated, code-based projects (The primary reason for this page update) -->
-<div class="alert alert-info border shadow-sm p-4 mb-4">
-  <h4 class="alert-heading">Technical & Automation Projects</h4>
-  <p>
-    View our complete, dynamically updated list of technical projects and code repositories, including <b>AI prompt tools for education</b>, maintained directly through GitHub.
-  </p>
-  <hr>
-  <a href="/projectsgit/" class="btn btn-primary shadow">View All Git Projects (Automation & Code) <i class="fa-solid fa-code-branch ms-2"></i></a>
-</div>
-<!-- End Custom link -->
-
-
-<h3>
-  Discover Our List of Projects
-</h3>
-
-{% for project in site.categories.projects %}
-{% cycle 'add rows': '<div class="row">', '', '' %}
-  <div class="col-lg-4 paperbox">
-    <div class="media">
-      <div class="media-body">
-        <div class="smallhead mb-1"><a href="{{ project.url }}" class="off">{{ project.title }}</a></div>
-        <p class="note"><a href="{{ project.url }}" class="off">{{ project.contributors }}</a><br>
-          <small>{{ project.date | date_to_string }}</small>
-        </p>
+  <div class="row mb-5">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm border-primary">
+        <div class="card-body text-center d-flex flex-column justify-content-center">
+          <i class="fas fa-code-branch fa-3x text-primary mb-3"></i>
+          <h4 class="card-title">Technical & Automation Projects</h4>
+          <p class="card-text">View our complete, dynamically updated list of code repositories and AI prompt tools for education, maintained on GitHub.</p>
+          <a href="/projectsgit/" class="btn btn-primary mt-auto">View Git Projects <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
       </div>
-      <a href="{{ project.url }}" class="off"><img class="ml-3 rounded-circle border shadow" width=75 class="media-object" src="{{ project.image }}"></a>
     </div>
-    <div class="bigspacer"></div>
-    <div class="spacer"></div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center d-flex flex-column justify-content-center">
+          <i class="fas fa-flask-vial fa-3x text-success mb-3"></i>
+          <h4 class="card-title">Academic Research Projects</h4>
+          <p class="card-text">Explore our academic research initiatives below, focused on pedagogical innovation, self-efficacy, and global education reform.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  {% cycle 'close rows': '', '', '</div>' %}
-{% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}
+
+  <hr>
+
+  <div class="text-center my-5">
+    <h2 class="display-5">Academic Research Portfolio</h2>
+  </div>
+
+  <div class="row">
+    {% for project in site.categories.projects %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        {% if project.image %}
+        <a href="{{ project.url }}">
+          <img src="{{ project.image }}" class="card-img-top" alt="{{ project.title }}" style="object-fit: cover; height: 200px;">
+        </a>
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <a href="{{ project.url }}" class="text-dark text-decoration-none">{{ project.title }}</a>
+          </h5>
+          <p class="card-text small text-muted">
+            {{ project.contributors }}
+          </p>
+          <p class="card-text small">
+            {{ project.description | default: project.excerpt | strip_html | truncatewords: 20 }}
+          </p>
+          <a href="{{ project.url }}" class="btn btn-sm btn-outline-success mt-auto">Learn More</a>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+          <small class="text-muted">
+            {{ project.date | date_to_string }}
+          </small>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>

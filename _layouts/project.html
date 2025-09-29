@@ -1,96 +1,75 @@
 ---
 layout: default
-categories:
- - projects
 ---
 
-{% for test in site.data.projects %}
-	{% if test.title == page.project %}
-		{% assign project = test %}
-	{% endif %}
-{% endfor %}
+<div class="container my-5">
 
-<div class="row">
-	<div class="col-lg-12">
-		{% if page.image %}
-		<img class="float-left mr-3 media-object d-none d-sm-block rounded-circle border shadow" src="{{ page.image }}" alt="{{ page.title }}">
-		{% endif %}
-		<div class="titlebox">
-			<div class="title">
-				{{ page.title }}
+	<header class="p-5 mb-5 bg-light rounded-3">
+		<div class="row align-items-center">
+			<div class="col-md-3 text-center">
+				{% if page.image %}
+				<img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Project Image">
+				{% else %}
+				<i class="fas fa-sitemap fa-6x text-muted"></i>
+				{% endif %}
 			</div>
-			<p>
-			<div class="smallhead">
-				{% if page.excerpt %} Overview. {{ page.excerpt }} {% endif %}
+			<div class="col-md-9">
+				<h1 class="display-4">{{ page.title }}</h1>
+				{% if page.excerpt %}
+				<p class="lead fst-italic">{{ page.excerpt }}</p>
+				{% endif %}
 			</div>
-			</p>
+		</div>
+	</header>
+
+	<div class="row">
+
+		<div class="col-lg-8">
+			<main class="post-content">
+				{{ content }}
+			</main>
+			<hr class="my-4">
+			{% include navigation.html category="projects" %}
+		</div>
+
+		<div class="col-lg-4">
+			<div class="card shadow-sm">
+				<div class="card-header">
+					<h5 class="mb-0">Project Details</h5>
+				</div>
+				<ul class="list-group list-group-flush">
+					{% if page.contributors %}
+					<li class="list-group-item">
+						<strong>Contributors</strong>
+						<div class="text-muted small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+					</li>
+					{% endif %}
+					{% if page.duration %}
+					<li class="list-group-item">
+						<strong>Duration</strong>
+						<div class="text-muted small">{{ page.duration }}</div>
+					</li>
+					{% endif %}
+					{% if page.hostedby %}
+					<li class="list-group-item">
+						<strong>Host Institution</strong>
+						<div class="text-muted small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+					</li>
+					{% endif %}
+					{% if page.fundedby %}
+					<li class="list-group-item">
+						<strong>Funding Institution</strong>
+						<div class="text-muted small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+					</li>
+					{% endif %}
+					{% if page.budget %}
+					<li class="list-group-item">
+						<strong>Budget</strong>
+						<div class="text-muted small">{{ page.budget }}</div>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-lg-3">
-		<div class="bigspacer"></div>
-		<div class="smallhead">
-			Contributors
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			  <div>
-    				{{ page.position | markdownify | remove: "<p>" | remove: "</p>" }}
- 			  </div>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="smallhead">
-			Duration
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			  <div>
-    				{{ page.duration | markdownify | remove: "<p>" | remove: "</p>" }}
- 			  </div>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="smallhead">
-			Host Institution
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			  <div>
-    				{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}
- 			  </div>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="smallhead">
-			Funding Institution
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			  <div>
-    				{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}
- 			  </div>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="smallhead">
-			Budget
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			  <div>
-    				{{ page.budget | markdownify | remove: "<p>" | remove: "</p>" }}
- 			  </div>
-		</div>
-		<div class="bigspacer"></div>
-
-
-	</div>
-	<div class="col-lg-8">
-		<div class="post">
-			{{ content }}
-		</div>
-		{% include navigation.html category="projects" %}
-	</div>
-	<div class="col-lg-1"></div>
 </div>
