@@ -12,6 +12,16 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-09-30 11:03:15.000000000 Z
+    message: |-
+      Feat: Implement and document new ELL Content Modification Templates
+
+      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
+
+      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
+    url: https://github.com/mkahveci/ai-in-education/commit/3a81b645c2f460a41661051f668a2a0bf4a20eee
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-09-29 01:09:59.000000000 Z
     message: 'Update: Physics ELL Content Modification Template'
     url: https://github.com/mkahveci/ai-in-education/commit/aba32cb50a077e9f75ed3eb2b689449e39090110
@@ -30,11 +40,6 @@
   - date: 2025-09-28 17:51:39.000000000 Z
     message: README content update
     url: https://github.com/mkahveci/ai-in-education/commit/08a8165b7971c577942922fc8716001f3e8732a3
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-09-28 17:49:55.000000000 Z
-    message: README content update
-    url: https://github.com/mkahveci/ai-in-education/commit/ba260f56a5316417d39d1363e11c3fd16b6f3ef3
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
