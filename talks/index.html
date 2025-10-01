@@ -1,0 +1,108 @@
+---
+layout: default
+title: kahveci group / talks
+---
+<!--
+  This template lists presentations from the 'talks' collection.
+  It is adapted from the publications page for a consistent look and feel.
+-->
+
+<style>
+    /* Style copied from publications for consistency */
+    .year-block {
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e9ecef;
+      color: #495057;
+      font-weight: bold;
+      border-radius: 0.25rem;
+    }
+</style>
+
+<div class="container my-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4">Talks &amp; Presentations</h1>
+        <p class="lead col-lg-8 mx-auto">
+            A collection of our invited talks and conference presentations where we share our research, insights, and latest findings with the broader scientific community.
+        </p>
+    </div>
+
+    {% comment %}
+    1.  Get all posts from the 'talks' category.
+    2.  Sort them by date in descending order (newest first).
+    3.  Filter them into groups based on the 'type' front matter variable.
+    {% endcomment %}
+    {% assign talks = site.categories.talks | sort: "date" | reverse %}
+    {% assign invited_talks = talks | where: "type", "invited" %}
+    {% assign conference_talks = talks | where: "type", "conference" %}
+
+    <!-- Section: Invited Talks -->
+    {% if invited_talks.size > 0 %}
+    <section id="invited-talks" class="mb-5">
+        <h2 class="display-6 mb-4 mt-5"><i class="fas fa-bullhorn fa-fw text-muted me-2"></i> Invited Talks</h2>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+            {% for talk in invited_talks %}
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex">
+                        <div class="year-block me-3">{{ talk.date | date: "%Y" }}</div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title h6">{{ talk.title }}</h5>
+                            <p class="card-text small fst-italic mt-2">
+                                Presented at: {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 pt-0">
+                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                            <a href="{{ talk.url | relative_url }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-desktop fa-fw me-1"></i> Open Presentation</a>
+                            {% if talk.pdf %}<a href="{{ talk.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
+                            {% if talk.video %}<a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-video fa-fw me-1"></i> Recording</a>{% endif %}
+                            {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> Event</a>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Section: Conference Presentations -->
+    {% if conference_talks.size > 0 %}
+    <section id="conference-talks" class="mb-5">
+        <h2 class="display-6 mb-4 mt-5"><i class="fas fa-users fa-fw text-muted me-2"></i> Conference Presentations</h2>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+            {% for talk in conference_talks %}
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex">
+                        <div class="year-block me-3">{{ talk.date | date: "%Y" }}</div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title h6">{{ talk.title }}</h5>
+                            <p class="card-text small fst-italic mt-2">
+                                Presented at: {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 pt-0">
+                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                            <a href="{{ talk.url | relative_url }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-desktop fa-fw me-1"></i> Open Presentation</a>
+                            {% if talk.pdf %}<a href="{{ talk.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
+                            {% if talk.video %}<a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-video fa-fw me-1"></i> Recording</a>{% endif %}
+                            {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> Event</a>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+</div>
