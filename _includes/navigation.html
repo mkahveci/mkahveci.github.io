@@ -1,4 +1,12 @@
+<!-- 
+  This navigation component has been modernized to use Bootstrap buttons 
+  for a cleaner and more user-friendly design, consistent with the rest of the site.
+-->
 
+{% comment %}
+1. This first block of Liquid code is your original logic to find the next and previous items.
+It works perfectly, so we'll keep it as is.
+{% endcomment %}
 {% if include.category == "album" %}{% assign search = site.categories.album reverse %}{% endif %}
 {% if include.category == "courses" %}{% assign search = site.categories.courses reverse %}{% endif %}
 {% if include.category == "blog" %}{% assign search = site.categories.blog reverse %}{% endif %}
@@ -7,35 +15,78 @@
 {% if include.category == "team" %}{% assign search = site.categories.team reverse %}{% endif %}
 {% if include.category == "trading" %}{% assign search = site.categories.trading reverse %}{% endif %}
 
-   {% for post in search %}
-        {% if post.url == page.url %}
-            {% assign post_index0 = forloop.index0 %}
-            {% assign post_index1 = forloop.index %}
-        {% endif %}
-    {% endfor %}
-    {% for post in search %}
-        {% if post_index0 == forloop.index %}
-            {% assign next_post = post.url %}
-        {% endif %}
-        {% if post_index1 == forloop.index0 %}
-            {% assign prev_post = post.url %}
-        {% endif %}
-    {% endfor %}
-
-<div class="bigspacer"></div>
-<div id="container">
-{% if next_post %}
-	<div id="right"><a href="{{ next_post }}"><i class="fa fa-arrow-circle-right" style="font-size:24px;color:black"></i></a></div>
+{% for post in search %}
+{% if post.url == page.url %}
+{% assign post_index0 = forloop.index0 %}
+{% assign post_index1 = forloop.index %}
 {% endif %}
-{% if prev_post %}
-	<div id="left"><a href="{{ prev_post }}"><i class="fa fa-arrow-circle-left" style="font-size:24px;color:black"></i></a></div>
-{% endif %}
+{% endfor %}
 
-{% if include.category == "album" %} <div id="center"><a href="/album"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "courses" %} <div id="center"><a href="/courses"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "blog" %} <div id="center"><a href="/blog/archive/"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "papers" %} <div id="center"><a href="/papers"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "projects" %} <div id="center"><a href="/projects"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "team" %} <div id="center"><a href="/team"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
-{% if include.category == "trading" %} <div id="center"><a href="/trading"><i class="fa fa-home" style="font-size:24px;color:black"></i></a></div> {% endif %}
+{% for post in search %}
+{% if post_index0 == forloop.index %}
+{% assign next_post = post %}
+{% endif %}
+{% if post_index1 == forloop.index0 %}
+{% assign prev_post = post %}
+{% endif %}
+{% endfor %}
+
+
+{% comment %}
+2. This block sets the "home" link for the center button based on the category.
+This makes the HTML part cleaner.
+{% endcomment %}
+{% case include.category %}
+{% when "blog" %}
+{% assign home_url = "/blog/" %}
+{% assign home_text = "Blog" %}
+{% when "album" %}
+{% assign home_url = "/album/" %}
+{% assign home_text = "Album" %}
+{% when "courses" %}
+{% assign home_url = "/courses/" %}
+{% assign home_text = "Courses" %}
+{% when "papers" %}
+{% assign home_url = "/papers/" %}
+{% assign home_text = "Publications" %}
+{% when "projects" %}
+{% assign home_url = "/projects/" %}
+{% assign home_text = "Projects" %}
+{% when "team" %}
+{% assign home_url = "/team/" %}
+{% assign home_text = "Team" %}
+{% when "trading" %}
+{% assign home_url = "/trading/" %}
+{% assign home_text = "Trading" %}
+{% endcase %}
+
+
+{% comment %}
+3. This is the new, modernized HTML structure using Bootstrap components.
+{% endcomment %}
+<div class="d-flex justify-content-between align-items-center">
+    <!-- Previous Item Link -->
+    <div style="min-width: 120px;">
+        {% if prev_post %}
+        <a href="{{ prev_post.url }}" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i>Previous
+        </a>
+        {% endif %}
+    </div>
+
+    <!-- Home Link -->
+    <div class="text-center">
+        <a href="{{ home_url }}" class="btn btn-outline-secondary" title="Back to {{ home_text }}">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <!-- Next Item Link -->
+    <div class="text-end" style="min-width: 120px;">
+        {% if next_post %}
+        <a href="{{ next_post.url }}" class="btn btn-outline-secondary">
+            Next<i class="fas fa-arrow-right ms-2"></i>
+        </a>
+        {% endif %}
+    </div>
 </div>

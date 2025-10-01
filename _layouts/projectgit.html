@@ -5,24 +5,29 @@ categories:
 ---
 
 {% comment %}
-This is your original, working logic to find the correct project data. It will be preserved.
+Establish a single, reliable project identifier directly from the URL.
+This version splits the URL and explicitly selects the 3rd part (index 2)
+to ensure it's treated as a string, not an array.
+Example: for a URL like "/projectsgit/ai-in-education/", this will be "ai-in-education".
 {% endcomment %}
-{% assign project_id = page.project | default: "" %}
-{% assign project = site.data.projectsgit | where: "title", project_id | first %}
-{% if project == nil and page.url contains '/docs/' %}
-{% assign project_repo_name = page.url | split: '/' | slice: 2 %}
-{% assign project = site.data.projectsgit | where: "title", project_repo_name | first %}
-{% endif %}
+{% assign url_parts = page.url | split: '/' %}
+{% assign project_identifier = url_parts[2] %}
+
+{% comment %}
+Find the correct project data from your site data using this identifier.
+{% endcomment %}
+{% assign project = site.data.projectsgit | where: "title", project_identifier | first %}
+
 
 <header class="p-5 mb-5 bg-light rounded-3">
     <div class="container-fluid">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/projectsgit/">GitHub Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ page.title | replace: '_', ' ' | capitalize }}</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ project_identifier | downcase }}</li>
             </ol>
         </nav>
-        <h1 class="display-4">{{ page.title | replace: '_', ' ' | capitalize }}</h1>
+        <h1 class="display-4">{{ project_identifier | downcase }}</h1>
         <p class="lead">{{ project.description }}</p>
     </div>
 </header>
@@ -46,14 +51,27 @@ This is your original, working logic to find the correct project data. It will b
                 </div>
             </div>
 
-            {% assign project_documents = site.pages | where: "project", project.title | where_exp: "item", "item.path contains '/docs/'" %}
+            {% comment %}
+            Find project documents by robustly matching their 'project' front matter
+            with the URL-derived identifier (with or without a trailing slash).
+            {% endcomment %}
+            {% assign project_identifier_with_slash = project_identifier | append: '/' %}
+            {% assign project_documents = site.pages | where_exp: "item", "item.project == project_identifier or item.project == project_identifier_with_slash" | where_exp: "item", "item.path contains '/docs/'" %}
+
             {% if project_documents.size > 0 %}
             <div class="card shadow-sm mb-4">
                 <div class="card-header"><h5 class="mb-0">Project Documents</h5></div>
                 <div class="list-group list-group-flush">
                     {% for doc in project_documents %}
+                    {% assign cleaned_doc_title = doc.title | default: "" %}
+                    {% if cleaned_doc_title != "" %}
+                    {% assign last_char_doc = cleaned_doc_title | slice: -1 %}
+                    {% if last_char_doc == '/' %}
+                    {% assign cleaned_doc_title = cleaned_doc_title | slice: 0, -1 %}
+                    {% endif %}
+                    {% endif %}
                     <a href="{{ doc.url }}" class="list-group-item list-group-item-action {% if page.url == doc.url %}active{% endif %}">
-                        <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | replace: '_', ' ' | capitalize }}
+                        <i class="far fa-file-lines fa-fw me-2"></i>{{ cleaned_doc_title | downcase }}
                     </a>
                     {% endfor %}
                 </div>
@@ -89,3 +107,4 @@ This is your original, working logic to find the correct project data. It will b
         </aside>
     </div>
 </div>
+
