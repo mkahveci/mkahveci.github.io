@@ -2,70 +2,70 @@
 layout: default
 ---
 
-{% assign member = page %}
-
 <div class="container my-5">
-
-	<div class="p-5 mb-4 bg-light rounded-3">
-		<div class="row align-items-center">
-			<div class="col-lg-3 text-center">
-				{% if member.image %}
-				<img class="img-fluid rounded-circle border shadow-sm" src="{{ member.image }}" alt="{{ member.title }}" style="width: 180px; height: 180px; object-fit: cover;">
-				{% endif %}
-			</div>
-			<div class="col-lg-9">
-				<h1 class="display-4">{{ member.title }}</h1>
-				<p class="lead">{{ member.position }}</p>
-				<p class="text-muted fst-italic">{{ member.active }}</p>
-			</div>
-		</div>
-	</div>
-
 	<div class="row">
 
+		<!-- Main Content Column (Biography) -->
 		<div class="col-lg-8">
-			<div class="post">
+			<header class="mb-4">
+				<h1 class="display-4">{{ page.title }}</h1>
+				<p class="lead text-muted">{{ page.position }}</p>
+				{% if page.active %}
+				<p class="text-muted fst-italic">{{ page.active }}</p>
+				{% endif %}
+			</header>
+			<hr>
+			<div class="post-content mt-4">
 				{{ content }}
 			</div>
-			{% include navigation.html category="team" %}
 		</div>
 
+		<!-- Sidebar Column -->
 		<div class="col-lg-4">
+			<!-- Sticky Profile Card -->
+			<div class="card shadow-sm sticky-top mb-4" style="top: 2rem;">
+				<img src="{{ page.image }}" class="card-img-top" alt="{{ page.title }}" style="object-fit: cover;">
+				<div class="card-body text-center">
+					<h5 class="card-title">{{ page.title }}</h5>
+					<p class="card-text text-muted">{{ page.position }}</p>
+				</div>
+			</div>
 
+			<!-- Detailed Links Card -->
 			<div class="card shadow-sm mb-4">
 				<div class="card-header">
 					<h5 class="mb-0">Contact & Links</h5>
 				</div>
 				<div class="list-group list-group-flush">
-					{% if member.cv %}
-					<a href="{{ member.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-text-o fa-fw me-2 text-muted"></i>View CV</a>
+					{% if page.cv %}
+					<a href="{{ page.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a>
 					{% endif %}
-					{% if member.email %}
-					{% assign emailarray = member.email | split: '@' %}
-					<a href="mailto:{{ member.email }}" class="list-group-item list-group-item-action"><i class="fas fa-inbox fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
+					{% if page.email %}
+					{% assign emailarray = page.email | split: '@' %}
+					<a href="mailto:{{ page.email }}" class="list-group-item list-group-item-action"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
 					{% endif %}
-					{% if member.website %}
-					<a href="{{ member.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
+					{% if page.website %}
+					<a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
 					{% endif %}
-					{% if member.googlescholar %}
-					<a href="http://scholar.google.com/citations?user={{ member.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
+					{% if page.googlescholar %}
+					<a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
 					{% endif %}
-					{% if member.linkedin %}
-					<a href="https://www.linkedin.com/in/{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
+					{% if page.linkedin %}
+					<a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
 					{% endif %}
-					{% if member.github %}
-					<a href="https://github.com/{{ member.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
+					{% if page.github %}
+					<a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
 					{% endif %}
-					{% if member.twitter %}
-					<a href="https://twitter.com/{{ member.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
+					{% if page.twitter %}
+					<a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
 					{% endif %}
-					{% if member.calendar %}
-					<a href="{{ member.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
+					{% if page.calendar %}
+					<a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
 					{% endif %}
 				</div>
 			</div>
 
-			{% if member.name == "Murat Kahveci" %}
+			{% if page.title == "Murat Kahveci" %}
 			<div class="card shadow-sm">
 				<div class="card-header">
 					<h5 class="mb-0">Discover More</h5>
@@ -79,7 +79,12 @@ layout: default
 				</div>
 			</div>
 			{% endif %}
-
 		</div>
 	</div>
+
+	<hr class="my-5">
+
+	<!-- Navigation between team members -->
+	{% include navigation.html category="team" %}
 </div>
+
