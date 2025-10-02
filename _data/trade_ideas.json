@@ -1,0 +1,29 @@
+[
+  {
+    "publicationDate": "2025-10-01",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "Based on the analysis, MRNA is hovering above its 5-year low with a rising IV Rank of 49% ahead of earnings. A short put is a bullish strategy that leverages this high premium and market skew indicating upside risk.",
+    "expectedReturnDisplay": "$80 Max Profit",
+    "ticker": "MRNA",
+    "currentPrice": 25.00,
+    "ivRank": 49,
+    "earningsDate": "Early November 2025",
+    "analysis": {
+      "thesis": "MRNA is down significantly for the year, but its improved product pipeline and market skew (OTM calls trading over puts) suggest optimism. With a high IV Rank of 49%, its options are rich. A short put allows a trader to express a bullish view and capitalize on the high premium, with the trade expiring before the early November earnings announcement to avoid binary event risk.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-31",
+        "dte": 30,
+        "putStrike": 22.00,
+        "putPremium": 0.80
+      },
+      "metrics": {
+        "roc": 3.8,
+        "annualizedRoc": 0.0,
+        "pop": 87,
+        "buyingPowerEffect": 2120
+      },
+      "managementPlan": "The analysis notes an 87% probability of achieving 50% of max profit, aligning with the standard management plan to target 50% profit or manage the trade near 21 DTE."
+    }
+  }
+]
