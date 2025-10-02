@@ -115,17 +115,16 @@ _{{ coursecount }}_. <a href="{{ course.url }}">{{ course.code }}</a> {{ course.
 
 ## Posts
 
-{% for post in site.categories.blog %}
-{% if post.author %}
-{% if page.name == post.author %}
-
-_{{ postcount }}_.
-<a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;
-<small class="post-date">{{ post.date | date_to_string }}</small>
-
+<ul>
+    {% for post in site.categories.blog %}
+    {% comment %} Check that the post author matches the person's page name {% endcomment %}
+    {% if post.author and post.author == page.name %}
+    <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small class="text-muted ps-2">{{ post.date | date_to_string }}</small>
+    </li>
     {% endif %}
-    {% endif %}
-    {% assign postcount = postcount | minus: 1 %}
     {% endfor %}
+</ul>
 {% endif %}
 
