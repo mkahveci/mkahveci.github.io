@@ -55,21 +55,57 @@ permalink: /:path/:basename:output_ext
               <span class="day">{{ trade.publicationDate | date: "%d" }}</span>
             </div>
             <div class="flex-grow-1">
+
+              {%- assign strike_string = trade.analysis.tradeDetails.putStrike | append: '' -%}
+              {%- assign strike_parts = strike_string | split: '.' -%}
+              {%- if strike_parts[1].size == 1 -%}
+                {%- assign formatted_strike = strike_string | append: '0' -%}
+              {%- else -%}
+                {%- assign formatted_strike = strike_string -%}
+              {%- endif -%}
+
+              {%- assign premium_string = trade.analysis.tradeDetails.putPremium | append: '' -%}
+              {%- assign premium_parts = premium_string | split: '.' -%}
+              {%- if premium_parts[1].size == 1 -%}
+                {%- assign formatted_premium = premium_string | append: '0' -%}
+              {%- else -%}
+                {%- assign formatted_premium = premium_string -%}
+              {%- endif -%}
               <h5 class="card-title h6">{{ trade.tradeTitle }}</h5>
               <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
               <p class="card-text small mt-2">{{ trade.summaryJustification }}</p>
+
+              <ul class="list-unstyled small mt-3 mb-0">
+                <li class="d-flex justify-content-between border-top pt-2">
+                  <span><strong>Strategy:</strong></span>
+                  <span class="font-monospace">{{ trade.analysis.strategyType }}</span>
+                </li>
+                <li class="d-flex justify-content-between pt-1">
+                  <span><strong>Expiration:</strong></span>
+                  <span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%Y-%m-%d" }}</span>
+                </li>
+                <li class="d-flex justify-content-between pt-1">
+                  <span><strong>Strike:</strong></span>
+                  <span class="font-monospace">{{ formatted_strike }}</span>
+                </li>
+                <li class="d-flex justify-content-between pt-1">
+                  <span><strong>Premium:</strong></span>
+                  <span class="font-monospace">${{ formatted_premium }}</span>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="card-footer bg-white border-top-0 pt-0">
             <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 81px;">
               <a href="https://www.google.com/search?q={{ trade.ticker }}+stock" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-chart-line fa-fw me-1"></i> View Chart</a>
               <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy trade details"><i class="fas fa-copy fa-fw me-1"></i> Copy Details</button>
+              
               <div class="trade-details-data" style="display: none;">
                 {{ trade.tradeTitle }}
                 - Strategy: {{ trade.analysis.strategyType }}
                 - Expiration: {{ trade.analysis.tradeDetails.expiration | date: "%Y-%m-%d" }}
-                - Strike: {{ trade.analysis.tradeDetails.putStrike }}
-                - Premium: ${{ trade.analysis.tradeDetails.putPremium }}
+                - Strike: {{ formatted_strike }}
+                - Premium: ${{ formatted_premium }}
               </div>
             </div>
           </div>
