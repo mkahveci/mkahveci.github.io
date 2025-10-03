@@ -282,8 +282,8 @@ blockquote {
     overflow: hidden;
 	-webkit-mask-image: -webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 /*	-webkit-box-shadow: inset 0 -30px 10px -10px white; */
-/*	   -moz-box-shadow: inset 0 -30px 10px -10px white; */
-/*	        box-shadow: inset 0 -30px 10px -10px white; */
+/*	  -moz-box-shadow: inset 0 -30px 10px -10px white; */
+/*	 	 box-shadow: inset 0 -30px 10px -10px white; */
 }
 
 .postbox {
@@ -393,6 +393,7 @@ blockquote {
 
 /* Footer Styles */
 footer {
+  background-color: transparent; /* This line removes any background color */
   color: #333;
   padding: 20px 0;
   font-size: 18px;
@@ -692,8 +693,8 @@ a {
 .post h6 { font-size: 1rem; }
 
 /* =================================================================
-   Scroll to Top Button
-   ================================================================= */
+    Scroll to Top Button
+    ================================================================= */
 #scrollToTopBtn {
   /* Positioning */
   position: fixed;
