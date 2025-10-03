@@ -5,7 +5,6 @@ title: Letter of Recommendation
 
 <div class="container mt-5">
   <div class="text-center mb-5">
-    <h1 class="display-4">Let's Support Your Next Step! 🚀</h1>
     <p class="lead">I'm excited to support your journey to graduate school, medical school, or your future career. A strong letter of recommendation is a key part of your application, and I'm here to help.</p>
   </div>
 
