@@ -692,3 +692,32 @@ a {
 .post h4 { font-size: 1.5rem; }
 .post h5 { font-size: 1.25rem; }
 .post h6 { font-size: 1rem; }
+
+/* =================================================================
+   Scroll to Top Button
+   ================================================================= */
+#scrollToTopBtn {
+  /* Positioning */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050; /* High z-index to appear above other content */
+
+  /* Initial State (Hidden) */
+  opacity: 0;
+  visibility: hidden;
+
+  /* Sizing */
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+
+  /* Smooth Animation */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Visible State */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}

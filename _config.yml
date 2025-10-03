@@ -13,6 +13,12 @@ sass:
 input: GFM
 math_engine: mathjax
 
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-129160204-1" # Replace with your actual Google Analytics tracking ID
+  custom: true # This can be any value, its existence enables the custom script
+
 plugins:
   - jekyll-twitter-plugin
   - jekyll-toc

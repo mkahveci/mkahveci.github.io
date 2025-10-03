@@ -1,7 +1,16 @@
+{%- comment -%}
+This logic will include any analytics provider that is configured
+in _config.yml, as long as the environment is not 'development'.
+{%- endcomment -%}
+
 {%- if jekyll.environment != 'development' -%}
-  {%- if site.analytics.provider == 'google' -%}
-    {%- include analytics-providers/google.html -%}
-  {%- elsif site.analytics.provider == 'custom' -%}
-    {%- include analytics-providers/custom.html -%}
-  {%- endif -%}
+
+{%- if site.analytics.google.tracking_id -%}
+{%- include analytics-providers/google.html -%}
+{%- endif -%}
+
+{%- if site.analytics.custom -%}
+{%- include analytics-providers/custom.html -%}
+{%- endif -%}
+
 {%- endif -%}

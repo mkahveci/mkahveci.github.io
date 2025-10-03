@@ -64,8 +64,8 @@
 	{{ content }}
 </main>
 
-<button id="scroll-to-top" title="Go to top">
-	<i class="fas fa-arrow-up"></i>
+<button id="scrollToTopBtn" class="btn btn-primary rounded-circle shadow-lg" title="Go to top">
+	<i class="fa-solid fa-arrow-up"></i>
 </button>
 
 <div class="spacer"></div>
@@ -98,20 +98,24 @@
 	// Dynamic Year Script
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Scroll to Top Script
-    const scrollToTopButton = document.getElementById('scroll-to-top');
-    if (scrollToTopButton) {
-        window.addEventListener('scroll', function () {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                scrollToTopButton.style.display = 'block';
-            } else {
-                scrollToTopButton.style.display = 'none';
-            }
-        });
-        scrollToTopButton.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
+// Modern Scroll to Top Script
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+if (scrollToTopBtn) {
+  // Show or hide the button based on scroll position
+  window.addEventListener('scroll', () => {
+    const isScrolled = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+    scrollToTopBtn.classList.toggle('show', isScrolled);
+  });
+
+  // Smoothly scroll to the top when the button is clicked
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 
     // BibTeX copy function for publications page
     function copyBibtex(button) {
