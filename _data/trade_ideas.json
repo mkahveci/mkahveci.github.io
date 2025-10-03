@@ -1,27 +1,27 @@
 [
   {
   "publicationDate": "2025-10-03",
-  "tradeTitle": "Short Put on KHC",
-  "summaryJustification": "KHC's elevated IV Rank of 49% makes it a strong candidate for a premium-selling strategy, with the goal of profiting from the expected decrease in volatility and time decay as the stock remains range-bound ahead of earnings.",
-  "expectedReturnDisplay": "12.5% Annualized ROC",
-  "ticker": "KHC",
-  "currentPrice": 26.07,
-  "ivRank": 49,
-  "earningsDate": "2025-10-29",
+  "tradeTitle": "Short Put on BMNR",
+  "summaryJustification": "Based on the provided options chain, BMNR exhibits elevated premium in its short-dated options, likely due to recent high volatility. This trade seeks to capitalize on theta decay and further volatility contraction by selling a 7-DTE put with a high annualized return on capital.",
+  "expectedReturnDisplay": "113.3% Annualized ROC",
+  "ticker": "BMNR",
+  "currentPrice": 56.26,
+  "ivRank": 0,
+  "earningsDate": "N/A",
   "analysis": {
-    "thesis": "Kraft Heinz (KHC) has been trading in a tight range, hovering near its five-year lows. With earnings approaching at the end of October, market participants are pricing in an increase in volatility. The stock's current implied volatility (IV) is 26% and its IV Rank is 49%, which is considered elevated and makes it a good candidate for a premium-selling strategy. The goal is to profit from time decay and the potential for a decrease in volatility post-earnings, as the stock is expected to remain range-bound.",
+    "thesis": "While a specific IV Rank is not available from the provided data, the recent price chart for BMNR shows a massive volatility spike in July 2025. The current environment represents a volatility contraction, which is an ideal scenario for selling options premium. This trade is placed to take advantage of the still-elevated premium with the expectation that volatility will continue to normalize and time decay will accelerate in the final week to expiration.",
     "strategyType": "Short Put",
     "tradeDetails": {
-      "expiration": "2025-10-31",
-      "dte": 35,
-      "putStrike": 25.00,
-      "putPremium": 0.03
+      "expiration": "2025-10-10",
+      "dte": 7,
+      "putStrike": 52.00,
+      "putPremium": 1.13
     },
     "metrics": {
-      "roc": 1.2,
-      "annualizedRoc": 12.5,
-      "pop": 80,
-      "buyingPowerEffect": 250
+      "roc": 2.22,
+      "annualizedRoc": 113.3,
+      "pop": 76,
+      "buyingPowerEffect": 5087
     },
     "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
   }
