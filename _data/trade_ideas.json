@@ -1,5 +1,32 @@
 [
   {
+  "publicationDate": "2025-10-03",
+  "tradeTitle": "Short Put on KHC",
+  "summaryJustification": "KHC's elevated IV Rank of 49% makes it a strong candidate for a premium-selling strategy, with the goal of profiting from the expected decrease in volatility and time decay as the stock remains range-bound ahead of earnings.",
+  "expectedReturnDisplay": "12.5% Annualized ROC",
+  "ticker": "KHC",
+  "currentPrice": 26.07,
+  "ivRank": 49,
+  "earningsDate": "2025-10-29",
+  "analysis": {
+    "thesis": "Kraft Heinz (KHC) has been trading in a tight range, hovering near its five-year lows. With earnings approaching at the end of October, market participants are pricing in an increase in volatility. The stock's current implied volatility (IV) is 26% and its IV Rank is 49%, which is considered elevated and makes it a good candidate for a premium-selling strategy. The goal is to profit from time decay and the potential for a decrease in volatility post-earnings, as the stock is expected to remain range-bound.",
+    "strategyType": "Short Put",
+    "tradeDetails": {
+      "expiration": "2025-10-31",
+      "dte": 35,
+      "putStrike": 25.00,
+      "putPremium": 0.03
+    },
+    "metrics": {
+      "roc": 1.2,
+      "annualizedRoc": 12.5,
+      "pop": 80,
+      "buyingPowerEffect": 250
+    },
+    "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
+  }
+},
+  {
     "publicationDate": "2025-10-01",
     "tradeTitle": "Short Put on MRNA",
     "summaryJustification": "Based on the analysis, MRNA is hovering above its 5-year low with a rising IV Rank of 49% ahead of earnings. A short put is a bullish strategy that leverages this high premium and market skew indicating upside risk.",
