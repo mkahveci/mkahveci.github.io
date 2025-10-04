@@ -2,8 +2,6 @@
 layout: misc
 title: Terms of Service
 ---
-
-<div class="bigspacer"></div>
 <p class="text-muted">
   <b>Effective Date:</b> September 28, 2025
 </p>
@@ -55,7 +53,5 @@ We may update these Terms of Service from time to time. Changes will be posted o
 
 If you have any questions about these Terms of Service, please contact us.
 
-<div class="smallspacer"></div>
-
-<a href="/contact" class="btn btn-primary shadow"><i class="fas fa-envelope fa-fw"></i> Contact Form</a>
-<a href="/murat" class="btn btn-outline-secondary shadow"><i class="fas fa-user-graduate fa-fw"></i> Dr. Kahveci's Profile</a>
+<a href="/contact" class="btn btn-outline-primary"><i class="fas fa-envelope"></i> Contact</a>
+<a href="/murat" class="btn btn-outline-secondary"><i class="fas fa-user-graduate"></i> Dr. Kahveci</a>

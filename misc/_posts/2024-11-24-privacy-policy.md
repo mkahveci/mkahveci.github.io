@@ -57,7 +57,5 @@ We use Google Analytics or equivalent tools, which rely on <b>cookies</b> (small
 
 If you have any questions about this Privacy Policy, please contact us.
 
-<div class="smallspacer"></div>
-
-<a href="/contact" class="btn btn-primary shadow"><i class="fas fa-envelope fa-fw"></i> Contact Form</a>
-<a href="/murat" class="btn btn-outline-secondary shadow"><i class="fas fa-user-graduate fa-fw"></i> Dr. Kahveci's Profile</a>
+<a href="/contact" class="btn btn-outline-primary"><i class="fas fa-envelope"></i> Contact</a>
+<a href="/murat" class="btn btn-outline-secondary"><i class="fas fa-user-graduate"></i> Dr. Kahveci</a>
