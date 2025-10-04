@@ -2,87 +2,219 @@
 # Layout must be 'reveal' to render as a presentation
 layout: reveal
 
-# ---- Main Information ----
-title: "reveal.js Template"
-date: 2024-05-20
-category: talks # This is the crucial line!
+# ---- Main Information (Fill this in for each new talk) ----
+title: "[Your Presentation Title Here]"
+date: 2025-10-04
+category: talks # This should always be 'talks'
 
-# ---- Data for the Listing Page ----
-event: "Jekyll Community Meetup"
-location: "Online"
-type: "invited" # Use "conference" or "invited"
+# ---- Data for the Listing Page (/talks/) ----
+event: "[Name of Conference or Event]"
+location: "[City, State/Country]"
+type: "conference" # Use "conference" or "invited"
 
-# ---- Optional Links for Buttons ----
+# ---- Optional Links for Buttons on the /talks/ page ----
 pdf:
 video:
 event_url:
+
+# ---- Jekyll Settings ----
 published: false
-sitemap: false
+sitemap: false # Keep this 'false' to hide it from search engines
 ---
 
-# Construct Validity and Reliability Measures of Scores from the Science Teachers' Pedagogical Discontentment (STPD) Scale in the Saudi Arabian Context
-### Murat Kahveci, Ajda Kahveci, Nasser Mansour, & Maher Mohammed Alarfaj
-*Canakkale Onsekiz Mart University, Exeter University, King Faisal University, King Saud University, & Tanta University*
+<!--
+=================================================================
+  SLIDE 1: Title Slide
+=================================================================
+- Replace the main title.
+- Update the author names, links, and institutions.
+- Change the conference logo and details.
+-->
+<!-- Main Title -->
+<h1 style="font-size: 1.5em;">[Your Presentation Title Here]</h1>
 
-<a href="https://narst.org/conferences/2015-annual-conference">
-    <img src="/images/talks/logo/narst-logo.png" alt="Logo" style="width: 250px; height: auto; border: 0; background: none; box-shadow: none; margin-bottom: 20px;">
-</a>
-<p>Chicago, 2015</p>
+<!-- Author & Institution Table -->
+<table style="width: 100%; border: none; text-align: center; margin: 2rem 0; font-size: 0.8em;">
+    <tr style="border: none;">
+        <td style="border: none; padding: 0.5rem;">
+            <strong><a href="[Link to Author 1 Profile]">[Author 1 Name]</a></strong><br>
+            <em>[Institution Name]</em>
+        </td>
+        <td style="border: none; padding: 0.5rem;">
+            <strong><a href="[Link to Author 2 Profile]">[Author 2 Name]</a></strong><br>
+            <em>[Institution Name]</em>
+        </td>
+    </tr>
+</table>
+
+<!-- Conference Information -->
+<div style="text-align: center;">
+    <a href="[Link to Conference Website]" target="_blank">
+        <img src="/images/talks/logo/your-logo.png" alt="Conference Logo" style="width: 250px; height: auto; border: 0; background: none; box-shadow: none;">
+    </a>
+    <p style="margin-top: 1rem;">[City, Year]</p>
+</div>
 
 ---
 
-<!-- ============================================= -->
-<!-- TEMPLATE: Standard Content Slide -->
-<!-- ============================================= -->
+<!--
+=================================================================
+  SLIDE 2: Standard Content Slide (e.g., Introduction)
+=================================================================
+- Use this for simple text and bullet points.
+-->
+## [Slide Title, e.g., Introduction]
 
-## This is a Standard Slide
-
-- Use bullets to organize points.
-- The layout will handle the styling.
+* Use bullet points to present your main ideas.
+* This is the most common slide type for text-based content.
+* You can use **bold** or *italics* for emphasis.
 
 ---
 
-<!-- ============================================= -->
-<!-- TEMPLATE: LaTeX Math & Chemistry -->
-<!-- ============================================= -->
+<!--
+=================================================================
+  SLIDE 3: Two-Part Slide (using '--')
+=================================================================
+- Use '--' to reveal content sequentially on the same slide.
+-->
+## [Slide Title, e.g., Problem & Questions]
 
-## $\LaTeX$ Examples
-
-Our analysis uses the Gibbs free energy equation: $\Delta G = \Delta H - T \Delta S$
-
-A key reaction is the combustion of methane:
-$$\ce{CH4 + 2 O2 -> CO2 + 2 H2O}$$
+This is the first part of the slide. It introduces a concept.
 
 --
 
-*Our analysis uses the Gibbs free energy equation:*
+### [Sub-heading, e.g., Research Questions]
 
-
-
-$\hat{H} \Psi = E \Psi $
+* This is the second part, which appears after you click.
+* It's great for building an argument or asking questions based on the first part.
 
 ---
 
-<!-- ============================================= -->
-<!-- TEMPLATE: End Slide -->
-<!-- ============================================= -->
+<!--
+=================================================================
+  SLIDE 4: Slide with a Table
+=================================================================
+- Use this HTML structure for data tables to ensure they render correctly.
+- Remember to use LaTeX ($...$) for numbers and escaped percent signs (\%).
+-->
+## [Slide Title, e.g., Participant Demographics]
 
-## Thank You
+<br>
 
-### Questions?
+<table style="width:100%;">
+    <thead>
+    <tr>
+        <th style="text-align: left;">Category</th>
+        <th style="text-align: center;">Group</th>
+        <th style="text-align: right;">Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="text-align: left;">Sample Size</td>
+        <td style="text-align: center;">Total</td>
+        <td style="text-align: right;">$994$</td>
+    </tr>
+    <tr>
+        <td style="text-align: left;">Key Finding</td>
+        <td style="text-align: center;">Variance Explained</td>
+        <td style="text-align: right;">$71.00\%$</td>
+    </tr>
+    </tbody>
+</table>
 
-#### Acknowledgments
+<!-- Optional Caption for the Table -->
+<p style="text-align: center; font-size: 0.8em; margin-top: 1rem;">
+    <strong>Table: [Table Title].</strong>
+    <em>[A brief, one-sentence description of the table's key takeaway.]</em>
+</p>
+
+---
+
+<!--
+=================================================================
+  SLIDE 5: Slide with a Figure/Diagram
+=================================================================
+- Use this HTML structure to display images.
+- Remember to update the 'src' path to your image file.
+-->
+## [Slide Title, e.g., The Proposed Model]
+
+<table style="margin-left: auto; margin-right: auto; border: none;">
+    <tr>
+        <td style="text-align: center; border: none;">
+            <img src="/images/talks/path/to/your-figure.png" alt="[Brief description of image]" style="width: 80%; max-width: 600px; background-color: white; padding: 10px; border-radius: 5px;">
+
+            <!-- Optional Caption for the Figure -->
+            <p style="font-size: 0.8em; margin-top: 1rem;">
+                <strong>Figure: [Figure Title].</strong><br>
+                <em>[A brief, one-sentence description of what the figure shows.]</em>
+            </p>
+        </td>
+    </tr>
+</table>
+
+---
+
+<!--
+=================================================================
+  SLIDE 6: Two-Column Math/Equation Slide
+=================================================================
+- Use this HTML table structure for side-by-side content.
+- Perfect for explaining statistical tests or concepts.
+-->
+## [Slide Title, e.g., The Math Behind the Method]
+
+<table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+    <tr>
+        <td style="width: 50%; vertical-align: top;">
+            <h4>[Concept 1 Title]</h4>
+            <p><small>[Brief explanation of the concept.]</small></p>
+            $$[LaTeX \ formula \ here]$$
+        </td>
+        <td style="width: 50%; vertical-align: top;">
+            <h4>[Concept 2 Title]</h4>
+            <p><small>[Brief explanation of the concept.]</small></p>
+            $$[LaTeX \ formula \ here]$$
+        </td>
+    </tr>
+</table>
+
+---
+
+<!--
+=================================================================
+  SLIDE 7: Final Slides (Questions & Thank You)
+=================================================================
+- A clean and professional way to end your presentation.
+-->
+
+## Questions?
+
+## Acknowledgments
 
 **Funding & Support**
-- National Science Foundation
-- Loyola University Chicago
+- Excellence Research Centre of Science and Mathematics Education, King Saud University, Kingdom of Saudi Arabia.
 
 **Contributors**
 <br>
-<a href="/murat"><img src="/images/team/murat-kahveci.jpg" class="profile-photo-circular" alt="Murat Kahveci"></a>
+<a href="/murat" target="_blank"><img src="/images/team/murat-kahveci.jpg" class="profile-photo-circular" alt="Murat Kahveci"></a>
+<a href="/ajda" target="_blank"><img src="/images/team/ajda-kahveci.png" class="profile-photo-circular" alt="Ajda Kahveci"></a>
+<a href="/nasser" target="_blank"><img src="/images/team/nasser-mansour.jpg" class="profile-photo-circular" alt="Nasser Mansour"></a>
+<a href="/maher" target="_blank"><img src="/images/team/maher-alarfaj.jpg" class="profile-photo-circular" alt="Maher Alarfaj"></a>
 
----
+--
 
-<a href="/"><img src="/images/logo.svg" alt="Logo" class="max-width: 150px; height: auto; border: 0; background: none; box-shadow: none; margin-bottom: 20px;"></a>
-
-<p><strong>Contact:</strong> <a href="mailto:mkahveci@gmail.com">mkahveci@gmail.com</a></p>
+<table style="margin-left: auto; margin-right: auto; border: none; text-align: center;">
+    <tr>
+        <td style="border: none;">
+            <h2><em>Thank You!</em></h2>
+            <br>
+            <a href="[https://kahveci.pw/](https://kahveci.pw/)" target="_blank"><img src="/images/logo.svg" alt="Logo" style="max-width: 150px; height: auto; border: 0; background: none; box-shadow: none;"></a>
+            <h4>Murat Kahveci, Ph.D.</h4>
+            <p style="margin-top: 1rem;">
+                <strong>Contact & Discussion:</strong> <a href="[https://kahveci.pw/contact](https://kahveci.pw/contact)" target="_blank">kahveci.pw/contact</a>
+            </p>
+        </td>
+    </tr>
+</table>

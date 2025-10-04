@@ -20,3 +20,9 @@ gem "twitter", "~> 7.0"
 gem 'jekyll-toc'
 
 gem 'listen'
+
+gem 'csv'
+
+gem 'base64'
+
+gem 'bigdecimal'
