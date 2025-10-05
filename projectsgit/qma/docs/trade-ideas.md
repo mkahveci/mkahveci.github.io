@@ -41,7 +41,7 @@ permalink: /:path/:basename:output_ext
     </p>
   </div>
 
-{% assign sorted_trades = site.data.trade_ideas | sort: 'publicationDate' | reverse %}
+{% assign sorted_trades = site.data.trade_ideas | sort: 'publicationDate' | reverse | limit: 100 %}
 
   <section id="trades">
     <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>

@@ -13,6 +13,11 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-05 03:48:41.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/3fb41087b2a88a18e99dc7a50e72a16d5f6b9905
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-03 23:50:35.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/7228bea535240c91a41552c3d8bbd5cbadfdd1f3
@@ -31,11 +36,6 @@
   - date: 2025-10-02 03:41:31.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/5d47c49bbcaa0997f835a388763e21caacfa1c6c
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-02 03:37:01.000000000 Z
-    message: Update trade-ideas.md
-    url: https://github.com/mkahveci/qma/commit/528602104aff80d9f1fd47576d05147b908690d7
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
