@@ -1,130 +1,110 @@
 {%- include counter.html -%}
 
 {% if projectcount > 0 %}
-
-{% if page.name == 'Murat Kahveci' %}
-
-## Projects
-
-{% else if %} 
-
-## Joint Projects
-
+<h3 class="mt-5">{% if page.name == 'Murat Kahveci' %}Projects{% else %}Projects{% endif %}</h3>
+<div class="list-group">
+    {% for project in site.categories.projects %}
+    {% if project.contributors contains searchstring %}
+    <a href="{{ project.url }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 h6">{{ project.title }}</h5>
+            <small class="text-muted">{{ project.duration }}</small>
+        </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endif %}
-
-{% for project in site.categories.projects %}
-{% if project.contributors contains searchstring %}
-
-_{{projectcount}}_. [{{ project.title }}]({{ project.url }}) ({{ project.duration }})
-
-{% assign projectcount = projectcount | minus: 1 %}
-{% endif %}
-{% endfor %}
-{% endif %}
-
 
 {% if count > 0 %}
-{% if page.name == 'Murat Kahveci' %}
-
-## Publications
-
-{% else if %}
-
-## Joint Publications
-
-{% endif %}
-{% endif %}
-
+<!--<h3 class="mt-5">{% if page.name == 'Murat Kahveci' %}Publications{% else %}Joint Publications{% endif %}</h3>-->
 
 {% if booksq == true %}
-
-### Books
-
-{% for book in books %}
-{% if book.authors contains searchstring %}
-
-_{{ count }}_. {{ book.ref }}
-
-{% assign count = count | minus: 1 %}
-
-{% endif %}
-{% endfor %}
+<h4 class="mt-4">Books</h4>
+<div class="list-group">
+    {% for book in books %}
+    {% if book.authors contains searchstring %}
+    <div class="list-group-item">
+        <p class="mb-1 small">{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endif %}
 
 {% if jpapersq == true %}
-
-### Journal Articles
-
-{% for jpaper in journals %}
-{% if jpaper.authors contains searchstring %}
-
-_{{ count }}_. {{ jpaper.ref }}
-
-{% assign count = count | minus: 1 %}
-
+<h4 class="mt-4">Journal Articles</h4>
+<div class="list-group">
+    {% for jpaper in journals %}
+    {% if jpaper.authors contains searchstring %}
+    <div class="list-group-item">
+        <p class="mb-1 small">{{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endif %}
-{% endfor %}
-{% endif %}
-
 
 {% if cpapersq == true %}
-
-### Conference Papers
-
-{% for cpaper in conferences %}
-{% if cpaper.authors contains searchstring %}
-
-_{{ count }}_. {{ cpaper.ref }}
-
-{% assign count = count | minus: 1 %}
-
+<h4 class="mt-4">Conference Papers</h4>
+<div class="list-group">
+    {% for cpaper in conferences %}
+    {% if cpaper.authors contains searchstring %}
+    <div class="list-group-item">
+        <p class="mb-1 small">{{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endif %}
-{% endfor %}
 {% endif %}
 
 {% if talkq == true %}
-
-### Talks
-
-{% for talk in talks %}
-{% if talk.author contains searchstring %}
-
-_{{ talkcount }}_. [{{ talk.title }}]({{ talk.permalink }}). {{ talk.event }} ({{ talk.year }}), {{ talk.venue }}.
-
-{% assign count = count | minus: 1 %}
-
-{% endif %}
-{% endfor %}
+<h3 class="mt-5">Talks</h3>
+<div class="list-group">
+    {% for talk in talks %}
+    {% if talk.author contains searchstring %}
+    <a href="{{ talk.permalink }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 h6">{{ talk.title }}</h5>
+            <small class="text-muted">{{ talk.year }}</small>
+        </div>
+        <p class="mb-1 small text-muted">{{ talk.event }}, {{ talk.venue }}</p>
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endif %}
 
 {% if coursecount > 0 %}
-
-## Courses
-
-{% for course in site.categories.courses %}
-{% if course.instructor %}
-{% if page.name == course.instructor %}
-_{{ coursecount }}_. <a href="{{ course.url }}">{{ course.code }}</a> {{ course.title }}, taught at {{ course.institution }} in {{ course.semester }}.
+<h3 class="mt-5">Courses</h3>
+<div class="list-group">
+    {% for course in site.categories.courses %}
+    {% if course.instructor and page.name == course.instructor %}
+    <a href="{{ course.url }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 h6">{{ course.code }}: {{ course.title }}</h5>
+            <small class="text-muted">{{ course.semester }}</small>
+        </div>
+        <p class="mb-1 small text-muted">Taught at {{ course.institution }}</p>
+    </a>
     {% endif %}
-    {% endif %}
-    {% assign coursecount = coursecount | minus: 1 %}
     {% endfor %}
+</div>
 {% endif %}
 
 {% if postcount > 0 %}
-
-## Posts
-
-<ul>
+<h3 class="mt-5">Posts</h3>
+<div class="list-group">
     {% for post in site.categories.blog %}
-    {% comment %} Check that the post author matches the person's page name {% endcomment %}
     {% if post.author and post.author == page.name %}
-    <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <small class="text-muted ps-2">{{ post.date | date_to_string }}</small>
-    </li>
+    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 h6">{{ post.title }}</h5>
+            <small class="text-muted">{{ post.date | date_to_string }}</small>
+        </div>
+    </a>
     {% endif %}
     {% endfor %}
-</ul>
+</div>
 {% endif %}
-
