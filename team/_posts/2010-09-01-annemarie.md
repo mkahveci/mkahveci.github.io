@@ -11,6 +11,14 @@ alumni: true
 excerpt: "A visiting researcher from Justus Liebig University Giessen who collaborated with the group in 2010 to gather data for her thesis in chemistry education."
 ---
 
-Visited our group in the summer of 2010 from Justus Liebig University Giessen and gathered data for her thesis research in chemistry education.
+## Professional Summary
+
+<div class="card bg-light mb-3">
+<div class="card-body">
+<p class="card-text">
+Annemarie Kegler was a visiting graduate student from Justus-Liebig-Universität Gießen who collaborated with our group during the summer of 2010. During her visit, she conducted research and gathered data for her thesis in chemistry education, demonstrating her dedication to her academic pursuits and her ability to work in an international research setting.
+</p>
+</div>
+</div>
 
 {%- include member-contributions.html -%}
