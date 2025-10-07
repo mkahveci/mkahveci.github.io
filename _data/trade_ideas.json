@@ -69,13 +69,15 @@
         "expiration": "2025-10-31",
         "dte": 30,
         "putStrike": 22.00,
-        "putPremium": 0.80
+        "putPremium": 0.80,
+        "maxProfit": 80.00
       },
       "metrics": {
-        "roc": 3.8,
-        "annualizedRoc": 0.0,
+        "roc": 3.64,
+        "annualizedRoc": 44.29,
         "pop": 87,
-        "buyingPowerEffect": 2120
+        "buyingPowerEffect": 2200,
+        "dailyProfitPotential": 2.67
       },
       "managementPlan": "The analysis notes an 87% probability of achieving 50% of max profit, aligning with the standard management plan to target 50% profit or manage the trade near 21 DTE."
     }
