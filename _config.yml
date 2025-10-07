@@ -48,6 +48,11 @@ readmes:
   - mkahveci/qma
   - mkahveci/loyola-beamer-template
 
+collections:
+  presentations:
+    output: true
+    permalink: /presentations/:name/
+
 
 exclude:
   - "*.branches"
