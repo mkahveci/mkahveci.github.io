@@ -1,62 +1,58 @@
 [
   {
-    "publicationDate": "2025-10-06",
-    "tradeTitle": "Short Put on WDC",
-    "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
-    "expectedReturnDisplay": "57.43% Annualized ROC",
-    "ticker": "WDC",
-    "currentPrice": 125.28,
-    "ivRank": null,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "Implied volatility in the short-term WDC options chain allows for selling a weekly put that generates a high annualized return on capital. The 116 strike has a delta of approximately 0.13, offering an aggressive premium capture with a substantial buffer from the current price.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-10-10",
-        "dte": 4,
-        "putStrike": 116.00,
-        "putPremium": 0.73,
-        "maxProfit": 73.00
-      },
-      "metrics": {
-        "roc": 0.63,
-        "annualizedRoc": 57.43,
-        "pop": 87.00,
-        "buyingPowerEffect": 11600.00,
-        "dailyProfitPotential": 18.25
-      },
-      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
-  },
+  "publicationDate": "2025-10-06",
+  "tradeTitle": "Short Put on WDC",
+  "summaryJustification": "WDC's implied volatility is high, with an estimated IV Rank of 75%. This creates an opportunity to sell an out-of-the-money put option with an attractive premium and a high annualized return.",
+  "expectedReturnDisplay": "244% Annualized ROC",
+  "ticker": "WDC",
+  "currentPrice": 125.93,
+  "ivRank": 75,
+  "earningsDate": "2025-10-23",
+  "analysis": {
+    "thesis": "WDC's implied volatility is elevated, as evidenced by an estimated IV Rank of 75%. This is a favorable environment for premium-selling strategies, as option premiums are high. By selling an out-of-the-money put with a low delta, we can capitalize on time decay while maintaining a high probability of success. The annualized return on capital for this weekly trade is well above the target threshold, making it a compelling trade idea.",
+    "strategyType": "Short Put",
+    "tradeDetails": {
+      "expiration": "2025-10-10",
+      "dte": 7,
+      "putStrike": 116.00,
+      "putPremium": 0.72
+    },
+    "metrics": {
+      "roc": 6.2,
+      "annualizedRoc": 244.0,
+      "pop": 87,
+      "buyingPowerEffect": 1160
+    },
+    "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
+  }
+},
   {
-    "publicationDate": "2025-10-03",
-    "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "Based on the provided options chain, BMNR exhibits elevated premium in its short-dated options, likely due to recent high volatility. This trade seeks to capitalize on theta decay and further volatility contraction by selling a 7-DTE put with a high annualized return on capital.",
-    "expectedReturnDisplay": "113.3% Annualized ROC",
-    "ticker": "BMNR",
-    "currentPrice": 56.26,
-    "ivRank": 0,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "While a specific IV Rank is not available from the provided data, the recent price chart for BMNR shows a massive volatility spike in July 2025. The current environment represents a volatility contraction, which is an ideal scenario for selling options premium. This trade is placed to take advantage of the still-elevated premium with the expectation that volatility will continue to normalize and time decay will accelerate in the final week to expiration.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-10-10",
-        "dte": 7,
-        "putStrike": 52.00,
-        "putPremium": 1.13,
-        "maxProfit": 113.00
-      },
-      "metrics": {
-        "roc": 2.17,
-        "annualizedRoc": 113.14,
-        "pop": 76,
-        "buyingPowerEffect": 5200,
-        "dailyProfitPotential": 16.14
-      },
-      "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
-    }
-  },
+  "publicationDate": "2025-10-03",
+  "tradeTitle": "Short Put on BMNR",
+  "summaryJustification": "Based on the provided options chain, BMNR exhibits elevated premium in its short-dated options, likely due to recent high volatility. This trade seeks to capitalize on theta decay and further volatility contraction by selling a 7-DTE put with a high annualized return on capital.",
+  "expectedReturnDisplay": "113.3% Annualized ROC",
+  "ticker": "BMNR",
+  "currentPrice": 56.26,
+  "ivRank": 0,
+  "earningsDate": "N/A",
+  "analysis": {
+    "thesis": "While a specific IV Rank is not available from the provided data, the recent price chart for BMNR shows a massive volatility spike in July 2025. The current environment represents a volatility contraction, which is an ideal scenario for selling options premium. This trade is placed to take advantage of the still-elevated premium with the expectation that volatility will continue to normalize and time decay will accelerate in the final week to expiration.",
+    "strategyType": "Short Put",
+    "tradeDetails": {
+      "expiration": "2025-10-10",
+      "dte": 7,
+      "putStrike": 52.00,
+      "putPremium": 1.13
+    },
+    "metrics": {
+      "roc": 2.22,
+      "annualizedRoc": 113.3,
+      "pop": 76,
+      "buyingPowerEffect": 5087
+    },
+    "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
+  }
+},
   {
     "publicationDate": "2025-10-01",
     "tradeTitle": "Short Put on MRNA",
