@@ -2,17 +2,31 @@
 - repo: mkahveci/qma
   title: qma
   owner: mkahveci
-  description: QMA is an open-source project for logging and analyzing options trading
-    strategies. It uses a Jekyll front-end and a simple JSON data file to demonstrate
-    a lightweight, self-hosted approach to tracking market data. This project is for
-    educational and technical demonstration purposes only and does not constitute
-    financial advice.
+  description: Quantitative Market Analysis (QMA) is an open-source project for logging
+    and analyzing options trading strategies. It uses a Jekyll front-end and a simple
+    JSON data file to track market data. Designed for educational purposes, it provides
+    a lightweight, self-hosted solution.
   url: "/projectsgit/qma/"
   contributors:
   - login: mkahveci
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-07 00:28:57.000000000 Z
+    message: Update the card display datails and add the trade management rules.
+    url: https://github.com/mkahveci/qma/commit/f73b8da8270002fe656592ebac50dff8f6d79435
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-07 00:17:42.000000000 Z
+    message: Update the card display datails and add the trade management rules.
+    url: https://github.com/mkahveci/qma/commit/ef72230f013b8ebfd3526beebba3e1456fee9d71
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-07 00:15:37.000000000 Z
+    message: Update the card display datails and add the trade management rules.
+    url: https://github.com/mkahveci/qma/commit/96c3f18ede2e93a750f13533e1d69c2ca9cbff7f
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-05 03:48:41.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/3fb41087b2a88a18e99dc7a50e72a16d5f6b9905
@@ -21,21 +35,6 @@
   - date: 2025-10-03 23:50:35.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/7228bea535240c91a41552c3d8bbd5cbadfdd1f3
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-02 03:57:12.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/0413826c6987cd5a30d7a8c6432b327e06c41a1e
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-02 03:49:02.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/bf888c32bcf1fc9ab21a6097a5866351eeccc950
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-02 03:41:31.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/5d47c49bbcaa0997f835a388763e21caacfa1c6c
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
