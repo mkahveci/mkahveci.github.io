@@ -20,7 +20,7 @@ permalink: /:path/:basename:output_ext
   </svg>
   <div class="d-flex flex-column">
     <h5 class="mb-1 fw-bold">Project Information</h5>
-    <p class="mb-0">This is a dynamic project based on real-time data. You can view the live project and documentation below.</p>
+    <p class="mb-0">Quantitative Market Analysis (`qma`) is a dynamic project based on real-time data. You can view the live project and documentation below.</p>
     <a href="/projectsgit/qma/docs/trade-ideas" class="btn btn-primary btn-sm mt-2">View Project</a>
   </div>
 </div>

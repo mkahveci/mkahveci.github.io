@@ -9,27 +9,53 @@ permalink: /:path/:basename:output_ext
 <style>
   /* Style for the date block on the left of each card */
   .date-block {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #e9ecef;
+    background-color: #f8f9fa;
     color: #495057;
     font-weight: bold;
-    border-radius: 0.25rem;
+    border-radius: 0.375rem;
     text-align: center;
     line-height: 1.2;
+    border: 1px solid #dee2e6;
   }
   .date-block .month {
     font-size: 0.9rem;
     display: block;
   }
   .date-block .day {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     display: block;
+  }
+  .trade-card-section {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-top: 0.75rem;
+  }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .metric-item {
+    padding: 0.25rem 0.5rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+  }
+  .metric-item strong {
+    display: block;
+    color: #6c757d;
+    font-size: 0.75rem;
+  }
+  .font-monospace {
+      font-size: 0.9em;
   }
 </style>
 
@@ -45,67 +71,74 @@ permalink: /:path/:basename:output_ext
 
   <section id="trades">
     <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
+    <div class="row row-cols-1 g-4">
       {% for trade in sorted_trades %}
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body d-flex">
+
             <div class="date-block me-3">
               <span class="month">{{ trade.publicationDate | date: "%b" | upcase }}</span>
               <span class="day">{{ trade.publicationDate | date: "%d" }}</span>
             </div>
+            
             <div class="flex-grow-1">
-
-              {%- assign strike_string = trade.analysis.tradeDetails.putStrike | append: '' -%}
-              {%- assign strike_parts = strike_string | split: '.' -%}
-              {%- if strike_parts[1].size == 1 -%}
-                {%- assign formatted_strike = strike_string | append: '0' -%}
-              {%- else -%}
-                {%- assign formatted_strike = strike_string -%}
-              {%- endif -%}
-
-              {%- assign premium_string = trade.analysis.tradeDetails.putPremium | append: '' -%}
-              {%- assign premium_parts = premium_string | split: '.' -%}
-              {%- if premium_parts[1].size == 1 -%}
-                {%- assign formatted_premium = premium_string | append: '0' -%}
-              {%- else -%}
-                {%- assign formatted_premium = premium_string -%}
-              {%- endif -%}
-              <h5 class="card-title h6">{{ trade.tradeTitle }}</h5>
+              <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
               <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
-              <p class="card-text small mt-2">{{ trade.summaryJustification }}</p>
 
-              <ul class="list-unstyled small mt-3 mb-0">
-                <li class="d-flex justify-content-between border-top pt-2">
-                  <span><strong>Strategy:</strong></span>
-                  <span class="font-monospace">{{ trade.analysis.strategyType }}</span>
-                </li>
-                <li class="d-flex justify-content-between pt-1">
-                  <span><strong>Expiration:</strong></span>
-                  <span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%Y-%m-%d" }}</span>
-                </li>
-                <li class="d-flex justify-content-between pt-1">
-                  <span><strong>Strike:</strong></span>
-                  <span class="font-monospace">{{ formatted_strike }}</span>
-                </li>
-                <li class="d-flex justify-content-between pt-1">
-                  <span><strong>Premium:</strong></span>
-                  <span class="font-monospace">${{ formatted_premium }}</span>
-                </li>
-              </ul>
+              <div class="d-flex justify-content-between small p-2 rounded bg-light mt-2">
+                <span>Price: <strong>${{ trade.currentPrice | default: "N/A" }}</strong></span>
+                <span>IV Rank: <strong>{{ trade.ivRank | default: "N/A" }}%</strong></span>
+                <span>Earnings: <strong>{{ trade.earningsDate | default: "N/A" }}</strong></span>
+              </div>
+              
+              <p class="card-text small mt-3">{{ trade.summaryJustification }}</p>
+
+              <div class="trade-card-section bg-light">
+                <ul class="list-unstyled small mb-0">
+                  <li class="d-flex justify-content-between"><span><strong>Strategy:</strong></span><span class="font-monospace">{{ trade.analysis.strategyType }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Expiration (DTE):</strong></span><span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%b %d, %Y" }} ({{ trade.analysis.tradeDetails.dte }})</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Strike / Premium:</strong></span><span class="font-monospace">${{ trade.analysis.tradeDetails.putStrike }} / ${{ trade.analysis.tradeDetails.putPremium }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">${{ trade.analysis.tradeDetails.maxProfit }}</span></li>
+                </ul>
+              </div>
+
+              <div class="trade-card-section" style="background-color: #f0f8ff;">
+                <div class="metrics-grid">
+                  <div class="metric-item text-center"><strong>ROC</strong><span>{{ trade.analysis.metrics.roc | round: 2 }}%</span></div>
+                  <div class="metric-item text-center"><strong>Annualized</strong><span>{{ trade.analysis.metrics.annualizedRoc | round: 2 }}%</span></div>
+                  <div class="metric-item text-center"><strong>POP</strong><span>{{ trade.analysis.metrics.pop | round: 1 }}%</span></div>
+                  <div class="metric-item text-center"><strong>Buying Power</strong><span>${{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}</span></div>
+                </div>
+              </div>
+              
             </div>
           </div>
-          <div class="card-footer bg-white border-top-0 pt-0">
-            <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 81px;">
-              <a href="https://www.google.com/search?q={{ trade.ticker }}+stock" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-chart-line fa-fw me-1"></i> View Chart</a>
-              <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy trade details"><i class="fas fa-copy fa-fw me-1"></i> Copy Details</button>
+          <div class="card-footer bg-white">
+            <div class="d-flex flex-wrap justify-content-end" style="gap: 0.5rem;">
+              <a href="https://www.google.com/search?q={{ trade.ticker }}+stock" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-chart-line fa-fw me-1"></i> Chart</a>
+              <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ forloop.index }}" aria-expanded="false" aria-controls="collapse-{{ forloop.index }}">
+                <i class="fas fa-info-circle fa-fw me-1"></i> More Info
+              </button>
+              <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy trade details"><i class="fas fa-copy fa-fw me-1"></i> Copy</button>
               
               <div class="trade-details-data" style="display: none;">
-                {{ trade.tradeTitle }}
-                - Strategy: {{ trade.analysis.strategyType }}
-                - Expiration: {{ trade.analysis.tradeDetails.expiration | date: "%Y-%m-%d" }}
-                - Strike: {{ formatted_strike }}
-                - Premium: ${{ formatted_premium }}
+                Trade: {{ trade.tradeTitle }}
+                Strategy: Sell {{ trade.analysis.tradeDetails.dte }} DTE {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }} ${{ trade.analysis.tradeDetails.putStrike }} Put
+                Premium: ${{ trade.analysis.tradeDetails.putPremium }}
+                Max Profit: ${{ trade.analysis.tradeDetails.maxProfit }}
+                ROC: {{ trade.analysis.metrics.roc | round: 2 }}%
+                Buying Power: ${{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}
+                POP: {{ trade.analysis.metrics.pop | round: 1 }}%
+              </div>
+            </div>
+            
+            <div class="collapse mt-3" id="collapse-{{ forloop.index }}">
+              <div class="small p-3 rounded" style="background-color: #fffbe6;">
+                <h6 class="h6 small"><strong>Thesis</strong></h6>
+                <p>{{ trade.analysis.thesis }}</p>
+                <h6 class="h6 small mt-3"><strong>Management Plan</strong></h6>
+                <p class="mb-0">{{ trade.analysis.managementPlan }}</p>
               </div>
             </div>
           </div>
@@ -117,26 +150,22 @@ permalink: /:path/:basename:output_ext
 </div>
 
 <script>
-  // Copy function for trade details
   function copyTradeDetails(button) {
-    const detailsContainer = button.nextElementSibling;
-    const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' '); // Clean up whitespace
+    // Correctly selects the next sibling element which holds the data
+    const detailsContainer = button.nextElementSibling; 
+    const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
 
     navigator.clipboard.writeText(detailsText).then(() => {
       const originalIcon = button.innerHTML;
       button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
-      const originalClasses = Array.from(button.classList);
-
-      button.classList.remove('btn-outline-secondary');
-      button.classList.add('btn-success');
-
+      button.classList.replace('btn-outline-secondary', 'btn-success');
+      
       setTimeout(() => {
         button.innerHTML = originalIcon;
-        button.classList.remove('btn-success');
-        originalClasses.forEach(c => button.classList.add(c));
+        button.classList.replace('btn-success', 'btn-outline-secondary');
       }, 2000);
     }).catch(err => {
       console.error('Failed to copy text: ', err);
     });
   }
-</script>
+</script> 

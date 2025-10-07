@@ -1,0 +1,1 @@
+ruby _scripts/build_projects.rb
