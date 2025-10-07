@@ -87,7 +87,7 @@ permalink: /:path/:basename:output_ext
               <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
 
               <div class="d-flex justify-content-between small p-2 rounded bg-light mt-2">
-                <span>Price: <strong>${{ trade.currentPrice | default: "N/A" }}</strong></span>
+                <span>Price: <strong>${%- capture price %}{% assign p = trade.currentPrice | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ price | strip }}</strong></span>
                 <span>IV Rank: <strong>{{ trade.ivRank | default: "N/A" }}%</strong></span>
                 <span>Earnings: <strong>{{ trade.earningsDate | default: "N/A" }}</strong></span>
               </div>
@@ -98,8 +98,8 @@ permalink: /:path/:basename:output_ext
                 <ul class="list-unstyled small mb-0">
                   <li class="d-flex justify-content-between"><span><strong>Strategy:</strong></span><span class="font-monospace">{{ trade.analysis.strategyType }}</span></li>
                   <li class="d-flex justify-content-between pt-1"><span><strong>Expiration (DTE):</strong></span><span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%b %d, %Y" }} ({{ trade.analysis.tradeDetails.dte }})</span></li>
-                  <li class="d-flex justify-content-between pt-1"><span><strong>Strike / Premium:</strong></span><span class="font-monospace">${{ trade.analysis.tradeDetails.putStrike }} / ${{ trade.analysis.tradeDetails.putPremium }}</span></li>
-                  <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">${{ trade.analysis.tradeDetails.maxProfit }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Strike / Premium:</strong></span><span class="font-monospace">${%- capture strike %}{% assign p = trade.analysis.tradeDetails.putStrike | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ strike | strip }} / ${%- capture premium %}{% assign p = trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ premium | strip }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">${%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}</span></li>
                 </ul>
               </div>
 
@@ -124,9 +124,9 @@ permalink: /:path/:basename:output_ext
               
               <div class="trade-details-data" style="display: none;">
                 Trade: {{ trade.tradeTitle }}
-                Strategy: Sell {{ trade.analysis.tradeDetails.dte }} DTE {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }} ${{ trade.analysis.tradeDetails.putStrike }} Put
-                Premium: ${{ trade.analysis.tradeDetails.putPremium }}
-                Max Profit: ${{ trade.analysis.tradeDetails.maxProfit }}
+                Strategy: Sell {{ trade.analysis.tradeDetails.dte }} DTE {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }} ${%- capture strike %}{% assign p = trade.analysis.tradeDetails.putStrike | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ strike | strip }} Put
+                Premium: ${%- capture premium %}{% assign p = trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ premium | strip }}
+                Max Profit: ${%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}
                 ROC: {{ trade.analysis.metrics.roc | round: 2 }}%
                 Buying Power: ${{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}
                 POP: {{ trade.analysis.metrics.pop | round: 1 }}%
@@ -168,4 +168,4 @@ permalink: /:path/:basename:output_ext
       console.error('Failed to copy text: ', err);
     });
   }
-</script> 
+</script>
