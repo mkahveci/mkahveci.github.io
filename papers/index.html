@@ -17,6 +17,9 @@ title: kahveci group / publications
     {% assign conferences = site.categories.papers | where: "conference", true | sort: "year" | reverse %}
 
     {% if books.size > 0 %}
+
+    <hr class="my-5">
+
     <section id="books" class="mb-5">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-book fa-fw text-muted me-2"></i> Books &amp; Book Chapters</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
@@ -62,8 +65,10 @@ title: kahveci group / publications
     </section>
     {% endif %}
 
-    ---
     {% if journals.size > 0 %}
+
+    <hr class="my-5">
+
     <section id="journals" class="mb-5">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-flask-vial fa-fw text-muted me-2"></i> Peer-Reviewed Journal Articles</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
@@ -109,8 +114,10 @@ title: kahveci group / publications
     </section>
     {% endif %}
 
-    ---
     {% if conferences.size > 0 %}
+
+    <hr class="my-5">
+
     <section id="conferences">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-users fa-fw text-muted me-2"></i> Conference Proceedings &amp; Presentations</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
