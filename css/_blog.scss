@@ -1,0 +1,28 @@
+.date-block {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--bs-border-radius-lg);
+  text-align: center;
+}
+
+.date-block .day {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.date-block .month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.card-footer-inset {
+  margin-left: 60px + var(--bs-card-spacer-x);
+}

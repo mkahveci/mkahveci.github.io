@@ -2,25 +2,6 @@
 layout: default
 title: kahveci group / publications
 ---
-<!--
-  This page has been updated to include a "Slides" button on publication cards
-  when a `presentation_url` is available in the paper's front matter.
--->
-
-<style>
-    .year-block {
-      width: 60px;
-      height: 60px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #e9ecef; /* A neutral gray, similar to Bootstrap's theme */
-      color: #495057;
-      font-weight: bold;
-      border-radius: 0.25rem;
-    }
-</style>
 
 <div class="container my-5">
 
@@ -35,24 +16,32 @@ title: kahveci group / publications
     {% assign journals = site.categories.papers | where: "journal", true | sort: "year" | reverse %}
     {% assign conferences = site.categories.papers | where: "conference", true | sort: "year" | reverse %}
 
-    <!-- Section: Books & Book Chapters -->
     {% if books.size > 0 %}
     <section id="books" class="mb-5">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-book fa-fw text-muted me-2"></i> Books &amp; Book Chapters</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
             {% for paper in books %}
             <div class="col">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100">
                     <div class="card-body d-flex">
-                        <div class="year-block me-3">{{ paper.year }}</div>
+                        <div class="date-block me-3 p-3 rounded-start bg-primary text-white">
+                            <h5 class="mb-0">{{ paper.year }}</h5>
+                        </div>
                         <div class="flex-grow-1">
-                            <h5 class="card-title h6">{{ paper.title }}</h5>
-                            <p class="card-text small text-muted">{{ paper.authors }}</p>
-                            <p class="card-text small fst-italic mt-2">In: {{ paper.publisher }}</p>
+                            <h6 class="card-title h6">
+                                <a href="{{ paper.url | relative_url }}" class="text-decoration-none">{{ paper.title }}</a>
+                            </h6>
+                            <p class="card-text small text-muted">
+                                {{ paper.excerpt | strip_html | truncatewords: 30 }}
+                            </p>
+                            <p class="card-text small fst-italic mt-2">
+                                <strong>Authors:</strong> {{ paper.authors }}<br>
+                                In: {{ paper.publisher }}
+                            </p>
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0 pt-0">
-                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                        <div class="d-flex flex-wrap card-footer-inset" style="gap: 0.5rem;">
                             {% if paper.presentation_url %}<a href="{{ paper.presentation_url | relative_url }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-desktop fa-fw me-1"></i> Slides</a>{% endif %}
                             {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
                             {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
@@ -73,26 +62,33 @@ title: kahveci group / publications
     </section>
     {% endif %}
 
-    <!-- Section: Peer-Reviewed Journal Articles -->
+    ---
     {% if journals.size > 0 %}
     <section id="journals" class="mb-5">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-flask-vial fa-fw text-muted me-2"></i> Peer-Reviewed Journal Articles</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
             {% for paper in journals %}
             <div class="col">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100">
                     <div class="card-body d-flex">
-                        <div class="year-block me-3">{{ paper.year }}</div>
+                        <div class="date-block me-3 p-3 rounded-start bg-success text-white">
+                            <h5 class="mb-0">{{ paper.year }}</h5>
+                        </div>
                         <div class="flex-grow-1">
-                            <h5 class="card-title h6">{{ paper.title }}</h5>
-                            <p class="card-text small text-muted">{{ paper.authors }}</p>
+                            <h6 class="card-title h6">
+                                <a href="{{ paper.url | relative_url }}" class="text-decoration-none">{{ paper.title }}</a>
+                            </h6>
+                            <p class="card-text small text-muted">
+                                {{ paper.excerpt | strip_html | truncatewords: 30 }}
+                            </p>
                             <p class="card-text small fst-italic mt-2">
+                                <strong>Authors:</strong> {{ paper.authors }}<br>
                                 {{ paper.publisher }}{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.issue %}({{ paper.issue }}){% endif %}{% if paper.pages %}, pp. {{ paper.pages }}{% endif %}.
                             </p>
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0 pt-0">
-                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                        <div class="d-flex flex-wrap card-footer-inset" style="gap: 0.5rem;">
                             {% if paper.presentation_url %}<a href="{{ paper.presentation_url | relative_url }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-desktop fa-fw me-1"></i> Slides</a>{% endif %}
                             {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
                             {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
@@ -113,24 +109,33 @@ title: kahveci group / publications
     </section>
     {% endif %}
 
-    <!-- Section: Conference Proceedings -->
+    ---
     {% if conferences.size > 0 %}
     <section id="conferences">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-users fa-fw text-muted me-2"></i> Conference Proceedings &amp; Presentations</h2>
         <div class="row row-cols-1 row-cols-lg-2 g-4">
             {% for paper in conferences %}
             <div class="col">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100">
                     <div class="card-body d-flex">
-                        <div class="year-block me-3">{{ paper.year }}</div>
+                        <div class="date-block me-3 p-3 rounded-start bg-info text-white">
+                            <h5 class="mb-0">{{ paper.year }}</h5>
+                        </div>
                         <div class="flex-grow-1">
-                            <h5 class="card-title h6">{{ paper.title }}</h5>
-                            <p class="card-text small text-muted">{{ paper.authors }}</p>
-                            <p class="card-text small fst-italic mt-2">Presented at: {{ paper.publisher }}</p>
+                            <h6 class="card-title h6">
+                                <a href="{{ paper.url | relative_url }}" class="text-decoration-none">{{ paper.title }}</a>
+                            </h6>
+                            <p class="card-text small text-muted">
+                                {{ paper.excerpt | strip_html | truncatewords: 30 }}
+                            </p>
+                            <p class="card-text small fst-italic mt-2">
+                                <strong>Authors:</strong> {{ paper.authors }}<br>
+                                Presented at: {{ paper.publisher }}
+                            </p>
                         </div>
                     </div>
                     <div class="card-footer bg-white border-top-0 pt-0">
-                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                        <div class="d-flex flex-wrap card-footer-inset" style="gap: 0.5rem;">
                             {% if paper.presentation_url %}<a href="{{ paper.presentation_url | relative_url }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-desktop fa-fw me-1"></i> Slides</a>{% endif %}
                             {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
                             {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link fa-fw me-1"></i> DOI</a>{% endif %}
