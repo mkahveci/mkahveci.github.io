@@ -1,5 +1,34 @@
 [
   {
+  "publicationDate": "2025-10-09",
+  "tradeTitle": "Short Put on MRNA",
+  "summaryJustification": "MRNA's high implied volatility rank makes it an ideal candidate for selling premium. This trade sells a put option below the current stock price, aiming to profit from time decay and MRNA staying above the short strike.",
+  "expectedReturnDisplay": "$76.00 Max Profit",
+  "ticker": "MRNA",
+  "currentPrice": 27.87,
+  "ivRank": 50,
+  "earningsDate": "N/A",
+  "analysis": {
+    "thesis": "The implied volatility (IV) of MRNA is at a high rank, suggesting that its options are currently overpriced. By selling a short put, we are capitalizing on this high IV with a high probability of success, as we expect the stock to remain above our short strike price of $27.00. The strategy benefits from time decay and potential declines in volatility.",
+    "strategyType": "Short Put",
+    "tradeDetails": {
+      "expiration": "2025-10-17",
+      "dte": 8,
+      "putStrike": 27.00,
+      "putPremium": 0.76,
+      "maxProfit": 76.00
+    },
+    "metrics": {
+      "roc": 2.81,
+      "annualizedRoc": 128.42,
+      "pop": 66.0,
+      "buyingPowerEffect": 2700.00,
+      "dailyProfitPotential": 9.50
+    },
+    "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+  }
+},
+  {
     "publicationDate": "2025-10-06",
     "tradeTitle": "Short Put on WDC",
     "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
