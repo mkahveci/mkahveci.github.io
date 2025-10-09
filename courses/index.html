@@ -6,62 +6,66 @@ categories:
 ---
 
 <div class="container my-5">
-  <div class="text-center">
-    <h1 class="display-4">Teaching Philosophy</h1>
-    <p class="lead col-lg-8 mx-auto">
-      My teaching is grounded in constructivist principles, creating interactive and inquiry-based environments that foster both cognitive understanding and affective growth.
-    </p>
-  </div>
-
-  <div class="row text-center my-5">
-    <div class="col-md-4">
-      <i class="fas fa-users fa-3x text-primary mb-3"></i>
-      <h4>Active & Collaborative Learning</h4>
-      <p class="text-muted">I emphasize students' prior experiences and active engagement through collaborative activities and hands-on projects to build deep conceptual connections.</p>
+    <div class="text-center">
+        <h1 class="display-4">Teaching Philosophy</h1>
+        <p class="lead col-lg-8 mx-auto">
+            My teaching is grounded in constructivist principles, creating interactive and inquiry-based environments that foster both cognitive understanding and affective growth.
+        </p>
     </div>
-    <div class="col-md-4">
-      <i class="fas fa-lightbulb fa-3x text-success mb-3"></i>
-      <h4>Inquiry-Based Strategies</h4>
-      <p class="text-muted">By equipping students with critical thinking skills, I empower them to see the relevance of chemistry in real-world societal and personal contexts.</p>
-    </div>
-    <div class="col-md-4">
-      <i class="fas fa-laptop-code fa-3x text-info mb-3"></i>
-      <h4>Technology & Innovation</h4>
-      <p class="text-muted">I develop and employ evidence-based tools, such as diagnostic assessments and interactive modules, to help students overcome conceptual difficulties.</p>
-    </div>
-  </div>
 
-  <div class="alert alert-info text-center" role="alert">
-    <h5 class="alert-heading">Online Teaching Initiative</h5>
-    To facilitate online learning, I have created a dedicated resource: <b>iLearnChem: Interactive Chemistry Understanding (.icu)</b>.
-    <a href="https://kahveci.icu/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info ms-2">Visit kahveci.icu <i class="fas fa-external-link-alt"></i></a>
-  </div>
-
-  <hr class="my-5">
-
-  <div class="text-center mb-5">
-    <h2 class="display-5">Courses Taught</h2>
-  </div>
-
-  {% assign courses = site.categories.courses | sort: "date" | reverse %}
-  <div class="row">
-    {% for course in courses %}
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card h-100 shadow-sm text-center">
-        <div class="card-body d-flex flex-column">
-          {% if course.image %}
-          <img src="{{ course.image }}" class="rounded-circle border shadow-sm mx-auto mb-3" width="90" height="90" alt="{{ course.institution }}">
-          {% endif %}
-          <h5 class="card-title">{{ course.title }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ course.code }}</h6>
-          <p class="card-text flex-grow-1">
-            <strong>{{ course.institution }}</strong><br>
-            <small>{{ course.semester }}</small>
-          </p>
-          <a href="{{ course.url }}" class="btn btn-sm btn-outline-primary mt-auto">Course Details</a>
+    <div class="row text-center my-5">
+        <div class="col-md-4">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <h4>Active & Collaborative Learning</h4>
+            <p class="text-muted">I emphasize students' prior experiences and active engagement through collaborative activities and hands-on projects to build deep conceptual connections.</p>
         </div>
-      </div>
+        <div class="col-md-4">
+            <i class="fas fa-lightbulb fa-3x text-success mb-3"></i>
+            <h4>Inquiry-Based Strategies</h4>
+            <p class="text-muted">By equipping students with critical thinking skills, I empower them to see the relevance of chemistry in real-world societal and personal contexts.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-laptop-code fa-3x text-info mb-3"></i>
+            <h4>Technology & Innovation</h4>
+            <p class="text-muted">I develop and employ evidence-based tools, such as diagnostic assessments and interactive modules, to help students overcome conceptual difficulties.</p>
+        </div>
     </div>
-    {% endfor %}
-  </div>
+
+    <div class="alert alert-info text-center" role="alert">
+        <h5 class="alert-heading">Online Teaching Initiative</h5>
+        To facilitate online learning, I have created a dedicated resource: <b>iLearnChem: Interactive Chemistry Understanding (.icu)</b>.
+        <a href="https://kahveci.icu/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info ms-2">Visit kahveci.icu <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="text-center mb-5">
+        <h2 class="display-5">Courses Taught</h2>
+    </div>
+
+    {% assign courses = site.categories.courses | sort: "date" | reverse %}
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% for course in courses %}
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="date-block text-center me-3 p-3 rounded-start bg-success text-white">
+                        <h5 class="mb-0">{{ course.date | date: "%Y" }}</h5>
+                    </div>
+                    <div>
+                        <h6 class="card-title mb-1">
+                            <a href="{{ course.url }}" class="text-decoration-none">{{ course.title }}</a>
+                        </h6>
+                        <p class="card-text small text-muted">
+                            {{ course.excerpt | strip_html | truncatewords: 30 }}
+                        </p>
+                        <p class="card-text small mt-2">
+                            <strong>{{ course.institution }}</strong>, {{ course.semester }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
