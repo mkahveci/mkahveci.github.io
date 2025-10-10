@@ -2,87 +2,102 @@
 layout: default
 ---
 
-<div class="container my-5">
+<div class="container my-4">
 
-	<div class="p-5 mb-5 bg-light rounded-3">
-		<div class="row align-items-center">
-			<div class="col-md-3 text-center">
-				{% if page.image %}
-				<img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Course Image">
-				{% else %}
-				<i class="fas fa-chalkboard-teacher fa-6x text-muted"></i>
-				{% endif %}
-			</div>
-			<div class="col-md-9">
-				<h3 class="text-muted">{{ page.code }}</h3>
-				<h1 class="display-4">{{ page.title }}</h1>
-			</div>
-		</div>
-	</div>
+    <div class="p-4 mb-4 bg-light rounded-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                {% if page.image %}
+                <img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Course Image">
+                {% else %}
+                <i class="fas fa-chalkboard-teacher fa-6x text-muted"></i>
+                {% endif %}
+            </div>
+            <div class="col-md-9">
+                <h3 class="text-muted">{{ page.code }}</h3>
+                <h1 class="display-4">{{ page.title }}</h1>
+            </div>
+        </div>
+    </div>
 
-	<div class="row">
+    <div class="row">
 
-		<div class="col-lg-8">
-			<div class="post-content">
-				{{ content }}
-			</div>
-			<hr class="my-4">
-			{% include navigation.html category="courses" %}
-		</div>
+        <div class="col-lg-8">
+            <div class="post-content">
+                {{ content }}
+            </div>
+            <hr class="my-4">
+            {% include navigation.html category="courses" %}
+        </div>
 
-		<div class="col-lg-4">
+        <div class="col-lg-4">
 
-			<div class="card shadow-sm mb-4">
-				<div class="card-header">
-					<h5 class="mb-0">Course Details</h5>
-				</div>
-				<ul class="list-group list-group-flush">
-					{% if page.instructor %}
-					<li class="list-group-item d-flex justify-content-between align-items-center">
-						<strong>Instructor</strong>
-						<a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
-					</li>
-					{% endif %}
-					{% if page.institution %}
-					<li class="list-group-item d-flex justify-content-between align-items-center">
-						<strong>Institution</strong>
-						<a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
-					</li>
-					{% endif %}
-					{% if page.semester %}
-					<li class="list-group-item d-flex justify-content-between align-items-center">
-						<strong>Semester</strong>
-						<span class="text-end">{{ page.semester }}</span>
-					</li>
-					{% endif %}
-					{% if page.clevel %}
-					<li class="list-group-item d-flex justify-content-between align-items-center">
-						<strong>Level</strong>
-						<span class="text-end">{{ page.clevel }}</span>
-					</li>
-					{% endif %}
-				</ul>
-			</div>
+            {% assign details_count = 0 %}
+            {% if page.instructor %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.institution %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.semester %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.clevel %}{% assign details_count = details_count | plus: 1 %}{% endif %}
 
-			<div class="card shadow-sm">
-				<div class="card-header">
-					<h5 class="mb-0">Course Materials</h5>
-				</div>
-				<div class="card-body">
-					<div class="d-grid gap-2">
-						{% if page.web %}
-						<a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
-						{% endif %}
-						{% if page.pdf %}
-						<a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
-						{% endif %}
-						{% if page.supplement %}
-						<a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
-						{% endif %}
-					</div>
-				</div>
-			</div>
+            {% if details_count > 0 %}
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Course Details</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    {% if page.instructor %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Instructor</strong>
+                        <a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
+                    </li>
+                    {% endif %}
+                    {% if page.institution %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Institution</strong>
+                        <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
+                    </li>
+                    {% endif %}
+                    {% if page.semester %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Semester</strong>
+                        <span class="text-end">{{ page.semester }}</span>
+                    </li>
+                    {% endif %}
+                    {% if page.clevel %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>Level</strong>
+                        <span class="text-end">{{ page.clevel }}</span>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
 
-		</div>
-	</div>
+            {% assign materials_count = 0 %}
+            {% if page.web %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+            {% if page.pdf %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+            {% if page.supplement %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+
+            {% if materials_count > 0 %}
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5 class="mb-0">Course Materials</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        {% if page.web %}
+                        <a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
+                        {% endif %}
+                        {% if page.pdf %}
+                        <a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
+                        {% endif %}
+                        {% if page.supplement %}
+                        <a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
 </div>

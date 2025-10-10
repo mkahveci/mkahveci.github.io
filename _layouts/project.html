@@ -2,74 +2,83 @@
 layout: default
 ---
 
-<div class="container my-5">
+<div class="container my-4">
 
-	<header class="p-5 mb-5 bg-light rounded-3">
-		<div class="row align-items-center">
-			<div class="col-md-3 text-center">
-				{% if page.image %}
-				<img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Project Image">
-				{% else %}
-				<i class="fas fa-sitemap fa-6x text-muted"></i>
-				{% endif %}
-			</div>
-			<div class="col-md-9">
-				<h1 class="display-4">{{ page.title }}</h1>
-				{% if page.excerpt %}
-				<p class="lead fst-italic">{{ page.excerpt }}</p>
-				{% endif %}
-			</div>
-		</div>
-	</header>
+    <header class="p-4 mb-4 bg-light rounded-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                {% if page.image %}
+                <img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Project Image">
+                {% else %}
+                <i class="fas fa-sitemap fa-6x text-muted"></i>
+                {% endif %}
+            </div>
+            <div class="col-md-9">
+                <h1 class="display-4">{{ page.title }}</h1>
+                {% if page.excerpt %}
+                <p class="lead fst-italic">{{ page.excerpt }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </header>
 
-	<div class="row">
+    <div class="row">
 
-		<div class="col-lg-8">
-			<main class="post-content">
-				{{ content }}
-			</main>
-			<hr class="my-4">
-			{% include navigation.html category="projects" %}
-		</div>
+        <div class="col-lg-8">
+            <main class="post-content">
+                {{ content }}
+            </main>
+            <hr class="my-4">
+            {% include navigation.html category="projects" %}
+        </div>
 
-		<div class="col-lg-4">
-			<div class="card shadow-sm">
-				<div class="card-header">
-					<h5 class="mb-0">Project Details</h5>
-				</div>
-				<ul class="list-group list-group-flush">
-					{% if page.contributors %}
-					<li class="list-group-item">
-						<strong>Contributors</strong>
-						<div class="text-muted small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-					</li>
-					{% endif %}
-					{% if page.duration %}
-					<li class="list-group-item">
-						<strong>Duration</strong>
-						<div class="text-muted small">{{ page.duration }}</div>
-					</li>
-					{% endif %}
-					{% if page.hostedby %}
-					<li class="list-group-item">
-						<strong>Host Institution</strong>
-						<div class="text-muted small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-					</li>
-					{% endif %}
-					{% if page.fundedby %}
-					<li class="list-group-item">
-						<strong>Funding Institution</strong>
-						<div class="text-muted small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-					</li>
-					{% endif %}
-					{% if page.budget %}
-					<li class="list-group-item">
-						<strong>Budget</strong>
-						<div class="text-muted small">{{ page.budget }}</div>
-					</li>
-					{% endif %}
-				</ul>
-			</div>
-		</div>
-	</div>
+        <div class="col-lg-4">
+            {% assign details_count = 0 %}
+            {% if page.contributors %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.duration %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.hostedby %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.fundedby %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+            {% if page.budget %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+
+            {% if details_count > 0 %}
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5 class="mb-0">Project Details</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    {% if page.contributors %}
+                    <li class="list-group-item">
+                        <strong>Contributors</strong>
+                        <div class="text-muted small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                    </li>
+                    {% endif %}
+                    {% if page.duration %}
+                    <li class="list-group-item">
+                        <strong>Duration</strong>
+                        <div class="text-muted small">{{ page.duration }}</div>
+                    </li>
+                    {% endif %}
+                    {% if page.hostedby %}
+                    <li class="list-group-item">
+                        <strong>Host Institution</strong>
+                        <div class="text-muted small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                    </li>
+                    {% endif %}
+                    {% if page.fundedby %}
+                    <li class="list-group-item">
+                        <strong>Funding Institution</strong>
+                        <div class="text-muted small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                    </li>
+                    {% endif %}
+                    {% if page.budget %}
+                    <li class="list-group-item">
+                        <strong>Budget</strong>
+                        <div class="text-muted small">{{ page.budget }}</div>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
 </div>

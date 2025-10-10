@@ -2,43 +2,49 @@
 layout: default
 ---
 
-<div class="container my-5">
-	<div class="row">
-		<div class="col-lg-8 mx-auto">
+<div class="container my-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
 
-			<header class="blog-post-header mb-4">
-				<h1 class="display-5 mb-3">{{ page.title }}</h1>
-				<p class="lead text-muted">
-					Posted on {{ page.date | date: "%-d %b %Y" }}
-					{% if page.author %}
-					by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
-					{% endif %}
-				</p>
-				{% if page.tags %}
-				<div>
-					{% for tag in page.tags %}
-					<a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-decoration-none me-1">#{{ tag }}</a>
-					{% endfor %}
-				</div>
-				{% endif %}
-			</header>
+            <header class="blog-post-header p-4 mb-4 bg-light rounded-3">
+                <h1 class="display-5 mb-3">{{ page.title }}</h1>
+                {% assign has_meta = false %}
+                {% if page.date or page.author %}{% assign has_meta = true %}{% endif %}
 
-			<hr>
+                {% if has_meta %}
+                <p class="lead text-muted">
+                    {% if page.date %}
+                    Posted on {{ page.date | date: "%-d %b %Y" }}
+                    {% endif %}
+                    {% if page.author %}
+                    by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
+                    {% endif %}
+                </p>
+                {% endif %}
 
-			{% if page.image %}
-			<div class="my-4">
-				<img src="{{ page.image }}" class="img-fluid rounded shadow-sm" alt="{{ page.title }}">
-			</div>
-			{% endif %}
+                {% if page.tags %}
+                <div>
+                    {% for tag in page.tags %}
+                    <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-decoration-none me-1">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </header>
 
-			<article class="post-content mt-4">
-				{{ content }}
-			</article>
+            {% if page.image %}
+            <div class="my-4">
+                <img src="{{ page.image }}" class="img-fluid rounded shadow-sm" alt="{{ page.title }}">
+            </div>
+            {% endif %}
 
-			<hr class="my-5">
+            <article class="post-content mt-4">
+                {{ content }}
+            </article>
 
-			{% include navigation.html category="blog" %}
+            <hr class="my-4">
 
-		</div>
-	</div>
+            {% include navigation.html category="blog" %}
+
+        </div>
+    </div>
 </div>

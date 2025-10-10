@@ -1,0 +1,74 @@
+/*
+ * Jekyll Print Stylesheet for kahveci.pw
+ * This file is for the print media query only.
+ * It will make the pages look good on paper and in PDF.
+ */
+
+@media print {
+    /* Hide the navigation bar and footer */
+    .navbar, footer {
+        display: none !important;
+    }
+
+    /* Hide buttons and other interactive elements */
+    .btn, .social-media, .navigation-links, .pagination {
+        display: none !important;
+    }
+
+    /* Ensure the main container and its children are visible and take full width */
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Force the main content columns to be visible and take full width */
+    .col-lg-8, .col-lg-4, .mx-auto, .post-content, .card-body {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+    }
+
+    /* Ensure the post content and its containers are visible */
+    main.post-content, article.post-content, .row {
+        display: block !important;
+    }
+
+    /* Remove card shadows and borders for a cleaner look on paper */
+    .card, .shadow-sm {
+        box-shadow: none !important;
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    /* Make all text black for better readability on paper */
+    body, h1, h2, h3, h4, h5, h6, p, a, strong, em {
+        color: #000 !important;
+        background-color: transparent !important;
+    }
+
+    /* Show the URL next to all links */
+    a:after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        word-break: break-all;
+    }
+
+    /* Ensure images fit the page */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Ensure good page breaks */
+    h1, h2, h3, h4, h5, ul, ol, pre {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Remove padding and margins on the page itself */
+    body, html {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
