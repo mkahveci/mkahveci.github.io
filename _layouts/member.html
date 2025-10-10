@@ -2,89 +2,101 @@
 layout: default
 ---
 
-<div class="container my-5">
-	<div class="row">
+<div class="container my-4">
+    <div class="row">
 
-		<!-- Main Content Column (Biography) -->
-		<div class="col-lg-8">
-			<header class="mb-4">
-				<h1 class="display-4">{{ page.title }}</h1>
-				<p class="lead text-muted">{{ page.position }}</p>
-				{% if page.active %}
-				<p class="text-muted fst-italic">{{ page.active }}</p>
-				{% endif %}
-			</header>
-			<hr>
-			<div class="post-content mt-4">
-				{{ content }}
-			</div>
-		</div>
+        <div class="col-lg-8">
+            <header class="mb-4">
+                <h1 class="display-4">{{ page.title }}</h1>
+                <p class="lead text-muted">{{ page.position }}</p>
+                {% if page.active %}
+                <p class="text-muted fst-italic">{{ page.active }}</p>
+                {% endif %}
+            </header>
+            <hr>
+            <div class="post-content mt-4">
+                {{ content }}
+            </div>
+        </div>
 
-		<!-- Sidebar Column -->
-		<div class="col-lg-4">
-			<!-- Sticky Profile Card -->
-			<div class="card shadow-sm sticky-top mb-4" style="top: 2rem;">
-				<img src="{{ page.image }}" class="card-img-top" alt="{{ page.title }}" style="object-fit: cover;">
-				<div class="card-body text-center">
-					<h5 class="card-title">{{ page.title }}</h5>
-					<p class="card-text text-muted">{{ page.position }}</p>
-				</div>
-			</div>
+        <div class="col-lg-4">
+            <div class="card shadow-sm sticky-top mb-4" style="top: 2rem;">
+                {% if page.image %}
+                <img src="{{ page.image }}" class="card-img-top" alt="{{ page.title }}" style="object-fit: cover;">
+                {% else %}
+                <div class="p-5 text-center bg-light">
+                    <i class="fas fa-user-circle fa-6x text-muted"></i>
+                </div>
+                {% endif %}
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ page.title }}</h5>
+                    <p class="card-text text-muted">{{ page.position }}</p>
+                </div>
+            </div>
 
-			<!-- Detailed Links Card -->
-			<div class="card shadow-sm mb-4">
-				<div class="card-header">
-					<h5 class="mb-0">Contact & Links</h5>
-				</div>
-				<div class="list-group list-group-flush">
-					{% if page.cv %}
-					<a href="{{ page.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a>
-					{% endif %}
-					{% if page.email %}
-					{% assign emailarray = page.email | split: '@' %}
-					<a href="mailto:{{ page.email }}" class="list-group-item list-group-item-action"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
-					{% endif %}
-					{% if page.website %}
-					<a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
-					{% endif %}
-					{% if page.googlescholar %}
-					<a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
-					{% endif %}
-					{% if page.linkedin %}
-					<a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
-					{% endif %}
-					{% if page.github %}
-					<a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
-					{% endif %}
-					{% if page.twitter %}
-					<a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
-					{% endif %}
-					{% if page.calendar %}
-					<a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
-					{% endif %}
-				</div>
-			</div>
+            {% assign link_count = 0 %}
+            {% if page.cv %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.email %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.website %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.googlescholar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.linkedin %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.twitter %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.calendar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if link_count > 0 %}
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Contact & Links</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    {% if page.cv %}
+                    <a href="{{ page.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a>
+                    {% endif %}
+                    {% if page.email %}
+                    {% assign emailarray = page.email | split: '@' %}
+                    <a href="mailto:{{ page.email }}" class="list-group-item list-group-item-action"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
+                    {% endif %}
+                    {% if page.website %}
+                    <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
+                    {% endif %}
+                    {% if page.googlescholar %}
+                    <a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
+                    {% endif %}
+                    {% if page.linkedin %}
+                    <a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
+                    {% endif %}
+                    {% if page.github %}
+                    <a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
+                    {% endif %}
+                    {% if page.twitter %}
+                    <a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
+                    {% endif %}
+                    {% if page.calendar %}
+                    <a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
 
-			{% if page.title == "Murat Kahveci" %}
-			<div class="card shadow-sm">
-				<div class="card-header">
-					<h5 class="mb-0">Discover More</h5>
-				</div>
-				<div class="list-group list-group-flush">
-					<a href="/about" class="list-group-item list-group-item-action">About</a>
-					<a href="/courses" class="list-group-item list-group-item-action">Courses</a>
-					<a href="/reference" class="list-group-item list-group-item-action">Request a Letter</a>
-					<a href="/contact" class="list-group-item list-group-item-action">Contact</a>
-					<a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a>
-				</div>
-			</div>
-			{% endif %}
-		</div>
-	</div>
+            {% if page.title == "Murat Kahveci" %}
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5 class="mb-0">Discover More</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="/about" class="list-group-item list-group-item-action">About</a>
+                    <a href="/courses" class="list-group-item list-group-item-action">Courses</a>
+                    <a href="/reference" class="list-group-item list-group-item-action">Request a Letter</a>
+                    <a href="/contact" class="list-group-item list-group-item-action">Contact</a>
+                    <a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a>
+                </div>
+            </div>
+            {% endif %}
 
-	<hr class="my-5">
+        </div>
+    </div>
 
-	<!-- Navigation between team members -->
-	{% include navigation.html category="team" %}
+    <hr class="my-4">
+
+    {% include navigation.html category="team" %}
 </div>
-

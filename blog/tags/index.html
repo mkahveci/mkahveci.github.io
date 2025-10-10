@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 <style>
-	.date-block {
+    .date-block {
       width: 60px;
       height: 60px;
       flex-shrink: 0;
@@ -39,85 +39,84 @@ categories:
 </style>
 
 
-<div class="container my-5">
+<div class="container my-4">
 
-	<div class="text-center mb-5">
-		<h1 class="display-4">Blog Tags</h1>
-	</div>
+    <div class="text-center mb-4">
+        <h1 class="display-4">Blog Tags</h1>
+    </div>
 
-	<ul class="nav nav-pills justify-content-center mb-5">
-		<li class="nav-item">
-			<a class="nav-link" href="/blog/">
-				<i class="fa fa-refresh fa-fw"></i> Timeline
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="/blog/tags/" aria-current="page">
-				<i class="fa fa-tags fa-fw"></i> Tags
-			</a>
-		</li>
-	</ul>
+    <ul class="nav nav-pills justify-content-center mb-4">
+        <li class="nav-item">
+            <a class="nav-link" href="/blog/">
+                <i class="fa fa-refresh fa-fw me-1"></i> Timeline
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/blog/tags/" aria-current="page">
+                <i class="fa fa-tags fa-fw me-1"></i> Tags
+            </a>
+        </li>
+    </ul>
+
+    <hr class="my-4">
+
+    <div class="container text-center my-4">
+        <h2 class="mb-4">Tag Index</h2>
+        <div class="tags-expo">
+            {% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}&#x1F;{{ tag | first }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+            {% assign site_tags = site_tags | split: '&#x1E;' | sort %}
+            {% capture site_tags %}{% for tag in site_tags %}{{ tag | split: '&#x1F;' | last }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
+            {% assign site_tags = site_tags | split: '&#x1E;' %}
+
+            {% for tag in site_tags %}
+            <a href="#{{ tag | slugify }}" class="badge bg-secondary text-decoration-none m-1 p-2">
+                {{ tag }}
+                <small class="badge bg-dark ms-1">{{ site.tags[tag] | size }}</small>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="container my-4">
+        {% for tag in site.tags reversed %}
+        <div id="{{ tag[0] | slugify }}" class="mb-5">
+            <h3 class="mb-4 d-flex justify-content-between align-items-center">
+                <span><i class="fa fa-tag fa-fw text-muted me-2"></i> {{ tag | first }}</span>
+                <span class="badge bg-primary rounded-pill">
+                    {% assign tag_size = tag[1] | size %}
+                    {{ tag_size }} {% if tag_size > 1 %}Posts{% else %}Post{% endif %}
+                </span>
+            </h3>
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                {% for post in tag[1] %}
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex">
+                            <div class="date-block me-3">
+                                <span class="day">{{ post.date | date: "%-d" }}</span>
+                                <span class="month">{{ post.date | date: "%b" }}</span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="card-title h6">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </h5>
+                                <p class="card-text small text-muted">
+                                    {% if post.author %}
+                                    by <a href="{% for member in site.categories.team %}{% if member.title == post.author %}{{ member.url }}{% endif %}{% endfor %}">{{ post.author }}</a>
+                                    {% endif %}
+                                </p>
+                                <p class="card-text small mt-2">
+                                    {{ post.excerpt | strip_html | truncatewords: 30 }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-<hr>
-
-<div class="container text-center my-5">
-	<h2 class="mb-4">Tag Index</h2>
-	<div class="tags-expo">
-		{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}&#x1F;{{ tag | first }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
-		{% assign site_tags = site_tags | split: '&#x1E;' | sort %}
-		{% capture site_tags %}{% for tag in site_tags %}{{ tag | split: '&#x1F;' | last }}{% unless forloop.last %}&#x1E;{% endunless %}{% endfor %}{% endcapture %}
-		{% assign site_tags = site_tags | split: '&#x1E;' %}
-
-		{% for tag in site_tags %}
-		<a href="#{{ tag | slugify }}" class="btn btn-outline-secondary btn-sm m-1">
-			{{ tag }}
-			<span class="badge bg-dark ms-1">{{ site.tags[tag] | size }}</span>
-		</a>
-		{% endfor %}
-	</div>
-</div>
-
-<hr>
-
-<div class="container my-5">
-	{% for tag in site.tags reversed %}
-	<div id="{{ tag[0] | slugify }}" class="mb-5">
-		<h3 class="mb-4 d-flex justify-content-between align-items-center">
-			<span><i class="fa fa-tag fa-fw text-muted"></i> {{ tag | first }}</span>
-			<span class="badge bg-primary rounded-pill">
-                {% assign tag_size = tag[1] | size %}
-                {{ tag_size }} {% if tag_size > 1 %}Posts{% else %}Post{% endif %}
-            </span>
-		</h3>
-		<div class="row row-cols-1 row-cols-lg-2 g-4">
-			{% for post in tag[1] %}
-			<div class="col">
-				<div class="card h-100 shadow-sm">
-					<div class="card-body d-flex">
-						<div class="date-block me-3">
-							<span class="day">{{ post.date | date: "%-d" }}</span>
-							<span class="month">{{ post.date | date: "%b" }}</span>
-						</div>
-						<div class="flex-grow-1">
-							<h5 class="card-title h6">
-								<a href="{{ post.url }}">{{ post.title }}</a>
-							</h5>
-							<p class="card-text small text-muted">
-								{% if post.author %}
-								by <a href="{% for member in site.categories.team %}{% if member.title == post.author %}{{ member.url }}{% endif %}{% endfor %}">{{ post.author }}</a>
-								{% endif %}
-							</p>
-							<p class="card-text small mt-2">
-								{{ post.excerpt | strip_html | truncatewords: 30 }}
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-	{% endfor %}
-</div>
-

@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="container my-5">
+<div class="container my-4">
 
-    <header class="p-5 mb-5 bg-light rounded-3">
+    <header class="p-4 mb-4 bg-light rounded-3">
         <h1 class="display-5">{{ page.title }}</h1>
         <p class="lead">{{ page.authors }}</p>
         <p class="h5 text-muted fst-italic">
@@ -26,6 +26,14 @@ layout: default
 
         <div class="col-lg-4">
 
+            {% assign link_count = 0 %}
+            {% if page.presentation_url %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.pdf %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.doi %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.web %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+
+            {% if link_count > 0 %}
             <div class="card shadow-sm mb-4">
                 <div class="card-header"><h5 class="mb-0">Access & Links</h5></div>
                 <div class="card-body">
@@ -48,6 +56,7 @@ layout: default
                     </div>
                 </div>
             </div>
+            {% endif %}
 
             {% if page.isbn13 or page.isbn10 %}
             <div class="card shadow-sm mb-4">
