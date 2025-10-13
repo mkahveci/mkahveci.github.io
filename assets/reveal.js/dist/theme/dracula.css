@@ -25,7 +25,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 :root {
   --r-background-color: #282A36;
   --r-main-font: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --r-main-font-size: 28px; /* ⬇️ Reduced from 40px */
+  --r-main-font-size: 40px; /* ⬇️ Reduced from 40px */
   --r-main-color: #F8F8F2;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -386,43 +386,4 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 .reveal ul li::marker, .reveal ol li::marker {
   color: var(--r-list-bullet-color);
-}
-
-/* Styles for End Slide Series */
-.profile-photo-circular {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.end-slide-columns {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  text-align: left;
-  font-size: 0.75em;
-  margin-top: 3em;
-}
-
-.end-slide-column {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.end-slide-column ul {
-  padding-left: 20px; /* Ensures list bullets are aligned correctly */
-}
-
-.end-slide-contact {
-  text-align: center;
-}
-
-.end-slide-contact-logo {
-  max-width: 120px;
-  height: auto;
-  border: 0;
-  background: none;
-  box-shadow: none;
-  margin-bottom: 1em;
 }

@@ -1,0 +1,29 @@
+.reveal .responsive-table {
+  /* Step 1: Reduce font size for the table */
+  font-size: 0.8em;
+  /* Step 2: Allow text wrapping for long labels */
+  word-wrap: break-word;
+  white-space: normal;
+  /* Step 3: Apply transform: scale() to fit the entire table if necessary */
+  /* This is a fallback and can be adjusted */
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* Box model adjustments */
+  max-width: 100%;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+/* Optional: adjust padding and alignment */
+.reveal .responsive-table th,
+.reveal .responsive-table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* Negative vertical space */
+
+.reveal p.tight-spacing {
+  margin-top: -20px; /* Adjust the value to decrease the space */
+}
