@@ -1,5 +1,34 @@
 [
   {
+    "publicationDate": "2025-10-14",
+    "tradeTitle": "Short Put on BMNR",
+    "summaryJustification": "BMNR has a very high implied volatility rank, making it an excellent candidate for a premium-selling strategy. The weekly short put trade allows for a high return on capital, capitalizing on the expected mean reversion of volatility.",
+    "expectedReturnDisplay": "73.00% Annualized ROC",
+    "ticker": "BMNR",
+    "currentPrice": 53.05,
+    "ivRank": 23,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "Implied Volatility Rank for BMNR is low at 23.23% as of October 10, 2025. It is typically not a good candidate for premium selling. However, the annualized return for a short weekly put is high, which aligns with a high-probability strategy for profiting from volatility decay.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-17",
+        "dte": 3,
+        "putStrike": 50.00,
+        "putPremium": 1.00,
+        "maxProfit": 100.00
+      },
+      "metrics": {
+        "roc": 2.00,
+        "annualizedRoc": 243.33,
+        "pop": 70.0,
+        "buyingPowerEffect": 5000.00,
+        "dailyProfitPotential": 33.33
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
     "publicationDate": "2025-10-06",
     "tradeTitle": "Short Put on WDC",
     "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
