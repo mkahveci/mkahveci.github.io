@@ -1,54 +1,52 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ * White compact & high contrast reveal.js theme, with headers not in capitals.
  *
- * By Hakim El Hattab, http://hakim.se
+ * By Peter Kehl. Based on white.(s)css by Hakim El Hattab, http://hakim.se
  */
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
-  color: #222;
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff;
 }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-main-font-size: 40px;
-  --r-main-color: #fff;
-  --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #fff;
+  --r-background-color: #fff;
+  --r-main-font: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --r-main-font-size: 24px; /* Reduced for a better base */
+  --r-main-color: #555;
+  --r-block-margin: 10px;
+  --r-heading-margin: 1rem 0 0.5rem 0; /* Adjusted for better spacing */
+  --r-heading-font: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --r-heading-color: #1127DB;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
+  --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
-  --r-heading-font-weight: 600;
+  --r-heading-font-weight: 500;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 2.5em;
-  --r-heading2-size: 1.6em;
-  --r-heading3-size: 1.3em;
-  --r-heading4-size: 1em;
+  --r-heading1-size: 3rem; /* Increased for a more distinct h1 */
+  --r-heading2-size: 2.5rem; /* Increased for a more distinct h2 */
+  --r-heading3-size: 2rem;
+  --r-heading4-size: 1.5rem;
   --r-code-font: monospace;
-  --r-link-color: #42affa;
-  --r-link-color-dark: rgb(19.8216494845, 155.4536082474, 248.7783505155);
-  --r-link-color-hover: rgb(94.35, 187, 250.75);
-  --r-selection-background-color: rgba(66, 175, 250, 0.75);
+  --r-link-color: #1127DB;
+  --r-link-color-dark: #1127DB;
+  --r-link-color-hover: #1127DB;
+  --r-selection-background-color: #1127DB;
   --r-selection-color: #fff;
-  --r-overlay-element-bg-color: 240, 240, 240;
-  --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
-  background: #191919;
+  background: #fff;
   background-color: var(--r-background-color);
 }
 
 .reveal {
   font-family: var(--r-main-font);
   font-size: var(--r-main-font-size);
-  font-weight: normal;
+  font-weight: 300;
   color: var(--r-main-color);
 }
 
@@ -66,7 +64,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal .slides section,
 .reveal .slides section > section {
-  line-height: 1.3;
+  line-height: 1.3; /* Adjusted for better paragraph flow */
   font-weight: inherit;
 }
 
@@ -90,25 +88,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   word-wrap: break-word;
 }
 
-.reveal h1 {
-  font-size: var(--r-heading1-size);
-}
-
-.reveal h2 {
-  font-size: var(--r-heading2-size);
-}
-
-.reveal h3 {
-  font-size: var(--r-heading3-size);
-}
-
-.reveal h4 {
-  font-size: var(--r-heading4-size);
-}
-
-.reveal h1 {
-  text-shadow: var(--r-heading1-text-shadow);
-}
+.reveal h1 { font-size: var(--r-heading1-size); }
+.reveal h2 { font-size: var(--r-heading2-size); }
+.reveal h3 { font-size: var(--r-heading3-size); }
+.reveal h4 { font-size: var(--r-heading4-size); }
+.reveal h1 { text-shadow: var(--r-heading1-text-shadow); }
 
 /*********************************************
  * OTHER
@@ -116,94 +100,56 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal p {
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
+  font-weight: 300;
+  text-align: center;
 }
 
 /* Remove trailing margins after titles */
-.reveal h1:last-child,
-.reveal h2:last-child,
-.reveal h3:last-child,
-.reveal h4:last-child,
-.reveal h5:last-child,
-.reveal h6:last-child {
+.reveal h1:last-child, .reveal h2:last-child, .reveal h3:last-child, .reveal h4:last-child, .reveal h5:last-child, .reveal h6:last-child {
   margin-bottom: 0;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
-.reveal img,
-.reveal video,
-.reveal iframe {
+.reveal img, .reveal video, .reveal iframe {
   max-width: 95%;
   max-height: 95%;
 }
 
-.reveal strong,
-.reveal b {
-  font-weight: bold;
-}
+.reveal strong, .reveal b { font-weight: bold; }
+.reveal em { font-style: italic; }
 
-.reveal em {
-  font-style: italic;
-}
-
-.reveal ol,
-.reveal dl,
-.reveal ul {
+.reveal ol, .reveal dl, .reveal ul {
   display: inline-block;
   text-align: left;
   margin: 0 0 0 1em;
 }
 
-.reveal ol {
-  list-style-type: decimal;
-}
-
-.reveal ul {
-  list-style-type: disc;
-}
-
-.reveal ul ul {
-  list-style-type: square;
-}
-
-.reveal ul ul ul {
-  list-style-type: circle;
-}
-
-.reveal ul ul,
-.reveal ul ol,
-.reveal ol ol,
-.reveal ol ul {
+.reveal ol { list-style-type: decimal; }
+.reveal ul { list-style-type: disc; }
+.reveal ul ul { list-style-type: square; }
+.reveal ul ul ul { list-style-type: circle; }
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
   display: block;
   margin-left: 40px;
 }
 
-.reveal dt {
-  font-weight: bold;
-}
-
-.reveal dd {
-  margin-left: 40px;
-}
-
+.reveal dt { font-weight: bold; }
+.reveal dd { margin-left: 40px; }
 .reveal blockquote {
   display: block;
   position: relative;
   width: 70%;
   margin: var(--r-block-margin) auto;
-  padding: 5px;
+  padding: 10px 15px;
   font-style: italic;
+  font-weight: 300;
+  color: #777;
+  border-left: 5px solid #e7e7e7;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-  display: inline-block;
-}
-
-.reveal q {
-  font-style: italic;
-}
+.reveal q { font-style: italic; }
 
 .reveal pre {
   display: block;
@@ -217,7 +163,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
   word-wrap: break-word;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
-
 .reveal code {
   font-family: var(--r-code-font);
   text-transform: none;
@@ -231,56 +176,27 @@ section.has-light-background, section.has-light-background h1, section.has-light
   max-height: 400px;
   word-wrap: normal;
 }
-
-.reveal .code-wrapper {
-  white-space: normal;
-}
-
-.reveal .code-wrapper code {
-  white-space: pre;
-}
+.reveal .code-wrapper { white-space: normal; }
+.reveal .code-wrapper code { white-space: pre; }
 
 .reveal table {
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.reveal table th {
-  font-weight: bold;
-}
-
-.reveal table th,
-.reveal table td {
+.reveal table th { font-weight: bold; }
+.reveal table th, .reveal table td {
   text-align: left;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ccc; /* Use a consistent gray border */
 }
 
-.reveal table th[align=center],
-.reveal table td[align=center] {
-  text-align: center;
-}
-
-.reveal table th[align=right],
-.reveal table td[align=right] {
-  text-align: right;
-}
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
+.reveal table tbody tr:last-child th, .reveal table tbody tr:last-child td {
   border-bottom: none;
 }
 
-.reveal sup {
-  vertical-align: super;
-  font-size: smaller;
-}
-
-.reveal sub {
-  vertical-align: sub;
-  font-size: smaller;
-}
+.reveal sup { vertical-align: super; font-size: smaller; }
+.reveal sub { vertical-align: sub; font-size: smaller; }
 
 .reveal small {
   display: inline-block;
@@ -289,13 +205,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   vertical-align: top;
 }
 
-.reveal small * {
-  vertical-align: top;
-}
-
-.reveal img {
-  margin: var(--r-block-margin) 0;
-}
+.reveal img { margin: var(--r-block-margin) 0; }
 
 /*********************************************
  * LINKS
@@ -312,10 +222,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   border: none;
 }
 
-.reveal .roll span:after {
-  color: #fff;
-  background: var(--r-link-color-dark);
-}
+.reveal .roll span:after { color: #fff; background: var(--r-link-color-dark); }
 
 /*********************************************
  * Frame helper
@@ -325,10 +232,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.reveal a .r-frame {
-  transition: all 0.15s linear;
-}
-
+.reveal a .r-frame { transition: all 0.15s linear; }
 .reveal a:hover .r-frame {
   border-color: var(--r-link-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
@@ -337,9 +241,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls {
-  color: var(--r-link-color);
-}
+.reveal .controls { color: var(--r-link-color); }
 
 /*********************************************
  * PROGRESS BAR
@@ -352,47 +254,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
-@media print {
-  .backgrounds {
-    background-color: var(--r-background-color);
-  }
+@media print { .backgrounds { background-color: var(--r-background-color); } }
+
+/*********************************************
+ * STANDARD IMAGE SIZES
+ *********************************************/
+
+.image-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
 }
 
-/* Styles for End Slide Series */
-.profile-photo-circular {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.end-slide-columns {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  text-align: left;
-  font-size: 0.75em;
-  margin-top: 3em;
-}
-
-.end-slide-column {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.end-slide-column ul {
-  padding-left: 20px; /* Ensures list bullets are aligned correctly */
-}
-
-.end-slide-contact {
-  text-align: center;
-}
-
-.end-slide-contact-logo {
-  max-width: 120px;
-  height: auto;
-  border: 0;
-  background: none;
-  box-shadow: none;
-  margin-bottom: 1em;
+.reveal .standard-image {
+    max-width: 90vw;
+    max-height: 50vh; /* This should prevent overflow for tall images */
+    margin: 0 auto;
 }

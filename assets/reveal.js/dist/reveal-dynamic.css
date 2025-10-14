@@ -1,0 +1,85 @@
+/*
+ * Custom CSS for a split-screen layout
+ * This can be added to your Jekyll site's main CSS file.
+ */
+
+.split-layout {
+  display: flex;
+  flex-direction: row; /* Default to row for wider screens */
+  justify-content: space-around;
+  align-items: flex-start; /* Align content to the top */
+  width: 100%;
+  height: 100%; /* Take up the full height of the slide */
+}
+
+.split-layout .left-side,
+.split-layout .right-side {
+  width: 48%; /* Adjust to control the width of each side */
+  height: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; /* Include padding in the element's width */
+}
+
+/* Optional: Add a subtle visual divider */
+.split-layout .left-side {
+  border-right: 1px solid #ccc;
+  padding-right: 2rem;
+}
+
+/* Optional: Make it responsive for smaller screens */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column; /* Stack the sides vertically */
+    align-items: center;
+  }
+  .split-layout .left-side,
+  .split-layout .right-side {
+    width: 90%;
+    padding: 1rem 0;
+  }
+}
+
+/* Ensure the heading and paragraph styles are consistent */
+.split-layout h3 {
+  font-size: 1.5em; /* Adjust heading size for the layout */
+  margin-bottom: 1rem;
+}
+
+/* Styles for End Slide Series */
+.profile-photo-circular {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.end-slide-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 0.75em;
+  margin-top: 3em;
+}
+
+.end-slide-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.end-slide-column ul {
+  padding-left: 20px; /* Ensures list bullets are aligned correctly */
+}
+
+.end-slide-contact {
+  text-align: center;
+}
+
+.end-slide-contact-logo {
+  max-width: 120px;
+  height: auto;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  margin-bottom: 1em;
+}
