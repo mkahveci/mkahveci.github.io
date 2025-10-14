@@ -12,6 +12,16 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-14 19:36:56.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/70c902c2afd0da0d1c99684199260ff67a99a52e
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-14 19:34:22.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/67fb1dd516706b291302d1bc4946685057ad484c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-14 16:52:54.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/3cef0b9fe989bc40b57fe941bfe8b3fb24cdaaea
@@ -25,16 +35,6 @@
   - date: 2025-10-07 00:28:57.000000000 Z
     message: Update the card display datails and add the trade management rules.
     url: https://github.com/mkahveci/qma/commit/f73b8da8270002fe656592ebac50dff8f6d79435
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-07 00:17:42.000000000 Z
-    message: Update the card display datails and add the trade management rules.
-    url: https://github.com/mkahveci/qma/commit/ef72230f013b8ebfd3526beebba3e1456fee9d71
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-07 00:15:37.000000000 Z
-    message: Update the card display datails and add the trade management rules.
-    url: https://github.com/mkahveci/qma/commit/96c3f18ede2e93a750f13533e1d69c2ca9cbff7f
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
