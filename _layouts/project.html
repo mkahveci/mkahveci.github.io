@@ -32,7 +32,7 @@ layout: default
             {% include navigation.html category="projects" %}
         </div>
 
-        <div class="col-lg-4">
+        <aside class="col-lg-4">
             {% assign details_count = 0 %}
             {% if page.contributors %}{% assign details_count = details_count | plus: 1 %}{% endif %}
             {% if page.duration %}{% assign details_count = details_count | plus: 1 %}{% endif %}
@@ -41,44 +41,40 @@ layout: default
             {% if page.budget %}{% assign details_count = details_count | plus: 1 %}{% endif %}
 
             {% if details_count > 0 %}
-            <div class="card shadow-sm">
-                <div class="card-header">
-                    <h5 class="mb-0">Project Details</h5>
+            <div class="mb-4">
+                <h5 class="mb-3">Project Details</h5>
+                {% if page.contributors %}
+                <div class="mb-3">
+                    <strong>Contributors</strong>
+                    <div class="text-muted small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    {% if page.contributors %}
-                    <li class="list-group-item">
-                        <strong>Contributors</strong>
-                        <div class="text-muted small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-                    </li>
-                    {% endif %}
-                    {% if page.duration %}
-                    <li class="list-group-item">
-                        <strong>Duration</strong>
-                        <div class="text-muted small">{{ page.duration }}</div>
-                    </li>
-                    {% endif %}
-                    {% if page.hostedby %}
-                    <li class="list-group-item">
-                        <strong>Host Institution</strong>
-                        <div class="text-muted small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-                    </li>
-                    {% endif %}
-                    {% if page.fundedby %}
-                    <li class="list-group-item">
-                        <strong>Funding Institution</strong>
-                        <div class="text-muted small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-                    </li>
-                    {% endif %}
-                    {% if page.budget %}
-                    <li class="list-group-item">
-                        <strong>Budget</strong>
-                        <div class="text-muted small">{{ page.budget }}</div>
-                    </li>
-                    {% endif %}
-                </ul>
+                {% endif %}
+                {% if page.duration %}
+                <div class="mb-3">
+                    <strong>Duration</strong>
+                    <div class="text-muted small">{{ page.duration }}</div>
+                </div>
+                {% endif %}
+                {% if page.hostedby %}
+                <div class="mb-3">
+                    <strong>Host Institution</strong>
+                    <div class="text-muted small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                </div>
+                {% endif %}
+                {% if page.fundedby %}
+                <div class="mb-3">
+                    <strong>Funding Institution</strong>
+                    <div class="text-muted small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                </div>
+                {% endif %}
+                {% if page.budget %}
+                <div class="mb-3">
+                    <strong>Budget</strong>
+                    <div class="text-muted small">{{ page.budget }}</div>
+                </div>
+                {% endif %}
             </div>
             {% endif %}
-        </div>
+        </aside>
     </div>
 </div>

@@ -30,7 +30,7 @@ layout: default
             {% include navigation.html category="courses" %}
         </div>
 
-        <div class="col-lg-4">
+        <aside class="col-lg-4">
 
             {% assign details_count = 0 %}
             {% if page.instructor %}{% assign details_count = details_count | plus: 1 %}{% endif %}
@@ -39,36 +39,32 @@ layout: default
             {% if page.clevel %}{% assign details_count = details_count | plus: 1 %}{% endif %}
 
             {% if details_count > 0 %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header">
-                    <h5 class="mb-0">Course Details</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    {% if page.instructor %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <strong>Instructor</strong>
-                        <a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
-                    </li>
-                    {% endif %}
-                    {% if page.institution %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <strong>Institution</strong>
-                        <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
-                    </li>
-                    {% endif %}
-                    {% if page.semester %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <strong>Semester</strong>
-                        <span class="text-end">{{ page.semester }}</span>
-                    </li>
-                    {% endif %}
-                    {% if page.clevel %}
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <strong>Level</strong>
-                        <span class="text-end">{{ page.clevel }}</span>
-                    </li>
-                    {% endif %}
-                </ul>
+            <div class="mb-4">
+                <h5 class="mb-3">Course Details</h5>
+                {% if page.instructor %}
+                <p class="d-flex justify-content-between align-items-center small mb-2">
+                    <strong>Instructor</strong>
+                    <a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
+                </p>
+                {% endif %}
+                {% if page.institution %}
+                <p class="d-flex justify-content-between align-items-center small mb-2">
+                    <strong>Institution</strong>
+                    <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
+                </p>
+                {% endif %}
+                {% if page.semester %}
+                <p class="d-flex justify-content-between align-items-center small mb-2">
+                    <strong>Semester</strong>
+                    <span class="text-end">{{ page.semester }}</span>
+                </p>
+                {% endif %}
+                {% if page.clevel %}
+                <p class="d-flex justify-content-between align-items-center small mb-2">
+                    <strong>Level</strong>
+                    <span class="text-end">{{ page.clevel }}</span>
+                </p>
+                {% endif %}
             </div>
             {% endif %}
 
@@ -78,26 +74,22 @@ layout: default
             {% if page.supplement %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
 
             {% if materials_count > 0 %}
-            <div class="card shadow-sm">
-                <div class="card-header">
-                    <h5 class="mb-0">Course Materials</h5>
-                </div>
-                <div class="card-body">
-                    <div class="d-grid gap-2">
-                        {% if page.web %}
-                        <a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
-                        {% endif %}
-                        {% if page.pdf %}
-                        <a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
-                        {% endif %}
-                        {% if page.supplement %}
-                        <a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
-                        {% endif %}
-                    </div>
+            <div class="mb-4">
+                <h5 class="mb-3">Course Materials</h5>
+                <div class="d-grid gap-2">
+                    {% if page.web %}
+                    <a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
+                    {% endif %}
+                    {% if page.pdf %}
+                    <a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
+                    {% endif %}
+                    {% if page.supplement %}
+                    <a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
+                    {% endif %}
                 </div>
             </div>
             {% endif %}
 
-        </div>
+        </aside>
     </div>
 </div>

@@ -4,7 +4,7 @@ categories:
 - projectsgit
 ---
 
-{% comment %} Get the project data {% endcomment %}
+{% comment %} Get the project data using the 'slug' from the page's front matter {% endcomment %}
 {% assign project = site.data.projectsgit | where: "slug", page.slug | first %}
 
 <div class="container my-4">
@@ -28,68 +28,94 @@ categories:
         </main>
 
         <aside class="col-lg-4">
-            {% assign has_source = false %}
-            {% if project.repo %}{% assign has_source = true %}{% endif %}
-
-            {% if has_source %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header"><h5 class="mb-0">Source Code</h5></div>
-                <div class="list-group list-group-flush">
-                    <a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
-                        <i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}
-                    </a>
-                </div>
+            {% if project.repo %}
+            <div class="mb-4">
+                <h5 class="mb-2">Source Code</h5>
+                <p><a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}</a></p>
             </div>
             {% endif %}
 
-            {% comment %} Corrected logic: Match documents based on the parent folder and check if the title is not empty {% endcomment %}
-            {% assign parent_dir = page.url | split: '/' | slice: -2, 1 | first %}
-            {% assign project_documents = site.pages | where_exp: "item", "item.url contains parent_dir and item.path contains '/docs/'" %}
+            {% comment %}
+            FINAL, DEFINITIVE LOGIC:
+            This logic is the most robust and comprehensive solution.
+            1. It gets the current project slug from the URL.
+            2. It creates the unique path segment for the project's docs folder.
+            3. It combines `site.pages` AND `site.documents` into a single, complete list of all content on the site.
+            4. It iterates through this master list, ensuring that no document is missed, regardless of how Jekyll categorizes it.
+            {% endcomment %}
+            {% assign url_parts = page.url | split: '/' %}
+            {% assign current_project_slug = url_parts[2] %}
+            {% assign project_doc_path_segment = '/projectsgit/' | append: current_project_slug | append: '/docs/' %}
+
+            {% assign all_content = site.pages | concat: site.documents %}
+            {% assign unique_content = all_content | uniq %}
+
+            {% assign project_documents = "" | split: "" %}
+            {% for doc in unique_content %}
+            {% if doc.url contains project_doc_path_segment %}
+            {% assign project_documents = project_documents | push: doc %}
+            {% endif %}
+            {% endfor %}
 
             {% if project_documents.size > 0 %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header"><h5 class="mb-0">Project Documents</h5></div>
-                <div class="list-group list-group-flush">
-                    {% for doc in project_documents %}
-                    {% if doc.title %}
-                    <a href="{{ doc.url }}" class="list-group-item list-group-item-action {% if page.url == doc.url %}active{% endif %}">
-                        <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | downcase }}
+            <div class="mb-4">
+                <h5 class="mb-2">Project Documents</h5>
+                {% comment %} Separate the index page from the other documents {% endcomment %}
+                {% assign index_doc = nil %}
+                {% assign other_docs = "" | split: "" %}
+                {% for doc in project_documents %}
+                {% if doc.name == 'index.html' or doc.name == 'index.md' %}
+                {% assign index_doc = doc %}
+                {% else %}
+                {% assign other_docs = other_docs | push: doc %}
+                {% endif %}
+                {% endfor %}
+
+                {% comment %} Display 'Project Main' first, if it exists {% endcomment %}
+                {% if index_doc %}
+                <p class="mb-1">
+                    <a href="{{ index_doc.url }}" class="text-decoration-none {% if page.url == index_doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
+                        <i class="far fa-file-alt fa-fw me-2"></i><strong>Project Main</strong>
                     </a>
-                    {% endif %}
-                    {% endfor %}
-                </div>
+                </p>
+                {% endif %}
+
+                {% comment %} Sort and display the rest of the documents alphabetically {% endcomment %}
+                {% assign sorted_other_docs = other_docs | sort: "title" %}
+                {% for doc in sorted_other_docs %}
+                <p class="mb-1">
+                    <a href="{{ doc.url }}" class="text-decoration-none {% if page.url == doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
+                        <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | default: doc.name | replace: '.md', '' | replace: '_', '-' | replace: '-', ' ' | capitalize }}
+                    </a>
+                </p>
+                {% endfor %}
             </div>
             {% endif %}
 
             {% if project.contributors.size > 0 %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header"><h5 class="mb-0">Contributors</h5></div>
-                <div class="card-body">
-                    {% for contributor in project.contributors %}
-                    <a href="{{ contributor.url }}" class="d-flex align-items-center text-dark text-decoration-none mb-2">
-                        <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
-                        <span>{{ contributor.login }}</span>
-                    </a>
-                    {% endfor %}
-                </div>
+            <div class="mb-4">
+                <h5 class="mb-2">Contributors</h5>
+                {% for contributor in project.contributors %}
+                <a href="{{ contributor.url }}" class="d-flex align-items-center text-dark text-decoration-none mb-2">
+                    <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
+                    <span>{{ contributor.login }}</span>
+                </a>
+                {% endfor %}
             </div>
             {% endif %}
 
             {% if project.commits.size > 0 %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header"><h5 class="mb-0">Latest Commits</h5></div>
-                <ul class="list-group list-group-flush">
-                    {% for commit in project.commits limit: 5 %}
-                    <li class="list-group-item small">
-                        <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">
-                            <p class="mb-1 fw-bold">{{ commit.message | truncatewords: 8 }}</p>
-                            <p class="mb-0 text-muted">{{ commit.date | date: "%-d %b %Y" }}</p>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+            <div class="mb-4">
+                <h5 class="mb-2">Latest Commits</h5>
+                {% for commit in project.commits limit: 5 %}
+                <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none d-block mb-3">
+                    <p class="mb-0 fw-bold small">{{ commit.message | truncatewords: 8 }}</p>
+                    <p class="mb-0 text-muted small">{{ commit.date | date: "%-d %b %Y" }}</p>
+                </a>
+                {% endfor %}
             </div>
             {% endif %}
         </aside>
     </div>
 </div>
+

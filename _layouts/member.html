@@ -19,18 +19,19 @@ layout: default
             </div>
         </div>
 
-        <div class="col-lg-4">
-            <div class="card shadow-sm sticky-top mb-4" style="top: 2rem;">
+        <aside class="col-lg-4">
+            <!-- Profile Image Section -->
+            <div class="sticky-top mb-4" style="top: 2rem;">
                 {% if page.image %}
-                <img src="{{ page.image }}" class="card-img-top" alt="{{ page.title }}" style="object-fit: cover;">
+                <img src="{{ page.image }}" class="img-fluid rounded-circle shadow-sm mb-3" alt="{{ page.title }}" style="object-fit: cover; width: 150px; height: 150px; margin-left: auto; margin-right: auto; display: block;">
                 {% else %}
-                <div class="p-5 text-center bg-light">
+                <div class="text-center mb-3">
                     <i class="fas fa-user-circle fa-6x text-muted"></i>
                 </div>
                 {% endif %}
-                <div class="card-body text-center">
-                    <h5 class="card-title">{{ page.title }}</h5>
-                    <p class="card-text text-muted">{{ page.position }}</p>
+                <div class="text-center">
+                    <h5 class="h6">{{ page.title }}</h5>
+                    <p class="text-muted small">{{ page.position }}</p>
                 </div>
             </div>
 
@@ -43,60 +44,54 @@ layout: default
             {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
             {% if page.twitter %}{% assign link_count = link_count | plus: 1 %}{% endif %}
             {% if page.calendar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+
             {% if link_count > 0 %}
-            <div class="card shadow-sm mb-4">
-                <div class="card-header">
-                    <h5 class="mb-0">Contact & Links</h5>
-                </div>
-                <div class="list-group list-group-flush">
-                    {% if page.cv %}
-                    <a href="{{ page.cv }}" class="list-group-item list-group-item-action"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a>
-                    {% endif %}
-                    {% if page.email %}
-                    {% assign emailarray = page.email | split: '@' %}
-                    <a href="mailto:{{ page.email }}" class="list-group-item list-group-item-action"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a>
-                    {% endif %}
-                    {% if page.website %}
-                    <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a>
-                    {% endif %}
-                    {% if page.googlescholar %}
-                    <a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a>
-                    {% endif %}
-                    {% if page.linkedin %}
-                    <a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a>
-                    {% endif %}
-                    {% if page.github %}
-                    <a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a>
-                    {% endif %}
-                    {% if page.twitter %}
-                    <a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a>
-                    {% endif %}
-                    {% if page.calendar %}
-                    <a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a>
-                    {% endif %}
-                </div>
+            <div class="mb-4">
+                <h5 class="mb-3">Contact & Links</h5>
+                {% if page.cv %}
+                <p class="mb-2"><a href="{{ page.cv }}" class="text-dark text-decoration-none"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a></p>
+                {% endif %}
+                {% if page.email %}
+                {% assign emailarray = page.email | split: '@' %}
+                <p class="mb-2"><a href="mailto:{{ page.email }}" class="text-dark text-decoration-none"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a></p>
+                {% endif %}
+                {% if page.website %}
+                <p class="mb-2"><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a></p>
+                {% endif %}
+                {% if page.googlescholar %}
+                <p class="mb-2"><a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a></p>
+                {% endif %}
+                {% if page.linkedin %}
+                <p class="mb-2"><a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a></p>
+                {% endif %}
+                {% if page.github %}
+                <p class="mb-2"><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a></p>
+                {% endif %}
+                {% if page.twitter %}
+                <p class="mb-2"><a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a></p>
+                {% endif %}
+                {% if page.calendar %}
+                <p class="mb-2"><a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a></p>
+                {% endif %}
             </div>
             {% endif %}
 
             {% if page.title == "Murat Kahveci" %}
-            <div class="card shadow-sm">
-                <div class="card-header">
-                    <h5 class="mb-0">Discover More</h5>
-                </div>
-                <div class="list-group list-group-flush">
-                    <a href="/about" class="list-group-item list-group-item-action">About</a>
-                    <a href="/courses" class="list-group-item list-group-item-action">Courses</a>
-                    <a href="/reference" class="list-group-item list-group-item-action">Request a Letter</a>
-                    <a href="/contact" class="list-group-item list-group-item-action">Contact</a>
-                    <a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a>
-                </div>
+            <div class="mb-4">
+                <h5 class="mb-3">Discover More</h5>
+                <p class="mb-2"><a href="/about" class="text-dark text-decoration-none">About</a></p>
+                <p class="mb-2"><a href="/courses" class="text-dark text-decoration-none">Courses</a></p>
+                <p class="mb-2"><a href="/reference" class="text-dark text-decoration-none">Request a Letter</a></p>
+                <p class="mb-2"><a href="/contact" class="text-dark text-decoration-none">Contact</a></p>
+                <p class="mb-2"><a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a></p>
             </div>
             {% endif %}
 
-        </div>
     </div>
-
-    <hr class="my-4">
-
-    {% include navigation.html category="team" %}
 </div>
+
+<hr class="my-4">
+
+{% include navigation.html category="team" %}
+</div>
+
