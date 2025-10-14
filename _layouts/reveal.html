@@ -5,36 +5,18 @@
     <title>{{ page.title | default: "Presentation" }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Your Site's Favicon -->
     <link rel="shortcut icon" href="{{ '/images/favicon.svg' | relative_url }}"/>
 
-    <!-- reveal.js Core CSS -->
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal.css' | relative_url }}">
 
-    <!-- Custom Theme -->
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/theme/kahveci.css' | relative_url }}" id="theme">
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal-custom.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal-dynamic.css' | relative_url }}">
 
-    <!-- reveal.js Plugin for Code Highlighting -->
     <link rel="stylesheet" href="{{ '/assets/reveal.js/plugin/highlight/monokai.css' | relative_url }}">
 
-    <!-- Add FontAwsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- 1. Add the MathJax configuration script here -->
-    <script>
-        window.MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-          }
-        };
-    </script>
-
-    <!-- 2. The main MathJax library loads after the configuration -->
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-    <!-- Your Site's Analytics -->
     {% include analytics.html %}
 
 </head>
@@ -42,7 +24,6 @@
 
 <div class="reveal">
     <div class="slides">
-        <!-- This section tells the reveal.js Markdown plugin where to find the slide content. -->
         <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
             <script type="text/template">
                 {{ content }}
@@ -53,18 +34,16 @@
 
 <div id="qr-code" style="position: absolute; bottom: 20px; left: 20px; z-index: 999; background: white; padding: 5px; border-radius: 5px;"></div>
 
-<!-- Core reveal.js scripts -->
 <script src="{{ '/assets/reveal.js/dist/reveal.js' | relative_url }}"></script>
 
 <script src="{{ '/assets/reveal.js/plugin/markdown/markdown.js' | relative_url }}"></script>
 <script src="{{ '/assets/reveal.js/plugin/notes/notes.js' | relative_url }}"></script>
 <script src="{{ '/assets/reveal.js/plugin/highlight/highlight.js' | relative_url }}"></script>
-
+<script src="{{ '/assets/reveal.js/plugin/math/math.js' | relative_url }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 
 <script>
     function updateQrCode() {
-        // Use a small timeout to ensure the URL has updated
         setTimeout(function() {
             let slideUrl = window.location.href;
             let qrContainer = document.getElementById('qr-code');
@@ -77,27 +56,70 @@
                     height: 80
                 });
             }
-        }, 100); // 100 milliseconds is a good, short delay
+        }, 100);
     }
 
     window.onload = function() {
         Reveal.initialize({
             hash: true,
-            slideNumber: true,
+            slideNumber: 'c/t',
             progress: true,
-            transition: 'zoom',
+            transition: 'fade',
             backgroundTransition: 'fade',
-            controls: false,
+            controls: true,
             mouseWheel: true,
             loop: false,
             embedded: false,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            center: true,
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.MathJax3
+            ],
+            mathjax3: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                options: {
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                }
+            }
         });
 
-        // Attach the event listener for subsequent slide changes
-        Reveal.addEventListener('slidechanged', updateQrCode);
+        Reveal.addEventListener('slidechanged', event => {
+            updateQrCode();
 
-        // Run the function once for the first slide
+            if (event.indexh === Reveal.getHorizontalSlides().length - 1) {
+                let duration = 180;
+                let display = document.querySelector('#countdown');
+
+                if (window.timerInterval) {
+                    clearInterval(window.timerInterval);
+                }
+
+                let timer = duration;
+                window.timerInterval = setInterval(function() {
+                    let minutes = parseInt(timer / 60, 10);
+                    let seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    if (display) {
+                        display.textContent = minutes + ":" + seconds;
+                    }
+
+                    if (--timer < 0) {
+                        timer = 0;
+                        clearInterval(window.timerInterval);
+                    }
+                }, 1000);
+            }
+        });
+
         updateQrCode();
     };
 </script>

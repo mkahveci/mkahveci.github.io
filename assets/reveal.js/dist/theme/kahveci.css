@@ -14,24 +14,24 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --r-background-color: #fff;
   --r-main-font: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif;
-  --r-main-font-size: 30px; /* Reduced for more space */
-  --r-main-color: #555; /* Mapped to your $gray variable */
-  --r-block-margin: 10px; /* Reduced for more compact view */
-  --r-heading-margin: 1rem 0 0.25rem 0; /* Reduced vertical spacing */
+  --r-main-font-size: 24px; /* Reduced for a better base */
+  --r-main-color: #555;
+  --r-block-margin: 10px;
+  --r-heading-margin: 1rem 0 0.5rem 0; /* Adjusted for better spacing */
   --r-heading-font: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif;
-  --r-heading-color: #1127DB; /* *** UPDATED TO YOUR BRAND'S PRIMARY COLOR *** */
+  --r-heading-color: #1127DB;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: none; /* Keeps headers from being all caps */
+  --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 500;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 2.5rem;
-  --r-heading2-size: 2rem;
-  --r-heading3-size: 1.75rem;
+  --r-heading1-size: 3rem; /* Increased for a more distinct h1 */
+  --r-heading2-size: 2.5rem; /* Increased for a more distinct h2 */
+  --r-heading3-size: 2rem;
   --r-heading4-size: 1.5rem;
   --r-code-font: monospace;
-  --r-link-color: #1127DB; /* Mapped to your $primary variable */
+  --r-link-color: #1127DB;
   --r-link-color-dark: #1127DB;
   --r-link-color-hover: #1127DB;
   --r-selection-background-color: #1127DB;
@@ -101,7 +101,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
   font-weight: 300;
-  text-align: left; /* ADD THIS LINE to left-align paragraphs */
+  text-align: center;
 }
 
 /* Remove trailing margins after titles */
@@ -255,3 +255,22 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * PRINT BACKGROUND
  *********************************************/
 @media print { .backgrounds { background-color: var(--r-background-color); } }
+
+/*********************************************
+ * STANDARD IMAGE SIZES
+ *********************************************/
+
+.image-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.reveal .standard-image {
+    max-width: 90vw;
+    max-height: 50vh; /* This should prevent overflow for tall images */
+    margin: 0 auto;
+}
