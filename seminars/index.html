@@ -1,0 +1,95 @@
+---
+layout: default
+title: Seminars & Workshops
+---
+
+<style>
+    /* Custom styles for the date block to match other pages */
+    .date-block {
+        width: 80px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .date-block .month {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .date-block .day {
+        font-size: 1.75rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .date-block .year {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Seminars & Workshops</h1>
+        <p class="lead col-lg-8 mx-auto">A curated list of workshops and professional development seminars I have developed and delivered to fellow educators.</p>
+    </div>
+
+    <hr class="my-5">
+
+    <section id="seminars">
+        <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chalkboard-teacher fa-fw text-muted me-2"></i> Professional Development</h2>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+            {% comment %} Sort the seminars by the 'date' field. {% endcomment %}
+            {% assign sorted_seminars = site.data.seminars | sort: "date" %}
+            {% for item in sorted_seminars %}
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex">
+                        <div class="date-block me-3 p-3 rounded-start bg-warning text-dark">
+                            {% if item.date %}
+                            <span class="month">{{ item.date | date: "%b" }}</span>
+                            <span class="day">{{ item.date | date: "%-d" }}</span>
+                            <span class="year">{{ item.date | date: "%Y" }}</span>
+                            {% else %}
+                            <h5 class="mb-0">{{ item.year }}</h5>
+                            {% endif %}
+                        </div>
+                        <div class="flex-grow-1">
+                            <h6 class="card-title h6">
+                                <a href="{{ item.url | relative_url }}" class="text-decoration-none">{{ item.title }}</a>
+                            </h6>
+                            <p class="card-text small text-muted">
+                                {{ item.description }}
+                            </p>
+                            <p class="card-text small fst-italic mt-2">
+                                <strong>Audience:</strong> {{ item.audience }}<br>
+                                <strong>Location:</strong> {{ item.location }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 pt-0">
+                        <div class="d-flex flex-wrap" style="gap: 0.5rem; padding: 0.5rem 1rem;">
+
+                            {% if item.slides_url and item.slides_url != "" %}
+                            <a href="{{ item.slides_url | relative_url }}" class="btn btn-sm btn-outline-primary" rel="noopener noreferrer">
+                                <i class="fas fa-file-powerpoint fa-fw me-1"></i> Slides
+                            </a>
+                            {% endif %}
+
+                            <a href="{{ item.url | relative_url }}" class="btn btn-sm btn-outline-info">
+                                <i class="fas fa-info-circle fa-fw me-1"></i> Details
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>
+
