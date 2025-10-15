@@ -1,0 +1,327 @@
+---
+# Layout must be 'reveal' to render as a presentation
+layout: reveal
+
+# ---- Main Information ----
+title: "AI-Driven LT Tracker (5-SC): Data-Driven Instructional Planning"
+date: 2025-10-15
+category: talks # This is the crucial line for Jekyll collections!
+
+# ---- Data for the Listing Page ----
+event: "Professional Development Seminar"
+location: "Chicago, IL, USA"
+type: "conference" # Use "conference" or "invited"
+
+# ---- Optional Links for Buttons ----
+pdf:
+video:
+event_url:
+published: true
+sitemap: false
+---
+
+<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+<div style="margin-bottom: 2rem;">
+    <h1 style="color: #1127DB; font-size: 3em; margin-bottom: 0.5em;">AI-Driven LT Tracker (5-SC)</h1>
+    <h2 style="font-size: 1.5em; color: #555; font-weight: 300; margin-top: 0;">Data-Driven Instructional Planning</h2>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem;">
+    <div style="text-align: center;">
+        <h3 style="font-size: 1.2em; color: #555; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h3>
+        <p style="font-size: 0.9em; color: #777; margin: 0;">Chicago Public Schools</p>
+    </div>
+</div>
+
+<div style="text-align: center;">
+    <img src="/images/logo.svg" alt="Event Logo" style="width: 200px; height: auto; border: 0; background: none; box-shadow: none;">
+    <h4 style="font-size: 1.2em; color: #555; margin-top: 1rem;">Chicago, 2025</h4>
+</div>
+</section>
+
+---
+
+## Seminar Agenda 🗺️
+
+* **(10 min) Introduction:** The Challenge of Real-Time Progress Monitoring
+* **(25 min) The LT Tracker (5-SC) System:** A Guided Tour
+* **(25 min) Data-Driven Decisions:** Interpreting the Dashboard
+* **(20 min) From Data to Action:** AI-Powered Analysis & Kagan Grouping
+* **(10 min) Q&A and Implementation Planning**
+
+---
+
+## 1. Introduction: The Challenge
+
+The core challenge for educators is answering a critical question in real-time: **"Are my students learning what I am teaching, right now?"**
+
+* Traditional grade books are often too slow for effective formative assessment.
+* Collecting timely, actionable data can be an overwhelming administrative burden.
+* We need a streamlined, efficient, and mobile-friendly solution to bridge the gap between instruction and assessment.
+
+---
+
+## Introducing the LT Tracker (5-SC) ✨
+
+A mobile-friendly Google Sheet template designed for educators to **efficiently monitor student progress** against specific learning targets.
+
+* **Goal:** To make informed, data-driven pedagogical decisions without the paperwork.
+* **Method:** A simple, reusable system for daily data entry and automated analysis.
+* **Outcome:** Leverage data and AI to plan targeted instruction and form dynamic cooperative learning groups.
+
+---
+
+## 2. The LT Tracker System: A Guided Tour
+
+Let's explore the structure and workflow of the tool.
+
+---
+
+## Core Concepts: LT & SC
+
+The system is built on two fundamental ideas:
+
+* **Learning Target (LT):** The overarching concept or skill students are expected to master.
+* *Example: "I can write a balanced chemical equation."*
+* **Success Criteria (SC):** The specific, observable skills that prove mastery of the LT. The tracker is designed for up to five SCs per LT.
+* *Example SCs: 1) Identify reactants & products. 2) Write correct chemical formulas. 3) Apply the law of conservation of mass.*
+
+---
+
+## Getting Started: Initial Setup
+
+Setting up a new tracker for a Learning Target is a simple, three-step process.
+
+1.  **Copy the Template:** In Google Drive, right-click the template file `[TEMPLATE] LT Tracker (5-SC)` and select **Make a copy**. Rename it for your specific LT (e.g., "LT1 Tracker - Chemical Reactions").
+2.  **Populate the Roster:** Open the new file and go to the **Roster_Key** tab. Paste your class list, ensuring each student has a Name, a unique Student ID, and a Class Section.
+3.  **Define Success Criteria:** Go to the **SC-1_Entry** tab. In cell **A1**, replace the placeholder with your actual Success Criterion ID (e.g., `LT1-SC1`). Repeat for all other `SC-X_Entry` tabs.
+
+---
+
+## Daily Data Entry: A Mobile-First Workflow 📱
+
+This workflow is designed for speed and accuracy, allowing you to capture data live in the classroom.
+
+1.  Navigate to the correct tab for the skill you're assessing (e.g., `SC-2_Entry`).
+2.  Find the student you are observing.
+3.  In the `Performance Level` column, click the cell and select the appropriate level from the dropdown menu.
+
+**That's it!** The data is saved, and your dashboard is instantly updated.
+
+---
+
+<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <img src="/images/blog/pab/mobile-data-entry.png" alt="Mobile data entry view" class="standard-image">
+        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
+            <strong>Figure 1: Mobile-Friendly Entry.</strong> The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students.
+        </p>
+    </div>
+</section>
+
+---
+
+## 3. Data-Driven Decisions: Interpreting the Dashboard 📈
+
+The **Dashboard** tab automatically aggregates and visualizes all the data you enter. You never need to type anything here.
+
+---
+
+<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <img src="/images/blog/pab/make-a-copy.png" alt="Teacher Dashboard View" class="standard-image">
+        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
+            <strong>Figure 2: The Teacher Dashboard.</strong> A snapshot that summarizes class performance and highlights individual student needs without any manual data entry.
+        </p>
+    </div>
+</section>
+
+---
+
+## Key Dashboard Components
+
+* **The Progress Matrix:** A central, color-coded grid showing the most recent grade for every student on every Success Criterion. It allows you to see patterns of understanding at a glance.
+
+* **The `LT Status` Column:** Automatically determines if a student has **"✅ Met"** the Learning Target.
+* **The Rule:** A student has met the LT if **80% or more** of their graded Success Criteria are marked as `High` or `Expected`.
+
+---
+
+## Chart 1: Overall Performance (Pie Chart) 🥧
+
+This chart provides the "30,000-foot view" of class mastery for the entire Learning Target.
+
+**Use this chart to answer big-picture questions:**
+* *"Is the class ready to move on?"*
+* *"Do I need to re-teach the whole concept?"*
+* *"How effective was my overall instruction for this LT?"*
+
+---
+
+<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <img src="/images/blog/jpq/pie-overall.png" alt="Overall Performance Pie Chart" class="standard-image">
+        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
+            <strong>Figure 3: Overall Performance.</strong> A summary of class-wide performance on the learning target.
+        </p>
+    </div>
+</section>
+
+---
+
+## Chart 2: Performance by Success Criterion 📊
+
+This is your most powerful **diagnostic tool**. It breaks down the LT and shows exactly which specific skills the class is struggling with.
+
+**Use this chart to drive daily planning and differentiation:**
+* *"What should tomorrow’s warm-up be?"*
+* *"Which students do I need to pull for a small group today?"*
+* *"Was my lesson on SC-2 effective?"*
+
+---
+
+<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <img src="/images/blog/jpq/column-sc.png" alt="Performance by Success Criterion Chart" class="standard-image">
+        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
+            <strong>Figure 4: Performance by Success Criterion.</strong> A detailed breakdown of class performance for each specific skill.
+        </p>
+    </div>
+</section>
+
+---
+
+## Chart 3: Performance by Class Section 🧑‍🏫
+
+This chart compares the performance of your different classes, providing a key tool for **reflective practice**.
+
+**Use this chart for section-specific planning:**
+* *"Did my teaching approach work differently in Period 1 versus Period 3?"*
+* *"Do my different classes have different needs?"*
+* *"Are there potential equity issues to investigate?"*
+
+---
+
+<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+        <img src="/images/blog/jpq/column-section.png" alt="Performance by Class Section Chart" class="standard-image">
+        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
+            <strong>Figure 5: Performance by Class Section.</strong> See how your instructional approaches landed with each class.
+        </p>
+    </div>
+</section>
+
+---
+
+## 4. From Data to Action: AI-Powered Analysis 🤖
+
+Interpreting charts is powerful, but AI can help us synthesize this data into concrete instructional plans and dynamic student groups.
+
+---
+
+## Leveraging AI for Instructional Planning
+
+We can export data from the dashboard and use a large language model (like Gemini, ChatGPT, or Claude) as an instructional coach.
+
+**The process is simple:**
+1.  Copy the student performance data from the **Progress Matrix**.
+2.  Provide it to the AI with a clear, role-defined prompt.
+3.  Ask for specific, actionable instructional strategies.
+
+---
+
+## Sample AI Prompt: Instructional Planning
+
+```text
+PROMPT:
+You are an expert high school science instructional coach. Based on the following student performance data for Learning Target 'LT1 - Chemical Reactions', please do the following:
+
+1.  Identify the most challenging Success Criterion for the class as a whole.
+2.  Suggest three targeted, evidence-based instructional strategies to re-teach or reinforce this specific criterion.
+3.  List the specific students who would benefit most from a small-group intervention on this topic.
+
+[Paste your student data from the Progress Matrix here]
+
+---
+
+## AI-Driven Dynamic Grouping for Kagan Structures
+The same data can be used to form purposeful, dynamic cooperative learning groups. This removes guesswork and ensures groups are structured to maximize peer learning.
+
+Goal: Move from random grouping to data-informed, strategic grouping.
+
+Sample AI Prompt: Kagan Grouping
+
+```prompt
+PROMPT:
+You are an expert in Kagan cooperative learning structures. Based on the student data provided below, create four heterogeneous groups of four students for a 'RallyCoach' activity that will focus on SC-3.
+
+Ensure each group has a mix of students who have 'Met' the LT and those who have 'Not Met' it, balancing the different performance levels across all groups.
+
+[Paste your student data from the Progress Matrix here]
+```
+
+---
+
+## Advanced Customization (FAQ)
+The tracker is flexible and can be adapted to your needs.
+
+* Fewer than 5 SCs? Hide the unused `SC-X_Entry` tabs and, crucially, delete the headers for the unused SCs on the Dashboard tab.
+* More than 5 SCs? Duplicate an existing `SC-X_Entry` tab and update the master `QUERY` formula on the `Data_Aggregate` sheet.
+* Adding New Students? Simply add them to the `Roster_Key` tab. The rest of the sheets will update automatically.
+
+---
+
+## Getting Your Copy & Getting Started
+
+* Contact Dr. Kahveci to receive the `view-only link` to the `master template`.
+* In Google Sheets, go to `File > Make a copy`. This will save a fully editable version to your personal Google Drive.
+* Important: Please refrain from using the `‘Request edit access’` button on the master template.
+
+---
+
+<section style="text-align: center;">
+
+<h2 style="color: #1127DB; margin-bottom: 2rem;">Acknowledgments</h2>
+
+<div style="margin-bottom: 4rem;">
+    <h4 style="color: #555; margin-bottom: 1rem;"><i class="fas fa-tools fa-fw" style="margin-right: 10px;"></i>Concept and Design</h4>
+    <p style="color: #555; font-size: 0.9em;">
+        Murat Kahveci, Ph.D. (Chicago, IL)
+    </p>
+    <p style="color: #777; font-size: 0.8em;">Version 1.0 - September 2025</p>
+</div>
+
+</section>
+
+---
+
+<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+<div style="margin-bottom: 2rem;">
+    <h2 style="color: #1127DB; font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
+    <p style="font-size: 1.5em; color: #555; font-weight: 300; margin-top: 0;">Thank you for attending.</p>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
+    <div style="text-align: center;">
+        <a href="https://kahveci.pw/" target="_blank">
+            <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 150px; height: auto; border: 0; background: none; box-shadow: none;">
+        </a>
+        <h4 style="font-size: 1.2em; color: #555; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; color: #555;">
+                <i class="fas fa-envelope fa-fw" style="color: #1127DB; font-size: 1.2em;"></i>
+            </a>
+            <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; color: #555;">
+                <i class="fab fa-twitter fa-fw" style="color: #1127DB; font-size: 1.2em;"></i>
+            </a>
+            <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; color: #555;">
+                <i class="fab fa-linkedin fa-fw" style="color: #1127DB; font-size: 1.2em;"></i>
+            </a>
+        </div>
+    </div>
+
+<div id="timer-container" style="font-size: 4em; font-weight: bold; color: #555;">
+    <span id="countdown"></span>
+</div>
+</div>
+</section>

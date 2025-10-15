@@ -30,6 +30,10 @@ defaults:
     values:
       toc: true
 
+collections:
+  seminars:
+    output: true
+
 toc:
   min_level: 1
   max_level: 6

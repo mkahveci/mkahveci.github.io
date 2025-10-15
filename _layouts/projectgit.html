@@ -4,6 +4,17 @@ categories:
 - projectsgit
 ---
 
+<style>
+    /* This ensures non-active links turn the primary blue color on hover. */
+    aside a.text-dark:hover {
+      color: #1127DB !important; /* Your $primary color */
+    }
+    /* This new rule ensures the active link is always the primary blue color. */
+    aside a.text-primary {
+      color: #1127DB !important; /* Your $primary color */
+    }
+</style>
+
 {% comment %} Get the project data using the 'slug' from the page's front matter {% endcomment %}
 {% assign project = site.data.projectsgit | where: "slug", page.slug | first %}
 
@@ -16,8 +27,6 @@ categories:
                 <li class="breadcrumb-item active" aria-current="page">{{ page.slug | replace: '-', ' ' | capitalize }}</li>
             </ol>
         </nav>
-        <h1 class="display-4">{{ project.title }}</h1>
-        <p class="lead">{{ project.description }}</p>
     </header>
 
     <div class="row">
