@@ -21,7 +21,7 @@
     "metrics": {
       "roc": 1.53,
       "annualizedRoc": 27.93,
-      "pop": null,
+      "pop": 58.0,
       "buyingPowerEffect": 8800.00,
       "dailyProfitPotential": 67.50
     },
