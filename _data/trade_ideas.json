@@ -1,5 +1,34 @@
 [
   {
+  "publicationDate": "2025-10-15",
+  "tradeTitle": "Short Put on ARKK",
+  "summaryJustification": "ARKK has a high implied volatility rank, making it a good candidate for a premium-selling strategy. Selling the 10/17 $88 put provides an attractive credit.",
+  "expectedReturnDisplay": "27.93% Annualized ROC",
+  "ticker": "ARKK",
+  "currentPrice": 88.63,
+  "ivRank": 90,
+  "earningsDate": "N/A",
+  "analysis": {
+    "thesis": "The implied volatility (IV) for ARKK is currently in the 90th percentile, which is considered high. This presents a favorable opportunity to sell options and collect rich premiums. The trade thesis is to sell a put option at a strike price that is out of the money, profiting from the decay of the option's value as time passes and assuming the stock price stays above the strike price. The high IV ensures a significant credit is received, which can be kept as profit if the option expires worthless.",
+    "strategyType": "Short Put",
+    "tradeDetails": {
+      "expiration": "2025-10-17",
+      "dte": 2,
+      "putStrike": 88.00,
+      "putPremium": 1.35,
+      "maxProfit": 135.00
+    },
+    "metrics": {
+      "roc": 1.53,
+      "annualizedRoc": 27.93,
+      "pop": null,
+      "buyingPowerEffect": 8800.00,
+      "dailyProfitPotential": 67.50
+    },
+    "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+  }
+},
+  {
     "publicationDate": "2025-10-14",
     "tradeTitle": "Short Put on BMNR",
     "summaryJustification": "BMNR has a very high implied volatility rank, making it an excellent candidate for a premium-selling strategy. The weekly short put trade allows for a high return on capital, capitalizing on the expected mean reversion of volatility.",
