@@ -5,133 +5,127 @@ categories:
 - home
 ---
 
-<div class="container-fluid bg-light text-center p-5 mb-5 rounded-3">
-	<img src="/images/logo.svg" alt="Kahveci Nexus Logo" class="mb-3" style="width: 150px; height: 150px; border-radius: 50%;">
-	<h1 class="display-4 fw-bold">Kahveci Nexus</h1>
-	<p class="lead">Where Chemistry, Psychometrics, and Innovation Converge</p>
-</div>
-
-<div class="container text-center my-5">
-	<div class="row">
-		<div class="col-md-4 mb-4">
-			<i class="fas fa-flask-vial fa-3x text-primary mb-3"></i>
-			<h4>Innovative Research</h4>
-			<p class="text-muted">Exploring the affective states of learners and the impact of technology in chemistry education, leading to impactful publications and tools.</p>
-		</div>
-		<div class="col-md-4 mb-4">
-			<i class="fas fa-chalkboard-teacher fa-3x text-success mb-3"></i>
-			<h4>Impactful Teaching</h4>
-			<p class="text-muted">Implementing inquiry-based, student-centered learning in both high school and university settings to enhance engagement and mastery.</p>
-		</div>
-		<div class="col-md-4 mb-4">
-			<i class="fas fa-globe fa-3x text-info mb-3"></i>
-			<h4>Global Collaboration</h4>
-			<p class="text-muted">Contributing to global education reform through EU-funded projects and international collaborations to create equitable learning environments.</p>
-		</div>
-	</div>
-</div>
-
-<hr class="my-5">
-
+<!-- Introduction Section -->
 <div class="container my-5">
-    <h2 class="text-center mb-4">Recent Posts</h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for post in site.categories.blog limit:4 %}
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body d-flex align-items-center">
-                    <div class="date-block me-3 p-3 rounded-start bg-primary text-white">
-                        <h5 class="mb-0">{{ post.date | date: "%Y" }}</h5>
-                        <small>{{ post.date | date: "%b %d" }}</small>
-                    </div>
-                    <div>
-                        <h6 class="card-title mb-1">
-                            <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>
-                        </h6>
-                        <p class="card-text small text-muted">
-                            {{ post.excerpt | strip_html | truncatewords: 30 }}
-                        </p>
-                    </div>
-                </div>
+    <div class="row align-items-center mb-5">
+        <div class="col-md-2 text-center text-md-start">
+            <img src="/images/logo.svg" alt="Kahveci Nexus Logo" style="width: 120px; height: 120px; border-radius: 50%;">
+        </div>
+        <div class="col-md-10">
+            <h1 class="display-5 fw-bold">Kahveci Nexus</h1>
+            <p class="lead text-muted">A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.</p>
+        </div>
+    </div>
+
+    <!-- Recent Posts Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="head">
+                <a class="off" href="/blog/">Recent Posts</a>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <div class="row">
+        {% for post in site.categories.blog limit:3 %}
+        <div class="col-lg-4">
+            <div class="note">
+                <i class="fa-regular fa-comment fa-fw"></i>
+                <a class="off" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </div>
+            <div class="smallspacer"></div>
+            <div class="smallnote">
+                Posted {{ post.date | date: "%-d %b %Y" }}
+                {% if post.author %}
+                by <a class="off" href="{% for member in site.categories.team %}{% if member.title == post.author %}{{ member.url }}{% endif %}{% endfor %}">{{ post.author }}</a>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
     </div>
-</div>
 
-<hr class="my-5">
+    <div class="bigspacer"></div>
 
-<div class="container my-5">
-    <h2 class="text-center mb-4">Recent Publications</h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for paper in site.categories.papers limit:4 %}
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body d-flex align-items-center">
-                    <div class="date-block me-3 p-3 rounded-start bg-success text-white">
-                        <h5 class="mb-0">{{ paper.year }}</h5>
-                    </div>
-                    <div>
-                        <h6 class="card-title mb-1">
-                            <a href="{{ paper.url | relative_url }}" class="text-decoration-none">{{ paper.title }}</a>
-                        </h6>
-                        <p class="card-text small text-muted">
-                            {{ paper.excerpt | strip_html | truncatewords: 30 }}
-                        </p>
-                    </div>
-                </div>
+    <!-- Recent Publications Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="head">
+                <a class="off" href="/papers/">Recent Publications</a>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <div class="row">
+        {% for paper in site.categories.papers limit:3 %}
+        <div class="col-lg-4">
+            <div class="note">
+                <i class="fa-regular fa-file-alt fa-fw"></i>
+                <a class="off" href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+            </div>
+            <div class="smallspacer"></div>
+            <div class="smallnote">
+                Published in {{ paper.year }}
             </div>
         </div>
         {% endfor %}
     </div>
-</div>
 
-<hr class="my-5">
+    <div class="bigspacer"></div>
 
-<div class="container my-5">
-    <h2 class="text-center mb-4">Featured Projects</h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for project in site.categories.projects limit:4 %}
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body d-flex align-items-center">
-                    <div class="date-block me-3 p-3 rounded-start bg-info text-white">
-                        <h5 class="mb-0">{{ project.year }}</h5>
-                    </div>
-                    <div>
-                        <h6 class="card-title mb-1">
-                            <a href="{{ project.url | relative_url }}" class="text-decoration-none">{{ project.title }}</a>
-                        </h6>
-                        <p class="card-text small text-muted">
-                            {{ project.excerpt | strip_html | truncatewords: 30 }}
-                        </p>
-                        <p class="card-text small mt-2">
-                            <i class="fas fa-edit fa-fw me-1"></i> Project ID: {{ project.projectid }}
-                        </p>
-                    </div>
-                </div>
+    <!-- Active Projects Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="head">
+                <a class="off" href="/projects/">Active Projects</a>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <div class="row">
+        {% for project in site.categories.projects limit:3 %}
+        <div class="col-lg-4">
+            <div class="note">
+                <i class="fas fa-flask fa-fw"></i>
+                <a class="off" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            </div>
+            <div class="smallspacer"></div>
+            <div class="smallnote">
+                {{ project.excerpt | strip_html | truncatewords: 15 }}
             </div>
         </div>
         {% endfor %}
     </div>
+
+    <div class="bigspacer"></div>
+
+    <!-- Active Projects Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="head">
+                Misc
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 reduced-gutter">
+            <div class="pad-left">
+                <ul class="list-inline">
+                    <li class="footernav list-inline-item">
+                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/about">about</a>
+                    </li>
+                    <li class="footernav list-inline-item">
+                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/join">join</a>
+                    </li>
+                    <li class="footernav list-inline-item">
+                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/album">album</a>
+                    </li>
+                    <li class="footernav list-inline-item">
+                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
 </div>
-
-<hr class="my-5">
-
-<footer>
-	<div class="container">
-		<ul>
-			<li><a href="/about">about</a></li>
-			<li><a href="/join">join</a></li>
-			<li><a href="/album">album</a></li>
-			<li><a href="/contact">contact</a></li>
-		</ul>
-		<ul>
-			<li><a href="/privacy-policy">Privacy Policy</a></li>
-			<li><a href="/terms-of-service">Terms of Service</a></li>
-		</ul>
-		<div>
-			<span>© <span id="current-year"></span> by <a href="/murat">Murat Kahveci</a>. All rights reserved.</span>
-		</div>
-	</div>
-</footer>
