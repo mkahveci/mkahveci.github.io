@@ -2,7 +2,7 @@
   {
   "publicationDate": "2025-10-16",
   "tradeTitle": "Short Put on MRNA",
-  "summaryJustification": "Given MRNA's elevated implied volatility, this short-term trade collects a premium of $0.16 on a $26.5 strike. This represents a high-probability setup with a substantial annualized return on capital, capitalizing on time decay over one day.",
+  "summaryJustification": "Given MRNA's elevated implied volatility, this short-term trade collects a premium of 0.16 on a 26.5 strike. This represents a high-probability setup with a substantial annualized return on capital, capitalizing on time decay over one day.",
   "expectedReturnDisplay": "220.38% Annualized ROC",
   "ticker": "MRNA",
   "currentPrice": 27.98,
