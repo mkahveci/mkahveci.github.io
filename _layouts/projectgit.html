@@ -20,14 +20,11 @@ categories:
 
 <div class="container my-4">
 
-    <header class="p-4 mb-4 bg-light rounded-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/projectsgit/">GitHub Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ page.slug | replace: '-', ' ' | capitalize }}</li>
-            </ol>
-        </nav>
-    </header>
+{% include breadcrumb-github-projects.html
+collection_url = "/projectsgit/"
+collection_name = "GitHub Projects"
+item_icon = "fab fa-github"
+%}
 
     <div class="row">
         <main class="col-lg-8">

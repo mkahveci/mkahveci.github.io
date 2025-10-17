@@ -4,6 +4,12 @@ layout: default
 
 <div class="container my-4">
 
+    {% include breadcrumb-github-projects.html
+    collection_url = "/papers/"
+    collection_name = "Publications"
+    item_icon = "fas fa-scroll"
+    %}
+
     <header class="p-4 mb-4 bg-light rounded-3">
         <h1 class="display-5">{{ page.title }}</h1>
         <p class="lead">{{ page.authors }}</p>
@@ -20,8 +26,6 @@ layout: default
                 <h2 class="mb-3">Abstract</h2>
                 {{ content }}
             </main>
-            <hr class="my-4">
-            {% include navigation.html category="papers" %}
         </div>
 
         <aside class="col-lg-4">

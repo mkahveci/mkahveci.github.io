@@ -1,0 +1,17 @@
+<header class="mb-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 ps-0">
+            <li class="breadcrumb-item">
+                <a href="{{ include.collection_url }}" class="text-decoration-none text-muted">
+                    <i class="fas fa-folder fa-fw me-1"></i>
+                    {{ include.collection_name }}
+                </a>
+            </li>
+
+            <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">
+                <i class="{{ include.item_icon }} fa-fw me-1"></i>
+                {{ page.title | default: page.slug | replace: '-', ' ' | capitalize }}
+            </li>
+        </ol>
+    </nav>
+</header>

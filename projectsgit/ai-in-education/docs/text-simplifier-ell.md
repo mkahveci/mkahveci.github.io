@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: ell_text_simplifier
+title: text-simplifier-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

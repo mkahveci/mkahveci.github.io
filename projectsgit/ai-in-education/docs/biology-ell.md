@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: biology-ell-template-prompt
+title: biology-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

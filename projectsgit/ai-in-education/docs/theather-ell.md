@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: theather-ell-template-prompt
+title: theather-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

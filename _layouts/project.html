@@ -4,22 +4,20 @@ layout: default
 
 <div class="container my-4">
 
+    {% include breadcrumb-github-projects.html
+    collection_url = "/projects/"
+    collection_name = "Projects"
+    item_icon = "fab fa-github"
+    %}
+
     <header class="p-4 mb-4 bg-light rounded-3">
-        <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-                {% if page.image %}
-                <img src="{{ page.image }}" class="img-fluid rounded-circle shadow" alt="Project Image">
-                {% else %}
-                <i class="fas fa-sitemap fa-6x text-muted"></i>
-                {% endif %}
-            </div>
-            <div class="col-md-9">
-                <h1 class="display-4">{{ page.title }}</h1>
-                {% if page.excerpt %}
-                <p class="lead fst-italic">{{ page.excerpt }}</p>
-                {% endif %}
-            </div>
-        </div>
+        <h1 class="display-5">{{ page.title }}</h1>
+        {% if page.excerpt %}
+        <p class="lead">{{ page.excerpt }}</p>
+        {% endif %}
+        {% if page.date %}
+        <p class="h5 text-muted fst-italic">Published: {{ page.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
     </header>
 
     <div class="row">
@@ -28,11 +26,15 @@ layout: default
             <main class="post-content">
                 {{ content }}
             </main>
-            <hr class="my-4">
-            {% include navigation.html category="projects" %}
         </div>
 
         <aside class="col-lg-4">
+            {% comment %}
+            ----------------------------------------------------------------------------------
+            PROJECT DETAILS SECTION (Copied from project.html)
+            - This section displays project-specific metadata (contributors, duration, etc.).
+            ----------------------------------------------------------------------------------
+            {% endcomment %}
             {% assign details_count = 0 %}
             {% if page.contributors %}{% assign details_count = details_count | plus: 1 %}{% endif %}
             {% if page.duration %}{% assign details_count = details_count | plus: 1 %}{% endif %}
@@ -75,6 +77,37 @@ layout: default
                 {% endif %}
             </div>
             {% endif %}
+
+            {% assign link_count = 0 %}
+            {% if page.presentation_url %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.pdf %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.doi %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+            {% if page.web %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+
+            {% if link_count > 0 %}
+            <div class="mb-4">
+                <h5 class="mb-3">Access & Links</h5>
+                <div class="d-grid gap-2">
+                    {% if page.presentation_url %}
+                    <a href="{{ page.presentation_url | relative_url }}" class="btn btn-primary"><i class="fas fa-desktop fa-fw me-2"></i>View Presentation</a>
+                    {% endif %}
+                    {% if page.pdf %}
+                    <a href="{{ page.pdf | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf fa-fw me-2"></i>Download PDF</a>
+                    {% endif %}
+                    {% if page.doi %}
+                    <a href="https://doi.org/{{ page.doi }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link fa-fw me-2"></i>View at DOI</a>
+                    {% endif %}
+                    {% if page.github %}
+                    <a href="https://github.com/{{ page.github }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-fw me-2"></i>View on GitHub</a>
+                    {% endif %}
+                    {% if page.web %}
+                    <a href="{{ page.web }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe fa-fw me-2"></i>Project Website</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
         </aside>
     </div>
 </div>
