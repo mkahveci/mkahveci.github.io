@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: spanish-ell-template-prompt
+title: spanish-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

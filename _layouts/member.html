@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="container my-4">
+
+    {% include breadcrumb-github-projects.html
+    collection_url = "/team/"
+    collection_name = "Team"
+    item_icon = "fas fa-users"
+    %}
+
     <div class="row">
 
         <div class="col-lg-8">
@@ -89,10 +96,5 @@ layout: default
 
     </div>
 </div>
-
-<hr class="my-4">
-
-{% include navigation.html category="team" %}
-
 </div>
 

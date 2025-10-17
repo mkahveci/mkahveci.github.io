@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: ela-ell-template-prompt
+title: ela-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: socratic_chemistry_tutor
+title: socratic-chemistry-tutor
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

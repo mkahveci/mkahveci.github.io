@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="container my-4">
+
+    {% include breadcrumb-github-projects.html
+    collection_url = "/blog/"
+    collection_name = "Blog"
+    item_icon = "fas fa-pencil-alt"
+    %}
+
     <div class="row">
         <div class="col-lg-8 mx-auto">
 
@@ -40,11 +47,6 @@ layout: default
             <article class="post-content mt-4">
                 {{ content }}
             </article>
-
-            <hr class="my-4">
-
-            {% include navigation.html category="blog" %}
-
         </div>
     </div>
 </div>

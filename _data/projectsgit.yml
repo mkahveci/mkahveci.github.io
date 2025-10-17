@@ -1,43 +1,4 @@
 ---
-- repo: mkahveci/qma
-  title: qma
-  owner: mkahveci
-  description: Quantitative Market Analysis (QMA) is an open-source project for logging
-    and analyzing options trading strategies. It uses a Jekyll front-end and a simple
-    JSON data file to track market data. Designed for educational purposes, it provides
-    a lightweight, self-hosted solution.
-  url: "/projectsgit/qma/"
-  contributors:
-  - login: mkahveci
-    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
-    url: https://github.com/mkahveci
-  commits:
-  - date: 2025-10-14 20:09:39.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/94cc5c85eec3e771e56413b11a24064c5869f982
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 19:36:56.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/70c902c2afd0da0d1c99684199260ff67a99a52e
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 19:34:22.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/67fb1dd516706b291302d1bc4946685057ad484c
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 16:52:54.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/3cef0b9fe989bc40b57fe941bfe8b3fb24cdaaea
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-07 01:28:20.000000000 Z
-    message: Update the card display datails and add the trade management rules.
-    url: https://github.com/mkahveci/qma/commit/34583c8f38af21c7891e6fbb378e89ce9cc3cc53
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  readme_only: true
 - repo: mkahveci/ai-in-education
   title: ai-in-education
   owner: mkahveci
@@ -51,6 +12,26 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-17 02:16:21.000000000 Z
+    message: update
+    url: https://github.com/mkahveci/ai-in-education/commit/1919bcd6674effe2c0375e2a6c05289b6bb0787c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-17 02:10:47.000000000 Z
+    message: update
+    url: https://github.com/mkahveci/ai-in-education/commit/4b719719739695f614d84cb1857ca402050057cc
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-17 02:09:13.000000000 Z
+    message: update
+    url: https://github.com/mkahveci/ai-in-education/commit/116709fea03e5c2c9d95a95ff8bb236a7ad448fb
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-17 01:37:13.000000000 Z
+    message: update
+    url: https://github.com/mkahveci/ai-in-education/commit/4958921ac5b21341ea972e30661c6a47adcc04d4
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-09-30 11:03:15.000000000 Z
     message: |-
       Feat: Implement and document new ELL Content Modification Templates
@@ -61,24 +42,43 @@
     url: https://github.com/mkahveci/ai-in-education/commit/3a81b645c2f460a41661051f668a2a0bf4a20eee
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-09-29 01:09:59.000000000 Z
-    message: 'Update: Physics ELL Content Modification Template'
-    url: https://github.com/mkahveci/ai-in-education/commit/aba32cb50a077e9f75ed3eb2b689449e39090110
+  readme_only: true
+- repo: mkahveci/qma
+  title: qma
+  owner: mkahveci
+  description: Quantitative Market Analysis (QMA) is an open-source project for logging
+    and analyzing options trading strategies. It uses a Jekyll front-end and a simple
+    JSON data file to track market data. Designed for educational purposes, it provides
+    a lightweight, self-hosted solution.
+  url: "/projectsgit/qma/"
+  contributors:
+  - login: mkahveci
+    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
+    url: https://github.com/mkahveci
+  commits:
+  - date: 2025-10-17 02:03:54.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/a6c0ff8ef6a52cf64c1dcad642713865da5558c5
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-09-29 01:05:03.000000000 Z
-    message: 'Update: Physics ELL Content Modification Template'
-    url: https://github.com/mkahveci/ai-in-education/commit/c5cbf8bf1fab90f75e161beb98b1105b9da68107
+  - date: 2025-10-17 01:47:44.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/d8276258ea0241428303747521835563403e920f
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-09-28 17:59:57.000000000 Z
-    message: README content update
-    url: https://github.com/mkahveci/ai-in-education/commit/d625ba9503fdf58221ff3ce907931a9c3c12d4c4
+  - date: 2025-10-14 20:09:39.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/94cc5c85eec3e771e56413b11a24064c5869f982
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-09-28 17:51:39.000000000 Z
-    message: README content update
-    url: https://github.com/mkahveci/ai-in-education/commit/08a8165b7971c577942922fc8716001f3e8732a3
+  - date: 2025-10-14 19:36:56.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/70c902c2afd0da0d1c99684199260ff67a99a52e
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-14 19:34:22.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/67fb1dd516706b291302d1bc4946685057ad484c
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true

@@ -4,6 +4,12 @@ layout: default
 
 <div class="container my-5">
 
+    {% include breadcrumb-github-projects.html
+    collection_url = "/"
+    collection_name = "Home"
+    item_icon = "fas fa-layer-group"
+    %}
+
 	<header class="text-center mb-5">
 		<h1 class="display-4">{{ page.title | escape }}</h1>
 	</header>

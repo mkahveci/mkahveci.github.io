@@ -1,0 +1,21 @@
+# _data/lt_tracker_links.yml
+
+- title: Google Sheets System
+  description: The LT Tracker (5 SC) system spreadsheet.
+  url: "https://drive.google.com/drive/folders/1r7pcGp9IsdO7wH9yUSly1KBFQtkN_YD6?usp=sharing" # Replace # with the actual Google Sheets link
+  icon: fas fa-file-excel
+
+- title: User Guides & Manuals
+  description: Documentation for setup and data entry.
+  url: "/pab" # Replace # with the actual user guide link
+  icon: fas fa-book-open
+
+- title: Data Analysis Examples
+  description: Insights and reporting dashboards.
+  url: "/jpq" # Replace # with the actual data analysis link
+  icon: fas fa-chart-line
+
+- title: Workshop/Seminar Materials
+  description: Presentation and training resources.
+  url: "/ltt" # Replace # with the actual workshop link
+  icon: fas fa-chalkboard-teacher

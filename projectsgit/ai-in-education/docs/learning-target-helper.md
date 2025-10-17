@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: lt-helper-prompt
+title: learning-target-helper
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext

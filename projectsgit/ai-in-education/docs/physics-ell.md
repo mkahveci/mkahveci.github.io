@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: physics-ell-template-prompt
+title: physics-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /:path/:basename:output_ext
