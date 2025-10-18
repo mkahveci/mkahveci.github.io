@@ -12,6 +12,21 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-18 13:14:08.000000000 Z
+    message: |-
+      Feat: Implement and document new ELL Content Modification Templates
+
+      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
+
+      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
+    url: https://github.com/mkahveci/ai-in-education/commit/d69a2ea8d9ff3aca7144ddfefe1bcdf796c53a88
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-17 02:34:52.000000000 Z
+    message: update
+    url: https://github.com/mkahveci/ai-in-education/commit/82b4518c81671a918e2125f9d321a404d5b50809
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-17 02:16:21.000000000 Z
     message: update
     url: https://github.com/mkahveci/ai-in-education/commit/1919bcd6674effe2c0375e2a6c05289b6bb0787c
@@ -25,21 +40,6 @@
   - date: 2025-10-17 02:09:13.000000000 Z
     message: update
     url: https://github.com/mkahveci/ai-in-education/commit/116709fea03e5c2c9d95a95ff8bb236a7ad448fb
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-17 01:37:13.000000000 Z
-    message: update
-    url: https://github.com/mkahveci/ai-in-education/commit/4958921ac5b21341ea972e30661c6a47adcc04d4
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-09-30 11:03:15.000000000 Z
-    message: |-
-      Feat: Implement and document new ELL Content Modification Templates
-
-      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
-
-      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
-    url: https://github.com/mkahveci/ai-in-education/commit/3a81b645c2f460a41661051f668a2a0bf4a20eee
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
