@@ -1,4 +1,43 @@
 ---
+- repo: mkahveci/qma
+  title: qma
+  owner: mkahveci
+  description: Quantitative Market Analysis (QMA) is an open-source project for logging
+    and analyzing options trading strategies. It uses a Jekyll front-end and a simple
+    JSON data file to track market data. Designed for educational purposes, it provides
+    a lightweight, self-hosted solution.
+  url: "/projectsgit/qma/"
+  contributors:
+  - login: mkahveci
+    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
+    url: https://github.com/mkahveci
+  commits:
+  - date: 2025-10-19 22:09:22.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/3b30b8148f1932015330b21d869e062ad4dcda8c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-19 20:29:01.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/2e474e784cc504bb70a8bcc82035dc0841c949cb
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-19 20:23:50.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/ad2bb212489d88b46208f36c1d6446b1f4904bba
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-19 20:09:04.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/ef7a592da4945c1b8d084b4220b3f76f147aee37
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-19 20:03:51.000000000 Z
+    message: Update
+    url: https://github.com/mkahveci/qma/commit/0da5f73f39ca9f0927e1217453a75e3c6c377eac
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  readme_only: true
 - repo: mkahveci/ai-in-education
   title: ai-in-education
   owner: mkahveci
@@ -40,45 +79,6 @@
   - date: 2025-10-17 02:09:13.000000000 Z
     message: update
     url: https://github.com/mkahveci/ai-in-education/commit/116709fea03e5c2c9d95a95ff8bb236a7ad448fb
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  readme_only: true
-- repo: mkahveci/qma
-  title: qma
-  owner: mkahveci
-  description: Quantitative Market Analysis (QMA) is an open-source project for logging
-    and analyzing options trading strategies. It uses a Jekyll front-end and a simple
-    JSON data file to track market data. Designed for educational purposes, it provides
-    a lightweight, self-hosted solution.
-  url: "/projectsgit/qma/"
-  contributors:
-  - login: mkahveci
-    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
-    url: https://github.com/mkahveci
-  commits:
-  - date: 2025-10-17 02:03:54.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/a6c0ff8ef6a52cf64c1dcad642713865da5558c5
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-17 01:47:44.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/d8276258ea0241428303747521835563403e920f
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 20:09:39.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/94cc5c85eec3e771e56413b11a24064c5869f982
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 19:36:56.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/70c902c2afd0da0d1c99684199260ff67a99a52e
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-14 19:34:22.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/67fb1dd516706b291302d1bc4946685057ad484c
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
