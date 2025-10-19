@@ -4,21 +4,28 @@ layout: default
 
 <div class="container my-5">
 
-    {% include breadcrumb-github-projects.html
-    collection_url = "/"
-    collection_name = "Home"
-    item_icon = "fas fa-layer-group"
-    %}
-
-	<header class="text-center mb-5">
-		<h1 class="display-4">{{ page.title | escape }}</h1>
-	</header>
-
-	<hr>
+	{% comment %}
+	NOTE: Assuming breadcrumb-github-projects.html is meant to be a general breadcrumb include.
+	It is included as is.
+	{% endcomment %}
+	{% include breadcrumb-github-projects.html
+	collection_url = "/"
+	collection_name = "Home"
+	item_icon = "fas fa-layer-group"
+	%}
 
 	<div class="row">
 		<div class="col-lg-8 mx-auto">
-			<main>
+
+			<header class="text-center mb-5">
+				{% comment %} Use display-4, fw-bold for a strong, clean main title {% endcomment %}
+				<h1 class="display-4 fw-bold">{{ page.title | escape }}</h1>
+				<h1 class="mb-4 text-center">{{ page.title | escape }}</h1>
+			</header>
+
+			<hr class="my-4">
+
+			<main class="post-content mt-4">
 				{{ content }}
 			</main>
 		</div>

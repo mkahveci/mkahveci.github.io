@@ -1,60 +1,60 @@
 ---
 layout: default
-title: kahveci group / album
+title: Photo Album
+permalink: /album/
 categories:
 - album
 published: true
 ---
-<!--
-  This page has been updated to use the consistent two-column card layout
-  for better design coherency with the rest of the site.
--->
-<style>
-  .album-card-img {
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
-    object-fit: cover;
-    border-radius: 0.25rem;
-  }
-  .card-title a {
-    color: inherit;
-    text-decoration: none;
-  }
-  .card-title a:hover {
-    text-decoration: underline;
-  }
-</style>
+{% comment %}
+The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
+{% endcomment %}
 
 <div class="container my-5">
-  <div class="text-center mb-5">
-    <h1 class="display-4">Photo Album</h1>
-    <p class="lead text-muted col-lg-8 mx-auto">A curated collection of moments that capture the essence of our work, collaborations, and milestones.</p>
-  </div>
 
-  <hr>
+  {% comment %} --- HEADER SECTION (CONSISTENT ELEGANT STYLE) --- {% endcomment %}
+  <h1 class="mb-4 text-center">Photo Album</h1>
+  <p class="lead text-center text-muted mb-5">
+    A curated collection of moments that capture the essence of our work, collaborations, and milestones.
+  </p>
 
   <div class="row row-cols-1 row-cols-lg-2 g-4 mt-5">
 
     {% for picture in site.categories.album %}
     <div class="col">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex align-items-center">
-          <a href="{{ picture.url }}" class="me-3">
-            <img src="{{ picture.image }}" class="album-card-img" alt="{{ picture.title }}">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body d-flex align-items-center p-3">
+
+          <a href="{{ picture.url | relative_url }}" class="flex-shrink-0 me-4">
+            {% comment %} Use Bootstrap utilities for image sizing and rounding {% endcomment %}
+            <img src="{{ picture.image | relative_url }}" class="img-fluid rounded shadow-sm"
+                 alt="{{ picture.title }}"
+                 style="width: 100px; height: 100px; object-fit: cover;">
           </a>
+
           <div class="flex-grow-1">
-            <h5 class="card-title h6">
-              <a href="{{ picture.url }}">{{ picture.title }}</a>
+            <h5 class="card-title fw-semibold mb-1">
+              <a href="{{ picture.url | relative_url }}" class="text-decoration-none text-dark">{{ picture.title }}</a>
             </h5>
+
             <p class="card-text small text-muted">
               {% if picture.author %}
-              by <a class="text-muted" href="{% for member in site.categories.team %}{% if member.title == picture.author %}{{ member.url }}{% endif %}{% endfor %}">{{ picture.author }}</a>
+              by
+              {% for member in site.categories.team %}
+              {% if member.title == picture.author %}
+              <a href="{{ member.url | relative_url }}" class="text-decoration-none text-info">{{ picture.author }}</a>
+              {% endif %}
+              {% endfor %}
               <br>
               {% endif %}
-              {{ picture.date | date_to_string }}
+              <i class="far fa-calendar-alt fa-fw me-1"></i> {{ picture.date | date_to_string }}
             </p>
           </div>
+        </div>
+
+        {% comment %} Optional Footer for consistency (shows date as a badge) {% endcomment %}
+        <div class="card-footer bg-white border-top-0 pt-0">
+          <a href="{{ picture.url | relative_url }}" class="btn btn-sm btn-outline-info">View Album</a>
         </div>
       </div>
     </div>

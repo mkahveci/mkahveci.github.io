@@ -55,7 +55,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav nav-pills ms-auto">
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'papers' %}active{% endif %}" href="/papers/">publications</a>
+						<a class="nav-link {% if page.categories.first == 'papers' %}active{% endif %}" href="/publications/">publications</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link {% if page.categories.first == 'projects' %}active{% endif %}" href="/projects/">projects</a>
@@ -89,50 +89,83 @@
 <script src="/js/darkmode.js"></script>
 
 <script>
-	// Dynamic Year Script
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+	'use strict';
 
-// Modern Scroll to Top Script
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    // ==========================================================
+    // 1. GLOBAL FUNCTION: MUST BE DEFINED GLOBALLY FOR onclick=""
+    // ==========================================================
+    /** * Finds the associated BibTeX data and copies it to the clipboard.
+     * This function is deliberately global to be called by onclick="copyBibtex(this)".
+     * @param {HTMLElement} buttonElement - The button element that was clicked.
+     */
+    function copyBibtex(buttonElement) {
+        // Find the immediate parent container for the link buttons (.mt-2 div)
+        const container = buttonElement.closest('.mt-2');
+        // Find the hidden data block within that container
+        const bibtexDataElement = container.querySelector('.bibtex-data');
 
-if (scrollToTopBtn) {
-  // Show or hide the button based on scroll position
-  window.addEventListener('scroll', () => {
-    const isScrolled = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
-    scrollToTopBtn.classList.toggle('show', isScrolled);
-  });
+        if (!bibtexDataElement) {
+            console.error("BibTeX data element not found for this card. Check the .bibtex-data div structure.");
+            return;
+        }
 
-  // Smoothly scroll to the top when the button is clicked
-  scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
+        const bibtexText = bibtexDataElement.textContent.trim();
 
-    // BibTeX copy function for publications page
-    function copyBibtex(button) {
-        const bibtexContainer = button.nextElementSibling;
-        const bibtexText = bibtexContainer.textContent.trim();
-
+        // Use the modern Clipboard API
         navigator.clipboard.writeText(bibtexText).then(() => {
-            const originalIcon = button.innerHTML;
-            button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
-            const originalClasses = Array.from(button.classList);
+            // --- UI Feedback Logic ---
+            const originalHTML = buttonElement.innerHTML;
 
-            button.classList.remove('btn-outline-secondary');
-            button.classList.add('btn-success');
+            buttonElement.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
+            buttonElement.classList.remove('btn-outline-secondary');
+            buttonElement.classList.add('btn-success');
 
+            // Reset button after 2 seconds
             setTimeout(() => {
-                button.innerHTML = originalIcon;
-                button.classList.remove('btn-success');
-                originalClasses.forEach(c => button.classList.add(c));
+                buttonElement.innerHTML = originalHTML;
+                buttonElement.classList.remove('btn-success');
+                buttonElement.classList.add('btn-outline-secondary');
             }, 2000);
         }).catch(err => {
             console.error('Failed to copy text: ', err);
+            alert('Failed to copy BibTeX. Please check console for details.');
         });
     }
+
+
+    // ==========================================================
+    // 2. DOM UTILITIES (Wrapped in DOMContentLoaded)
+    // ==========================================================
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // --- Dynamic Year Update ---
+        const currentYearElement = document.getElementById('current-year');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+
+        // --- Scroll to Top Button Initialization ---
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (scrollToTopBtn) {
+            initScrollToTop(scrollToTopBtn);
+        }
+
+        // Note: We no longer need to attach listeners via querySelectorAll because the
+        // HTML is already calling the global copyBibtex(this) function via onclick.
+    });
+
+    // UTILITY FUNCTION (Outside DOMContentLoaded, but not needed to be global)
+    function initScrollToTop(button) {
+        window.addEventListener('scroll', () => {
+            const isScrolled = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+            button.classList.toggle('show', isScrolled);
+        });
+
+        button.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
 </script>
 
 </body>

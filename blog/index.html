@@ -1,24 +1,28 @@
 ---
 layout: default
-title: kahveci group / blog
+title: Blog Timeline
+permalink: /blog/
 categories:
 - blog
 category: blog
 ---
 <div class="container my-5">
-    <div class="text-center mb-5">
-        <h1 class="display-4">Blog</h1>
-    </div>
+
+    {% comment %} --- HEADER SECTION (CONSISTENT ELEGANT STYLE) --- {% endcomment %}
+    <h1 class="mb-4 text-center">Research Blog</h1>
+    <p class="lead text-center text-muted mb-5">
+        A journal of functional logs, insights, and small ideas related to chemistry education research, technology, and professional development.
+    </p>
 
     <ul class="nav nav-pills justify-content-center mb-5">
         <li class="nav-item">
             <a class="nav-link active" href="/blog/" aria-current="page">
-                <i class="fa fa-refresh fa-fw"></i> Timeline
+                <i class="fa fa-refresh fa-fw me-1"></i> Timeline
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/blog/tags/">
-                <i class="fa fa-tags fa-fw"></i> Tags
+                <i class="fa fa-tags fa-fw me-1"></i> Tags
             </a>
         </li>
     </ul>
@@ -26,19 +30,28 @@ category: blog
     <div class="row row-cols-1 row-cols-lg-2 g-4">
         {% for post in site.categories.blog %}
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body d-flex">
-                    <div class="date-block me-3 bg-primary text-white">
-                        <span class="day">{{ post.date | date: "%-d" }}</span>
-                        <span class="month">{{ post.date | date: "%b" }}</span>
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body d-flex p-3">
+
+                    {% comment %} --- DATE BLOCK (CONSISTENT STYLE) --- {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                        <h2 class="display-6 fw-bold text-info mb-0 lh-1">{{ post.date | date: "%-d" }}</h2>
+                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ post.date | date: "%b %Y" }}</small>
                     </div>
+                    {% comment %} --- END DATE BLOCK --- {% endcomment %}
+
                     <div class="flex-grow-1">
-                        <h6 class="card-title mb-1">
-                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        <h6 class="card-title fw-semibold mb-1">
+                            <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>
                         </h6>
                         <p class="card-text small text-muted">
                             {% if post.author %}
-                            by <a href="{% for member in site.categories.team %}{% if member.title == post.author %}{{ member.url }}{% endif %}{% endfor %}" class="text-decoration-none">{{ post.author }}</a>
+                            by
+                            {% for member in site.categories.team %}
+                            {% if member.name == post.author %}
+                            <a href="{{ member.url | relative_url }}" class="text-decoration-none">{{ post.author }}</a>
+                            {% endif %}
+                            {% endfor %}
                             {% endif %}
                         </p>
                         <p class="card-text small mt-2">
@@ -46,11 +59,12 @@ category: blog
                         </p>
                     </div>
                 </div>
+
                 {% if post.tags %}
-                <div class="card-footer bg-white pt-0">
+                <div class="card-footer bg-white border-top-0 pt-0">
                     <div class="d-flex flex-wrap card-footer-inset" style="gap: 0.5rem;">
                         {% for tag in post.tags %}
-                        <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-light text-dark text-decoration-none">#{{ tag }}</a>
+                        <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-light text-dark border text-decoration-none">#{{ tag }}</a>
                         {% endfor %}
                     </div>
                 </div>

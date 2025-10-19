@@ -1,108 +1,224 @@
-{%- include counter.html -%}
+{% comment %}
+NOTE: This script performs all filtering and counting locally to ensure stability.
+It relies on page.name and page.publication_filter being available.
+{% endcomment %}
 
-{% if projectcount > 0 %}
-<h3 class="mt-5">{% if page.name == 'Murat Kahveci' %}Projects{% else %}Projects{% endif %}</h3>
-<div class="list-group">
-    {% for project in site.categories.projects %}
-    {% if project.contributors contains searchstring %}
-    <a href="{{ project.url }}" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 h6">{{ project.title }}</h5>
-            <small class="text-muted">{{ project.duration }}</small>
-        </div>
-    </a>
-    {% endif %}
-    {% endfor %}
-</div>
+{% comment %} --- 0. DYNAMIC VARIABLE ASSIGNMENT AND COUNTING (CRASH-PROOFED) --- {% endcomment %}
+
+{% assign full_name = page.name | strip %}
+{% assign member_id_search = full_name | downcase | strip %}
+
+{% comment %} Generate initials search term (used if publication_filter is missing) {% endcomment %}
+{% assign name_parts = page.name | split: ' ' %}
+{% assign lastname = name_parts | last %}
+{% assign firstinitial = name_parts | first | slice: 0 %}
+{% assign generated_initials = lastname | append: ' ' | append: firstinitial | downcase | strip %}
+
+{% comment %} Use publication_filter if it exists, otherwise fall back to generated initials {% endcomment %}
+{% assign initials_search_term = page.publication_filter | downcase | strip | default: generated_initials %}
+
+
+{% comment %} --- INITIALIZE FILTER ARRAYS --- {% endcomment %}
+{% assign all_publications = site.data.publications | sort: 'year' | reverse %}
+{% assign all_talks = site.categories.talks | where: "talk","true" %}
+
+{% assign member_publications = "" | split: "," %}
+{% assign projects_by_member = "" | split: "," %}
+{% assign courses_by_member = "" | split: "," %}
+{% assign posts_by_member = "" | split: "," %}
+{% assign talks_by_member = "" | split: "," %}
+
+{% comment %} Check if PI for Course/Post filtering {% endcomment %}
+{% assign is_pi = false %}
+{% if page.name == 'Murat Kahveci' %}
+{% assign is_pi = true %}
 {% endif %}
 
-{% if count > 0 %}
-{% if booksq == true %}
-<h4 class="mt-4">Books</h4>
-<div class="list-group">
-    {% for book in books %}
-    {% if book.authors contains searchstring %}
-    <div class="list-group-item">
-        <p class="mb-1 small">{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+{% comment %} --- FILTERING LOGIC --- {% endcomment %}
+
+{% for item in all_publications %}
+{% assign pub_authors_lowercased = item.authors | downcase | strip %}
+{% if pub_authors_lowercased contains initials_search_term %}
+{% assign member_publications = member_publications | push: item %}
+{% endif %}
+{% endfor %}
+
+{% for item in site.categories.projects %}
+{% assign contributors_lowercased = item.contributors | downcase | strip %}
+{% if contributors_lowercased contains initials_search_term %}
+{% assign projects_by_member = projects_by_member | push: item %}
+{% endif %}
+{% endfor %}
+
+{% comment %} Course/Post filtering is STRICT (== member_id_search) {% endcomment %}
+{% for item in site.categories.courses %}
+{% assign instructor_lowercased = item.instructor | downcase | strip %}
+{% if instructor_lowercased == member_id_search %}
+{% assign courses_by_member = courses_by_member | push: item %}
+{% endif %}
+{% endfor %}
+
+{% for item in site.posts %}
+{% assign post_author_lowercased = item.author | downcase | strip %}
+{% if post_author_lowercased contains member_id_search %}
+{% assign posts_by_member = posts_by_member | push: item %}
+{% endif %}
+{% endfor %}
+
+{% for item in all_talks %}
+{% assign author_lowercased = item.author | downcase | strip %}
+{% if author_lowercased contains member_id_search %}
+{% assign talks_by_member = talks_by_member | push: item %}
+{% endif %}
+{% endfor %}
+
+
+{% comment %} --- SET FINAL COUNTS AND DISPLAY VARIABLES --- {% endcomment %}
+{% assign total_pub_count = member_publications.size %}
+{% assign projectcount = projects_by_member.size %}
+{% assign talkcount = talks_by_member.size %}
+
+{% if is_pi %}
+{% assign courses_to_display = site.categories.courses | sort: 'date' | reverse %}
+{% assign posts_to_display = site.posts | sort: 'date' | reverse %}
+{% else %}
+{% assign courses_to_display = courses_by_member %}
+{% assign posts_to_display = posts_by_member %}
+{% endif %}
+
+{% assign coursecount_display = courses_to_display.size %}
+{% assign postcount_display = posts_to_display.size %}
+
+<div class="container-fluid p-0">
+
+    {% comment %} --- PROJECTS SECTION --- {% endcomment %}
+    {% if projectcount > 0 %}
+    <h3 class="mt-5">Projects ({{ projectcount }})</h3>
+    <div class="row row-cols-1 g-3">
+        {% for project in projects_by_member %}
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0">
+                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-dark">
+                    <div class="card-body d-flex p-3">
+                        <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                            <i class="fas fa-diagram-project fa-2x text-info mb-1"></i>
+                            <small class="text-secondary fw-bold d-block mt-1">{{ project.year }}</small>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title fw-semibold mb-1">{{ project.title }}</h5>
+                            <p class="small text-muted mb-1">{{ project.position }}</p>
+                            <div class="mt-2 d-flex justify-content-between align-items-center">
+                                <small class="text-info fst-italic">{{ project.duration }}</small>
+                                <span class="btn btn-sm btn-outline-primary disabled" style="pointer-events: none;">Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
     </div>
     {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
 
-{% if jpapersq == true %}
-<h4 class="mt-4">Journal Articles</h4>
-<div class="list-group">
-    {% for jpaper in journals %}
-    {% if jpaper.authors contains searchstring %}
-    <div class="list-group-item">
-        <p class="mb-1 small">{{ jpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% comment %} --- PUBLICATIONS SECTION --- {% endcomment %}
+    {% if total_pub_count > 0 %}
+    <h3 class="mt-5">Publications ({{ total_pub_count }})</h3>
+
+    <div class="row row-cols-1 row-cols-lg-1 g-4">
+        {% for publication in member_publications %}
+        {% include publication_card.html pub=publication index=forloop.index total_count=total_pub_count site=site %}
+        {% endfor %}
     </div>
     {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
 
-{% if cpapersq == true %}
-<h4 class="mt-4">Conference Papers</h4>
-<div class="list-group">
-    {% for cpaper in conferences %}
-    {% if cpaper.authors contains searchstring %}
-    <div class="list-group-item">
-        <p class="mb-1 small">{{ cpaper.ref | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% comment %} --- TALKS SECTION --- {% endcomment %}
+    {% if talkcount > 0 %}
+    <h3 class="mt-5">Talks ({{ talkcount }})</h3>
+    <div class="list-group">
+        {% for talk in talks_by_member %}
+        <a href="{{ talk.permalink | relative_url }}" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 h6">{{ talk.title }}</h5>
+                <small class="text-muted">{{ talk.year }}</small>
+            </div>
+            <p class="mb-1 small text-muted">{{ talk.event }}, {{ talk.venue }}</p>
+        </a>
+        {% endfor %}
     </div>
     {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
-{% endif %}
 
-{% if talkq == true %}
-<h3 class="mt-5">Talks</h3>
-<div class="list-group">
-    {% for talk in talks %}
-    {% if talk.author contains searchstring %}
-    <a href="{{ talk.permalink }}" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 h6">{{ talk.title }}</h5>
-            <small class="text-muted">{{ talk.year }}</small>
-        </div>
-        <p class="mb-1 small text-muted">{{ talk.event }}, {{ talk.venue }}</p>
-    </a>
-    {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
+    {% comment %} --- COURSES SECTION --- {% endcomment %}
+    {% if coursecount_display > 0 %}
+    <h3 class="mt-5">Courses ({{ coursecount_display }})</h3>
+    <div class="row row-cols-1 g-3">
+        {% for course in courses_to_display %}
+        {% assign course_year_short = course.date | date: "%y" %}
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0">
+                <a href="{{ course.url | relative_url }}" class="text-decoration-none text-dark">
+                    <div class="card-body d-flex p-3">
+                        <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                            <h2 class="display-6 fw-bold text-success mb-0 lh-1">{{ course_year_short }}</h2>
+                            <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title fw-semibold mb-1">{{ course.code }}: {{ course.title }}</h5>
+                            <p class="small text-muted mb-2">{{ course.institution }}</p>
 
-{% if coursecount > 0 %}
-<h3 class="mt-5">Courses</h3>
-<div class="list-group">
-    {% for course in site.categories.courses %}
-    {% if course.instructor and page.name == course.instructor %}
-    <a href="{{ course.url }}" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 h6">{{ course.code }}: {{ course.title }}</h5>
-            <small class="text-muted">{{ course.semester }}</small>
-        </div>
-        <p class="mb-1 small text-muted">Taught at {{ course.institution }}</p>
-    </a>
-    {% endif %}
-    {% endfor %}
-</div>
-{% endif %}
+                            {% assign semester_string = course.semester | replace: "and", "," %}
+                            {% assign terms = semester_string | split: "," %}
 
-{% if postcount > 0 %}
-<h3 class="mt-5">Posts</h3>
-<div class="list-group">
-    {% for post in site.categories.blog %}
-    {% if post.author and post.author == page.name %}
-    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1 h6">{{ post.title }}</h5>
-            <small class="text-muted">{{ post.date | date_to_string }}</small>
+                            <div class="d-flex flex-wrap mb-2" style="gap: 0.25rem;">
+                                {% for term in terms %}
+                                {% assign clean_term = term | strip %}
+                                {% unless clean_term == "" %}
+                                <span class="badge text-bg-light text-dark border">{{ clean_term }}</span>
+                                {% endunless %}
+                                {% endfor %}
+                            </div>
+
+                            <div class="mt-2">
+                                {% if course.syllabus %}
+                                <span class="btn btn-sm btn-outline-dark disabled" style="pointer-events: none;">Syllabus</span>
+                                {% endif %}
+                                <span class="btn btn-sm btn-outline-info disabled" style="pointer-events: none;">Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-    </a>
+        {% endfor %}
+    </div>
     {% endif %}
-    {% endfor %}
+
+    {% comment %} --- POSTS SECTION --- {% endcomment %}
+    {% if postcount_display > 0 %}
+    <h3 class="mt-5">Blog Posts ({{ postcount_display }})</h3>
+    <div class="row row-cols-1 g-3">
+        {% for post in posts_to_display %}
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0">
+                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
+                    <div class="card-body d-flex p-3">
+                        <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                            <h2 class="display-6 fw-bold text-info mb-0 lh-1">{{ post.date | date: "%d" }}</h2>
+                            <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ post.date | date: "%b %Y" }}</small>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title fw-semibold mb-1">{{ post.title }}</h5>
+                            <p class="small text-muted mb-1">Posted: {{ post.date | date_to_string }}</p>
+                            <div class="mt-2">
+                                <span class="btn btn-sm btn-outline-info disabled" style="pointer-events: none;">Read Post</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
 </div>
-{% endif %}

@@ -5,127 +5,116 @@ categories:
 - home
 ---
 
-<!-- Introduction Section -->
 <div class="container my-5">
-    <div class="row align-items-center mb-5">
+    <div class="row align-items-center mb-5 border-bottom pb-4">
         <div class="col-md-2 text-center text-md-start">
-            <img src="/images/logo.svg" alt="Kahveci Nexus Logo" style="width: 120px; height: 120px; border-radius: 50%;">
+            <img src="/images/logo.svg" alt="Kahveci Nexus Logo" class="img-fluid rounded-circle shadow-sm" style="width: 120px; height: 120px;">
         </div>
         <div class="col-md-10">
             <h1 class="display-5 fw-bold">Kahveci Nexus</h1>
-            <p class="lead text-muted">A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.</p>
+            <p class="lead text-muted mb-0">A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.</p>
         </div>
     </div>
 
-    <!-- Recent Posts Section -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="head">
-                <a class="off" href="/blog/">Recent Posts</a>
+    {% comment %} --- RECENT POSTS SECTION --- {% endcomment %}
+    <div class="mb-5">
+        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+            <a href="/blog/" class="text-decoration-none text-dark">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
+        </h2>
+        <div class="row g-3">
+            {% for post in site.categories.blog limit:3 %}
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100 border-0 p-2">
+                    <div class="card-body p-0 d-flex align-items-start">
+                        <i class="fa-regular fa-comment fa-fw fa-lg me-3 text-primary mt-1"></i>
+                        <div>
+                            <h6 class="mb-1 fw-medium">
+                                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">{{ post.title }}</a>
+                            </h6>
+                            <small class="text-muted d-block mt-1">
+                                Posted {{ post.date | date: "%-d %b %Y" }}
+                                {% if post.author %}
+                                by {{ post.author }}
+                                {% endif %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="spacer"></div>
+            {% endfor %}
         </div>
-    </div>
-    <div class="row">
-        {% for post in site.categories.blog limit:3 %}
-        <div class="col-lg-4">
-            <div class="note">
-                <i class="fa-regular fa-comment fa-fw"></i>
-                <a class="off" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </div>
-            <div class="smallspacer"></div>
-            <div class="smallnote">
-                Posted {{ post.date | date: "%-d %b %Y" }}
-                {% if post.author %}
-                by <a class="off" href="{% for member in site.categories.team %}{% if member.title == post.author %}{{ member.url }}{% endif %}{% endfor %}">{{ post.author }}</a>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
     </div>
 
-    <div class="bigspacer"></div>
-
-    <!-- Recent Publications Section -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="head">
-                <a class="off" href="/papers/">Recent Publications</a>
+    {% comment %} --- RECENT PUBLICATIONS SECTION --- {% endcomment %}
+    <div class="mb-5">
+        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+            <a href="/publications/" class="text-decoration-none text-dark">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
+        </h2>
+        <div class="row g-3">
+            {% comment %} CORRECTED: Using site.data.publications for publications from YAML file {% endcomment %}
+            {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
+            {% for publication in sorted_publications limit:3 %}
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100 border-0 p-2">
+                    <div class="card-body p-0 d-flex align-items-start">
+                        <i class="fa-regular fa-file-alt fa-fw fa-lg me-3 text-success mt-1"></i>
+                        <div>
+                            <h6 class="mb-1 fw-medium">
+                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-dark">{{ publication.title | truncatewords: 8 }}</a>
+                            </h6>
+                            <small class="text-muted d-block mt-1">
+                                {{ publication.year }} in {{ publication.source_info | truncatewords: 4 }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="spacer"></div>
+            {% endfor %}
         </div>
     </div>
-    <div class="row">
-        {% for paper in site.categories.papers limit:3 %}
-        <div class="col-lg-4">
-            <div class="note">
-                <i class="fa-regular fa-file-alt fa-fw"></i>
-                <a class="off" href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+
+    {% comment %} --- ACTIVE PROJECTS SECTION --- {% endcomment %}
+    <div class="mb-5">
+        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+            <a href="/projects/" class="text-decoration-none text-dark">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
+        </h2>
+        <div class="row g-3">
+            {% for project in site.categories.projects limit:3 %}
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100 border-0 p-2">
+                    <div class="card-body p-0 d-flex align-items-start">
+                        <i class="fas fa-flask fa-fw fa-lg me-3 text-info mt-1"></i>
+                        <div>
+                            <h6 class="mb-1 fw-medium">
+                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-dark">{{ project.title }}</a>
+                            </h6>
+                            <small class="text-muted d-block mt-1">
+                                {{ project.excerpt | strip_html | truncatewords: 8 }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="smallspacer"></div>
-            <div class="smallnote">
-                Published in {{ paper.year }}
-            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
-    <div class="bigspacer"></div>
-
-    <!-- Active Projects Section -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="head">
-                <a class="off" href="/projects/">Active Projects</a>
-            </div>
-            <div class="spacer"></div>
-        </div>
-    </div>
-    <div class="row">
-        {% for project in site.categories.projects limit:3 %}
-        <div class="col-lg-4">
-            <div class="note">
-                <i class="fas fa-flask fa-fw"></i>
-                <a class="off" href="{{ project.url | relative_url }}">{{ project.title }}</a>
-            </div>
-            <div class="smallspacer"></div>
-            <div class="smallnote">
-                {{ project.excerpt | strip_html | truncatewords: 15 }}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    <div class="bigspacer"></div>
-
-    <!-- Active Projects Section -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="head">
-                Misc
-            </div>
-            <div class="spacer"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 reduced-gutter">
-            <div class="pad-left">
-                <ul class="list-inline">
-                    <li class="footernav list-inline-item">
-                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/about">about</a>
-                    </li>
-                    <li class="footernav list-inline-item">
-                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/join">join</a>
-                    </li>
-                    <li class="footernav list-inline-item">
-                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/album">album</a>
-                    </li>
-                    <li class="footernav list-inline-item">
-                        <i class="fa-solid fa-angle-right"></i> <a class="off" href="/contact">contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="spacer"></div>
-        </div>
+    {% comment %} --- MISC LINKS SECTION --- {% endcomment %}
+    <div class="my-4">
+        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">Misc</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item me-4">
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/about" class="text-decoration-none text-secondary">About</a>
+            </li>
+            <li class="list-inline-item me-4">
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/join" class="text-decoration-none text-secondary">Join</a>
+            </li>
+            <li class="list-inline-item me-4">
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/album" class="text-decoration-none text-secondary">Album</a>
+            </li>
+            <li class="list-inline-item me-4">
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/contact" class="text-decoration-none text-secondary">Contact</a>
+            </li>
+        </ul>
     </div>
 </div>

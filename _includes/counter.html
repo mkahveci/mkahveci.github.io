@@ -1,65 +1,20 @@
-      {% assign count = 0 %}
-      {% assign projectcount = 0 %}
-      {% assign postcount = 0 %}
-      {% assign coursecount = 0 %}
-      {% assign talkcount = 0 %}
+{% comment %}
+SIMPLIFIED COUNTER: ONLY SETS THE BASE VARIABLES.
+(All filtering and counting will happen in member-contributions.html)
+{% endcomment %}
 
-      {% assign lastname = page.name | split: ' ' | last %}
-      {% assign firstinitial = page.name | split: ' ' | first | slice: 0 %}
-      {% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+{% assign count = 0 %}
+{% assign projectcount = 0 %}
+{% assign postcount = 0 %}
+{% assign coursecount = 0 %}
+{% assign talkcount = 0 %}
 
-      {% assign books = site.categories.papers | where: "book","true" %}
+{% comment %} --- BASE SEARCH VARIABLE (Full name, lowercase, stripped) --- {% endcomment %}
+{% assign full_name = page.name | strip %}
+{% assign member_id_search = full_name | downcase | strip %}
 
-      {% for book in books %}
-      {% if book.authors contains searchstring %}
-      {% assign booksq = true %}
-      {% assign count = count | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% for course in site.categories.courses %}
-      {% if course.instructor == page.name %}
-      {% assign coursecount = coursecount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign journals = site.categories.papers | where: "journal","true" %}
-
-      {% for jpaper in journals %}
-      {% if jpaper.authors contains searchstring %}
-      {% assign jpapersq = true %}
-      {% assign count = count | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign conferences = site.categories.papers | where: "conference","true" %}
-
-      {% for cpaper in conferences %}
-      {% if cpaper.authors contains searchstring %}
-      {% assign cpapersq = true %}
-      {% assign count = count | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% for project in site.categories.projects %}
-      {% if project.contributors contains searchstring %}
-      {% assign projectcount = projectcount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
-
-      {% for post in site.posts %}
-      {% if post.author %}
-      {% if page.name == post.author %}
-      {% assign postcount = postcount | plus: 1 %}
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign talks = site.categories.talks | where: "talk","true" %}
-
-      {% for talk in talks %}
-      {% if talk.author contains searchstring %}
-      {% assign talkq = true %}
-      {% assign talkcount = talkcount | plus: 1 %}
-      {% endif %}
-      {% endfor %}
+{% comment %} --- SECONDARY SEARCH VARIABLE (Lastname Initial) --- {% endcomment %}
+{% assign name_parts = page.name | split: ' ' %}
+{% assign lastname = name_parts | last %}
+{% assign firstinitial = name_parts | first | slice: 0 %}
+{% assign initials_search_term = lastname | append: ' ' | append: firstinitial | downcase | strip %}

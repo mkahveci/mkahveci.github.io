@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container my-4">
+<div class="container my-5">
 
     {% include breadcrumb-github-projects.html
     collection_url = "/team/"
@@ -12,89 +12,96 @@ layout: default
 
     <div class="row">
 
+        {% comment %} --- MAIN CONTENT COLUMN --- {% endcomment %}
         <div class="col-lg-8">
             <header class="mb-4">
-                <h1 class="display-4">{{ page.title }}</h1>
-                <p class="lead text-muted">{{ page.position }}</p>
+                {% comment %} Title is kept large for primary heading {% endcomment %}
+                <h1 class="display-4 fw-bold mb-1">{{ page.title }}</h1>
+                <p class="lead text-muted mb-1">{{ page.position }}</p>
                 {% if page.active %}
-                <p class="text-muted fst-italic">{{ page.active }}</p>
+                <p class="text-secondary fst-italic small">{{ page.active }}</p>
                 {% endif %}
             </header>
-            <hr>
+            <hr class="my-4">
             <div class="post-content mt-4">
                 {{ content }}
             </div>
         </div>
 
+        {% comment %} --- SIDEBAR (ASIDE) COLUMN --- {% endcomment %}
         <aside class="col-lg-4">
-            <!-- Profile Image Section -->
-            <div class="sticky-top mb-4" style="top: 2rem;">
+            {% comment %} Adding shadow-lg to the sticky block for visual prominence {% endcomment %}
+            <div class="sticky-top p-3 mb-4 card shadow-lg border-0" style="top: 2rem;">
+
                 {% if page.image %}
-                <img src="{{ page.image }}" class="img-fluid rounded-circle shadow-sm mb-3" alt="{{ page.title }}" style="object-fit: cover; width: 150px; height: 150px; margin-left: auto; margin-right: auto; display: block;">
+                <img src="{{ page.image | relative_url }}" class="img-fluid rounded-circle shadow-md mb-3 mx-auto" alt="{{ page.title }}" style="object-fit: cover; width: 120px; height: 120px; display: block;">
                 {% else %}
                 <div class="text-center mb-3">
                     <i class="fas fa-user-circle fa-6x text-muted"></i>
                 </div>
                 {% endif %}
+
                 <div class="text-center">
-                    <h5 class="h6">{{ page.title }}</h5>
-                    <p class="text-muted small">{{ page.position }}</p>
+                    {% comment %} Reduced font size in sticky sidebar to h5 for visual balance {% endcomment %}
+                    <h5 class="h5 fw-semibold mb-0">{{ page.title }}</h5>
+                    <p class="text-muted small mb-0">{{ page.position }}</p>
                 </div>
-            </div>
 
-            {% assign link_count = 0 %}
-            {% if page.cv %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.email %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.website %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.googlescholar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.linkedin %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.twitter %}{% assign link_count = link_count | plus: 1 %}{% endif %}
-            {% if page.calendar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% assign link_count = 0 %}
+                {% if page.cv %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.email %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.website %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.googlescholar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.linkedin %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.twitter %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+                {% if page.calendar %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 
-            {% if link_count > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-3">Contact & Links</h5>
-                {% if page.cv %}
-                <p class="mb-2"><a href="{{ page.cv }}" class="text-dark text-decoration-none"><i class="fas fa-file-alt fa-fw me-2 text-muted"></i>View CV</a></p>
+                {% if link_count > 0 %}
+                <hr class="my-3">
+                <h6 class="mb-3 fw-semibold">Contact & Links</h6>
+                <div class="small">
+                    {% if page.cv %}
+                    <p class="mb-1"><a href="{{ page.cv | relative_url }}" class="text-dark text-decoration-none"><i class="fas fa-file-alt fa-fw me-2 text-primary"></i>View CV</a></p>
+                    {% endif %}
+                    {% if page.email %}
+                    {% assign emailarray = page.email | split: '@' %}
+                    <p class="mb-1"><a href="mailto:{{ page.email }}" class="text-dark text-decoration-none"><i class="fas fa-envelope fa-fw me-2 text-primary"></i>{{ emailarray.first }}@...</a></p>
+                    {% endif %}
+                    {% if page.website %}
+                    <p class="mb-1"><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-globe fa-fw me-2 text-primary"></i>Personal Website</a></p>
+                    {% endif %}
+                    {% if page.googlescholar %}
+                    <p class="mb-1"><a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-book fa-fw me-2 text-primary"></i>Google Scholar</a></p>
+                    {% endif %}
+                    {% if page.linkedin %}
+                    <p class="mb-1"><a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-linkedin fa-fw me-2 text-primary"></i>LinkedIn</a></p>
+                    {% endif %}
+                    {% if page.github %}
+                    <p class="mb-1"><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github-alt fa-fw me-2 text-primary"></i>GitHub</a></p>
+                    {% endif %}
+                    {% if page.twitter %}
+                    <p class="mb-1"><a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-twitter fa-fw me-2 text-primary"></i>Twitter</a></p>
+                    {% endif %}
+                    {% if page.calendar %}
+                    <p class="mb-1"><a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-calendar-alt fa-fw me-2 text-primary"></i>Schedule a Meeting</a></p>
+                    {% endif %}
+                </div>
                 {% endif %}
-                {% if page.email %}
-                {% assign emailarray = page.email | split: '@' %}
-                <p class="mb-2"><a href="mailto:{{ page.email }}" class="text-dark text-decoration-none"><i class="fas fa-envelope fa-fw me-2 text-muted"></i>{{ emailarray.first }}@...</a></p>
-                {% endif %}
-                {% if page.website %}
-                <p class="mb-2"><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-globe fa-fw me-2 text-muted"></i>Personal Website</a></p>
-                {% endif %}
-                {% if page.googlescholar %}
-                <p class="mb-2"><a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-book fa-fw me-2 text-muted"></i>Google Scholar</a></p>
-                {% endif %}
-                {% if page.linkedin %}
-                <p class="mb-2"><a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-linkedin fa-fw me-2 text-muted"></i>LinkedIn</a></p>
-                {% endif %}
-                {% if page.github %}
-                <p class="mb-2"><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github-alt fa-fw me-2 text-muted"></i>GitHub</a></p>
-                {% endif %}
-                {% if page.twitter %}
-                <p class="mb-2"><a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-twitter fa-fw me-2 text-muted"></i>Twitter</a></p>
-                {% endif %}
-                {% if page.calendar %}
-                <p class="mb-2"><a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-calendar-alt fa-fw me-2 text-muted"></i>Schedule a Meeting</a></p>
+
+                {% if page.title == "Murat Kahveci" %}
+                <hr class="my-3">
+                <h6 class="mb-3 fw-semibold">Discover More</h6>
+                <div class="small">
+                    <p class="mb-1"><a href="/about" class="text-dark text-decoration-none"><i class="fas fa-info-circle fa-fw me-2 text-primary"></i>About</a></p>
+                    <p class="mb-1"><a href="/courses" class="text-dark text-decoration-none"><i class="fas fa-graduation-cap fa-fw me-2 text-primary"></i>Courses</a></p>
+                    <p class="mb-1"><a href="/reference" class="text-dark text-decoration-none"><i class="fas fa-file-signature fa-fw me-2 text-primary"></i>Request a Letter</a></p>
+                    <p class="mb-1"><a href="/contact" class="text-dark text-decoration-none"><i class="fas fa-address-book fa-fw me-2 text-primary"></i>Contact</a></p>
+                    <p class="mb-1"><a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-external-link-alt fa-fw me-2 text-primary"></i>iLearnChem.icu</a></p>
+                </div>
                 {% endif %}
             </div>
-            {% endif %}
-
-            {% if page.title == "Murat Kahveci" %}
-            <div class="mb-4">
-                <h5 class="mb-3">Discover More</h5>
-                <p class="mb-2"><a href="/about" class="text-dark text-decoration-none">About</a></p>
-                <p class="mb-2"><a href="/courses" class="text-dark text-decoration-none">Courses</a></p>
-                <p class="mb-2"><a href="/reference" class="text-dark text-decoration-none">Request a Letter</a></p>
-                <p class="mb-2"><a href="/contact" class="text-dark text-decoration-none">Contact</a></p>
-                <p class="mb-2"><a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">iLearnChem.icu <i class="fas fa-external-link-alt fa-xs"></i></a></p>
-            </div>
-            {% endif %}
+        </aside>
 
     </div>
 </div>
-</div>
-

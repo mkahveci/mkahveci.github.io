@@ -1,0 +1,129 @@
+{% comment %}
+NOTE: This include assumes the following variables are passed by the parent loop:
+- include.pub: The current publication object.
+- include.index: The current 1-based index of the publication in the list (e.g., 1, 2, 3...)
+- include.total_count: The total number of publications in the list.
+- include.site: The Jekyll site object (required for project linking).
+{% endcomment %}
+
+<div class="col">
+    <div class="card shadow-sm h-100 border-0">
+        <div class="card-body d-flex p-3">
+
+            {% comment %} START: REVISED COUNTDOWN BLOCK (Prominent Year, Single Countdown Number) {% endcomment %}
+            <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                {% assign countdown_number = include.total_count | minus: include.index | plus: 1 %}
+                <h2 class="display-6 fw-bold text-primary mb-0 lh-1">{{ include.pub.year | slice: 2, 2 }}</h2>
+                <small class="text-danger fw-bold text-uppercase d-block mt-n1">#{{ countdown_number }}</small>
+            </div>
+            {% comment %} END: REVISED COUNTDOWN BLOCK {% endcomment %}
+
+
+            <div class="flex-grow-1">
+
+                {% comment %} NEW LOCATION: Publication Type Badge (Centered and above title) {% endcomment %}
+                {% if include.pub.type %}
+                {% assign pub_type = include.pub.type | downcase %}
+                {% case pub_type %}{% when "article" %}{% assign badge_class = "text-bg-success" %}{% when "inproceedings", "conference" %}{% assign badge_class = "text-bg-info" %}{% when "book", "inbook" %}{% assign badge_class = "text-bg-warning" %}{% else %}{% assign badge_class = "text-bg-secondary" %}{% endcase %}
+                <span class="badge {{ badge_class }} text-white d-block mx-auto mb-2" style="max-width: fit-content;">{{ pub_type | capitalize }}</span>
+                {% endif %}
+
+                {% comment %} Title Block {% endcomment %}
+                <div class="d-flex align-items-center mb-1">
+                    <h5 class="card-title fw-semibold mb-0 me-2">{{ include.pub.title }}</h5>
+                </div>
+
+                <p class="small text-muted mb-1">{{ include.pub.authors }}<br><em class="fst-italic">{{ include.pub.source_info }}</em></p>
+
+                <div class="mt-2">
+                    {% comment %} START: BUTTONS WRAPPER WITH FLEX AND GAP {% endcomment %}
+                    <div class="d-flex flex-wrap" style="gap: 0.5rem;">
+
+                        {% comment %} Abstract Button {% endcomment %}
+                        {% assign modal_id = include.pub.id | append: "-abstract-modal" %}
+                        {% if include.pub.abstract | strip | size > 0 %}
+                        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#{{ modal_id }}">
+                            <i class="fas fa-file-alt me-1"></i> Abstract
+                        </button>
+                        {% endif %}
+
+                        {% comment %} Internal Link {% endcomment %}
+                        {% if include.pub.internal_link | strip | size > 0 %}
+                        <a href="{{ include.pub.internal_link | relative_url }}" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-link me-1"></i> Details
+                        </a>
+                        {% endif %}
+
+                        {% comment %} PDF {% endcomment %}
+                        {% if include.pub.pdf | strip | size > 0 %}
+                        <a href="{{ include.pub.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                            <i class="fas fa-file-pdf me-1"></i> PDF
+                        </a>
+                        {% endif %}
+
+                        {% comment %} Slides {% endcomment %}
+                        {% if include.pub.slide | strip | size > 0 %}
+                        {% assign slide_link = include.pub.slide %}
+                        {% if slide_link contains '/' and slide_link | slice: 0, 1 != 'h' %}{% assign slide_url = slide_link | relative_url %}{% else %}{% assign slide_url = slide_link %}{% endif %}
+                        <a href="{{ slide_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">
+                            <i class="fas fa-chalkboard-teacher me-1"></i> Slides
+                        </a>
+                        {% endif %}
+
+                        {% comment %} DOI {% endcomment %}
+                        {% if include.pub.doi | strip | size > 0 %}
+                        <a href="https://doi.org/{{ include.pub.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-external-link-alt me-1"></i> DOI
+                        </a>
+                        {% endif %}
+
+                        {% comment %} PROJECT BUTTON - CONDITIONAL LOGIC APPLIED HERE {% endcomment %}
+                        {% if include.pub.projectid %}
+                        {% comment %} Only display if we are NOT on the project page itself {% endcomment %}
+                        {% if page.projectid != include.pub.projectid %}
+                        {% assign linked_project = site.documents | where: "projectid", include.pub.projectid | first %}
+                        {% if linked_project %}
+                        <a href="{{ linked_project.url | relative_url }}" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-diagram-project fa-fw me-1"></i> Project
+                        </a>
+                        {% endif %}
+                        {% endif %}
+                        {% endif %}
+
+                        {% comment %} COPY BIBTEX BUTTON {% endcomment %}
+                        <button onclick="copyBibtex(this)" class="btn btn-sm btn-outline-secondary" title="Copy BibTeX citation">
+                            <i class="fas fa-quote-right fa-fw me-1"></i> Copy
+                        </button>
+
+                        {% comment %} Hidden BibTeX Data Block (UNCHANGED) {% endcomment %}
+                        <div class="bibtex-data" style="display: none;">{% capture bibtex_entry %}@{{ include.pub.type | downcase }}{{ '{' }}{{ include.pub.id | strip_newlines | strip }}{{ ',' }}author = { {{ include.pub.authors | strip_newlines | strip }} },title = { {{ include.pub.title | strip_newlines | strip }} }, {% if include.pub.source_info %}{% if include.pub.type contains "Article" %}journal = { {{ include.pub.source_info | strip_newlines | strip }} },{% elsif include.pub.type contains "Inproceedings" or include.pub.type contains "Conference" %}booktitle = { {{ include.pub.source_info | strip_newlines | strip }} },{% elsif include.pub.type contains "Book" or include.pub.type contains "Chapter" %}publisher = { {{ include.pub.source_info | strip_newlines | strip }} },{% endif %}{% endif %} year = { {{ include.pub.year }} }{% if include.pub.doi %}, doi = { {{ include.pub.doi | strip_newlines | strip }} }{% endif %}{% if include.pub.abstract %}, abstract = { {{ include.pub.abstract | strip_html | truncate: 500 | strip_newlines | strip }} }{% endif %}}{% endcapture %}{{ bibtex_entry | strip_newlines | strip }}</div>
+
+                    </div>
+                    {% comment %} END: BUTTONS WRAPPER {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% comment %} MODAL STRUCTURE (UNCHANGED) {% endcomment %}
+    {% if include.pub.abstract | strip | size > 0 %}
+    <div class="modal fade" id="{{ modal_id }}" tabindex="-1" aria-labelledby="{{ modal_id }}-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="{{ modal_id }}-label">{{ include.pub.title }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-muted">{{ include.pub.authors }} ({{ include.pub.year }})</p>
+                    <hr>
+                    <p>{{ include.pub.abstract | markdownify }}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
