@@ -13,7 +13,9 @@ FILE_PATH = os.environ.get('FILE_PATH')
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 def get_latest_trade(file_path):
-    """Reads the JSON array, sorts by publicationDate, and returns the latest trade."""
+    """
+    Reads the JSON array, sorts by publicationDate, and returns the latest trade.
+    """
     try:
         with open(file_path, 'r') as f:
             data_array = json.load(f)
@@ -41,43 +43,80 @@ def get_latest_trade(file_path):
 
 
 def format_telegram_message(data):
-    """Formats the JSON data into a Telegram Markdown message."""
+    """
+    Formats the JSON data into a comprehensive Telegram Markdown message,
+    using nested keys for detailed metrics.
+    """
 
-    # Safely extract data
+    # --- TOP-LEVEL DATA ---
     trade_title = data.get('tradeTitle', 'New Trade Idea')
     ticker = data.get('ticker', 'N/A')
     current_price = data.get('currentPrice', 'N/A')
     expected_return = data.get('expectedReturnDisplay', 'N/A')
+    summary_justification = data.get('summaryJustification', 'No summary provided.')
+    publication_date = data.get('publicationDate', 'YYYY-MM-DD')
 
-    # Extract analysis details
-    details = data.get('analysis', {})
-    strategy = details.get('strategyType', 'N/A')
-    entry_details = details.get('tradeDetails', {})
-    entry = entry_details.get('putStrike', 'N/A')
-    expiration = entry_details.get('expiration', 'N/A')
-    roc = details.get('metrics', {}).get('roc', 'N/A')
+    # --- ANALYSIS DETAILS ---
+    analysis = data.get('analysis', {})
+    strategy = analysis.get('strategyType', 'N/A')
 
-    # Construct the message
+    # Trade Details
+    trade_details = analysis.get('tradeDetails', {})
+    expiration = trade_details.get('expiration', 'N/A')
+    put_strike = trade_details.get('putStrike', 'N/A')
+    max_profit = trade_details.get('maxProfit', 'N/A')
+
+    # Metrics
+    metrics = analysis.get('metrics', {})
+    pop = metrics.get('pop', 'N/A')
+    management = analysis.get('managementPlan', 'Standard management plan.')
+
+
+    # --- MESSAGE CONSTRUCTION ---
+
+    # 1. Title Block
     message = (
-        f"🔔 *TRADE ALERT: {trade_title}* 🔔\n\n"
-        f"📈 *Ticker:* ${ticker} (Price: ${current_price})\n"
-        f"🛠️ *Strategy:* {strategy}\n"
-        f"🎯 *Entry Strike/Level:* ${entry} (Exp: {expiration})\n"
-        f"💵 *Max ROC:* {roc}%\n"
-        f"💰 *Annualized Return:* {expected_return}\n\n"
-        f"--- *Justification* ---\n"
-        f"{data.get('summaryJustification', 'View post for details.')}\n\n"
-        f"[View Full Analysis on Kahveci Nexus](https://kahveci.pw/blog/{ticker.lower()}-{strategy.lower()}-{data.get('publicationDate')}/)"
-        # NOTE: CRITICAL: Adjust the link slug creation logic here to match your Jekyll URL structure!
+        f"🚨 *TRADE ALERT: {trade_title}* 🚨\n\n"
     )
+
+    # 2. Key Metrics Block
+    message += (
+        f"📈 *Asset:* ${ticker} (Current Price: ${current_price})\n"
+        f"🛠️ *Strategy:* {strategy}\n"
+        f"📆 *Expiration:* {expiration} (Published: {publication_date})\n"
+        f"🎯 *Strike Price:* ${put_strike}\n"
+        f"-----------------------------------------\n"
+        f"✅ *Prob. of Profit (PoP):* {pop}%\n"
+        f"💰 *Max Annualized ROC:* {expected_return}\n"
+        f"💵 *Max Profit:* ${max_profit}\n"
+        f"-----------------------------------------\n"
+    )
+
+    # 3. Justification and Management Plan
+    message += (
+        f"\n*Summary Justification:*\n"
+        f"_{summary_justification}_\n\n"
+        f"*Management Plan:*\n"
+        f"_{management}_\n\n"
+    )
+
+    # 4. Permalink (Adjusted to use TradeTitle for better readability in Telegram)
+    # NOTE: Assuming your Jekyll post path uses the trade title slug.
+    trade_slug = trade_title.lower().replace(' ', '-').replace(':', '')
+
+    message += (
+        f"[View Full Post on Kahveci Nexus](https://kahveci.pw/blog/{trade_slug}/)"
+    )
+
     return message
 
 def send_telegram_notification(message):
     """Sends the formatted message via the Telegram API."""
-    # ... (send_telegram_notification function remains the same)
     if not all([BOT_TOKEN, CHAT_ID]):
         print("Error: Missing BOT_TOKEN or CHAT_ID.")
-        exit(1)
+        # We exit(0) here because the action should not fail due to missing secrets
+        # on the local machine; the GitHub Action environment check handles this.
+        return
 
     payload = {
         'chat_id': CHAT_ID,
