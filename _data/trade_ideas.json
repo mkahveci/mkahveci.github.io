@@ -29,35 +29,6 @@
     }
   },
   {
-    "publicationDate": "2025-10-19",
-    "tradeTitle": "Short Put on ARKK",
-    "summaryJustification": "ARKK is trading in a high Implied Volatility environment (IV Rank 94%), making the short put strategy highly favorable for premium collection. The low delta strike provides a high probability of profit (POP) while yielding an exceptional 260.71% annualized return on capital for this short-duration, high-probability trade.",
-    "expectedReturnDisplay": "260.71% Annualized ROC",
-    "ticker": "ARKK",
-    "currentPrice": 86.86,
-    "ivRank": 94,
-    "earningsDate": "N/A (ETF)",
-    "analysis": {
-      "thesis": "The market is pricing in a large expected move (high IV), which inflates option premiums. By selling the 0.23 delta put, we are collecting rich premium while setting the short strike significantly below the current market price, giving a wide buffer for the stock to move down before the trade is challenged. This is a high-probability entry for the first step of a 'Wheel' strategy.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-10-24",
-        "dte": 5,
-        "putStrike": 84.00,
-        "putPremium": 0.30,
-        "maxProfit": 30.00
-      },
-      "metrics": {
-        "roc": 0.36,
-        "annualizedRoc": 26.28,
-        "pop": 77.0,
-        "buyingPowerEffect": 8400.00,
-        "dailyProfitPotential": 6.00
-      },
-      "managementPlan": "Close the trade at 80% of max profit, or roll the position to the next expiration cycle and/or down to a lower strike if the stock price challenges the short strike (delta approaches 0.50). If assigned, the management plan shifts to selling covered calls (The Wheel)."
-    }
-  },
-  {
   "publicationDate": "2025-10-17",
   "tradeTitle": "Short Put on BMNR",
   "summaryJustification": "This trade involves selling a short put on BMNR to capitalize on its high implied volatility. The selected 45 strike offers an approximate 80% probability of profit while generating a significant annualized return on capital.",

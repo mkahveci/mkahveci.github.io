@@ -5,7 +5,6 @@ name: Telegram Notification on New Trade
 on:
   push:
     paths:
-      # CRITICAL: Monitor the single JSON file
       - '_data/trade_ideas.json'
 
 jobs:
@@ -25,10 +24,11 @@ jobs:
 
       - name: Send Telegram Notification
         env:
+          # CRITICAL FIX: Ensure secrets are referenced correctly without extra prefixes
+          # IMPORTANT: The Chat ID secret must be defined in your GitHub settings (it is the number -1003194962725)
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.secrets.TELEGRAM_CHAT_ID }}
-          # Pass the static file path directly
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FILE_PATH: '_data/trade_ideas.json'
         run: |
-          # Execute the Python script, which handles reading the array and finding the latest trade.
+          # Execute the Python script
           python .github/scripts/send_telegram_notification.py
