@@ -1,0 +1,1480 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- id: wan2025aiintegrity
+  title: "Artificial Intelligence and Academic Integrity: Legislate or Educate?"
+  authors: "Wan G, Grassi M, Golden T, Barnes T, Kahveci M, Wan X, Colacchio B"
+  year: 2025
+  type: "Article"
+  projectid: aita
+
+  # --- SOURCE INFORMATION ---
+  source_info: "J. Sci. Pub., 56(2): 320-376."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi: 10.3138/jsp-2024-1118
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This **participatory action research** (PAR) study, conducted at a Midwestern U.S. university, aimed to bridge the gap between **generative artificial intelligence (GenAI) tools and academic integrity**. Using mixed methods, researchers analyzed participants’ **perceptions and strategies** for using GenAI tools while upholding academic integrity.
+    
+    The study highlighted the institution’s strengths, weaknesses, opportunities, and challenges in grappling with the issue, pointing to the need for the **critical use of GenAI tools** and clear guidelines. The findings contribute to the field by providing strategies to **empower educators and learners** in navigating the ethical landscape of GenAI in education.
+
+
+- id: wan2024aiintegrity
+  title: "Artificial Intelligence and Academic Integrity: Legislate or Educate?"
+  authors: "Wan G, Kahveci M, Colacchio B, Grassi M, Golden T, Wan X"
+  year: 2024
+  type: "Inproceedings"
+  projectid: aita
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at PUPP International Summit. Gatineau-Ottawa, Canada. May 21 - 24, 2024."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This proposal investigates the impact of **generative AI tools** (such as ChatGPT) on **academic integrity** in a U.S. college setting. The authors adopt a **participatory action research** approach, involving various university stakeholders in data collection and analysis.
+    
+    The study aims to explore the benefits and challenges of using AI tools for teaching and learning, and to suggest ways to promote the ethical and appropriate use of information. It also examines current academic integrity policies and practices in the context of AI development. The proposal is informed by a critical media/information literacy perspective and contributes to the literature on academic integrity in the age of AI.
+
+
+- id: kahveci2018affective
+  title: "Exploring science teachers' affective states: Pedagogical discontentment, self-efficacy, intentions to reform, and their relationships"
+  authors: "Kahveci A, Kahveci M, Mansour N, Alarfaj MM"
+  year: 2018
+  type: "Article"
+  projectid: pdse
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Res. Sci. Educ., 48(6): 1359–1386."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi: 10.1007/s11165-016-9606-y
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study explored the constructs of **pedagogical discontentment**, **science teaching self-efficacy**, and **intentions to reform**, and their correlations, among science teachers. It aimed to provide empirical evidence for a previously proposed theoretical model by focusing on a new context: **Saudi Arabia** (N=994 teachers).
+    
+    The Arabic versions of the Science Teachers' Pedagogical Discontentment scale, the Science Teaching Efficacy Beliefs Instrument, and the Intentions to Reform Science Teaching scale were developed and rigorously cross-culturally validated.
+    
+    Findings suggest that teacher characteristics (age, professional development attendance) affect these affective states. Notably, teachers who attended a relatively higher number of professional development programs exhibited a **lower level of intentions to reform**, raising concerns about the efficacy of current programs. Furthermore, some findings regarding the interrelationships among the three constructs challenge and expand the previously proposed theoretical model.
+
+
+- id: kahveci2018oxygen
+  title: "Measuring conceptual understanding on oxygen binding and delivery in a biochemistry course"
+  authors: "Kahveci M, Jin L"
+  year: 2018
+  type: "Inproceedings"
+  projectid: aabe
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at Biennial Conference on Chemical Education (BCCE). Notre Dame, IN, USA. July 29 – August 2, 2018."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide: wdg
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study presents the development stages and validity evidence of a new **two-tier diagnostic test** designed to conceptually assess **oxygen binding to hemoglobin and its delivery** from the lung to the tissues in a biochemistry course.
+    
+    The validity of the instrument relies on the input of **seven expert opinions** from biochemistry professors across the United States. The final instrument consists of **11 questions**. Analysis of preliminary data (expected to be about 30 undergraduates) will provide evidence on students’ conceptual patterns regarding this difficult-to-learn biochemistry topic. In conclusion, this study contributes a new validated instrument and preliminary results to chemistry education research.
+
+
+- id: kahveci2017oxygen
+  title: "Alternative assessment method in biochemistry education: Graphical representation of oxygen binding and delivery"
+  authors: "Kahveci M, Jin L"
+  year: 2017
+  type: "Inproceedings"
+  projectid: aabe
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at DePaul University Teaching and Learning Conference. Workshop. Chicago, IL, USA. May 5, 2017."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide: sgk
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This workshop focuses on measuring students’ **conceptual understanding** in an undergraduate biochemistry course at DePaul University, specifically targeting the complex topic of **oxygen binding to hemoglobin and its delivery** from the lung to tissues. This topic requires students to use complex **graphical representations and mathematical knowledge** to explain physiological phenomena.
+    
+    The proposed assessment method aims to move beyond rote learning by using a **two-tier diagnostic instrument** that assesses not only the correct answer but also the student's **reasoning** behind it. The content includes interpreting how oxygen pressure determines hemoglobin saturation, mapping saturation levels, understanding the correlation between tissue acidity/$\text{CO}_2$ level and oxygen release (the **Bohr effect**), and adapting to high altitude.
+    
+    The workshop introduces the development stages of this two-tier instrument and includes a group activity where attendees design their own diagnostic test.
+
+
+- id: kahveci2017d2l
+  title: "Integrating learning objects into D2L to promote student learning of difficult scientific concepts"
+  authors: "Kahveci M, French T"
+  year: 2017
+  type: "Inproceedings"
+  projectid: ilod2l
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at DePaul University Teaching and Learning Conference. Chicago, IL, USA. May 5, 2017."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide: pez
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This presentation introduces a valid and reliable method for developing and deploying **Sharable Content Object Reference Model (SCORM) learning objects** within the **D2L** Learning Management System at DePaul University. The pedagogical method relies on **Inquiry-Based Science Education (IBSE)** principles and is applied in an upper-level course, **Quantum Chemistry (CHE302)**.
+    
+    The session focuses on a learning object developed for the **"particle in a box" (PIAB)** model. This virtual experiment is designed to be completed *before* the corresponding laboratory (CHE303), where students analyze dye molecules using the PIAB model. The learning object guides students through predictive questions and simulations, helping them connect the idealized model with real-life experimental data.
+    
+    The system facilitates self-learning by walking students through the activity, grading responses, and providing feedback as they progress. The presentation aims to familiarize attendees with the underlying educational framework, the design process, and the student experience of using these learning objects to foster connections between the classroom and the laboratory.
+
+
+- id: kahveci2016ecrice
+  title: "Advancing chemistry education research: Dual-Process Theories, Learning Objects and Student Response Systems (Keynote Lecture)"
+  authors: "Kahveci M"
+  year: 2016
+  type: "Inproceedings"
+  projectid: iiice
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the European Conference on Research in Chemical Education (ECRICE), Barcelona. September 7 – 10, 2016."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This Keynote Lecture addresses the advancement of chemistry education research (CER), emphasizing the need for cooperation between chemistry experts (Group I) and chemistry educators (Group II) to address falling student interest in science. The speaker proposes two key directions for innovative CER:
+    
+    1.  **Affective Domain:** Adapt **Dual-Process Theories** (explaining behavior through impulsive/reflective systems) into CER. This shifts the focus toward **affective aspects** (emotions, attitudes) and away from purely cognitive ones, leading to more "human-friendly" teaching and research practices.
+    
+    2.  **Educational Technology for Rich Interactivity:** Utilize cost-effective technology to create rich interactivity and self-study environments. Two emerging applications from recent undergraduate projects are proposed:
+        * **Learning Objects (LO):** Supports high student interaction and engagement with adaptive feedback for self-study.
+        * **Student Response Systems (SRS):** Supports rich in-class interaction, ideal for face-to-face instruction and developing two-tier instruments for conceptual research.
+    
+    The talk highlights that both LO and SRS projects require collaboration between Group I and Group II experts, effectively merging their expertise to advance innovative chemistry education projects.
+
+
+- id: kahveci2016stpd
+  title: "Construct validity and reliability measures of scores from the Science Teachers’ Pedagogical Discontentment (STPD) scale"
+  authors: "Kahveci M, Kahveci A, Mansour N, Alarfaj MM"
+  year: 2016
+  type: "Article"
+  projectid: pdse
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Eurasia J. Math. Sci. Technol. Educ., 12(3): 549-558."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf: /pdfs/papers/eurasia_2015_1417a.pdf
+  doi: 10.12973/eurasia.2015.1417a
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The Science Teachers’ Pedagogical Discontentment (STPD) scale, originally developed in the U.S. and culturally rooted, had not been conclusively established internationally. This study aims to extend the **construct validity and reliability measures of STPD scores to the international scale**, specifically examining its measurement integrity in the **Saudi Arabia context**.
+    
+    The scale items were slightly tailored to align with country-based regulations, reforms, and the everyday practices of local science teachers. The report investigates **item-based descriptive statistics**, the measure’s **factor structure** (as compared to previous validity studies), and **factor-based reliability scores**. This research confirms the appropriateness of the instrument to measure teacher attitudes toward **inquiry-based science education** initiatives in diverse international settings.
+
+
+- id: kahveci2015ibsedual
+  title: "An account for Inquiry-Based Science Education through Dual-Process Theories"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at European Science Education Research Association (ESERA). Helsinki, Finland. August 31 - September 4, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This presentation addresses whether current **Inquiry-Based Science Education (IBSE)** indicators adequately account for the complexities of human learning, arguing that educational systems often remain primarily focused on the **cognitive domain**, neglecting the **affective domain**.
+    
+    By applying the **reflective-impulsive determinants of social behavior** (Strack and Deutsch, 2004), the paper infers that **affective constructs** (emotions and attitudes) automatically interfere with learner behavior. It argues that these *impulsive* constructs operate in parallel with *reflective*, reasoning-based processes.
+    
+    The conclusion is that affective constructs should be a much greater focus of educational objectives. It recommends future research explicitly explore the connection between these constructs and IBSE indicators to improve student learning, providing a deeper understanding of student behavior influenced by both rational thought and forces outside of rational control.
+
+
+- id: kahveci2015ibseec
+  title: "A project idea on working definition of IBSE in Europe through artificial intelligence"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the European Commission and SiS.net. (Brokerage Event). Brussels, Belgium. May 22, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This project idea, presented at a European Commission Brokerage Event, proposes to define a **working framework for Inquiry-Based Science Education (IBSE)** in Europe using **artificial intelligence (AI)**. The primary goal is to establish a shared understanding of IBSE practices among stakeholders (teachers, researchers, policymakers).
+    
+    The proposed project aims to develop an **AI-powered platform** designed to help teachers self-educate on IBSE best practices, which could ultimately lead to **large-scale teacher certification**. The idea was conceived for a Horizon 2020 submission, targeting the objective of making **STEM careers** more attractive to young students and strengthening the relationship between schools and research institutions.
+
+
+- id: kahveci2015ibseai
+  title: "A project idea on working definition of IBSE in Europe through artificial intelligence"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the IOSTE Eurasian Regional Symposium and Brokerage Event Horizon 2020, Istanbul, Turkey. April 24 – 26, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This project idea outlines a proposal for a Horizon 2020 grant to establish a **working definition of Inquiry-Based Science Education (IBSE)** across Europe using **artificial intelligence (AI)**. The project addresses the need to understand the current status of IBSE practices among European teachers, researchers, and policymakers, focusing on actual classroom implementation.
+    
+    The core output would be an **AI-powered platform** designed to help teachers self-educate on IBSE best practices, providing a path for large-scale teacher certification based on shared inquiry methodologies. The project sought partners with prior FP7 IBSE experience and SMEs skilled in developing **adaptive educational software with AI**.
+
+
+- id: kahveci2015stpdvalidity
+  title: "Construct validity and reliability measures of scores from the Science Teachers’ Pedagogical Discontentment (STPD) Scale"
+  authors: "Kahveci M, Kahveci A, Mansour N, Alarfaj MM"
+  year: 2015
+  type: "Inproceedings"
+  projectid: pdse
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching International Conference (NARST). Chicago, IL, USA. April 11 - 14, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The Science Teachers’ Pedagogical Discontentment (STPD) scale, originally developed in the United States, is culturally rooted, limiting its generalizability. This study addresses the need to conclusively establish the **measurement integrity of STPD scores internationally**, specifically within the context of **Saudi Arabia**.
+    
+    The scale items were slightly tailored to suit country-based regulations, reforms, and professional development practices. The report investigates item-based descriptive statistics, the measure’s **factor structure** (as opposed to its former validity studies), and **factor-based reliability scores**. This study thus extends the validity and reliability measures of the instrument to the international scale, confirming its appropriateness to measure teacher attitudes towards **inquiry-based science education** initiatives in diverse settings.
+
+
+- id: kahveci2015affectiveinteractivity
+  title: "Affective factors and instructional interactivity in education"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Association of Private Schools Society in Turkey. Kaya Plazzo Hotel, Antalya, Turkey. January 28 - 31, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This seminar explores the critical relationship between **affective and cognitive domains** in education, framed within **Dual-Process Theories**. It argues that education's prioritization of the cognitive domain (e.g., objective problem-solving) often fails to support students with low **motivation or interest**, who require specific instructional support. This issue is compounded by a significant **gender gap**, with female students less frequently choosing science and engineering fields.
+    
+    The presentation discusses Dual-Process Theories, which posit that the affective domain operates quickly and influences the slower cognitive domain. Consequently, the importance of **interactive learning** is highlighted. The abstract suggests that interactive learning can be delivered individually using educational technology. Specifically, the potential benefits of online systems like **Derspektif** are examined, focusing on their ability to provide both mental and **positive emotional experiences** for students.
+
+
+- id: kahveci2015moodle
+  title: "Introduction to Moodle Learning Management System and use of learning objects"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Association of Private Schools Society in Turkey. [Workshop]. Kaya Plazzo Hotel, Antalya, Turkey. January 28 - 31, 2015."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This presentation provides an introduction to the **Moodle Learning Management System (LMS)** and the use of **learning objects**. The primary focus is on the **teacher interface**, demonstrating how to create a new course and organize various activities within it. 
+    
+    The session introduces the concept of learning objects and includes a practical, hands-on demonstration of how they can be effectively **integrated and utilized within the Moodle environment**. This workshop aims to equip educators with the skills to leverage Moodle and its resources to enhance their course design and delivery.
+
+
+- id: kahveci2015affectivebook
+  title: "Affective dimensions in chemistry education"
+  authors: "Kahveci M, Orgill MK (Eds.)"
+  year: 2015
+  type: "Book"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Berlin Heidelberg: Springer-Verlag."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf: /pdfs/books/kahveci-affective-dimensions.pdf
+  doi: 10.1007/978-3-662-45085-7
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This book serves as a compilation of up-to-date expertise and research about the influence of the **affective domain** on learning in chemistry. The volume was inspired by a symposium at the 2012 Biennial Conference on Chemical Education.
+    
+    The work highlights that while the **cognitive domain** has historically received more attention in chemistry education research, the affective domain (including **attitudes, motivation, self-efficacy, and interest**) is crucial. Affective dimensions are often ignored due to measurement challenges, the tendency of scientists to divorce subjectivity from objective practice, and a global focus on assessing cognitive objectives.
+    
+    The book argues that the lack of focus on affective objectives contributes to global issues of **decreasing student interest and retention in science fields** (as noted in PISA and the Rocard Report), particularly among females. The authors assert that since positive affective dimensions correlate with persistence and performance, addressing them is essential to solving these global challenges in chemistry education.
+
+
+- id: kahveci2015genderbased
+  title: "Majors’ gender-based affective states toward learning physical chemistry"
+  authors: "Kahveci M"
+  year: 2015
+  type: "Inbook"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "In M Kahveci & M Orgill (Eds.). Affective dimensions in chemistry education (pp. 297–318). Berlin Heidelberg: Springer-Verlag."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi: 10.1007/978-3-662-45085-7_15
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study examines the **affective states of chemistry majors** (junior/senior level) in a **Physical Chemistry II (PChem II)** course, using students’ self-reflections via an online survey (including demographics, **RTOP** (Reformed Teaching Observation Protocol) and **mFSMAS** (Modified Fennema-Sherman Mathematics Attitudes Scales)).
+    
+    The RTOP scores, as rated by students, described the PChem II class as **traditional, lecture-based instruction**. Key findings include:
+    
+    * Neither female nor male students perceived themselves as being **disadvantaged** in learning PChem II topics.
+    * A significant correlation was found between the composite scores of **RTOP and mFSMAS**, suggesting that the use of **inquiry-based teaching strategies** correlates to more **positive student affective states**.
+    * The dominance of lecturing in the specific course examined led to only low to moderate positive attitudes toward the course.
+
+
+- id: kahveci2014affective
+  title: "Affective dimensions in chemistry education: Focus on educational technology and learning objects"
+  authors: "Kahveci M"
+  year: 2014
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Biennial Conference on Chemical Education (BCCE). [Symposium]. Grand Valley State University, Allendale, MI, U.S.A. August 3 - 7, 2014."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This symposium explores the **affective dimensions in chemistry education**, specifically focusing on the role of **educational technology and learning objects**. The paper presented, titled *Reflecting on dual-process theories in chemistry education*, investigates how **dual-process theories** can provide a framework for understanding and addressing affective factors—such as **motivation, self-efficacy, and anxiety**—that influence student learning and engagement with chemistry.
+    
+    The study suggests that by integrating educational technology into the learning process, educators can create more effective instructional environments that cater to both **cognitive and emotional aspects** of learning. The use of learning objects and other technological tools is explored as a means to improve student attitudes and conceptual understanding in complex chemistry topics.
+
+
+- id: kahveci2014technologyattitudes
+  title: "Use of technology and attitudes towards technology: An international analysis of the PISA 2003 data"
+  authors: "Kahveci M, Imamoglu Y"
+  year: 2014
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "J. Res. Educ. Soc., 1(1): 45-63."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf: /pdfs/papers/2014-03-21-attitudes-tech.pdf
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The aim of this study is to analyze the **use of computers and attitudes towards computers** with respect to **gender, geographical regions, and socioeconomic status (SES)**, utilizing data from the **PISA 2003** international study (15-year-old students).
+    
+    Significant differences were found across various variables, including: computer availability, computer use experience, frequency of use for different purposes, and attitudes toward computers. Connections between these variables and mathematics anxiety are also discussed.
+    
+    Key findings indicate:
+    
+    * **Gender:** **Boys** have a more positive attitude towards computers and tend to use them more frequently.
+    * **SES:** As the socioeconomic level increases, both **experience in computer and Internet use** and **positive attitudes towards computers** also increase.
+
+
+- id: kahveci2014pisa
+  title: "Re-analysis of PISA 2003 data about students’ mathematics anxiety, self-efficacy, and motivation"
+  authors: "Kahveci M, Imamoglu Y"
+  year: 2014
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "J. Res. Educ. Soc., 1(1): 1-22."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf: /pdfs/papers/2014-03-20-pisa-math.pdf
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study utilizes a re-analysis of the **PISA 2003 data** (N=272,138 students from 41 countries) to investigate students' **mathematics anxiety, self-efficacy, self-concept, and motivation**. The findings revealed significant variability based on personal and geographical characteristics.
+    
+    Key findings include:
+    
+    * **Gender:** Boys showed significantly higher **self-efficacy**, **self-concept**, and **motivation**, and lower **math anxiety** compared to girls.
+    * **Socioeconomic Status (SES):** Higher SES correlated with higher self-efficacy, self-concept, and motivation. The highest anxiety levels were observed in the medium SES group.
+    * **Geography:** Affective constructs varied significantly across regions (e.g., high performance/low self-concept/high anxiety in some Asian countries vs. high performance/low anxiety in some Western European countries).
+    * **Predictors:** **Self-efficacy** was found to be a strong positive predictor of mathematical literacy. A negative correlation was found between math anxiety and self-concept.
+    
+    The study highlights the critical, culturally-dependent importance of these affective dimensions in mathematics education.
+
+
+- id: kahveci2013fp7tips
+  title: "Experiences in reviewing proposals under FP7 Program and some tips for improving proposals"
+  authors: "Kahveci M"
+  year: 2013
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the CARPE Conference. Manchester Metropolitan University, Manchester, UK. November 4 - 6, 2013."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This presentation shares experiences gained from reviewing proposals submitted to the **FP7 Science in Society (SiS) program** (specifically the 2008, 2009, and 2010 calls). The presenter highlights the **critical elements of the evaluation process** from an evaluator's viewpoint, offering insights practically beneficial to those developing grant proposals for various EU programs.
+    
+    The second half of the talk provides **practical tips for better grant proposals**, covering style, the writing process, proofreading tips, material volume, terminology, an overview of the sections of an FP7 proposal, and budget considerations.
+
+
+- id: kahveci2013twotier
+  title: "Phase diagrams and conceptual learning"
+  authors: "Kahveci M"
+  year: 2013
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Chemistry Education Conference (UKEK). Karadeniz Technical University, Trabzon, Turkey. September 5 - 7, 2013."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study reports on the development, reliability, and validity of a newly designed **two-tier instrument** to measure chemistry students' conceptual understanding of **phase diagrams**, a topic taught in Physical Chemistry II for chemistry majors.
+    
+    The instrument was developed based on the Turkish translation of Atkins' Physical Chemistry textbook, following the two-tier development procedure (Treagust, 1988). It consists of **13 multiple-choice questions** and 13 corresponding reason questions, resulting in 26 question-reason sets.
+    
+    A pilot study with 51 third-year chemistry students revealed a **low number of correct answers** based on conceptual knowledge (only counting correct answer + correct reason). The percentage of correct responses ranged from 8% to 54%, with an average score of **32%** and a median of 31%. This study contributes a validated instrument for assessing advanced physical chemistry concepts, which are currently limited in the literature.
+
+
+- id: kahveci2013grant
+  title: "Preparing a grant proposal for funding by the European Commission and presenting a grant proposal in chemistry education"
+  authors: "Kahveci M"
+  year: 2013
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Chemistry Education Conference (UKEK). [Workshop]. Karadeniz Technical University, Trabzon, Turkey. September 5 - 7, 2013."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This workshop, presented at the III. National Chemistry Education Congress, aimed to guide participants in preparing and submitting project proposals for **European Union funding**, specifically for **FP7 projects**. The core objective was to equip attendees with the knowledge to craft **effective, clear, concise, and persuasive proposals**.
+    
+    The workshop detailed the key elements of a successful proposal (clear focus, detailed solution, compelling benefits, team expertise) and provided practical advice on writing in "plain English" to avoid common credibility killers. It outlined the standard **FP7 proposal structure** (covering scientific/technological quality, implementation, impact, and ethics) and explained the multi-stage **evaluation process**. The **three main evaluation criteria**—quality, implementation, and impact—along with the scoring system and threshold values, were discussed in detail. This initiative aimed to foster a collaborative network for EU projects in chemistry education in Turkey.
+
+
+- id: kahveci2013phase
+  title: "Adaptation of learning objects to inquiry-based chemical education: Phase diagrams"
+  authors: "Kahveci M"
+  year: 2013
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Chemistry Education Conference (UKEK). Karadeniz Technical University, Trabzon, Turkey. September 5 - 7, 2013."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study investigates the conceptual understanding of **phase diagrams** among third-year university chemistry students. The primary objectives were to determine comprehension levels, identify common **misconceptions**, and examine the influence of gender on understanding. A new two-stage concept test, referencing the Atkins Physical Chemistry textbook, was developed and administered to 51 students.
+    
+    Results indicate that a high number of students possess significant misconceptions, particularly concerning the graphical interpretation of **liquid-vapor equilibrium** and the distinction between **ideal and real gases**. Confusion also existed regarding the relationship between external pressure and boiling point, and chemical potential and volume.
+    
+    The findings suggest that traditional teaching methods are inadequate for these advanced concepts. The research concludes by advocating for the integration of **active learning** opportunities and educational technologies, such as **learning objects**, to facilitate a deeper and more accurate understanding of complex concepts like phase diagrams.
+
+
+- id: kegler2012einstellungen
+  title: "Einstellungen zur Chemie und zum Chemielernen bei türkischen und deutschen Jugendlichen"
+  authors: "Kegler A, Kahveci M, Kremer K"
+  year: 2012
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Jahrestagung der Gesellschaft für Didaktik der Chemie und Physik (GDCP). [Poster]. Leibniz- Universität, Hannover, Germany. September 17 - 20, 2012."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study investigates the **attitudes of Turkish and German adolescents toward chemistry and learning chemistry**, addressing the significance of **cultural background** in science education. It aims to identify potential differences and similarities in attitudes between these two groups. Using a **mixed-methods approach**, the research involved surveys and interviews with a diverse sample of students from both cultural backgrounds.
+
+
+- id: kahveci2012affectivefuture
+  title: "Affective dimensions in chemistry education: Much left for future research"
+  authors: "Kahveci M"
+  year: 2012
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Biennial Conference on Chemical Education (BCCE). Pennsylvania State University, University Park, PA, USA. July 29 - August 2, 2012."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This concept paper, aligned with the symposium theme, focuses on various **latent affective constructs** in chemistry education research, such as **intuition, motivation, and self-perception**.
+    
+    The paper notes that affective dimensions have received less attention than cognitive ones in science/chemistry education research. This disparity is often attributed to the assumption that "the nature of science" is primarily **reason-driven** and separate from individual feelings. The author argues that while this assumption may hold true in research laboratories, it is less valid when teaching science broadly, including at early ages.
+    
+    This paper aims to present a **synthesis of the respective research on affective dimensions** in the science and chemistry education context, highlighting areas for future investigation.
+
+
+- id: kahveci2012affectivepchemlo
+  title: "Physical chemistry education and learning objects (PChemLO): Affective aspects of implementation"
+  authors: "Kahveci M"
+  year: 2012
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Biennial Conference on Chemical Education (BCCE). Pennsylvania State University, University Park, PA, USA. July 29 - August 2, 2012."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This presentation includes the preliminary findings of the ongoing **PChemLO project**, a collaboration between the Divisions of Chemistry Education and Physical Chemistry. The main objectives are: (a) to **develop learning objects**, and (b) to investigate **student attitudes and motivation** to utilize these learning objects for advanced chemistry topics, specifically physical chemistry.
+    
+    All learning objects are designed based on the principles of **Inquiry-Based Science Education (IBSE)**, with an emphasis on integrating educational technology to support self-study. The Moodle LMS system was used for deployment, allowing for tracking of student interactions. The presentation focuses on the initial findings regarding the development of the learning objects and their effect on student learning, particularly investigating learner attitudes and other **affective dimensions (as covariates)** with respect to **knowledge gain (as dependent variable)**.
+
+
+- id: kahveci2012affective
+  title: "Affective dimensions in chemistry education"
+  authors: "Kahveci M"
+  year: 2012
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Biennial Conference on Chemical Education (BCCE). [Symposium]. Pennsylvania State University, University Park, PA, USA. July 29 - August 2, 2012."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The **affective domain** refers to feelings-based constructs such as attitudes, values, beliefs, opinions, interests, and motivation. Unlike cognitive dimensions, affective dimensions in science education have received less attention, primarily due to the long-held assumption that science is reason-driven and separate from individual feelings.
+    
+    This symposium will host research and theoretical papers related to the **affective dimensions in Chemistry Education** across all grade levels and age groups. Particular attention will be paid to issues such as **gender differences, ethnic, and cultural varieties** from teaching, learning, and research standpoints. The paper argues that while the reason-driven assumption may hold in research laboratories, it is less valid when teaching science to a broader audience, especially at early ages.
+
+
+- id: southerland2012pedagogical
+  title: "Measuring one aspect of teachers’ affective states: Development of the science teachers’ pedagogical discontentment scale"
+  authors: "Southerland SA, Saka Y, Nadelson L, Kahveci M, Sowell S, Granger EM"
+  year: 2012
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Sch. Sci. Math., 112(8): 483-494."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi: 10.1111/j.1949-8594.2012.00168.x
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The aim of this research is to describe the development of the **Science Teachers’ Pedagogical Discontentment Scale (STPDS)**, an instrument that measures the discontentment that arises in teachers as they recognize a mismatch between their own pedagogical beliefs and goals and their actual classroom practices. From a conceptual change perspective, we explore the meaning of pedagogical discontentment and discuss its role in shaping teachers’ receptivity to messages of reform.
+    
+    The initial instrument items were derived from interviews with practicing teachers, resulting in 42 items across five subscales. The final instrument, refined after two rounds of field testing, includes **21 multiple-choice items** clustered around **six subscales** (derived from interviews with science teachers). The paper discusses the item development and refinement processes, explores uses for the instrument to inform professional development experiences, and discusses implications.
+
+
+- id: kahveci2012pchemlo
+  title: "Physical chemistry education and learning objects (PChemLO): A technological implementation to foster inquiry-based learning and diminish gender differences at higher education"
+  authors: "Kahveci M"
+  year: 2012
+  type: "Inproceedings"
+  projectid: pchemlo
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the 21st Symposium on Chemical and Science Education. [Poster]. TU Dortmund University, Dortmund, Germany. May 17-19, 2012."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf: /pdfs/papers/2012-pchemlo-dortmund.pdf
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The **PChemLO project** is a collaborative effort between Chemistry Education and Physical Chemistry divisions. The main objectives are to **develop learning objects** based on **inquiry-based teaching principles** and investigate student attitudes and motivation in utilizing them.
+    
+    The project specifically investigates male and female students’ affective dimensions when using these online materials to learn advanced chemistry topics like physical chemistry. It is hypothesized that the implementation of technology into inquiry-based science education may **diminish gender differences** in learning science content and using technology. This poster presents the method to develop and implement the learning objects in a physical chemistry course, along with a discussion of benefits and disadvantages from a gender differences perspective based on relevant literature.
+
+
+- id: kahveci2011selfperceptions
+  title: "Depicting chemistry majors’ self-perceptions in learning chemistry"
+  authors: "Kahveci M"
+  year: 2011
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). Orlando, FL, USA. April 3 - 6, 2011."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The purpose of this study was two-fold: (1) to investigate the **self-perceptions of college students whose major is in chemistry** about learning chemistry by a comparative analysis with respect to varying personal characteristics such as gender and grade level, and (2) to provide further evidence for the reliability of the **modified Fennema-Sherman mathematics attitude survey** to measure students’ attitudes towards learning chemistry.
+    
+    The instrument, previously adopted and confirmed for reliability, was implemented with college students in this study. Internal consistency analysis revealed Cronbach alpha values ranging from **.933 to .695**, further supporting the high reliability of the modified scale for this context.
+
+
+- id: kahveci2010technology
+  title: "Students’ perceptions to use technology for learning: Measurement integrity of the modified Fennema-Sherman attitudes scales"
+  authors: "Kahveci M"
+  year: 2010
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Turk. Online J. Educ. Technol., 9(1): 185-201."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The purpose of this two-part study was to establish the reliability of the Turkish-translated **Fennema-Sherman Mathematics Attitude Scales (FSMAS)**, adapted for an educational technology context, and to examine high school students' **motivation to use technology for learning** across varying personal characteristics (gender, grade, academic focus, prior experience).
+    
+    The modified FSMAS instrument was administered to students (grades 9-12) at a gifted boarding school in Istanbul. The scale was found to be **highly reliable** ($\alpha$ ranging from 0.777 to 0.942), and factor analysis identified eight thematic categories.
+    
+    Overall findings indicated that students hold **positive attitudes** toward using technology for learning. However:
+    
+    * Students in **lower grades** were more satisfied with technology use.
+    * **Female students** reported feeling less confident than male peers.
+    * Students with **more prior experience** were less confident in their technology use than those with less experience.
+    * Students focused on **science and mathematics** expressed more confidence than those in social sciences.
+
+
+- id: kahveci2009bloom
+  title: "Analysis of Turkish high-school chemistry examination questions according to Bloom’s Taxonomy"
+  authors: "Kahveci M"
+  year: 2009
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the International Conference of Educational Research Association Turkey (EAB). Canakkale, Turkey. May 1 - 3, 2009."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study presents a detailed investigation of classical exam questions of chemistry courses in two of largest metropolitan cities of Turkey, in Istanbul and Izmit. The reference of the investigation was on the basis of **Bloom’s Taxonomy**, concentrating on the **cognitive levels of the questions**.
+    
+    The types of schools comprised Anatolian High Schools, Ordinary High Schools, and Vocational and Commercial High Schools. A total of **1593 questions** from 143 exam papers, collected from twenty chemistry teachers, were analyzed. Categorical analysis by school type and city was performed.
+    
+    The results indicate that **33.6% of the questions** were at the **lower-order cognitive skills** (e.g., Knowledge and Comprehension) on the basis of Bloom’s Taxonomy.
+
+
+- id: kahveci2009fp7
+  title: "FP7 Science in Society Program: The evaluation process of large scale proposals for coordination and support actions"
+  authors: "Kahveci M"
+  year: 2009
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the International Conference of Educational Research Association Turkey (EAB). Canakkale, Turkey. May 1 - 3, 2009."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This paper presents the **evaluation process of large-scale grant proposals** submitted to the **Science-in-Society call of the Seventh Framework Program (FP7)**. The proposals specifically focus on Coordination and Support Actions involving ten or more partner institutions.
+    
+    Although the procedure is publicly documented, this article outlines the practical, mechanical elements of the process from the perspective of an independent expert evaluator. The author's experiences stem from evaluating proposals for the FP7-Science-in-Society-SiS-2008-3 call ('Innovative methods in science education') and the FP7-Science-in-Society-SiS-2009-1 call ('Dissemination and use of inquiry-based teaching methods on a large scale in Europe'). The paper aims to share these practical insights and engage with science educators in Turkey on the operational aspects of the evaluation process.
+
+
+- id: kahveci2009selfperceptions
+  title: "Quantifying high school students’ self- perceptions in learning chemistry"
+  authors: "Kahveci M"
+  year: 2009
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). Garden Grove, CA, USA. April 17 - 21, 2009."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The purpose of this study was two-fold: (1) to investigate high school students’ **self-perceptions in learning chemistry** by a comparative analysis with respect to varying personal characteristics such as gender, grade level, and major (i.e., Science and Mathematics, Social Science-Mathematics, and Undecided); and (2) to provide evidence for the reliability of the modified Fennema-Sherman attitude survey to measure students’ attitudes towards learning chemistry.
+    
+    A modified version of the Fennema-Sharman attitude scale was administered to Language Prep, 9th, 10th, and 11th grade students. Reliability analysis (Cronbach alpha values: .90 to .73) confirmed the instrument as highly reliable, and factor analysis revealed seven thematic categories.
+    
+    Overall findings indicated that students had **positive attitudes** towards learning chemistry, regardless of personal characteristics. Students at **higher grades** tended to have more satisfaction. Although both genders were moderately confident, **female students rated statistically significantly higher** than male students in their confidence ratings.
+
+- id: kahveci2009shared
+  title: "Shared perceptions of professors about instructional interactivity"
+  authors: "Kahveci M"
+  year: 2009
+  type: "Book"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Saarbrücken: VDM Verlag Dr. Müller."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Research in education indicates that there is not a settled view of what interactivity or interaction mean for learning and instruction. This book presents the research procedures and findings on the **perceptions of the faculty members at colleges of education around the world about instructional interactivity**.
+    
+    The study undertook a comparative analysis of key aspects, including: functional definitions of interactivity, its existence in various instructional settings, its attributes as a function of motivation and learning theories, and the events of interactivity. Relationships were discerned with respect to eight predictors: gender, age, present status, highest degree obtained, geographic region, research interest in interactivity, personal learning preferences (VARK score), and institutional department. This work included valid and reliable instrument development and synthesized literature from educational technology, educational measurement, psychology, science, and mathematics education.
+
+
+- id: kahveci2008motivation
+  title: "Students’ motivation to use technology for learning"
+  authors: "Kahveci M, Coskun S, Taylan RD"
+  year: 2008
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the World Conference on Educational Multimedia, Hypermedia and Telecommunications (ED-MEDIA). Vienna, Austria. June 30 - July 4, 2008."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The purpose of this study was to investigate **students’ motivation to use technology for learning** by a comparative analysis with respect to varying personal characteristics such as gender, grade level, content area of interest (i.e. mathematics, science, and social science), and previous experience in using technology for learning. A modified version of the Fennema-Sharman attitude scale was developed and administered to $9^{th}-12^{th}$ grade students.
+    
+    The analysis revealed a statistically significant relationship between **experience in technology use** and students’ confidence, interest, and perceived personal abilities. Specifically:
+    
+    * Students more experienced in computer programming showed **lower confidence** in using technology.
+    * Students more experienced in using graphing calculators felt **less confident** than those without that experience.
+    * Students in the math-science departments felt **more confident** than students in other departments.
+
+
+- id: century2008framework
+  title: "A framework for measuring fidelity of implementation of science instructional materials"
+  authors: "Century J, Rudnick M, Freeman C, Leslie D, Kahveci M, Isaacs A"
+  year: 2008
+  type: "Inproceedings"
+  projectid: foi
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). Baltimore, USA. March 30 - April 2, 2008."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This paper describes outcomes of the first strand of the "Applied Research on Science Materials Implementation: Bringing Measurement of **Fidelity of Implementation (FOI)** to Scale" project. This NSF-funded project aims to measure the FOI of standards-based $K-8$ science and mathematics instructional materials in a large urban school district by developing and applying a suite of FOI instruments.
+    
+    The first strand focused on developing a **conceptual framework** for describing FOI, based on a thorough literature review and iterative theoretical refinement. The framework comprises categories of **critical components** (essential elements of the intended program model). This process involved reviewing science instructional materials to identify these critical components and placing them into the framework categories. The paper describes how this framework is applied to instrument development and how it will help accurately describe teacher use of science instructional materials to provide meaningful FOI information to the served school district.
+
+
+- id: century2008fidelity
+  title: "A conceptual framework for fidelity of implementation of instructional materials"
+  authors: "Century J, Rudnick M, Freeman C, Isaacas A, Leslie D, Kahveci M"
+  year: 2008
+  type: "Inproceedings"
+  projectid: foi
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the American Educational Research Association (AERA). New York, USA. March 24 - 28, 2008."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This paper describes the outcomes of the first strand of the "Applied Research on Science Materials Implementation: Bringing Measurement of **Fidelity of Implementation (FOI)** to Scale" project. This three-year, National Science Foundation-funded project has two main goals: (1) the measurement of fidelity of implementation of K-8 science and mathematics instructional materials in the Chicago Public Schools (CPS); and (2) the development of a suite of instruments to measure the fidelity of implementation of standards-based science and mathematics instructional materials at the K-8 level. In order to achieve these goals, our first step was the development of a conceptual framework for describing fidelity of implementation. This paper describes the development and components of the **FOI Conceptual Framework**.
+
+
+- id: kahveci2007interactivejcmst
+  title: "Interactive learning in mathematics education: Review of recent literature"
+  authors: "Kahveci M, Imamoglu Y"
+  year: 2007
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "J. Comput. Math. Sci. Teach., 26(2): 137-153."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This review investigates the use of certain types of **interaction in mathematics education**. These types include **interaction between students**, **interaction between teacher and students**, and **interaction between students and learning technology**. Student-technology interactions are explained by computer programs that use problem-solving strategies and multiple representations. Interaction between teacher and students are explained in two categories, classroom interaction and small group interaction.
+    
+    In small cooperative groups, factors that affect interaction are: group composition, type of interaction, effect of teacher, interdependence of students, and nature of the task.
+    
+    Teaching implications include: encouraging students to use multiple representations, promoting mastery goal-oriented motivation, creating contexts for mathematical argumentation, encouraging classroom discussions, expecting mathematical reasoning over just the right answer, and designing tasks to promote skills like mathematical reasoning and metacognition.
+
+
+- id: kahveci2007interactivitynarst
+  title: "Investigating the existence of interactivity in various instructional settings"
+  authors: "Kahveci M"
+  year: 2007
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). New Orleans, USA. April 15 - 18, 2007."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Although there is no agreement as to what interactivity and interaction mean in educational literature,
+    researchers are in agreement that both terms are vital for teaching and learning one way or another. As a part of a larger study, this paper focuses on faculty members’ perceptions about the **existence of interactivity in various instructional settings**. The sample (N=2669) consists of faculty members at colleges of education at randomly selected universities around the world.
+    
+    On the factor solutions **Textbook, Use of Computer, and Classroom**, an eight-way factorial ANOVA (General Linear Model) was performed to elaborate the differentiations and tendencies of the faculty members’ perceptions over eight predictors: gender, age, highest degree obtained, research interest in interactivity, present status, learning preference, geographical region, and department.
+
+
+- id: southerland2007stpd
+  title: "A finer grain understanding of teachers’ adoption of reforms?: Development of an instrument to assess science teachers’ pedagogical discontentment (STPD)"
+  authors: "Southerland SA, Sowell S, Kahveci M, Granger EM, Saka Y"
+  year: 2007
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). New Orleans, USA. April 15 - 18, 2007."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This research focuses on science teachers’ **pedagogical discontentment**, a construct that describes teachers’ lack of satisfaction or contentment that occurs when teachers recognize a mismatch between their own pedagogical beliefs and their actual classroom practices. We present an instrument to be used to measure teachers’ pedagogical discontentment, an instrument that eventually will allow science educators to better describe the affective states of teachers entering professional development experiences. To inform this instrument, we conducted interviews with practicing elementary and secondary science teachers to provide us with first-hand accounts of how teachers discuss aspects of their current science teaching practices that they perceived as being less effective than desired. From these interviews 45 items were designed around a group of 5 subscales, and this instrument was administered to a group of 171 science teachers. Factor analysis identified that **30 of these items fell out along 5 subscales**, each with a high internal consistency, confirming the theoretical categories identified in the interviews. The revised 30-item measure was administered to a sample of 200 elementary, middle and secondary teachers. The revised scale is described along with the psychometrics of this instrument.
+
+
+- id: kahveci2007interactive
+  title: "Interactive learning in mathematics education: Review of recent literature"
+  authors: "Kahveci M, Imamoglu Y"
+  year: 2007
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Society for Information Technology and Teacher Education (SITE). San Antonio, USA. March 5 - 9, 2007."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This review investigates the use of certain types of interaction in mathematics education. These types
+    include interaction between students, interaction between teacher and students, and interaction between
+    students and leaning technology. In small cooperative groups, factors that affect interaction are as
+    follows: group composition, type of interaction, effect of teacher, interdependence of students and nature
+    of the task. Some teaching implications of the findings were discussed as follows: students should be
+    encouraged to use multiple representations to develop problem solving strategies; students' motivation to
+    learn should be mastery goal oriented, teachers should encourage student participation in classroom
+    discussions; students should be expected to provide mathematical reasoning rather than producing the
+    right answer; and design of tasks should be suitable to promote skills such as mathematical reasoning
+    and metacognition.
+    
+
+- id: kahveci2007interactivitysite
+  title: "An instrument development: Interactivity Survey (the IS)"
+  authors: "Kahveci M"
+  year: 2007
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Society for Information Technology and Teacher Education (SITE). San Antonio, USA. March 5 - 9, 2007."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Although there is no agreement as to what interactivity and interaction mean in educational literature,
+    researchers are in agreement that both terms are vital for teaching and learning one way or another. This
+    paper includes item development stages and validity and reliability analyses of the **Interactivity Survey
+    (the IS)** that attempts to uncover the perceptions of professors working at colleges of education from
+    universities around the world. The pilot study with a sample size of 262 faculty members provided the
+    evidence of high internal consistency of the IS. All of the statistical test results and the final version of
+    the instrument were provided.
+    
+
+- id: kahveci2007interactivity
+  title: "An instrument development: Interactivity Survey (IS)"
+  authors: "Kahveci M"
+  year: 2007
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Journal of Educational Technology & Society, 10(3): 163-174."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Although there is no agreement as to what instructional interactivity and interaction mean in educational literature, researchers agree that both terms are vital for teaching and learning one way or another. This paper presents the item-development stages and validity and reliability analysis of the **Interactivity Survey (IS)**, which attempts to uncover the perceptions of professors working at departments of education from universities around the world. To provide evidence of reliability of the instrument, a pilot study was carried out with a sample size of 262 universities. All of the statistical test results and the final version of the instrument were provided.
+    
+    Thus, this paper is both a theoretical paper that conceptually synthesizes the literature on instructional interactivity and a technical paper that considers the information from an instrument-development point of view.
+    
+
+- id: kahveci2006selfperception
+  title: "Self-perception in learning mathematics"
+  authors: "Kahveci M, Oztekin B, Algedik E"
+  year: 2006
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Conference on Science and Mathematics Education. Gazi University, Ankara, Turkey. September 7 - 9, 2006."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This study investigated the mathematics self-concept of students in several high schools in the northwest of Türkiye. A total of 236 students from 9th, 10th, and 11th grades participated, using the translated Fennema-Sherman Mathematics Attitude Scales (total $\alpha$=.92). Factor and General Linear Model (GLM) analyses were conducted on four resulting categories: personal confidence, teacher attitudes, usefulness of content, and perception of the subject as male-dominated.
+    
+    Key findings revealed that students' self-confidence levels increased significantly with their grade level (11th grade significantly higher than 9th, p=.000). While gender caused a significant difference in opinions regarding mathematics being male-dominated (p=.001), no differences were found based on age, grade, or mathematics grades in this category. No significant relationships were found between age, gender, grade, or mathematics grades and the students' perception of teacher attitudes. Lastly, students with higher mathematics grades better understood the practical utility of mathematics. Overall, the study found a close relationship between students' self-perceptions about mathematics and their motivation levels, viewed through these four distinct categorical lenses.
+    
+
+- id: kahveci2006attitudes
+  title: "Turkish high-school students’ attitudes toward learning mathematics"
+  authors: "Kahveci M, Imamoglu Y"
+  year: 2006
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the International Conference on the Teaching of Mathematics (ICTM). Istanbul, Turkey. June 30 - July 5, 2006."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Attitudes towards mathematics, mathematics self concept and motivation to learn mathematics of 79 students coming
+    from two high schools in Istanbul were measured. Three surveys were administered to the students at their schools; Fennema-Sherman scale, Self Description Questionnaire (SDQ II) and Students’ Motivation to Learn Mathematics (SMOT); having $\alpha$-reliabilities .92, .92 and .93 respectively. Factorial analyses were conducted for the three scales. As a result, attitudes towards mathematics was decomposed into eight factors, labeled usefulness of mathematics content, mathematics perceived as male domain, perceived mathematics success, teacher support, perceived mathematics ability and teacher’s belief about mathematics competency.
+    
+
+- id: kahveci2006interactivity
+  title: "Instructional interactivity endeavor and Spiral Dynamics"
+  authors: "Kahveci M"
+  year: 2006
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Bogazici University Journal of Education, 20(1): 11-24."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    It is commonly accepted in most educational research communities that delivery of instruction accompanied by interactivity will increase learning and improve instruction in practice. This article discusses operational definitions and levels of interactivity on the basis of the education literature (particularly in the field of computer-based instruction, cognitive science, and science education).
+    However, in the literature, definitions and forms of interactivity are often confined by instructional media, such as computer programs and telecommunications technologies. The Spiral Dynamics model can be considered in an attempt to base conceptual parameters for the operation of interactivity on terms of human psychology and ability of learning.
+    
+
+- id: southerland2006pedagogical
+  title: "Working to measure the impact of professional development activities: Developing an instrument to quantify pedagogical discontentment"
+  authors: "Southerland SA, Sowell S, Kahveci M, Granger EM, Owen OF"
+  year: 2006
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the National Association for Research in Science Teaching (NARST). San Francisco, USA. April 4 - 7, 2006."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    The aim of this research is to empirically define the construct of science
+    teachers’ pedagogical discontentment, a construct that describes teachers’
+    lack of satisfaction or contentment that occurs when -they recognize a
+    mismatch between their own pedagogical beliefs and goals and their actual
+    classroom practices. From a conceptual change perspective, we explore
+    the meaning of pedagogical discontentment, and discuss its role in shaping
+    teachers’ receptivity to messages of reform. In tandem with introducing
+    this construct, we present an instrument to be used to measure teachers’
+    pedagogical discontentment, an instrument that eventually will allow
+    science educators to better describe the affective states of teachers entering
+    professional development experiences. To inform this instrument, we
+    conducted interviews with practicing elementary and secondary science
+    teachers to provide us with first-hand accounts of how teachers discuss
+    aspects of their current science teaching practices that they perceived as
+    being less effective than desired. From these interviews a group of 41
+    items were designed around a group of 5 subscales. The psychometric
+    evaluation of these items is offered, along with suggestions for the
+    revision of this instrument.
+    
+
+- id: kahveci2005perceptions
+  title: "The perceptions of professors at colleges of education about instructional interactivity"
+  authors: "Kahveci M"
+  year: 2005
+  type: "Thesis"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Doctoral dissertation, Florida State University, Tallahassee, Florida, USA."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    This research investigated the perceptions of the faculty members at colleges of education around the world about instructional interactivity by specifically undertaking a comparative analysis of the key aspects surrounding the functional definitions of interactivity, the existence of interactivity in various instructional settings, the attributes of interactivity as a function of motivation and learning theories, and the events of interactivity to discern any relationships that might exist with respect to the eight predictors; gender, age, present status, highest degree obtained, geographic region, research interest in interactivity, personal learning preferences (the strength of the VARK score), and department. The study was based on an online survey investigating instructional interactivity. The content and reliability analyses of the survey instrument indicated high degree of internal consistency and validity among the items. Two-thousand-seven-hundred-fifty-two of 14792 faculty members completed the survey, for a response rate of 18.1%. Findings indicated that the faculty members perceived all presented instructional events in various settings from moderately high to high interactivity. In addition, the perceptions of faculty members about instructional interactivity varied with their personal characteristics that were mentioned above as predictors. This result indicated that interactivity was context dependent, stemming from various factors. Also, the ratings of faculty members strongly associated interactivity with learning theory (Conditions of Learning) and motivation (ARCS Model). This study is important since at present there is no settled view of what interactivity and interaction mean in education context and owing to this fact information available in the literature on research into the complex phenomenon of interactivity and interaction is rather limited. And, despite this limitation, interactivity and interaction are attributed to be critical in promoting and enhancing effective learning.
+    
+
+- id: ginn2004microfluidic
+  title: "Microfluidic devices for the Belousov-Zhabotinsky reaction"
+  authors: "Ginn BT, Steinbock B, Kahveci M, Steinbock O"
+  year: 2004
+  type: "Article"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "J. Phys. Chem. A, 108: 1325-1332."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi: 10.1021/jp0358883
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    We describe an experimental methodology for the study of chemical self-organization in micropatterned reaction systems. Our approach is based on office-printer-assisted soft lithography and allows the fabrication of centimeter-scale devices with reactor units as small as 50 $\mu$m. The devices are made from the elastomeric material poly(dimethylsiloxane) and are filled with a modified Belousov−Zhabotinsky solution. This excitable reaction−diffusion medium employs 1,4-cyclohexanedione as a bubble-free organic substrate and Fe(II)[batho(SO$^{3}$)$^{2}$]$^{3}$ as a high-absorbance redox catalyst/indicator. Chemical wave propagation is affected by the loss of bromine from the aqueous phase into the elastomer matrix. The strength of this activating process depends on the local surface-to-volume ratio and can increase the wave velocity by a factor of 2. For devices with gridlike reactor networks, we observe a pronounced deformation of target patterns and the pinning of spiral waves to single elastomer obstacles as well as to obstacle clusters.
+    
+
+- id: kahveci2004endeavor
+  title: "Instructional interactivity endeavor and the Spiral’s Value MEMEs"
+  authors: "Kahveci M"
+  year: 2004
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the World Conference on Educational Multimedia, Hypermedia and Telecommunications (ED-MEDIA). Lugano, Switzerland. June 21 - 26, 2004."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    A frequent argument in education literature is that delivery of instruction accompanied by real-time
+    interactivity will increase learning and improve instruction in practice. The trend of the use of
+    interactivity intensifies when content gets more abstract and instruction is delivered at a distance.
+    Especially, teaching complex and abstract science concepts by the use of telecommunications technology
+    signifies the meaning and appropriate levels of interactivity for instruction. However, definition and
+    forms of interactivity are often confined by instructional mediums such as computer programs and
+    telecommunications technologies. This article discusses the meaning of interactivity and levels of
+    interactivity constructed in the education literature (in the field of computer-based instruction (CBI),
+    cognitive science, and social science). It is concluded that the Spiral Dynamics (Beck & Cowan, 1996)
+    can be considered as a comprehensive framework to base conceptual parameters for the operation of interactivity in terms of human psychology and ability of learning.
+    
+
+- id: kahveci2004interactivity
+  title: "The significance of interactivity in gender equitable education"
+  authors: "Kahveci M, Kahveci A"
+  year: 2004
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Society for Information Technology and Teacher Education (SITE). Atlanta, USA. March 1 - 6, 2004."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Interactivity is perceived as a vital component of education to increase the quality of
+    individuals’ learning in the fields of science, mathematics, and engineering. An increasing body
+    of research indicates that female students are especially underrepresented in those fields. In this
+    paper, we investigate the interactivity of female students with their instructors in the courses of
+    science, mathematics, and engineering. Surveying high level of interactivity would indicate the
+    female students’ sustained interest and success in favor of those underrepresented fields.
+    
+
+- id: kahveci2004instructional
+  title: "Instructional interactivity and technology components of a freshman chemistry course"
+  authors: "Kahveci A, Kahveci M"
+  year: 2004
+  type: "Inproceedings"
+  projectid:
+
+  # --- SOURCE INFORMATION ---
+  source_info: "Paper presented at the Society for Information Technology and Teacher Education (SITE). Atlanta, USA. March 1 - 6, 2004."
+
+  # --- OPTIONAL LINK FIELDS (Leave value blank if not available) ---
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # --- ABSTRACT (Use '|' pipe for multi-line content) ---
+  abstract: |
+    Educational technologies have provided opportunities for better teaching and learning environments in chemistry. The difficulties of teaching large classes with the resulting limitations of face-to-face interaction between instructor and students have been long-term problems for chemistry teaching in college freshman chemistry classes. However, with the enhancement of technologies (e.g. World Wide Web (WWW), interactive compact disk technology, e-mail communications, etc.) at lower and lower costs, and by the use of these instructional technologies especially in high populated (over 150 students) freshman chemistry classes, overall interactivity necessary for viable knowledge construction increases. In this article, the theoretical significance of a
+    technology enhanced General Chemistry course at a Southeastern University in the U.S. is discussed in terms of its various curricular elements in the frame of instructional interactivity.
+    
+
+- id: kahveci2004graduateclass
+  title: "The use of interactivity in a graduate class: A case study"
+  authors: "Kahveci M"
+  year: 2004
+  type: "Inproceedings"
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION (Conference/Venue)
+  source_info: "In: Society for Information Technology and Teacher Education (SITE). Atlanta, USA. March 1 - 6, 2004."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This case study explores the application and impact of interactivity strategies within a graduate-level academic course. This research examines a series of presentations, given by graduate students, in partial fulfillment of the requirements for a core class in a doctorate program of science education in a Southeastern university in the U.S. The interactivity component of the course was mostly provided by the integration of WWW and computer software along with the student presentations. The interviews with four students and with the professor were digitally stored and transcribed for the data analyses. The advantages and disadvantages of the use of high level of interactivity were discussed.
+    
+
+- id: kahveci2003microdevice
+  title: "Microdevice fabrication by softlithography and nonlinear phenomena in microchannels"
+  authors: "Kahveci M"
+  year: 2003
+  type: "Thesis"
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION (Thesis Specifics)
+  source_info: "Master’s thesis, Florida State University, Tallahassee, Florida, USA."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This thesis explores microdevice fabrication via soft-lithography and the size-dependent nonlinear dynamics in microchannels. The fabrication of micro-fluidic devices by a soft-lithography technique was introduced in this study. This technique allows one to photographically print micropatterns on polished silicon wafer surface in high precision along with great reproducibility. The patterned silicon wafer is used to cast poly-(dimethylsiloxane) (PDMS) polymer, giving rise to negative replica (valley) on the PDMS surface. Because the fabrication is inexpensive and technologically feasible, this technique allows one to integrate micro-fluidic devices in various experimental designs. The micro-fluidic system is then used as a reactor for the Belousov-Zhabotinsky (BZ) reaction. The investigation of the front dynamics revealed that velocity of the chemical waves differ in a range of inner diameter sizes of the microchannels in the PDMS polymer, a property concluded to be caused by the bromine diffusion into the PDMS polymer. Due to high volume to surface ratio, faster front velocities are observed in narrower channels. Finally, the measurement of the partition coefficient of bromine into the PDMS polymer is performed.
+    
+
+- id: kahveci2003significance
+  title: "The significance of interactivity, learning cycle, and content knowledge in science teaching and teacher preparation programs"
+  authors: "Kahveci M"
+  year: 2003
+  type: "Inproceedings"
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION (Conference/Venue)
+  source_info: "In: International Conference of Association for the Education of Teachers of Science (AETS). St. Louis Hyatt at Union Station, Missouri, USA. January 29 - February 2, 2003."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This paper highlights the importance of interactivity, the learning cycle, and content knowledge for effective science teaching. This paper discusses three key principles from educational research—interactivity, the learning cycle, and content knowledge—as critical components for effective science teaching and teacher preparation.
+    
+
+- id: kahveci2002micropatterning
+  title: "Micro-patterning of reaction arrays for self-organizing systems"
+  authors: "Kahveci M, Hamik C, Steinbock O"
+  year: 2002
+  type: "Inproceedings" # Inferred from 'conference: true' and 'Paper presented at...'
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION (Conference/Venue)
+  source_info: "Paper presented at the American Chemical Society (ACS) National Meeting. [Poster]. Orlando, USA. April 7 - 11, 2002."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This research details the micro-patterning of reaction arrays to study self-organizing chemical systems. Recent advances in the photolithographic fabrication of micro-patterned elastomers open intriguing possibilities for the study of chemical self-organization in spatially structured reaction systems and coupled reactor arrays. Here, we present several procedures for the preparation of micro-patterned matrices for the Belousov-Zhabotinsky (BZ) reaction and discuss their relative merits and limitations. These experimental strategies involve the use of photo-resist masters (SU-8) and poly(dimethylsiloxane) (PDMS) molds as well as the filling of the molds with aqueous reaction solutions. All of our experiments are carried out with the 1,4-cyclohexanedione-bromate-ferroin BZ system. This system is highly suitable for the use in micro-patterned reactor arrays because the reaction does not involve the formation of gaseous products that could give rise to undesired bubbles. In particular, we discuss the propagation and the interaction of constant-speed oxidation waves in different width sizes of linear channels as well as in a cone shape channel of excitable CHD-BZ medium. Experiments performed in capillary tubes ranging from 2 µm to 1200 µm have shown that there is no size dependence on velocities of oxidation waves. On the contrary, the oxidation waves traveled with different velocities inside the micro reactor arrays in PDMS due to the high bromine diffusion into the PDMS compared to glass capillary. Bromine acts as an inhibitor for BZ reaction reducing the velocity of oxidation waves. Furthermore, the micro reactor arrays provide a better approximation for one spatial dimension for the BZ system, which is easier to simulate.
+    
+
+- id: kahveci2003mastersthesis
+  title: "The summative evaluation of the EcoVentures program in terms of its interactivity component"
+  authors: "Kahveci M"
+  year: 2003
+  type: "Thesis" # Set to 'Thesis' to distinguish it from a book/article
+  projectid: "ecov"
+
+  # CONSOLIDATED SOURCE INFORMATION (Thesis Specifics)
+  source_info: "Master’s thesis, Florida State University, Tallahassee, Florida, USA."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This study evaluates the interactivity component of the EcoVentures program, finding positive teacher and student attitudes. Although the term “Interactivity” had been in use long before computer programs became a common feature of curriculum materials, little research has been done about the effectiveness of interactivity in education. It is believed that Interactivity increases learning in educational settings. In this study, I focused on the interactivity component of the EcoVentures program during instruction in middle and high school science classes. EcoVentures is a CD-I program targeting middle school students. For this study, on-line teacher and student surveys were conducted, interviews with teachers and students, and classroom observations were done. Teacher and student attitudes about the program are described. Forms of interactivity and effects on attitudes were investigated. The attitudes of the teachers and students revealed that both groups were positive towards the Interactivity component of the program. However, tenth grade students were prone to be less interested in the use of the program than eighth graders.
+    
+
+- id: cezikturk2001teachers
+  title: "Letting teachers to interact with the idea of Interactivity: 'What is Interactive?'"
+  authors: "Cezikturk O, Cirik G, Kahveci M"
+  year: 2001
+  type: "Inproceedings"
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION (Conference/Venue)
+  source_info: "In: Society for Information Technology and Teacher Education (SITE). Orlando, USA. March 5 - 10, 2001."
+
+  # OPTIONAL LINK FIELDS (Included as blank placeholders)
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This paper presents a Web-based evaluation system to improve curriculum quality through integrated stakeholder feedback. This paper presents an on-line evaluation system designed for the development of curriculum materials. The system's main goal is to improve the quality of educational content by integrating formative and summative evaluation processes directly into the development cycle. The methodology involves a Web-based framework using questionnaires to gather feedback from various stakeholders, including students and instructors, on different dimensions of online courses and learning materials, such as content, design, and usability. The findings or key arguments suggest that implementing such an evaluation system can lead to the creation of higher-quality, more effective, and student-centered curriculum materials, ensuring that they meet learning objectives and user needs.
+    
+
+- id: kahveci2000online
+  title: "An on-line evaluation system for curriculum materials development"
+  authors: "Kahveci M"
+  year: 2000
+  type: "Inproceedings" # Inferred from 'conference: true' and 'publisher'
+  projectid: "ecov" # From front matter
+
+  # CONSOLIDATED SOURCE INFORMATION (Conference/Venue)
+  source_info: "In: International Conference on College Teaching & Learning, Jacksonville, Florida, USA. April 12 - 15, 2000."
+
+  # OPTIONAL LINK FIELDS (Empty fields are left blank or omitted)
+  internal_link: # This field was not present in the old front matter
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    An online system for evaluating and improving the effectiveness of curriculum materials. This paper presents the design and conceptualization of a new online evaluation system for the development of curriculum materials. With the increasing use of technology in education, a need has emerged for effective, scalable methods to evaluate the quality and instructional impact of digital and technology-enhanced learning materials. This system is designed to provide real-time, formative feedback to curriculum developers, allowing for continuous improvement of educational content. The proposed framework automates key data collection and analysis processes, reducing the burden on evaluators and providing a systematic approach to assessing a curriculum's effectiveness. It aims to address critical questions regarding student achievement, instructional quality, and overall program efficiency by using an online platform to streamline the evaluation process from initial design to final implementation.
+    
+
+- id: cezikturk2000interactivity
+  title: "Interactivity in mathematics and science education"
+  authors: "Cezikturk O, Kahveci M, Cirik G"
+  year: 2000
+  type: "Inproceedings" # Determined from 'conference: true' and 'publisher: International Conference...'
+  projectid:
+
+  # CONSOLIDATED SOURCE INFORMATION
+  source_info: "In: International Conference on Mathematics/Science Education and Technology (M/SET). San Diego, USA. February 5 - 8, 2000."
+  
+  # OPTIONAL LINK FIELDS
+  # Note: The original 'ref' is not included as the site now formats the citation dynamically.
+  internal_link:
+  pdf:
+  doi:
+  slide:
+
+  # ABSTRACT (Concatenated 'excerpt' and the main body content)
+  abstract: |
+    This paper provides a conceptual framework for understanding interactivity in mathematics and science education. This paper explores the concepts of interactivity and interaction in the context of mathematics and science education. Drawing from a review of existing literature, it is observed that these terms are frequently used interchangeably without a clear, settled definition. The definitions often depend on the specific instructional media, such as computer programs or educational software, which can lead to a narrow understanding of the concepts. We argue that true interactivity goes beyond a specific medium and is rooted in the psychological and cognitive processes of the learner. The primary goal of designing interactive learning environments is to facilitate and enhance an individual's learning. The paper examines this distinction and provides a framework for understanding interactivity as a complex, multidimensional phenomenon. This approach shifts the focus from the technological tools themselves to the underlying human dynamics and pedagogical goals that drive effective educational engagement.
+    

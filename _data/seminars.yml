@@ -5,6 +5,7 @@
   audience: "CPS High School Teachers"
   location: "Chicago, IL"
   description: "A hands-on workshop demonstrating the use of AI prompts to generate differentiated instructional materials aligned with the REACH Performance Task rubric."
+  category: Seminar # Seminar or Workshop
   url: "/aid"
   slides_url: "/ai-differentiation"
 
@@ -15,5 +16,6 @@
   audience: "CPS High School Teachers"
   location: "Chicago, IL"
   description: "A workshop on using the LT Tracker (5-SC) tool to monitor student progress and apply AI-driven data analysis for targeted instructional planning and Kagan grouping."
+  category: Seminar # Seminar or Workshop
   url: "/ltt"
   slides_url: "/ltt-slides"

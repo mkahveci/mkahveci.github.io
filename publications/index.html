@@ -1,0 +1,37 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="container my-5">
+
+    <h1 class="mb-4 text-center">Publications & Research Output</h1>
+    <p class="lead text-center text-muted mb-5">
+        A comprehensive list of peer-reviewed articles, conference proceedings, and book chapters, sorted by year. Our publications reflect a deep commitment to advancing chemistry education through innovative research, collaborative efforts, and evidence-based educational strategies.
+    </p>
+
+    {% assign all_publications = site.data.publications %}
+
+    {% comment %} Sort all publications by year descending {% endcomment %}
+    {% assign sorted_publications = all_publications | sort: 'year' | reverse %}
+
+    {% comment %} CALCULATE THE TOTAL COUNT BEFORE THE LOOP {% endcomment %}
+    {% assign total_pubs = sorted_publications | size %}
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        {% comment %} Iterate through publications, passing the item, the loop index, and the total count. {% endcomment %}
+        {% for publication in sorted_publications %}
+        {% include publication_card.html pub=publication index=forloop.index total_count=total_pubs %}
+        {% endfor %}
+
+    </div>
+
+    {% unless total_pubs > 0 %}
+    <div class="col-12 text-center">
+        <p class="lead text-muted mt-5">No publications found. Please check your data file: `_data/publications.yml`.</p>
+    </div>
+    {% endunless %}
+
+</div>

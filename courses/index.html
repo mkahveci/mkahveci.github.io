@@ -1,68 +1,149 @@
 ---
 layout: default
-title: kahveci group / teaching
-categories:
-- courses
+title: Teaching Portfolio
+permalink: /courses/
 ---
 
 <div class="container my-5">
-    <div class="text-center">
-        <h1 class="display-4">Teaching Portfolio</h1>
-        <p class="lead col-lg-8 mx-auto">
-            My teaching is grounded in constructivist principles, creating interactive and inquiry-based environments that foster both cognitive understanding and affective growth.
-        </p>
-    </div>
 
-    <div class="row my-5">
-        <div class="col-md-6 mb-4">
-            <div class="card h-100">
-                <div class="card-body text-center d-flex flex-column justify-content-center p-4">
-                    <i class="fas fa-graduation-cap fa-3x text-success mb-3"></i>
-                    <h4 class="card-title">University Courses</h4>
-                    <p class="card-text">Explore my formal academic courses below, designed for university-level students in chemistry and science education.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 border-primary">
-                <div class="card-body text-center d-flex flex-column justify-content-center p-4">
-                    <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
-                    <h4 class="card-title">Seminars & Workshops</h4>
-                    <p class="card-text">View the professional development seminars and workshops I have developed and delivered for fellow educators.</p>
-                    <a href="/seminars/" class="btn btn-primary mt-auto">View Seminars <i class="fas fa-arrow-right ms-2"></i></a>
+    {% comment %} --- HEADER SECTION (H1 RETAINED AS REQUESTED) --- {% endcomment %}
+    <h1 class="mb-4 text-center">Teaching Portfolio</h1>
+    <p class="lead text-center text-muted mb-5">
+        My teaching is grounded in constructivist principles, creating interactive and inquiry-based environments that foster both cognitive understanding and affective growth. Below is a comprehensive list of formal academic courses, along with a link to professional development seminars.
+    </p>
+
+    {% comment %} --- COMPACT SEMINARS/WORKSHOPS CALL TO ACTION (UNCHANGED) --- {% endcomment %}
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm h-100 border-primary border-3">
+                <div class="card-body text-center d-flex align-items-center justify-content-center p-4">
+                    <i class="fas fa-chalkboard-teacher fa-3x text-primary me-3"></i>
+                    <div>
+                        <h5 class="card-title fw-semibold mb-1">Seminars & Workshops</h5>
+                        <p class="card-text small text-muted mb-0">
+                            View professional development sessions I have developed and delivered for fellow educators.
+                        </p>
+                        <a href="/seminars/" class="btn btn-sm btn-outline-primary mt-2">
+                            View Seminars <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <hr class="my-5">
 
+    {% comment %} --- FILTER COURSES (UNCHANGED) --- {% endcomment %}
+    {% assign all_courses = site.categories.courses | sort: "date" | reverse %}
+
+    {% assign high_school_courses = all_courses | where: "level", "HS" %}
+
+    {% comment %} Filter University courses: Include courses with level="University" OR courses where level is not set (nil). {% endcomment %}
+    {% assign explicit_university_courses = all_courses | where: "level", "University" %}
+    {% assign courses_with_no_level = all_courses | where: "level", nil %}
+
+    {% assign university_courses = explicit_university_courses | concat: courses_with_no_level %}
+    {% assign university_courses = university_courses | sort: "date" | reverse | uniq %}
+
+
+    {% comment %} --- UNIVERSITY COURSE LIST SECTION --- {% endcomment %}
+    {% if university_courses.size > 0 %}
     <div class="text-center mb-5">
-        <h2 class="display-5">Courses Taught</h2>
+        {% comment %} CHANGED display-6 to h4 to make it smaller {% endcomment %}
+        <h2 class="h4">University Courses Taught</h2>
     </div>
 
-    {% assign courses = site.categories.courses | sort: "date" | reverse %}
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for course in courses %}
+    <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
+        {% for course in university_courses %}
         <div class="col">
-            <div class="card h-100">
-                <div class="card-body d-flex align-items-center">
-                    <div class="date-block text-center me-3 p-3 rounded-start bg-success text-white">
-                        <h5 class="mb-0">{{ course.date | date: "%Y" }}</h5>
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body d-flex p-3">
+
+                    {% comment %} START: DATE BLOCK {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                        <h2 class="display-6 fw-bold text-success mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
+                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
                     </div>
-                    <div>
-                        <h6 class="card-title mb-1">
-                            <a href="{{ course.url }}" class="text-decoration-none">{{ course.title }}</a>
-                        </h6>
+                    {% comment %} END: DATE BLOCK {% endcomment %}
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title fw-semibold mb-1">
+                            <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                        </h5>
                         <p class="card-text small text-muted">
                             {{ course.excerpt | strip_html | truncatewords: 30 }}
                         </p>
-                        <p class="card-text small mt-2">
+                        <p class="card-text small fst-italic mt-2">
                             <strong>{{ course.institution }}</strong>, {{ course.semester }}
                         </p>
+                        {% if course.syllabus %}
+                        <div class="mt-3">
+                            <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                <i class="fas fa-file-pdf me-1"></i> Syllabus
+                            </a>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
+    {% endif %}
+
+
+    {% comment %} --- HIGH SCHOOL COURSE LIST SECTION --- {% endcomment %}
+    {% if high_school_courses.size > 0 %}
+    <hr class="my-5">
+
+    <div class="text-center mb-5">
+        {% comment %} CHANGED display-6 to h4 to make it smaller {% endcomment %}
+        <h2 class="h4">High School Courses Taught</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% for course in high_school_courses %}
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body d-flex p-3">
+
+                    {% comment %} START: DATE BLOCK (Using a distinct color/icon for HS) {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                        <h2 class="display-6 fw-bold text-info mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
+                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
+                    </div>
+                    {% comment %} END: DATE BLOCK {% endcomment %}
+
+                    <div class="flex-grow-1">
+                        <h5 class="card-title fw-semibold mb-1">
+                            <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                        </h5>
+                        <p class="card-text small text-muted">
+                            {{ course.excerpt | strip_html | truncatewords: 30 }}
+                        </p>
+                        <p class="card-text small fst-italic mt-2">
+                            <strong>{{ course.institution }}</strong>, {{ course.semester }}
+                        </p>
+                        {% if course.syllabus %}
+                        <div class="mt-3">
+                            <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                <i class="fas fa-file-pdf me-1"></i> Syllabus
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+    {% unless all_courses.size > 0 %}
+    <div class="col-12 text-center">
+        <p class="lead text-muted mt-5">No courses found in the site categories.</p>
+    </div>
+    {% endunless %}
+
 </div>

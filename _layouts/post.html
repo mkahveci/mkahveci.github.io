@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container my-4">
+<div class="container my-5">
 
     {% include breadcrumb-github-projects.html
     collection_url = "/blog/"
@@ -13,38 +13,53 @@ layout: default
     <div class="row">
         <div class="col-lg-8 mx-auto">
 
-            <header class="blog-post-header p-4 mb-4 bg-light rounded-3">
-                <h1 class="display-5 mb-3">{{ page.title }}</h1>
+            <header class="p-4 mb-4 bg-light rounded-3 shadow-sm">
+                {% comment %} --- REDUCED HEADING SIZE: Using display-6 for a balanced, less overwhelming title --- {% endcomment %}
+                <h1 class="display-6 fw-bold mb-3">{{ page.title }}</h1>
+
                 {% assign has_meta = false %}
                 {% if page.date or page.author %}{% assign has_meta = true %}{% endif %}
 
                 {% if has_meta %}
-                <p class="lead text-muted">
+                <p class="small text-muted mb-3">
                     {% if page.date %}
-                    Posted on {{ page.date | date: "%-d %b %Y" }}
+                    <i class="far fa-calendar-alt fa-fw me-1"></i> Posted on {{ page.date | date: "%-d %b %Y" }}
                     {% endif %}
+
+                    {% comment %} Robust Author Link Lookup {% endcomment %}
                     {% if page.author %}
-                    by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
+                    | by
+                    {% assign author_found = false %}
+                    {% for member in site.categories.team %}
+                    {% if member.name == page.author %}
+                    <a href="{{ member.url | relative_url }}" class="text-decoration-none text-info">{{ page.author }}</a>
+                    {% assign author_found = true %}
+                    {% break %}
+                    {% endif %}
+                    {% endfor %}
+                    {% unless author_found %}
+                    <span class="text-muted">{{ page.author }}</span>
+                    {% endunless %}
                     {% endif %}
                 </p>
                 {% endif %}
 
                 {% if page.tags %}
-                <div>
+                <div class="d-flex flex-wrap" style="gap: 0.5rem;">
                     {% for tag in page.tags %}
-                    <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-decoration-none me-1">#{{ tag }}</a>
+                    <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-white text-decoration-none border">#{{ tag }}</a>
                     {% endfor %}
                 </div>
                 {% endif %}
             </header>
 
             {% if page.image %}
-            <div class="my-4">
-                <img src="{{ page.image }}" class="img-fluid rounded shadow-sm" alt="{{ page.title }}">
+            <div class="my-4 text-center">
+                <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
             </div>
             {% endif %}
 
-            <article class="post-content mt-4">
+            <article class="post-content mt-5">
                 {{ content }}
             </article>
         </div>

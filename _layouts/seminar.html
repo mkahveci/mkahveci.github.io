@@ -10,9 +10,17 @@ layout: default
     item_icon = "fas fa-chalkboard-user"
     %}
 
-    <main class="post-content">
-        {{ content }}
-    </main>
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
 
+            {% comment %}
+            The content itself should contain the H1 title and details
+            if it's a hard-coded Markdown page. We apply structural wrappers here.
+            {% endcomment %}
+            <main class="post-content card shadow-sm border-0 p-4 mt-4">
+                {{ content }}
+            </main>
 
+        </div>
+    </div>
 </div>

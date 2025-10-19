@@ -4,31 +4,49 @@ layout: default
 
 <div class="container my-5">
 
-    {% include breadcrumb-github-projects.html
-    collection_url = "/album/"
-    collection_name = "Album"
-    item_icon = "fas fa-images"
-    %}
+	{% comment %}
+	NOTE: Assuming breadcrumb-github-projects.html is meant to be a general breadcrumb include.
+	It is included as is.
+	{% endcomment %}
+	{% include breadcrumb-github-projects.html
+	collection_url = "/album/"
+	collection_name = "Photo Album"
+	item_icon = "fas fa-images"
+	%}
 
 	<div class="row">
 		<div class="col-lg-10 mx-auto">
 
 			<header class="text-center mb-5">
-				<h1 class="display-4">{{ page.title }}</h1>
+				<h1 class="display-4 fw-bold">{{ page.title }}</h1>
 				<p class="lead text-muted">
-					Posted on {{ page.date | date: "%-d %b %Y" }}
+					<i class="far fa-calendar-alt fa-fw me-1"></i> Posted on {{ page.date | date: "%-d %b %Y" }}
+
 					{% if page.author %}
-					by <a href="{% for member in site.categories.team %}{% if member.title == page.author %}{{ member.url }}{% endif %}{% endfor %}">{{ page.author }}</a>
+					| by
+					{% comment %} Use the robust team member lookup logic {% endcomment %}
+					{% assign author_found = false %}
+					{% for member in site.categories.team %}
+					{% if member.name == page.author %}
+					<a href="{{ member.url | relative_url }}" class="text-info">{{ page.author }}</a>
+					{% assign author_found = true %}
+					{% break %}
 					{% endif %}
+					{% endfor %}
+					{% unless author_found %}
+					<span class="text-muted">{{ page.author }}</span>
+					{% endunless %}
+					{% endif %}
+
 					{% if page.place %}
-					| <i class="fas fa-map-marker-alt fa-fw"></i> {{ page.place }}
+					| <i class="fas fa-map-marker-alt fa-fw me-1"></i> {{ page.place }}
 					{% endif %}
 				</p>
 			</header>
 
 			{% if page.image %}
 			<div class="text-center mb-5">
-				<img src="{{ page.image }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
+				<img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
 			</div>
 			{% endif %}
 

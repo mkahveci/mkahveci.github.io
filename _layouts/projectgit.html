@@ -1,127 +1,135 @@
 ---
 layout: default
-categories:
-- projectsgit
 ---
-
-<style>
-    /* This ensures non-active links turn the primary blue color on hover. */
-    aside a.text-dark:hover {
-      color: #1127DB !important; /* Your $primary color */
-    }
-    /* This new rule ensures the active link is always the primary blue color. */
-    aside a.text-primary {
-      color: #1127DB !important; /* Your $primary color */
-    }
-</style>
 
 {% comment %} Get the project data using the 'slug' from the page's front matter {% endcomment %}
 {% assign project = site.data.projectsgit | where: "slug", page.slug | first %}
 
-<div class="container my-4">
+{% comment %}
+The custom style block is removed. We now rely on utility classes
+and strong explicit colors (text-primary) for active/hover states.
+{% endcomment %}
 
-{% include breadcrumb-github-projects.html
-collection_url = "/projectsgit/"
-collection_name = "GitHub Projects"
-item_icon = "fab fa-github"
-%}
+<div class="container my-5">
+
+    {% include breadcrumb-github-projects.html
+    collection_url = "/projectsgit/"
+    collection_name = "GitHub Projects"
+    item_icon = "fab fa-github"
+    %}
 
     <div class="row">
         <main class="col-lg-8">
             <div class="post-content">
+                <header class="mb-4">
+                    {% comment %} Use display-4/fw-bold for a strong, clean main title {% endcomment %}
+                    <h1 class="display-4 fw-bold mb-1">{{ page.title }}</h1>
+                    <p class="lead text-muted">{{ page.excerpt }}</p>
+                </header>
+                <hr class="my-4">
                 {{ content }}
             </div>
         </main>
 
         <aside class="col-lg-4">
-            {% if project.repo %}
-            <div class="mb-4">
-                <h5 class="mb-2">Source Code</h5>
-                <p><a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}</a></p>
-            </div>
-            {% endif %}
+            <div class="sticky-top pt-md-3" style="top: 2rem;">
 
-            {% comment %}
-            FINAL, DEFINITIVE LOGIC:
-            This logic is the most robust and comprehensive solution.
-            1. It gets the current project slug from the URL.
-            2. It creates the unique path segment for the project's docs folder.
-            3. It combines `site.pages` AND `site.documents` into a single, complete list of all content on the site.
-            4. It iterates through this master list, ensuring that no document is missed, regardless of how Jekyll categorizes it.
-            {% endcomment %}
-            {% assign url_parts = page.url | split: '/' %}
-            {% assign current_project_slug = url_parts[2] %}
-            {% assign project_doc_path_segment = '/projectsgit/' | append: current_project_slug | append: '/docs/' %}
+                {% if project.repo %}
+                <div class="mb-4 p-3 bg-light rounded-3 shadow-sm">
+                    <h6 class="mb-2 fw-semibold text-primary">Source Code</h6>
+                    <a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer"
+                       class="text-dark text-decoration-none small d-block">
+                        <i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}
+                    </a>
+                </div>
+                {% endif %}
 
-            {% assign all_content = site.pages | concat: site.documents %}
-            {% assign unique_content = all_content | uniq %}
+                {% comment %}
+                FINAL, DEFINITIVE LOGIC:
+                (Filtering logic is retained from original to ensure functionality)
+                {% endcomment %}
+                {% assign url_parts = page.url | split: '/' %}
+                {% assign current_project_slug = url_parts[2] %}
+                {% assign project_doc_path_segment = '/projectsgit/' | append: current_project_slug | append: '/docs/' %}
 
-            {% assign project_documents = "" | split: "" %}
-            {% for doc in unique_content %}
-            {% if doc.url contains project_doc_path_segment %}
-            {% assign project_documents = project_documents | push: doc %}
-            {% endif %}
-            {% endfor %}
+                {% assign all_content = site.pages | concat: site.documents %}
+                {% assign unique_content = all_content | uniq %}
 
-            {% if project_documents.size > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-2">Project Documents</h5>
-                {% comment %} Separate the index page from the other documents {% endcomment %}
-                {% assign index_doc = nil %}
-                {% assign other_docs = "" | split: "" %}
-                {% for doc in project_documents %}
-                {% if doc.name == 'index.html' or doc.name == 'index.md' %}
-                {% assign index_doc = doc %}
-                {% else %}
-                {% assign other_docs = other_docs | push: doc %}
+                {% assign project_documents = "" | split: "" %}
+                {% for doc in unique_content %}
+                {% if doc.url contains project_doc_path_segment %}
+                {% assign project_documents = project_documents | push: doc %}
                 {% endif %}
                 {% endfor %}
 
-                {% comment %} Display 'Project Main' first, if it exists {% endcomment %}
-                {% if index_doc %}
-                <p class="mb-1">
-                    <a href="{{ index_doc.url }}" class="text-decoration-none {% if page.url == index_doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
-                        <i class="far fa-file-alt fa-fw me-2"></i><strong>Project Main</strong>
-                    </a>
-                </p>
+                {% if project_documents.size > 0 %}
+                <div class="mb-4 card shadow-sm border-0">
+                    <div class="card-body p-3">
+                        <h6 class="mb-3 fw-semibold">Project Documents</h6>
+                        <div class="small">
+                            {% comment %} Separate the index page from the other documents {% endcomment %}
+                            {% assign index_doc = nil %}
+                            {% assign other_docs = "" | split: "" %}
+                            {% for doc in project_documents %}
+                            {% if doc.name == 'index.html' or doc.name == 'index.md' %}
+                            {% assign index_doc = doc %}
+                            {% else %}
+                            {% assign other_docs = other_docs | push: doc %}
+                            {% endif %}
+                            {% endfor %}
+
+                            {% comment %} Display 'Project Main' first, if it exists {% endcomment %}
+                            {% if index_doc %}
+                            <p class="mb-1">
+                                <a href="{{ index_doc.url | relative_url }}" class="text-decoration-none {% if page.url == index_doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
+                                    <i class="far fa-file-alt fa-fw me-2 text-primary"></i><strong>Project Main</strong>
+                                </a>
+                            </p>
+                            {% endif %}
+
+                            {% comment %} Sort and display the rest of the documents alphabetically {% endcomment %}
+                            {% assign sorted_other_docs = other_docs | sort: "title" %}
+                            {% for doc in sorted_other_docs %}
+                            <p class="mb-1">
+                                {% comment %} Ensure links use the text-primary class when active, and text-dark otherwise {% endcomment %}
+                                <a href="{{ doc.url | relative_url }}" class="text-decoration-none {% if page.url == doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
+                                    <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | default: doc.name | replace: '.md', '' | replace: '_', '-' | replace: '-', ' ' | capitalize }}
+                                </a>
+                            </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
                 {% endif %}
 
-                {% comment %} Sort and display the rest of the documents alphabetically {% endcomment %}
-                {% assign sorted_other_docs = other_docs | sort: "title" %}
-                {% for doc in sorted_other_docs %}
-                <p class="mb-1">
-                    <a href="{{ doc.url }}" class="text-decoration-none {% if page.url == doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
-                        <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | default: doc.name | replace: '.md', '' | replace: '_', '-' | replace: '-', ' ' | capitalize }}
-                    </a>
-                </p>
-                {% endfor %}
-            </div>
-            {% endif %}
+                {% if project.contributors.size > 0 %}
+                <div class="mb-4 card shadow-sm border-0">
+                    <div class="card-body p-3">
+                        <h6 class="mb-3 fw-semibold">Contributors</h6>
+                        {% for contributor in project.contributors %}
+                        <a href="{{ contributor.url }}" class="d-flex align-items-center text-dark text-decoration-none mb-2">
+                            <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
+                            <span class="small">{{ contributor.login }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
 
-            {% if project.contributors.size > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-2">Contributors</h5>
-                {% for contributor in project.contributors %}
-                <a href="{{ contributor.url }}" class="d-flex align-items-center text-dark text-decoration-none mb-2">
-                    <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
-                    <span>{{ contributor.login }}</span>
-                </a>
-                {% endfor %}
+                {% if project.commits.size > 0 %}
+                <div class="mb-4 card shadow-sm border-0">
+                    <div class="card-body p-3">
+                        <h6 class="mb-3 fw-semibold">Latest Commits</h6>
+                        {% for commit in project.commits limit: 5 %}
+                        <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none d-block mb-3">
+                            <p class="mb-0 fw-bold small">{{ commit.message | truncatewords: 8 }}</p>
+                            <p class="mb-0 text-muted small">{{ commit.date | date: "%-d %b %Y" }}</p>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
-
-            {% if project.commits.size > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-2">Latest Commits</h5>
-                {% for commit in project.commits limit: 5 %}
-                <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none d-block mb-3">
-                    <p class="mb-0 fw-bold small">{{ commit.message | truncatewords: 8 }}</p>
-                    <p class="mb-0 text-muted small">{{ commit.date | date: "%-d %b %Y" }}</p>
-                </a>
-                {% endfor %}
-            </div>
-            {% endif %}
         </aside>
     </div>
 </div>
-

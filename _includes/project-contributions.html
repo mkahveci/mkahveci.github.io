@@ -1,101 +1,63 @@
-{% assign book-count = 0 %}
-{% assign journal-count = 0 %}
-{% assign conference-count = 0 %}
+{% comment %}
+GOAL: Find and display publications and blog posts related to the current page's projectid.
 
-{% assign books = site.categories.papers | where: "book","true" %}
+This script loads publications from _data/publications.yml and displays them
+using the detailed formatting provided by _includes/publication_card.html.
+{% endcomment %}
 
-{% for book in books %}
-{% if book.projectid contains page.projectid %}
-{% assign book-count = book-count | plus: 1 %}
-{% endif %}
-{% endfor %}
+{% assign target_project_id = page.projectid | strip %}
 
-{% assign journals = site.categories.papers | where: "journal","true" %}
+{% comment %} --- 1. PROCESS PUBLICATIONS FROM DATA FILE (publications.yml) --- {% endcomment %}
 
-{% for journal in journals %}
-{% if journal.projectid contains page.projectid %}
-{% assign journal-count = journal-count | plus: 1 %}
-{% endif %}
-{% endfor %}
+{% assign all_pubs = site.data.publications %}
+{% assign project_pubs = all_pubs | where: "projectid", target_project_id %}
 
-{% assign conferences = site.categories.papers | where: "conference","true" %}
+{% comment %} Sort by year descending to align with the rest of the site's sorting {% endcomment %}
+{% assign sorted_project_pubs = project_pubs | sort: 'year' | reverse %}
+{% assign total_pub_count = sorted_project_pubs.size %}
 
-{% for conference in conferences %}
-{% if conference.projectid contains page.projectid %}
-{% assign conference-count = conference-count | plus: 1 %}
-{% endif %}
-{% endfor %}
 
-{% assign blog = site.categories.blog | where: "projectid",page.projectid %}
+{% comment %} --- 2. PROCESS BLOG POSTS --- {% endcomment %}
 
-{% for post in blog %}
-{% if post.projectid contains page.projectid %}
-{% assign post-count = post-count | plus: 1 %}
-{% endif %}
-{% endfor %}
+{% assign blog_posts = site.categories.blog | where: "projectid", target_project_id %}
+{% assign total_blog_count = blog_posts.size %}
 
-{% if book-count > 0 or journal-count > 0 or conference-count > 0 or post-count > 0  %}
+
+{% comment %} --- 3. CHECK IF ANY CONTRIBUTIONS EXIST --- {% endcomment %}
+
+{% assign total_contributions = total_pub_count | plus: total_blog_count %}
+
+{% if total_contributions > 0 %}
 
 ## Project Publications
 
 {% endif %}
 
+{% comment %} --- 4. OUTPUT PUBLICATIONS USING publication_card.html --- {% endcomment %}
 
-{% if book-count > 0 %}
+{% if total_pub_count > 0 %}
 
-### Book
+<div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
+    {% for publication in sorted_project_pubs %}
+    {% comment %} Pass all required variables to the card template: pub, index, total_count, site {% endcomment %}
+    {% include publication_card.html pub=publication index=forloop.index total_count=total_pub_count site=site %}
+    {% endfor %}
+</div>
 
-{% for book in books %}
-{% if book.projectid contains page.projectid %}
-<p><b>{{ book-count }}</b>.&nbsp;&nbsp;{{ book.ref | markdownify | remove: '<p>' | remove: '</p>' }}
-</p>
-{% assign book-count = book-count | minus: 1 %}
 {% endif %}
+
+
+{% comment %} --- 5. OUTPUT BLOG POSTS (Original style retained) --- {% endcomment %}
+
+{% if total_blog_count > 0 %}
+
+### Blog Posts
+
+{% for post in blog_posts %}
+<p>
+    <b>{{ forloop.index }}</b>.&nbsp;&nbsp;<a href="{{ post.url | relative_url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>&nbsp;&nbsp;
+    <small class="post-date text-muted fst-italic">{{ post.date | date_to_string }}</small>
+</p>
 {% endfor %}
 
 {% endif %}
-
-
-{% if journal-count > 0 %}
-
-### Journal Article
-
-{% for journal in journals %}
-{% if journal.projectid contains page.projectid %}
-<p><b>{{ journal-count }}</b>.&nbsp;&nbsp;{{ journal.ref | markdownify | remove: '<p>' | remove: '</p>' }}
-</p>
-{% assign journal-count = journal-count | minus: 1 %}
-{% endif %}
-{% endfor %}
-
-{% endif %}
-
-
-{% if conference-count > 0 %}
-
-### Conference Paper
-
-{% for conference in conferences %}
-{% if conference.projectid contains page.projectid %}
-<p><b>{{ conference-count }}</b>.&nbsp;&nbsp;{{ conference.ref | markdownify | remove: '<p>' | remove: '</p>' }}
-</p>
-{% assign conference-count = conference-count | minus: 1 %}
-{% endif %}
-{% endfor %}
-
-{% endif %}
-
-{% if post-count > 0 %}
-
-### Blog
-
-{% for post in blog %}
-{% if post.projectid contains page.projectid %}
-<p><b>{{ forloop.index }}</b>.&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>&nbsp;&nbsp;
-<small class="post-date">{{ post.date | date_to_string }}</small>
-</p>
-{% endif %}
-{% endfor %}
-
-{% endif %}
-

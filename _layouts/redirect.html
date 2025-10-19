@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>Redirecting to {{ page.rurl | escape }}...</title>
 
-  <meta http-equiv="refresh" content="2; url={{ page.rurl }}">
+  {% comment %}
+  The meta refresh tag is a robust backup, set to 2 seconds.
+  The JavaScript immediately executes the redirect for modern browsers.
+  {% endcomment %}
+  <meta http-equiv="refresh" content="2; url={{ page.rurl | absolute_url }}">
 
   <script>
-    window.location.href = "{{ page.rurl }}";
+    window.location.href = "{{ page.rurl | absolute_url }}";
   </script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,14 +22,14 @@
   <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
     <span class="visually-hidden">Loading...</span>
   </div>
-  <h1 class="mt-4 fw-light">Redirecting...</h1>
+  <h1 class="mt-4 fw-bold display-6">Redirecting...</h1>
   <p class="lead text-muted">Please wait while we take you to the requested page.</p>
 
   <hr class="my-4 col-lg-4 mx-auto">
 
   <p class="small">
     If you are not redirected automatically, please
-    <a href="{{ page.rurl }}">click here</a>.
+    <a href="{{ page.rurl | absolute_url }}">click here</a>.
   </p>
 </div>
 

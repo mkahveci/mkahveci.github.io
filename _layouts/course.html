@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container my-4">
+<div class="container my-5">
 
     {% include breadcrumb-github-projects.html
     collection_url = "/courses/"
@@ -10,81 +10,90 @@ layout: default
     item_icon = "fas fa-graduation-cap"
     %}
 
-    <div class="p-4 mb-4 bg-light rounded-3">
-        <div class="course-header">
-            <h3 class="text-muted">{{ page.code }}</h3>
-            <h1 class="display-4">{{ page.title }}</h1>
-        </div>
-    </div>
-
     <div class="row">
 
         <div class="col-lg-8">
-            <div class="post-content">
+            {% comment %} --- HEADER SECTION (REFINED FOR COHERENCY) --- {% endcomment %}
+            <header class="p-4 mb-4 bg-light rounded-3 shadow-sm">
+                <div class="course-header">
+                    <h3 class="h4 text-muted mb-1 fw-medium">{{ page.code }}</h3>
+                    <h1 class="display-6 fw-bold mb-0">{{ page.title }}</h1>
+                </div>
+            </header>
+
+            <div class="post-content mt-4">
                 {{ content }}
             </div>
         </div>
 
+        {% comment %} --- SIDEBAR (ASIDE) COLUMN --- {% endcomment %}
         <aside class="col-lg-4">
+            <div class="sticky-top pt-md-3" style="top: 2rem;">
 
-            {% assign details_count = 0 %}
-            {% if page.instructor %}{% assign details_count = details_count | plus: 1 %}{% endif %}
-            {% if page.institution %}{% assign details_count = details_count | plus: 1 %}{% endif %}
-            {% if page.semester %}{% assign details_count = details_count | plus: 1 %}{% endif %}
-            {% if page.clevel %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+                {% assign details_count = 0 %}
+                {% if page.instructor %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+                {% if page.institution %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+                {% if page.semester %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+                {% if page.clevel %}{% assign details_count = details_count | plus: 1 %}{% endif %}
 
-            {% if details_count > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-3">Course Details</h5>
-                {% if page.instructor %}
-                <p class="d-flex justify-content-between align-items-center small mb-2">
-                    <strong>Instructor</strong>
-                    <a href="{{ page.instructorurl }}" target="_blank" rel="noopener noreferrer">{{ page.instructor }}</a>
-                </p>
-                {% endif %}
-                {% if page.institution %}
-                <p class="d-flex justify-content-between align-items-center small mb-2">
-                    <strong>Institution</strong>
-                    <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer">{{ page.institution }}</a>
-                </p>
-                {% endif %}
-                {% if page.semester %}
-                <p class="d-flex justify-content-between align-items-center small mb-2">
-                    <strong>Semester</strong>
-                    <span class="text-end">{{ page.semester }}</span>
-                </p>
-                {% endif %}
-                {% if page.clevel %}
-                <p class="d-flex justify-content-between align-items-center small mb-2">
-                    <strong>Level</strong>
-                    <span class="text-end">{{ page.clevel }}</span>
-                </p>
-                {% endif %}
-            </div>
-            {% endif %}
-
-            {% assign materials_count = 0 %}
-            {% if page.web %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
-            {% if page.pdf %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
-            {% if page.supplement %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
-
-            {% if materials_count > 0 %}
-            <div class="mb-4">
-                <h5 class="mb-3">Course Materials</h5>
-                <div class="d-grid gap-2">
-                    {% if page.web %}
-                    <a href="{{ page.web }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
-                    {% endif %}
-                    {% if page.pdf %}
-                    <a href="{{ page.pdf }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
-                    {% endif %}
-                    {% if page.supplement %}
-                    <a href="{{ page.supplement }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
-                    {% endif %}
+                {% if details_count > 0 %}
+                <div class="mb-4 card shadow-sm border-0">
+                    <div class="card-body p-3">
+                        <h6 class="mb-3 fw-semibold">Course Details</h6>
+                        <div class="small">
+                            {% if page.instructor %}
+                            <p class="d-flex justify-content-between align-items-center mb-2">
+                                <strong class="text-primary">Instructor</strong>
+                                <a href="{{ page.instructorurl | relative_url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-end">{{ page.instructor }}</a>
+                            </p>
+                            {% endif %}
+                            {% if page.institution %}
+                            <p class="d-flex justify-content-between align-items-center mb-2">
+                                <strong class="text-primary">Institution</strong>
+                                <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer" class="text-dark text-end">{{ page.institution }}</a>
+                            </p>
+                            {% endif %}
+                            {% if page.semester %}
+                            <p class="d-flex justify-content-between align-items-center mb-2">
+                                <strong class="text-primary">Terms Taught</strong>
+                                <span class="text-end text-muted">{{ page.semester }}</span>
+                            </p>
+                            {% endif %}
+                            {% if page.clevel %}
+                            <p class="d-flex justify-content-between align-items-center mb-0">
+                                <strong class="text-primary">Level</strong>
+                                <span class="text-end text-muted">{{ page.clevel }}</span>
+                            </p>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
-            </div>
-            {% endif %}
+                {% endif %}
 
+                {% assign materials_count = 0 %}
+                {% if page.web %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+                {% if page.pdf %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+                {% if page.supplement %}{% assign materials_count = materials_count | plus: 1 %}{% endif %}
+
+                {% if materials_count > 0 %}
+                <div class="mb-4 card shadow-sm border-0">
+                    <div class="card-body p-3">
+                        <h6 class="mb-3 fw-semibold">Course Materials</h6>
+                        <div class="d-grid gap-2">
+                            {% if page.web %}
+                            <a href="{{ page.web }}" class="btn btn-primary"><i class="fas fa-laptop fa-fw me-2"></i>View on LMS</a>
+                            {% endif %}
+                            {% if page.pdf %}
+                            <a href="{{ page.pdf | relative_url }}" class="btn btn-outline-secondary"><i class="fas fa-file-pdf fa-fw me-2"></i>Download Syllabus</a>
+                            {% endif %}
+                            {% if page.supplement %}
+                            <a href="{{ page.supplement | relative_url }}" class="btn btn-outline-secondary"><i class="fas fa-paperclip fa-fw me-2"></i>Supplementary Info</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
         </aside>
     </div>
 </div>
