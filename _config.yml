@@ -6,7 +6,7 @@ baseurl: ""
 email: 'mkahveci@gmail.com'
 
 markdown: kramdown
-permalink: /:title # use for github
+permalink: /:title/
 future: true
 sass:
   sass_dir: css
