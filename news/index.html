@@ -1,0 +1,184 @@
+---
+layout: default
+title: News & Opportunities
+permalink: /news/
+---
+
+<div class="container my-5">
+
+    <h1 class="mb-4 text-center">News & Opportunities</h1>
+    <p class="lead text-center text-muted mb-5">
+        A listing of academic opportunities including special issue calls, conference deadlines, and job openings.
+    </p>
+
+    {% assign current_date = 'now' | date: "%s" | plus: 0 %}
+    {% assign all_announcements = site.data.announcements %}
+
+    {% assign upcoming_announcements = "" | split: "," %}
+    {% assign past_announcements = "" | split: "," %}
+
+    {% comment %} --- FILTER ANNOUNCEMENTS INTO UPCOMING / PAST --- {% endcomment %}
+    {% for item in all_announcements %}
+    {% assign item_deadline_timestamp = item.deadline | date: "%s" | plus: 0 %}
+
+    {% if item_deadline_timestamp >= current_date %}
+    {% assign upcoming_announcements = upcoming_announcements | push: item %}
+    {% else %}
+    {% assign past_announcements = past_announcements | push: item %}
+    {% endif %}
+    {% endfor %}
+
+    {% comment %} Sort upcoming by deadline (most urgent first) and past by deadline (most recent first) {% endcomment %}
+    {% assign sorted_upcoming = upcoming_announcements | sort: 'deadline' %}
+    {% assign sorted_past = past_announcements | sort: 'deadline' | reverse %}
+
+
+    {% comment %} --- 1. UPCOMING EVENTS SECTION --- {% endcomment %}
+    {% if sorted_upcoming.size > 0 %}
+    <hr class="my-5">
+    <h2 class="display-6 fw-semibold text-center mb-5 text-success">Upcoming Deadlines ({{ sorted_upcoming.size }})</h2>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        {% for item in sorted_upcoming %}
+        {% assign deadline_color = "text-bg-success" %}
+
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body d-flex p-3">
+
+                    {% comment %} --- DATE/DEADLINE BLOCK (GREEN for upcoming) --- {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                        <h2 class="display-6 fw-bold text-success mb-0 lh-1">{{ item.deadline | date: "%b" | upcase }}</h2>
+                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ item.deadline | date: "%Y" }}</small>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        {% comment %} --- TITLE AND TYPE BADGE --- {% endcomment %}
+                        <div class="d-flex align-items-center mb-1">
+                            {% assign type_class = "text-bg-secondary" %}
+                            {% if item.type == "Special Issue" %}{% assign type_class = "text-bg-success" %}
+                            {% elsif item.type == "Conference" %}{% assign type_class = "text-bg-info" %}
+                            {% elsif item.type == "Job Opening" %}{% assign type_class = "text-bg-warning" %}
+                            {% endif %}
+
+                            <h5 class="card-title fw-semibold mb-0 me-2">{{ item.title }}</h5>
+                            <span class="badge {{ type_class }} text-white flex-shrink-0">{{ item.type }}</span>
+                        </div>
+
+                        <p class="small text-muted mb-2">
+                            <i class="fas fa-bullhorn fa-fw me-1"></i> {{ item.source }}
+                        </p>
+
+                        <p class="card-text small mb-2">{{ item.excerpt }}</p>
+
+                        <div class="mt-2 d-flex flex-wrap align-items-center" style="gap: 0.5rem;">
+
+                            {% comment %} --- DEADLINE TAG (UPCOMING - GREEN) --- {% endcomment %}
+                            <span class="badge bg-success text-white">
+                                Deadline: {{ item.deadline | date: "%B %d" }}
+                            </span>
+
+                            {% comment %} --- PRIMARY ACTION BUTTON --- {% endcomment %}
+                            {% if item.url %}
+                            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fas fa-arrow-up-right-from-square me-1"></i> Apply / Details
+                            </a>
+                            {% endif %}
+
+                            {% comment %} --- SHARING BUTTON --- {% endcomment %}
+                            {% assign email_subject_encoded = "Opportunity: " | append: item.title | url_encode %}
+                            {% assign email_subject_clean = email_subject_encoded | replace: '+', ' ' %}
+                            {% assign link_only = site.url | append: page.url | append: '#' | append: item.id %}
+                            {% assign email_body_content = "Details: " | append: link_only %}
+
+                            <a href="mailto:?subject={{ email_subject_clean }}&body={{ email_body_content }}"
+                               class="btn btn-sm btn-outline-secondary" title="Share via Email">
+                                <i class="fas fa-share-alt me-1"></i> Share
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+
+
+    {% comment %} --- 2. PAST EVENTS SECTION --- {% endcomment %}
+    {% if sorted_past.size > 0 %}
+    <hr class="my-5">
+    <h2 class="display-6 fw-semibold text-center mb-5 text-muted">Past Deadlines ({{ sorted_past.size }})</h2>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        {% for item in sorted_past %}
+
+        <div class="col">
+            <div class="card shadow-sm h-100 border-0 bg-light">
+                <div class="card-body d-flex p-3">
+
+                    {% comment %} --- DATE/DEADLINE BLOCK (RED for past) --- {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                        <h2 class="display-6 fw-bold text-danger mb-0 lh-1">{{ item.deadline | date: "%b" | upcase }}</h2>
+                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ item.deadline | date: "%Y" }}</small>
+                    </div>
+
+                    <div class="flex-grow-1">
+
+                        {% comment %} --- TITLE AND TYPE BADGE --- {% endcomment %}
+                        <div class="d-flex align-items-center mb-1">
+                            {% assign type_class = "text-bg-secondary" %}
+                            {% if item.type == "Special Issue" %}{% assign type_class = "text-bg-success" %}
+                            {% elsif item.type == "Conference" %}{% assign type_class = "text-bg-info" %}
+                            {% elsif item.type == "Job Opening" %}{% assign type_class = "text-bg-warning" %}
+                            {% endif %}
+
+                            <h5 class="card-title fw-semibold mb-0 me-2 text-muted">{{ item.title }}</h5>
+                            <span class="badge {{ type_class }} text-white flex-shrink-0 opacity-75">{{ item.type }}</span>
+                        </div>
+
+                        <p class="small text-muted mb-2">
+                            <i class="fas fa-bullhorn fa-fw me-1"></i> {{ item.source }}
+                        </p>
+
+                        <p class="card-text small mb-2 text-muted">{{ item.excerpt }}</p>
+
+                        <div class="mt-2 d-flex flex-wrap align-items-center" style="gap: 0.5rem;">
+
+                            {% comment %} --- DEADLINE TAG (PAST - RED) --- {% endcomment %}
+                            <span class="badge bg-danger text-white">
+                                Passed: {{ item.deadline | date: "%B %d" }}
+                            </span>
+
+                            {% comment %} --- LINK BUTTON (Disabled) --- {% endcomment %}
+                            <span class="btn btn-sm btn-outline-dark disabled">
+                                <i class="fas fa-arrow-up-right-from-square me-1"></i> Details (Closed)
+                            </span>
+
+                            {% comment %} --- SHARING BUTTON (Disabled) --- {% endcomment %}
+                            <span class="btn btn-sm btn-outline-secondary disabled" title="Sharing closed">
+                                <i class="fas fa-share-alt me-1"></i> Share
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+
+
+    {% unless sorted_upcoming.size > 0 or sorted_past.size > 0 %}
+    <div class="col-12 text-center">
+        <p class="lead text-muted mt-5">No announcements or opportunities found.</p>
+    </div>
+    {% endunless %}
+
+</div>

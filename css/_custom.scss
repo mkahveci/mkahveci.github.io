@@ -732,3 +732,17 @@ a {
 .post-content h6 {
   color: #1127DB; /* Your $primary color */
 }
+
+/* Custom Active Navigation Styling for Coherence */
+.nav-link.active {
+    /* Use Bootstrap variable for brand color consistency */
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+    /* Optional: Slight border-radius to match the "pill" style */
+    border-radius: 0.35rem;
+}
+
+/* Ensure non-active links keep the dark text color */
+.nav-link {
+    color: var(--bs-dark) !important;
+}

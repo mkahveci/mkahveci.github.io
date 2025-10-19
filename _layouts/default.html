@@ -42,8 +42,8 @@
 	<nav class="navbar navbar-expand-md navbar-light bg-navbar">
 		<div class="container">
 			{% if page.categories.first != 'home' %}
-			<a class="navbar-brand" href="/" style="display: flex; align-items: center;">
-				<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg" alt="Logo" style="max-width: 75px; height: auto; border-radius: 50%;">
+			<a class="navbar-brand d-flex align-items-center" href="/">
+				<img class="logo navbar-brand d-inline-block align-top me-1" src="/images/logo.svg" alt="Logo" style="max-width: 75px; height: auto; border-radius: 50%;">
 			</a>
 			{% else %}
 			<a class="navbar-brand" href="/"></a>
@@ -55,19 +55,23 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav nav-pills ms-auto">
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'papers' %}active{% endif %}" href="/publications/">publications</a>
+						{% comment %} Use category OR url match for robustness {% endcomment %}
+						<a class="nav-link {% if page.categories.first == 'papers' or page.url == '/publications/' %}active{% endif %}" href="/publications/">publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'projects' %}active{% endif %}" href="/projects/">projects</a>
+						<a class="nav-link {% if page.categories.first == 'projects' or page.url == '/projects/' %}active{% endif %}" href="/projects/">projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'courses' %}active{% endif %}" href="/courses/">teaching</a>
+						<a class="nav-link {% if page.categories.first == 'courses' or page.url == '/courses/' %}active{% endif %}" href="/courses/">teaching</a>
+					</li>
+
+					{% comment %} --- NEWS LINK HAS BEEN REMOVED FROM PRIMARY NAVIGATION --- {% endcomment %}
+
+					<li class="nav-item">
+						<a class="nav-link {% if page.categories.first == 'team' or page.url == '/team/' %}active{% endif %}" href="/team/">team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'team' %}active{% endif %}" href="/team/">team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'blog' %}active{% endif %}" href="/blog/">blog</a>
+						<a class="nav-link {% if page.categories.first == 'blog' or page.url == '/blog/' %}active{% endif %}" href="/blog/">blog</a>
 					</li>
 				</ul>
 			</div>

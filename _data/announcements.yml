@@ -1,0 +1,99 @@
+- id: kagan_cooperative_learning_institute_nashville
+  date: 2025-10-19
+  type: Institute (4-Day)
+  title: Kagan Cooperative Learning Institute (Nashville, TN)
+  deadline: 2026-01-16
+  source: Kagan Publishing and Professional Development
+  excerpt: 4-day intensive in-person institute for K-12 educators in Nashville focusing on the Seven Keys to successful cooperative learning structures to maximize student engagement and social skills. Fee is $859.
+  url: https://www.kaganonline.com/workshops/events/42234/
+  theme: Professional Development, Cooperative Learning, SEL, Pedagogy, In-Person
+
+- id: kagan_cooperative_learning_live_online
+  date: 2025-10-19
+  type: Workshop (Online)
+  title: Kagan Live Online | Cooperative Learning (Days 1 & 2)
+  deadline: 2026-02-13
+  source: Kagan Publishing and Professional Development
+  excerpt: 2-day live online workshop (via Zoom) for K-12 educators focusing on Kagan Structures to boost student engagement, achievement, and social-emotional learning. Registration fee is $399.
+  url: https://www.kaganonline.com/workshops/events/42492/
+  theme: Professional Development, Cooperative Learning, SEL, Pedagogy, K-12
+
+- id: algorithms_ai_generative_education_2e
+  date: 2025-10-19
+  type: Special Issue
+  title: Call for Papers | AI & Generative AI in Education (2nd Ed.)
+  deadline: 2026-05-31
+  source: Algorithms (MDPI)
+  excerpt: Invitation to submit research on Artificial Intelligence Algorithms and Generative AI in Education for a Special Issue (IF 2.1). Submissions accepted until May 31, 2026.
+  url: https://www.mdpi.com/journal/algorithms/special_issues/E07362Q27O
+  theme: AI, Generative AI, Algorithms, Education, Machine Learning
+
+- id: acrt_rising_star_2025
+  date: 2025-10-19
+  type: Award / Call for Papers
+  title: ACRT Rising Star 2025 Initiative - Open Science Focus
+  deadline: 2025-10-30
+  source: AI, Computer Science and Robotics Technology (ACRT) Journal
+  excerpt: Invitation to apply for the ACRT Rising Star program for early-career researchers (PhD, Postdoc, ECF). Submissions must include open data; benefits include APC-free publication.
+  url: https://www.intechopen.com/journals/1/rising-stars
+  theme: Early Career, Open Science, AI, Computer Science, Robotics
+
+- id: istes_ihses_ilset_2026
+  date: 2025-10-19
+  type: Conference
+  title: IHSES & ILSET (ISTES) 2026 Conference
+  deadline: 2026-04-09 # Use the start date of the conference as the deadline proxy
+  source: ISTES Organization (Supported by Iowa State, Indiana, UNC)
+  excerpt: Call for abstracts for the International Conference on Life Sciences, Engineering and Technology (ILSET), with both in-person (NYC) and virtual participation options available.
+  url: https://istes.org/conferences/
+  theme: Educational Technology, Life Sciences, Engineering, Virtual Events
+
+- id: ijoe_vol21_no12
+  date: 2025-10-19
+  type: New Issue
+  title: iJOE Vol. 21 No. 12 (2025) Published
+  deadline: 2026-10-19 # Arbitrary future date for indefinite listing
+  source: International Journal of Online and Biomedical Engineering
+  excerpt: The latest issue of iJOE features papers on Project-Based Learning in Control Systems, AI for Biomedical Report Generation, and LLMs for Mental Health Detection.
+  url: https://i-joe.org/index.php/ijoe/issue/view/289
+  theme: Educational Technology, Biomedical Engineering, AI, Deep Learning
+
+- id: narst_townhall_earlycareer
+  date: 2025-10-15
+  type: Town Hall
+  title: Supporting Early-Career NARST Researchers in Uncertain Times
+  deadline: 2025-10-15 # Use date as deadline for time-sensitive events
+  source: NARST Ad Hoc Committee
+  excerpt: The PSERC invites pre-tenure and early-career scholars to join a virtual town hall focused on community-building and sharing resources.
+  url: https://members.narst.org/event/VirtualTownHall-Oct2025
+  theme: Early Career, Professional Development
+
+- id: narst_welcome_orientation
+  date: 2025-10-17
+  type: Orientation
+  title: Welcome to NARST
+  deadline: 2025-10-17
+  source: NARST
+  excerpt: An orientation designed to introduce incoming graduate students and newly joined members to the resources, communities, and opportunities available through NARST.
+  url: https://members.narst.org/event/WelcometoNARSTOct2025
+  theme: Graduate Students, Membership, Networking
+
+- id: narst_ai_simulations
+  date: 2025-10-21
+  type: Webinar
+  title: Using Generative AI Digital Teaching Simulations for Eliciting Student Thinking
+  deadline: 2025-10-21
+  source: NARST
+  excerpt: Learn about how to support K-5 science teachers using a generative artificial intelligence (GenAI) digital teaching simulation. Participants will receive free access to transcripts.
+  url: https://members.narst.org/event/GenAIDigitalTeachingSimulations
+  theme: AI, Technology, Pedagogy, K-5 Science
+
+- id: narst_career_series_4
+  date: 2025-10-31
+  type: Webinar
+  title: Graduate Student Career Steps Webinar Series #4
+  deadline: 2025-10-31
+  source: NARST Graduate Student Committee
+  excerpt: A series designed to illuminate multiple career trajectories—academia, industry, government, and non-profits—and offer practical guidance.
+  url: https://members.narst.org/event/Career-Steps-Series4
+  theme: Graduate Students, Career Paths, Professional Development

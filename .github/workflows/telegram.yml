@@ -1,0 +1,34 @@
+# .github/workflows/telegram.yml
+
+name: Telegram Notification on New Trade
+
+on:
+  push:
+    paths:
+      # CRITICAL: Monitor the single JSON file
+      - '_data/trade_ideas.json'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Send Telegram Notification
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.secrets.TELEGRAM_CHAT_ID }}
+          # Pass the static file path directly
+          FILE_PATH: '_data/trade_ideas.json'
+        run: |
+          # Execute the Python script, which handles reading the array and finding the latest trade.
+          python .github/scripts/send_telegram_notification.py

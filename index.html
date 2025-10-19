@@ -16,7 +16,6 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- RECENT POSTS SECTION --- {% endcomment %}
     <div class="mb-5">
         <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
             <a href="/blog/" class="text-decoration-none text-dark">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
@@ -45,13 +44,11 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- RECENT PUBLICATIONS SECTION --- {% endcomment %}
     <div class="mb-5">
         <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
             <a href="/publications/" class="text-decoration-none text-dark">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
         </h2>
         <div class="row g-3">
-            {% comment %} CORRECTED: Using site.data.publications for publications from YAML file {% endcomment %}
             {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
             {% for publication in sorted_publications limit:3 %}
             <div class="col-lg-4">
@@ -73,7 +70,6 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- ACTIVE PROJECTS SECTION --- {% endcomment %}
     <div class="mb-5">
         <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
             <a href="/projects/" class="text-decoration-none text-dark">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
@@ -99,21 +95,52 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- MISC LINKS SECTION --- {% endcomment %}
+    {% comment %} --- NEW: RECENT NEWS/ANNOUNCEMENTS SECTION --- {% endcomment %}
+    <div class="mb-5">
+        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+            <a href="/news/" class="text-decoration-none text-dark">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2 text-danger"></i></a>
+        </h2>
+        <div class="row g-3">
+            {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
+            {% for item in sorted_announcements limit:3 %}
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100 border-0 p-2">
+                    <div class="card-body p-0 d-flex align-items-start">
+                        <i class="fas fa-bullhorn fa-fw fa-lg me-3 text-danger mt-1"></i>
+                        <div>
+                            <h6 class="mb-1 fw-medium">
+                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-dark">{{ item.title | truncatewords: 6 }}</a>
+                            </h6>
+                            <small class="text-muted d-block mt-1">
+                                Deadline: {{ item.deadline | date: "%b %d" }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    {% comment %} --- MISC LINKS SECTION (UPDATED) --- {% endcomment %}
     <div class="my-4">
         <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">Misc</h2>
         <ul class="list-inline">
             <li class="list-inline-item me-4">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/about" class="text-decoration-none text-secondary">About</a>
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/about" class="text-decoration-none text-secondary">about</a>
             </li>
             <li class="list-inline-item me-4">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/join" class="text-decoration-none text-secondary">Join</a>
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/news/" class="text-decoration-none text-secondary">news</a>
             </li>
             <li class="list-inline-item me-4">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/album" class="text-decoration-none text-secondary">Album</a>
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/join" class="text-decoration-none text-secondary">join</a>
             </li>
             <li class="list-inline-item me-4">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/contact" class="text-decoration-none text-secondary">Contact</a>
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/album" class="text-decoration-none text-secondary">album</a>
+            </li>
+            <li class="list-inline-item me-4">
+                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/contact" class="text-decoration-none text-secondary">contact</a>
             </li>
         </ul>
     </div>
