@@ -1,0 +1,40 @@
+# _data/qma_readings.yml
+- title: Understanding the /qma Calculations
+  link: /jcs/
+  excerpt: "A detailed breakdown of the key financial metrics and formulas used in disciplined options trading, including Max Profit, ROC, and Annualized Return calculations."
+  icon: fas fa-calculator
+  author: Murat Kahveci
+  tags: qma
+  date: 2025-10-13
+
+- title: Trade Management Guide
+  link: /das/
+  excerpt: This guide outlines disciplined trade management strategies for premium-selling options positions, detailing entry and profit-taking mechanics.
+  icon: fas fa-chart-area
+  author: Murat Kahveci
+  tags: qma
+  date: 2025-10-12
+
+- title: "The High-Probability Derivatives Trading Guide"
+  link: "/zmh/"
+  excerpt: "Dr. Kahveci's practical strategies for incorporating futures and options into a high-frequency, premium-selling portfolio, emphasizing Theta decay and 1SD probability."
+  icon: "fas fa-balance-scale"
+  author: "Murat Kahveci"
+  tags: "Probability, Strategy, Portfolio"
+  date: 2025-10-19
+
+- title: "Mastering /MNQ vs. /MES: Futures Trading & Profitable Short Strangle Strategies with Risk Management"
+  link: "/urq/"
+  excerpt: "A guide to navigating the volatility of futures trading, contrasting /MNQ and /MES, and detailing a profitable short strangle options strategy with essential risk management techniques."
+  icon: "fas fa-chart-line" # Font Awesome icon for the card
+  author: "Murat Kahveci"
+  tags: "Futures, Options, Risk Management"
+  date: 2025-02-08
+
+- title: "Day Trade Share Size Calculator: Risk Management Tool"
+  link: "/tsc/" # Assuming you place this content in _posts/YYYY-MM-DD-share-size-calculator.md
+  excerpt: "Quick risk-based share size tool to determine optimal position size based on account size, risk tolerance, entry, and stop loss."
+  icon: "fas fa-calculator" # A calculator icon is highly appropriate for a tool
+  author: "Murat Kahveci"
+  tags: "Tool, Risk Management, Position Sizing"
+  date: 2025-07-25 # Suggested date for it to appear first (newest)

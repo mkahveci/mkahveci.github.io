@@ -15,8 +15,6 @@
 
 	<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
-	<link rel="shortcut icon" href="/images/favicon.svg"/>
-
 <!--	Load LaTeX libraries MathJax -->
 <!--	To make MathJax render both $ and $$ delimiters, you need to add a configuration block before the main MathJax script in your default.html file. -->
 	<script>
@@ -35,6 +33,12 @@
 
 	{% include analytics.html %}
     <link rel="stylesheet" href="{{ '/css/print.css' | relative_url }}" media="print">
+    <link rel="icon" href="{{ '/images/logo.svg' | relative_url }}" type="image/svg+xml">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/logo-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/logo-16x16.png' | relative_url }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
 </head>
 <body>
 
