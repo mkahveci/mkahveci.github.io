@@ -1,6 +1,35 @@
 [
   {
     "publicationDate": "2025-10-21",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "Selling a 3 DTE short put on MRNA. The 26 strike collects 0.32 in premium. This trade offers a 1.23 percent ROC and a high annualized ROC of 149.65 percent, aligning with a short-term, premium-capturing 'Wheel' strategy.",
+    "expectedReturnDisplay": "149.65% Annualized ROC",
+    "ticker": "MRNA",
+    "currentPrice": 27.20,
+    "ivRank": 0,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "This is a short-term (3 DTE) trade targeting premium decay. Selling the 26 strike put collects premium while offering a 1.23% return on the full notional capital. The high annualized ROC of 149.65% meets the criteria for a weekly 'Wheel' strategy, indicating a willingness to be assigned shares if MRNA closes below 26.00 at expiration.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-24",
+        "dte": 3,
+        "putStrike": 26.00,
+        "putPremium": 0.32,
+        "maxProfit": 32.00
+      },
+      "metrics": {
+        "roc": 1.23,
+        "annualizedRoc": 149.65,
+        "pop": 75.00,
+        "buyingPowerEffect": 2600.00,
+        "dailyProfitPotential": 10.67
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
+    "publicationDate": "2025-10-21",
     "tradeTitle": "Short Put on B",
     "summaryJustification": "This trade sells a short put on B at the 30 strike, collecting 0.17 in premium. This is a weekly 'Wheel' strategy trade with 3 DTE, aiming to capture rapid time decay.",
     "expectedReturnDisplay": "69.35% Annualized ROC",
