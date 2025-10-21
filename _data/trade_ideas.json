@@ -1,5 +1,34 @@
 [
   {
+    "publicationDate": "2025-10-21",
+    "tradeTitle": "Short Put on B",
+    "summaryJustification": "This trade sells a short put on B at the $30 strike, collecting $17 in premium. This is a weekly 'Wheel' strategy trade with 3 DTE, aiming to capture rapid time decay.",
+    "expectedReturnDisplay": "69.35% Annualized ROC",
+    "ticker": "B",
+    "currentPrice": 31.95,
+    "ivRank": 0,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "With B trading at $31.95, this trade initiates a short put at the $30 strike, which is out-of-the-money. The strategy aims to capture the $17 premium in 3 days, representing a 69.35% annualized return on the notional capital. The 0.14 delta suggests an approximate 86% probability of profit at expiration.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-24",
+        "dte": 3,
+        "putStrike": 30.00,
+        "putPremium": 0.17,
+        "maxProfit": 17.00
+      },
+      "metrics": {
+        "roc": 0.57,
+        "annualizedRoc": 69.35,
+        "pop": 86.00,
+        "buyingPowerEffect": 3000.00,
+        "dailyProfitPotential": 5.67
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
   "publicationDate": "2025-10-17",
   "tradeTitle": "Short Put on BMNR",
   "summaryJustification": "This trade involves selling a short put on BMNR to capitalize on its high implied volatility. The selected 45 strike offers an approximate 80% probability of profit while generating a significant annualized return on capital.",
