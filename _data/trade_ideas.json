@@ -2,7 +2,7 @@
   {
     "publicationDate": "2025-10-21",
     "tradeTitle": "Short Put on B",
-    "summaryJustification": "This trade sells a short put on B at the $30 strike, collecting $17 in premium. This is a weekly 'Wheel' strategy trade with 3 DTE, aiming to capture rapid time decay.",
+    "summaryJustification": "This trade sells a short put on B at the 30 strike, collecting 0.17 in premium. This is a weekly 'Wheel' strategy trade with 3 DTE, aiming to capture rapid time decay.",
     "expectedReturnDisplay": "69.35% Annualized ROC",
     "ticker": "B",
     "currentPrice": 31.95,
