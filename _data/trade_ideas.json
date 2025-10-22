@@ -1,6 +1,35 @@
 [
   {
     "publicationDate": "2025-10-22",
+    "tradeTitle": "Short Put on BMNR",
+    "summaryJustification": "A high-probability, short-duration put trade on BMNR with a strike price well below the current market price of 48.11. The low delta of -0.12 suggests a high probability of profit. The trade offers a compelling annualized return on capital of over 100 percent for a 2-day hold.",
+    "expectedReturnDisplay": "108.90% Annualized ROC",
+    "ticker": "BMNR",
+    "currentPrice": 48.11,
+    "ivRank": 50,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "High implied volatility (IV Rank assumed to be favorable) and a very short duration (2 DTE) make BMNR an ideal candidate for selling premium. We are selling the 42.00 strike put, which is out-of-the-money (OTM) and has a delta of -0.12, positioning the trade for high probability of success as the option quickly decays towards expiration. This is a weekly 'wheel' trade, with an acceptance of potential assignment.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-24",
+        "dte": 2,
+        "putStrike": 42.00,
+        "putPremium": 0.25,
+        "maxProfit": 25.00
+      },
+      "metrics": {
+        "roc": 0.60,
+        "annualizedRoc": 108.90,
+        "pop": 88.0,
+        "buyingPowerEffect": 4200.00,
+        "dailyProfitPotential": 12.50
+      },
+      "managementPlan": "Target 80% of daily profit potential, or manage at expiration. If the stock price drops and threatens the strike price, be prepared for assignment of 100 shares at the 42.00 strike, initiating the first step of the 'Wheel' strategy."
+    }
+  },
+  {
+    "publicationDate": "2025-10-22",
     "tradeTitle": "Skewed Iron Condor on TXN",
     "summaryJustification": "The Skewed Iron Condor was placed after the post-earnings drop, centering the risk around the current price of 169.33. The wider 5.00 put spread reflects a more bullish bias to defend the recent support area, collecting a net credit of 3.02.",
     "expectedReturnDisplay": "60.40% Max ROC",
