@@ -1,5 +1,41 @@
 [
   {
+    "publicationDate": "2025-10-22",
+    "tradeTitle": "Skewed Iron Condor on TXN",
+    "summaryJustification": "The Skewed Iron Condor was placed after the post-earnings drop, centering the risk around the current price of 169.33. The wider 5.00 put spread reflects a more bullish bias to defend the recent support area, collecting a net credit of 3.02.",
+    "expectedReturnDisplay": "60.40% Max ROC",
+    "ticker": "TXN",
+    "currentPrice": 169.33,
+    "ivRank": 35,
+    "earningsDate": "2025-10-21",
+    "analysis": {
+      "thesis": "The stock has experienced a significant volatility event and price drop. An Iron Condor is used to sell volatility and collect premium, centered around the current price. The spread is skewed (wider put spread) to position defensively against further downward momentum while capitalizing on the elevated implied volatility.",
+      "strategyType": "Skewed Iron Condor",
+      "tradeDetails": {
+        "expiration": "2025-11-21",
+        "dte": 30,
+        "putStrike": 167.50,
+        "putPremium": 3.02,
+        "maxProfit": 302.00,
+        "spreadDetails": {
+          "shortPutStrike": 167.50,
+          "longPutStrike": 162.50,
+          "shortCallStrike": 170.00,
+          "longCallStrike": 172.50,
+          "netCredit": 3.02
+        }
+      },
+      "metrics": {
+        "roc": 60.40,
+        "annualizedRoc": 734.87,
+        "pop": 65.0,
+        "buyingPowerEffect": 500.00,
+        "dailyProfitPotential": 10.07
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, or manage by closing/rolling the unchallenged side at 21 DTE."
+    }
+  },
+  {
     "publicationDate": "2025-10-21",
     "tradeTitle": "Short Put on MRNA",
     "summaryJustification": "Selling a 3 DTE short put on MRNA. The 26 strike collects 0.32 in premium. This trade offers a 1.23 percent ROC and a high annualized ROC of 149.65 percent, aligning with a short-term, premium-capturing 'Wheel' strategy.",
