@@ -1,5 +1,34 @@
 [
   {
+    "publicationDate": "2025-10-23",
+    "tradeTitle": "Short Put on APLD",
+    "summaryJustification": "This is a very short-term (1 DTE) short put on APLD. The trade collects 0.12 for the 29.00 strike, which is significantly below the current price of 32.65. This high-probability (approx 94% POP) trade aims to capture quick premium decay.",
+    "expectedReturnDisplay": "149.65% Annualized ROC",
+    "ticker": "APLD",
+    "currentPrice": 32.65,
+    "ivRank": 0,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "With only 1 day until expiration, this trade sells an out-of-the-money put at the 29.00 strike, 11% below the current stock price of 32.65. The goal is to profit from rapid time decay (theta) as the option expires worthless. The low delta (0.06) suggests a high probability of success.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-24",
+        "dte": 1,
+        "putStrike": 29.00,
+        "putPremium": 0.12,
+        "maxProfit": 12.00
+      },
+      "metrics": {
+        "roc": 0.41,
+        "annualizedRoc": 149.65,
+        "pop": 94.00,
+        "buyingPowerEffect": 2900.00,
+        "dailyProfitPotential": 12.00
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
     "publicationDate": "2025-10-22",
     "tradeTitle": "Short Put on BMNR",
     "summaryJustification": "A high-probability, short-duration put trade on BMNR with a strike price well below the current market price of $48.11. The low delta of -0.12 suggests a high probability of profit. The trade offers a compelling annualized return on capital of over 100 percent for a 2-day hold.",
