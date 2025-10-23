@@ -17,18 +17,22 @@
 
 <!--	Load LaTeX libraries MathJax -->
 <!--	To make MathJax render both $ and $$ delimiters, you need to add a configuration block before the main MathJax script in your default.html file. -->
-	<script>
-		MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']]
-          },
-          options: {
-            ignoreHtmlClass: 'tex2jax_ignore',
-            processHtmlClass: 'tex2jax_process'
-          }
-        };
-	</script>
+    <script>
+        MathJax = {
+             tex: {
+               // ONLY use \\(...\\) for inline math
+               inlineMath: [['\\(', '\\)']],
+               // Use $$...$$ and \\[...\\] for display math
+               displayMath: [['$$', '$$'], ['\\[', '\\]']]
+             },
+             options: {
+               // The ignoreHtmlClass and processHtmlClass lines are technically correct,
+               // but often omitted if not specifically needed. Keeping them for safety.
+               ignoreHtmlClass: 'tex2jax_ignore',
+               processHtmlClass: 'tex2jax_process'
+             }
+           };
+    </script>
 	<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 	{% include analytics.html %}

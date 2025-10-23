@@ -2,7 +2,7 @@
   {
     "publicationDate": "2025-10-22",
     "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "A high-probability, short-duration put trade on BMNR with a strike price well below the current market price of 48.11. The low delta of -0.12 suggests a high probability of profit. The trade offers a compelling annualized return on capital of over 100 percent for a 2-day hold.",
+    "summaryJustification": "A high-probability, short-duration put trade on BMNR with a strike price well below the current market price of $48.11. The low delta of -0.12 suggests a high probability of profit. The trade offers a compelling annualized return on capital of over 100 percent for a 2-day hold.",
     "expectedReturnDisplay": "108.90% Annualized ROC",
     "ticker": "BMNR",
     "currentPrice": 48.11,

@@ -98,7 +98,7 @@
   internal_link:
   pdf:
   doi:
-  slide: wdg
+  slide:
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |
@@ -121,7 +121,7 @@
   internal_link:
   pdf:
   doi:
-  slide: sgk
+  slide:
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |
@@ -146,7 +146,7 @@
   internal_link:
   pdf:
   doi:
-  slide: pez
+  slide:
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |
@@ -200,7 +200,7 @@
   internal_link:
   pdf: /pdfs/papers/eurasia_2015_1417a.pdf
   doi: 10.12973/eurasia.2015.1417a
-  slide:
+  slide: /narst2015-stpd/
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |
@@ -294,7 +294,7 @@
   internal_link:
   pdf:
   doi:
-  slide:
+  slide: /narst2015-stpd/
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |
@@ -363,7 +363,7 @@
   internal_link:
   pdf: /pdfs/books/kahveci-affective-dimensions.pdf
   doi: 10.1007/978-3-662-45085-7
-  slide:
+  slide: /adce/
 
   # --- ABSTRACT (Use '|' pipe for multi-line content) ---
   abstract: |

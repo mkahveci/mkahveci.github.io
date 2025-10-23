@@ -57,6 +57,11 @@ permalink: /:path/:basename:output_ext
   .font-monospace {
       font-size: 0.9em;
   }
+  .leg-details {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #007bff;
+  }
 </style>
 
 <div class="container my-5">
@@ -74,7 +79,7 @@ permalink: /:path/:basename:output_ext
     <div class="row row-cols-1 g-4">
       {% for trade in sorted_trades %}
       <div class="col">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 shadow-sm border-0 d-flex">
           <div class="card-body d-flex">
 
             <div class="date-block me-3">
@@ -87,7 +92,7 @@ permalink: /:path/:basename:output_ext
               <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
 
               <div class="d-flex justify-content-between small p-2 rounded bg-light mt-2">
-                <span>Price: <strong>${%- capture price %}{% assign p = trade.currentPrice | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ price | strip }}</strong></span>
+                <span>Price: <strong>&#36;{%- capture price %}{% assign p = trade.currentPrice | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ price | strip }}</strong></span>
                 <span>IV Rank: <strong>{{ trade.ivRank | default: "N/A" }}%</strong></span>
                 <span>Earnings: <strong>{{ trade.earningsDate | default: "N/A" }}</strong></span>
               </div>
@@ -98,17 +103,32 @@ permalink: /:path/:basename:output_ext
                 <ul class="list-unstyled small mb-0">
                   <li class="d-flex justify-content-between"><span><strong>Strategy:</strong></span><span class="font-monospace">{{ trade.analysis.strategyType }}</span></li>
                   <li class="d-flex justify-content-between pt-1"><span><strong>Expiration (DTE):</strong></span><span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%b %d, %Y" }} ({{ trade.analysis.tradeDetails.dte }})</span></li>
-                  <li class="d-flex justify-content-between pt-1"><span><strong>Strike / Premium:</strong></span><span class="font-monospace">${%- capture strike %}{% assign p = trade.analysis.tradeDetails.putStrike | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ strike | strip }} / ${%- capture premium %}{% assign p = trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ premium | strip }}</span></li>
-                  <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">${%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Net Credit:</strong></span><span class="font-monospace text-primary">&#36;{%- capture net_credit %}{% assign p = trade.analysis.tradeDetails.spreadDetails.netCredit | default: trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ net_credit | strip }}</span></li>
+                  <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">&#36;{%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}</span></li>
                 </ul>
+                
+                <h6 class="small mt-3 mb-1"><strong>Leg Details</strong></h6>
+                <div class="leg-details">
+                    {% if trade.analysis.tradeDetails.spreadDetails %}
+                        <ul class="list-unstyled small mb-0">
+                            <li class="pt-1">Sell Put: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.shortPutStrike | round: 2 }}</strong></li>
+                            <li class="pt-1">Buy Put: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.longPutStrike | round: 2 }}</strong></li>
+                            <li class="pt-1">Sell Call: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.shortCallStrike | round: 2 }}</strong></li>
+                            <li class="pt-1">Buy Call: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.longCallStrike | round: 2 }}</strong></li>
+                        </ul>
+                    {% elsif trade.analysis.tradeDetails.putStrike %}
+                        <ul class="list-unstyled small mb-0">
+                            <li class="pt-1">Sell Put: <strong>&#36;{{ trade.analysis.tradeDetails.putStrike | round: 2 }}</strong> (Premium: &#36;{{ trade.analysis.tradeDetails.putPremium | round: 2 }})</li>
+                        </ul>
+                    {% endif %}
+                </div>
               </div>
-
               <div class="trade-card-section" style="background-color: #f0f8ff;">
                 <div class="metrics-grid">
                   <div class="metric-item text-center"><strong>ROC</strong><span>{{ trade.analysis.metrics.roc | round: 2 }}%</span></div>
                   <div class="metric-item text-center"><strong>Annualized</strong><span>{{ trade.analysis.metrics.annualizedRoc | round: 2 }}%</span></div>
                   <div class="metric-item text-center"><strong>POP</strong><span>{{ trade.analysis.metrics.pop | round: 1 }}%</span></div>
-                  <div class="metric-item text-center"><strong>Buying Power</strong><span>${{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}</span></div>
+                  <div class="metric-item text-center"><strong>Buying Power</strong><span>&#36;{{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}</span></div>
                 </div>
               </div>
               
@@ -124,11 +144,21 @@ permalink: /:path/:basename:output_ext
               
               <div class="trade-details-data" style="display: none;">
                 Trade: {{ trade.tradeTitle }}
-                Strategy: Sell {{ trade.analysis.tradeDetails.dte }} DTE {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }} ${%- capture strike %}{% assign p = trade.analysis.tradeDetails.putStrike | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ strike | strip }} Put
-                Premium: ${%- capture premium %}{% assign p = trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ premium | strip }}
-                Max Profit: ${%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}
+                Strategy: {{ trade.analysis.strategyType }} ({{ trade.analysis.tradeDetails.dte }} DTE)
+                Expiration: {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }}
+                {% if trade.analysis.tradeDetails.spreadDetails %}
+                Short Put: &#36;{{ trade.analysis.tradeDetails.spreadDetails.shortPutStrike | round: 2 }}
+                Long Put: &#36;{{ trade.analysis.tradeDetails.spreadDetails.longPutStrike | round: 2 }}
+                Short Call: &#36;{{ trade.analysis.tradeDetails.spreadDetails.shortCallStrike | round: 2 }}
+                Long Call: &#36;{{ trade.analysis.tradeDetails.spreadDetails.longCallStrike | round: 2 }}
+                Net Credit: &#36;{{ trade.analysis.tradeDetails.spreadDetails.netCredit | round: 2 }}
+                Max Profit: &#36;{{ trade.analysis.tradeDetails.maxProfit | round: 2 }}
+                {% else %}
+                Strike/Premium: &#36;{{ trade.analysis.tradeDetails.putStrike | round: 2 }} / &#36;{{ trade.analysis.tradeDetails.putPremium | round: 2 }}
+                Max Profit: &#36;{{ trade.analysis.tradeDetails.maxProfit | round: 2 }}
+                {% endif %}
                 ROC: {{ trade.analysis.metrics.roc | round: 2 }}%
-                Buying Power: ${{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}
+                Buying Power: &#36;{{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}
                 POP: {{ trade.analysis.metrics.pop | round: 1 }}%
               </div>
             </div>
@@ -153,6 +183,7 @@ permalink: /:path/:basename:output_ext
   function copyTradeDetails(button) {
     // Correctly selects the next sibling element which holds the data
     const detailsContainer = button.nextElementSibling; 
+    // Normalize whitespace and replace multiple spaces with a single space
     const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
 
     navigator.clipboard.writeText(detailsText).then(() => {
