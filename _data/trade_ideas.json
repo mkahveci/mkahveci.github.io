@@ -1,5 +1,34 @@
 [
   {
+    "publicationDate": "2025-10-24",
+    "tradeTitle": "Short Put on SMCI",
+    "summaryJustification": "This weekly short put trade on SMCI offers a high 36.80% annualized return. However, the trade's main drawback is the low Implied Volatility Rank of 18.31 percent, which is below the ideal 30 percent threshold for selling premium. The next earnings report is confirmed for November 4, 2025, which is after this option's expiration.",
+    "expectedReturnDisplay": "36.80% Annualized ROC",
+    "ticker": "SMCI",
+    "currentPrice": 48.88,
+    "ivRank": 18.31,
+    "earningsDate": "2025-11-04",
+    "analysis": {
+      "thesis": "This is a 7-DTE short put trade intended for a weekly 'Wheel' strategy. The 42.50 strike has an 88% probability of profit (based on the 0.12 delta) and offers a 36.80% annualized ROC, meeting the 30% rule for weeklies. The primary concern is the low IV Rank of 18.31%, which indicates that options premium is relatively cheap and may not fully compensate for the assignment risk. The trade is defined-risk, with a max profit of 30.00 on 4250.00 of buying power. This trade is placed outside of the earnings announcement on November 4, 2025.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-31",
+        "dte": 7,
+        "putStrike": 42.50,
+        "putPremium": 0.30,
+        "maxProfit": 30.00
+      },
+      "metrics": {
+        "roc": 0.71,
+        "annualizedRoc": 36.80,
+        "pop": 88.0,
+        "buyingPowerEffect": 4250.00,
+        "dailyProfitPotential": 4.29
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
     "publicationDate": "2025-10-23",
     "tradeTitle": "Short Put on APLD",
     "summaryJustification": "This is a very short-term (1 DTE) short put on APLD. The trade collects 0.12 for the 29.00 strike, which is significantly below the current price of 32.65. This high-probability (approx 94% POP) trade aims to capture quick premium decay.",
