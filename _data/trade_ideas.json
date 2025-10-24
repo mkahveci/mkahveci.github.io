@@ -1,35 +1,6 @@
 [
   {
     "publicationDate": "2025-10-24",
-    "tradeTitle": "Short Put on MRNA",
-    "summaryJustification": "The trade capitalizes on the high 70% IV Rank of MRNA, indicating inflated options premiums, and is structured to expire (7 DTE) before the next earnings event on November 6, 2025. Selling the 26 Put provides a 99.43% annualized Return on Capital (ROC) with a favorable delta of approximately -0.35.",
-    "expectedReturnDisplay": "99.43% Annualized ROC",
-    "ticker": "MRNA",
-    "currentPrice": 26.85,
-    "ivRank": 70,
-    "earningsDate": "2025-11-06",
-    "analysis": {
-      "thesis": "MRNA's Implied Volatility Rank is high at 70%, which makes the current options premiums rich and favorable for a premium-selling strategy. We are executing a weekly Short Put (The Wheel strategy entry) at the 26.00 strike, with a delta around -0.35, allowing a buffer below the current stock price, and ensuring the position is closed before the upcoming November 6th earnings report to mitigate event risk.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-10-31",
-        "dte": 7,
-        "putStrike": 26.00,
-        "putPremium": 0.49,
-        "maxProfit": 49.00
-      },
-      "metrics": {
-        "roc": 1.88,
-        "annualizedRoc": 99.43,
-        "pop": 65.00,
-        "buyingPowerEffect": 2600.00,
-        "dailyProfitPotential": 7.00
-      },
-      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
-  },
-  {
-    "publicationDate": "2025-10-24",
     "tradeTitle": "Short Put on BMNR",
     "summaryJustification": "BMNR has a low IV Rank of 15%, which is generally poor for selling premium. However, the 7 DTE weekly Short Put at the 47 strike provides a high annualized ROC of 149.36%, making it a strong candidate for an aggressive 'Wheel' strategy trade if assignment risk is accepted.",
     "expectedReturnDisplay": "149.36% Annualized ROC",
@@ -53,6 +24,35 @@
         "pop": 73.00,
         "buyingPowerEffect": 4700.00,
         "dailyProfitPotential": 17.14
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
+    "publicationDate": "2025-10-24",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "The trade capitalizes on the high 70% IV Rank of MRNA, indicating inflated options premiums, and is structured to expire (7 DTE) before the next earnings event on November 6, 2025. Selling the 26 Put provides a 99.43% annualized Return on Capital (ROC) with a favorable delta of approximately -0.35.",
+    "expectedReturnDisplay": "99.43% Annualized ROC",
+    "ticker": "MRNA",
+    "currentPrice": 26.85,
+    "ivRank": 70,
+    "earningsDate": "2025-11-06",
+    "analysis": {
+      "thesis": "MRNA's Implied Volatility Rank is high at 70%, which makes the current options premiums rich and favorable for a premium-selling strategy. We are executing a weekly Short Put (The Wheel strategy entry) at the 26.00 strike, with a delta around -0.35, allowing a buffer below the current stock price, and ensuring the position is closed before the upcoming November 6th earnings report to mitigate event risk.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-31",
+        "dte": 7,
+        "putStrike": 26.00,
+        "putPremium": 0.49,
+        "maxProfit": 49.00
+      },
+      "metrics": {
+        "roc": 1.88,
+        "annualizedRoc": 99.43,
+        "pop": 65.00,
+        "buyingPowerEffect": 2600.00,
+        "dailyProfitPotential": 7.00
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     }
