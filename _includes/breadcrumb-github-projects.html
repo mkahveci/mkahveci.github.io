@@ -10,7 +10,7 @@
 
             <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">
                 <i class="{{ include.item_icon }} fa-fw me-1"></i>
-                {{ page.title | default: page.slug | replace: '-', ' ' | capitalize }}
+                {{ page.title | default: page.slug | replace: '-', ' ' | titlecase }}
             </li>
         </ol>
     </nav>

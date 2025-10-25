@@ -12,6 +12,16 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-25 13:57:56.000000000 Z
+    message: 'root: Update README with official Telegram feed link'
+    url: https://github.com/mkahveci/qma/commit/bd15e9525a6ed9b29f7855a1df4c8ca1dd5c3398
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-10-25 13:52:44.000000000 Z
+    message: 'root: Update README with official Telegram feed link'
+    url: https://github.com/mkahveci/qma/commit/c7c4d75a3e0bfa867e1dd79d177ca9931b3d5b4e
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-23 02:35:18.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/ae9fb4f15ba88336736ece5d4f5f0f02a9441cf7
@@ -25,16 +35,6 @@
   - date: 2025-10-19 20:29:01.000000000 Z
     message: Update
     url: https://github.com/mkahveci/qma/commit/2e474e784cc504bb70a8bcc82035dc0841c949cb
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-19 20:23:50.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/ad2bb212489d88b46208f36c1d6446b1f4904bba
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-19 20:09:04.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/ef7a592da4945c1b8d084b4220b3f76f147aee37
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
