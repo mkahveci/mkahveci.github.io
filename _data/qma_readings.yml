@@ -1,4 +1,13 @@
 # _data/qma_readings.yml
+
+- date: 2025-10-22
+  title: "A Systematic Approach to Day Trading /MNQ Futures"
+  link: "/ofd/"
+  excerpt: "A complete, systematic framework for day trading Micro E-mini Nasdaq 100 (/MNQ) futures, covering trend-following, risk management, and portfolio integration."
+  icon: "fas fa-chart-line"
+  author: "Murat Kahveci"
+  tags: "qma, finance, quantitative, trading"
+
 - title: Understanding the /qma Calculations
   link: /jcs/
   excerpt: "A detailed breakdown of the key financial metrics and formulas used in disciplined options trading, including Max Profit, ROC, and Annualized Return calculations."
