@@ -6,14 +6,14 @@ permalink: /courses/
 
 <div class="container my-5">
 
-    {% comment %} --- HEADER SECTION (H1 RETAINED AS REQUESTED) --- {% endcomment %}
+    {% comment %} --- HEADER SECTION --- {% endcomment %}
     <h1 class="mb-4 text-center">Teaching Portfolio</h1>
-    <p class="lead text-center text-muted mb-5">
+    <p class="lead text-center text-muted mb-4">
         My teaching is grounded in constructivist principles, creating interactive and inquiry-based environments that foster both cognitive understanding and affective growth. Below is a comprehensive list of formal academic courses, along with a link to professional development seminars.
     </p>
 
-    {% comment %} --- COMPACT SEMINARS/WORKSHOPS CALL TO ACTION (UNCHANGED) --- {% endcomment %}
-    <div class="row justify-content-center mb-5">
+    {% comment %} --- COMPACT SEMINARS/WORKSHOPS CALL TO ACTION --- {% endcomment %}
+    <div class="row justify-content-center mb-3">
         <div class="col-md-8 col-lg-6">
             <div class="card shadow-sm h-100 border-primary border-3">
                 <div class="card-body text-center d-flex align-items-center justify-content-center p-4">
@@ -31,119 +31,223 @@ permalink: /courses/
             </div>
         </div>
     </div>
-    <hr class="my-5">
+    <hr class="my-3"> {% comment %} Reduced vertical margin for compactness {% endcomment %}
 
     {% comment %} --- FILTER COURSES (UNCHANGED) --- {% endcomment %}
     {% assign all_courses = site.categories.courses | sort: "date" | reverse %}
 
     {% assign high_school_courses = all_courses | where: "level", "HS" %}
 
-    {% comment %} Filter University courses: Include courses with level="University" OR courses where level is not set (nil). {% endcomment %}
     {% assign explicit_university_courses = all_courses | where: "level", "University" %}
     {% assign courses_with_no_level = all_courses | where: "level", nil %}
-
     {% assign university_courses = explicit_university_courses | concat: courses_with_no_level %}
     {% assign university_courses = university_courses | sort: "date" | reverse | uniq %}
 
+    {% assign total_courses = all_courses | size %}
 
-    {% comment %} --- UNIVERSITY COURSE LIST SECTION --- {% endcomment %}
-    {% if university_courses.size > 0 %}
-    <div class="text-center mb-5">
-        {% comment %} CHANGED display-6 to h4 to make it smaller {% endcomment %}
-        <h2 class="h4">University Courses Taught</h2>
-    </div>
-
-    <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
-        {% for course in university_courses %}
-        <div class="col">
-            <div class="card shadow-sm h-100 border-0">
-                <div class="card-body d-flex p-3">
-
-                    {% comment %} START: DATE BLOCK {% endcomment %}
-                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
-                        <h2 class="display-6 fw-bold text-success mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
-                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
-                    </div>
-                    {% comment %} END: DATE BLOCK {% endcomment %}
-
-                    <div class="flex-grow-1">
-                        <h5 class="card-title fw-semibold mb-1">
-                            <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
-                        </h5>
-                        <p class="card-text small text-muted">
-                            {{ course.excerpt | strip_html | truncatewords: 30 }}
-                        </p>
-                        <p class="card-text small fst-italic mt-2">
-                            <strong>{{ course.institution }}</strong>, {{ course.semester }}
-                        </p>
-                        {% if course.syllabus %}
-                        <div class="mt-3">
-                            <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
-                                <i class="fas fa-file-pdf me-1"></i> Syllabus
-                            </a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
-
-
-    {% comment %} --- HIGH SCHOOL COURSE LIST SECTION --- {% endcomment %}
-    {% if high_school_courses.size > 0 %}
-    <hr class="my-5">
-
-    <div class="text-center mb-5">
-        {% comment %} CHANGED display-6 to h4 to make it smaller {% endcomment %}
-        <h2 class="h4">High School Courses Taught</h2>
-    </div>
-
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for course in high_school_courses %}
-        <div class="col">
-            <div class="card shadow-sm h-100 border-0">
-                <div class="card-body d-flex p-3">
-
-                    {% comment %} START: DATE BLOCK (Using a distinct color/icon for HS) {% endcomment %}
-                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
-                        <h2 class="display-6 fw-bold text-info mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
-                        <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
-                    </div>
-                    {% comment %} END: DATE BLOCK {% endcomment %}
-
-                    <div class="flex-grow-1">
-                        <h5 class="card-title fw-semibold mb-1">
-                            <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
-                        </h5>
-                        <p class="card-text small text-muted">
-                            {{ course.excerpt | strip_html | truncatewords: 30 }}
-                        </p>
-                        <p class="card-text small fst-italic mt-2">
-                            <strong>{{ course.institution }}</strong>, {{ course.semester }}
-                        </p>
-                        {% if course.syllabus %}
-                        <div class="mt-3">
-                            <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
-                                <i class="fas fa-file-pdf me-1"></i> Syllabus
-                            </a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
-
-
-    {% unless all_courses.size > 0 %}
+    {% unless total_courses > 0 %}
     <div class="col-12 text-center">
         <p class="lead text-muted mt-5">No courses found in the site categories.</p>
     </div>
+    {% else %}
+
+    {% comment %} 1. Extract unique institution names for the dropdown {% endcomment %}
+    {% assign institutions = all_courses | map: 'institution' | uniq | sort %}
+
+    <div class="d-flex justify-content-end mb-4">
+        <div class="course-filter-container">
+            <label for="institution-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">Filter by Institution:</label>
+            <select id="institution-selector" class="form-select form-select-sm d-inline-block w-auto">
+                <option value="all" selected>All Courses ({{ total_courses }})</option>
+                {% for institution in institutions %}
+                {% assign inst_id = institution | slugify %}
+                <option value="{{ inst_id }}">{{ institution }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    {% comment %} --- WRAP BOTH COURSE SECTIONS IN A CONTAINER FOR JS TARGETING --- {% endcomment %}
+    <div id="course-sections-container">
+
+        {% comment %} --- UNIVERSITY COURSE LIST SECTION --- {% endcomment %}
+        {% if university_courses.size > 0 %}
+        <div class="text-center mb-3 university-header-wrapper">
+            <h2 class="h4">University Courses Taught</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-4 mb-5">
+            {% for course in university_courses %}
+            {% assign inst_class = course.institution | slugify %}
+
+            <div class="col course-card-wrapper inst-{{ inst_class }} university-course-card">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body d-flex p-3">
+                        <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                            <h2 class="display-6 fw-bold text-success mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
+                            <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title fw-semibold mb-1">
+                                <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                            </h5>
+                            <p class="card-text small text-muted">
+                                {{ course.excerpt | strip_html | truncatewords: 30 }}
+                            </p>
+                            <p class="card-text small fst-italic mt-2">
+                                <strong>{{ course.institution }}</strong>, {{ course.semester }}
+                            </p>
+                            {% if course.syllabus %}
+                            <div class="mt-3">
+                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                    <i class="fas fa-file-pdf me-1"></i> Syllabus
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+        {% comment %} --- HIGH SCHOOL COURSE LIST SECTION --- {% endcomment %}
+        {% if high_school_courses.size > 0 %}
+        <hr class="my-3 high-school-divider"> {% comment %} Reduced vertical margin for compactness {% endcomment %}
+
+        <div class="text-center mb-3 high-school-header-wrapper"> {% comment %} Reduced mb-5 to mb-3 {% endcomment %}
+            <h2 class="h4">High School Courses Taught</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+            {% for course in high_school_courses %}
+            {% assign inst_class = course.institution | slugify %}
+
+            {% comment %} CRITICAL: Add wrapper class for filtering {% endcomment %}
+            <div class="col course-card-wrapper inst-{{ inst_class }} high-school-course-card">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body d-flex p-3">
+
+                        {% comment %} START: DATE BLOCK (Using a distinct color/icon for HS)
+                        <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
+                            <h2 class="display-6 fw-bold text-info mb-0 lh-1">{{ course.date | date: "%y" }}</h2>
+                            <small class="text-secondary fw-bold text-uppercase d-block mt-n1">{{ course.date | date: "%Y" }}</small>
+                        </div>
+                        {% endcomment %}
+
+                        <div class="flex-grow-1">
+                            <h5 class="card-title fw-semibold mb-1">
+                                <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                            </h5>
+                            <p class="card-text small text-muted">
+                                {{ course.excerpt | strip_html | truncatewords: 30 }}
+                            </p>
+                            <p class="card-text small fst-italic mt-2">
+                                <strong>{{ course.institution }}</strong>, {{ course.semester }}
+                            </p>
+                            {% if course.syllabus %}
+                            <div class="mt-3">
+                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                    <i class="fas fa-file-pdf me-1"></i> Syllabus
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </div> {% comment %} END course-sections-container {% endcomment %}
+
     {% endunless %}
 
 </div>
+
+{% comment %}
+--- JAVASCRIPT FOR CLIENT-SIDE FILTERING & TURKISH SORTING (Native JS) ---
+{% endcomment %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selector = document.getElementById('institution-selector');
+        const courseCards = document.querySelectorAll('.course-card-wrapper');
+
+        // New targets for the section headers and divider
+        const universityHeader = document.querySelector('.university-header-wrapper');
+        const highSchoolHeader = document.querySelector('.high-school-header-wrapper');
+        const hsDivider = document.querySelector('.high-school-divider');
+
+        // Store initial visibility state
+        const universityHeaderVisible = universityHeader && universityHeader.style.display !== 'none';
+        const highSchoolHeaderVisible = highSchoolHeader && highSchoolHeader.style.display !== 'none';
+
+        // --- 1. TURKISH DROPDOWN SORT FIX ---
+        if (selector) {
+            const options = Array.from(selector.options);
+            const selectedValue = selector.value;
+
+            // Sort options, excluding the first element ("All Courses")
+            const sortableOptions = options.slice(1);
+
+            // Use Intl.Collator with Turkish locale ('tr') for accurate sorting
+            const collator = new Intl.Collator('tr', { sensitivity: 'base' });
+
+            // Sort the array of option elements by their text content
+            sortableOptions.sort((a, b) => collator.compare(a.text, b.text));
+
+            // Reassemble the dropdown: "All Courses" + sorted options
+            selector.innerHTML = '';
+            selector.appendChild(options[0]); // Re-add "All Courses" first
+            sortableOptions.forEach(option => selector.appendChild(option));
+
+            // Restore the original selection
+            selector.value = selectedValue;
+        }
+
+
+        // 2. Filtering Function (Native JS)
+        function filterCourses(selectedInstitution) {
+
+            // --- A. FILTERING COURSES ---
+            courseCards.forEach(card => {
+                if (selectedInstitution === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardInstitutionClass = 'inst-' + selectedInstitution;
+                    if (card.classList.contains(cardInstitutionClass)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+
+            // --- B. TOGGLING HEADERS/DIVIDERS ---
+            if (selectedInstitution !== 'all') {
+                // Hide ALL headers and the divider when any filter is active
+                if (universityHeader) universityHeader.style.display = 'none';
+                if (highSchoolHeader) highSchoolHeader.style.display = 'none';
+                if (hsDivider) hsDivider.style.display = 'none';
+            } else {
+                // Show headers/divider only if they were originally present/visible
+                if (universityHeader && universityHeaderVisible) universityHeader.style.display = 'block';
+                if (highSchoolHeader && highSchoolHeaderVisible) highSchoolHeader.style.display = 'block';
+                if (hsDivider) hsDivider.style.display = 'block';
+            }
+        }
+
+        // 3. Event Listener (Native JS)
+        if (selector) {
+            selector.addEventListener('change', function() {
+                filterCourses(this.value);
+            });
+        }
+
+        // 4. Initial State Setup: Default is 'all', ensuring visibility on load.
+        filterCourses('all');
+    });
+</script>

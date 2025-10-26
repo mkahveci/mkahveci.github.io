@@ -93,7 +93,7 @@ and strong explicit colors (text-primary) for active/hover states.
                             <p class="mb-1">
                                 {% comment %} Ensure links use the text-primary class when active, and text-dark otherwise {% endcomment %}
                                 <a href="{{ doc.url | relative_url }}" class="text-decoration-none {% if page.url == doc.url %}text-primary fw-bold{% else %}text-dark{% endif %}">
-                                    <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | default: doc.name | replace: '.md', '' | replace: '_', '-' | replace: '-', ' ' | capitalize }}
+                                    <i class="far fa-file-lines fa-fw me-2"></i>{{ doc.title | default: doc.name | replace: '.md', '' | replace: '_', '-' | replace: '-', ' ' | titlecase }}
                                 </a>
                             </p>
                             {% endfor %}

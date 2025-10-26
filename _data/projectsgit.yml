@@ -12,6 +12,16 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-25 22:40:18.000000000 Z
+    message: |-
+      feat: Display filtered trade list and improve load efficiency
+
+      Update trade-ideas.md to show a filtered list of trades, defaulting to today's trades. Also, improve page load efficiency by limiting the initial display to the last 50 trades.
+
+      Rename reading.md title to "Readings & Documentation".
+    url: https://github.com/mkahveci/qma/commit/2c1a2b7dac01d5d3c9f5c2fe5bca00abc4bc1e48
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-25 14:23:45.000000000 Z
     message: 'readings: editing LaTeX field delimiters'
     url: https://github.com/mkahveci/qma/commit/5f87dd8ffe38f4a7d3e516d13e3ec80352d0ec92
@@ -30,11 +40,6 @@
   - date: 2025-10-25 13:52:44.000000000 Z
     message: 'root: Update README with official Telegram feed link'
     url: https://github.com/mkahveci/qma/commit/c7c4d75a3e0bfa867e1dd79d177ca9931b3d5b4e
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-23 02:35:18.000000000 Z
-    message: Update
-    url: https://github.com/mkahveci/qma/commit/ae9fb4f15ba88336736ece5d4f5f0f02a9441cf7
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true

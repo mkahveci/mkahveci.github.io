@@ -746,3 +746,46 @@ a {
 .nav-link {
     color: var(--bs-dark) !important;
 }
+
+/* Custom styles for a more liquid/pill-like badge appearance */
+.filter-tag {
+    /* Increase vertical padding slightly for a taller, pill-like look */
+    padding: 0.35rem 0.8rem !important;
+
+    /* Make the corners fully rounded */
+    border-radius: 50rem !important;
+
+    /* Subtle border for separation when using light backgrounds */
+    border: 1px solid #dee2e6 !important;
+
+    /* Use a slightly darker text color for better contrast on light badges */
+    color: #495057 !important;
+
+    /* Smooth transition for hover effects */
+    transition: all 0.2s ease-in-out;
+
+    /* Ensure the cursor indicates clickability */
+    cursor: pointer;
+
+    /* Ensure no text selection on click */
+    user-select: none;
+}
+
+/* Improve Hover/Focus State for light badges (not the active/primary one) */
+.filter-tag:hover:not(.active) {
+    background-color: #e9ecef !important; /* Lighter hover color */
+    border-color: #adb5bd !important; /* Slightly darker border on hover */
+}
+
+/* Ensure the active badge stands out more */
+.filter-tag.active {
+    /* Use a stronger shadow or deeper color if desired,
+       but keeping your current bg-primary/text-white is generally enough. */
+    font-weight: 600;
+}
+
+/* Style the count number (for potential future separation) */
+.filter-tag span.count {
+    margin-left: 0.3rem; /* Small space between tag name and count */
+    opacity: 0.8; /* Slightly deemphasize the count */
+}

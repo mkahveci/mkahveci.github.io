@@ -19,19 +19,89 @@ permalink: /publications/
     {% comment %} CALCULATE THE TOTAL COUNT BEFORE THE LOOP {% endcomment %}
     {% assign total_pubs = sorted_publications | size %}
 
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-
-        {% comment %} Iterate through publications, passing the item, the loop index, and the total count. {% endcomment %}
-        {% for publication in sorted_publications %}
-        {% include publication_card.html pub=publication index=forloop.index total_count=total_pubs %}
-        {% endfor %}
-
-    </div>
-
+    {% comment %} --- NEW: DYNAMIC TYPE FILTER AND DROPDOWN --- {% endcomment %}
     {% unless total_pubs > 0 %}
     <div class="col-12 text-center">
         <p class="lead text-muted mt-5">No publications found. Please check your data file: `_data/publications.yml`.</p>
     </div>
+    {% else %}
+
+    {% comment %} 1. Extract unique types for the dropdown {% endcomment %}
+    {% assign pub_types = sorted_publications | map: 'type' | uniq | sort %}
+
+    <div class="d-flex justify-content-end mb-4">
+        <div class="pub-filter-container">
+            <label for="pub-type-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">Filter by Type:</label>
+            <select id="pub-type-selector" class="form-select form-select-sm d-inline-block w-auto">
+                <option value="all" selected>All Publication Types</option>
+                {% for type in pub_types %}
+                <option value="{{ type | slugify }}">{{ type | capitalize }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4" id="publications-list">
+
+        {% comment %} Iterate through publications, passing the item, the loop index, and the total count. {% endcomment %}
+        {% for publication in sorted_publications %}
+        {% comment %} CRITICAL: Add the unique type class for JS filtering {% endcomment %}
+        {% assign pub_type_class = publication.type | slugify %}
+        <div class="col pub-card-wrapper pub-type-{{ pub_type_class }}">
+            {% include publication_card.html pub=publication index=forloop.index total_count=total_pubs %}
+        </div>
+        {% endfor %}
+
+    </div>
+
     {% endunless %}
 
 </div>
+
+{% comment %}
+--- NEW JAVASCRIPT FOR CLIENT-SIDE FILTERING (Native JS) ---
+{% endcomment %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const typeSelector = document.getElementById('pub-type-selector');
+        const pubCards = document.querySelectorAll('.pub-card-wrapper');
+
+        // 1. Filtering Function (Native JS)
+        function filterPublications(selectedType) {
+            pubCards.forEach(card => {
+                if (selectedType === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardTypeClass = 'pub-type-' + selectedType;
+                    if (card.classList.contains(cardTypeClass)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // 2. Event Listener (Native JS)
+        if (typeSelector) {
+            typeSelector.addEventListener('change', function() {
+                filterPublications(this.value);
+            });
+        }
+
+        // 3. Initial State Setup
+        // Default to "All Publications" being visible.
+        filterPublications('all');
+    });
+</script>
+
+
+<!--
+### Key Implementation Details
+
+1.  **Dynamic Options:** The Liquid code `{% assign pub_types = sorted_publications | map: 'type' | uniq | sort %}` ensures the dropdown only contains publication types actually present in your `_data/publications.yml`, and they are listed alphabetically.
+2.  **Card Identification:** Each publication card is wrapped in a `div class="col pub-card-wrapper..."` and is given a unique class based on its type: `pub-type-{{ publication.type | slugify }}`.
+3.  **JavaScript Filtering:** The native JavaScript uses the `selectedType` from the dropdown to check if the card has the matching class (`card.classList.contains(...)`).
+4.  **Default State:** The script automatically calls `filterPublications('all');` on page load, guaranteeing that all publications are visible by default, as requested.
+
+This solution provides the clear, filtered view readers expect on a static site.-->

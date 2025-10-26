@@ -1,6 +1,6 @@
 ---
 layout: projectgit
-title: "Project Readings & Documentation"
+title: "Readings & Documentation"
 permalink: /projectsgit/qma/docs/readings/
 ---
 

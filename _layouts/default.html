@@ -88,6 +88,10 @@
 </header>
 
 <main class="container my-5">
+    {% if page.wip %}
+    {% include wip-alert.html %}
+    {% endif %}
+
 	{{ content }}
 </main>
 

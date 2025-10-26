@@ -13,7 +13,7 @@ layout: default
     <div class="row">
 
         <div class="col-lg-8">
-            {% comment %} --- HEADER SECTION (REFINED FOR COHERENCY) --- {% endcomment %}
+            {% comment %} --- HEADER SECTION --- {% endcomment %}
             <header class="p-4 mb-4 bg-light rounded-3 shadow-sm">
                 <div class="course-header">
                     <h3 class="h4 text-muted mb-1 fw-medium">{{ page.code }}</h3>
@@ -24,6 +24,158 @@ layout: default
             <div class="post-content mt-4">
                 {{ content }}
             </div>
+
+            {% comment %}
+            --- DYNAMIC COURSE CONTENT SECTION (UNITS/LESSONS) ---
+            {% endcomment %}
+            {% if page.course_units and page.course_units.size > 0 %}
+            <hr class="my-5">
+
+            {% assign now_ts = site.time | date: "%s" | plus: 0 %}
+            {% assign due_soon_ts = now_ts | plus: 864000 %}
+            {% assign ongoing_unit_id_liquid = false %}
+
+            {% comment %} Pre-calculate Ongoing Unit ID for JavaScript default selection {% endcomment %}
+            {% for unit in page.course_units %}
+            {% assign unit_id = unit.title | slugify %}
+            {% if ongoing_unit_id_liquid == false %}
+            {% for lesson in unit.lessons %}
+            {% for activity in lesson.activities %}
+            {% if activity.due_date and activity.publish != false %}
+            {% assign date_string = activity.due_date | strip | date: "%s" %}
+            {% assign due_date_ts = date_string | plus: 0 %}
+
+            {% comment %} Check if due date is in the 'Ongoing' window (not overdue AND due soon) {% endcomment %}
+            {% if due_date_ts > now_ts and due_date_ts < due_soon_ts %}
+            {% assign ongoing_unit_id_liquid = unit_id %}
+            {% break %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% if ongoing_unit_id_liquid != false %}{% break %}{% endif %}
+            {% endfor %}
+            {% endif %}
+            {% if ongoing_unit_id_liquid != false %}{% break %}{% endif %}
+            {% endfor %}
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="mb-0 text-dark">Unit Content & Activities 📝</h3>
+
+                {% comment %} --- NEW DROPDOWN SELECTOR --- {% endcomment %}
+                <div class="unit-filter-container">
+                    <label for="unit-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">View Unit:</label>
+                    <select id="unit-selector" class="form-select form-select-sm d-inline-block w-auto">
+                        <option value="all">All Units</option>
+
+                        {% for unit in page.course_units %}
+                        {% assign unit_id = unit.title | slugify %}
+                        <option value="{{ unit_id }}">{{ unit.title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            {% for unit in page.course_units %}
+            {% assign unit_id = unit.title | slugify %}
+
+            {% comment %} WRAP EACH UNIT IN A DIV FOR JS FILTERING {% endcomment %}
+            <div class="unit-content-wrapper" id="unit-{{ unit_id }}">
+
+                <div class="mb-5">
+                    <h4 class="text-primary border-bottom border-2 border-primary pb-2 mb-4">{{ unit.title }}</h4>
+
+                    {% for lesson in unit.lessons %}
+                    <div class="card shadow-sm mb-4 border-0">
+                        <div class="card-header bg-light border-bottom-0">
+                            <h6 class="mb-0 fw-bold">{{ lesson.title }}</h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            {% for activity in lesson.activities %}
+
+                            {% comment %} Filter out non-published activities early {% endcomment %}
+                            {% if activity.publish == false %}
+                            {% continue %}
+                            {% endif %}
+
+                            {% comment %} 1. DETERMINE STATUS {% endcomment %}
+                            {% assign status_class = "text-info" %}
+                            {% assign status_text = "Future" %}
+                            {% assign status_icon = "fas fa-calendar-alt" %}
+                            {% assign due_date_ts = 0 %}
+
+                            {% if activity.due_date %}
+                            {% assign date_string = activity.due_date | strip | date: "%s" %}
+                            {% assign due_date_ts = date_string | plus: 0 %}
+
+                            {% if due_date_ts > 0 %}
+                            {% if due_date_ts < now_ts %}
+                            {% assign status_class = "text-danger" %}
+                            {% assign status_text = "Overdue" %}
+                            {% assign status_icon = "fas fa-hourglass-end" %}
+                            {% elsif due_date_ts < due_soon_ts %}
+                            {% assign status_class = "text-success" %}
+                            {% assign status_text = "Ongoing" %}
+                            {% assign status_icon = "fas fa-spinner fa-pulse" %}
+                            {% endif %}
+                            {% endif %}
+                            {% endif %}
+
+                            {% comment %} 2. Determine Resource Icon and Base URL {% endcomment %}
+                            {% assign res_icon = "fas fa-file" %}
+                            {% assign res_url_base = "" %}
+
+                            {% case activity.type %}
+                            {% when 'presentation' %}
+                            {% assign res_icon = "fas fa-file-powerpoint" %}
+                            {% assign res_url_base = "https://docs.google.com/presentation/d/" %}
+                            {% when 'simulation' %}
+                            {% assign res_icon = "fas fa-drafting-compass" %}
+                            {% when 'lab' %}
+                            {% assign res_icon = "fas fa-flask" %}
+                            {% assign res_url_base = "https://docs.google.com/document/d/" %}
+                            {% when 'video' %}
+                            {% assign res_icon = "fab fa-youtube" %}
+                            {% assign res_url_base = "https://www.youtube.com/watch?v=" %}
+                            {% endcase %}
+
+                            {% comment %} 3. Construct the final URL {% endcomment %}
+                            {% assign final_url = res_url_base | append: activity.resource_id %}
+
+                            {% if activity.resource_id contains 'http' %}
+                            {% assign final_url = activity.resource_id %}
+                            {% endif %}
+
+                            <li class="list-group-item d-flex align-items-center p-3">
+                                <a href="{{ final_url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none d-flex align-items-center w-100">
+
+                                    <div class="flex-shrink-0 me-3">
+                                        <i class="{{ res_icon }} fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-0 text-dark fw-semibold">{{ activity.title }}</h6>
+                                        <small class="text-muted">{{ activity.type | capitalize }}</small>
+                                    </div>
+
+                                    {% if activity.due_date and due_date_ts > 0 %}
+                                    <div class="flex-shrink-0 text-end ms-3">
+                                            <span class="{{ status_class }} small fw-bold">
+                                                <i class="{{ status_icon }} me-1"></i> {{ status_text }}
+                                            </span><br>
+                                        <small class="text-muted">{{ activity.due_date | date: "%b %d, %Y" }}</small>
+                                    </div>
+                                    {% endif %}
+
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div> {% comment %} END unit-content-wrapper {% endcomment %}
+            {% endfor %}
+            {% endif %}
+
         </div>
 
         {% comment %} --- SIDEBAR (ASIDE) COLUMN --- {% endcomment %}
@@ -97,3 +249,56 @@ layout: default
         </aside>
     </div>
 </div>
+
+{% comment %}
+--- JAVASCRIPT FOR CLIENT-SIDE FILTERING (Native JS) ---
+{% endcomment %}
+<script>
+    // Self-executing function to ensure execution happens after DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        const unitSelector = document.getElementById('unit-selector');
+        const unitWrappers = document.querySelectorAll('.unit-content-wrapper');
+
+        // Pass Liquid variable safely to JavaScript
+        const ongoingUnitId = '{{ ongoing_unit_id_liquid | default: "false" }}';
+
+        // 1. Filtering Function (Native JS)
+        function filterUnits(selectedId) {
+            unitWrappers.forEach(unit => {
+                if (selectedId === 'all') {
+                    unit.style.display = 'block';
+                } else {
+                    if (unit.id === 'unit-' + selectedId) {
+                        unit.style.display = 'block';
+                    } else {
+                        unit.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // 2. Event Listener (Native JS)
+        if (unitSelector) {
+            unitSelector.addEventListener('change', function() {
+                filterUnits(this.value);
+            });
+        }
+
+        // 3. Initial State Setup
+
+        // A. Set all units to hidden by default to prevent "flash" of content
+        unitWrappers.forEach(unit => {
+            unit.style.display = 'none';
+        });
+
+        if (ongoingUnitId !== 'false') {
+            // B. Select the ongoing unit and filter
+            if (unitSelector) unitSelector.value = ongoingUnitId;
+            filterUnits(ongoingUnitId);
+        } else {
+            // C. If no ongoing unit found, select "All Units" and filter
+            if (unitSelector) unitSelector.value = 'all';
+            filterUnits('all');
+        }
+    });
+</script>
