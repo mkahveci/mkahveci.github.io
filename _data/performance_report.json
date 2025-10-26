@@ -1,0 +1,189 @@
+{
+    "metadata": {
+        "generated_at": "2025-10-26 09:21:43.877398",
+        "start_date": "2025-09-01",
+        "end_date": "2025-10-26"
+    },
+    "total_summary": {
+        "total_trades_closed": 7,
+        "total_gross_pnl": 2004.5,
+        "total_fees": 9.0,
+        "total_commissions": 0.0,
+        "total_net_pnl": 1995.5
+    },
+    "time_series_data": {
+        "daily_net_pnl": [
+            {
+                "date": "2025-09-01",
+                "net_pnl_daily": 72.5,
+                "cumulative_pnl": 72.5
+            },
+            {
+                "date": "2025-09-02",
+                "net_pnl_daily": 199.0,
+                "cumulative_pnl": 271.5
+            },
+            {
+                "date": "2025-09-03",
+                "net_pnl_daily": 49.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-04",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-05",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-06",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-07",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-08",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-09",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 320.5
+            },
+            {
+                "date": "2025-09-10",
+                "net_pnl_daily": 299.0,
+                "cumulative_pnl": 619.5
+            },
+            {
+                "date": "2025-09-11",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 619.5
+            },
+            {
+                "date": "2025-09-12",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 619.5
+            },
+            {
+                "date": "2025-09-13",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 619.5
+            },
+            {
+                "date": "2025-09-14",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 619.5
+            },
+            {
+                "date": "2025-09-15",
+                "net_pnl_daily": -121.5,
+                "cumulative_pnl": 498.0
+            },
+            {
+                "date": "2025-09-16",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 498.0
+            },
+            {
+                "date": "2025-09-17",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 498.0
+            },
+            {
+                "date": "2025-09-18",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 498.0
+            },
+            {
+                "date": "2025-09-19",
+                "net_pnl_daily": 0.0,
+                "cumulative_pnl": 498.0
+            },
+            {
+                "date": "2025-09-20",
+                "net_pnl_daily": 1497.5,
+                "cumulative_pnl": 1995.5
+            }
+        ],
+        "weekly_net_pnl": [
+            {
+                "week_end": "2025-09-07",
+                "net_pnl_weekly": 320.5
+            },
+            {
+                "week_end": "2025-09-14",
+                "net_pnl_weekly": 299.0
+            },
+            {
+                "week_end": "2025-09-21",
+                "net_pnl_weekly": 1376.0
+            }
+        ],
+        "monthly_net_pnl": [
+            {
+                "month_end": "2025-09-30",
+                "net_pnl_monthly": 1995.5
+            }
+        ]
+    },
+    "individual_trades": [
+        {
+            "executed_at": "2025-09-01T10:00:00Z",
+            "symbol": "SPY",
+            "net_pnl": 150.0,
+            "fees": 1.0,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-01T14:30:00Z",
+            "symbol": "TSLA",
+            "net_pnl": -75.0,
+            "fees": 1.5,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-02T11:00:00Z",
+            "symbol": "AMZN",
+            "net_pnl": 200.0,
+            "fees": 1.0,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-03T12:00:00Z",
+            "symbol": "SPY",
+            "net_pnl": 50.0,
+            "fees": 1.0,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-10T09:30:00Z",
+            "symbol": "AAPL",
+            "net_pnl": 300.0,
+            "fees": 1.0,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-15T15:00:00Z",
+            "symbol": "GOOGL",
+            "net_pnl": -120.5,
+            "fees": 1.0,
+            "commissions": 0.0
+        },
+        {
+            "executed_at": "2025-09-20T10:00:00Z",
+            "symbol": "SPY",
+            "net_pnl": 1500.0,
+            "fees": 2.5,
+            "commissions": 0.0
+        }
+    ]
+}
