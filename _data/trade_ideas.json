@@ -1,35 +1,6 @@
 [
   {
     "publicationDate": "2025-10-31",
-    "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
-    "expectedReturnDisplay": "140.00% Annualized ROC",
-    "ticker": "BMNR",
-    "currentPrice": 46.59,
-    "ivRank": 0.00,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-11-07",
-        "dte": 7,
-        "putStrike": 45.00,
-        "putPremium": 1.40,
-        "maxProfit": 140.00
-      },
-      "metrics": {
-        "roc": 3.11,
-        "annualizedRoc": 140.00,
-        "pop": 58.00,
-        "buyingPowerEffect": 4500.00,
-        "dailyProfitPotential": 20.00
-      },
-      "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
-    }
-  },
-  {
-    "publicationDate": "2025-10-31",
     "tradeTitle": "Iron Condor on META",
     "summaryJustification": "An Iron Condor is being sold on META with 49 days to expiration to capitalize on theta decay and a forecast for META to trade between the 650 call and 645 put strikes. The trade collects a substantial premium of 7.07 for a high maximum return on capital of 241.30%, despite the IV Rank being slightly below 40%.",
     "expectedReturnDisplay": "$707.00 Max Profit (241.30% ROC)",
@@ -55,6 +26,35 @@
         "dailyProfitPotential": 14.43
       },
       "managementPlan": "Standard management plan: Target 50% profit ($353.50) to close the position. If the profit target is not met, manage at 21 DTE by rolling the entire untested side closer to the money, or rolling the whole position out to a later expiration date for a credit."
+    }
+  },
+  {
+    "publicationDate": "2025-10-31",
+    "tradeTitle": "Short Put on BMNR",
+    "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
+    "expectedReturnDisplay": "140.00% Annualized ROC",
+    "ticker": "BMNR",
+    "currentPrice": 46.59,
+    "ivRank": 0.00,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-11-07",
+        "dte": 7,
+        "putStrike": 45.00,
+        "putPremium": 1.40,
+        "maxProfit": 140.00
+      },
+      "metrics": {
+        "roc": 3.11,
+        "annualizedRoc": 140.00,
+        "pop": 58.00,
+        "buyingPowerEffect": 4500.00,
+        "dailyProfitPotential": 20.00
+      },
+      "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
     }
   },
   {
