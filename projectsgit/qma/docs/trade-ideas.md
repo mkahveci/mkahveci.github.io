@@ -212,23 +212,24 @@ permalink: /:path/:basename:output_ext
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
         // --- 1. Calculate Date Ranges (in milliseconds) ---
-        const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+        // Note: ONE_DAY_MS is defined but not actually used, keeping for clarity.
+        const ONE_DAY_MS = 24 * 60 * 60 * 1000; 
         const now = new Date();
         
-        // Reset time to start of today (00:00:00) for clean comparison
+        // Reset time to start of today (00:00:00) for clean comparison. This value is in MILLISECONDS.
         const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
 
         // 2. Filtering Function (Native JS)
         function filterTrades(filterType) {
-            // Note: The limit of 50 trades is enforced by Liquid before this script runs.
             tradeCards.forEach(card => {
+                // FIX: Convert the Liquid-generated timestamp (in SECONDS) to MILLISECONDS for comparison.
                 const timestamp = parseInt(card.getAttribute('data-timestamp')) * 1000; 
                 let isVisible = false;
 
                 if (filterType === 'all') {
                     isVisible = true;
                 } else if (filterType === 'today' && timestamp) {
-                    // Check if the trade was published today (timestamp >= todayStart)
+                    // Check if the trade was published today (trade timestamp in MS >= todayStart in MS)
                     if (timestamp >= todayStart) {
                         isVisible = true;
                     }
@@ -239,10 +240,11 @@ permalink: /:path/:basename:output_ext
         }
 
         // 3. Initial State Setup
-        
-        // A. Set default to 'today' and apply filter immediately.
-        if (selector) selector.value = 'today';
-        filterTrades('today'); 
+        if (selector) {
+            // A. Set default to 'today' and apply filter immediately.
+            selector.value = 'today';
+            filterTrades('today'); 
+        }
 
         // 4. Event Listener (Native JS)
         if (selector) {
