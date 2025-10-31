@@ -4,6 +4,7 @@ description: The Kahveci Group at Loyola University Chicago works at the interfa
 url: 'https://kahveci.pw'
 baseurl: ""
 email: 'mkahveci@gmail.com'
+timezone: America/Chicago
 
 markdown: kramdown
 permalink: /:title/

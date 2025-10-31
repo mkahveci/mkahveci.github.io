@@ -101,6 +101,10 @@ permalink: /:path/:basename:output_ext
               {% break %}
           {% endif %}
       
+          {% comment %}
+            Ensure _config.yml has the 'timezone' set for stable output. 
+            The output here is in SECONDS since epoch.
+          {% endcomment %}
           {% assign trade_timestamp = trade.publicationDate | date: "%s" %}
           
           <div class="col trade-card-wrapper" data-timestamp="{{ trade_timestamp }}">
@@ -215,8 +219,8 @@ permalink: /:path/:basename:output_ext
         // --- 1. Calculate Local Start of Day (in milliseconds) ---
         const now = new Date();
         
-        // Calculate the start of the CURRENT LOCAL DAY (00:00:00). This handles local timezones.
-        // This value is in MILLISECONDS.
+        // Calculate the start of the CURRENT LOCAL DAY (00:00:00) on the user's browser.
+        // This is in MILLISECONDS.
         const todayStartLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
         
         // 2. Filtering Function (Native JS)
@@ -226,6 +230,7 @@ permalink: /:path/:basename:output_ext
                 const timestampSeconds = parseInt(card.getAttribute('data-timestamp'));
                 
                 // Convert to MILLISECONDS for comparison with todayStartLocal.
+                // The *1000 fixes the unit mismatch.
                 const timestampMilliseconds = timestampSeconds * 1000; 
                 let isVisible = false;
 
