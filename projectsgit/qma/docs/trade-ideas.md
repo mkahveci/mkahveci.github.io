@@ -210,41 +210,51 @@ permalink: /:path/:basename:output_ext
     document.addEventListener('DOMContentLoaded', function() {
         const selector = document.getElementById('date-filter-selector');
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
+        const tradeSection = document.getElementById('trades'); // Reference the main section
 
-        // --- 1. Calculate Date Ranges (in milliseconds) ---
-        // Note: ONE_DAY_MS is defined but not actually used, keeping for clarity.
-        const ONE_DAY_MS = 24 * 60 * 60 * 1000; 
+        // --- 1. Calculate Local Start of Day (in milliseconds) ---
         const now = new Date();
         
-        // Reset time to start of today (00:00:00) for clean comparison. This value is in MILLISECONDS.
-        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
-
+        // Calculate the start of the CURRENT LOCAL DAY (00:00:00). This handles local timezones.
+        // This value is in MILLISECONDS.
+        const todayStartLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
+        
         // 2. Filtering Function (Native JS)
         function filterTrades(filterType) {
             tradeCards.forEach(card => {
-                // FIX: Convert the Liquid-generated timestamp (in SECONDS) to MILLISECONDS for comparison.
-                const timestamp = parseInt(card.getAttribute('data-timestamp')) * 1000; 
+                // Get timestamp (in SECONDS) from the card's data attribute.
+                const timestampSeconds = parseInt(card.getAttribute('data-timestamp'));
+                
+                // Convert to MILLISECONDS for comparison with todayStartLocal.
+                const timestampMilliseconds = timestampSeconds * 1000; 
                 let isVisible = false;
 
                 if (filterType === 'all') {
                     isVisible = true;
-                } else if (filterType === 'today' && timestamp) {
-                    // Check if the trade was published today (trade timestamp in MS >= todayStart in MS)
-                    if (timestamp >= todayStart) {
+                } else if (filterType === 'today' && timestampSeconds) {
+                    // Compare the trade time (in MS) against the start of the local day (in MS).
+                    if (timestampMilliseconds >= todayStartLocal) {
                         isVisible = true;
                     }
                 }
 
                 card.style.display = isVisible ? 'block' : 'none';
             });
+            // Make the section visible once filtering is complete to prevent the flash
+            if (tradeSection) {
+                tradeSection.style.visibility = 'visible';
+            }
         }
 
-        // 3. Initial State Setup
-        if (selector) {
-            // A. Set default to 'today' and apply filter immediately.
-            selector.value = 'today';
-            filterTrades('today'); 
+        // --- Initial State Setup (Preventing Flash) ---
+        // Hide the section initially to prevent trades from showing before filter runs
+        if (tradeSection) {
+            tradeSection.style.visibility = 'hidden';
         }
+        
+        // A. Set default to 'today' and apply filter immediately.
+        if (selector) selector.value = 'today';
+        filterTrades('today'); 
 
         // 4. Event Listener (Native JS)
         if (selector) {
