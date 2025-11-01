@@ -101,10 +101,6 @@ permalink: /:path/:basename:output_ext
               {% break %}
           {% endif %}
       
-          {% comment %}
-            Ensure _config.yml has the 'timezone' set for stable output. 
-            The output here is in SECONDS since epoch.
-          {% endcomment %}
           {% assign trade_timestamp = trade.publicationDate | date: "%s" %}
           
           <div class="col trade-card-wrapper" data-timestamp="{{ trade_timestamp }}">
@@ -214,52 +210,41 @@ permalink: /:path/:basename:output_ext
     document.addEventListener('DOMContentLoaded', function() {
         const selector = document.getElementById('date-filter-selector');
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
-        const tradeSection = document.getElementById('trades'); // Reference the main section
 
-        // --- 1. Calculate Local Start of Day (in milliseconds) ---
+        // --- 1. Calculate Date Ranges (in milliseconds) ---
+        // Note: ONE_DAY_MS is defined but not actually used, keeping for clarity.
+        const ONE_DAY_MS = 24 * 60 * 60 * 1000; 
         const now = new Date();
         
-        // Calculate the start of the CURRENT LOCAL DAY (00:00:00) on the user's browser.
-        // This is in MILLISECONDS.
-        const todayStartLocal = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
-        
+        // Reset time to start of today (00:00:00) for clean comparison. This value is in MILLISECONDS.
+        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
+
         // 2. Filtering Function (Native JS)
         function filterTrades(filterType) {
             tradeCards.forEach(card => {
-                // Get timestamp (in SECONDS) from the card's data attribute.
-                const timestampSeconds = parseInt(card.getAttribute('data-timestamp'));
-                
-                // Convert to MILLISECONDS for comparison with todayStartLocal.
-                // The *1000 fixes the unit mismatch.
-                const timestampMilliseconds = timestampSeconds * 1000; 
+                // FIX: Convert the Liquid-generated timestamp (in SECONDS) to MILLISECONDS for comparison.
+                const timestamp = parseInt(card.getAttribute('data-timestamp')) * 1000; 
                 let isVisible = false;
 
                 if (filterType === 'all') {
                     isVisible = true;
-                } else if (filterType === 'today' && timestampSeconds) {
-                    // Compare the trade time (in MS) against the start of the local day (in MS).
-                    if (timestampMilliseconds >= todayStartLocal) {
+                } else if (filterType === 'today' && timestamp) {
+                    // Check if the trade was published today (trade timestamp in MS >= todayStart in MS)
+                    if (timestamp >= todayStart) {
                         isVisible = true;
                     }
                 }
 
                 card.style.display = isVisible ? 'block' : 'none';
             });
-            // Make the section visible once filtering is complete to prevent the flash
-            if (tradeSection) {
-                tradeSection.style.visibility = 'visible';
-            }
         }
 
-        // --- Initial State Setup (Preventing Flash) ---
-        // Hide the section initially to prevent trades from showing before filter runs
-        if (tradeSection) {
-            tradeSection.style.visibility = 'hidden';
+        // 3. Initial State Setup
+        if (selector) {
+            // A. Set default to 'today' and apply filter immediately.
+            selector.value = 'today';
+            filterTrades('today'); 
         }
-        
-        // A. Set default to 'today' and apply filter immediately.
-        if (selector) selector.value = 'today';
-        filterTrades('today'); 
 
         // 4. Event Listener (Native JS)
         if (selector) {

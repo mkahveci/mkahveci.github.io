@@ -1,22 +1,27 @@
 [
   {
     "publicationDate": "2025-10-31",
-    "tradeTitle": "Iron Condor on META",
-    "summaryJustification": "An Iron Condor is being sold on META with 49 days to expiration to capitalize on theta decay and a forecast for META to trade between the 650 call and 645 put strikes. The trade collects a substantial premium of 7.07 for a high maximum return on capital of 241.30%, despite the IV Rank being slightly below 40%.",
-    "expectedReturnDisplay": "$707.00 Max Profit (241.30% ROC)",
+    "tradeTitle": "Delta-Skewed Short Iron Condor on META",
+    "summaryJustification": "A Delta-Skewed Short Iron Condor was placed on META with 49 DTE to capitalize on the high absolute IV of 40.87%, despite a low IV Rank of 26.30%. The trade is skewed with a wider 10.00 put spread (645/635) to give the position a slight bullish bias, collecting a high net credit of 7.07.",
+    "expectedReturnDisplay": "707.00 Max Profit (241.30% ROC)",
     "ticker": "META",
     "currentPrice": 648.69,
-    "ivRank": 38.53,
+    "ivRank": 26.30,
     "earningsDate": "2025-10-29",
     "analysis": {
-      "thesis": "The Implied Volatility Rank is adequate for a premium-selling strategy. The Iron Condor profits if META stays between the short strikes (650 and 645) through expiration. The trade has a wide profit zone, and with a credit of 7.07 on a 10.00-wide spread (put side), the theoretical probability of profit is very high.",
-      "strategyType": "Iron Condor",
+      "thesis": "META is trading post-earnings, which often leads to a volatility contraction. We are selling an Iron Condor to profit from the stock staying range-bound. The trade is intentionally skewed with the short put strike (645) close to the price (648.69) and a wider put wing (10.00) to maximize credit, reflecting a defined risk stance that the stock will not drop significantly lower than 635. The short call strike (650) is very close to the stock price to maximize credit, accepting higher risk for a very high return on capital.",
+      "strategyType": "Delta-Skewed Short Iron Condor",
       "tradeDetails": {
         "expiration": "2025-12-19",
         "dte": 49,
-        "putStrike": 645.00,
-        "putPremium": 7.07,
-        "maxProfit": 707.00
+        "maxProfit": 707.00,
+        "spreadDetails": {
+          "shortPutStrike": 645.00,
+          "longPutStrike": 635.00,
+          "shortCallStrike": 650.00,
+          "longCallStrike": 655.00,
+          "netCredit": 7.07
+        }
       },
       "metrics": {
         "roc": 241.30,
@@ -25,7 +30,7 @@
         "buyingPowerEffect": 293.00,
         "dailyProfitPotential": 14.43
       },
-      "managementPlan": "Standard management plan: Target 50% profit ($353.50) to close the position. If the profit target is not met, manage at 21 DTE by rolling the entire untested side closer to the money, or rolling the whole position out to a later expiration date for a credit."
+      "managementPlan": "Standard management plan: Target 50% profit ($353.50) to close the position. If the profit target is not met, manage at 21 DTE by rolling the entire unchallenged side (likely the call spread) closer to the money, or rolling the entire position out to a later expiration date for an additional credit."
     }
   },
   {

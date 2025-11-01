@@ -12,6 +12,11 @@
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-10-31 20:17:53.000000000 Z
+    message: trade-ideas.md
+    url: https://github.com/mkahveci/qma/commit/ee85f0682952e450858425abeaa79b6e025afa1f
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-25 22:40:18.000000000 Z
     message: |-
       feat: Display filtered trade list and improve load efficiency
@@ -35,11 +40,6 @@
   - date: 2025-10-25 13:57:56.000000000 Z
     message: 'root: Update README with official Telegram feed link'
     url: https://github.com/mkahveci/qma/commit/bd15e9525a6ed9b29f7855a1df4c8ca1dd5c3398
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-25 13:52:44.000000000 Z
-    message: 'root: Update README with official Telegram feed link'
-    url: https://github.com/mkahveci/qma/commit/c7c4d75a3e0bfa867e1dd79d177ca9931b3d5b4e
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
