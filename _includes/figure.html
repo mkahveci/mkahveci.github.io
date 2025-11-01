@@ -1,0 +1,21 @@
+{% comment %}
+figure_renderer.html - Renders content and displays the manually numbered caption.
+The number (e.g., "1:", "2:", etc.) must be included at the START of the 'caption' variable.
+{% endcomment %}
+
+<figure style="margin: 2em 0; text-align: center;">
+
+    {% comment %} RENDER CONTENT (Mermaid or Image) {% endcomment %}
+    {% if include.mermaid_code %}
+    <div class="mermaid" style="max-width: 90%; height: auto; border: 1px solid #eee; border-radius: 5px; margin-left: auto; margin-right: auto;">
+        {{ include.mermaid_code | strip }}
+    </div>
+    {% elsif include.image_url %}
+    <img src="{{ include.image_url | relative_url }}" alt="{{ include.image_alt }}" style="max-width: 90%; height: auto; border: 1px solid #eee; border-radius: 5px; margin-left: auto; margin-right: auto;">
+    {% endif %}
+
+    {% comment %} RENDER CAPTION: Adds "Figure " before the manually entered number and text {% endcomment %}
+    <figcaption style="font-size: 0.9em; font-weight: 500; margin-top: 10px;">
+        Figure {{ include.caption }}
+    </figcaption>
+</figure>

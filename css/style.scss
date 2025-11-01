@@ -1,9 +1,10 @@
 ---
 ---
-@import "custom";
 @import "blog";
 @import "bootstrap/bootstrap";
 $fa-font-path: "font";
 @import "font-awesome/font-awesome";
 @import "katex";
 @import "solarized";
+@import "custom";
+@import "custom_components.scss";

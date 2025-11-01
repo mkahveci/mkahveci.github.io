@@ -789,3 +789,51 @@ a {
     margin-left: 0.3rem; /* Small space between tag name and count */
     opacity: 0.8; /* Slightly deemphasize the count */
 }
+
+/* TOC */
+
+.toc-content {
+
+   // The main <ul> container
+   ul.toc {
+     padding-left: 0;
+     list-style: none;
+
+     li {
+       margin-bottom: 0.5rem;
+       font-weight: 500; // Make top-level items (h2) slightly bolder
+
+       a {
+         text-decoration: none;
+         color: var(--bs-body-color); // Use Bootstrap's default text color
+
+         &:hover {
+           text-decoration: underline;
+           color: var(--bs-primary); // Use your primary color on hover
+         }
+       }
+
+       // Style for nested lists (h3 headings)
+       ul {
+         padding-left: 1.5rem; // Indent nested items
+         margin-top: 0.5rem;
+         list-style: none;
+
+         li {
+           font-weight: 400; // Normal font weight for sub-items
+           font-size: 0.9em;
+           margin-bottom: 0.25rem;
+         }
+       }
+     }
+   }
+ }
+
+.sticky-sidebar {
+  // Set the max-height to the full viewport height (100vh)
+  // minus 4rem (2rem for the 'top: 2rem' offset, and 2rem for bottom padding)
+  max-height: calc(100vh - 4rem);
+
+  // Add a vertical scrollbar *only if* the content is taller
+  overflow-y: auto;
+}

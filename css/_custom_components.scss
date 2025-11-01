@@ -1,0 +1,71 @@
+// _custom_components.scss
+
+// Define a palette of dull pastel colors for various callout types.
+$pastel-primary: #a1b8c3; // Soft Blue-Gray
+$pastel-success: #a0c497; // Soft Sage Green
+$pastel-warning: #e0b686; // Soft Muted Gold
+$pastel-info: #a3c4f3;    // Soft Light Blue
+$pastel-danger: #e09f9f;  // Soft Dusty Rose
+
+// The core mixin for all professional callouts
+@mixin callout-mk($color) {
+    // 1. Core Visuals (Consistency with site's Card Structure)
+    @extend .card;
+    @extend .shadow-sm;
+    @extend .border-0;
+
+    // 2. Pastel Toning and Readability
+    background-color: lighten($color, 45%);
+    border-left: 0.25rem solid darken($color, 10%);
+    color: darken($color, 25%); // Default text color is dark
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+
+    // Ensure the content inside is readable against the light background
+    h5, h6, p, small {
+        color: inherit; // Inherit the darkened text color
+    }
+
+    // 3. ✨ Crucial Fix: High-Contrast Links and Buttons
+    // This ensures URLs are readable against the light background,
+    // especially on hover or when they inherit a light color.
+    a {
+        color: darken($color, 35%); // A darker, high-contrast link color
+
+        &:hover,
+        &:focus {
+            // Further darken the link on hover for better visibility
+            color: darken($color, 45%);
+        }
+    }
+
+    // Overrides for Bootstrap Buttons within the callout
+    .btn-primary {
+        // Keeps the primary button style standard, but ensures
+        // the text remains highly visible if the button background is light.
+        // NOTE: Standard Bootstrap buttons should already have white text,
+        // but this ensures consistency if custom buttons are used.
+        color: #fff;
+    }
+}
+
+// Custom Callout Classes (Use the mixin)
+.callout-mk-note {
+    @include callout-mk($pastel-primary);
+}
+
+.callout-mk-tip {
+    @include callout-mk($pastel-success);
+}
+
+.callout-mk-warning {
+    @include callout-mk($pastel-warning);
+}
+
+.callout-mk-info {
+    @include callout-mk($pastel-info);
+}
+
+.callout-mk-alert {
+    @include callout-mk($pastel-danger);
+}

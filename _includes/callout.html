@@ -1,0 +1,35 @@
+{%- assign type = include.type | default: 'note' -%}
+{%- assign title = include.title -%}
+{%- assign content = include.content -%}
+
+{% comment %} 1. Determine the correct SCSS class and Icon {% endcomment %}
+{%- case type -%}
+{%- when 'tip' -%}
+{%- assign class_name = 'callout-mk-tip' -%}
+{%- assign icon_name = 'fas fa-lightbulb' -%}
+{%- when 'warning' -%}
+{%- assign class_name = 'callout-mk-warning' -%}
+{%- assign icon_name = 'fas fa-exclamation-triangle' -%}
+{%- when 'info' -%}
+{%- assign class_name = 'callout-mk-info' -%}
+{%- assign icon_name = 'fas fa-info-circle' -%}
+{%- when 'alert' -%}
+{%- assign class_name = 'callout-mk-alert' -%}
+{%- assign icon_name = 'fas fa-exclamation-circle' -%}
+{%- else -%}
+{%- assign class_name = 'callout-mk-note' -%}
+{%- assign icon_name = 'fas fa-sticky-note' -%}
+{%- endcase -%}
+
+{% comment %} 2. Render the callout using d-flex and custom SCSS class {% endcomment %}
+<div class="{{ class_name }} d-flex align-items-start">
+    <div class="flex-shrink-0 me-3 mt-1">
+        <i class="{{ icon_name }} fa-lg"></i>
+    </div>
+    <div class="flex-grow-1 d-flex flex-column">
+        {% if title %}
+        <h5 class="mb-1 fw-bold">{{ title }}</h5>
+        {% endif %}
+        {{ content }}
+    </div>
+</div>

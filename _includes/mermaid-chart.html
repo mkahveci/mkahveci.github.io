@@ -1,0 +1,14 @@
+{% if page.figure_counter == null %}
+{% assign page.figure_counter = 0 %}
+{% endif %}
+{% assign page.figure_counter = page.figure_counter | plus: 1 %}
+
+<figure style="margin: 2em 0; text-align: center;">
+<div class="mermaid" style="border: 1px solid #eee; padding: 15px; border-radius: 5px; display: inline-block;">{{ include.code | strip }}
+</div>
+<figcaption style="font-size: 0.9em; font-weight: 500; margin-bottom: 10px;">
+    Figure {{ page.figure_counter }}: {{ include.caption }}
+</figcaption>
+</figure>
+
+{% assign page.figure_counter = page.figure_counter | minus: 1 %}
