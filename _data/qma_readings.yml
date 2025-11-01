@@ -1,4 +1,11 @@
-# _data/qma_readings.yml
+
+- title: "A Systematic Framework for Trading Micro Gold (/MGC) Futures: Integrating Price Action, Advanced Indicators, and Disciplined Execution"
+  link: /uvx/
+  excerpt: This report details a systematic, rule-based framework for trading Micro Gold futures, integrating macro-drivers, multi-timeframe analysis, and dynamic risk management.
+  icon: fas fa-chart-line
+  author: Murat Kahveci
+  tags: insights, futures trading, technical analysis
+  date: 2025-10-31
 
 - date: 2025-10-22
   title: "A Systematic Approach to Day Trading /MNQ Futures"
