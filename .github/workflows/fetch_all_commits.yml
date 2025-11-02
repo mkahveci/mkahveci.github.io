@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: master  # your site branch
+          ref: master
 
       - name: Install jq
         run: |
@@ -34,16 +34,15 @@ jobs:
           echo "Using GitHub CLI at $GH_BIN"
 
           echo "Fetching list of repositories for $GITHUB_ACTOR..."
-          repos=$($GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner')
-
-          for repo in $repos; do
+          $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
-            commits=$($GH_BIN api repos/$repo/commits --paginate \
+          
+            $GH_BIN api repos/$repo/commits --paginate \
               -H "Authorization: token $GITHUB_TOKEN" \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
-              | jq 'limit(100; .)')
+              | jq 'limit(100; .)' \
+              | jq --arg repo "$repo" '. as $c | input | . + {($repo): $c}' _data/repo_commits.json > _data/tmp.json
 
-            jq --arg repo "$repo" --argjson commits "$commits" '. + {($repo): $commits}' _data/repo_commits.json > _data/tmp.json
             mv _data/tmp.json _data/repo_commits.json
           done
 
