@@ -16,7 +16,10 @@ jobs:
           ref: master  # your site branch
 
       - name: Install dependencies
-        run: sudo apt-get install -y jq gh
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq gh
+          gh --version
 
       - name: Fetch commits for all repos
         env:
