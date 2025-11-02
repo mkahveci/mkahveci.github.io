@@ -36,18 +36,23 @@ jobs:
           echo "Fetching list of repositories for $GITHUB_ACTOR..."
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
+          
+            tmpfile=$(mktemp)
 
-            # Pipe directly to jq, no large variable assignment
+            # Fetch commits and save to temporary file
             $GH_BIN api repos/$repo/commits --paginate \
               -H "Authorization: token $GITHUB_TOKEN" \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
-              | jq 'limit(100; .)' \
-              | jq --arg repo "$repo" '. as $c | input | . + {($repo): $c}' _data/repo_commits.json > _data/tmp.json
+              | jq 'limit(100; .)' > "$tmpfile"
 
+            # Merge safely into main JSON
+            jq --slurpfile commits "$tmpfile" '. + {($commits[0][0].repo): $commits[0]}' _data/repo_commits.json > _data/tmp.json
             mv _data/tmp.json _data/repo_commits.json
+
+            rm "$tmpfile"
           done
 
-          echo "Sorting all commits newest → oldest..."
+          # Sort all commits newest → oldest
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
 
