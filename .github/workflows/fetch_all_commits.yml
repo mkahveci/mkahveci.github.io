@@ -1,9 +1,12 @@
 name: Fetch Recent Commits
 
 on:
+  # 1. Allows you to run this workflow manually
   workflow_dispatch:
+
+  # 2. Runs once per day (at midnight UTC)
   schedule:
-    - cron: "0 0 * * *"  # once per day
+    - cron: "0 0 * * *"
 
 jobs:
   fetch_commits:
@@ -14,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: master
-          token: ${{ secrets.REPO_FETCHER }} # Using the new secret name
+          token: ${{ secrets.REPO_FETCHER }}
 
       - name: Install jq and curl
         run: |
@@ -23,7 +26,7 @@ jobs:
 
       - name: Fetch commits for all repos
         env:
-          GH_TOKEN: ${{ secrets.REPO_FETCHER }} # Using the new secret name
+          GH_TOKEN: ${{ secrets.REPO_FETCHER }}
         shell: bash
         run: |
           set -x 
@@ -40,12 +43,7 @@ jobs:
           
             tmpfile=$(mktemp)
           
-            # --- THE FIX ---
-            # Replaced 'gh api' with the 'curl' command.
-            # 'curl' will not perform the broken SSO check.
-            # We are just fetching the 100 most recent commits (page 1).
-          
-            # We use 'curl -f' to fail on 404 errors, which triggers the '||' block.
+            # Use curl to bypass the 'gh' tool's SSO cache bug
             curl -s -f \
               -H "Authorization: token $GH_TOKEN" \
               -H "Accept: application/vnd.github.v3+json" \
@@ -80,5 +78,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/repo_commits.json
-          git commit -m "Update repo_commits.json [skip ci]" || echo "No changes"
+          # This commit message does NOT include [skip ci]
+          # so it will trigger a GitHub Pages build.
+          git commit -m "Update repo_commits.json" || echo "No changes"
           git push origin master
