@@ -28,47 +28,46 @@ jobs:
           set -e
 
           mkdir -p _data
+          # Start with an empty JSON object
           echo "{}" > _data/repo_commits.json
           
           GH_BIN="/usr/bin/gh"
           
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
-          echo "Fetching commits for $repo..."
-        
-          tmpfile=$(mktemp)
-          echo "[]" > "$tmpfile"
-        
-          page=1
-          per_page=100
-          count=0
-          while [ $count -lt 100 ]; do
-          $GH_BIN api repos/$repo/commits \
-        -H "Authorization: token $GITHUB_TOKEN" \
-          -f per_page=$per_page \
-          -f page=$page \
-        --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
-          >> "$tmpfile"
-
-          added=$(jq length "$tmpfile")
-          [ "$added" -ge 100 ] && break
+            echo "Fetching commits for $repo..."
           
-          page=$((page + 1))
-          [ $added -eq 0 ] && break
-          done
-        
-          # Keep only first 100 commits
-          jq '.[0:100]' "$tmpfile" > "$tmpfile.tmp" && mv "$tmpfile.tmp" "$tmpfile"
-
-        # Merge into main JSON
-        jq --slurpfile commits "$tmpfile" '. + {($commits[0][0].repo): $commits[0]}' _data/repo_commits.json > _data/tmp.json
-          mv _data/tmp.json _data/repo_commits.json
-          rm "$tmpfile"
+            tmpfile=$(mktemp)
+          
+            # Use gh's --paginate flag to handle all pages automatically.
+            # Pipe the streamed results to jq -s to "slurp" them into a single array.
+            # Then flatten the array of arrays, and take the first 100 commits.
+            $GH_BIN api --paginate "repos/$repo/commits" \
+              -H "Authorization: token $GITHUB_TOKEN" \
+              -f per_page=100 \
+              --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
+              jq -s 'flatten | .[0:100]' > "$tmpfile"
+          
+            # Check if tmpfile is empty or just contains `[]`
+            if [ ! -s "$tmpfile" ] || [ "$(jq 'length' "$tmpfile")" -eq 0 ]; then
+              echo "No commits found for $repo."
+              rm "$tmpfile"
+              continue
+            fi
+          
+            # Merge this repo's commit array into the main JSON object
+            # Pass $repo as an argument to jq to safely use it as a key
+            jq --slurpfile commits "$tmpfile" --arg repo_name "$repo" \
+              '. + {($repo_name): $commits[0]}' _data/repo_commits.json > _data/tmp.json
+          
+            mv _data/tmp.json _data/repo_commits.json
+            rm "$tmpfile"
           done
           
           # Sort all commits newest → oldest
+          # This filter correctly takes the object {"repo1": [c1], "repo2": [c2]},
+          # flattens all commit arrays into one big array, and sorts it.
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
-
 
           echo "✅ Total commits fetched: $(jq length _data/repo_commits.json)"
 
