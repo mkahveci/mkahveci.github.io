@@ -8,6 +8,10 @@ on:
 jobs:
   fetch_commits:
     runs-on: ubuntu-latest
+    # FIX 1: Grant permissions for the token to read contents (commits)
+    # from all repositories in your account.
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -28,7 +32,6 @@ jobs:
           set -e
 
           mkdir -p _data
-          # Start with an empty JSON object
           echo "{}" > _data/repo_commits.json
           
           GH_BIN="/usr/bin/gh"
@@ -38,24 +41,28 @@ jobs:
           
             tmpfile=$(mktemp)
           
-            # Use gh's --paginate flag to handle all pages automatically.
-            # Pipe the streamed results to jq -s to "slurp" them into a single array.
-            # Then flatten the array of arrays, and take the first 100 commits.
+            # FIX 2: Added an '||' (OR) block.
+            # If the 'gh api' command fails (e.g., 404 on an empty repo),
+            # the block after || will run, logging the error and creating
+            # an empty file to prevent the rest of the script from failing.
             $GH_BIN api --paginate "repos/$repo/commits" \
               -H "Authorization: token $GITHUB_TOKEN" \
               -f per_page=100 \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
-              jq -s 'flatten | .[0:100]' > "$tmpfile"
+              jq -s 'flatten | .[0:100]' > "$tmpfile" \
+            || {
+              echo "Could not fetch commits for $repo (likely empty or permissions issue). Skipping."
+              # Create an empty array so the next 'jq' command doesn't fail
+              echo "[]" > "$tmpfile"
+            }
           
-            # Check if tmpfile is empty or just contains `[]`
+            # This check will now correctly catch empty repos and skipped ones
             if [ ! -s "$tmpfile" ] || [ "$(jq 'length' "$tmpfile")" -eq 0 ]; then
               echo "No commits found for $repo."
               rm "$tmpfile"
               continue
             fi
           
-            # Merge this repo's commit array into the main JSON object
-            # Pass $repo as an argument to jq to safely use it as a key
             jq --slurpfile commits "$tmpfile" --arg repo_name "$repo" \
               '. + {($repo_name): $commits[0]}' _data/repo_commits.json > _data/tmp.json
           
@@ -63,9 +70,8 @@ jobs:
             rm "$tmpfile"
           done
           
+          echo "Filtering and sorting commits..."
           # Sort all commits newest → oldest
-          # This filter correctly takes the object {"repo1": [c1], "repo2": [c2]},
-          # flattens all commit arrays into one big array, and sorts it.
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
 
