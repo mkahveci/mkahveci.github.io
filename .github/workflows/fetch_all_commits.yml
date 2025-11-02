@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: master
-          token: ${{ secrets.PAT }} # <-- ADD THIS
+          token: ${{ secrets.PAT }}
 
       - name: Install jq
         run: |
