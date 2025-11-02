@@ -2,6 +2,20 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bfb322a90e2ea11c8cc3390ec20839739560607d",
+    "author": "mkahveci",
+    "date": "2025-11-02T19:01:25Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json [skip ci]",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/606c6451b480671c3baecdc0f4d259fe332e10ce",
+    "author": "github-actions[bot]",
+    "date": "2025-11-02T18:47:42Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0bf3e346e3dcbc4a2899088f7910ee428bd8a52c",
     "author": "mkahveci",
     "date": "2025-11-02T18:47:03Z"
@@ -826,25 +840,11 @@
     "date": "2025-10-14T20:13:29Z"
   },
   {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "updates on reveal.html and reveal CSS",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f5e59f917194c0f5325d0d0c4fdf99dc166d45c8",
-    "author": "mkahveci",
-    "date": "2025-10-14T20:12:09Z"
-  },
-  {
     "repo": "mkahveci/qma",
     "message": "Update",
     "url": "https://github.com/mkahveci/qma/commit/94cc5c85eec3e771e56413b11a24064c5869f982",
     "author": "mkahveci",
     "date": "2025-10-14T20:09:39Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge pull request #45 from mkahveci/2025-10-14\n\n2025-10-14",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/da19def626b8fe1949811a00c76c26fd93a3841a",
-    "author": "Murat Kahveci",
-    "date": "2025-10-14T19:41:26Z"
   },
   {
     "repo": "mkahveci/qma",
