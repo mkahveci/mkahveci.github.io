@@ -23,12 +23,11 @@ jobs:
 
       - name: Fetch commits for all repos
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_COMMIT_FETCHER }}
+          # FIX 1: Use GH_TOKEN, which is the standard for the 'gh' CLI
+          GH_TOKEN: ${{ secrets.REPO_COMMIT_FETCHER }}
         shell: bash
         run: |
-          # ADDED THIS: Print every command for debugging
           set -x 
-          
           set -e
 
           mkdir -p _data
@@ -36,15 +35,14 @@ jobs:
           
           GH_BIN="/usr/bin/gh"
           
-          # CHANGED THIS: Removed $GITHUB_ACTOR to list repos for the
-          # authenticated user (which is you, via the PAT)
           $GH_BIN repo list --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
           
             tmpfile=$(mktemp)
           
+            # FIX 2: Removed the redundant -H Authorization header.
+            # 'gh api' will automatically use the GH_TOKEN from the environment.
             $GH_BIN api --paginate "repos/$repo/commits" \
-              -H "Authorization: token $GITHUB_TOKEN" \
               -f per_page=100 \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
               jq -s 'flatten | .[0:100]' > "$tmpfile" \
