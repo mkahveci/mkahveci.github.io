@@ -31,8 +31,8 @@ jobs:
           
           GH_BIN="/usr/bin/gh"
 
-          # --- NEW DIAGNOSTIC STEP ---
-          # Let's check our authentication status and scopes
+          # --- THIS IS THE FIX ---
+          # Check authentication status instead of trying to log in
           echo "Checking auth status..."
           $GH_BIN auth status
           
