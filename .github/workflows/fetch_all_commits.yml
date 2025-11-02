@@ -3,7 +3,7 @@ name: Fetch Recent Commits
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # every 6 hours
+    - cron: "0 0 * * *"  # once per day
 
 jobs:
   fetch_commits:
@@ -36,7 +36,8 @@ jobs:
           echo "Fetching list of repositories for $GITHUB_ACTOR..."
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
-          
+
+            # Pipe directly to jq, no large variable assignment
             $GH_BIN api repos/$repo/commits --paginate \
               -H "Authorization: token $GITHUB_TOKEN" \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
@@ -50,8 +51,7 @@ jobs:
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
 
-          total=$(jq length _data/repo_commits.json)
-          echo "✅ Total commits fetched: $total"
+          echo "✅ Total commits fetched: $(jq length _data/repo_commits.json)"
 
       - name: Commit and push JSON
         run: |
