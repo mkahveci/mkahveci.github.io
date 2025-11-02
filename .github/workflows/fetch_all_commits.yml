@@ -15,11 +15,10 @@ jobs:
         with:
           ref: master  # your site branch
 
-      - name: Install dependencies
+      - name: Install jq
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq gh
-          gh --version
+          sudo apt-get install -y jq
 
       - name: Fetch commits for all repos
         env:
@@ -27,30 +26,38 @@ jobs:
         shell: bash
         run: |
           set -e
-          
+
           mkdir -p _data
           echo "{}" > _data/repo_commits.json
-          
-          # Use preinstalled gh directly
+
           GH_BIN="/usr/bin/gh"
-          
+          echo "Using GitHub CLI at $GH_BIN"
+
           echo "Fetching list of repositories for $GITHUB_ACTOR..."
           repos=$($GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner')
-          
+
           for repo in $repos; do
             echo "Fetching commits for $repo..."
             commits=$($GH_BIN api repos/$repo/commits --paginate \
               -H "Authorization: token $GITHUB_TOKEN" \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
               | jq 'limit(100; .)')
-          
+
             jq --arg repo "$repo" --argjson commits "$commits" '. + {($repo): $commits}' _data/repo_commits.json > _data/tmp.json
             mv _data/tmp.json _data/repo_commits.json
           done
-          
+
           echo "Sorting all commits newest → oldest..."
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
-          
+
           total=$(jq length _data/repo_commits.json)
           echo "✅ Total commits fetched: $total"
+
+      - name: Commit and push JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/repo_commits.json
+          git commit -m "Update repo_commits.json [skip ci]" || echo "No changes"
+          git push origin master
