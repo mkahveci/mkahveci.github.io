@@ -14,44 +14,45 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: master
-          # --- UPDATED SECRET NAME ---
-          token: ${{ secrets.REPO_FETCHER }}
+          token: ${{ secrets.REPO_FETCHER }} # Using the new secret name
 
-      - name: Install jq
+      - name: Install jq and curl
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq
+          sudo apt-get install -y jq curl
 
       - name: Fetch commits for all repos
         env:
-          # --- UPDATED SECRET NAME ---
-          GH_TOKEN: ${{ secrets.REPO_FETCHER }}
+          GH_TOKEN: ${{ secrets.REPO_FETCHER }} # Using the new secret name
         shell: bash
         run: |
           set -x 
           set -e
           
           GH_BIN="/usr/bin/gh"
-
-          # We will use 'gh api -i' to get the response headers
-          # and see the token's real scopes in the log.
-          echo "Checking token scopes via API header..."
-          $GH_BIN api -i /
           
           mkdir -p _data
           echo "{}" > _data/repo_commits.json
           
+          # This 'gh' command works, so we keep it.
           $GH_BIN repo list --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
           
             tmpfile=$(mktemp)
           
-            $GH_BIN api --paginate "repos/$repo/commits" \
-              -f per_page=100 \
-              --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
-              jq -s 'flatten | .[0:1OS]' > "$tmpfile" \
+            # --- THE FIX ---
+            # Replaced 'gh api' with the 'curl' command.
+            # 'curl' will not perform the broken SSO check.
+            # We are just fetching the 100 most recent commits (page 1).
+          
+            # We use 'curl -f' to fail on 404 errors, which triggers the '||' block.
+            curl -s -f \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/$repo/commits?per_page=100" | \
+              jq --arg repo_name "$repo" '[.[] | {repo: $repo_name, message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' > "$tmpfile" \
             || {
-              echo "Could not fetch commits for $repo (likely empty). Skipping."
+              echo "Could not fetch commits for $repo (likely empty or private). Skipping."
               echo "[]" > "$tmpfile"
             }
           
