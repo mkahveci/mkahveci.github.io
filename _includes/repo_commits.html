@@ -1,0 +1,85 @@
+<h3 class="mb-4 text-xl font-semibold">GitHub Commits</h3>
+
+<div class="mb-4">
+    <input
+            id="repo-search"
+            type="text"
+            placeholder="Search repositories..."
+            class="border border-gray-300 rounded-lg px-3 py-1 w-full mb-3"
+    />
+    <div id="repo-menu" class="flex flex-wrap gap-2"></div>
+</div>
+
+<ul id="commit-list" class="list-disc pl-5 space-y-2"></ul>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const commits = {{ site.data.repo_commits | jsonify }};
+      const menu = document.getElementById("repo-menu");
+      const list = document.getElementById("commit-list");
+      const searchBox = document.getElementById("repo-search");
+
+      // Extract unique repo names
+      const repos = [...new Set(commits.map(c => c.repo))].sort();
+
+      function renderCommits(repoName = null) {
+        list.innerHTML = "";
+        let filtered = repoName ? commits.filter(c => c.repo === repoName) : commits;
+        filtered.slice(0, 200).forEach(c => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <strong>${c.repo}</strong>:
+            <a href="${c.url}" target="_blank">${c.message}</a><br>
+            <small>${c.author} — ${new Date(c.date).toLocaleString()}</small>
+          `;
+          list.appendChild(li);
+        });
+      }
+
+      function highlightActive(button) {
+        document.querySelectorAll("#repo-menu button").forEach(b => {
+          b.classList.remove("bg-blue-600", "text-white");
+          b.classList.add("bg-gray-200");
+        });
+        if (button) {
+          button.classList.add("bg-blue-600", "text-white");
+          button.classList.remove("bg-gray-200");
+        }
+      }
+
+      function renderRepoButtons(filter = "") {
+        menu.innerHTML = "";
+        // All button
+        const allBtn = document.createElement("button");
+        allBtn.textContent = "All Repos";
+        allBtn.className = "bg-blue-600 text-white px-3 py-1 rounded-lg";
+        allBtn.onclick = () => {
+          highlightActive(allBtn);
+          renderCommits();
+        };
+        menu.appendChild(allBtn);
+
+        // Filtered repo buttons
+        repos
+          .filter(repo => repo.toLowerCase().includes(filter.toLowerCase()))
+          .forEach(repo => {
+            const btn = document.createElement("button");
+            btn.textContent = repo;
+            btn.className = "bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg";
+            btn.onclick = () => {
+              highlightActive(btn);
+              renderCommits(repo);
+            };
+            menu.appendChild(btn);
+          });
+      }
+
+      searchBox.addEventListener("input", e => {
+        renderRepoButtons(e.target.value);
+      });
+
+      // Initial render
+      renderRepoButtons();
+      renderCommits();
+    });
+</script>
