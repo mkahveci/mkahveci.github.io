@@ -23,25 +23,29 @@ jobs:
 
       - name: Fetch commits for all repos
         env:
-          # FIX 1: Use GH_TOKEN, which is the standard for the 'gh' CLI
+          # We still need this env var for the login command
           GH_TOKEN: ${{ secrets.REPO_COMMIT_FETCHER }}
         shell: bash
         run: |
           set -x 
           set -e
-
-          mkdir -p _data
-          echo "{}" > _data/repo_commits.json
           
           GH_BIN="/usr/bin/gh"
+
+          # --- NEW FIX ---
+          # Explicitly log the gh CLI in using the token.
+          # This ensures all subsequent 'gh' commands are authenticated.
+          echo "$GH_TOKEN" | $GH_BIN auth login --with-token
+          
+          mkdir -p _data
+          echo "{}" > _data/repo_commits.json
           
           $GH_BIN repo list --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
           
             tmpfile=$(mktemp)
           
-            # FIX 2: Removed the redundant -H Authorization header.
-            # 'gh api' will automatically use the GH_TOKEN from the environment.
+            # This command will now use the authenticated session from 'gh auth login'
             $GH_BIN api --paginate "repos/$repo/commits" \
               -f per_page=100 \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
