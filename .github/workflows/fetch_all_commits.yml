@@ -27,17 +27,17 @@ jobs:
         shell: bash
         run: |
           set -e
-          echo "Authenticating gh CLI..."
-          echo $GITHUB_TOKEN | gh auth login --with-token
-          
           echo "Fetching commits..."
           mkdir -p _data
           echo "{}" > _data/repo_commits.json
           
+          # List all repos for the user
           repos=$(gh repo list $GITHUB_ACTOR --json nameWithOwner --limit 100 --jq '.[].nameWithOwner')
+          
           for repo in $repos; do
             echo "Fetching commits for $repo..."
-            commits=$(gh api repos/$repo/commits --paginate --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | jq 'limit(100; .)')
+            commits=$(gh api repos/$repo/commits --paginate -H "Authorization: token $GITHUB_TOKEN" \
+              --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | jq 'limit(100; .)')
             jq --arg repo "$repo" --argjson commits "$commits" '. + {($repo): $commits}' _data/repo_commits.json > _data/tmp.json
             mv _data/tmp.json _data/repo_commits.json
           done
