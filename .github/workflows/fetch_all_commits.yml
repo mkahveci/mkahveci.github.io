@@ -36,19 +36,41 @@ jobs:
           echo "Fetching list of repositories for $GITHUB_ACTOR..."
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
-          
+
             tmpfile=$(mktemp)
+            echo "[]" > "$tmpfile"
 
-            # Fetch commits and save to temporary file
-            $GH_BIN api repos/$repo/commits --paginate \
-              -H "Authorization: token $GITHUB_TOKEN" \
-              --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
-              | jq 'limit(100; .)' > "$tmpfile"
+            page=1
+            per_page=100
+            while true; do
+              page_commits=$($GH_BIN api repos/$repo/commits \
+                -H "Authorization: token $GITHUB_TOKEN" \
+                -f per_page=$per_page \
+                -f page=$page \
+                --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]')
 
-            # Merge safely into main JSON
+              if [ "$page_commits" = "[]" ] || [ -z "$page_commits" ]; then
+                break
+              fi
+
+              # Merge page commits into tmpfile
+              jq --argjson page "$page_commits" '. + $page' "$tmpfile" > "$tmpfile.tmp"
+              mv "$tmpfile.tmp" "$tmpfile"
+
+              # Stop after 100 commits total
+              total=$(jq length "$tmpfile")
+              if [ "$total" -ge 100 ]; then
+                jq '.[0:100]' "$tmpfile" > "$tmpfile.tmp"
+                mv "$tmpfile.tmp" "$tmpfile"
+                break
+              fi
+
+              page=$((page + 1))
+            done
+
+            # Merge tmpfile into main JSON
             jq --slurpfile commits "$tmpfile" '. + {($commits[0][0].repo): $commits[0]}' _data/repo_commits.json > _data/tmp.json
             mv _data/tmp.json _data/repo_commits.json
-
             rm "$tmpfile"
           done
 
