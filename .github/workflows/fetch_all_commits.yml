@@ -9,15 +9,12 @@ jobs:
   fetch_commits:
     runs-on: ubuntu-latest
 
-    # REMOVE the 'permissions:' block.
-    # The PAT will control permissions now.
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: master
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.REPO_COMMIT_FETCHER }} # <-- UPDATED
 
       - name: Install jq
         run: |
@@ -26,8 +23,8 @@ jobs:
 
       - name: Fetch commits for all repos
         env:
-          # Use secrets.PAT instead of secrets.GITHUB_TOKEN
-          GITHUB_TOKEN: ${{ secrets.PAT }} # <-- CHANGE THIS
+          # Use the correct secret name
+          GITHUB_TOKEN: ${{ secrets.REPO_COMMIT_FETCHER }} # <-- UPDATED
         shell: bash
         run: |
           set -e
@@ -37,13 +34,11 @@ jobs:
           
           GH_BIN="/usr/bin/gh"
           
-          # This command will now be authenticated with your PAT
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
           
             tmpfile=$(mktemp)
           
-            # This API call will also use the PAT from the env
             $GH_BIN api --paginate "repos/$repo/commits" \
               -H "Authorization: token $GITHUB_TOKEN" \
               -f per_page=100 \
@@ -75,7 +70,6 @@ jobs:
 
       - name: Commit and push JSON
         run: |
-          # This will use the PAT credentials configured by actions/checkout
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/repo_commits.json
