@@ -8,16 +8,16 @@ on:
 jobs:
   fetch_commits:
     runs-on: ubuntu-latest
-    # FIX 1: Grant permissions for the token to read contents (commits)
-    # from all repositories in your account.
-    permissions:
-      contents: write
+
+    # REMOVE the 'permissions:' block.
+    # The PAT will control permissions now.
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: master
+          token: ${{ secrets.PAT }} # <-- ADD THIS
 
       - name: Install jq
         run: |
@@ -26,7 +26,8 @@ jobs:
 
       - name: Fetch commits for all repos
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Use secrets.PAT instead of secrets.GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.PAT }} # <-- CHANGE THIS
         shell: bash
         run: |
           set -e
@@ -36,27 +37,23 @@ jobs:
           
           GH_BIN="/usr/bin/gh"
           
+          # This command will now be authenticated with your PAT
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
             echo "Fetching commits for $repo..."
           
             tmpfile=$(mktemp)
           
-            # FIX 2: Added an '||' (OR) block.
-            # If the 'gh api' command fails (e.g., 404 on an empty repo),
-            # the block after || will run, logging the error and creating
-            # an empty file to prevent the rest of the script from failing.
+            # This API call will also use the PAT from the env
             $GH_BIN api --paginate "repos/$repo/commits" \
               -H "Authorization: token $GITHUB_TOKEN" \
               -f per_page=100 \
               --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' | \
               jq -s 'flatten | .[0:100]' > "$tmpfile" \
             || {
-              echo "Could not fetch commits for $repo (likely empty or permissions issue). Skipping."
-              # Create an empty array so the next 'jq' command doesn't fail
+              echo "Could not fetch commits for $repo (likely empty). Skipping."
               echo "[]" > "$tmpfile"
             }
           
-            # This check will now correctly catch empty repos and skipped ones
             if [ ! -s "$tmpfile" ] || [ "$(jq 'length' "$tmpfile")" -eq 0 ]; then
               echo "No commits found for $repo."
               rm "$tmpfile"
@@ -71,7 +68,6 @@ jobs:
           done
           
           echo "Filtering and sorting commits..."
-          # Sort all commits newest → oldest
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
 
@@ -79,6 +75,7 @@ jobs:
 
       - name: Commit and push JSON
         run: |
+          # This will use the PAT credentials configured by actions/checkout
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/repo_commits.json
