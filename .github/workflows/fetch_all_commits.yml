@@ -29,54 +29,46 @@ jobs:
 
           mkdir -p _data
           echo "{}" > _data/repo_commits.json
-
+          
           GH_BIN="/usr/bin/gh"
-          echo "Using GitHub CLI at $GH_BIN"
-
-          echo "Fetching list of repositories for $GITHUB_ACTOR..."
+          
           $GH_BIN repo list $GITHUB_ACTOR --json nameWithOwner --limit 1000 --jq '.[].nameWithOwner' | while read repo; do
-            echo "Fetching commits for $repo..."
+          echo "Fetching commits for $repo..."
+        
+          tmpfile=$(mktemp)
+          echo "[]" > "$tmpfile"
+        
+          page=1
+          per_page=100
+          count=0
+          while [ $count -lt 100 ]; do
+          $GH_BIN api repos/$repo/commits \
+        -H "Authorization: token $GITHUB_TOKEN" \
+          -f per_page=$per_page \
+          -f page=$page \
+        --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]' \
+          >> "$tmpfile"
 
-            tmpfile=$(mktemp)
-            echo "[]" > "$tmpfile"
-
-            page=1
-            per_page=100
-            while true; do
-              page_commits=$($GH_BIN api repos/$repo/commits \
-                -H "Authorization: token $GITHUB_TOKEN" \
-                -f per_page=$per_page \
-                -f page=$page \
-                --jq '[.[] | {repo: "'"$repo"'", message: .commit.message, url: .html_url, author: .commit.author.name, date: .commit.author.date}]')
-
-              if [ "$page_commits" = "[]" ] || [ -z "$page_commits" ]; then
-                break
-              fi
-
-              # Merge page commits into tmpfile
-              jq --argjson page "$page_commits" '. + $page' "$tmpfile" > "$tmpfile.tmp"
-              mv "$tmpfile.tmp" "$tmpfile"
-
-              # Stop after 100 commits total
-              total=$(jq length "$tmpfile")
-              if [ "$total" -ge 100 ]; then
-                jq '.[0:100]' "$tmpfile" > "$tmpfile.tmp"
-                mv "$tmpfile.tmp" "$tmpfile"
-                break
-              fi
-
-              page=$((page + 1))
-            done
-
-            # Merge tmpfile into main JSON
-            jq --slurpfile commits "$tmpfile" '. + {($commits[0][0].repo): $commits[0]}' _data/repo_commits.json > _data/tmp.json
-            mv _data/tmp.json _data/repo_commits.json
-            rm "$tmpfile"
+          added=$(jq length "$tmpfile")
+          [ "$added" -ge 100 ] && break
+          
+          page=$((page + 1))
+          [ $added -eq 0 ] && break
           done
+        
+          # Keep only first 100 commits
+          jq '.[0:100]' "$tmpfile" > "$tmpfile.tmp" && mv "$tmpfile.tmp" "$tmpfile"
 
+        # Merge into main JSON
+        jq --slurpfile commits "$tmpfile" '. + {($commits[0][0].repo): $commits[0]}' _data/repo_commits.json > _data/tmp.json
+          mv _data/tmp.json _data/repo_commits.json
+          rm "$tmpfile"
+          done
+          
           # Sort all commits newest → oldest
           jq 'to_entries | map(.value) | flatten | sort_by(.date) | reverse' _data/repo_commits.json > _data/tmp.json
           mv _data/tmp.json _data/repo_commits.json
+
 
           echo "✅ Total commits fetched: $(jq length _data/repo_commits.json)"
 
