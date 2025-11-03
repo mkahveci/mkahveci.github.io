@@ -1,5 +1,39 @@
 [
   {
+    "publicationDate": "2025-11-03",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "This trade sells a 4 DTE short put on MRNA, capitalizing on its high IV Rank of 66.55%. The 24.00 strike offers a 0.53 premium, representing a 201.51% annualized return on capital with a 69% probability of profit.",
+    "expectedReturnDisplay": "201.51% Annualized ROC",
+    "ticker": "MRNA",
+    "currentPrice": 25.42,
+    "ivRank": 66.55,
+    "earningsDate": "2025-11-06",
+    "analysis": {
+      "thesis": "Based on the provided trade data, this is an aggressive, high-premium weekly short put. With an IV Rank of 66.55%, volatility is high, making premium selling attractive. With only 4 DTE, the trade aims to capture the full 53.00 premium quickly as theta decays. The 24.00 strike is 5.58% OTM and has a ~69% POP. This trade meets the criteria for a weekly 'Wheel' strategy, with an annualized ROC significantly above the 30% threshold.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-11-07",
+        "dte": 4,
+        "maxProfit": 53.0,
+        "spreadDetails": {
+          "shortPutStrike": 24.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.53
+        }
+      },
+      "metrics": {
+        "roc": 2.21,
+        "annualizedRoc": 201.51,
+        "pop": 69.0,
+        "buyingPowerEffect": 2400.0,
+        "dailyProfitPotential": 13.25
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
     "publicationDate": "2025-10-31",
     "tradeTitle": "Delta-Skewed Short Iron Condor on META",
     "summaryJustification": "A Delta-Skewed Short Iron Condor was placed on META with 49 DTE to capitalize on the high absolute IV of 40.87%, despite a low IV Rank of 26.30%. The trade is skewed with a wider 10.00 put spread (645/635) to give the position a slight bullish bias, collecting a high net credit of 7.07.",
