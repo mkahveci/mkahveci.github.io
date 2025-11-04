@@ -2,6 +2,20 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0050d7448ce84ac5616e6a17845638b95611c3b3",
+    "author": "mkahveci",
+    "date": "2025-11-03T17:47:45Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b8ddbd81b824eee9f312965b909431696b67eff2",
+    "author": "github-actions[bot]",
+    "date": "2025-11-03T01:27:51Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e16e0e37473d11076e4767436c8d4fccf014b0d2",
     "author": "mkahveci",
     "date": "2025-11-02T20:26:40Z"
@@ -824,20 +838,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a3543e7bf799f16ddcdf134711be1231f74a06d5",
     "author": "mkahveci",
     "date": "2025-10-15T11:48:19Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge pull request #49 from mkahveci/2025-10-14\n\nUpdate",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2714d35d2bb935f6476301efbf405527fc3eef0b",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T04:28:50Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/8a0b31c2a198f4ad11d7438e7cc6784a9df5b2f9",
-    "author": "mkahveci",
-    "date": "2025-10-15T04:28:22Z"
   },
   {
     "repo": "mkahveci/qma",
