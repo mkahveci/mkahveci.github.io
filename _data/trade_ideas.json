@@ -1,5 +1,39 @@
 [
   {
+    "publicationDate": "2025-11-04",
+    "tradeTitle": "Short Put on MRNA (Earnings Play)",
+    "summaryJustification": "This trade sells a 3 DTE short put on MRNA to capture its extremely high IV Rank of 96.00% just before its earnings report on Nov 6. The 22.00 strike offers a 0.34 premium, representing a 187.95% annualized return on capital with a 79% probability of profit.",
+    "expectedReturnDisplay": "187.95% Annualized ROC",
+    "ticker": "MRNA",
+    "currentPrice": 23.83,
+    "ivRank": 96.0,
+    "earningsDate": "2025-11-06",
+    "analysis": {
+      "thesis": "This is an aggressive, high-premium weekly short put timed to capture high implied volatility (IV Rank 96.00%) directly through an earnings event on Nov 6. The trade expires the day after the announcement, making it a pure play on theta decay and post-earnings volatility crush. With only 3 DTE, the trade aims to capture the full 34.00 premium. The 22.00 strike is 7.68% OTM and has a ~79% POP (based on its -0.21 delta). This trade meets the criteria for a weekly 'Wheel' strategy, with an annualized ROC significantly above the 30% threshold.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-11-07",
+        "dte": 3,
+        "maxProfit": 34.0,
+        "spreadDetails": {
+          "shortPutStrike": 22.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.34
+        }
+      },
+      "metrics": {
+        "roc": 1.55,
+        "annualizedRoc": 187.95,
+        "pop": 79.0,
+        "buyingPowerEffect": 2200.0,
+        "dailyProfitPotential": 11.33
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
+    }
+  },
+  {
     "publicationDate": "2025-11-03",
     "tradeTitle": "Short Put on MRNA",
     "summaryJustification": "This trade sells a 4 DTE short put on MRNA, capitalizing on its high IV Rank of 66.55%. The 24.00 strike offers a 0.53 premium, representing a 201.51% annualized return on capital with a 69% probability of profit.",
