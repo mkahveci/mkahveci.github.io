@@ -1,5 +1,39 @@
 [
   {
+    "publicationDate": "2025-11-05",
+    "tradeTitle": "Covered Short Strangle on BMNR (Image Recreation)",
+    "summaryJustification": "This trade recreates the existing covered strangle position on BMNR with 2 DTE, selling the 41 Put and 42 Call for a 2.43 net credit. The strategy is designed to profit if BMNR remains above 41, providing a max profit of 243.00 (premium only).",
+    "expectedReturnDisplay": "$243.00 Max Profit",
+    "ticker": "BMNR",
+    "currentPrice": 41.69,
+    "ivRank": 18.64,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "The existing position suggests a short-term forecast for BMNR to remain relatively stable and close between the 41 and 42 strikes by expiration. The short call is covered by the existing 100 shares, and the short put generates additional premium, reducing the overall cost basis and acting as a high-probability income trade.",
+      "strategyType": "Covered Short Strangle",
+      "tradeDetails": {
+        "expiration": "2025-11-07",
+        "dte": 2,
+        "maxProfit": 243.00,
+        "spreadDetails": {
+          "shortPutStrike": 41.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 42.00,
+          "longCallStrike": 0.00,
+          "netCredit": 2.43
+        }
+      },
+      "metrics": {
+        "roc": 0.06,
+        "annualizedRoc": 1095.89,
+        "pop": 68.00,
+        "buyingPowerEffect": 4100.00,
+        "dailyProfitPotential": 121.50
+      },
+      "managementPlan": "The short DTE mandates aggressive management. Target 80% of max profit, or close immediately if the stock challenges the 41 put (as this will increase risk significantly and requires rolling the short put or accepting assignment)."
+    }
+  },
+  {
     "publicationDate": "2025-11-04",
     "tradeTitle": "Short Put on MRNA (Earnings Play)",
     "summaryJustification": "This trade sells a 3 DTE short put on MRNA to capture its extremely high IV Rank of 96.00% just before its earnings report on Nov 6. The 22.00 strike offers a 0.34 premium, representing a 187.95% annualized return on capital with a 79% probability of profit.",
