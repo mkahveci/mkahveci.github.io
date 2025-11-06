@@ -1,7 +1,41 @@
 [
   {
     "publicationDate": "2025-11-05",
-    "tradeTitle": "Covered Short Strangle on BMNR (Image Recreation)",
+    "tradeTitle": "Short Strangle on MNQ (Micro E-mini Nasdaq-100 Futures)",
+    "summaryJustification": "The Short Strangle is highly effective given the confirmed 2,450.00 Buying Power Effect from the user's broker. Collecting a 578.00 net credit with minimal capital yields an extremely high 195.66% Annualized ROC, capitalizing on elevated volatility and time decay.",
+    "expectedReturnDisplay": "195.66% Annualized ROC",
+    "ticker": "MNQ",
+    "currentPrice": 25744.00,
+    "ivRank": 40.00,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "The trade is a non-directional, high-probability setup on the highly liquid MNQ futures, leveraging the broker's favorable margin treatment for the short strangle. The wide strikes (23300 Put and 27500 Call) provide a wide profit zone, maximizing the benefit from time decay (Theta) over the 44 DTE cycle.",
+      "strategyType": "Short Strangle",
+      "tradeDetails": {
+        "expiration": "2025-12-19",
+        "dte": 44,
+        "maxProfit": 578.00,
+        "spreadDetails": {
+          "shortPutStrike": 23300.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 27500.00,
+          "longCallStrike": 0.00,
+          "netCredit": 578.00
+        }
+      },
+      "metrics": {
+        "roc": 23.59,
+        "annualizedRoc": 195.66,
+        "pop": 75.00,
+        "buyingPowerEffect": 2450.00,
+        "dailyProfitPotential": 13.14
+      },
+      "managementPlan": "Standard management plan: Target 50% profit of the net credit as a winner (buy back for 289.00). Roll the entire position to a new 45 DTE cycle if 21 DTE is reached, or if the delta of the tested leg exceeds 0.40."
+    }
+  },
+  {
+    "publicationDate": "2025-11-05",
+    "tradeTitle": "Covered Short Strangle on BMNR",
     "summaryJustification": "This trade recreates the existing covered strangle position on BMNR with 2 DTE, selling the 41 Put and 42 Call for a 2.43 net credit. The strategy is designed to profit if BMNR remains above 41, providing a max profit of 243.00 (premium only).",
     "expectedReturnDisplay": "$243.00 Max Profit",
     "ticker": "BMNR",
