@@ -2,6 +2,41 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6812af1bb06eea683de74b085d019f075607f498",
+    "author": "mkahveci",
+    "date": "2025-11-05T17:19:24Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b3531894def60b8d77a816744bc1671024ef27d2",
+    "author": "mkahveci",
+    "date": "2025-11-05T08:01:21Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2b071d7c4e0a59ba1f6a1da4b2cf26988f9dccf3",
+    "author": "mkahveci",
+    "date": "2025-11-05T08:01:01Z"
+  },
+  {
+    "repo": "mkahveci/email-signature",
+    "message": "initial comit",
+    "url": "https://github.com/mkahveci/email-signature/commit/15151a92ab518b5c6e93eac065ca8c138ff0b686",
+    "author": "mkahveci",
+    "date": "2025-11-05T07:53:58Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f40c1add5265f7779257ab3a5ee8761712f3286a",
+    "author": "github-actions[bot]",
+    "date": "2025-11-05T01:26:01Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e0ca56d764f2bf69d705d9b358a12fd3b7f0a92",
     "author": "mkahveci",
     "date": "2025-11-04T20:16:00Z"
@@ -810,34 +845,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/92acd73e8b0c8b124e34d82fcc4b82f5116d8786",
     "author": "Murat Kahveci",
     "date": "2025-10-15T19:48:39Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update trade_ideas.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/af6b840a47af5f93a16ed805494cf380300f3259",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T19:11:15Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update trade_ideas.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f3903ba9d9974feaa624e85823fa329551e3bcce",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T19:08:26Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge pull request #51 from mkahveci/2025-10-14\n\nUpdate",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7a99dc776cc46b787091a3e515ae3771aaa61b51",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T11:50:37Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e8bb36f7ac6e1e28089cb584475c044fc9f6d26b",
-    "author": "mkahveci",
-    "date": "2025-10-15T11:49:48Z"
   },
   {
     "repo": "mkahveci/qma",
