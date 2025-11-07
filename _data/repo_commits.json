@@ -2,6 +2,20 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/720d2a5cd0926271b5fc053e31a1f82efc825ef2",
+    "author": "mkahveci",
+    "date": "2025-11-06T02:55:57Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/780fdfad165a4ae4490528181122a621c09bbe48",
+    "author": "github-actions[bot]",
+    "date": "2025-11-06T01:25:38Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6812af1bb06eea683de74b085d019f075607f498",
     "author": "mkahveci",
     "date": "2025-11-05T17:19:24Z"
@@ -831,20 +845,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7a748a87a645a2c3674558fd19515b53147a8927",
     "author": "mkahveci",
     "date": "2025-10-16T03:08:55Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update 2025-10-15-ltt.md",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d30ceddd712cf4d77356d3800b91b39aa4ca7431",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T19:51:11Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update 2025-10-15-ltt.md",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/92acd73e8b0c8b124e34d82fcc4b82f5116d8786",
-    "author": "Murat Kahveci",
-    "date": "2025-10-15T19:48:39Z"
   },
   {
     "repo": "mkahveci/qma",
