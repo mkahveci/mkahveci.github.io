@@ -1,0 +1,37 @@
+<div class="project-callout-banner">
+    <i class="fas fa-folder-open"></i>
+    <strong>Related Project:</strong> This post is related to the project
+    <a href="{{ include.project.url | relative_url }}">{{ include.project.name }}</a>.
+</div>
+
+<style>
+    /* Styles for the project callout */
+    .project-callout-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+        margin-bottom: 25px;
+        border: 1px solid #bce8f1; /* Light blue border */
+        background-color: #f4f8fa; /* Light blue background */
+        color: #31708f; /* Darker blue text */
+        border-radius: 4px;
+        font-size: 1.1em;
+        font-weight: normal;
+        text-align: center;
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+    }
+
+    .project-callout-banner a {
+        font-weight: bold;
+        color: #2a6496; /* Darker blue for link */
+        text-decoration: underline;
+        margin-left: 5px;
+    }
+
+    .project-callout-banner .fa-folder-open {
+        margin: 0 15px;
+        color: #31708f; /* Darker blue for the icon */
+        font-size: 1.2em;
+    }
+</style>

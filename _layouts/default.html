@@ -92,6 +92,10 @@
     {% include wip-alert.html %}
     {% endif %}
 
+	{% if page.related_project %}
+	{% include project-callout.html project=page.related_project %}
+	{% endif %}
+
 	{{ content }}
 </main>
 
