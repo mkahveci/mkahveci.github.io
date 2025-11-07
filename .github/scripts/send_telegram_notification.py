@@ -6,8 +6,8 @@ import sys
 from datetime import datetime
 
 # --- Configuration ---
-# Variables are loaded globally here, but we will reference them via os.environ.get()
-# or re-assign them later for local scope use.
+# Global variables are loaded here. Functions reference them via os.environ.get()
+# for stability, or assign them locally in __main__.
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
@@ -16,11 +16,16 @@ FILE_PATH = os.environ.get('FILE_PATH')
 def escape_markdown(text):
     """Escapes special Markdown characters in text fields to prevent Telegram API Parse Errors."""
     # Escape the underscore first, as it is common in titles and breaks Markdown
+    if text is None:
+        return 'N/A'
     return text.replace('_', '\\_')
 
 
 def get_latest_trade(file_path):
-    """Reads the JSON array, sorts by publicationDate, and returns the latest trade."""
+    """
+    Reads the JSON array, implements robust date parsing to skip corrupted entries,
+    and returns the latest trade object.
+    """
     try:
         with open(file_path, 'r') as f:
             data_array = json.load(f)
@@ -35,14 +40,30 @@ def get_latest_trade(file_path):
         print("Error: Trade idea JSON file is empty.")
         return None
 
-    # Sorting by date remains the most reliable method
+    # --- CRITICAL FIX: Robust Sorting with Try/Except to skip bad dates ---
+    valid_data = []
+    for trade in data_array:
+        date_str = trade.get('publicationDate', '1970-01-01')
+        try:
+            # Attempt to parse the date string and store the parsed date
+            trade['_parsed_date'] = datetime.strptime(date_str, '%Y-%m-%d')
+            valid_data.append(trade)
+        except ValueError:
+            # Log and skip the entry if date parsing fails
+            print(f"Skipping trade due to invalid date format: {date_str}")
+
+    if not valid_data:
+        print("Error: No valid trade data found after filtering corrupted dates.")
+        return None
+
+    # Sort the valid data by the parsed date
     sorted_data = sorted(
-        data_array,
-        key=lambda x: datetime.strptime(x.get('publicationDate', '1970-01-01'), '%Y-%m-%d'),
+        valid_data,
+        key=lambda x: x['_parsed_date'],
         reverse=True
     )
 
-    # CRITICAL: Return the newest trade (first element after reverse sort)
+    # Return the newest trade (first element after reverse sort)
     return sorted_data[0]
 
 
@@ -110,15 +131,18 @@ def format_telegram_message(data):
 def send_telegram_notification(message):
     """Sends the formatted message via the Telegram API."""
 
-    # We rely on the calling function to ensure BOT_TOKEN and CHAT_ID are valid
-    if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID')]):
+    # Ensure tokens are available locally
+    local_bot_token = os.environ.get('BOT_TOKEN')
+    local_chat_id = os.environ.get('CHAT_ID')
+
+    if not all([local_bot_token, local_chat_id]):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"https://api.telegram.org/bot{os.environ.get('BOT_TOKEN')}/sendMessage"
+    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
 
     payload = {
-        'chat_id': os.environ.get('CHAT_ID'),
+        'chat_id': local_chat_id,
         'text': message,
         'parse_mode': 'Markdown'
     }
@@ -128,30 +152,25 @@ def send_telegram_notification(message):
         response.raise_for_status()
         print(f"Telegram notification sent successfully. Status: {response.status_code}")
     except requests.exceptions.HTTPError as e:
-        # Re-raise with content to give a clear error message in GitHub Actions log
         print(f"Error sending message to Telegram API: {e}")
         print(f"Response Content: {response.text}")
-        raise # Re-raise the error to fail the GitHub Action job cleanly
+        raise
 
 if __name__ == "__main__":
-    # --- CRITICAL FIX: Reference variables via os.environ.get() for local scope ---
-
-    # Use temporary variables for the configuration check
-    local_bot_token = os.environ.get('BOT_TOKEN')
-    local_chat_id = os.environ.get('CHAT_ID')
+    # --- CRITICAL FIX: Ensure configuration variables are loaded and valid ---
     local_file_path = os.environ.get('FILE_PATH')
 
-    if not all([local_bot_token, local_chat_id, local_file_path]):
+    if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID'), local_file_path]):
         print("Setup error: One or more environment variables (secrets or file path) are missing.")
-        sys.exit(1) # Fail fast if configuration is wrong
+        sys.exit(1)
 
     try:
-        latest_trade = get_latest_trade(local_file_path) # Pass local file path
+        latest_trade = get_latest_trade(local_file_path)
         if latest_trade:
-            # We don't need to pass tokens, as functions use os.environ.get()
             send_telegram_notification(format_telegram_message(latest_trade))
         else:
             print("No valid trade data found to send notification.")
     except Exception as e:
         print(f"A final critical error occurred: {e}")
+        # We exit 1 here if anything else unexpectedly fails
         sys.exit(1)
