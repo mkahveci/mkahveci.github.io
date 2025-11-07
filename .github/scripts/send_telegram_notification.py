@@ -42,50 +42,64 @@ def get_latest_trade(file_path):
 
 def format_telegram_message(data):
     """Formats the JSON data into a comprehensive Telegram Markdown message."""
-    
-    # --- Data Extraction (Unchanged, remains robust) ---
+
+    # --- Data Extraction ---
     trade_title = data.get('tradeTitle', 'New Trade Idea')
     ticker = data.get('ticker', 'N/A')
     current_price = data.get('currentPrice', 'N/A')
     expected_return = data.get('expectedReturnDisplay', 'N/A')
     summary_justification = data.get('summaryJustification', 'No summary provided.')
     publication_date = data.get('publicationDate', 'YYYY-MM-DD')
-    
+
     analysis = data.get('analysis', {})
     strategy = analysis.get('strategyType', 'N/A')
     trade_details = analysis.get('tradeDetails', {})
+    spread_details = trade_details.get('spreadDetails', {}) # NEW: Access spreadDetails
     expiration = trade_details.get('expiration', 'N/A')
-    put_strike = trade_details.get('putStrike', 'N/A')
     metrics = analysis.get('metrics', {})
     pop = metrics.get('pop', 'N/A')
     max_profit = trade_details.get('maxProfit', 'N/A')
     management = analysis.get('managementPlan', 'Standard management plan.')
-    
-    
-    # --- MESSAGE CONSTRUCTION ---
+
+    # --- Dynamic Strike Price Generation (CRITICAL FIX) ---
+    s_put = spread_details.get('shortPutStrike', 0.0)
+    s_call = spread_details.get('shortCallStrike', 0.0)
+
+    strike_line = ""
+    if strategy in ['Short Put', 'Cash-Secured Put']:
+        strike_line = f"🎯 **Short Put Strike:** **${s_put}**"
+    elif strategy in ['Short Call', 'Covered Call']:
+        strike_line = f"🎯 **Short Call Strike:** **${s_call}**"
+    elif strategy in ['Short Strangle', 'Iron Condor', 'Skewed Iron Condor', 'Delta-Skewed Short Iron Condor', 'Covered Short Strangle']:
+        strike_line = f"🎯 **Strikes (P/C):** **${s_put} / ${s_call}**"
+    else:
+        strike_line = f"🎯 **Strikes:** See trade details"
+
+
+    # --- MESSAGE CONSTRUCTION (Updated to use consistent Markdown) ---
     message = (
-        f"🚨 *TRADE ALERT: {trade_title}* 🚨\n\n"
-        f"📈 *Asset:* ${ticker} (Current Price: ${current_price})\n"
-        f"🛠️ *Strategy:* {strategy}\n"
-        f"📆 *Expiration:* {expiration} (Published: {publication_date})\n"
-        f"🎯 *Strike Price:* ${put_strike}\n"
+        f"🚨 **TRADE ALERT: {trade_title}** 🚨\n\n"
+        f"📈 **Asset:** `${ticker}` (Current Price: ${current_price})\n"
+        f"🛠️ **Strategy:** {strategy}\n"
+        f"📆 **Expiration:** {expiration} (Published: {publication_date})\n"
+        f"{strike_line}\n" # Insert the dynamically generated strike line
         f"-----------------------------------------\n"
-        f"✅ *Prob. of Profit (PoP):* {pop}%\n"
-        f"💰 *Max Annualized ROC:* {expected_return}\n"
-        f"💵 *Max Profit:* ${max_profit}\n"
+        f"✅ **Prob. of Profit (PoP):** {pop}%\n"
+        f"💰 **Max Annualized ROC:** {expected_return}\n"
+        f"💵 **Max Profit:** ${max_profit}\n"
         f"-----------------------------------------\n"
-        f"\n*Summary Justification:*\n"
+        f"\n**Summary Justification:**\n"
         f"_{summary_justification}_\n\n"
-        f"*Management Plan:*\n"
+        f"**Management Plan:**\n"
         f"_{management}_\n\n"
     )
-    
+
     # Permalink
     STATIC_DOC_URL = "https://kahveci.pw/projectsgit/qma/docs/trade-ideas.html"
     message += (
         f"[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
     )
-    
+
     return message
 
 
