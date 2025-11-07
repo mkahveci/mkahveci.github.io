@@ -1,5 +1,56 @@
 [
   {
+    "publicationDate": "2025-11-07",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "A Short Put was placed at the $26.00 strike to collect a high premium post-earnings, aiming for an over 100% Annualized ROC. The trade capitalizes on high implied volatility (IV Rank 29%) which, although slightly below the 30 threshold, still provides an attractive credit well above the current stock price.",
+    "expectedReturnDisplay": "$330.00 Max Profit (110.60% Annualized ROC)",
+    "ticker": "MRNA",
+    "currentPrice": 24.13,
+    "ivRank": 29.00,
+    "earningsDate": "2025-11-06",
+    "analysis": {
+      "thesis": "The stock has high implied volatility even post-earnings. Selling an out-of-the-money put with a strike of $26.00 allows for substantial premium collection, positioning the short strike relatively close to the money for an aggressive, high-return trade. The goal is to profit from time decay and the stock remaining above $26.00.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-12-19",
+        "dte": 42,
+        "maxProfit": 330.00,
+        "spreadDetails": {
+          "shortPutStrike": 26.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 3.30
+        }
+      },
+      "metrics": {
+        "roc": 12.69,
+        "annualizedRoc": 110.60,
+        "pop": 0.0,
+        "buyingPowerEffect": 2600.00,
+        "dailyProfitPotential": 7.86
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, or manage at 21 DTE."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN",
+        "date": "2025-11-07",
+        "actionTaken": "STO 1 Short Put (Cash-Secured)",
+        "expiration": "2025-12-19",
+        "dte": 42,
+        "strikes": {
+          "shortPut": 26.00,
+          "longPut": 0.00,
+          "shortCall": 0.00,
+          "longCall": 0.00
+        },
+        "netCredit": 3.30,
+        "notes": "Initial trade entry."
+      }
+    ]
+  },
+  {
     "publicationDate": "2025-11-06",
     "tradeTitle": "Short Strangle on NQ225 (Dec '25 Paper Trade)",
     "summaryJustification": "A Short Strangle was executed on the NQZ25 (E-mini Nasdaq 100 Futures) in PaperMoney, using the 44 DTE expiration for a substantial credit. The strategy tests premium selling on a high-volatility futures product, aiming for maximum profit by expiring worthless while the index stays within the 24000 and 27100 strikes.",
