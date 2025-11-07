@@ -1,28 +1,26 @@
 import os
 import requests
 import json
-import re # Import the regex module for escaping
+import re
+import sys
 from datetime import datetime
 
-# --- Helper Function for Markdown Escaping (NEW) ---
-def escape_markdown(text):
-    """
-    Escapes special Markdown characters in text fields (like summary or notes)
-    to prevent Telegram API Parse Errors (400 Bad Request).
-    Only necessary for text that is NOT meant to be bolded/italicized.
-    """
-    # Escapes only the characters that Telegram Markdown uses, but
-    # excludes those we explicitly want to use (like bolding via ** or backticks)
+# --- Configuration ---
+# Variables are loaded globally here, but we will reference them via os.environ.get()
+# or re-assign them later for local scope use.
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+CHAT_ID = os.environ.get('CHAT_ID')
+FILE_PATH = os.environ.get('FILE_PATH')
 
+# --- Helper Function for Markdown Escaping ---
+def escape_markdown(text):
+    """Escapes special Markdown characters in text fields to prevent Telegram API Parse Errors."""
     # Escape the underscore first, as it is common in titles and breaks Markdown
     return text.replace('_', '\\_')
 
 
 def get_latest_trade(file_path):
-    # ... (Keep this function unchanged, it is robust)
-    """
-    Reads the JSON array, sorts by publicationDate, and returns the latest trade.
-    """
+    """Reads the JSON array, sorts by publicationDate, and returns the latest trade."""
     try:
         with open(file_path, 'r') as f:
             data_array = json.load(f)
@@ -44,6 +42,7 @@ def get_latest_trade(file_path):
         reverse=True
     )
 
+    # CRITICAL: Return the newest trade (first element after reverse sort)
     return sorted_data[0]
 
 
@@ -55,7 +54,6 @@ def format_telegram_message(data):
     ticker = data.get('ticker', 'N/A')
     current_price = data.get('currentPrice', 'N/A')
     expected_return = data.get('expectedReturnDisplay', 'N/A')
-    # APPLY ESCAPING to free-form text fields (CRITICAL FIX)
     summary_justification = escape_markdown(data.get('summaryJustification', 'No summary provided.'))
     publication_date = data.get('publicationDate', 'YYYY-MM-DD')
 
@@ -67,9 +65,9 @@ def format_telegram_message(data):
     metrics = analysis.get('metrics', {})
     pop = metrics.get('pop', 'N/A')
     max_profit = trade_details.get('maxProfit', 'N/A')
-    management = escape_markdown(analysis.get('managementPlan', 'Standard management plan.')) # APPLY ESCAPING
+    management = escape_markdown(analysis.get('managementPlan', 'Standard management plan.'))
 
-    # --- Dynamic Strike Price Generation (Corrected and Simplified) ---
+    # --- Dynamic Strike Price Generation ---
     s_put = spread_details.get('shortPutStrike', 'N/A')
     s_call = spread_details.get('shortCallStrike', 'N/A')
 
@@ -110,19 +108,17 @@ def format_telegram_message(data):
 
 
 def send_telegram_notification(message):
-    # ... (Keep this function unchanged, it is robust)
     """Sends the formatted message via the Telegram API."""
 
-    # NOTE: BOT_TOKEN and CHAT_ID are accessed via os.environ.get()
-    if not all([BOT_TOKEN, CHAT_ID]):
+    # We rely on the calling function to ensure BOT_TOKEN and CHAT_ID are valid
+    if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID')]):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
-        # If secrets are missing, we should fail the job, but explicitly print the error
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    TELEGRAM_API_URL = f"https://api.telegram.org/bot{os.environ.get('BOT_TOKEN')}/sendMessage"
 
     payload = {
-        'chat_id': CHAT_ID,
+        'chat_id': os.environ.get('CHAT_ID'),
         'text': message,
         'parse_mode': 'Markdown'
     }
@@ -134,18 +130,25 @@ def send_telegram_notification(message):
     except requests.exceptions.HTTPError as e:
         # Re-raise with content to give a clear error message in GitHub Actions log
         print(f"Error sending message to Telegram API: {e}")
-        print(f"Response Content: {response.text}") # THIS is the key to finding the 400 error cause
+        print(f"Response Content: {response.text}")
         raise # Re-raise the error to fail the GitHub Action job cleanly
 
 if __name__ == "__main__":
-    # Ensure dependencies are available
-    if not all([BOT_TOKEN, CHAT_ID, FILE_PATH]):
+    # --- CRITICAL FIX: Reference variables via os.environ.get() for local scope ---
+
+    # Use temporary variables for the configuration check
+    local_bot_token = os.environ.get('BOT_TOKEN')
+    local_chat_id = os.environ.get('CHAT_ID')
+    local_file_path = os.environ.get('FILE_PATH')
+
+    if not all([local_bot_token, local_chat_id, local_file_path]):
         print("Setup error: One or more environment variables (secrets or file path) are missing.")
         sys.exit(1) # Fail fast if configuration is wrong
 
     try:
-        latest_trade = get_latest_trade(FILE_PATH)
+        latest_trade = get_latest_trade(local_file_path) # Pass local file path
         if latest_trade:
+            # We don't need to pass tokens, as functions use os.environ.get()
             send_telegram_notification(format_telegram_message(latest_trade))
         else:
             print("No valid trade data found to send notification.")
