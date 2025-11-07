@@ -46,7 +46,27 @@
           "longCall": 0.00
         },
         "netCredit": 8735.00,
-        "notes": "Initial trade entry in PaperMoney based on journal screenshot. Transaction confirmed at 436.75 points ($8,735.00)."
+        "notes": "Initial trade entry in PaperMoney. Net credit of $8,735.00 confirmed by journal at 436.75 points."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-11-07",
+        "actionTaken": "Roll Call Side Down and Out to reduce delta.",
+        "oldStrikes": {
+          "shortPut": 24000.00,
+          "longPut": 0.00,
+          "shortCall": 27100.00,
+          "longCall": 0.00
+        },
+        "newStrikes": {
+          "shortPut": 24000.00,
+          "longPut": 0.00,
+          "shortCall": 25900.00,
+          "longCall": 27100.00
+        },
+        "netChange": 5275.00,
+        "netChangeType": "Credit",
+        "notes": "Adjustment to reduce upside delta. The original 27,100 short call was closed (BOT), and a new 25,900 short call was opened (STO). The resulting short strikes (25900C/24000P) now have approximately 0.30 delta on both the call and put sides. Net credit received for the adjustment was $5,275.00. Total net credit on the trade is now $14,010.00."
       }
     ]
   },
