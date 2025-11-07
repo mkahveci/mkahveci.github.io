@@ -69,3 +69,230 @@ $pastel-danger: #e09f9f;  // Soft Dusty Rose
 .callout-mk-alert {
     @include callout-mk($pastel-danger);
 }
+
+/* --- NEW STYLES FOR PROGRESSION --- */
+  .progression-timeline {
+    border-left: 2px solid #ccc;
+    padding-left: 1rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+  .progression-step {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .progression-step::before {
+    content: '';
+    position: absolute;
+    left: -1.05rem; /* Align with the timeline bar */
+    top: 0.2rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #007bff; /* Default OPEN */
+    border: 3px solid #fff;
+  }
+  .step-open::before {
+    background-color: #007bff; /* Blue for Open */
+  }
+  .step-adjustment::before {
+    background-color: #ffc107; /* Yellow for Adjustment */
+  }
+  .step-close::before {
+    background-color: #28a745; /* Green for Close */
+  }
+  .progression-date {
+    font-size: 0.75rem;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  /* --- NEW & IMPROVED PROGRESSION STYLES --- */
+  .trade-progression-container {
+    margin-top: 1.5rem;
+  }
+
+  .progression-timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the line and dots */
+    list-style: none; /* Remove default list-style */
+    margin-top: 1rem;
+  }
+
+  .progression-timeline::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 10px;
+    width: 2px;
+    background-color: #e9ecef; /* Light grey timeline */
+    z-index: 0;
+  }
+
+  .progression-step {
+    position: relative;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+  }
+
+  /* The dot on the timeline */
+  .progression-step::before {
+    content: '';
+    position: absolute;
+    left: -24px; /* (30px padding - (16px width / 2) - 2px border) */
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #007bff; /* Default OPEN */
+    z-index: 1;
+  }
+
+  .step-open::before   { border-color: #0d6efd; } /* Blue */
+  .step-adjustment::before { border-color: #ffc107; } /* Yellow */
+  .step-close::before  { border-color: #198754; } /* Green */
+
+  .progression-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .progression-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-weight: 500;
+  }
+
+  /* The new professional "tags" */
+  .progression-tag {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+  }
+
+  .tag-open {
+    color: #052c65;
+    background-color: #cfe2ff;
+    border: 1px solid #b6d4fe;
+  }
+
+  .tag-adjustment {
+    color: #664d03;
+    background-color: #fff3cd;
+    border: 1px solid #ffecb5;
+  }
+
+  .tag-close {
+    color: #0a3622;
+    background-color: #d1e7dd;
+    border: 1px solid #c3e6cb;
+  }
+
+  .progression-details p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .progression-details .profit-loss {
+    font-weight: bold;
+    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+
+.leg-details {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #007bff;
+  }
+
+  /* --- NEW STATUS PILL STYLES --- */
+  .trade-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .status-pill {
+    display: inline-block;
+    padding: 0.3em 0.75em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50rem; /* pill shape */
+    text-transform: uppercase;
+    flex-shrink: 0; /* Don't let it wrap */
+  }
+
+  .status-open {
+    color: #0a3622;
+    background-color: #d1e7dd;
+    border: 1px solid #c3e6cb;
+  }
+
+  .status-closed {
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+  }
+
+.leg-grid {
+    display: grid;
+    /* This will create a 2 or 4 col grid based on available space */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  .leg-item {
+    padding: 0.25rem 0.5rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .leg-item strong {
+    display: block;
+    color: #6c757d;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  .leg-item span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .metric-item {
+    padding: 0.25rem 0.5rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+  }
+  .metric-item strong {
+    display: block;
+    color: #6c757d;
+    font-size: 0.75rem;
+  }

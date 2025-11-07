@@ -6,64 +6,6 @@ repo: mkahveci/qma
 permalink: /:path/:basename:output_ext
 ---
 
-<style>
-  /* ... (Existing styles remain unchanged) ... */
-  .date-block {
-    width: 70px;
-    height: 70px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa;
-    color: #495057;
-    font-weight: bold;
-    border-radius: 0.375rem;
-    text-align: center;
-    line-height: 1.2;
-    border: 1px solid #dee2e6;
-  }
-  .date-block .month {
-    font-size: 0.9rem;
-    display: block;
-  }
-  .date-block .day {
-    font-size: 1.6rem;
-    display: block;
-  }
-  .trade-card-section {
-    padding: 0.75rem;
-    border-radius: 0.25rem;
-    margin-top: 0.75rem;
-  }
-  .metrics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.5rem;
-    font-size: 0.8rem;
-  }
-  .metric-item {
-    padding: 0.25rem 0.5rem;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    border: 1px solid #e9ecef;
-  }
-  .metric-item strong {
-    display: block;
-    color: #6c757d;
-    font-size: 0.75rem;
-  }
-  .font-monospace {
-      font-size: 0.9em;
-  }
-  .leg-details {
-    margin-top: 0.5rem;
-    padding-left: 0.5rem;
-    border-left: 2px solid #007bff;
-  }
-</style>
-
 <div class="container my-5">
 
   <div class="text-center mb-5">
@@ -72,20 +14,19 @@ permalink: /:path/:basename:output_ext
     </p>
   </div>
 
-{% comment %} --- LIQUID DATA ASSIGNMENT (SORTED AND READY FOR MANUAL LIMIT) --- {% endcomment %}
-{% assign temp_trades = site.data.trade_ideas | sort: 'publicationDate' | reverse %}
-{% assign sorted_trades = temp_trades %}
+{% comment %} --- LIQUID DATA ASSIGNMENT (Now trusts file order) --- {% endcomment %}
+{% assign sorted_trades = site.data.trade_ideas %}
 
   <section id="trades">
     <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
 
-    {% comment %} --- DATE FILTER DROPDOWN (Today/All Only, default is 'Today') --- {% endcomment %}
+    {% comment %} --- UPDATED FILTER: Show Last 10 (default) or Last 50 --- {% endcomment %}
     <div class="d-flex justify-content-end mb-4">
-        <div class="date-filter-container">
-            <label for="date-filter-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">Show Posts:</label>
-            <select id="date-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
-                <option value="today" selected>Today</option>
-                <option value="all">All Posts (Last 50)</option>
+        <div class="limit-filter-container">
+            <label for="limit-filter-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">Show Trades:</label>
+            <select id="limit-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
+                <option value="10" selected>Last 10 Trades</option>
+                <option value="50">Last 50 Trades</option>
             </select>
         </div>
     </div>
@@ -100,10 +41,8 @@ permalink: /:path/:basename:output_ext
           {% if current_count >= trades_to_show %}
               {% break %}
           {% endif %}
-      
-          {% assign trade_timestamp = trade.publicationDate | date: "%s" %}
           
-          <div class="col trade-card-wrapper" data-timestamp="{{ trade_timestamp }}">
+          <div class="col trade-card-wrapper">
             <div class="card h-100 shadow-sm border-0 d-flex">
               <div class="card-body d-flex">
 
@@ -113,7 +52,24 @@ permalink: /:path/:basename:output_ext
                 </div>
                 
                 <div class="flex-grow-1">
-                  <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
+
+                  {% comment %} --- NEW STATUS LOGIC --- {% endcomment %}
+                  {% assign last_step = trade.tradeProgression | last %}
+                  {% if last_step and last_step.stepType == 'CLOSE' %}
+                      {% assign trade_status = "CLOSED" %}
+                  {% else %}
+                      {% assign trade_status = "OPEN" %}
+                  {% endif %}
+
+                  <div class="trade-card-header">
+                    <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
+                    {% if trade_status == "OPEN" %}
+                      <span class="status-pill status-open">Open</span>
+                    {% else %}
+                      <span class="status-pill status-closed">Closed</span>
+                    {% endif %}
+                  </div>
+                  
                   <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
 
                   <div class="d-flex justify-content-between small p-2 rounded bg-light mt-2">
@@ -133,21 +89,38 @@ permalink: /:path/:basename:output_ext
                     </ul>
                     
                     <h6 class="small mt-3 mb-1"><strong>Leg Details</strong></h6>
-                    <div class="leg-details">
-                        {% if trade.analysis.tradeDetails.spreadDetails %}
-                            <ul class="list-unstyled small mb-0">
-                                <li class="pt-1">Sell Put: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.shortPutStrike | round: 2 }}</strong></li>
-                                <li class="pt-1">Buy Put: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.longPutStrike | round: 2 }}</strong></li>
-                                <li class="pt-1">Sell Call: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.shortCallStrike | round: 2 }}</strong></li>
-                                <li class="pt-1">Buy Call: <strong>&#36;{{ trade.analysis.tradeDetails.spreadDetails.longCallStrike | round: 2 }}</strong></li>
-                            </ul>
-                        {% elsif trade.analysis.tradeDetails.putStrike %}
-                            <ul class="list-unstyled small mb-0">
-                                <li class="pt-1">Sell Put: <strong>&#36;{{ trade.analysis.tradeDetails.putStrike | round: 2 }}</strong> (Premium: &#36;{{ trade.analysis.tradeDetails.putPremium | round: 2 }})</li>
-                            </ul>
-                        {% endif %}
+                    <div class="leg-grid">
+                      {% assign details = trade.analysis.tradeDetails.spreadDetails %}
+
+                      {% if details.shortPutStrike > 0 %}
+                      <div class="leg-item">
+                        <strong>SELL PUT</strong>
+                        <span class="text-danger">&#36;{{ details.shortPutStrike | round: 2 }}</span>
+                      </div>
+                      {% endif %}
+
+                      {% if details.longPutStrike > 0 %}
+                      <div class="leg-item">
+                        <strong>BUY PUT</strong>
+                        <span class="text-success">&#36;{{ details.longPutStrike | round: 2 }}</span>
+                      </div>
+                      {% endif %}
+
+                      {% if details.shortCallStrike > 0 %}
+                      <div class="leg-item">
+                        <strong>SELL CALL</strong>
+                        <span class="text-danger">&#36;{{ details.shortCallStrike | round: 2 }}</span>
+                      </div>
+                      {% endif %}
+
+                      {% if details.longCallStrike > 0 %}
+                      <div class="leg-item">
+                        <strong>BUY CALL</strong>
+                        <span class="text-success">&#36;{{ details.longCallStrike | round: 2 }}</span>
+                      </div>
+                      {% endif %}
                     </div>
-                  </div>
+                    </div>
                   <div class="trade-card-section" style="background-color: #f0f8ff;">
                     <div class="metrics-grid">
                       <div class="metric-item text-center"><strong>ROC</strong><span>{{ trade.analysis.metrics.roc | round: 2 }}%</span></div>
@@ -157,16 +130,79 @@ permalink: /:path/:basename:output_ext
                     </div>
                   </div>
                   
+                  <div class="trade-progression-container small">
+                    <h6 class="h6 small"><strong>Trade Progression Log</strong></h6>
+                    
+                    {% if trade.tradeProgression and trade.tradeProgression.size > 0 %}
+                        <ol class="progression-timeline">
+                            {% for step in trade.tradeProgression %}
+                                {% assign step_type_lower = step.stepType | downcase %}
+                                <li class="progression-step step-{{ step_type_lower }}">
+                                    <div class="progression-header">
+                                        <span class="progression-tag tag-{{ step_type_lower }}">{{ step.stepType }}</span>
+                                        {% comment %} Adjusted for progression date DTE which uses 'dteRemaining' for CLOSE/ADJUST {% endcomment %}
+                                        <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({{ step.dteRemaining | default: trade.analysis.tradeDetails.dte }} DTE)</span>
+                                    </div>
+                                    <div class="progression-details">
+                                        
+                                        {% if step.stepType == 'OPEN' %}
+                                            <p>{{ trade.summaryJustification }}</p>
+                                            <span class="profit-loss text-primary">(+&#36;{{ trade.analysis.tradeDetails.spreadDetails.netCredit | default: trade.analysis.tradeDetails.putPremium | round: 2 }})</span>
+                                        {% elsif step.stepType == 'ADJUSTMENT' %}
+                                            <p>{{ step.description }}</p>
+                                            <span class="profit-loss text-warning">(+&#36;{{ step.netCreditReceived | round: 2 }})</span>
+                                            {% if step.managementRuleTrigger %}
+                                              <p class="small text-muted mb-0 mt-1"><em>Trigger: {{ step.managementRuleTrigger }}</em></p>
+                                            {% endif %}
+                                        {% elsif step.stepType == 'CLOSE' %}
+                                            {% comment %}
+                                            *** CORRECTED CLOSE LOGIC START ***
+                                            Accessing grossProfitLoss and transaction details directly from the step object.
+                                            {% endcomment %}
+                                            
+                                            <span class="profit-loss">
+                                                {% if step.grossProfitLoss >= 0 %}
+                                                    <span class="text-success">(Profit: &#36;{{ step.grossProfitLoss | round: 2 }})</span>
+                                                {% else %}
+                                                    <span class="text-danger">(Loss: &#36;{{ step.grossProfitLoss | abs | round: 2 }})</span>
+                                                {% endif %}
+                                            </span>
+                                            
+                                            <p class="small text-muted mb-0 mt-1">
+                                              Transaction: 
+                                              {% if step.debitPaid and step.debitPaid > 0 %}
+                                                <strong class="text-danger">Debit Paid &#36;{{ step.debitPaid | round: 2 }}</strong>
+                                              {% elsif step.creditReceived and step.creditReceived > 0 %}
+                                                <strong class="text-success">Credit Received &#36;{{ step.creditReceived | round: 2 }}</strong>
+                                              {% endif %}
+                                              <span class="ms-2">({{ step.actionTaken }})</span>
+                                            </p>
+                                            
+                                            {% if step.notes %}
+                                                <p class="small text-muted mb-0 mt-1"><em>{{ step.notes }}</em></p>
+                                            {% endif %}
+                                            
+                                        {% endif %}
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    {% else %}
+                        <p class="small text-muted mt-2 mb-0">No management steps recorded yet.</p>
+                    {% endif %}
+                  </div>
+                  
                 </div>
               </div>
+              
               <div class="card-footer bg-white">
                 <div class="d-flex flex-wrap justify-content-end" style="gap: 0.5rem;">
                   <a href="https://www.google.com/search?q={{ trade.ticker }}+stock" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-chart-line fa-fw me-1"></i> Chart</a>
                   <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ current_count }}" aria-expanded="false" aria-controls="collapse-{{ current_count }}">
-                    <i class="fas fa-info-circle fa-fw me-1"></i> More Info
+                    <i class="fas fa-info-circle fa-fw me-1"></i> Thesis & Plan
                   </button>
                   <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy trade details"><i class="fas fa-copy fa-fw me-1"></i> Copy</button>
-                  
+
                   <div class="trade-details-data" style="display: none;">
                     Trade: {{ trade.tradeTitle }}
                     Strategy: {{ trade.analysis.strategyType }} ({{ trade.analysis.tradeDetails.dte }} DTE)
@@ -192,7 +228,7 @@ permalink: /:path/:basename:output_ext
                   <div class="small p-3 rounded" style="background-color: #fffbe6;">
                     <h6 class="h6 small"><strong>Thesis</strong></h6>
                     <p>{{ trade.analysis.thesis }}</p>
-                    <h6 class="h6 small mt-3"><strong>Management Plan</strong></h6>
+                    <h6 classs="h6 small mt-3"><strong>Management Plan</strong></h6>
                     <p class="mb-0">{{ trade.analysis.managementPlan }}</p>
                   </div>
                 </div>
@@ -208,58 +244,32 @@ permalink: /:path/:basename:output_ext
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const selector = document.getElementById('date-filter-selector');
+        const selector = document.getElementById('limit-filter-selector');
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
-        // --- 1. Calculate Date Ranges (in milliseconds) ---
-        // Note: ONE_DAY_MS is defined but not actually used, keeping for clarity.
-        const ONE_DAY_MS = 24 * 60 * 60 * 1000; 
-        const now = new Date();
-        
-        // Reset time to start of today (00:00:00) for clean comparison. This value is in MILLISECONDS.
-        const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime(); 
-
-        // 2. Filtering Function (Native JS)
-        function filterTrades(filterType) {
-            tradeCards.forEach(card => {
-                // FIX: Convert the Liquid-generated timestamp (in SECONDS) to MILLISECONDS for comparison.
-                const timestamp = parseInt(card.getAttribute('data-timestamp')) * 1000; 
-                let isVisible = false;
-
-                if (filterType === 'all') {
-                    isVisible = true;
-                } else if (filterType === 'today' && timestamp) {
-                    // Check if the trade was published today (trade timestamp in MS >= todayStart in MS)
-                    if (timestamp >= todayStart) {
-                        isVisible = true;
-                    }
+        function filterTrades(limit) {
+            const numLimit = parseInt(limit);
+            
+            tradeCards.forEach((card, index) => {
+                if (index < numLimit) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
                 }
-
-                card.style.display = isVisible ? 'block' : 'none';
             });
         }
 
-        // 3. Initial State Setup
         if (selector) {
-            // A. Set default to 'today' and apply filter immediately.
-            selector.value = 'today';
-            filterTrades('today'); 
-        }
-
-        // 4. Event Listener (Native JS)
-        if (selector) {
+            filterTrades(selector.value); 
             selector.addEventListener('change', function() {
                 filterTrades(this.value);
             });
         }
     });
 </script>
-
 <script>
   function copyTradeDetails(button) {
-    // Correctly selects the next sibling element which holds the data
     const detailsContainer = button.nextElementSibling; 
-    // Normalize whitespace and replace multiple spaces with a single space
     const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
 
     navigator.clipboard.writeText(detailsText).then(() => {

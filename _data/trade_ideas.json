@@ -31,7 +31,19 @@
         "dailyProfitPotential": 13.14
       },
       "managementPlan": "Standard management plan: Target 50% profit of the net credit as a winner (buy back for 289.00). Roll the entire position to a new 45 DTE cycle if 21 DTE is reached, or if the delta of the tested leg exceeds 0.40."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-06",
+        "dteRemaining": 43,
+        "actionTaken": "BOT +1 STRANGLE (Closed using P&L amounts)",
+        "debitPaid": 555.00,
+        "creditReceived": 578.00,
+        "grossProfitLoss": 23.00,
+        "notes": "Closed the entire Short Strangle for a total debit amount of $555.00, realizing a net profit of $23.00 based on the initial credit amount of $578.00. This realized profit was captured in less than 24 hours."
+      }
+    ]
   },
   {
     "publicationDate": "2025-11-05",
@@ -65,41 +77,65 @@
         "dailyProfitPotential": 121.50
       },
       "managementPlan": "The short DTE mandates aggressive management. Target 80% of max profit, or close immediately if the stock challenges the 41 put (as this will increase risk significantly and requires rolling the short put or accepting assignment)."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-05",
+        "dteRemaining": 2,
+        "actionTaken": "Full Liquidation (Sold Stock and Closed Put)",
+        "debitPaid": 0.99,
+        "creditReceived": 40.56,
+        "grossProfitLoss": 31.00,
+        "notes": "The Covered Strangle was closed fully: the 41 Put was bought back for a 0.99 debit ($99.00), and the underlying stock (initial cost basis $41.69) was sold at $40.56. Total combined options profit ($144.00) offset the loss on the stock (-$113.00), resulting in a net profit of $31.00."
+      }
+    ]
   },
   {
     "publicationDate": "2025-11-04",
     "tradeTitle": "Short Put on MRNA (Earnings Play)",
-    "summaryJustification": "This trade sells a 3 DTE short put on MRNA to capture its extremely high IV Rank of 96.00% just before its earnings report on Nov 6. The 22.00 strike offers a 0.34 premium, representing a 187.95% annualized return on capital with a 79% probability of profit.",
-    "expectedReturnDisplay": "187.95% Annualized ROC",
+    "summaryJustification": "This trade sells a 3 DTE short put on MRNA to capture its extremely high IV Rank of 96.00% just before its earnings report on Nov 6. The 22.00 strike offers a 0.37 premium, representing a 206.59% annualized return on capital with a 79% probability of profit.",
+    "expectedReturnDisplay": "206.59% Annualized ROC",
     "ticker": "MRNA",
     "currentPrice": 23.83,
     "ivRank": 96.0,
     "earningsDate": "2025-11-06",
     "analysis": {
-      "thesis": "This is an aggressive, high-premium weekly short put timed to capture high implied volatility (IV Rank 96.00%) directly through an earnings event on Nov 6. The trade expires the day after the announcement, making it a pure play on theta decay and post-earnings volatility crush. With only 3 DTE, the trade aims to capture the full 34.00 premium. The 22.00 strike is 7.68% OTM and has a ~79% POP (based on its -0.21 delta). This trade meets the criteria for a weekly 'Wheel' strategy, with an annualized ROC significantly above the 30% threshold.",
+      "thesis": "This is an aggressive, high-premium weekly short put timed to capture high implied volatility (IV Rank 96.00%) directly through an earnings event on Nov 6. The trade expires the day after the announcement, making it a pure play on theta decay and post-earnings volatility crush. With only 3 DTE, the trade aims to capture the full 37.00 premium. The 22.00 strike is 7.68% OTM and has a ~79% POP (based on its -0.21 delta). This trade meets the criteria for a weekly 'Wheel' strategy, with an annualized ROC significantly above the 30% threshold.",
       "strategyType": "Short Put",
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 3,
-        "maxProfit": 34.0,
+        "maxProfit": 37.00,
         "spreadDetails": {
           "shortPutStrike": 22.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 0.34
+          "netCredit": 0.37
         }
       },
       "metrics": {
-        "roc": 1.55,
-        "annualizedRoc": 187.95,
+        "roc": 1.68,
+        "annualizedRoc": 204.09,
         "pop": 79.0,
         "buyingPowerEffect": 2200.0,
-        "dailyProfitPotential": 11.33
+        "dailyProfitPotential": 12.33
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-05",
+        "dteRemaining": 2,
+        "actionTaken": "BOT +1 MRNA 7 NOV 22 PUT",
+        "debitPaid": 0.35,
+        "creditReceived": null,
+        "grossProfitLoss": 2.00,
+        "notes": "Closed the short put position for a 0.35 debit ($35.00) just before the earnings announcement to realize a quick $2.00 profit based on the opening credit of $0.37."
+      }
+    ]
   },
   {
     "publicationDate": "2025-11-03",
@@ -128,12 +164,24 @@
       "metrics": {
         "roc": 2.21,
         "annualizedRoc": 201.51,
-        "pop": 69.0,
-        "buyingPowerEffect": 2400.0,
+        "pop": 69.00,
+        "buyingPowerEffect": 2400.00,
         "dailyProfitPotential": 13.25
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-04",
+        "dteRemaining": 3,
+        "actionTaken": "BOT +1 MRNA 7 NOV 24 PUT",
+        "debitPaid": 0.34,
+        "creditReceived": null,
+        "grossProfitLoss": 19.00,
+        "notes": "Closed the short put position for a 0.34 debit ($34.00) after 1 day, realizing a profit of $19.00 based on the opening credit of $0.53. This represented a 35.8% capture of max profit."
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-31",
@@ -167,7 +215,19 @@
         "dailyProfitPotential": 14.43
       },
       "managementPlan": "Standard management plan: Target 50% profit ($353.50) to close the position. If the profit target is not met, manage at 21 DTE by rolling the entire unchallenged side (likely the call spread) closer to the money, or rolling the entire position out to a later expiration date for an additional credit."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-03",
+        "dteRemaining": 46,
+        "actionTaken": "BOT +1 IRON CONDOR",
+        "debitPaid": 6.81,
+        "creditReceived": null,
+        "grossProfitLoss": 26.00,
+        "notes": "Closed the entire Iron Condor position for a net debit of 6.81, resulting in a total profit of $26.00 based on the initial credit of $7.07."
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-31",
@@ -184,9 +244,14 @@
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 7,
-        "putStrike": 45.00,
-        "putPremium": 1.40,
-        "maxProfit": 140.00
+        "maxProfit": 140.00,
+        "spreadDetails": {
+          "shortPutStrike": 45.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.40
+        }
       },
       "metrics": {
         "roc": 3.11,
@@ -196,7 +261,8 @@
         "dailyProfitPotential": 20.00
       },
       "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
-    }
+    },
+    "tradeProgression": []
   },
   {
     "publicationDate": "2025-10-24",
@@ -213,9 +279,14 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "putStrike": 47.00,
-        "putPremium": 1.20,
-        "maxProfit": 120.00
+        "maxProfit": 120.00,
+        "spreadDetails": {
+          "shortPutStrike": 47.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.20
+        }
       },
       "metrics": {
         "roc": 2.55,
@@ -225,7 +296,19 @@
         "dailyProfitPotential": 17.14
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-31",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 120.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-24",
@@ -242,9 +325,14 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "putStrike": 26.00,
-        "putPremium": 0.49,
-        "maxProfit": 49.00
+        "maxProfit": 49.00,
+        "spreadDetails": {
+          "shortPutStrike": 26.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.49
+        }
       },
       "metrics": {
         "roc": 1.88,
@@ -254,7 +342,19 @@
         "dailyProfitPotential": 7.00
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-31",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 49.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-24",
@@ -271,9 +371,14 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "putStrike": 42.50,
-        "putPremium": 0.30,
-        "maxProfit": 30.00
+        "maxProfit": 30.00,
+        "spreadDetails": {
+          "shortPutStrike": 42.50,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.30
+        }
       },
       "metrics": {
         "roc": 0.71,
@@ -283,7 +388,19 @@
         "dailyProfitPotential": 4.29
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-31",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 30.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-23",
@@ -300,9 +417,14 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 1,
-        "putStrike": 29.00,
-        "putPremium": 0.12,
-        "maxProfit": 12.00
+        "maxProfit": 12.00,
+        "spreadDetails": {
+          "shortPutStrike": 29.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.12
+        }
       },
       "metrics": {
         "roc": 0.41,
@@ -312,7 +434,19 @@
         "dailyProfitPotential": 12.00
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-24",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 12.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-22",
@@ -329,9 +463,14 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 2,
-        "putStrike": 42.00,
-        "putPremium": 0.25,
-        "maxProfit": 25.00
+        "maxProfit": 25.00,
+        "spreadDetails": {
+          "shortPutStrike": 42.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.25
+        }
       },
       "metrics": {
         "roc": 0.60,
@@ -341,7 +480,19 @@
         "dailyProfitPotential": 12.50
       },
       "managementPlan": "Target 80% of daily profit potential, or manage at expiration. If the stock price drops and threatens the strike price, be prepared for assignment of 100 shares at the 42.00 strike, initiating the first step of the 'Wheel' strategy."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-24",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 25.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-22",
@@ -358,8 +509,6 @@
       "tradeDetails": {
         "expiration": "2025-11-21",
         "dte": 30,
-        "putStrike": 167.50,
-        "putPremium": 3.02,
         "maxProfit": 302.00,
         "spreadDetails": {
           "shortPutStrike": 167.50,
@@ -377,7 +526,8 @@
         "dailyProfitPotential": 10.07
       },
       "managementPlan": "Standard management plan: Target 50% profit, or manage by closing/rolling the unchallenged side at 21 DTE."
-    }
+    },
+    "tradeProgression": []
   },
   {
     "publicationDate": "2025-10-21",
@@ -394,9 +544,14 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 3,
-        "putStrike": 26.00,
-        "putPremium": 0.32,
-        "maxProfit": 32.00
+        "maxProfit": 32.00,
+        "spreadDetails": {
+          "shortPutStrike": 26.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.32
+        }
       },
       "metrics": {
         "roc": 1.23,
@@ -406,7 +561,19 @@
         "dailyProfitPotential": 10.67
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-24",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 32.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-21",
@@ -423,9 +590,14 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 3,
-        "putStrike": 30.00,
-        "putPremium": 0.17,
-        "maxProfit": 17.00
+        "maxProfit": 17.00,
+        "spreadDetails": {
+          "shortPutStrike": 30.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.17
+        }
       },
       "metrics": {
         "roc": 0.57,
@@ -435,37 +607,66 @@
         "dailyProfitPotential": 5.67
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-24",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 17.00
+        }
+      }
+    ]
   },
   {
-  "publicationDate": "2025-10-17",
-  "tradeTitle": "Short Put on BMNR",
-  "summaryJustification": "This trade involves selling a short put on BMNR to capitalize on its high implied volatility. The selected 45 strike offers an approximate 80% probability of profit while generating a significant annualized return on capital.",
-  "expectedReturnDisplay": "118.36% Annualized ROC",
-  "ticker": "BMNR",
-  "currentPrice": 49.78,
-  "ivRank": 55,
-  "earningsDate": "N/A",
-  "analysis": {
-    "thesis": "With a high implied volatility rank (assumed > 50 based on the premium available), BMNR is a strong candidate for premium selling. This strategy aims to collect premium by selling a short put at the 45 strike, which is comfortably out-of-the-money with an approximate 80% probability of profit.",
-    "strategyType": "Short Put",
-    "tradeDetails": {
-      "expiration": "2025-10-24",
-      "dte": 7,
-      "putStrike": 45.00,
-      "putPremium": 1.02,
-      "maxProfit": 102.00
+    "publicationDate": "2025-10-17",
+    "tradeTitle": "Short Put on BMNR",
+    "summaryJustification": "This trade involves selling a short put on BMNR to capitalize on its high implied volatility. The selected 45 strike offers an approximate 80% probability of profit while generating a significant annualized return on capital.",
+    "expectedReturnDisplay": "118.36% Annualized ROC",
+    "ticker": "BMNR",
+    "currentPrice": 49.78,
+    "ivRank": 55,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "With a high implied volatility rank (assumed > 50 based on the premium available), BMNR is a strong candidate for premium selling. This strategy aims to collect premium by selling a short put at the 45 strike, which is comfortably out-of-the-money with an approximate 80% probability of profit.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-24",
+        "dte": 7,
+        "maxProfit": 102.00,
+        "spreadDetails": {
+          "shortPutStrike": 45.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.02
+        }
+      },
+      "metrics": {
+        "roc": 2.27,
+        "annualizedRoc": 118.36,
+        "pop": 80.00,
+        "buyingPowerEffect": 4500.00,
+        "dailyProfitPotential": 14.57
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
-    "metrics": {
-      "roc": 2.27,
-      "annualizedRoc": 118.36,
-      "pop": 80.00,
-      "buyingPowerEffect": 4500.00,
-      "dailyProfitPotential": 14.57
-    },
-    "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-  }
-},
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-24",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 102.00
+        }
+      }
+    ]
+  },
   {
     "publicationDate": "2025-10-16",
     "tradeTitle": "Short Put on MRNA",
@@ -481,9 +682,14 @@
       "tradeDetails": {
         "expiration": "2025-10-17",
         "dte": 1,
-        "putStrike": 26.50,
-        "putPremium": 0.16,
-        "maxProfit": 16.00
+        "maxProfit": 16.00,
+        "spreadDetails": {
+          "shortPutStrike": 26.50,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.16
+        }
       },
       "metrics": {
         "roc": 0.60,
@@ -493,37 +699,60 @@
         "dailyProfitPotential": 16.00
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2TE, or close at 80% daily profit for weeklies."
+      }
+    ]
   },
   {
-  "publicationDate": "2025-10-15",
-  "tradeTitle": "Short Put on ARKK",
-  "summaryJustification": "ARKK has a high implied volatility rank, making it a good candidate for a premium-selling strategy. Selling the 10/17 $88 put provides an attractive credit.",
-  "expectedReturnDisplay": "27.93% Annualized ROC",
-  "ticker": "ARKK",
-  "currentPrice": 88.63,
-  "ivRank": 90,
-  "earningsDate": "N/A",
-  "analysis": {
-    "thesis": "The implied volatility (IV) for ARKK is currently in the 90th percentile, which is considered high. This presents a favorable opportunity to sell options and collect rich premiums. The trade thesis is to sell a put option at a strike price that is out of the money, profiting from the decay of the option's value as time passes and assuming the stock price stays above the strike price. The high IV ensures a significant credit is received, which can be kept as profit if the option expires worthless.",
-    "strategyType": "Short Put",
-    "tradeDetails": {
-      "expiration": "2025-10-17",
-      "dte": 2,
-      "putStrike": 88.00,
-      "putPremium": 1.35,
-      "maxProfit": 135.00
+    "publicationDate": "2025-10-15",
+    "tradeTitle": "Short Put on ARKK",
+    "summaryJustification": "ARKK has a high implied volatility rank, making it a good candidate for a premium-selling strategy. Selling the 10/17 $88 put provides an attractive credit.",
+    "expectedReturnDisplay": "27.93% Annualized ROC",
+    "ticker": "ARKK",
+    "currentPrice": 88.63,
+    "ivRank": 90,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "The implied volatility (IV) for ARKK is currently in the 90th percentile, which is considered high. This presents a favorable opportunity to sell options and collect rich premiums. The trade thesis is to sell a put option at a strike price that is out of the money, profiting from the decay of the option's value as time passes and assuming the stock price stays above the strike price. The high IV ensures a significant credit is received, which can be kept as profit if the option expires worthless.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-10-17",
+        "dte": 2,
+        "maxProfit": 135.00,
+        "spreadDetails": {
+          "shortPutStrike": 88.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.35
+        }
+      },
+      "metrics": {
+        "roc": 1.53,
+        "annualizedRoc": 27.93,
+        "pop": 58.0,
+        "buyingPowerEffect": 8800.00,
+        "dailyProfitPotential": 67.50
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
-    "metrics": {
-      "roc": 1.53,
-      "annualizedRoc": 27.93,
-      "pop": 58.0,
-      "buyingPowerEffect": 8800.00,
-      "dailyProfitPotential": 67.50
-    },
-    "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-  }
-},
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-17",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 135.00
+        }
+      }
+    ]
+  },
   {
     "publicationDate": "2025-10-14",
     "tradeTitle": "Short Put on BMNR",
@@ -539,9 +768,14 @@
       "tradeDetails": {
         "expiration": "2025-10-17",
         "dte": 3,
-        "putStrike": 50.00,
-        "putPremium": 1.00,
-        "maxProfit": 100.00
+        "maxProfit": 100.00,
+        "spreadDetails": {
+          "shortPutStrike": 50.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.00
+        }
       },
       "metrics": {
         "roc": 2.00,
@@ -551,7 +785,19 @@
         "dailyProfitPotential": 33.33
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-17",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 100.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-06",
@@ -568,9 +814,14 @@
       "tradeDetails": {
         "expiration": "2025-10-10",
         "dte": 4,
-        "putStrike": 116.00,
-        "putPremium": 0.73,
-        "maxProfit": 73.00
+        "maxProfit": 73.00,
+        "spreadDetails": {
+          "shortPutStrike": 116.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.73
+        }
       },
       "metrics": {
         "roc": 0.63,
@@ -580,7 +831,19 @@
         "dailyProfitPotential": 18.25
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-10",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 73.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-03",
@@ -597,9 +860,14 @@
       "tradeDetails": {
         "expiration": "2025-10-10",
         "dte": 7,
-        "putStrike": 52.00,
-        "putPremium": 1.13,
-        "maxProfit": 113.00
+        "maxProfit": 113.00,
+        "spreadDetails": {
+          "shortPutStrike": 52.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.13
+        }
       },
       "metrics": {
         "roc": 2.17,
@@ -609,7 +877,19 @@
         "dailyProfitPotential": 16.14
       },
       "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-10",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 113.00
+        }
+      }
+    ]
   },
   {
     "publicationDate": "2025-10-01",
@@ -626,9 +906,14 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 30,
-        "putStrike": 22.00,
-        "putPremium": 0.80,
-        "maxProfit": 80.00
+        "maxProfit": 80.00,
+        "spreadDetails": {
+          "shortPutStrike": 22.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.80
+        }
       },
       "metrics": {
         "roc": 3.64,
@@ -638,6 +923,18 @@
         "dailyProfitPotential": 2.67
       },
       "managementPlan": "The analysis notes an 87% probability of achieving 50% of max profit, aligning with the standard management plan to target 50% profit or manage the trade near 21 DTE."
-    }
+    },
+    "tradeProgression": [
+      {
+        "stepType": "CLOSE",
+        "date": "2025-10-31",
+        "description": "Closed trade (legacy entry).",
+        "closeReason": "Expired worthless (OTM).",
+        "details": {
+          "debitPaid": 0.00,
+          "grossProfitLoss": 80.00
+        }
+      }
+    ]
   }
 ]
