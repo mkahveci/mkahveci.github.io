@@ -37,11 +37,12 @@
         "stepType": "CLOSE",
         "date": "2025-11-06",
         "dteRemaining": 43,
-        "actionTaken": "BOT +1 STRANGLE (Closed using P&L amounts)",
-        "debitPaid": 555.00,
-        "creditReceived": 578.00,
-        "grossProfitLoss": 23.00,
-        "notes": "Closed the entire Short Strangle for a total debit amount of $555.00, realizing a net profit of $23.00 based on the initial credit amount of $578.00. This realized profit was captured in less than 24 hours."
+        "actionTaken": "BOT +1 STRANGLE",
+        "closePrice": 555.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 23.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed for a $555.00 debit, realizing a $23.00 net profit (based on $578.00 initial credit) in less than 24 hours."
       }
     ]
   },
@@ -83,11 +84,12 @@
         "stepType": "CLOSE",
         "date": "2025-11-05",
         "dteRemaining": 2,
-        "actionTaken": "Full Liquidation (Sold Stock and Closed Put)",
-        "debitPaid": 0.99,
-        "creditReceived": 40.56,
-        "grossProfitLoss": 31.00,
-        "notes": "The Covered Strangle was closed fully: the 41 Put was bought back for a 0.99 debit ($99.00), and the underlying stock (initial cost basis $41.69) was sold at $40.56. Total combined options profit ($144.00) offset the loss on the stock (-$113.00), resulting in a net profit of $31.00."
+        "actionTaken": "Full Liquidation (Sold Stock + Closed Put)",
+        "closePrice": 0.99,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 31.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed 41 Put for $0.99 debit. Sold stock at $40.56. Options profit ($144.00) offset stock loss (-$113.00) for a $31.00 total net profit."
       }
     ]
   },
@@ -130,10 +132,11 @@
         "date": "2025-11-05",
         "dteRemaining": 2,
         "actionTaken": "BOT +1 MRNA 7 NOV 22 PUT",
-        "debitPaid": 0.35,
-        "creditReceived": null,
-        "grossProfitLoss": 2.00,
-        "notes": "Closed the short put position for a 0.35 debit ($35.00) just before the earnings announcement to realize a quick $2.00 profit based on the opening credit of $0.37."
+        "closePrice": 0.35,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 2.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed for $0.35 debit (initial credit $0.37) for a $2.00 profit before earnings."
       }
     ]
   },
@@ -176,10 +179,11 @@
         "date": "2025-11-04",
         "dteRemaining": 3,
         "actionTaken": "BOT +1 MRNA 7 NOV 24 PUT",
-        "debitPaid": 0.34,
-        "creditReceived": null,
-        "grossProfitLoss": 19.00,
-        "notes": "Closed the short put position for a 0.34 debit ($34.00) after 1 day, realizing a profit of $19.00 based on the opening credit of $0.53. This represented a 35.8% capture of max profit."
+        "closePrice": 0.34,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 19.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed for $0.34 debit (initial credit $0.53) for a $19.00 profit (35.8% of max)."
       }
     ]
   },
@@ -222,10 +226,11 @@
         "date": "2025-11-03",
         "dteRemaining": 46,
         "actionTaken": "BOT +1 IRON CONDOR",
-        "debitPaid": 6.81,
-        "creditReceived": null,
-        "grossProfitLoss": 26.00,
-        "notes": "Closed the entire Iron Condor position for a net debit of 6.81, resulting in a total profit of $26.00 based on the initial credit of $7.07."
+        "closePrice": 6.81,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 26.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed for $6.81 net debit (initial credit $7.07) for a $26.00 profit."
       }
     ]
   },
@@ -301,12 +306,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-31",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 120.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 120.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $120.00 max profit."
       }
     ]
   },
@@ -347,12 +353,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-31",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 49.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 49.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $49.00 max profit."
       }
     ]
   },
@@ -393,12 +400,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-31",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 30.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 30.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $30.00 max profit."
       }
     ]
   },
@@ -439,12 +447,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-24",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 12.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 12.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $12.00 max profit."
       }
     ]
   },
@@ -485,12 +494,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-24",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 25.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 25.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $25.00 max profit."
       }
     ]
   },
@@ -566,12 +576,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-24",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 32.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 32.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $32.00 max profit."
       }
     ]
   },
@@ -612,12 +623,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-24",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 17.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 17.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $17.00 max profit."
       }
     ]
   },
@@ -658,12 +670,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-24",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 102.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 102.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $102.00 max profit."
       }
     ]
   },
@@ -703,7 +716,14 @@
     "tradeProgression": [
       {
         "stepType": "CLOSE",
-        "date": "2TE, or close at 80% daily profit for weeklies."
+        "date": "2025-10-17",
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 16.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $16.00 max profit."
       }
     ]
   },
@@ -744,12 +764,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-17",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 135.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 135.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $135.00 max profit."
       }
     ]
   },
@@ -790,17 +811,18 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-17",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 100.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 100.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $100.00 max profit."
       }
     ]
   },
   {
-    "publicationDate": "2025-10-06",
+    "publicationDate": "2This is a very short-term (1 DTE) short put on APLD. The trade collects 0.12 for the 29.00 strike, which is significantly below the current price of 32.65. This high-probability (approx 94% POP) trade aims to capture quick premium decay.025-10-06",
     "tradeTitle": "Short Put on WDC",
     "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
     "expectedReturnDisplay": "57.43% Annualized ROC",
@@ -836,12 +858,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-10",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 73.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 73.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $73.00 max profit."
       }
     ]
   },
@@ -882,12 +905,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-10",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 113.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 113.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $113.00 max profit."
       }
     ]
   },
@@ -928,12 +952,13 @@
       {
         "stepType": "CLOSE",
         "date": "2025-10-31",
-        "description": "Closed trade (legacy entry).",
-        "closeReason": "Expired worthless (OTM).",
-        "details": {
-          "debitPaid": 0.00,
-          "grossProfitLoss": 80.00
-        }
+        "dteRemaining": 0,
+        "actionTaken": "Expired Worthless (OTM)",
+        "closePrice": 0.00,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 80.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Position expired worthless, capturing 100% of the $80.00 max profit."
       }
     ]
   }
