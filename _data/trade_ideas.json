@@ -945,7 +945,7 @@
     ]
   },
   {
-    "publicationDate": "2This is a very short-term (1 DTE) short put on APLD. The trade collects 0.12 for the 29.00 strike, which is significantly below the current price of 32.65. This high-probability (approx 94% POP) trade aims to capture quick premium decay.025-10-06",
+    "publicationDate": "2025-10-08",
     "tradeTitle": "Short Put on WDC",
     "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
     "expectedReturnDisplay": "57.43% Annualized ROC",
