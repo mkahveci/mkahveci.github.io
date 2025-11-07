@@ -120,7 +120,7 @@ def format_telegram_message(data):
     )
 
     # Permalink
-    STATIC_DOC_URL = "https://kahveci.pw/projectsgit/qma/docs/trade-ideas.html"
+    STATIC_DOC_URL = "https://kahveci.pw/trades/"
     message += (
         f"[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
     )
