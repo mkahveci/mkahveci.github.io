@@ -1,5 +1,62 @@
 [
-
+  {
+    "publicationDate": "2025-10-31",
+    "tradeTitle": "Short Put on BMNR",
+    "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
+    "expectedReturnDisplay": "140.00% Annualized ROC",
+    "ticker": "BMNR",
+    "currentPrice": 46.59,
+    "ivRank": 0.00,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-11-07",
+        "dte": 7,
+        "maxProfit": 140.00,
+        "spreadDetails": {
+          "shortPutStrike": 45.00,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 1.40
+        }
+      },
+      "metrics": {
+        "roc": 3.11,
+        "annualizedRoc": 140.00,
+        "pop": 58.00,
+        "buyingPowerEffect": 4500.00,
+        "dailyProfitPotential": 20.00
+      },
+      "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-10-31",
+        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
+        "expiration": "2025-11-07",
+        "dteRemaining": 7,
+        "netCreditReceived": 280.00,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 278.98,
+        "grossProfitLossType": "Profit",
+        "notes": "Opened 2 contracts at 1.40 for 7 DTE. This premium is realized as profit from the put side of the trade, reducing the cost basis of any future assignment."
+      },
+      {
+        "stepType": "ASSIGNMENT",
+        "date": "2025-11-07",
+        "actionTaken": "Assigned 200 shares at strike",
+        "purchasePrice": 45.00,
+        "sharesAcquired": 200,
+        "netCostBasisPerShare": 43.61,
+        "totalNotionalCost": 9000.00,
+        "notes": "The 2 short put contracts were assigned at expiration. The net cost basis is the strike price (45.00) minus the net premium received per share (1.40 minus commission per share)."
+      }
+    ]
+  },
   {
     "publicationDate": "2025-11-07",
     "tradeTitle": "Short Put on MRNA",
@@ -356,41 +413,6 @@
         "notes": "Closed for $6.81 net debit (initial credit $7.07) for a $26.00 profit."
       }
     ]
-  },
-  {
-    "publicationDate": "2025-10-31",
-    "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
-    "expectedReturnDisplay": "140.00% Annualized ROC",
-    "ticker": "BMNR",
-    "currentPrice": 46.59,
-    "ivRank": 0.00,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-11-07",
-        "dte": 7,
-        "maxProfit": 140.00,
-        "spreadDetails": {
-          "shortPutStrike": 45.00,
-          "longPutStrike": 0.0,
-          "shortCallStrike": 0.0,
-          "longCallStrike": 0.0,
-          "netCredit": 1.40
-        }
-      },
-      "metrics": {
-        "roc": 3.11,
-        "annualizedRoc": 140.00,
-        "pop": 58.00,
-        "buyingPowerEffect": 4500.00,
-        "dailyProfitPotential": 20.00
-      },
-      "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
-    },
-    "tradeProgression": []
   },
   {
     "publicationDate": "2025-10-24",

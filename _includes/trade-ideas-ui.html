@@ -131,45 +131,115 @@
                                     {% assign step_type_lower = step.stepType | downcase %}
                                     <li class="progression-step step-{{ step_type_lower }}">
                                         <div class="progression-header">
-                                            <span class="progression-tag tag-{{ step_type_lower }}">{{ step.stepType }}</span>
-                                            {% comment %}
-                                            This logic is good. I will ensure my JSON output
-                                            always includes 'dteRemaining' to support this.
-                                            {% endcomment %}
-                                            <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({{ step.dteRemaining | default: trade.analysis.tradeDetails.dte }} DTE)</span>
-                                        </div>
-                                        <div class="progression-details">
 
-                                            {% if step.stepType == 'OPEN' %}
-                                            {% comment %}
-                                            This is fine. It pulls the summary from the main trade
-                                            and the credit from the OPEN step.
-                                            {% endcomment %}
-                                            <p>{{ trade.summaryJustification }}</p>
-                                            <span class="profit-loss text-primary">(+&#36;{{ step.netCredit | round: 2 }})</span>
-
-                                            {% elsif step.stepType == 'ADJUSTMENT' %}
-                                            {% comment %} *** CORRECTED ADJUSTMENT LOGIC *** {% endcomment %}
-                                            <p>{{ step.actionTaken }}</p>
-                                            <span class="profit-loss
-                                                {% if step.netChangeType == 'Credit' %}text-primary{% else %}text-danger{% endif %}">
-                                                ({{ step.netChangeType }}: &#36;{{ step.netChange | round: 2 }})
-                                            </span>
-
-                                            {% if step.notes %}
-                                            <p class="small text-muted mb-0 mt-1"><em>{{ step.notes }}</em></p>
+                                            {% comment %} --- UPDATED PILL TEXT LOGIC --- {% endcomment %}
+                                            {% assign pill_text = step.stepType %}
+                                            {% if step.stepType == 'ASSIGNMENT' %}{% assign pill_text = "ASSIGNED" %}
+                                            {% elsif step.stepType == 'WHEEL_STEP: SELL_COVERED_CALL' %}{% assign pill_text = "WHEEL: COVERED CALL" %}
+                                            {% elsif step.stepType == 'CALLED_AWAY' %}{% assign pill_text = "CALLED AWAY" %}
+                                            {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}{% assign pill_text = "INDEPENDENT CLOSE" %}
+                                            {% elsif step.stepType == 'OPEN_SHORT_PUT' %}{% assign pill_text = "PUT OPENED" %}
                                             {% endif %}
 
-                                            {% elsif step.stepType == 'CLOSE' %}
-                                            {% comment %} *** CORRECTED CLOSE LOGIC *** {% endcomment %}
-                                            <span class="profit-loss">
-                                                {% if step.grossProfitLossType == 'Profit' %}
-                                                    <span class="text-success">(Profit: &#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
-                                                {% else %}
-                                                    <span class="text-danger">(Loss: &#36;{{ step.grossProfitLossAmount | abs | round: 2 }})</span>
-                                                {% endif %}
-                                            </span>
+                                            <span class="progression-tag tag-{{ step_type_lower }}">{{ pill_text }}</span>
+                                            {% comment %} NOTE: step.dteRemaining is used if available, otherwise it falls back to a default value. {% endcomment %}
+                                            <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({% if step.dteRemaining %}{{ step.dteRemaining }}{% else %}N/A{% endif %} DTE)</span>
+                                        </div>
+                                        <div class="progression-details">
+                                            {% comment %} --- NEW WHEEL/ASSIGNMENT LOGIC --- {% endcomment %}
 
+                                            {% if step.stepType == 'OPEN_SHORT_PUT' %}
+                                            <p><strong>Phase 1 Initiated:</strong> {{ step.actionTaken }} for a gross credit of &#36;{{ step.netCreditReceived | times: step.sharesInvolved | divided_by: 100.0 | round: 2 }}.</p>
+                                            <span class="profit-loss text-success">(Realized Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
+
+                                            {% if step.notes %}
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
+                                            {% endif %}
+
+
+                                            {% elsif step.stepType == 'ASSIGNMENT' %}
+                                            <p><strong>Transition to Phase 2:</strong> {{ step.actionTaken }}.</p>
+
+                                            {% comment %} Render notes here, which contains the formatted cost basis text from the image {% endcomment %}
+                                            {% if step.notes %}
+                                            <p class="small text-muted mb-0 mt-1">
+                                                {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </p>
+                                            {% else %}
+                                            <p class="small text-muted mb-0 mt-1">
+                                                Stock acquired at a net **Cost Basis of &#36;{{ step.netCostBasisPerShare | round: 2 }}** ({{ step.purchasePrice }} strike price less put premium collected).
+                                            </p>
+                                            {% endif %}
+
+
+                                            {% elsif step.stepType contains 'WHEEL_STEP' %}
+                                            <p><strong>Phase 2 Action:</strong> {{ step.actionTaken }} expiring {{ step.expiration | date: "%b %d" }}.</p>
+
+                                            {% comment %} Logic to handle both open call (credit) and close call (P/L) steps {% endcomment %}
+                                            {% if step.grossCreditTotal %}
+                                            <span class="profit-loss text-primary">(Credit Received: +&#36;{{ step.grossCreditTotal | round: 2 }})</span>
+                                            {% elsif step.grossProfitLossAmount %}
+                                            <span class="profit-loss {% if step.grossProfitLossType == 'Profit' %}text-success{% else %}text-danger{% endif %}">
+                        ({{ step.grossProfitLossType }}: {% if step.grossProfitLossType == 'Profit' %}+{% else %}-{% endif %}&#36;{{ step.grossProfitLossAmount | round: 2 }})
+                    </span>
+                                            {% endif %}
+
+                                            {% if step.notes %}
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
+                                            {% endif %}
+
+
+                                            {% elsif step.stepType == 'CALLED_AWAY' %}
+                                            <p><strong>Cycle Complete:</strong> {{ step.actionTaken }} at &#36;{{ step.salePrice | round: 2 }}.</p>
+                                            <span class="profit-loss text-success">
+                    <strong class="text-success">Total Cycle Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }}</strong>
+                </span>
+
+                                            {% if step.notes %}
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
+                                            {% endif %}
+
+
+                                            {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}
+                                            {% comment %} --- UPDATED to use alert-warning for consistency and full markdownify --- {% endcomment %}
+                                            {% if step.notes %}
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
+                                            {% endif %}
+                                            <span class="profit-loss text-success">(Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
+
+
+                                            {% comment %} --- Original CLOSE and ADJUSTMENT Logic (Kept for compatibility) --- {% endcomment %}
+
+                                            {% elsif step.stepType == 'ADJUSTMENT' %}
+                                            <p>{{ step.actionTaken }}</p>
+                                            <span class="profit-loss
+                    {% if step.netChangeType == 'Credit' %}text-primary{% else %}text-danger{% endif %}">
+                    ({{ step.netChangeType }}: &#36;{{ step.netChange | round: 2 }})
+                </span>
+
+                                            {% if step.notes %}
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
+                                            {% endif %}
+
+
+                                            {% elsif step.stepType == 'CLOSE' %}
+                                            <span class="profit-loss">
+                    {% if step.grossProfitLossType == 'Profit' %}
+                        <span class="text-success">(Profit: &#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
+                    {% else %}
+                        <span class="text-danger">(Loss: &#36;{{ step.grossProfitLossAmount | abs | round: 2 }})</span>
+                    {% endif %}
+                </span>
                                             <p class="small text-muted mb-0 mt-1">
                                                 Transaction:
                                                 {% if step.closeCostType == 'Debit' %}
@@ -181,13 +251,35 @@
                                             </p>
 
                                             {% if step.notes %}
-                                            <p class="small text-muted mb-0 mt-1"><em>{{ step.notes }}</em></p>
+                                            <div class="alert alert-warning p-2 small mt-1 mb-0">
+                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                            </div>
                                             {% endif %}
 
                                             {% endif %}
                                         </div>
                                     </li>
                                     {% endfor %}
+
+                                    {% comment %} --- NEW ESTIMATED SCENARIO BLOCK --- {% endcomment %}
+                                    {% comment %}
+                                    Assuming a future step is available in the 'trade.estimatedScenario' data field.
+                                    {% endcomment %}
+                                    {% if trade.estimatedScenario %}
+                                    <li class="progression-step estimated-scenario">
+                                        <div class="progression-header">
+                                            <span class="progression-tag tag-estimated">ESTIMATED SCENARIO</span>
+                                            <span class="progression-date">Future (N/A DTE)</span>
+                                        </div>
+                                        <div class="progression-details">
+                                            <p class="mb-1"><strong>Aim:</strong> {{ trade.estimatedScenario.aim }}</p>
+                                            <p class="mb-0 small text-muted">{{ trade.estimatedScenario.condition }}</p>
+                                            {% comment %} Apply markdownify to the action as well, in case it contains formatting {% endcomment %}
+                                            <p class="mb-0 small text-primary">{{ trade.estimatedScenario.action | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}</p>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+
                                 </ol>
                                 {% else %}
                                 <p class="small text-muted mt-2 mb-0">No management steps recorded yet.</p>
@@ -245,7 +337,12 @@
                                 <h6 class="h6 small"><strong>Thesis</strong></h6>
                                 <p>{{ trade.analysis.thesis }}</p>
                                 <h6 classs="h6 small mt-3"><strong>Management Plan</strong></h6>
-                                <p class="mb-0">{{ trade.analysis.managementPlan }}</p>
+                                <p class="mb-0">{{ trade.analysis.managementPlan
+                                    | replace: '\\$', '&#36;'
+                                    | replace: '\\%', '%'
+                                    | markdownify
+                                    | strip_newlines
+                                    }}</p>
                             </div>
                         </div>
                     </div>

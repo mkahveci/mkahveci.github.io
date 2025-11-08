@@ -296,3 +296,53 @@ $pastel-danger: #e09f9f;  // Soft Dusty Rose
     color: #6c757d;
     font-size: 0.75rem;
   }
+
+  /* --- New Status Pill Styling --- */
+  .progression-tag {
+      /* Base pill styling */
+      display: inline-block;
+      padding: 0.25em 0.6em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0.35rem;
+      color: #333; /* Darker text for pastel backgrounds */
+      margin-right: 0.5rem;
+  }
+
+  /* Pastel Colors for Executed Steps */
+  .tag-assignment {
+      background-color: #FFF8E1; /* Light Pastel Yellow */
+      border: 1px solid #FFE0B2;
+  }
+  .tag-wheel_step-sell_covered_call {
+      background-color: #E8F5E9; /* Light Pastel Green */
+      border: 1px solid #C8E6C9;
+  }
+  .tag-called_away {
+      background-color: #FCE4EC; /* Light Pastel Pink */
+      border: 1px solid #F8BBD0;
+  }
+  .tag-open_short_put, .tag-close, .tag-closed_independent_put, .tag-adjustment {
+      background-color: #E3F2FD; /* Light Pastel Blue for generic steps */
+      border: 1px solid #90CAF9;
+  }
+
+  /* --- Estimated Scenario Styling --- */
+  .progression-step.estimated-scenario {
+      /* Distinct background and border for the LI element */
+      background-color: #F3E5F5; /* Light Pastel Violet */
+      border: 1px dashed #CE93D8;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      list-style: none; /* Remove timeline bullet for this step */
+  }
+  .estimated-scenario .progression-tag {
+      background-color: #CE93D8; /* Slightly darker violet pill */
+      color: #fff;
+      border: none;
+  }
