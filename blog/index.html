@@ -95,7 +95,9 @@ category: blog
                 <div class="card-footer bg-white border-top-0 pt-0">
                     <div class="d-flex flex-wrap card-footer-inset" style="gap: 0.5rem;">
                         {% for tag in post.tags %}
-                        <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-light text-dark border text-decoration-none">#{{ tag }}</a>
+
+                        <a href="#" class="badge bg-light text-dark border text-decoration-none blog-tag-filter-trigger" data-tag-slug="{{ tag | slugify }}">#{{ tag }}</a>
+
                         {% endfor %}
                     </div>
                 </div>
@@ -116,49 +118,72 @@ category: blog
         if (!tagSelector) return;
 
         // --- 1. JAVASCRIPT SORT FIX ---
-        // Uses native Collator object for perfect case-insensitive, alphabetical sort.
         (function sortDropdown() {
             const options = Array.from(tagSelector.options);
             const selectedValue = tagSelector.value;
-
-            // Exclude the first option ("All Topics") from sorting
             const sortableOptions = options.slice(1);
-
-            // Use Intl.Collator with a generic locale (undefined) and 'base' sensitivity
-            // for case and accent insensitivity.
             const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
-
-            // Sort the array of option elements by their text content
             sortableOptions.sort((a, b) => collator.compare(a.text, b.text));
-
-            // Reassemble the dropdown
             tagSelector.innerHTML = '';
-            tagSelector.appendChild(options[0]); // Re-add "All Topics" first
+            tagSelector.appendChild(options[0]);
             sortableOptions.forEach(option => tagSelector.appendChild(option));
-
-            // Restore the selection
             tagSelector.value = selectedValue;
         })();
 
-        // 2. Filtering Function
+        // 2. FILTERING FUNCTION
         function filterPosts(selectedTagSlug) {
             postItems.forEach(item => {
                 const itemTags = item.getAttribute('data-tags');
-
                 if (selectedTagSlug === 'all' || itemTags.includes(selectedTagSlug)) {
-                    item.style.display = 'block'; // Show the post
+                    item.style.display = 'block';
                 } else {
-                    item.style.display = 'none'; // Hide the post
+                    item.style.display = 'none';
                 }
             });
         }
 
-        // 3. Event Listener
+        // 3. EVENT LISTENER (DROPDOWN)
         tagSelector.addEventListener('change', function() {
             filterPosts(this.value);
         });
 
-        // 4. Initial State Setup: Default to 'all' after sorting
-        filterPosts(tagSelector.value);
+        // 4. EVENT LISTENERS (TAG BADGES)
+        const tagBadges = document.querySelectorAll('.blog-tag-filter-trigger');
+        tagBadges.forEach(badge => {
+            badge.addEventListener('click', function(event) {
+                event.preventDefault();
+                const tagSlug = this.getAttribute('data-tag-slug');
+                tagSelector.value = tagSlug;
+                filterPosts(tagSlug);
+                tagSelector.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            });
+        });
+
+        // 5. INITIAL STATE SETUP (READ FROM URL HASH) --- MODIFIED SECTION ---
+        // This function runs on page load. It checks the URL for a hash
+        // (e.g., /blog/#chemistry-education) and sets the filter.
+        (function setInitialFilter() {
+            const slugFromUrl = window.location.hash.substring(1); // Get hash, remove '#'
+
+            if (slugFromUrl) {
+                // Check if an option with this hash value (slug) actually exists
+                const optionExists = tagSelector.querySelector(`option[value="${slugFromUrl}"]`);
+
+                if (optionExists) {
+                    // If it exists, set the dropdown's value to it
+                    tagSelector.value = slugFromUrl;
+                }
+                // If no hash or invalid hash, it will just use the default 'selected' value ("all")
+            }
+
+            // Now, run the filter based on the (potentially updated) selector value
+            filterPosts(tagSelector.value);
+
+            // If we set a filter from the hash, scroll to the dropdown
+            if (slugFromUrl && tagSelector.querySelector(`option[value="${slugFromUrl}"]`)) {
+                 tagSelector.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }
+        })();
+
     });
 </script>

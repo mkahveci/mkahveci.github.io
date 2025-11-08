@@ -168,7 +168,14 @@ layout: default
                 {% if page.tags %}
                 <div class="d-flex flex-wrap" style="gap: 0.5rem;">
                     {% for tag in page.tags %}
-                    <a href="/blog/tags/#{{ tag | slugify }}" class="badge bg-secondary text-white text-decoration-none border">#{{ tag }}</a>
+
+                    {% comment %} --- MODIFIED TAG LINK ---
+                    - Changed href from "/blog/tags/#..." to "/blog/#..."
+                    - This directs the user to the main blog page and adds
+                    - the tag slug as a hash, which we can use in JS.
+                    {% endcomment %}
+                    <a href="/blog/#{{ tag | slugify }}" class="badge bg-secondary text-white text-decoration-none border">#{{ tag }}</a>
+
                     {% endfor %}
                 </div>
                 {% endif %}
