@@ -21,9 +21,9 @@ def escape_markdown(text):
     # General escaping for non-math characters
     return text.replace('_', '\\_').replace('*', '\\*').replace('`', '\\`')
 
-def get_latest_trade(file_path):
+def get_top_trade(file_path):
     """
-    Reads the JSON array, implements robust date parsing, and returns the latest trade object.
+    Reads the JSON array and returns the *first* trade object listed in the file.
     """
     try:
         with open(file_path, 'r') as f:
@@ -39,28 +39,9 @@ def get_latest_trade(file_path):
         print("Error: Trade idea JSON file is empty.")
         return None
 
-    # Robust Sorting by publicationDate
-    valid_data = []
-    for trade in data_array:
-        date_str = trade.get('publicationDate', '1970-01-01')
-        try:
-            trade['_parsed_date'] = datetime.strptime(date_str, '%Y-%m-%d')
-            valid_data.append(trade)
-        except ValueError:
-            print(f"Skipping trade due to invalid date format: {date_str}")
-
-    if not valid_data:
-        print("Error: No valid trade data found after filtering corrupted dates.")
-        return None
-
-    sorted_data = sorted(
-        valid_data,
-        key=lambda x: x['_parsed_date'],
-        reverse=True
-    )
-
-    # Return the newest trade (first element after reverse sort)
-    return sorted_data[0]
+    # Return the first trade (top element in the JSON array)
+    # This ignores all sorting and just gets the one on top.
+    return data_array[0]
 
 def format_management_alert(trade_data, latest_step):
     """Formats a Telegram message for an adjustment, close, or assignment."""
@@ -225,11 +206,14 @@ if __name__ == "__main__":
         sys.exit(1)
 
     try:
-        latest_trade = get_latest_trade(local_file_path)
-        if latest_trade:
+        # --- THIS IS THE CHANGE ---
+        top_trade = get_top_trade(local_file_path)
+
+        if top_trade:
             # Format message based on whether it's an OPEN or a management step
-            message = format_telegram_message(latest_trade)
+            message = format_telegram_message(top_trade)
             send_telegram_notification(message)
+        # --- END OF CHANGE ---
         else:
             print("No valid trade data found to send notification.")
     except Exception as e:
