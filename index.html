@@ -16,11 +16,11 @@ categories:
         </div>
     </div>
 
-    <div class="mb-5">
-        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+    <div class="mb-4">
+        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
             <a href="/blog/" class="text-decoration-none text-dark">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
         </h2>
-        <div class="row g-3">
+        <div class="row g-2">
             {% for post in site.categories.blog limit:3 %}
             <div class="col-lg-4">
                 <div class="card shadow-sm h-100 border-0 p-2">
@@ -30,12 +30,17 @@ categories:
                             <h6 class="mb-1 fw-medium">
                                 <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">{{ post.title }}</a>
                             </h6>
-                            <small class="text-muted d-block mt-1">
+                            <small class="text-muted d-block line-height-1-2">
                                 Posted {{ post.date | date: "%-d %b %Y" }}
                                 {% if post.author %}
                                 by {{ post.author }}
                                 {% endif %}
                             </small>
+                            {% if post.excerpt %}
+                            <small class="text-muted d-block mt-1">
+                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ post.excerpt | strip_html }}</em>
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -44,11 +49,11 @@ categories:
         </div>
     </div>
 
-    <div class="mb-5">
-        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+    <div class="mb-4">
+        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
             <a href="/publications/" class="text-decoration-none text-dark">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
         </h2>
-        <div class="row g-3">
+        <div class="row g-2">
             {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
             {% for publication in sorted_publications limit:3 %}
             <div class="col-lg-4">
@@ -57,11 +62,16 @@ categories:
                         <i class="fa-regular fa-file-alt fa-fw fa-lg me-3 text-success mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-dark">{{ publication.title | truncatewords: 8 }}</a>
+                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-dark">{{ publication.title }}</a>
                             </h6>
-                            <small class="text-muted d-block mt-1">
-                                {{ publication.year }} in {{ publication.source_info | truncatewords: 4 }}
+                            <small class="text-muted d-block line-height-1-2">
+                                {{ publication.year }} in {{ publication.source_info }}
                             </small>
+                            {% if publication.excerpt %}
+                            <small class="text-muted d-block mt-1">
+                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ publication.excerpt | strip_html }}</em>
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -70,11 +80,11 @@ categories:
         </div>
     </div>
 
-    <div class="mb-5">
-        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+    <div class="mb-4">
+        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
             <a href="/projects/" class="text-decoration-none text-dark">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
         </h2>
-        <div class="row g-3">
+        <div class="row g-2">
             {% for project in site.categories.projects limit:3 %}
             <div class="col-lg-4">
                 <div class="card shadow-sm h-100 border-0 p-2">
@@ -84,9 +94,11 @@ categories:
                             <h6 class="mb-1 fw-medium">
                                 <a href="{{ project.url | relative_url }}" class="text-decoration-none text-dark">{{ project.title }}</a>
                             </h6>
+                            {% if project.excerpt %}
                             <small class="text-muted d-block mt-1">
-                                {{ project.excerpt | strip_html | truncatewords: 8 }}
+                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ project.excerpt | strip_html }}</em>
                             </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -95,12 +107,11 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- NEW: RECENT NEWS/ANNOUNCEMENTS SECTION --- {% endcomment %}
-    <div class="mb-5">
-        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">
+    <div class="mb-4">
+        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
             <a href="/news/" class="text-decoration-none text-dark">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2 text-danger"></i></a>
         </h2>
-        <div class="row g-3">
+        <div class="row g-2">
             {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
             {% for item in sorted_announcements limit:3 %}
             <div class="col-lg-4">
@@ -109,11 +120,16 @@ categories:
                         <i class="fas fa-bullhorn fa-fw fa-lg me-3 text-danger mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-dark">{{ item.title | truncatewords: 6 }}</a>
+                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-dark">{{ item.title }}</a>
                             </h6>
-                            <small class="text-muted d-block mt-1">
+                            <small class="text-muted d-block line-height-1-2">
                                 Deadline: {{ item.deadline | date: "%b %d" }}
                             </small>
+                            {% if item.excerpt %}
+                            <small class="text-muted d-block mt-1">
+                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ item.excerpt | strip_html }}</em>
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -122,25 +138,34 @@ categories:
         </div>
     </div>
 
-    {% comment %} --- MISC LINKS SECTION (UPDATED) --- {% endcomment %}
-    <div class="my-4">
-        <h2 class="h4 fw-semibold border-bottom pb-2 mb-3">Misc</h2>
-        <ul class="list-inline">
-            <li class="list-inline-item me-4">
+    <div class="my-3">
+        <h2 class="h5 fw-semibold border-bottom pb-2 mb-2">Misc</h2>
+        <ul class="list-inline small">
+            <li class="list-inline-item me-3">
                 <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/about" class="text-decoration-none text-secondary">about</a>
             </li>
-            <li class="list-inline-item me-4">
+            <li class="list-inline-item me-3">
                 <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/news/" class="text-decoration-none text-secondary">news</a>
             </li>
-            <li class="list-inline-item me-4">
+            <li class="list-inline-item me-3">
                 <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/join" class="text-decoration-none text-secondary">join</a>
             </li>
-            <li class="list-inline-item me-4">
+            <li class="list-inline-item me-3">
                 <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/album" class="text-decoration-none text-secondary">album</a>
             </li>
-            <li class="list-inline-item me-4">
+            <li class="list-inline-item me-3">
                 <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/contact" class="text-decoration-none text-secondary">contact</a>
             </li>
         </ul>
     </div>
 </div>
+
+<style>
+    .line-height-1-2 {
+        line-height: 1.2;
+    }
+    .card-body.p-0.d-flex {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+</style>
