@@ -9,18 +9,107 @@
     {% comment %} --- LIQUID DATA ASSIGNMENT (Now trusts file order) --- {% endcomment %}
     {% assign sorted_trades = site.data.trade_ideas %}
 
+    <section id="dashboard" class="mb-5">
+        <h2 class="display-6 mb-4"><i class="fas fa-tachometer-alt fa-fw text-muted me-2"></i> Performance Dashboard</h2>
+
+        <div class="d-flex justify-content-end mb-3" style="gap: 0.5rem;">
+            <div class="d-flex align-items-center" style="gap: 0.5rem;">
+                <label for="dash-account-filter" class="form-label small text-muted mb-0">Account:</label>
+                <select id="dash-account-filter" class="form-select form-select-sm d-inline-block w-auto">
+                    <option value="all" selected>All Accounts</option>
+                    <option value="margin">Margin</option>
+                    <option value="ira">IRA</option>
+                    <option value="paper">Paper</option>
+                </select>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 0.5rem;">
+                <label for="dash-time-filter" class="form-label small text-muted mb-0">Period:</label>
+                <select id="dash-time-filter" class="form-select form-select-sm d-inline-block w-auto">
+                    <option value="all" selected>All Time</option>
+                    <option value="365">This Year</option>
+                    <option value="30">Last 30 Days</option>
+                    <option value="7">Last 7 Days</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-3" id="kpi-container">
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Total P/L</h6>
+                        <h5 class="card-title mb-0" id="kpi-total-pnl">$0.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Win Rate</h6>
+                        <h5 class="card-title mb-0" id="kpi-win-rate">0%</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Avg. Profit</h6>
+                        <h5 class="card-title mb-0" id="kpi-avg-profit">$0.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Avg. Loss</h6>
+                        <h5 class="card-title mb-0" id="kpi-avg-loss">$0.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Total Trades</h6>
+                        <h5 class="card-title mb-0" id="kpi-total-trades">0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Profit Factor</h6>
+                        <h5 class="card-title mb-0" id="kpi-profit-factor">0.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Largest Profit</h6>
+                        <h5 class="card-title mb-0 text-success" id="kpi-largest-profit">$0.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card bg-light border-0">
+                    <div class="card-body text-center">
+                        <h6 class="card-subtitle mb-1 small text-muted">Largest Loss</h6>
+                        <h5 class="card-title mb-0 text-danger" id="kpi-largest-loss">$0.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="trades">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
 
 
         {% comment %} --- FILTERS & DASHBOARD LINK --- {% endcomment %}
-        <div class="d-flex justify-content-between align-items-center mb-4" style="gap: 0.5rem;">
-
-            {% comment %} --- NEW: Performance Dashboard Pill --- {% endcomment %}
-            <div>
-                <a href="#" class="status-pill dashboard-pill"> <i class="fas fa-tachometer-alt fa-fw me-1"></i> Performance Dashboard
-                </a>
-            </div>
+        <div class="d-flex justify-content-end align-items-center mb-4" style="gap: 0.5rem;">
 
             {% comment %} --- Filter Group --- {% endcomment %}
             <div class="d-flex justify-content-end" style="gap: 0.5rem;">
@@ -442,4 +531,141 @@
         console.error('Failed to copy text: ', err);
       });
     }
+</script>
+
+<script>
+    const jekyllData = {{ site.data.trade_ideas | jsonify }};
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // --- 1. CONFIG & STATE (No charts needed) ---
+        let allRealizedTrades = []; // Master list of P/L
+        const accountFilter = document.getElementById('dash-account-filter');
+        const timeFilter = document.getElementById('dash-time-filter');
+
+        // --- 2. DATA PROCESSING ---
+        function loadAndProcessData() {
+            try {
+                const jekyllTrades = jekyllData;
+                allRealizedTrades = [];
+
+                jekyllTrades.forEach(trade => {
+                    const account = trade.accountType ? trade.accountType.toLowerCase() : 'margin';
+                    const strategy = trade.analysis.strategyType || 'Unknown';
+
+                    if (trade.tradeProgression && trade.tradeProgression.length > 0) {
+                        trade.tradeProgression.forEach(step => {
+                            if (step.stepType === 'CLOSE' ||
+                                step.stepType === 'CALLED_AWAY' ||
+                                step.stepType === 'CLOSED_INDEPENDENT_PUT') {
+
+                                allRealizedTrades.push({
+                                    // Use standard JS Date objects
+                                    date: new Date(step.date),
+                                    pnl: parseFloat(step.grossProfitLossAmount || 0),
+                                    account: account,
+                                    strategy: strategy,
+                                    ticker: trade.ticker
+                                });
+                            }
+                        });
+                    }
+                });
+
+                allRealizedTrades.sort((a, b) => a.date - b.date);
+                updateDashboard();
+
+            } catch (error) {
+                console.error('Error processing dashboard data:', error);
+            }
+        }
+
+        // --- 3. DASHBOARD RENDERING ---
+        function updateDashboard() {
+            const selectedAccount = accountFilter.value;
+            const selectedTime = timeFilter.value;
+
+            const filteredTrades = filterTrades(allRealizedTrades, selectedAccount, selectedTime);
+
+            // Only need to update the KPIs
+            updateKPIs(filteredTrades);
+        }
+
+        // Uses standard JS Date objects
+        function filterTrades(tradeData, account, time) {
+            let dateCutoff = new Date('1970-01-01');
+            if (time !== 'all') {
+                dateCutoff = new Date();
+                dateCutoff.setDate(dateCutoff.getDate() - parseInt(time));
+            }
+
+            return tradeData.filter(trade => {
+                const accountMatch = (account === 'all' || trade.account === account);
+                const timeMatch = trade.date >= dateCutoff;
+                return accountMatch && timeMatch;
+            });
+        }
+
+        // EXPANDED KPI function
+        function updateKPIs(tradeData) {
+            let totalPnl = 0;
+            let winners = 0;
+            let losers = 0;
+            let totalProfit = 0;
+            let totalLoss = 0;
+            let largestProfit = 0;
+            let largestLoss = 0;
+
+            tradeData.forEach(trade => {
+                const pnl = trade.pnl;
+                totalPnl += pnl;
+
+                if (pnl > 0) {
+                    winners++;
+                    totalProfit += pnl;
+                    if (pnl > largestProfit) {
+                        largestProfit = pnl;
+                    }
+                } else if (pnl < 0) {
+                    losers++;
+                    totalLoss += pnl; // totalLoss will be negative
+                    if (pnl < largestLoss) {
+                        largestLoss = pnl;
+                    }
+                }
+            });
+
+            const totalTrades = winners + losers;
+            const winRate = totalTrades > 0 ? (winners / totalTrades) * 100 : 0;
+            const avgProfit = winners > 0 ? totalProfit / winners : 0;
+            const avgLoss = losers > 0 ? totalLoss / losers : 0; // avgLoss will be negative
+
+            // Calculate Profit Factor (Total Profit / Absolute Total Loss)
+            const profitFactor = (totalLoss !== 0) ? totalProfit / Math.abs(totalLoss) : 0;
+
+            // Update Row 1
+            document.getElementById('kpi-total-pnl').textContent = `$${totalPnl.toFixed(2)}`;
+            document.getElementById('kpi-win-rate').textContent = `${winRate.toFixed(1)}%`;
+            document.getElementById('kpi-avg-profit').textContent = `$${avgProfit.toFixed(2)}`;
+            // Display avg loss as a positive number
+            document.getElementById('kpi-avg-loss').textContent = `$${Math.abs(avgLoss).toFixed(2)}`;
+
+            // Update Row 2
+            document.getElementById('kpi-total-trades').textContent = totalTrades;
+            document.getElementById('kpi-profit-factor').textContent = profitFactor.toFixed(2);
+            document.getElementById('kpi-largest-profit').textContent = `$${largestProfit.toFixed(2)}`;
+            // Display largest loss as a negative number
+            document.getElementById('kpi-largest-loss').textContent = `$${largestLoss.toFixed(2)}`;
+        }
+
+        // --- 4. EVENT LISTENERS ---
+        accountFilter.addEventListener('change', updateDashboard);
+        timeFilter.addEventListener('change', updateDashboard);
+
+        // --- 5. INITIALIZE ---
+        loadAndProcessData();
+
+    });
 </script>
