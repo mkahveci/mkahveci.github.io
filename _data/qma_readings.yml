@@ -1,4 +1,12 @@
 
+- title: "Trading with Confluence: A 3-Factor Strategy for Intraday Traders"
+  link: /eyz/
+  excerpt: "A quantitative approach to filter market noise using a three-factor momentum confluence."
+  icon: fas fa-chart-line
+  author: Murat Kahveci
+  tags: "tools, thinkscript, qma"
+  date: 2025-11-07
+
 - title: "A Systematic Framework for Trading Micro Gold (/MGC) Futures: Integrating Price Action, Advanced Indicators, and Disciplined Execution"
   link: /uvx/
   excerpt: This report details a systematic, rule-based framework for trading Micro Gold futures, integrating macro-drivers, multi-timeframe analysis, and dynamic risk management.
