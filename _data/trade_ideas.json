@@ -64,7 +64,7 @@
     "summaryJustification": "A Short Put was placed at the $26.00 strike to collect a high premium post-earnings, aiming for an over 100% Annualized ROC. The trade capitalizes on high implied volatility (IV Rank 29%) which, although slightly below the 30 threshold, still provides an attractive credit well above the current stock price.",
     "expectedReturnDisplay": "$330.00 Max Profit (110.60% Annualized ROC)",
     "ticker": "MRNA",
-    "accountType": "Margin",
+    "accountType": "IRA",
     "currentPrice": 24.13,
     "ivRank": 29.0,
     "earningsDate": "2025-11-06",
