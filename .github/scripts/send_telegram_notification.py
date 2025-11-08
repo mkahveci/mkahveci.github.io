@@ -6,8 +6,6 @@ import sys
 from datetime import datetime
 
 # --- Configuration ---
-# Global variables are loaded here. Functions reference them via os.environ.get()
-# for stability, or assign them locally in __main__.
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
@@ -18,13 +16,14 @@ def escape_markdown(text):
     # Escape the underscore first, as it is common in titles and breaks Markdown
     if text is None:
         return 'N/A'
-    return text.replace('_', '\\_')
-
+    # Use re.sub to handle potential LaTeX math blocks (\\( ... \\)) before general escaping
+    text = re.sub(r'\\\(.*?\\\)', lambda m: m.group(0).replace('_', '__'), text, flags=re.DOTALL)
+    # General escaping for non-math characters
+    return text.replace('_', '\\_').replace('*', '\\*').replace('`', '\\`')
 
 def get_latest_trade(file_path):
     """
-    Reads the JSON array, implements robust date parsing to skip corrupted entries,
-    and returns the latest trade object.
+    Reads the JSON array, implements robust date parsing, and returns the latest trade object.
     """
     try:
         with open(file_path, 'r') as f:
@@ -40,23 +39,20 @@ def get_latest_trade(file_path):
         print("Error: Trade idea JSON file is empty.")
         return None
 
-    # --- CRITICAL FIX: Robust Sorting with Try/Except to skip bad dates ---
+    # Robust Sorting by publicationDate
     valid_data = []
     for trade in data_array:
         date_str = trade.get('publicationDate', '1970-01-01')
         try:
-            # Attempt to parse the date string and store the parsed date
             trade['_parsed_date'] = datetime.strptime(date_str, '%Y-%m-%d')
             valid_data.append(trade)
         except ValueError:
-            # Log and skip the entry if date parsing fails
             print(f"Skipping trade due to invalid date format: {date_str}")
 
     if not valid_data:
         print("Error: No valid trade data found after filtering corrupted dates.")
         return None
 
-    # Sort the valid data by the parsed date
     sorted_data = sorted(
         valid_data,
         key=lambda x: x['_parsed_date'],
@@ -66,11 +62,66 @@ def get_latest_trade(file_path):
     # Return the newest trade (first element after reverse sort)
     return sorted_data[0]
 
+def format_management_alert(trade_data, latest_step):
+    """Formats a Telegram message for an adjustment, close, or assignment."""
 
-def format_telegram_message(data):
-    """Formats the JSON data into a comprehensive Telegram Markdown message."""
+    ticker = trade_data.get('ticker', 'N/A')
+    step_type = latest_step.get('stepType', 'Update')
+    date = latest_step.get('date', 'N/A')
+    action = latest_step.get('actionTaken', 'N/A')
+    notes = escape_markdown(latest_step.get('notes', ''))
 
-    # --- Data Extraction ---
+    # Custom profit/loss extraction based on step type
+    pnl_amount = 'N/A'
+    pnl_type = ''
+
+    if step_type == 'ASSIGNMENT':
+        pnl_amount = latest_step.get('netCostBasisPerShare', 'N/A')
+        pnl_text = f"New Cost Basis: **${pnl_amount}**"
+
+    elif step_type == 'WHEEL_STEP: SELL_COVERED_CALL':
+        credit = latest_step.get('grossCreditTotal', 0.0)
+        pnl_text = f"Credit Received: **+${credit:.2f}**"
+
+    elif step_type in ['CALLED_AWAY', 'CLOSE', 'CLOSED_INDEPENDENT_PUT']:
+        pnl_amount = latest_step.get('grossProfitLossAmount', 0.0)
+        pnl_type = latest_step.get('grossProfitLossType', 'Profit/Loss')
+        emoji = "✅" if pnl_type == "Profit" else "❌"
+        pnl_text = f"{emoji} Final P/L: **${pnl_amount:.2f}** ({pnl_type})"
+
+    elif step_type == 'ADJUSTMENT':
+        change = latest_step.get('netChange', 0.0)
+        change_type = latest_step.get('netChangeType', 'N/A')
+        pnl_text = f"Net Change: **{change_type} of ${change:.2f}**"
+
+    else: # Default for OPEN_SHORT_PUT or unrecognized step
+        credit = latest_step.get('grossProfitLossAmount', 'N/A')
+        pnl_text = f"Realized Options P/L: **+${credit:.2f}**" if credit != 'N/A' else ""
+
+    message = (
+        f"🔔 **TRADE MANAGEMENT: {ticker}** 🔔\n\n"
+        f"🔄 **Event Type:** {step_type}\n"
+        f"📅 **Date:** {date}\n"
+        f"📝 **Action:** {action}\n"
+        f"-----------------------------------------\n"
+        f"{pnl_text}\n"
+        f"-----------------------------------------\n"
+    )
+
+    if notes:
+        message += f"\n**Notes/Rationale:**\n_{notes}_\n"
+
+    # Permalink
+    STATIC_DOC_URL = "https://kahveci.pw/trades/"
+    message += (
+        f"\n[View Full Progression on Kahveci Nexus]({STATIC_DOC_URL})"
+    )
+
+    return message
+
+def format_initial_alert(data):
+    """Formats a Telegram message for a brand new trade idea (OPEN)."""
+
     trade_title = data.get('tradeTitle', 'New Trade Idea')
     ticker = data.get('ticker', 'N/A')
     current_price = data.get('currentPrice', 'N/A')
@@ -88,7 +139,7 @@ def format_telegram_message(data):
     max_profit = trade_details.get('maxProfit', 'N/A')
     management = escape_markdown(analysis.get('managementPlan', 'Standard management plan.'))
 
-    # --- Dynamic Strike Price Generation ---
+    # Dynamic Strike Price Generation (Original Logic)
     s_put = spread_details.get('shortPutStrike', 'N/A')
     s_call = spread_details.get('shortCallStrike', 'N/A')
 
@@ -100,10 +151,9 @@ def format_telegram_message(data):
     else:
         strike_line = f"🎯 **Strikes:** See trade details"
 
-
-    # --- MESSAGE CONSTRUCTION ---
+    # MESSAGE CONSTRUCTION (Original New Trade Format)
     message = (
-        f"🚨 **TRADE ALERT: {trade_title}** 🚨\n\n"
+        f"🚨 **NEW TRADE: {trade_title}** 🚨\n\n"
         f"📈 **Asset:** `${ticker}` (Current Price: ${current_price})\n"
         f"🛠️ **Strategy:** {strategy}\n"
         f"📆 **Expiration:** {expiration} (Published: {publication_date})\n"
@@ -127,11 +177,21 @@ def format_telegram_message(data):
 
     return message
 
+def format_telegram_message(data):
+    """Determines if the alert is for a new trade or a management step."""
+
+    progression = data.get('tradeProgression', [])
+
+    if not progression:
+        # No progression steps: must be a brand new trade open
+        return format_initial_alert(data)
+    else:
+        # Progression steps exist: send alert for the LAST (latest) step
+        return format_management_alert(data, progression[-1])
 
 def send_telegram_notification(message):
     """Sends the formatted message via the Telegram API."""
 
-    # Ensure tokens are available locally
     local_bot_token = os.environ.get('BOT_TOKEN')
     local_chat_id = os.environ.get('CHAT_ID')
 
@@ -157,7 +217,7 @@ def send_telegram_notification(message):
         raise
 
 if __name__ == "__main__":
-    # --- CRITICAL FIX: Ensure configuration variables are loaded and valid ---
+
     local_file_path = os.environ.get('FILE_PATH')
 
     if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID'), local_file_path]):
@@ -167,10 +227,11 @@ if __name__ == "__main__":
     try:
         latest_trade = get_latest_trade(local_file_path)
         if latest_trade:
-            send_telegram_notification(format_telegram_message(latest_trade))
+            # Format message based on whether it's an OPEN or a management step
+            message = format_telegram_message(latest_trade)
+            send_telegram_notification(message)
         else:
             print("No valid trade data found to send notification.")
     except Exception as e:
         print(f"A final critical error occurred: {e}")
-        # We exit 1 here if anything else unexpectedly fails
         sys.exit(1)
