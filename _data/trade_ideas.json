@@ -4,6 +4,7 @@
     "tradeTitle": "Short Put on BMNR",
     "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
     "expectedReturnDisplay": "140.00% Annualized ROC",
+
     "ticker": "BMNR",
     "currentPrice": 46.59,
     "ivRank": 0.00,
