@@ -5,8 +5,9 @@
     "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
     "expectedReturnDisplay": "140.00% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "IRA",
     "currentPrice": 46.59,
-    "ivRank": 0.00,
+    "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
@@ -14,21 +15,21 @@
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 7,
-        "maxProfit": 140.00,
+        "maxProfit": 140.0,
         "spreadDetails": {
-          "shortPutStrike": 45.00,
+          "shortPutStrike": 45.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 1.40
+          "netCredit": 1.4
         }
       },
       "metrics": {
         "roc": 3.11,
-        "annualizedRoc": 140.00,
-        "pop": 58.00,
-        "buyingPowerEffect": 4500.00,
-        "dailyProfitPotential": 20.00
+        "annualizedRoc": 140.0,
+        "pop": 58.0,
+        "buyingPowerEffect": 4500.0,
+        "dailyProfitPotential": 20.0
       },
       "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
     },
@@ -39,7 +40,7 @@
         "actionTaken": "STO 2 BMNR 11/07 45.00 P",
         "expiration": "2025-11-07",
         "dteRemaining": 7,
-        "netCreditReceived": 280.00,
+        "netCreditReceived": 280.0,
         "commissionFee": 1.02,
         "grossProfitLossAmount": 278.98,
         "grossProfitLossType": "Profit",
@@ -49,10 +50,10 @@
         "stepType": "ASSIGNMENT",
         "date": "2025-11-07",
         "actionTaken": "Assigned 200 shares at strike",
-        "purchasePrice": 45.00,
+        "purchasePrice": 45.0,
         "sharesAcquired": 200,
         "netCostBasisPerShare": 43.61,
-        "totalNotionalCost": 9000.00,
+        "totalNotionalCost": 9000.0,
         "notes": "The 2 short put contracts were assigned at expiration. The net cost basis is the strike price (45.00) minus the net premium received per share (1.40 minus commission per share)."
       }
     ]
@@ -63,8 +64,9 @@
     "summaryJustification": "A Short Put was placed at the $26.00 strike to collect a high premium post-earnings, aiming for an over 100% Annualized ROC. The trade capitalizes on high implied volatility (IV Rank 29%) which, although slightly below the 30 threshold, still provides an attractive credit well above the current stock price.",
     "expectedReturnDisplay": "$330.00 Max Profit (110.60% Annualized ROC)",
     "ticker": "MRNA",
+    "accountType": "Margin",
     "currentPrice": 24.13,
-    "ivRank": 29.00,
+    "ivRank": 29.0,
     "earningsDate": "2025-11-06",
     "analysis": {
       "thesis": "The stock has high implied volatility even post-earnings. Selling an out-of-the-money put with a strike of $26.00 allows for substantial premium collection, positioning the short strike relatively close to the money for an aggressive, high-return trade. The goal is to profit from time decay and the stock remaining above $26.00.",
@@ -72,20 +74,20 @@
       "tradeDetails": {
         "expiration": "2025-12-19",
         "dte": 42,
-        "maxProfit": 330.00,
+        "maxProfit": 330.0,
         "spreadDetails": {
-          "shortPutStrike": 26.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 3.30
+          "shortPutStrike": 26.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 3.3
         }
       },
       "metrics": {
         "roc": 12.69,
-        "annualizedRoc": 110.60,
+        "annualizedRoc": 110.6,
         "pop": 0.0,
-        "buyingPowerEffect": 2600.00,
+        "buyingPowerEffect": 2600.0,
         "dailyProfitPotential": 7.86
       },
       "managementPlan": "Standard management plan: Target 50% profit, or manage at 21 DTE."
@@ -98,12 +100,12 @@
         "expiration": "2025-12-19",
         "dte": 42,
         "strikes": {
-          "shortPut": 26.00,
-          "longPut": 0.00,
-          "shortCall": 0.00,
-          "longCall": 0.00
+          "shortPut": 26.0,
+          "longPut": 0.0,
+          "shortCall": 0.0,
+          "longCall": 0.0
         },
-        "netCredit": 3.30,
+        "netCredit": 3.3,
         "notes": "Initial trade entry."
       }
     ]
@@ -114,8 +116,9 @@
     "summaryJustification": "A Short Strangle was executed on the NQZ25 (E-mini Nasdaq 100 Futures) in PaperMoney, using the 44 DTE expiration for a substantial credit. The strategy tests premium selling on a high-volatility futures product, aiming for maximum profit by expiring worthless while the index stays within the 24000 and 27100 strikes.",
     "expectedReturnDisplay": "258.46% Annualized ROC or $8,735.00 Max Profit",
     "ticker": "NQZ25",
-    "currentPrice": 25257.00,
-    "ivRank": 50.00,
+    "accountType": "Paper",
+    "currentPrice": 25257.0,
+    "ivRank": 50.0,
     "earningsDate": "N/A (Index Futures)",
     "analysis": {
       "thesis": "Testing a high-probability Short Strangle on the NQ futures index in a simulated environment to collect high premium. Strikes are set wide enough to achieve the stated objective delta (approx. 0.20-0.30 per side).",
@@ -123,20 +126,20 @@
       "tradeDetails": {
         "expiration": "2025-12-20",
         "dte": 44,
-        "maxProfit": 8735.00,
+        "maxProfit": 8735.0,
         "spreadDetails": {
-          "shortPutStrike": 24000.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 27100.00,
-          "longCallStrike": 0.00,
-          "netCredit": 8735.00
+          "shortPutStrike": 24000.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 27100.0,
+          "longCallStrike": 0.0,
+          "netCredit": 8735.0
         }
       },
       "metrics": {
         "roc": 31.19,
         "annualizedRoc": 258.46,
         "pop": 68.0,
-        "buyingPowerEffect": 28000.00,
+        "buyingPowerEffect": 28000.0,
         "dailyProfitPotential": 198.52
       },
       "managementPlan": "Standard management plan: Target 50% profit or manage if one of the short strikes is challenged, or at 21 DTE (November 29, 2025)."
@@ -149,12 +152,12 @@
         "expiration": "2025-12-20",
         "dte": 44,
         "strikes": {
-          "shortPut": 24000.00,
-          "longPut": 0.00,
-          "shortCall": 27100.00,
-          "longCall": 0.00
+          "shortPut": 24000.0,
+          "longPut": 0.0,
+          "shortCall": 27100.0,
+          "longCall": 0.0
         },
-        "netCredit": 8735.00,
+        "netCredit": 8735.0,
         "notes": "Initial trade entry in PaperMoney. Net credit of $8,735.00 confirmed by journal at 436.75 points."
       },
       {
@@ -162,18 +165,18 @@
         "date": "2025-11-07",
         "actionTaken": "Roll Call Side Down and Out to reduce delta.",
         "oldStrikes": {
-          "shortPut": 24000.00,
-          "longPut": 0.00,
-          "shortCall": 27100.00,
-          "longCall": 0.00
+          "shortPut": 24000.0,
+          "longPut": 0.0,
+          "shortCall": 27100.0,
+          "longCall": 0.0
         },
         "newStrikes": {
-          "shortPut": 24000.00,
-          "longPut": 0.00,
-          "shortCall": 25900.00,
-          "longCall": 27100.00
+          "shortPut": 24000.0,
+          "longPut": 0.0,
+          "shortCall": 25900.0,
+          "longCall": 27100.0
         },
-        "netChange": 5275.00,
+        "netChange": 5275.0,
         "netChangeType": "Credit",
         "notes": "Adjustment to reduce upside delta. The original 27,100 short call was closed (BOT), and a new 25,900 short call was opened (STO). The resulting short strikes (25900C/24000P) now have approximately 0.30 delta on both the call and put sides. Net credit received for the adjustment was $5,275.00. Total net credit on the trade is now $14,010.00."
       }
@@ -185,8 +188,9 @@
     "summaryJustification": "The Short Strangle is highly effective given the confirmed 2,450.00 Buying Power Effect from the user's broker. Collecting a 578.00 net credit with minimal capital yields an extremely high 195.66% Annualized ROC, capitalizing on elevated volatility and time decay.",
     "expectedReturnDisplay": "195.66% Annualized ROC",
     "ticker": "MNQ",
-    "currentPrice": 25744.00,
-    "ivRank": 40.00,
+    "accountType": "Margin",
+    "currentPrice": 25744.0,
+    "ivRank": 40.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "The trade is a non-directional, high-probability setup on the highly liquid MNQ futures, leveraging the broker's favorable margin treatment for the short strangle. The wide strikes (23300 Put and 27500 Call) provide a wide profit zone, maximizing the benefit from time decay (Theta) over the 44 DTE cycle.",
@@ -194,20 +198,20 @@
       "tradeDetails": {
         "expiration": "2025-12-19",
         "dte": 44,
-        "maxProfit": 578.00,
+        "maxProfit": 578.0,
         "spreadDetails": {
-          "shortPutStrike": 23300.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 27500.00,
-          "longCallStrike": 0.00,
-          "netCredit": 578.00
+          "shortPutStrike": 23300.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 27500.0,
+          "longCallStrike": 0.0,
+          "netCredit": 578.0
         }
       },
       "metrics": {
         "roc": 23.59,
         "annualizedRoc": 195.66,
-        "pop": 75.00,
-        "buyingPowerEffect": 2450.00,
+        "pop": 75.0,
+        "buyingPowerEffect": 2450.0,
         "dailyProfitPotential": 13.14
       },
       "managementPlan": "Standard management plan: Target 50% profit of the net credit as a winner (buy back for 289.00). Roll the entire position to a new 45 DTE cycle if 21 DTE is reached, or if the delta of the tested leg exceeds 0.40."
@@ -218,9 +222,9 @@
         "date": "2025-11-06",
         "dteRemaining": 43,
         "actionTaken": "BOT +1 STRANGLE",
-        "closePrice": 555.00,
+        "closePrice": 555.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 23.00,
+        "grossProfitLossAmount": 23.0,
         "grossProfitLossType": "Profit",
         "notes": "Closed for a $555.00 debit, realizing a $23.00 net profit (based on $578.00 initial credit) in less than 24 hours."
       }
@@ -232,6 +236,7 @@
     "summaryJustification": "This trade recreates the existing covered strangle position on BMNR with 2 DTE, selling the 41 Put and 42 Call for a 2.43 net credit. The strategy is designed to profit if BMNR remains above 41, providing a max profit of 243.00 (premium only).",
     "expectedReturnDisplay": "$243.00 Max Profit",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 41.69,
     "ivRank": 18.64,
     "earningsDate": "N/A",
@@ -241,21 +246,21 @@
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 2,
-        "maxProfit": 243.00,
+        "maxProfit": 243.0,
         "spreadDetails": {
-          "shortPutStrike": 41.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 42.00,
-          "longCallStrike": 0.00,
+          "shortPutStrike": 41.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 42.0,
+          "longCallStrike": 0.0,
           "netCredit": 2.43
         }
       },
       "metrics": {
         "roc": 0.06,
         "annualizedRoc": 1095.89,
-        "pop": 68.00,
-        "buyingPowerEffect": 4100.00,
-        "dailyProfitPotential": 121.50
+        "pop": 68.0,
+        "buyingPowerEffect": 4100.0,
+        "dailyProfitPotential": 121.5
       },
       "managementPlan": "The short DTE mandates aggressive management. Target 80% of max profit, or close immediately if the stock challenges the 41 put (as this will increase risk significantly and requires rolling the short put or accepting assignment)."
     },
@@ -267,7 +272,7 @@
         "actionTaken": "Full Liquidation (Sold Stock + Closed Put)",
         "closePrice": 0.99,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 31.00,
+        "grossProfitLossAmount": 31.0,
         "grossProfitLossType": "Profit",
         "notes": "Closed 41 Put for $0.99 debit. Sold stock at $40.56. Options profit ($144.00) offset stock loss (-$113.00) for a $31.00 total net profit."
       }
@@ -279,6 +284,7 @@
     "summaryJustification": "This trade sells a 3 DTE short put on MRNA to capture its extremely high IV Rank of 96.00% just before its earnings report on Nov 6. The 22.00 strike offers a 0.37 premium, representing a 206.59% annualized return on capital with a 79% probability of profit.",
     "expectedReturnDisplay": "206.59% Annualized ROC",
     "ticker": "MRNA",
+    "accountType": "Margin",
     "currentPrice": 23.83,
     "ivRank": 96.0,
     "earningsDate": "2025-11-06",
@@ -288,7 +294,7 @@
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 3,
-        "maxProfit": 37.00,
+        "maxProfit": 37.0,
         "spreadDetails": {
           "shortPutStrike": 22.0,
           "longPutStrike": 0.0,
@@ -314,7 +320,7 @@
         "actionTaken": "BOT +1 MRNA 7 NOV 22 PUT",
         "closePrice": 0.35,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 2.00,
+        "grossProfitLossAmount": 2.0,
         "grossProfitLossType": "Profit",
         "notes": "Closed for $0.35 debit (initial credit $0.37) for a $2.00 profit before earnings."
       }
@@ -326,6 +332,7 @@
     "summaryJustification": "This trade sells a 4 DTE short put on MRNA, capitalizing on its high IV Rank of 66.55%. The 24.00 strike offers a 0.53 premium, representing a 201.51% annualized return on capital with a 69% probability of profit.",
     "expectedReturnDisplay": "201.51% Annualized ROC",
     "ticker": "MRNA",
+    "accountType": "Margin",
     "currentPrice": 25.42,
     "ivRank": 66.55,
     "earningsDate": "2025-11-06",
@@ -347,8 +354,8 @@
       "metrics": {
         "roc": 2.21,
         "annualizedRoc": 201.51,
-        "pop": 69.00,
-        "buyingPowerEffect": 2400.00,
+        "pop": 69.0,
+        "buyingPowerEffect": 2400.0,
         "dailyProfitPotential": 13.25
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -361,7 +368,7 @@
         "actionTaken": "BOT +1 MRNA 7 NOV 24 PUT",
         "closePrice": 0.34,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 19.00,
+        "grossProfitLossAmount": 19.0,
         "grossProfitLossType": "Profit",
         "notes": "Closed for $0.34 debit (initial credit $0.53) for a $19.00 profit (35.8% of max)."
       }
@@ -373,8 +380,9 @@
     "summaryJustification": "A Delta-Skewed Short Iron Condor was placed on META with 49 DTE to capitalize on the high absolute IV of 40.87%, despite a low IV Rank of 26.30%. The trade is skewed with a wider 10.00 put spread (645/635) to give the position a slight bullish bias, collecting a high net credit of 7.07.",
     "expectedReturnDisplay": "707.00 Max Profit (241.30% ROC)",
     "ticker": "META",
+    "accountType": "Margin",
     "currentPrice": 648.69,
-    "ivRank": 26.30,
+    "ivRank": 26.3,
     "earningsDate": "2025-10-29",
     "analysis": {
       "thesis": "META is trading post-earnings, which often leads to a volatility contraction. We are selling an Iron Condor to profit from the stock staying range-bound. The trade is intentionally skewed with the short put strike (645) close to the price (648.69) and a wider put wing (10.00) to maximize credit, reflecting a defined risk stance that the stock will not drop significantly lower than 635. The short call strike (650) is very close to the stock price to maximize credit, accepting higher risk for a very high return on capital.",
@@ -382,20 +390,20 @@
       "tradeDetails": {
         "expiration": "2025-12-19",
         "dte": 49,
-        "maxProfit": 707.00,
+        "maxProfit": 707.0,
         "spreadDetails": {
-          "shortPutStrike": 645.00,
-          "longPutStrike": 635.00,
-          "shortCallStrike": 650.00,
-          "longCallStrike": 655.00,
+          "shortPutStrike": 645.0,
+          "longPutStrike": 635.0,
+          "shortCallStrike": 650.0,
+          "longCallStrike": 655.0,
           "netCredit": 7.07
         }
       },
       "metrics": {
-        "roc": 241.30,
+        "roc": 241.3,
         "annualizedRoc": 1795.39,
-        "pop": 70.70,
-        "buyingPowerEffect": 293.00,
+        "pop": 70.7,
+        "buyingPowerEffect": 293.0,
         "dailyProfitPotential": 14.43
       },
       "managementPlan": "Standard management plan: Target 50% profit ($353.50) to close the position. If the profit target is not met, manage at 21 DTE by rolling the entire unchallenged side (likely the call spread) closer to the money, or rolling the entire position out to a later expiration date for an additional credit."
@@ -408,7 +416,7 @@
         "actionTaken": "BOT +1 IRON CONDOR",
         "closePrice": 6.81,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 26.00,
+        "grossProfitLossAmount": 26.0,
         "grossProfitLossType": "Profit",
         "notes": "Closed for $6.81 net debit (initial credit $7.07) for a $26.00 profit."
       }
@@ -420,8 +428,9 @@
     "summaryJustification": "BMNR has a low IV Rank of 15%, which is generally poor for selling premium. However, the 7 DTE weekly Short Put at the 47 strike provides a high annualized ROC of 149.36%, making it a strong candidate for an aggressive 'Wheel' strategy trade if assignment risk is accepted.",
     "expectedReturnDisplay": "149.36% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 50.29,
-    "ivRank": 15,
+    "ivRank": 15.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "High implied volatility (IV) is a core component of premium selling, and BMNR's low IV Rank of 15% makes it sub-optimal for a standard high-probability trade. However, the high annualized ROC on this short-duration weekly put at the 47 strike justifies it as a high-yield 'Wheel' strategy entry, accepting the higher risk of assignment given the underlying price is 50.29.",
@@ -429,20 +438,20 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "maxProfit": 120.00,
+        "maxProfit": 120.0,
         "spreadDetails": {
-          "shortPutStrike": 47.00,
+          "shortPutStrike": 47.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 1.20
+          "netCredit": 1.2
         }
       },
       "metrics": {
         "roc": 2.55,
         "annualizedRoc": 149.36,
-        "pop": 73.00,
-        "buyingPowerEffect": 4700.00,
+        "pop": 73.0,
+        "buyingPowerEffect": 4700.0,
         "dailyProfitPotential": 17.14
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -453,9 +462,9 @@
         "date": "2025-10-31",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 120.00,
+        "grossProfitLossAmount": 120.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $120.00 max profit."
       }
@@ -467,8 +476,9 @@
     "summaryJustification": "The trade capitalizes on the high 70% IV Rank of MRNA, indicating inflated options premiums, and is structured to expire (7 DTE) before the next earnings event on November 6, 2025. Selling the 26 Put provides a 99.43% annualized Return on Capital (ROC) with a favorable delta of approximately -0.35.",
     "expectedReturnDisplay": "99.43% Annualized ROC",
     "ticker": "MRNA",
+    "accountType": "Margin",
     "currentPrice": 26.85,
-    "ivRank": 70,
+    "ivRank": 70.0,
     "earningsDate": "2025-11-06",
     "analysis": {
       "thesis": "MRNA's Implied Volatility Rank is high at 70%, which makes the current options premiums rich and favorable for a premium-selling strategy. We are executing a weekly Short Put (The Wheel strategy entry) at the 26.00 strike, with a delta around -0.35, allowing a buffer below the current stock price, and ensuring the position is closed before the upcoming November 6th earnings report to mitigate event risk.",
@@ -476,9 +486,9 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "maxProfit": 49.00,
+        "maxProfit": 49.0,
         "spreadDetails": {
-          "shortPutStrike": 26.00,
+          "shortPutStrike": 26.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -488,9 +498,9 @@
       "metrics": {
         "roc": 1.88,
         "annualizedRoc": 99.43,
-        "pop": 65.00,
-        "buyingPowerEffect": 2600.00,
-        "dailyProfitPotential": 7.00
+        "pop": 65.0,
+        "buyingPowerEffect": 2600.0,
+        "dailyProfitPotential": 7.0
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
@@ -500,9 +510,9 @@
         "date": "2025-10-31",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 49.00,
+        "grossProfitLossAmount": 49.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $49.00 max profit."
       }
@@ -514,6 +524,7 @@
     "summaryJustification": "This weekly short put trade on SMCI offers a high 36.80% annualized return. However, the trade's main drawback is the low Implied Volatility Rank of 18.31 percent, which is below the ideal 30 percent threshold for selling premium. The next earnings report is confirmed for November 4, 2025, which is after this option's expiration.",
     "expectedReturnDisplay": "36.80% Annualized ROC",
     "ticker": "SMCI",
+    "accountType": "Margin",
     "currentPrice": 48.88,
     "ivRank": 18.31,
     "earningsDate": "2025-11-04",
@@ -523,20 +534,20 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 7,
-        "maxProfit": 30.00,
+        "maxProfit": 30.0,
         "spreadDetails": {
-          "shortPutStrike": 42.50,
+          "shortPutStrike": 42.5,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 0.30
+          "netCredit": 0.3
         }
       },
       "metrics": {
         "roc": 0.71,
-        "annualizedRoc": 36.80,
+        "annualizedRoc": 36.8,
         "pop": 88.0,
-        "buyingPowerEffect": 4250.00,
+        "buyingPowerEffect": 4250.0,
         "dailyProfitPotential": 4.29
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -547,9 +558,9 @@
         "date": "2025-10-31",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 30.00,
+        "grossProfitLossAmount": 30.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $30.00 max profit."
       }
@@ -561,8 +572,9 @@
     "summaryJustification": "This is a very short-term (1 DTE) short put on APLD. The trade collects 0.12 for the 29.00 strike, which is significantly below the current price of 32.65. This high-probability (approx 94% POP) trade aims to capture quick premium decay.",
     "expectedReturnDisplay": "149.65% Annualized ROC",
     "ticker": "APLD",
+    "accountType": "Margin",
     "currentPrice": 32.65,
-    "ivRank": 0,
+    "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "With only 1 day until expiration, this trade sells an out-of-the-money put at the 29.00 strike, 11% below the current stock price of 32.65. The goal is to profit from rapid time decay (theta) as the option expires worthless. The low delta (0.06) suggests a high probability of success.",
@@ -570,9 +582,9 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 1,
-        "maxProfit": 12.00,
+        "maxProfit": 12.0,
         "spreadDetails": {
-          "shortPutStrike": 29.00,
+          "shortPutStrike": 29.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -582,9 +594,9 @@
       "metrics": {
         "roc": 0.41,
         "annualizedRoc": 149.65,
-        "pop": 94.00,
-        "buyingPowerEffect": 2900.00,
-        "dailyProfitPotential": 12.00
+        "pop": 94.0,
+        "buyingPowerEffect": 2900.0,
+        "dailyProfitPotential": 12.0
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
@@ -594,9 +606,9 @@
         "date": "2025-10-24",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 12.00,
+        "grossProfitLossAmount": 12.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $12.00 max profit."
       }
@@ -608,8 +620,9 @@
     "summaryJustification": "A high-probability, short-duration put trade on BMNR with a strike price well below the current market price of $48.11. The low delta of -0.12 suggests a high probability of profit. The trade offers a compelling annualized return on capital of over 100 percent for a 2-day hold.",
     "expectedReturnDisplay": "108.90% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 48.11,
-    "ivRank": 50,
+    "ivRank": 50.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "High implied volatility (IV Rank assumed to be favorable) and a very short duration (2 DTE) make BMNR an ideal candidate for selling premium. We are selling the 42.00 strike put, which is out-of-the-money (OTM) and has a delta of -0.12, positioning the trade for high probability of success as the option quickly decays towards expiration. This is a weekly 'wheel' trade, with an acceptance of potential assignment.",
@@ -617,9 +630,9 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 2,
-        "maxProfit": 25.00,
+        "maxProfit": 25.0,
         "spreadDetails": {
-          "shortPutStrike": 42.00,
+          "shortPutStrike": 42.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -627,11 +640,11 @@
         }
       },
       "metrics": {
-        "roc": 0.60,
-        "annualizedRoc": 108.90,
+        "roc": 0.6,
+        "annualizedRoc": 108.9,
         "pop": 88.0,
-        "buyingPowerEffect": 4200.00,
-        "dailyProfitPotential": 12.50
+        "buyingPowerEffect": 4200.0,
+        "dailyProfitPotential": 12.5
       },
       "managementPlan": "Target 80% of daily profit potential, or manage at expiration. If the stock price drops and threatens the strike price, be prepared for assignment of 100 shares at the 42.00 strike, initiating the first step of the 'Wheel' strategy."
     },
@@ -641,9 +654,9 @@
         "date": "2025-10-24",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 25.00,
+        "grossProfitLossAmount": 25.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $25.00 max profit."
       }
@@ -655,8 +668,9 @@
     "summaryJustification": "The Skewed Iron Condor was placed after the post-earnings drop, centering the risk around the current price of 169.33. The wider 5.00 put spread reflects a more bullish bias to defend the recent support area, collecting a net credit of 3.02.",
     "expectedReturnDisplay": "60.40% Max ROC",
     "ticker": "TXN",
+    "accountType": "Margin",
     "currentPrice": 169.33,
-    "ivRank": 35,
+    "ivRank": 35.0,
     "earningsDate": "2025-10-21",
     "analysis": {
       "thesis": "The stock has experienced a significant volatility event and price drop. An Iron Condor is used to sell volatility and collect premium, centered around the current price. The spread is skewed (wider put spread) to position defensively against further downward momentum while capitalizing on the elevated implied volatility.",
@@ -664,20 +678,20 @@
       "tradeDetails": {
         "expiration": "2025-11-21",
         "dte": 30,
-        "maxProfit": 302.00,
+        "maxProfit": 302.0,
         "spreadDetails": {
-          "shortPutStrike": 167.50,
-          "longPutStrike": 162.50,
-          "shortCallStrike": 170.00,
-          "longCallStrike": 172.50,
+          "shortPutStrike": 167.5,
+          "longPutStrike": 162.5,
+          "shortCallStrike": 170.0,
+          "longCallStrike": 172.5,
           "netCredit": 3.02
         }
       },
       "metrics": {
-        "roc": 60.40,
+        "roc": 60.4,
         "annualizedRoc": 734.87,
         "pop": 65.0,
-        "buyingPowerEffect": 500.00,
+        "buyingPowerEffect": 500.0,
         "dailyProfitPotential": 10.07
       },
       "managementPlan": "Standard management plan: Target 50% profit, or manage by closing/rolling the unchallenged side at 21 DTE."
@@ -690,8 +704,9 @@
     "summaryJustification": "Selling a 3 DTE short put on MRNA. The 26 strike collects 0.32 in premium. This trade offers a 1.23 percent ROC and a high annualized ROC of 149.65 percent, aligning with a short-term, premium-capturing 'Wheel' strategy.",
     "expectedReturnDisplay": "149.65% Annualized ROC",
     "ticker": "MRNA",
-    "currentPrice": 27.20,
-    "ivRank": 0,
+    "accountType": "Margin",
+    "currentPrice": 27.2,
+    "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "This is a short-term (3 DTE) trade targeting premium decay. Selling the 26 strike put collects premium while offering a 1.23% return on the full notional capital. The high annualized ROC of 149.65% meets the criteria for a weekly 'Wheel' strategy, indicating a willingness to be assigned shares if MRNA closes below 26.00 at expiration.",
@@ -699,9 +714,9 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 3,
-        "maxProfit": 32.00,
+        "maxProfit": 32.0,
         "spreadDetails": {
-          "shortPutStrike": 26.00,
+          "shortPutStrike": 26.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -711,8 +726,8 @@
       "metrics": {
         "roc": 1.23,
         "annualizedRoc": 149.65,
-        "pop": 75.00,
-        "buyingPowerEffect": 2600.00,
+        "pop": 75.0,
+        "buyingPowerEffect": 2600.0,
         "dailyProfitPotential": 10.67
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -723,9 +738,9 @@
         "date": "2025-10-24",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 32.00,
+        "grossProfitLossAmount": 32.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $32.00 max profit."
       }
@@ -737,8 +752,9 @@
     "summaryJustification": "This trade sells a short put on B at the 30 strike, collecting 0.17 in premium. This is a weekly 'Wheel' strategy trade with 3 DTE, aiming to capture rapid time decay.",
     "expectedReturnDisplay": "69.35% Annualized ROC",
     "ticker": "B",
+    "accountType": "Margin",
     "currentPrice": 31.95,
-    "ivRank": 0,
+    "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "With B trading at $31.95, this trade initiates a short put at the $30 strike, which is out-of-the-money. The strategy aims to capture the $17 premium in 3 days, representing a 69.35% annualized return on the notional capital. The 0.14 delta suggests an approximate 86% probability of profit at expiration.",
@@ -746,9 +762,9 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 3,
-        "maxProfit": 17.00,
+        "maxProfit": 17.0,
         "spreadDetails": {
-          "shortPutStrike": 30.00,
+          "shortPutStrike": 30.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -758,8 +774,8 @@
       "metrics": {
         "roc": 0.57,
         "annualizedRoc": 69.35,
-        "pop": 86.00,
-        "buyingPowerEffect": 3000.00,
+        "pop": 86.0,
+        "buyingPowerEffect": 3000.0,
         "dailyProfitPotential": 5.67
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -770,9 +786,9 @@
         "date": "2025-10-24",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 17.00,
+        "grossProfitLossAmount": 17.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $17.00 max profit."
       }
@@ -784,8 +800,9 @@
     "summaryJustification": "This trade involves selling a short put on BMNR to capitalize on its high implied volatility. The selected 45 strike offers an approximate 80% probability of profit while generating a significant annualized return on capital.",
     "expectedReturnDisplay": "118.36% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 49.78,
-    "ivRank": 55,
+    "ivRank": 55.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "With a high implied volatility rank (assumed > 50 based on the premium available), BMNR is a strong candidate for premium selling. This strategy aims to collect premium by selling a short put at the 45 strike, which is comfortably out-of-the-money with an approximate 80% probability of profit.",
@@ -793,9 +810,9 @@
       "tradeDetails": {
         "expiration": "2025-10-24",
         "dte": 7,
-        "maxProfit": 102.00,
+        "maxProfit": 102.0,
         "spreadDetails": {
-          "shortPutStrike": 45.00,
+          "shortPutStrike": 45.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -805,8 +822,8 @@
       "metrics": {
         "roc": 2.27,
         "annualizedRoc": 118.36,
-        "pop": 80.00,
-        "buyingPowerEffect": 4500.00,
+        "pop": 80.0,
+        "buyingPowerEffect": 4500.0,
         "dailyProfitPotential": 14.57
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -817,22 +834,23 @@
         "date": "2025-10-24",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 102.00,
+        "grossProfitLossAmount": 102.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $102.00 max profit."
       }
     ]
   },
   {
-    "publicationDate": "2025-10-16",
+    "publicationDate": "2DEC '25",
     "tradeTitle": "Short Put on MRNA",
     "summaryJustification": "Given MRNA's elevated implied volatility, this short-term trade collects a premium of 0.16 on a 26.5 strike. This represents a high-probability setup with a substantial annualized return on capital, capitalizing on time decay over one day.",
     "expectedReturnDisplay": "220.38% Annualized ROC",
     "ticker": "MRNA",
+    "accountType": "Margin",
     "currentPrice": 27.98,
-    "ivRank": 50,
+    "ivRank": 50.0,
     "earningsDate": "2025-11-06",
     "analysis": {
       "thesis": "With an upcoming earnings announcement in November and high implied volatility, selling a short-dated put option on MRNA allows us to collect a significant premium. The chosen $26.5 strike is well below the current price, providing a buffer and a high probability of the option expiring worthless.",
@@ -840,9 +858,9 @@
       "tradeDetails": {
         "expiration": "2025-10-17",
         "dte": 1,
-        "maxProfit": 16.00,
+        "maxProfit": 16.0,
         "spreadDetails": {
-          "shortPutStrike": 26.50,
+          "shortPutStrike": 26.5,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -850,11 +868,11 @@
         }
       },
       "metrics": {
-        "roc": 0.60,
+        "roc": 0.6,
         "annualizedRoc": 220.38,
-        "pop": 87.00,
-        "buyingPowerEffect": 2650.00,
-        "dailyProfitPotential": 16.00
+        "pop": 87.0,
+        "buyingPowerEffect": 2650.0,
+        "dailyProfitPotential": 16.0
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
@@ -864,9 +882,9 @@
         "date": "2025-10-17",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 16.00,
+        "grossProfitLossAmount": 16.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $16.00 max profit."
       }
@@ -878,8 +896,9 @@
     "summaryJustification": "ARKK has a high implied volatility rank, making it a good candidate for a premium-selling strategy. Selling the 10/17 $88 put provides an attractive credit.",
     "expectedReturnDisplay": "27.93% Annualized ROC",
     "ticker": "ARKK",
+    "accountType": "Margin",
     "currentPrice": 88.63,
-    "ivRank": 90,
+    "ivRank": 90.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "The implied volatility (IV) for ARKK is currently in the 90th percentile, which is considered high. This presents a favorable opportunity to sell options and collect rich premiums. The trade thesis is to sell a put option at a strike price that is out of the money, profiting from the decay of the option's value as time passes and assuming the stock price stays above the strike price. The high IV ensures a significant credit is received, which can be kept as profit if the option expires worthless.",
@@ -887,9 +906,9 @@
       "tradeDetails": {
         "expiration": "2025-10-17",
         "dte": 2,
-        "maxProfit": 135.00,
+        "maxProfit": 135.0,
         "spreadDetails": {
-          "shortPutStrike": 88.00,
+          "shortPutStrike": 88.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -900,8 +919,8 @@
         "roc": 1.53,
         "annualizedRoc": 27.93,
         "pop": 58.0,
-        "buyingPowerEffect": 8800.00,
-        "dailyProfitPotential": 67.50
+        "buyingPowerEffect": 8800.0,
+        "dailyProfitPotential": 67.5
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
     },
@@ -911,9 +930,9 @@
         "date": "2025-10-17",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 135.00,
+        "grossProfitLossAmount": 135.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $135.00 max profit."
       }
@@ -925,8 +944,9 @@
     "summaryJustification": "BMNR has a very high implied volatility rank, making it an excellent candidate for a premium-selling strategy. The weekly short put trade allows for a high return on capital, capitalizing on the expected mean reversion of volatility.",
     "expectedReturnDisplay": "73.00% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 53.05,
-    "ivRank": 23,
+    "ivRank": 23.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "Implied Volatility Rank for BMNR is low at 23.23% as of October 10, 2025. It is typically not a good candidate for premium selling. However, the annualized return for a short weekly put is high, which aligns with a high-probability strategy for profiting from volatility decay.",
@@ -934,20 +954,20 @@
       "tradeDetails": {
         "expiration": "2025-10-17",
         "dte": 3,
-        "maxProfit": 100.00,
+        "maxProfit": 100.0,
         "spreadDetails": {
-          "shortPutStrike": 50.00,
+          "shortPutStrike": 50.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 1.00
+          "netCredit": 1.0
         }
       },
       "metrics": {
-        "roc": 2.00,
+        "roc": 2.0,
         "annualizedRoc": 243.33,
         "pop": 70.0,
-        "buyingPowerEffect": 5000.00,
+        "buyingPowerEffect": 5000.0,
         "dailyProfitPotential": 33.33
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -958,9 +978,9 @@
         "date": "2025-10-17",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 100.00,
+        "grossProfitLossAmount": 100.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $100.00 max profit."
       }
@@ -972,6 +992,7 @@
     "summaryJustification": "This trade capitalizes on elevated short-term premium in WDC. The selected 116 strike is approximately 7.4% below the current stock price, providing a significant cushion and a high probability of success for a weekly trade.",
     "expectedReturnDisplay": "57.43% Annualized ROC",
     "ticker": "WDC",
+    "accountType": "Margin",
     "currentPrice": 125.28,
     "ivRank": null,
     "earningsDate": "N/A",
@@ -981,9 +1002,9 @@
       "tradeDetails": {
         "expiration": "2025-10-10",
         "dte": 4,
-        "maxProfit": 73.00,
+        "maxProfit": 73.0,
         "spreadDetails": {
-          "shortPutStrike": 116.00,
+          "shortPutStrike": 116.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -993,8 +1014,8 @@
       "metrics": {
         "roc": 0.63,
         "annualizedRoc": 57.43,
-        "pop": 87.00,
-        "buyingPowerEffect": 11600.00,
+        "pop": 87.0,
+        "buyingPowerEffect": 11600.0,
         "dailyProfitPotential": 18.25
       },
       "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or close at 80% daily profit for weeklies."
@@ -1005,9 +1026,9 @@
         "date": "2025-10-10",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 73.00,
+        "grossProfitLossAmount": 73.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $73.00 max profit."
       }
@@ -1016,11 +1037,12 @@
   {
     "publicationDate": "2025-10-03",
     "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "Based on the provided options chain, BMNR exhibits elevated premium in its short-dated options, likely due to recent high volatility. This trade seeks to capitalize on theta decay and further volatility contraction by selling a 7-DTE put with a high annualized return on capital.",
+    "summaryJustification": "Based on the provided options chain, BMNR exhibits elevated premium in its short-dated options,. This trade seeks to capitalize on theta decay and further volatility contraction by selling a 7-DTE put with a high annualized return on capital.",
     "expectedReturnDisplay": "113.3% Annualized ROC",
     "ticker": "BMNR",
+    "accountType": "Margin",
     "currentPrice": 56.26,
-    "ivRank": 0,
+    "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
       "thesis": "While a specific IV Rank is not available from the provided data, the recent price chart for BMNR shows a massive volatility spike in July 2025. The current environment represents a volatility contraction, which is an ideal scenario for selling options premium. This trade is placed to take advantage of the still-elevated premium with the expectation that volatility will continue to normalize and time decay will accelerate in the final week to expiration.",
@@ -1028,9 +1050,9 @@
       "tradeDetails": {
         "expiration": "2025-10-10",
         "dte": 7,
-        "maxProfit": 113.00,
+        "maxProfit": 113.0,
         "spreadDetails": {
-          "shortPutStrike": 52.00,
+          "shortPutStrike": 52.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
@@ -1040,8 +1062,8 @@
       "metrics": {
         "roc": 2.17,
         "annualizedRoc": 113.14,
-        "pop": 76,
-        "buyingPowerEffect": 5200,
+        "pop": 76.0,
+        "buyingPowerEffect": 5200.0,
         "dailyProfitPotential": 16.14
       },
       "managementPlan": "Standard management plan: Target 50% profit or manage at 21 DTE."
@@ -1052,9 +1074,9 @@
         "date": "2025-10-10",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 113.00,
+        "grossProfitLossAmount": 113.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $113.00 max profit."
       }
@@ -1066,8 +1088,9 @@
     "summaryJustification": "Based on the analysis, MRNA is hovering above its 5-year low with a rising IV Rank of 49% ahead of earnings. A short put is a bullish strategy that leverages this high premium and market skew indicating upside risk.",
     "expectedReturnDisplay": "$80 Max Profit",
     "ticker": "MRNA",
-    "currentPrice": 25.00,
-    "ivRank": 49,
+    "accountType": "Margin",
+    "currentPrice": 25.0,
+    "ivRank": 49.0,
     "earningsDate": "Early November 2025",
     "analysis": {
       "thesis": "MRNA is down significantly for the year, but its improved product pipeline and market skew (OTM calls trading over puts) suggest optimism. With a high IV Rank of 49%, its options are rich. A short put allows a trader to express a bullish view and capitalize on the high premium, with the trade expiring before the early November earnings announcement to avoid binary event risk.",
@@ -1075,20 +1098,20 @@
       "tradeDetails": {
         "expiration": "2025-10-31",
         "dte": 30,
-        "maxProfit": 80.00,
+        "maxProfit": 80.0,
         "spreadDetails": {
-          "shortPutStrike": 22.00,
+          "shortPutStrike": 22.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 0.0,
           "longCallStrike": 0.0,
-          "netCredit": 0.80
+          "netCredit": 0.8
         }
       },
       "metrics": {
         "roc": 3.64,
         "annualizedRoc": 44.29,
-        "pop": 87,
-        "buyingPowerEffect": 2200,
+        "pop": 87.0,
+        "buyingPowerEffect": 2200.0,
         "dailyProfitPotential": 2.67
       },
       "managementPlan": "The analysis notes an 87% probability of achieving 50% of max profit, aligning with the standard management plan to target 50% profit or manage the trade near 21 DTE."
@@ -1099,9 +1122,9 @@
         "date": "2025-10-31",
         "dteRemaining": 0,
         "actionTaken": "Expired Worthless (OTM)",
-        "closePrice": 0.00,
+        "closePrice": 0.0,
         "closeCostType": "Debit",
-        "grossProfitLossAmount": 80.00,
+        "grossProfitLossAmount": 80.0,
         "grossProfitLossType": "Profit",
         "notes": "Position expired worthless, capturing 100% of the $80.00 max profit."
       }

@@ -12,14 +12,35 @@
     <section id="trades">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
 
-        {% comment %} --- UPDATED FILTER: Show Last 10 (default) or Last 50 --- {% endcomment %}
-        <div class="d-flex justify-content-end mb-4">
-            <div class="limit-filter-container">
-                <label for="limit-filter-selector" class="form-label d-none d-lg-inline-block small text-muted me-2 mb-0">Show Trades:</label>
-                <select id="limit-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
-                    <option value="10" selected>Last 10 Trades</option>
-                    <option value="50">Last 50 Trades</option>
-                </select>
+
+        {% comment %} --- FILTERS & DASHBOARD LINK --- {% endcomment %}
+        <div class="d-flex justify-content-between align-items-center mb-4" style="gap: 0.5rem;">
+
+            {% comment %} --- NEW: Performance Dashboard Pill --- {% endcomment %}
+            <div>
+                <a href="#" class="status-pill dashboard-pill"> <i class="fas fa-tachometer-alt fa-fw me-1"></i> Performance Dashboard
+                </a>
+            </div>
+
+            {% comment %} --- Filter Group --- {% endcomment %}
+            <div class="d-flex justify-content-end" style="gap: 0.5rem;">
+                <div class="limit-filter-container d-flex align-items-center" style="gap: 0.5rem;">
+                    <label for="account-filter-selector" class="form-label d-none d-lg-inline-block small text-muted mb-0">Account:</label>
+                    <select id="account-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
+                        <option value="all" selected>All Accounts</option>
+                        <option value="margin">Margin</option>
+                        <option value="ira">IRA</option>
+                        <option value="paper">Paper</option>
+                    </select>
+                </div>
+
+                <div class="limit-filter-container d-flex align-items-center" style="gap: 0.5rem;">
+                    <label for="limit-filter-selector" class="form-label d-none d-lg-inline-block small text-muted mb-0">Show:</label>
+                    <select id="limit-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
+                        <option value="10" selected>Last 10</option>
+                        <option value="50">Last 50</option>
+                    </select>
+                </div>
             </div>
         </div>
 
@@ -34,7 +55,8 @@
             {% break %}
             {% endif %}
 
-            <div class="col trade-card-wrapper">
+            {% assign account_lower = trade.accountType | downcase | default: 'margin' %}
+            <div class="col trade-card-wrapper" data-account-type="{{ account_lower }}">
                 <div class="card h-100 shadow-sm border-0 d-flex">
                     <div class="card-body d-flex">
 
@@ -53,13 +75,20 @@
                             {% assign trade_status = "OPEN" %}
                             {% endif %}
 
-                            <div class="trade-card-header">
+                            <div class="trade-card-header d-flex justify-content-between align-items-start" style="gap: 0.5rem;">
                                 <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
-                                {% if trade_status == "OPEN" %}
-                                <span class="status-pill status-open">Open</span>
-                                {% else %}
-                                <span class="status-pill status-closed">Closed</span>
-                                {% endif %}
+
+                                <div class="d-flex flex-shrink-0" style="gap: 0.5rem;">
+                                    {% if trade_status == "OPEN" %}
+                                    <span class="status-pill status-open">Open</span>
+                                    {% else %}
+                                    <span class="status-pill status-closed">Closed</span>
+                                    {% endif %}
+
+                                    {% comment %} --- NEW ACCOUNT TYPE PILL --- {% endcomment %}
+                                    {% assign account_lower = trade.accountType | downcase | default: 'margin' %}
+                                    <span class="status-pill account-{{ account_lower }}">{{ trade.accountType | default: "Margin" }}</span>
+                                </div>
                             </div>
 
                             <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
@@ -357,29 +386,44 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const selector = document.getElementById('limit-filter-selector');
+        const limitSelector = document.getElementById('limit-filter-selector');
+        const accountSelector = document.getElementById('account-filter-selector');
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
-        function filterTrades(limit) {
-            const numLimit = parseInt(limit);
+        function applyFilters() {
+            const numLimit = parseInt(limitSelector.value);
+            const accountFilter = accountSelector.value;
+            let visibleCount = 0;
 
-            tradeCards.forEach((card, index) => {
-                if (index < numLimit) {
+            tradeCards.forEach((card) => {
+                const cardAccountType = card.dataset.accountType;
+
+                // Check if card matches account filter
+                const accountMatch = (accountFilter === 'all' || cardAccountType === accountFilter);
+
+                // Check if we are still within the display limit
+                const limitMatch = (visibleCount < numLimit);
+
+                if (accountMatch && limitMatch) {
                     card.style.display = 'block';
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
             });
         }
 
-        if (selector) {
-            filterTrades(selector.value);
-            selector.addEventListener('change', function() {
-                filterTrades(this.value);
-            });
+        if (limitSelector && accountSelector) {
+            // Apply filters on initial page load
+            applyFilters();
+
+            // Add event listeners to both selectors
+            limitSelector.addEventListener('change', applyFilters);
+            accountSelector.addEventListener('change', applyFilters);
         }
     });
 </script>
+
 <script>
     function copyTradeDetails(button) {
       const detailsContainer = button.nextElementSibling;

@@ -346,3 +346,29 @@ $pastel-danger: #e09f9f;  // Soft Dusty Rose
       color: #fff;
       border: none;
   }
+
+  /*
+  =================================
+  --- Account Type Pills ---
+  =================================
+  */
+
+  /* Uses .status-pill for base styling (padding, font-size, border-radius) */
+
+  .status-pill.account-margin {
+    background-color: #e0f0ff; /* Pastel Blue */
+    color: #0056b3;
+    border: 1px solid #b3d7ff;
+  }
+
+  .status-pill.account-ira {
+    background-color: #e6f7ec; /* Pastel Green */
+    color: #0a6b3d;
+    border: 1px solid #b3e6c8;
+  }
+
+  .status-pill.account-paper {
+    background-color: #fff8e1; /* Pastel Yellow */
+    color: #856404;
+    border: 1px solid #ffecb3;
+  }
