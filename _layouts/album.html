@@ -6,7 +6,7 @@ layout: default
 
 	{% comment %}
 	NOTE: Assuming breadcrumb-github-projects.html is meant to be a general breadcrumb include.
-	It is included as is.
+	The include call is updated to use the theme-aware text-primary for the icon.
 	{% endcomment %}
 	{% include breadcrumb-github-projects.html
 	collection_url = "/album/"
@@ -18,17 +18,19 @@ layout: default
 		<div class="col-lg-10 mx-auto">
 
 			<header class="text-center mb-5">
-				<h1 class="display-4 fw-bold">{{ page.title }}</h1>
+				{% comment %} Use bigtitle class and text-body color {% endcomment %}
+				<h1 class="bigtitle fw-bold text-body">{{ page.title }}</h1>
+
 				<p class="lead text-muted">
 					<i class="far fa-calendar-alt fa-fw me-1"></i> Posted on {{ page.date | date: "%-d %b %Y" }}
 
 					{% if page.author %}
 					| by
-					{% comment %} Use the robust team member lookup logic {% endcomment %}
+					{% comment %} Use the robust team member lookup logic with text-primary links {% endcomment %}
 					{% assign author_found = false %}
 					{% for member in site.categories.team %}
 					{% if member.name == page.author %}
-					<a href="{{ member.url | relative_url }}" class="text-info">{{ page.author }}</a>
+					<a href="{{ member.url | relative_url }}" class="text-primary text-decoration-none">{{ page.author }}</a>
 					{% assign author_found = true %}
 					{% break %}
 					{% endif %}
@@ -39,7 +41,13 @@ layout: default
 					{% endif %}
 
 					{% if page.place %}
-					| <i class="fas fa-map-marker-alt fa-fw me-1"></i> {{ page.place }}
+					| <i class="fas fa-map-marker-alt fa-fw me-1"></i>
+					{% comment %} Place link uses text-primary if it's a link, otherwise it's muted {% endcomment %}
+					{% if page.place_url %}
+					<a href="{{ page.place_url }}" class="text-primary text-decoration-none">{{ page.place }}</a>
+					{% else %}
+					<span class="text-muted">{{ page.place }}</span>
+					{% endif %}
 					{% endif %}
 				</p>
 			</header>
@@ -50,7 +58,7 @@ layout: default
 			</div>
 			{% endif %}
 
-			<div class="post-content">
+			<div class="post-content text-body">
 				{{ content }}
 			</div>
 		</div>

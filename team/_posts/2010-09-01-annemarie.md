@@ -13,7 +13,7 @@ excerpt: "A visiting researcher from Justus Liebig University Giessen who collab
 
 ## Professional Summary
 
-<div class="card bg-light mb-3">
+<div class="card mb-3 shadow-sm border-0" style="background-color: var(--bs-tertiary-bg);">
 <div class="card-body">
 <p class="card-text">
 Annemarie Kegler was a visiting graduate student from Justus-Liebig-Universität Gießen who collaborated with our group during the summer of 2010. During her visit, she conducted research and gathered data for her thesis in chemistry education, demonstrating her dedication to her academic pursuits and her ability to work in an international research setting.

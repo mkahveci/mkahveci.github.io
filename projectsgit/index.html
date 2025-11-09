@@ -6,9 +6,9 @@ permalink: /projectsgit/
 
 <div class="container my-5">
 
-    {% comment %} --- HEADER SECTION (MODELLED FOR CONSISTENCY) --- {% endcomment %}
-    <h1 class="mb-4 text-center">Technical & Automation Projects</h1>
-    <p class="lead text-center text-muted mb-5">
+    {% comment %} --- HEADER SECTION (UPDATED TYPOGRAPHY) --- {% endcomment %}
+    <h1 class="bigtitle mb-4 text-center text-body">Technical & Automation Projects</h1>
+    <p class="lead text-center text-muted mx-auto mb-5" style="max-width: 800px;">
         This is a dynamically updated list of our technical projects and code repositories, including AI prompt tools for education, maintained directly through <i class="fab fa-github"></i> <b>GitHub</b>.
     </p>
     {% comment %} --- END HEADER SECTION --- {% endcomment %}
@@ -17,13 +17,14 @@ permalink: /projectsgit/
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for project in site.data.projectsgit %}
         <div class="col d-flex align-items-stretch">
-            <div class="card h-100 shadow-sm w-100 border-0">
+            <div class="card h-100 shadow-sm w-100 border-0" style="background-color: var(--bs-card-bg);">
                 <div class="card-body d-flex flex-column p-4">
 
-                    {% comment %} Project Title and Icon {% endcomment %}
-                    <h5 class="card-title fw-semibold mb-2">
+                    {% comment %} Project Title and Icon (Use text-primary for the icon color) {% endcomment %}
+                    <h5 class="card-title fw-bold mb-2 text-body">
                         <i class="fas fa-code-branch fa-fw text-primary me-2"></i>
-                        <a href="{{ project.local_url | default: project.url }}" class="text-body text-decoration-none">{{ project.title }}</a>
+                        {% comment %} Link uses mandated text-primary and text-decoration-none {% endcomment %}
+                        <a href="{{ project.local_url | default: project.url }}" class="text-primary text-decoration-none">{{ project.title }}</a>
                     </h5>
 
                     <p class="card-text small text-muted flex-grow-1 mb-3">{{ project.description }}</p>
@@ -31,18 +32,24 @@ permalink: /projectsgit/
                     {% if project.topics %}
                     <div class="mb-3">
                         {% for topic in project.topics %}
-                        <span class="badge bg-primary text-light me-1">#{{ topic }}</span>
+                        {% comment %} USE THEME-AWARE BADGE STYLE {% endcomment %}
+                        <span class="badge rounded-pill text-bg-secondary me-1 fw-normal">#{{ topic }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
 
-                    <a href="{{ project.url }}" target="_self" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-auto">View Repository <i class="fab fa-github ms-1"></i></a>
+                    {% comment %} Use solid btn-primary for high-contrast action button {% endcomment %}
+                    <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
+                        View Repository <i class="fab fa-github ms-1"></i>
+                    </a>
                 </div>
 
-                <div class="card-footer bg-body-tertiary border-top">
+                {% comment %} Card Footer Styling (Use theme-aware colors) {% endcomment %}
+                <div class="card-footer" style="background-color: var(--bs-tertiary-bg); border-top: 1px solid var(--bs-border-color);">
                     <small class="text-muted">
                         Last updated on
-                        <a href="{{ project.commits.first.url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-info">
+                        {% comment %} Link consistency applied to date link {% endcomment %}
+                        <a href="{{ project.commits.first.url }}" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">
                             {{ project.commits.first.date | date: "%-d %b %Y" }}
                         </a>
                         by {{ project.commits.first.author_login }}

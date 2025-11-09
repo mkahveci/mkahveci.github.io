@@ -6,23 +6,23 @@ permalink: /projects/
 
 <div class="container my-5">
 
-    <h1 class="mb-4 text-center">Research & Development Projects</h1>
-    <p class="lead text-center text-muted mb-5">
+    <h1 class="bigtitle mb-4 text-center text-body">Research & Development Projects</h1>
+    <p class="lead text-center text-muted mx-auto" style="max-width: 800px;">
         Our portfolio is dedicated to advancing STEM education by bridging innovative research with practical application, from AI in education to alternative assessment tools. Explore our academic and technical initiatives below.
     </p>
 
-    {% comment %} --- NEW: COMPACT GITHUB SECTION / CALL TO ACTION --- {% endcomment %}
+    {% comment %} --- GITHUB SECTION / CALL TO ACTION (Refined) --- {% endcomment %}
     <div class="row justify-content-center mb-5">
         <div class="col-md-8 col-lg-6">
-            <div class="card shadow-sm h-100 border-primary border-3">
+            <div class="card shadow-sm h-100 border-primary border-3" style="background-color: var(--bs-card-bg);">
                 <div class="card-body text-center d-flex align-items-center justify-content-center p-4">
                     <i class="fab fa-github fa-3x text-primary me-3"></i>
                     <div>
-                        <h5 class="card-title fw-semibold mb-1">Code & Automation Projects</h5>
+                        <h5 class="card-title fw-bold mb-1 text-body">Code & Automation Projects</h5>
                         <p class="card-text small text-muted mb-0">
                             View our complete, dynamically updated list of code repositories and tools.
                         </p>
-                        <a href="/projectsgit/" class="btn btn-sm btn-outline-primary mt-2">
+                        <a href="/projectsgit/" class="btn btn-sm btn-primary mt-2">
                             View GitHub Portfolio <i class="fas fa-arrow-right ms-2"></i>
                         </a>
                     </div>
@@ -30,13 +30,13 @@ permalink: /projects/
             </div>
         </div>
     </div>
-    <hr class="my-5">
+    <hr class="my-5" style="border-color: var(--bs-border-color);">
 
     <div class="text-center my-4">
-        <h2 class="display-6">Academic Research Portfolio</h2>
+        <h2 class="display-6 fw-bold text-primary">Academic Research Portfolio</h2>
     </div>
 
-    {% comment %} --- ACADEMIC PROJECT LIST SECTION (RETAINED) --- {% endcomment %}
+    {% comment %} --- ACADEMIC PROJECT LIST SECTION --- {% endcomment %}
 
     {% assign sorted_projects = site.categories.projects | sort: 'date' | reverse %}
     {% assign total_projects = sorted_projects | size %}
@@ -48,26 +48,27 @@ permalink: /projects/
         {% assign project_status = project.status | default: "Completed" %}
 
         <div class="col">
-            <div class="card shadow-sm h-100 border-0">
-                <div class="card-body d-flex p-3">
+            <div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
+                <div class="card-body d-flex p-4">
 
-                    <div class="flex-shrink-0 text-center me-3" style="width: 70px;">
-                        <i class="fas fa-diagram-project fa-3x text-info mb-1"></i>
-                        <small class="text-secondary fw-bold text-uppercase d-block mt-1">{{ project_date }}</small>
+                    {% comment %} Icon and Date (Now theme-aware) {% endcomment %}
+                    <div class="flex-shrink-0 text-center me-4" style="width: 70px;">
+                        <i class="fas fa-microscope fa-3x text-primary mb-2"></i>
+                        <small class="text-muted fw-bold text-uppercase d-block">{{ project_date }}</small>
                     </div>
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex align-items-center mb-1">
-                            <h5 class="card-title fw-semibold mb-0 me-2">
-                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-body">{{ project.title }}</a>
+                            <h5 class="card-title fw-bold mb-0 me-2 text-body">
+                                <a href="{{ project.url | relative_url }}" class="text-primary text-decoration-none">{{ project.title }}</a>
                             </h5>
                             {% if project_status %}
                             {% assign status_class = "text-bg-warning" %}
                             {% if project_status == "Completed" %}{% assign status_class = "text-bg-success" %}{% endif %}
                             {% if project_status == "Ongoing" %}{% assign status_class = "text-bg-info" %}{% endif %}
 
-                            <span class="badge {{ status_class }} flex-shrink-0">{{ project_status }}</span>
+                            <span class="badge {{ status_class }} flex-shrink-0 fw-normal">{{ project_status }}</span>
                             {% endif %}
                         </div>
 
@@ -75,16 +76,16 @@ permalink: /projects/
                             {{ project.excerpt | strip_html | truncatewords: 30 }}
                         </p>
 
-                        <p class="small fst-italic mt-2">
-                            <strong>Contributors:</strong> {{ project.contributors }}
+                        <p class="small fst-italic mt-2 text-body">
+                            <strong>Contributors:</strong> <span class="text-muted">{{ project.contributors }}</span>
                         </p>
 
                         <div class="mt-3">
-                            <a href="{{ project.url | relative_url }}" class="btn btn-sm btn-outline-primary me-2">
+                            <a href="{{ project.url | relative_url }}" class="btn btn-sm btn-primary me-2">
                                 <i class="fas fa-info-circle me-1"></i> Details
                             </a>
                             {% if project.github_repo %}
-                            <a href="{{ project.github_repo }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary me-2">
+                            <a href="{{ project.github_repo }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary me-2">
                                 <i class="fab fa-github fa-fw me-1"></i> GitHub
                             </a>
                             {% endif %}
