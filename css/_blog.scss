@@ -1,19 +1,30 @@
+// _blog.scss
+
 .date-block {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  // Theme-aware radius (already correct)
   border-radius: var(--bs-border-radius-lg);
   text-align: center;
+
+  // --- NEW THEME-AWARE COLORS ---
+  // These automatically flip in dark mode
+  background-color: var(--bs-primary-subtle);
+  color: var(--bs-primary-emphasis);
 }
 
 .date-block .day {
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.2;
+  // Inherits the color from .date-block
 }
 
 .date-block .month {
@@ -21,8 +32,10 @@
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
+  // Inherits the color from .date-block
 }
 
+// This layout rule is already perfect and theme-aware.
 .card-footer-inset {
-  margin-left: 60px + var(--bs-card-spacer-x);
+  margin-left: calc(60px + var(--bs-card-spacer-x));
 }

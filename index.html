@@ -18,7 +18,7 @@ categories:
 
     <div class="mb-4">
         <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/blog/" class="text-decoration-none text-dark">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
+            <a href="/blog/" class="text-decoration-none text-body">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
         </h2>
         <div class="row g-2">
             {% for post in site.categories.blog limit:3 %}
@@ -28,7 +28,7 @@ categories:
                         <i class="fa-regular fa-comment fa-fw fa-lg me-3 text-primary mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">{{ post.title }}</a>
+                                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-body">{{ post.title }}</a>
                             </h6>
                             <small class="text-muted d-block line-height-1-2">
                                 Posted {{ post.date | date: "%-d %b %Y" }}
@@ -51,7 +51,7 @@ categories:
 
     <div class="mb-4">
         <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/publications/" class="text-decoration-none text-dark">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
+            <a href="/publications/" class="text-decoration-none text-body">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
         </h2>
         <div class="row g-2">
             {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
@@ -62,7 +62,7 @@ categories:
                         <i class="fa-regular fa-file-alt fa-fw fa-lg me-3 text-success mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-dark">{{ publication.title }}</a>
+                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-body">{{ publication.title }}</a>
                             </h6>
                             <small class="text-muted d-block line-height-1-2">
                                 {{ publication.year }} in {{ publication.source_info }}
@@ -82,7 +82,7 @@ categories:
 
     <div class="mb-4">
         <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/projects/" class="text-decoration-none text-dark">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
+            <a href="/projects/" class="text-decoration-none text-body">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
         </h2>
         <div class="row g-2">
             {% for project in site.categories.projects limit:3 %}
@@ -92,7 +92,7 @@ categories:
                         <i class="fas fa-flask fa-fw fa-lg me-3 text-info mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-dark">{{ project.title }}</a>
+                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-body">{{ project.title }}</a>
                             </h6>
                             {% if project.excerpt %}
                             <small class="text-muted d-block mt-1">
@@ -109,7 +109,7 @@ categories:
 
     <div class="mb-4">
         <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/news/" class="text-decoration-none text-dark">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2 text-danger"></i></a>
+            <a href="/news/" class="text-decoration-none text-body">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2 text-danger"></i></a>
         </h2>
         <div class="row g-2">
             {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
@@ -120,7 +120,7 @@ categories:
                         <i class="fas fa-bullhorn fa-fw fa-lg me-3 text-danger mt-1"></i>
                         <div>
                             <h6 class="mb-1 fw-medium">
-                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-dark">{{ item.title }}</a>
+                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-body">{{ item.title }}</a>
                             </h6>
                             <small class="text-muted d-block line-height-1-2">
                                 Deadline: {{ item.deadline | date: "%b %d" }}

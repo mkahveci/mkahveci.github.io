@@ -5,16 +5,21 @@
 </div>
 
 <style>
-    /* Basic Styles for the Alert */
+    /* FIXED: Styles are now theme-aware using Bootstrap
+      CSS variables for the "warning" theme.
+    */
     .wip-banner {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 15px 20px;
         margin-bottom: 25px;
-        border: 1px solid #ffcc00; /* Yellow border */
-        background-color: #fffbe6; /* Light yellow background */
-        color: #8a6d3b; /* Darker text */
+
+        /* Uses theme-aware "warning" colors */
+        border: 1px solid var(--bs-warning-border-subtle);
+        background-color: var(--bs-warning-subtle);
+        color: var(--bs-warning-emphasis);
+
         border-radius: 4px;
         font-size: 1.1em;
         font-weight: normal;
@@ -24,7 +29,8 @@
     /* Font Awesome Animation (fa-spin is built-in) */
     .wip-banner .fa-tools {
         margin: 0 15px;
-        color: #d9b300; /* Darker yellow for the icon */
+        /* Inherits the theme-aware "warning" color from the parent */
+        color: inherit;
         font-size: 1.2em;
     }
 </style>

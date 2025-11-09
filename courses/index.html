@@ -89,7 +89,7 @@ permalink: /courses/
                         </div>
                         <div class="flex-grow-1">
                             <h5 class="card-title fw-semibold mb-1">
-                                <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                                <a href="{{ course.url | relative_url }}" class="text-decoration-none text-body">{{ course.title }}</a>
                             </h5>
                             <p class="card-text small text-muted">
                                 {{ course.excerpt | strip_html | truncatewords: 30 }}
@@ -99,7 +99,7 @@ permalink: /courses/
                             </p>
                             {% if course.syllabus %}
                             <div class="mt-3">
-                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
                                     <i class="fas fa-file-pdf me-1"></i> Syllabus
                                 </a>
                             </div>
@@ -139,7 +139,7 @@ permalink: /courses/
 
                         <div class="flex-grow-1">
                             <h5 class="card-title fw-semibold mb-1">
-                                <a href="{{ course.url | relative_url }}" class="text-decoration-none">{{ course.title }}</a>
+                                <a href="{{ course.url | relative_url }}" class="text-decoration-none text-body">{{ course.title }}</a>
                             </h5>
                             <p class="card-text small text-muted">
                                 {{ course.excerpt | strip_html | truncatewords: 30 }}
@@ -149,7 +149,7 @@ permalink: /courses/
                             </p>
                             {% if course.syllabus %}
                             <div class="mt-3">
-                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                                <a href="{{ course.syllabus | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
                                     <i class="fas fa-file-pdf me-1"></i> Syllabus
                                 </a>
                             </div>

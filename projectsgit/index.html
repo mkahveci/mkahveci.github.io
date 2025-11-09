@@ -23,7 +23,7 @@ permalink: /projectsgit/
                     {% comment %} Project Title and Icon {% endcomment %}
                     <h5 class="card-title fw-semibold mb-2">
                         <i class="fas fa-code-branch fa-fw text-primary me-2"></i>
-                        <a href="{{ project.local_url | default: project.url }}" class="text-dark text-decoration-none">{{ project.title }}</a>
+                        <a href="{{ project.local_url | default: project.url }}" class="text-body text-decoration-none">{{ project.title }}</a>
                     </h5>
 
                     <p class="card-text small text-muted flex-grow-1 mb-3">{{ project.description }}</p>
@@ -31,7 +31,7 @@ permalink: /projectsgit/
                     {% if project.topics %}
                     <div class="mb-3">
                         {% for topic in project.topics %}
-                        <span class="badge bg-secondary text-white me-1">#{{ topic }}</span>
+                        <span class="badge bg-primary text-light me-1">#{{ topic }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
@@ -39,7 +39,7 @@ permalink: /projectsgit/
                     <a href="{{ project.url }}" target="_self" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-auto">View Repository <i class="fab fa-github ms-1"></i></a>
                 </div>
 
-                <div class="card-footer bg-white border-top">
+                <div class="card-footer bg-body-tertiary border-top">
                     <small class="text-muted">
                         Last updated on
                         <a href="{{ project.commits.first.url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-info">

@@ -34,7 +34,7 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
 
           <div class="flex-grow-1">
             <h5 class="card-title fw-semibold mb-1">
-              <a href="{{ picture.url | relative_url }}" class="text-decoration-none text-dark">{{ picture.title }}</a>
+              <a href="{{ picture.url | relative_url }}" class="text-decoration-none text-body">{{ picture.title }}</a>
             </h5>
 
             <p class="card-text small text-muted">
@@ -53,7 +53,7 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
         </div>
 
         {% comment %} Optional Footer for consistency (shows date as a badge) {% endcomment %}
-        <div class="card-footer bg-white border-top-0 pt-0">
+        <div class="card-footer bg-body-tertiary border-top-0 pt-0">
           <a href="{{ picture.url | relative_url }}" class="btn btn-sm btn-outline-info">View Album</a>
         </div>
       </div>

@@ -44,9 +44,6 @@ layout: default
                 {% comment %}
                 ===================================================================
                 NEW: Related Posts Card (Integrated Logic)
-                - Logic is identical (scoring, sorting by last tag).
-                - Output is adapted to a vertical list inside a sidebar card
-                to match the "On this page" card's design.
                 ===================================================================
                 {% endcomment %}
 
@@ -104,18 +101,18 @@ layout: default
 
                                 <div class="{% unless forloop.last %}mb-3{% endunless %}">
                                     <h6 class="mb-0">
-                                        <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>
+                                        <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary">{{ post.title }}</a>
                                     </h6>
                                     <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
 
                                     {% if shared_tags.size > 0 %}
                                     <div class="mt-1">
                                         {% for tag in shared_tags %}
-                                        <span class="badge rounded-pill text-bg-light me-1 fw-normal">{{ tag | capitalize }}</span>
+                                        <span class="badge rounded-pill text-bg-secondary me-1 fw-normal">#{{ tag | capitalize }}</span>
                                         {% endfor %}
                                     </div>
                                     {% endif %}
-                                </div>
+                                    D</div>
 
                                 {% endfor %}
                             </div>
@@ -134,7 +131,7 @@ layout: default
         {% endcomment %}
         <div class="col-lg-8 order-lg-1">
 
-            <header class="p-4 mb-4 bg-light rounded-3 shadow-sm">
+            <header class="p-4 mb-4 bg-tertiary-subtle rounded-3 shadow-sm">
                 {% comment %} --- REDUCED HEADING SIZE: Using display-6 for a balanced, less overwhelming title --- {% endcomment %}
                 <h1 class="display-6 fw-bold mb-3">{{ page.title }}</h1>
 
@@ -153,7 +150,7 @@ layout: default
                     {% assign author_found = false %}
                     {% for member in site.categories.team %}
                     {% if member.name == page.author %}
-                    <a href="{{ member.url | relative_url }}" class="text-decoration-none text-info">{{ page.author }}</a>
+                    <a href="{{ member.url | relative_url }}" class="text-decoration-none text-primary">{{ page.author }}</a>
                     {% assign author_found = true %}
                     {% break %}
                     {% endif %}
@@ -170,11 +167,10 @@ layout: default
                     {% for tag in page.tags %}
 
                     {% comment %} --- MODIFIED TAG LINK ---
-                    - Changed href from "/blog/tags/#..." to "/blog/#..."
-                    - This directs the user to the main blog page and adds
-                    - the tag slug as a hash, which we can use in JS.
+                    Applied the desired theme-aware gray pill style.
+                    Removed explicit border and kept text-decoration-none for link consistency.
                     {% endcomment %}
-                    <a href="/blog/#{{ tag | slugify }}" class="badge bg-secondary text-white text-decoration-none border">#{{ tag }}</a>
+                    <a href="/blog/#{{ tag | slugify }}" class="badge rounded-pill text-bg-secondary text-decoration-none me-1 fw-normal">#{{ tag }}</a>
 
                     {% endfor %}
                 </div>

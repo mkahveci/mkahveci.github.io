@@ -25,7 +25,7 @@ NOTE: This include assumes the following variables are passed by the parent loop
                 {% if include.pub.type %}
                 {% assign pub_type = include.pub.type | downcase %}
                 {% case pub_type %}{% when "article" %}{% assign badge_class = "text-bg-success" %}{% when "inproceedings", "conference" %}{% assign badge_class = "text-bg-info" %}{% when "book", "inbook" %}{% assign badge_class = "text-bg-warning" %}{% else %}{% assign badge_class = "text-bg-secondary" %}{% endcase %}
-                <span class="badge {{ badge_class }} text-white d-block mx-auto mb-2" style="max-width: fit-content;">{{ pub_type | capitalize }}</span>
+                <span class="badge {{ badge_class }} d-block mx-auto mb-2" style="max-width: fit-content;">{{ pub_type | capitalize }}</span>
                 {% endif %}
 
                 {% comment %} Title Block {% endcomment %}
@@ -42,7 +42,7 @@ NOTE: This include assumes the following variables are passed by the parent loop
                         {% comment %} Abstract Button {% endcomment %}
                         {% assign modal_id = include.pub.id | append: "-abstract-modal" %}
                         {% if include.pub.abstract | strip | size > 0 %}
-                        <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#{{ modal_id }}">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#{{ modal_id }}">
                             <i class="fas fa-file-alt me-1"></i> Abstract
                         </button>
                         {% endif %}
@@ -56,7 +56,7 @@ NOTE: This include assumes the following variables are passed by the parent loop
 
                         {% comment %} PDF {% endcomment %}
                         {% if include.pub.pdf | strip | size > 0 %}
-                        <a href="{{ include.pub.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
+                        <a href="{{ include.pub.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
                             <i class="fas fa-file-pdf me-1"></i> PDF
                         </a>
                         {% endif %}

@@ -94,14 +94,3 @@ permalink: /publications/
         filterPublications('all');
     });
 </script>
-
-
-<!--
-### Key Implementation Details
-
-1.  **Dynamic Options:** The Liquid code `{% assign pub_types = sorted_publications | map: 'type' | uniq | sort %}` ensures the dropdown only contains publication types actually present in your `_data/publications.yml`, and they are listed alphabetically.
-2.  **Card Identification:** Each publication card is wrapped in a `div class="col pub-card-wrapper..."` and is given a unique class based on its type: `pub-type-{{ publication.type | slugify }}`.
-3.  **JavaScript Filtering:** The native JavaScript uses the `selectedType` from the dropdown to check if the card has the matching class (`card.classList.contains(...)`).
-4.  **Default State:** The script automatically calls `filterPublications('all');` on page load, guaranteeing that all publications are visible by default, as requested.
-
-This solution provides the clear, filtered view readers expect on a static site.-->

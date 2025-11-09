@@ -4,6 +4,10 @@ layout: default
 
 <div class="container my-5">
 
+    {% comment %}
+    NOTE: Assuming breadcrumb-github-projects.html is meant to be a general breadcrumb include.
+    It is included as is.
+    {% endcomment %}
     {% include breadcrumb-github-projects.html
     collection_url = "/courses/"
     collection_name = "Courses"
@@ -14,7 +18,7 @@ layout: default
 
         <div class="col-lg-8">
             {% comment %} --- HEADER SECTION --- {% endcomment %}
-            <header class="p-4 mb-4 bg-light rounded-3 shadow-sm">
+            <header class="p-4 mb-4 bg-tertiary-subtle rounded-3 shadow-sm">
                 <div class="course-header">
                     <h3 class="h4 text-muted mb-1 fw-medium">{{ page.code }}</h3>
                     <h1 class="display-6 fw-bold mb-0">{{ page.title }}</h1>
@@ -59,7 +63,7 @@ layout: default
             {% endfor %}
 
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h3 class="mb-0 text-dark">Unit Content & Activities 📝</h3>
+                <h3 class="mb-0 text-body">Unit Content & Activities 📝</h3>
 
                 {% comment %} --- NEW DROPDOWN SELECTOR --- {% endcomment %}
                 <div class="unit-filter-container">
@@ -86,7 +90,7 @@ layout: default
 
                     {% for lesson in unit.lessons %}
                     <div class="card shadow-sm mb-4 border-0">
-                        <div class="card-header bg-light border-bottom-0">
+                        <div class="card-header bg-tertiary-subtle border-bottom-0">
                             <h6 class="mb-0 fw-bold">{{ lesson.title }}</h6>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -152,7 +156,7 @@ layout: default
                                         <i class="{{ res_icon }} fa-2x text-primary"></i>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h6 class="mb-0 text-dark fw-semibold">{{ activity.title }}</h6>
+                                        <h6 class="mb-0 text-body fw-semibold">{{ activity.title }}</h6>
                                         <small class="text-muted">{{ activity.type | capitalize }}</small>
                                     </div>
 
@@ -196,13 +200,13 @@ layout: default
                             {% if page.instructor %}
                             <p class="d-flex justify-content-between align-items-center mb-2">
                                 <strong class="text-primary">Instructor</strong>
-                                <a href="{{ page.instructorurl | relative_url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-end">{{ page.instructor }}</a>
+                                <a href="{{ page.instructorurl | relative_url }}" target="_blank" rel="noopener noreferrer" class="text-body text-end">{{ page.instructor }}</a>
                             </p>
                             {% endif %}
                             {% if page.institution %}
                             <p class="d-flex justify-content-between align-items-center mb-2">
                                 <strong class="text-primary">Institution</strong>
-                                <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer" class="text-dark text-end">{{ page.institution }}</a>
+                                <a href="{{ page.insturl }}" target="_blank" rel="noopener noreferrer" class="text-body text-end">{{ page.institution }}</a>
                             </p>
                             {% endif %}
                             {% if page.semester %}

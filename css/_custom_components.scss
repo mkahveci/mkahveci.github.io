@@ -1,374 +1,439 @@
 // _custom_components.scss
 
-// Define a palette of dull pastel colors for various callout types.
+// Define SASS variables (used to set the CSS variables)
 $pastel-primary: #a1b8c3; // Soft Blue-Gray
 $pastel-success: #a0c497; // Soft Sage Green
 $pastel-warning: #e0b686; // Soft Muted Gold
 $pastel-info: #a3c4f3;    // Soft Light Blue
 $pastel-danger: #e09f9f;  // Soft Dusty Rose
 
-// The core mixin for all professional callouts
-@mixin callout-mk($color) {
-    // 1. Core Visuals (Consistency with site's Card Structure)
-    @extend .card;
-    @extend .shadow-sm;
-    @extend .border-0;
+/* =================================================================
+   1. THEME ENGINE: Callout Component Variables
+   ================================================================= */
+:root {
+  /* Light Mode Callouts */
+  --callout-note-bg:     #{lighten($pastel-primary, 45%)};
+  --callout-note-border: #{darken($pastel-primary, 10%)};
+  --callout-note-text:   #{darken($pastel-primary, 25%)};
+  --callout-note-link:   #{darken($pastel-primary, 35%)};
 
-    // 2. Pastel Toning and Readability
-    background-color: lighten($color, 45%);
-    border-left: 0.25rem solid darken($color, 10%);
-    color: darken($color, 25%); // Default text color is dark
+  --callout-tip-bg:     #{lighten($pastel-success, 45%)};
+  --callout-tip-border: #{darken($pastel-success, 10%)};
+  --callout-tip-text:   #{darken($pastel-success, 25%)};
+  --callout-tip-link:   #{darken($pastel-success, 35%)};
+
+  --callout-warning-bg:     #{lighten($pastel-warning, 35%)};
+  --callout-warning-border: #{darken($pastel-warning, 10%)};
+  --callout-warning-text:   #{darken($pastel-warning, 25%)};
+  --callout-warning-link:   #{darken($pastel-warning, 35%)};
+
+  --callout-info-bg:     #{lighten($pastel-info, 30%)};
+  --callout-info-border: #{darken($pastel-info, 10%)};
+  --callout-info-text:   #{darken($pastel-info, 25%)};
+  --callout-info-link:   #{darken($pastel-info, 35%)};
+
+  --callout-alert-bg:     #{lighten($pastel-danger, 30%)};
+  --callout-alert-border: #{darken($pastel-danger, 10%)};
+  --callout-alert-text:   #{darken($pastel-danger, 25%)};
+  --callout-alert-link:   #{darken($pastel-danger, 35%)};
+}
+
+[data-bs-theme="dark"] {
+  /* Dark Mode Callouts - Inverted Logic */
+  --callout-note-bg:     #{darken($pastel-primary, 35%)};
+  --callout-note-border: #{lighten($pastel-primary, 10%)};
+  --callout-note-text:   #{lighten($pastel-primary, 40%)};
+  --callout-note-link:   #{lighten($pastel-primary, 45%)};
+
+  --callout-tip-bg:     #{darken($pastel-success, 35%)};
+  --callout-tip-border: #{lighten($pastel-success, 10%)};
+  --callout-tip-text:   #{lighten($pastel-success, 40%)};
+  --callout-tip-link:   #{lighten($pastel-success, 45%)};
+
+  --callout-warning-bg:     #{darken($pastel-warning, 35%)};
+  --callout-warning-border: #{lighten($pastel-warning, 10%)};
+  --callout-warning-text:   #{lighten($pastel-warning, 40%)};
+  --callout-warning-link:   #{lighten($pastel-warning, 45%)};
+
+  --callout-info-bg:     #{darken($pastel-info, 35%)};
+  --callout-info-border: #{lighten($pastel-info, 10%)};
+  --callout-info-text:   #{lighten($pastel-info, 40%)};
+  --callout-info-link:   #{lighten($pastel-info, 45%)};
+
+  --callout-alert-bg:     #{darken($pastel-danger, 35%)};
+  --callout-alert-border: #{lighten($pastel-danger, 10%)};
+  --callout-alert-text:   #{lighten($pastel-danger, 40%)};
+  --callout-alert-link:   #{lighten($pastel-danger, 45%)};
+}
+
+/* =================================================================
+   2. REFACTORED CALLOUT MIXIN & CLASSES
+   ================================================================= */
+@mixin callout-mk($bg-var, $border-var, $text-var, $link-var) {
+
+    // Core Visuals (Replicating Bootstrap's Card Structure)
+    // from .card
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--bs-card-border-radius);
+
+    // from .shadow-sm
+    box-shadow: var(--bs-box-shadow-sm) !important;
+
+    // from .border-0
+    border: 0 !important;
+
+    // CSS Variable Toning and Readability
+    background-color: var($bg-var);
+    border-left: 0.25rem solid var($border-var);
+    color: var($text-var);
     padding: 1rem 1.5rem;
     margin-bottom: 1.5rem;
 
-    // Ensure the content inside is readable against the light background
+    // Ensure the content inside is readable
     h5, h6, p, small {
-        color: inherit; // Inherit the darkened text color
+        color: inherit;
     }
 
-    // 3. ✨ Crucial Fix: High-Contrast Links and Buttons
-    // This ensures URLs are readable against the light background,
-    // especially on hover or when they inherit a light color.
+    // High-Contrast Links and Buttons
     a {
-        color: darken($color, 35%); // A darker, high-contrast link color
+        color: var($link-var);
+        font-weight: 600;
 
         &:hover,
         &:focus {
-            // Further darken the link on hover for better visibility
-            color: darken($color, 45%);
+            filter: brightness(85%);
         }
     }
-
-    // Overrides for Bootstrap Buttons within the callout
-    .btn-primary {
-        // Keeps the primary button style standard, but ensures
-        // the text remains highly visible if the button background is light.
-        // NOTE: Standard Bootstrap buttons should already have white text,
-        // but this ensures consistency if custom buttons are used.
-        color: #fff;
-    }
 }
 
-// Custom Callout Classes (Use the mixin)
+// Custom Callout Classes (Use the refactored mixin)
 .callout-mk-note {
-    @include callout-mk($pastel-primary);
+    @include callout-mk(--callout-note-bg, --callout-note-border, --callout-note-text, --callout-note-link);
 }
-
 .callout-mk-tip {
-    @include callout-mk($pastel-success);
+    @include callout-mk(--callout-tip-bg, --callout-tip-border, --callout-tip-text, --callout-tip-link);
 }
-
 .callout-mk-warning {
-    @include callout-mk($pastel-warning);
+    @include callout-mk(--callout-warning-bg, --callout-warning-border, --callout-warning-text, --callout-warning-link);
 }
-
 .callout-mk-info {
-    @include callout-mk($pastel-info);
+    @include callout-mk(--callout-info-bg, --callout-info-border, --callout-info-text, --callout-info-link);
 }
-
 .callout-mk-alert {
-    @include callout-mk($pastel-danger);
+    @include callout-mk(--callout-alert-bg, --callout-alert-border, --callout-alert-text, --callout-alert-link);
 }
 
-/* --- NEW STYLES FOR PROGRESSION --- */
-  .progression-timeline {
-    border-left: 2px solid #ccc;
-    padding-left: 1rem;
-    position: relative;
-    margin-top: 1rem;
-  }
-  .progression-step {
-    margin-bottom: 1.5rem;
-    position: relative;
-  }
-  .progression-step::before {
-    content: '';
-    position: absolute;
-    left: -1.05rem; /* Align with the timeline bar */
-    top: 0.2rem;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #007bff; /* Default OPEN */
-    border: 3px solid #fff;
-  }
-  .step-open::before {
-    background-color: #007bff; /* Blue for Open */
-  }
-  .step-adjustment::before {
-    background-color: #ffc107; /* Yellow for Adjustment */
-  }
-  .step-close::before {
-    background-color: #28a745; /* Green for Close */
-  }
-  .progression-date {
-    font-size: 0.75rem;
-    color: #6c757d;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
+/* =================================================================
+   3. REFACTORED PROGRESSION & TRADE COMPONENTS
+   ================================================================= */
 
-  /* --- NEW & IMPROVED PROGRESSION STYLES --- */
-  .trade-progression-container {
-    margin-top: 1.5rem;
-  }
+/* --- Base Progression Styles (Theme-Aware) --- */
+.trade-progression-container {
+  margin-top: 1.5rem;
+}
 
-  .progression-timeline {
-    position: relative;
-    padding-left: 30px; /* Space for the line and dots */
-    list-style: none; /* Remove default list-style */
-    margin-top: 1rem;
-  }
+.progression-timeline {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+  margin-top: 1rem;
+}
 
-  .progression-timeline::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 10px;
-    width: 2px;
-    background-color: #e9ecef; /* Light grey timeline */
-    z-index: 0;
-  }
+.progression-timeline::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 10px;
+  width: 2px;
+  background-color: var(--bs-border-color-translucent); // Use BS var
+  z-index: 0;
+}
 
-  .progression-step {
-    position: relative;
-    margin-bottom: 1.25rem;
-    padding: 0.75rem 1rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.375rem;
-  }
+.progression-step {
+  position: relative;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bs-card-bg); // Use BS var
+  border: 1px solid var(--bs-border-color); // Use BS var
+  border-radius: 0.375rem;
+}
 
-  /* The dot on the timeline */
-  .progression-step::before {
-    content: '';
-    position: absolute;
-    left: -24px; /* (30px padding - (16px width / 2) - 2px border) */
-    top: 12px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 3px solid #007bff; /* Default OPEN */
-    z-index: 1;
-  }
+/* The dot on the timeline */
+.progression-step::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--bs-body-bg); // Use BS var
+  border: 3px solid var(--bs-primary); // Default
+  z-index: 1;
+}
 
-  .step-open::before   { border-color: #0d6efd; } /* Blue */
-  .step-adjustment::before { border-color: #ffc107; } /* Yellow */
-  .step-close::before  { border-color: #198754; } /* Green */
+/* Timeline dot colors */
+.step-open::before        { border-color: var(--bs-primary); }
+.step-adjustment::before  { border-color: var(--bs-warning); }
+.step-close::before       { border-color: var(--bs-success); }
 
-  .progression-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
+.progression-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 
-  .progression-date {
-    font-size: 0.8rem;
-    color: #6c757d;
-    font-weight: 500;
-  }
+.progression-date {
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color); // Use BS var
+  font-weight: 500;
+}
 
-  /* The new professional "tags" */
-  .progression-tag {
-    display: inline-block;
-    padding: 0.25em 0.6em;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.375rem;
-  }
+.progression-details p {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--bs-body-color); // Use BS var
+}
 
-  .tag-open {
-    color: #052c65;
-    background-color: #cfe2ff;
-    border: 1px solid #b6d4fe;
-  }
-
-  .tag-adjustment {
-    color: #664d03;
-    background-color: #fff3cd;
-    border: 1px solid #ffecb5;
-  }
-
-  .tag-close {
-    color: #0a3622;
-    background-color: #d1e7dd;
-    border: 1px solid #c3e6cb;
-  }
-
-  .progression-details p {
-    margin-bottom: 0.25rem;
-    font-size: 0.9rem;
-  }
-
-  .progression-details .profit-loss {
-    font-weight: bold;
-    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  }
+.progression-details .profit-loss {
+  font-weight: bold;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
 
 .leg-details {
-    margin-top: 0.5rem;
-    padding-left: 0.5rem;
-    border-left: 2px solid #007bff;
-  }
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--bs-primary); // Use BS var
+}
 
-  /* --- NEW STATUS PILL STYLES --- */
-  .trade-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
+/* --- Base Tag/Pill Styling --- */
+.progression-tag,
+.status-pill {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+}
 
-  .status-pill {
-    display: inline-block;
-    padding: 0.3em 0.75em;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 50rem; /* pill shape */
-    text-transform: uppercase;
-    flex-shrink: 0; /* Don't let it wrap */
-  }
+.status-pill {
+  border-radius: 50rem; /* pill shape */
+  text-transform: uppercase;
+  flex-shrink: 0; /* Don't let it wrap */
+}
 
-  .status-open {
-    color: #0a3622;
-    background-color: #d1e7dd;
-    border: 1px solid #c3e6cb;
-  }
+/* --- Theme-Aware Color Tags (Progression) --- */
+.tag-open {
+  color: var(--bs-primary-emphasis);
+  background-color: var(--bs-primary-subtle);
+  border: 1px solid var(--bs-primary-border-subtle);
+}
+.tag-adjustment {
+  color: var(--bs-warning-emphasis);
+  background-color: var(--bs-warning-subtle);
+  border: 1px solid var(--bs-warning-border-subtle);
+}
+.tag-close {
+  color: var(--bs-success-emphasis);
+  background-color: var(--bs-success-subtle);
+  border: 1px solid var(--bs-success-border-subtle);
+}
 
-  .status-closed {
-    color: #495057;
-    background-color: #e9ecef;
-    border: 1px solid #dee2e6;
-  }
+/* --- Theme-Aware Color Tags (Status) --- */
+.status-open {
+  color: var(--bs-success-emphasis);
+  background-color: var(--bs-success-subtle);
+  border: 1px solid var(--bs-success-border-subtle);
+}
+.status-closed {
+  color: var(--bs-secondary-emphasis);
+  background-color: var(--bs-secondary-subtle);
+  border: 1px solid var(--bs-secondary-border-subtle);
+}
+
+/* --- Theme-Aware Color Tags (Execution Steps) --- */
+.tag-assignment {
+  color: var(--bs-warning-emphasis);
+  background-color: var(--bs-warning-subtle);
+  border: 1px solid var(--bs-warning-border-subtle);
+}
+.tag-wheel_step-sell_covered_call {
+  color: var(--bs-success-emphasis);
+  background-color: var(--bs-success-subtle);
+  border: 1px solid var(--bs-success-border-subtle);
+}
+.tag-called_away {
+  color: var(--bs-danger-emphasis);
+  background-color: var(--bs-danger-subtle);
+  border: 1px solid var(--bs-danger-border-subtle);
+}
+.tag-open_short_put,
+.tag-closed_independent_put {
+  color: var(--bs-primary-emphasis);
+  background-color: var(--bs-primary-subtle);
+  border: 1px solid var(--bs-primary-border-subtle);
+}
+
+/* --- Theme-Aware Account Pills --- */
+.status-pill.account-margin {
+  color: var(--bs-primary-emphasis);
+  background-color: var(--bs-primary-subtle);
+  border: 1px solid var(--bs-primary-border-subtle);
+}
+.status-pill.account-ira {
+  color: var(--bs-success-emphasis);
+  background-color: var(--bs-success-subtle);
+  border: 1px solid var(--bs-success-border-subtle);
+}
+.status-pill.account-paper {
+  color: var(--bs-warning-emphasis);
+  background-color: var(--bs-warning-subtle);
+  border: 1px solid var(--bs-warning-border-subtle);
+}
+
+
+/* --- Theme-Aware Estimated Scenario --- */
+.progression-step.estimated-scenario {
+  background-color: var(--bs-info-subtle);
+  border: 1px dashed var(--bs-info-border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.estimated-scenario .progression-tag {
+  color: var(--bs-light);
+  background-color: var(--bs-info-emphasis);
+  border: none;
+}
+
+
+/* --- Theme-Aware Grids (Legs & Metrics) --- */
+.trade-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.leg-grid,
+.metrics-grid {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
 
 .leg-grid {
-    display: grid;
-    /* This will create a 2 or 4 col grid based on available space */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 0.5rem;
-    margin-top: 0.75rem;
-  }
-  .leg-item {
-    padding: 0.25rem 0.5rem;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    border: 1px solid #e9ecef;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  .leg-item strong {
-    display: block;
-    color: #6c757d;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-  }
-  .leg-item span {
-    font-size: 0.9rem;
-    font-weight: bold;
-    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  }
-
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
 .metrics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.5rem;
-    font-size: 0.8rem;
-  }
-  .metric-item {
-    padding: 0.25rem 0.5rem;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    border: 1px solid #e9ecef;
-  }
-  .metric-item strong {
-    display: block;
-    color: #6c757d;
-    font-size: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  font-size: 0.8rem;
+}
+
+.leg-item,
+.metric-item {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--bs-tertiary-bg); // Use BS var
+  border-radius: 0.25rem;
+  border: 1px solid var(--bs-border-color-translucent); // Use BS var
+}
+
+.leg-item {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.metric-item {
+  font-size: 0.8rem;
+}
+
+.leg-item strong,
+.metric-item strong {
+  display: block;
+  color: var(--bs-secondary-color); // Use BS var
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.leg-item span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  color: var(--bs-body-color); // Use BS var
+}
+
+/* --- Legacy Timeline (Cleaned & Themed) --- */
+.progression-timeline-legacy {
+  border-left: 2px solid var(--bs-border-color); // Use BS var
+  padding-left: 1rem;
+  position: relative;
+  margin-top: 1rem;
+}
+.progression-step-legacy {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.progression-step-legacy::before {
+  content: '';
+  position: absolute;
+  left: -1.05rem;
+  top: 0.2rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--bs-primary); // Default
+  border: 3px solid var(--bs-body-bg); // Use BS var
+}
+.step-open-legacy::before {
+  background-color: var(--bs-primary);
+}
+.step-adjustment-legacy::before {
+  background-color: var(--bs-warning);
+}
+.step-close-legacy::before {
+  background-color: var(--bs-success);
+}
+
+.progression-date-legacy {
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color); // Use BS var
+  display: block;
+  margin-bottom: 0.25rem;
+} // <-- THIS IS THE BRACE THAT WAS LIKELY MISSING
+
+/* =================================================================
+   4. ICON-ONLY CIRCLE BUTTON (for Social Links)
+   ================================================================= */
+.btn-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;  /* 44px */
+  height: 2.75rem; /* 44px */
+  border-radius: 50%;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color-translucent);
+  color: var(--bs-secondary-color); /* Icon color */
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  /* Target both Font Awesome and SVGs */
+  i, .icon, svg {
+    font-size: 1.2rem;
+    color: inherit; /* Inherit the text-secondary color */
   }
 
-  /* --- New Status Pill Styling --- */
-  .progression-tag {
-      /* Base pill styling */
-      display: inline-block;
-      padding: 0.25em 0.6em;
-      font-size: 0.75rem;
-      font-weight: 700;
-      line-height: 1;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.35rem;
-      color: #333; /* Darker text for pastel backgrounds */
-      margin-right: 0.5rem;
+  &:hover {
+    color: var(--bs-body-color); /* Icon brightens on hover */
+    border-color: var(--bs-border-color);
+    box-shadow: var(--bs-box-shadow-sm);
   }
-
-  /* Pastel Colors for Executed Steps */
-  .tag-assignment {
-      background-color: #FFF8E1; /* Light Pastel Yellow */
-      border: 1px solid #FFE0B2;
-  }
-  .tag-wheel_step-sell_covered_call {
-      background-color: #E8F5E9; /* Light Pastel Green */
-      border: 1px solid #C8E6C9;
-  }
-  .tag-called_away {
-      background-color: #FCE4EC; /* Light Pastel Pink */
-      border: 1px solid #F8BBD0;
-  }
-  .tag-open_short_put, .tag-close, .tag-closed_independent_put, .tag-adjustment {
-      background-color: #E3F2FD; /* Light Pastel Blue for generic steps */
-      border: 1px solid #90CAF9;
-  }
-
-  /* --- Estimated Scenario Styling --- */
-  .progression-step.estimated-scenario {
-      /* Distinct background and border for the LI element */
-      background-color: #F3E5F5; /* Light Pastel Violet */
-      border: 1px dashed #CE93D8;
-      border-radius: 0.5rem;
-      padding: 0.75rem;
-      margin-bottom: 0.5rem;
-      list-style: none; /* Remove timeline bullet for this step */
-  }
-  .estimated-scenario .progression-tag {
-      background-color: #CE93D8; /* Slightly darker violet pill */
-      color: #fff;
-      border: none;
-  }
-
-  /*
-  =================================
-  --- Account Type Pills ---
-  =================================
-  */
-
-  /* Uses .status-pill for base styling (padding, font-size, border-radius) */
-
-  .status-pill.account-margin {
-    background-color: #e0f0ff; /* Pastel Blue */
-    color: #0056b3;
-    border: 1px solid #b3d7ff;
-  }
-
-  .status-pill.account-ira {
-    background-color: #e6f7ec; /* Pastel Green */
-    color: #0a6b3d;
-    border: 1px solid #b3e6c8;
-  }
-
-  .status-pill.account-paper {
-    background-color: #fff8e1; /* Pastel Yellow */
-    color: #856404;
-    border: 1px solid #ffecb3;
-  }
+}

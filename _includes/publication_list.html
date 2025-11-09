@@ -1,17 +1,34 @@
-<div class="row">
+{% comment %}
+This file has been refactored to use the standard, theme-aware
+Bootstrap 5 card structure, matching the homepage design.
+{% endcomment %}
+
+{% comment %}
+NOTE: The parent file should have a row with column and gutter classes,
+e.g., <div class="row row-cols-1 row-cols-lg-3 g-4">
+    {% endcomment %}
+
     {% for paper in include.publications %}
-    <div class="col-lg-4 paperbox">
-        <div class="media">
-            <div class="media-body">
-                <div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-                <p class="note">{{ paper.authors 1  }} ({{ paper.year }}). {{ paper.publisher }}</p>
+    <div class="col">
+        <div class="card shadow-sm h-100 border-0">
+            <div class="card-body p-3 d-flex align-items-start">
+
+                <div class="flex-grow-1">
+                    <h6 class="mb-1 fw-medium">
+                        <a href="{{ paper.url }}" class="text-body text-decoration-none">{{ paper.title }}</a>
+                    </h6>
+                    <small class="text-muted d-block line-height-1-2">
+                        {{ paper.authors | first }} ({{ paper.year }}). {{ paper.publisher }}
+                    </small>
+                </div>
+
+                <div class="flex-shrink-0 ms-3">
+                    <a href="{{ paper.url }}">
+                        <img class="rounded-circle shadow-sm" src="{{ paper.image }}" style="width:75px; height:75px; object-fit: cover;">
+                    </a>
+                </div>
+
             </div>
-            <a href="{{ paper.url }}">
-                <img class="ml-3 rounded-circle border shadow" class="media-object" src="{{ paper.image }}" style="width:75px;height:auto;">
-            </a>
         </div>
-        <div class="bigspacer"></div>
-        <div class="spacer"></div>
     </div>
     {% endfor %}
-</div>

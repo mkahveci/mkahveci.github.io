@@ -62,29 +62,29 @@ layout: default
                 <h6 class="mb-3 fw-semibold">Contact & Links</h6>
                 <div class="small">
                     {% if page.cv %}
-                    <p class="mb-1"><a href="{{ page.cv | relative_url }}" class="text-dark text-decoration-none"><i class="fas fa-file-alt fa-fw me-2 text-primary"></i>View CV</a></p>
+                    <p class="mb-1"><a href="{{ page.cv | relative_url }}" class="text-body text-decoration-none"><i class="fas fa-file-alt fa-fw me-2 text-primary"></i>View CV</a></p>
                     {% endif %}
                     {% if page.email %}
                     {% assign emailarray = page.email | split: '@' %}
-                    <p class="mb-1"><a href="mailto:{{ page.email }}" class="text-dark text-decoration-none"><i class="fas fa-envelope fa-fw me-2 text-primary"></i>{{ emailarray.first }}@...</a></p>
+                    <p class="mb-1"><a href="mailto:{{ page.email }}" class="text-body text-decoration-none"><i class="fas fa-envelope fa-fw me-2 text-primary"></i>{{ emailarray.first }}@...</a></p>
                     {% endif %}
                     {% if page.website %}
-                    <p class="mb-1"><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-globe fa-fw me-2 text-primary"></i>Personal Website</a></p>
+                    <p class="mb-1"><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fas fa-globe fa-fw me-2 text-primary"></i>Personal Website</a></p>
                     {% endif %}
                     {% if page.googlescholar %}
-                    <p class="mb-1"><a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-book fa-fw me-2 text-primary"></i>Google Scholar</a></p>
+                    <p class="mb-1"><a href="http://scholar.google.com/citations?user={{ page.googlescholar }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fas fa-book fa-fw me-2 text-primary"></i>Google Scholar</a></p>
                     {% endif %}
                     {% if page.linkedin %}
-                    <p class="mb-1"><a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-linkedin fa-fw me-2 text-primary"></i>LinkedIn</a></p>
+                    <p class="mb-1"><a href="https.www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fab fa-linkedin fa-fw me-2 text-primary"></i>LinkedIn</a></p>
                     {% endif %}
                     {% if page.github %}
-                    <p class="mb-1"><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-github-alt fa-fw me-2 text-primary"></i>GitHub</a></p>
+                    <p class="mb-1"><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fab fa-github-alt fa-fw me-2 text-primary"></i>GitHub</a></p>
                     {% endif %}
                     {% if page.twitter %}
-                    <p class="mb-1"><a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fab fa-twitter fa-fw me-2 text-primary"></i>Twitter</a></p>
+                    <p class="mb-1"><a href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fab fa-twitter fa-fw me-2 text-primary"></i>Twitter</a></p>
                     {% endif %}
                     {% if page.calendar %}
-                    <p class="mb-1"><a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-calendar-alt fa-fw me-2 text-primary"></i>Schedule a Meeting</a></p>
+                    <p class="mb-1"><a href="{{ page.calendar }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fas fa-calendar-alt fa-fw me-2 text-primary"></i>Schedule a Meeting</a></p>
                     {% endif %}
                 </div>
                 {% endif %}
@@ -93,11 +93,11 @@ layout: default
                 <hr class="my-3">
                 <h6 class="mb-3 fw-semibold">Discover More</h6>
                 <div class="small">
-                    <p class="mb-1"><a href="/about" class="text-dark text-decoration-none"><i class="fas fa-info-circle fa-fw me-2 text-primary"></i>About</a></p>
-                    <p class="mb-1"><a href="/courses" class="text-dark text-decoration-none"><i class="fas fa-graduation-cap fa-fw me-2 text-primary"></i>Courses</a></p>
-                    <p class="mb-1"><a href="/reference" class="text-dark text-decoration-none"><i class="fas fa-file-signature fa-fw me-2 text-primary"></i>Request a Letter</a></p>
-                    <p class="mb-1"><a href="/contact" class="text-dark text-decoration-none"><i class="fas fa-address-book fa-fw me-2 text-primary"></i>Contact</a></p>
-                    <p class="mb-1"><a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none"><i class="fas fa-external-link-alt fa-fw me-2 text-primary"></i>iLearnChem.icu</a></p>
+                    <p class="mb-1"><a href="/about" class="text-body text-decoration-none"><i class="fas fa-info-circle fa-fw me-2 text-primary"></i>About</a></p>
+                    <p class="mb-1"><a href="/courses" class="text-body text-decoration-none"><i class="fas fa-graduation-cap fa-fw me-2 text-primary"></i>Courses</a></p>
+                    <p class="mb-1"><a href="/reference" class="text-body text-decoration-none"><i class="fas fa-file-signature fa-fw me-2 text-primary"></i>Request a Letter</a></p>
+                    <p class="mb-1"><a href="/contact" class="text-body text-decoration-none"><i class="fas fa-address-book fa-fw me-2 text-primary"></i>Contact</a></p>
+                    <p class="mb-1"><a href="https://kahveci.icu" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none"><i class="fas fa-external-link-alt fa-fw me-2 text-primary"></i>iLearnChem.icu</a></p>
                 </div>
                 {% endif %}
             </div>

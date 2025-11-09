@@ -1,10 +1,27 @@
 ---
+# This empty front matter is required for Jekyll to process the file
 ---
+
+// 1. Your custom component styles (like _blog.scss)
 @import "blog";
-@import "bootstrap/bootstrap";
+
+// 2. Font Awesome setup
 $fa-font-path: "font";
 @import "font-awesome/font-awesome";
+
+// 3. KaTeX (which we confirmed is theme-aware)
 @import "katex";
-@import "solarized";
+
+// 4. Your theme-aware custom styles
+//    These files contain all your :root and [data-bs-theme="dark"] rules
 @import "custom";
-@import "custom_components.scss";
+@import "custom_components";
+
+// 5. Syntax Highlighting
+// 5a. Import the LIGHT theme by default.
+@import "solarized-light";
+
+// 5b. Conditionally import the DARK theme only when dark mode is active.
+[data-bs-theme="dark"] {
+  @import "solarized-dark";
+}

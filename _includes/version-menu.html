@@ -1,18 +1,15 @@
-<ul class="menu">
-  <li>
-    {% if page.url == "/version" %}
-      <a class="button button--outline-primary button--pill active" href="/version">
-    {% else %}
-      <a class="button button--outline-primary button--pill" href="/version">
-    {% endif %}
-    Version History</a>
-  </li>
-<li>
-    {% if page.url == "/help" %}
-    <a class="button button--outline-primary button--pill active" href="/help">
-    {% else %}
-    <a class="button button--outline-primary button--pill" href="/help">
-    {% endif %}
-    Help</a>
-</li>
+<ul class="nav nav-pills mb-4">
+
+    <li class="nav-item me-2 mb-2">
+        <a class="nav-link {% if page.url == "/version" %}active{% endif %}" href="/version">
+        Version History
+        </a>
+    </li>
+
+    <li class="nav-item me-2 mb-2">
+        <a class="nav-link {% if page.url == "/help" %}active{% endif %}" href="/help">
+        Help
+        </a>
+    </li>
+
 </ul>

@@ -63,7 +63,7 @@ permalink: /news/
                             {% endif %}
 
                             <h5 class="card-title fw-semibold mb-0 me-2">{{ item.title }}</h5>
-                            <span class="badge {{ type_class }} text-white flex-shrink-0">{{ item.type }}</span>
+                            <span class="badge {{ type_class }} flex-shrink-0">{{ item.type }}</span>
                         </div>
 
                         <p class="small text-muted mb-2">
@@ -75,8 +75,7 @@ permalink: /news/
                         <div class="mt-2 d-flex flex-wrap align-items-center" style="gap: 0.5rem;">
 
                             {% comment %} --- DEADLINE TAG (UPCOMING - GREEN) --- {% endcomment %}
-                            <span class="badge bg-success text-white">
-                                Deadline: {{ item.deadline | date: "%B %d" }}
+                            <span class="badge bg-success"> Deadline: {{ item.deadline | date: "%B %d" }}
                             </span>
 
                             {% comment %} --- PRIMARY ACTION BUTTON --- {% endcomment %}
@@ -118,7 +117,7 @@ permalink: /news/
         {% for item in sorted_past %}
 
         <div class="col">
-            <div class="card shadow-sm h-100 border-0 bg-light">
+            <div class="card shadow-sm h-100 border-0 bg-tertiary-subtle">
                 <div class="card-body d-flex p-3">
 
                     {% comment %} --- DATE/DEADLINE BLOCK (RED for past) --- {% endcomment %}
@@ -138,7 +137,7 @@ permalink: /news/
                             {% endif %}
 
                             <h5 class="card-title fw-semibold mb-0 me-2 text-muted">{{ item.title }}</h5>
-                            <span class="badge {{ type_class }} text-white flex-shrink-0 opacity-75">{{ item.type }}</span>
+                            <span class="badge {{ type_class }} flex-shrink-0 opacity-75">{{ item.type }}</span>
                         </div>
 
                         <p class="small text-muted mb-2">
@@ -150,12 +149,11 @@ permalink: /news/
                         <div class="mt-2 d-flex flex-wrap align-items-center" style="gap: 0.5rem;">
 
                             {% comment %} --- DEADLINE TAG (PAST - RED) --- {% endcomment %}
-                            <span class="badge bg-danger text-white">
-                                Passed: {{ item.deadline | date: "%B %d" }}
+                            <span class="badge bg-danger"> Passed: {{ item.deadline | date: "%B %d" }}
                             </span>
 
                             {% comment %} --- LINK BUTTON (Disabled) --- {% endcomment %}
-                            <span class="btn btn-sm btn-outline-dark disabled">
+                            <span class="btn btn-sm btn-outline-secondary disabled">
                                 <i class="fas fa-arrow-up-right-from-square me-1"></i> Details (Closed)
                             </span>
 

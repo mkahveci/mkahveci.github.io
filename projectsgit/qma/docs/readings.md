@@ -27,13 +27,13 @@ permalink: /projectsgit/qma/docs/readings/
                             </div>
                             
                             <div>
-                                <h5 class="card-title fw-bold text-dark">{{ reading.title }}</h5>
+                                <h5 class="card-title fw-bold text-body">{{ reading.title }}</h5>
                                 <p class="card-text small text-muted mb-2">{{ reading.excerpt }}</p>
                                 
                                 <footer class="mt-2 border-top pt-2">
                                     <small class="text-secondary d-block">
                                         <i class="fas fa-calendar-alt me-1"></i> {{ reading.date | date: "%Y-%m-%d" }} 
-                                        <span class="ms-3"><i class="fas fa-user me-1"></i> {{ reading.author }}</span>
+                                        <span class="ms-3"><i class="fas fa-user me-1"></i> <a href="#" class="text-body">{{ reading.author }}</a></span>
                                     </small>
                                 </footer>
                             </div>

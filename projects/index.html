@@ -60,14 +60,14 @@ permalink: /projects/
 
                         <div class="d-flex align-items-center mb-1">
                             <h5 class="card-title fw-semibold mb-0 me-2">
-                                <a href="{{ project.url | relative_url }}" class="text-decoration-none">{{ project.title }}</a>
+                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-body">{{ project.title }}</a>
                             </h5>
                             {% if project_status %}
                             {% assign status_class = "text-bg-warning" %}
                             {% if project_status == "Completed" %}{% assign status_class = "text-bg-success" %}{% endif %}
                             {% if project_status == "Ongoing" %}{% assign status_class = "text-bg-info" %}{% endif %}
 
-                            <span class="badge {{ status_class }} text-white flex-shrink-0">{{ project_status }}</span>
+                            <span class="badge {{ status_class }} flex-shrink-0">{{ project_status }}</span>
                             {% endif %}
                         </div>
 

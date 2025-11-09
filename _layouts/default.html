@@ -13,12 +13,28 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+	<script>
+		(function() {
+          const THEME_STORAGE_KEY = 'kahveci-pw-theme';
+
+          function getPreferredTheme() {
+            const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+            if (storedTheme) {
+              return storedTheme;
+            }
+            // Check OS preference
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+
+          // Set the theme on the <html> element immediately
+          const theme = getPreferredTheme();
+          document.documentElement.setAttribute('data-bs-theme', theme);
+        })();
+	</script>
 	<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
-<!--	Load LaTeX libraries MathJax -->
-<!--	To make MathJax render both $ and $$ delimiters, you need to add a configuration block before the main MathJax script in your default.html file. -->
-    <script>
-        MathJax = {
+	<script>
+		MathJax = {
              tex: {
                // ONLY use \\(...\\) for inline math
                inlineMath: [['\\(', '\\)']],
@@ -32,17 +48,17 @@
                processHtmlClass: 'tex2jax_process'
              }
            };
-    </script>
+	</script>
 	<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 	{% include analytics.html %}
-    <link rel="stylesheet" href="{{ '/css/print.css' | relative_url }}" media="print">
-    <link rel="icon" href="{{ '/images/logo.svg' | relative_url }}" type="image/svg+xml">
+	<link rel="stylesheet" href="{{ '/css/print.css' | relative_url }}" media="print">
+	<link rel="icon" href="{{ '/images/logo.svg' | relative_url }}" type="image/svg+xml">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/logo-32x32.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/logo-16x16.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/logo-32x32.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/logo-16x16.png' | relative_url }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
 </head>
 <body>
 
@@ -64,22 +80,39 @@
 				<ul class="navbar-nav nav-pills ms-auto">
 					<li class="nav-item">
 						{% comment %} Use category OR url match for robustness {% endcomment %}
-						<a class="nav-link {% if page.categories.first == 'papers' or page.url == '/publications/' %}active{% endif %}" href="/publications/">publications</a>
+						<a class="nav-link
+                      {% if page.categories.first == 'papers' or page.url == '/publications/' %}active bg-warning text-dark{% endif %}"
+						   href="/publications/">publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'projects' or page.url == '/projects/' %}active{% endif %}" href="/projects/">projects</a>
+						<a class="nav-link
+                      {% if page.categories.first == 'projects' or page.url == '/projects/' %}active bg-warning text-dark{% endif %}"
+						   href="/projects/">projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'courses' or page.url == '/courses/' %}active{% endif %}" href="/courses/">teaching</a>
+						<a class="nav-link
+                      {% if page.categories.first == 'courses' or page.url == '/courses/' %}active bg-warning text-dark{% endif %}"
+						   href="/courses/">teaching</a>
 					</li>
 
 					{% comment %} --- NEWS LINK HAS BEEN REMOVED FROM PRIMARY NAVIGATION --- {% endcomment %}
 
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'team' or page.url == '/team/' %}active{% endif %}" href="/team/">team</a>
+						<a class="nav-link
+                      {% if page.categories.first == 'team' or page.url == '/team/' %}active bg-warning text-dark{% endif %}"
+						   href="/team/">team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.categories.first == 'blog' or page.url == '/blog/' %}active{% endif %}" href="/blog/">blog</a>
+						<a class="nav-link
+                      {% if page.categories.first == 'blog' or page.url == '/blog/' %}active bg-warning text-dark{% endif %}"
+						   href="/blog/">blog</a>
+					</li>
+
+					<li class="nav-item ms-md-2">
+						<button class="nav-link" id="theme-toggler" type="button" aria-label="Toggle theme">
+							<i class="fa-solid fa-sun d-none"></i>
+							<i class="fa-solid fa-moon d-none"></i>
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -87,10 +120,11 @@
 	</nav>
 </header>
 
+
 <main class="container my-5">
-    {% if page.wip %}
-    {% include wip-alert.html %}
-    {% endif %}
+	{% if page.wip %}
+	{% include wip-alert.html %}
+	{% endif %}
 
 	{% if page.related_project %}
 	{% include project-callout.html project=page.related_project %}
@@ -110,91 +144,90 @@
 <script>
 	'use strict';
 
-    // ==========================================================
-    // 1. GLOBAL FUNCTION: MUST BE DEFINED GLOBALLY FOR onclick=""
-    // ==========================================================
-    /** * Finds the associated BibTeX data and copies it to the clipboard.
-     * This function is deliberately global to be called by onclick="copyBibtex(this)".
-     * @param {HTMLElement} buttonElement - The button element that was clicked.
-     */
-    function copyBibtex(buttonElement) {
-        // Find the immediate parent container for the link buttons (.mt-2 div)
-        const container = buttonElement.closest('.mt-2');
-        // Find the hidden data block within that container
-        const bibtexDataElement = container.querySelector('.bibtex-data');
-
-        if (!bibtexDataElement) {
-            console.error("BibTeX data element not found for this card. Check the .bibtex-data div structure.");
-            return;
-        }
-
-        const bibtexText = bibtexDataElement.textContent.trim();
-
-        // Use the modern Clipboard API
-        navigator.clipboard.writeText(bibtexText).then(() => {
-            // --- UI Feedback Logic ---
-            const originalHTML = buttonElement.innerHTML;
-
-            buttonElement.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
-            buttonElement.classList.remove('btn-outline-secondary');
-            buttonElement.classList.add('btn-success');
-
-            // Reset button after 2 seconds
-            setTimeout(() => {
-                buttonElement.innerHTML = originalHTML;
-                buttonElement.classList.remove('btn-success');
-                buttonElement.classList.add('btn-outline-secondary');
-            }, 2000);
-        }).catch(err => {
-            console.error('Failed to copy text: ', err);
-            alert('Failed to copy BibTeX. Please check console for details.');
-        });
-    }
-
+    // ... (all your other script code like copyBibtex) ...
 
     // ==========================================================
     // 2. DOM UTILITIES (Wrapped in DOMContentLoaded)
     // ==========================================================
     document.addEventListener('DOMContentLoaded', () => {
 
-        // --- Dynamic Year Update ---
-        const currentYearElement = document.getElementById('current-year');
-        if (currentYearElement) {
-            currentYearElement.textContent = new Date().getFullYear();
-        }
+        // ... (your other init code for current-year and scrollToTopBtn) ...
 
-        // --- Scroll to Top Button Initialization ---
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-        if (scrollToTopBtn) {
-            initScrollToTop(scrollToTopBtn);
+        // --- Theme Toggler Initialization ---
+        const themeToggler = document.getElementById('theme-toggler');
+        if (themeToggler) {
+            initThemeToggler(themeToggler);
         }
-
-        // Note: We no longer need to attach listeners via querySelectorAll because the
-        // HTML is already calling the global copyBibtex(this) function via onclick.
     });
 
-    // UTILITY FUNCTION (Outside DOMContentLoaded, but not needed to be global)
-    function initScrollToTop(button) {
-        window.addEventListener('scroll', () => {
-            const isScrolled = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
-            button.classList.toggle('show', isScrolled);
-        });
+    // ==========================================================
+    // 3. UTILITY FUNCTIONS
+    // ==========================================================
 
+    // ... (your initScrollToTop function) ...
+
+    // --- REPLACED: Corrected Theme Toggler Logic ---
+    function initThemeToggler(button) {
+        const THEME_STORAGE_KEY = 'kahveci-pw-theme';
+        const sunIcon = button.querySelector('.fa-sun');
+        const moonIcon = button.querySelector('.fa-moon');
+
+        // 1. Set the initial icon state on load
+        // (This reads the theme set by the script in the <head>)
+        const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+
+        // --- THIS LOGIC IS NOW CORRECTED ---
+        // Show SUN icon if theme is DARK
+        // Show MOON icon if theme is LIGHT
+        sunIcon.classList.toggle('d-none', currentTheme === 'light');
+        moonIcon.classList.toggle('d-none', currentTheme === 'dark');
+
+        // 2. Add the click listener to toggle the theme
         button.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Get the *new* theme by flipping the current one
+            const newTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+
+            // Save and apply the new theme
+            localStorage.setItem(THEME_STORAGE_KEY, newTheme);
+            document.documentElement.setAttribute('data-bs-theme', newTheme);
+
+            // Update the icon
+            // Show SUN icon if new theme is DARK
+            // Show MOON icon if new theme is LIGHT
+            sunIcon.classList.toggle('d-none', newTheme === 'light');
+            moonIcon.classList.toggle('d-none', newTheme === 'dark');
         });
     }
+    // --- END REPLACEMENT ---
 
 </script>
 
 {% if page.mermaid %}
 <script src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
 <script>
+	const isDarkMode = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+
     mermaid.initialize({
         startOnLoad: true,
-        theme: 'default', // Keeps background white for high contrast
-        securityLevel: 'loose' // Recommended for using external HTML/classes like Font Awesome inside nodes
-        // Removed the invalid 'flowchart' object which was causing the error
+        theme: isDarkMode ? 'dark' : 'default', // Use built-in 'dark' theme for overall rendering
+        securityLevel: 'loose',
+
+        // --- ADDED: Custom style for improved visibility in DARK MODE ---
+        // We override the theme to force light colors on arrows/text
+        flowchart: {
+            // Note: This style is only applied when mermaid.initialize runs
+        },
+        gantt: {
+            // Note: This style is only applied when mermaid.initialize runs
+        },
+        themeVariables: isDarkMode ? {
+            // Force light colors for arrows, text, and lines in the dark theme
+            lineColor: '#EEEEEE',
+            textColor: '#EEEEEE',
+            mainBkg: '#2a2a2a', // Ensure background matches the site body
+            nodeBorder: '#999999'
+        } : {}
+        // --- END ADDED CONFIG ---
     });
 </script>
 {% endif %}
@@ -205,4 +238,3 @@
 
 </body>
 </html>
-

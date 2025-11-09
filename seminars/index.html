@@ -37,11 +37,11 @@ permalink: /seminars/
 
                         {% comment %} NEW LOCATION: Seminar/Workshop Category Badge {% endcomment %}
                         {% if item.category %}
-                        <span class="badge text-bg-warning text-white d-block mx-auto mb-2" style="max-width: fit-content;">{{ item.category | capitalize }}</span>
+                        <span class="badge text-bg-warning d-block mx-auto mb-2" style="max-width: fit-content;">{{ item.category | capitalize }}</span>
                         {% endif %}
 
                         <h5 class="card-title fw-semibold mb-1">
-                            <a href="{{ item.url | relative_url }}" class="text-decoration-none">{{ item.title }}</a>
+                            <a href="{{ item.url | relative_url }}" class="text-decoration-none text-body">{{ item.title }}</a>
                         </h5>
                         <p class="card-text small text-muted">
                             {{ item.description }}

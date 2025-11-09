@@ -53,35 +53,35 @@ layout: default
                         {% if page.contributors %}
                         <div class="mb-3">
                             <strong class="text-primary small d-block">Contributors</strong>
-                            <div class="text-dark small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                            <div class="text-body small">{{ page.contributors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
                         </div>
                         {% endif %}
 
                         {% if page.duration %}
                         <div class="mb-3">
                             <strong class="text-primary small d-block">Duration</strong>
-                            <div class="text-dark small">{{ page.duration }}</div>
+                            <div class="text-body small">{{ page.duration }}</div>
                         </div>
                         {% endif %}
 
                         {% if page.hostedby %}
                         <div class="mb-3">
                             <strong class="text-primary small d-block">Host Institution</strong>
-                            <div class="text-dark small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                            <div class="text-body small">{{ page.hostedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
                         </div>
                         {% endif %}
 
                         {% if page.fundedby %}
                         <div class="mb-3">
                             <strong class="text-primary small d-block">Funding Institution</strong>
-                            <div class="text-dark small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                            <div class="text-body small">{{ page.fundedby | markdownify | remove: "<p>" | remove: "</p>" }}</div>
                         </div>
                         {% endif %}
 
                         {% if page.budget %}
                         <div class="mb-0">
                             <strong class="text-primary small d-block">Budget</strong>
-                            <div class="text-dark small">{{ page.budget }}</div>
+                            <div class="text-body small">{{ page.budget }}</div>
                         </div>
                         {% endif %}
                     </div>
@@ -107,7 +107,7 @@ layout: default
                             <a href="{{ page.pdf | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf fa-fw me-2"></i>Download PDF</a>
                             {% endif %}
                             {% if page.doi %}
-                            <a href="https://doi.org/{{ page.doi }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link fa-fw me-2"></i>View at DOI</a>
+                            <a href="https.doi.org/{{ page.doi }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link fa-fw me-2"></i>View at DOI</a>
                             {% endif %}
                             {% if page.github %}
                             <a href="https://github.com/{{ page.github }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-fw me-2"></i>View on GitHub</a>
