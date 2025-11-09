@@ -1,0 +1,33 @@
+{% comment %}
+Renders a promotional block styled like a standard content card.
+Requires: type, title, content, link_url, link_text, icon (Font Awesome class)
+{% endcomment %}
+
+{% assign type_color = include.type | default: 'info' %}
+{% assign icon_class = include.icon | default: 'fa-robot' %}
+
+<div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
+    <div class="card-body p-4 d-flex align-items-center">
+
+        {% comment %} LEFT: Large Icon Block (Flex Shrink) {% endcomment %}
+        <div class="flex-shrink-0 me-4 text-center" style="width: 70px;">
+            <i class="fas {{ icon_class }} fa-3x text-primary mb-1"></i>
+        </div>
+
+        {% comment %} RIGHT: Content and CTA (Flex Grow) {% endcomment %}
+        <div class="flex-grow-1">
+            <h5 class="fw-bold mb-1 text-body">{{ include.title }}</h5>
+
+            <p class="small text-muted mb-3">
+                {{ include.content }}
+            </p>
+
+            {% if include.link_url %}
+            <a href="{{ include.link_url }}" class="btn btn-sm btn-primary">
+                {{ include.link_text | default: "View Details" }}
+            </a>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

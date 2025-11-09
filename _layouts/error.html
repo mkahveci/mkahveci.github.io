@@ -6,24 +6,29 @@ permalink: /404.html
 
 <div class="container my-5 py-5">
 	<div class="row">
-		<div class="col-md-8 col-lg-6 mx-auto">
+		<div class="col-md-8 col-lg-6 mx-auto text-center">
 
-			<i class="fas fa-exclamation-triangle fa-5x text-warning mb-4"></i>
+			{% comment %} Use theme's primary color for the icon accent {% endcomment %}
+			<i class="fas fa-exclamation-triangle fa-5x text-primary mb-4"></i>
 
-			{% comment %} Use consistent display-4 for a large, but not overwhelming, numeric error code {% endcomment %}
-			<h1 class="display-4 fw-bold">404</h1>
+			{% comment %} Use bigtitle class for large error code and text-body {% endcomment %}
+			<h1 class="bigtitle fw-bold text-body">404</h1>
 
-			<h2 class="h4 fw-semibold text-danger">Page Not Found</h2>
+			<h2 class="head fw-bold text-primary">Page Not Found</h2>
 
 			<p class="lead text-muted my-4">
 				Sorry, the page you are looking for doesn't exist or has been moved. Let's get you back on track.
 			</p>
 
 			<div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-4">
-				<a href="/" class="btn btn-primary btn-lg px-4">
+
+				{% comment %} Use solid btn-primary for the main CTA {% endcomment %}
+				<a href="/" class="btn btn-primary btn-lg px-4 shadow-sm">
 					<i class="fas fa-home me-2"></i> Go to Homepage
 				</a>
-				<a href="/blog/" class="btn btn-outline-secondary btn-lg px-4">
+
+				{% comment %} Use btn-outline-primary for the secondary action {% endcomment %}
+				<a href="/blog/" class="btn btn-outline-primary btn-lg px-4 shadow-sm">
 					<i class="fas fa-list-ul me-2"></i> View All Posts
 				</a>
 			</div>

@@ -1,0 +1,64 @@
+{% comment %}
+Renders a single content item (post, pub, project, news) for the homepage list.
+Requires: item (Jekyll object), type (string), color (Bootstrap color), icon (Font Awesome class)
+{% endcomment %}
+
+{% assign item = include.item %}
+{% assign item_type = include.type %}
+{% assign item_color = include.color %}
+{% assign item_icon = include.icon %}
+
+<div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
+    <div class="card-body p-4 d-flex">
+
+        {% comment %} LEFT: Icon/Date Column (Flex Shrink) {% endcomment %}
+        <div class="flex-shrink-0 me-4 text-center">
+            <i class="fa-solid {{ item_icon }} fa-2xl text-{{ item_color }} mb-1"></i>
+
+            <div class="small text-muted fw-bold mt-1">
+                {% if item.date %}
+                {{ item.date | date: "%b %d" }}
+                {% elsif item.year %}
+                {{ item.year }}
+                {% endif %}
+            </div>
+        </div>
+
+        {% comment %} RIGHT: Content Column (Flex Grow) {% endcomment %}
+        <div class="flex-grow-1">
+
+            <h5 class="fw-bold mb-1">
+                {% assign item_url = item.url | default: "/#fallback" %}
+                {% if item_type == 'publication' %}
+                {% assign item_url = '/publications/#' | append: item.id %}
+                {% elsif item_type == 'news' %}
+                {% assign item_url = '/news/#' | append: item.id %}
+                {% endif %}
+
+                <a href="{{ item_url | relative_url }}" class="text-primary text-decoration-none">
+                    {{ item.title }}
+                </a>
+            </h5>
+
+            {% comment %} Secondary Meta Info (e.g., source, author, deadline) {% endcomment %}
+            <div class="small text-muted line-height-1-2">
+                {% if item.source_info %}
+                {{ item.source_info }}
+                {% elsif item.author %}
+                by {{ item.author }}
+                {% elsif item.deadline %}
+                Deadline: {{ item.deadline | date: "%b %d %Y" }}
+                {% endif %}
+            </div>
+
+            {% comment %} Excerpt/Description {% endcomment %}
+            {% assign excerpt = item.excerpt | default: item.description %}
+            {% if excerpt %}
+            <p class="small text-muted mt-2 mb-0">
+                {{ excerpt | strip_html | truncatewords: 25 }}
+            </p>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

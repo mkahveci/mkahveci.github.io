@@ -9,6 +9,9 @@
   --bs-link-color: var(--bs-primary);
   --bs-link-hover-color: #ffaa00; /* FIXED: Now orange on hover */
 
+  --bs-body-font-weight: 700; /* BOLD weight for Light Mode readability */
+  --bs-body-text-shadow: none; /* DISABLED shadow for Light Mode */
+
   // Custom colors for elements
   --navbar-bg: #f8f8f8;
   --navbar-border: #e7e7e7;
@@ -27,35 +30,39 @@
 }
 
 [data-bs-theme="dark"] {
-  /* This is DARK mode (Jekyll Dark Palette) */
+  /* This is DARK mode (Jekyllrb.com Palette) */
 
-  // Core Bootstrap overrides
-  --bs-body-bg: #2a2a2a;
-  --bs-body-color: #f5f5f5;
-  --bs-card-bg: #333333;
+  // Core Bootstrap overrides (Matching Jekyllrb.com #333 body, #ddd text)
+  --bs-body-bg: #333333;
+  --bs-body-color: #DDDDDD;
+  --bs-card-bg: #444444; // Article background color
   --bs-border-color: #444;
+  --bs-dark: #222222; // Define a deeper dark color for contrast on yellow buttons
 
-  // Primary color (links)
-  --bs-primary: #f7e018; /* jekyllrb.com "dark yellow" */
-  --bs-primary-rgb: 247, 224, 24;
+  --bs-body-font-weight: 300; // Light weight for Dark Mode Jekyllrb.com look
+  --bs-body-text-shadow: 0 1px 3px rgba(0,0,0,.5); // ENABLED shadow for Dark Mode
+
+  // Primary color (links/accents) - Use the strong yellow/gold
+  --bs-primary: #FFCC00; /* jekyllrb.com link color (#fc0) */
+  --bs-primary-rgb: 255, 204, 0;
   --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #ffaa00; /* jekyllrb.com orange hover */
+  --bs-link-hover-color: #FF9900; /* jekyllrb.com orange hover (#f90) */
 
   // Custom colors for elements
-  --navbar-bg: #212529; /* Solid dark */
+  --navbar-bg: #2D2D2D; /* Darker than body for header/footer */
   --navbar-border: var(--bs-border-color);
   --blockquote-border: var(--bs-border-color-translucent);
   --footer-text: var(--bs-body-color);
   --footer-link-secondary: var(--bs-secondary-color);
   --image-shadow: rgba(255, 255, 255, 0.05);
   --scroll-top-bg: var(--bs-primary);
-  --scroll-top-color: #333;
+  --scroll-top-color: var(--bs-dark);
   --code-snippet-border: var(--bs-border-color);
   --code-type-bg: var(--bs-body-bg);
 
   // Override for Bootstrap's dark-mode active pill
-  --bs-nav-pills-link-active-bg: #ffaa00; /* Orange */
-  --bs-nav-pills-link-active-color: #333; /* Dark text */
+  --bs-nav-pills-link-active-bg: var(--bs-primary); /* New Orange/Yellow */
+  --bs-nav-pills-link-active-color: var(--bs-dark); /* Dark text on bright background */
 
   // Fix for post headings
   .post-content h1,
@@ -284,12 +291,18 @@ h6, .h6 {
    ================================================================= */
 
 body {
-    font-weight: 300;
-    font-family: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif !important;
+    // ... font-size and font-family lines remain the same ...
+    font-weight: var(--bs-body-font-weight) !important;
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', Arial, sans-serif !important;
+
+    // UPDATED: Use the theme-aware CSS Variable for shadow
+    text-shadow: var(--bs-body-text-shadow, none);
 }
 
 p {
-    font-weight: 300;
+    font-weight: var(--bs-body-font-weight) !important;
+    // Set line height to match jekyllrb.com's base p line-height: 1.5em;
+    line-height: 1.5em;
 }
 
 .hugespacer { height: 50px; }
@@ -387,6 +400,26 @@ blockquote {
     display: inline;
 }
 
+.card {
+  background-color: var(--bs-card-bg);
+}
+
+// Apply Golden Rule Link Styling to links inside the main content area (posts/projects)
+.post-content a,
+.card-body a {
+    // Apply the mandated primary color from the theme (orange/gold)
+    color: var(--bs-primary);
+    // Ensure no underline by default
+    text-decoration: none;
+
+    &:hover {
+        // Apply the mandated hover color (your darker orange)
+        color: var(--bs-link-hover-color);
+        // Ensure no underline on hover (override potential Bootstrap defaults)
+        text-decoration: none;
+    }
+}
+
 /* =================================================================
    6. REFACTORED NAVIGATION & BUTTONS
    ================================================================= */
@@ -417,45 +450,49 @@ i:hover,
   (which we have overridden with --bs-link-color).
 */
 
-/*
-  Your custom buttons will now AUTOMATICALLY
-  use the new --bs-primary (gold/yellow) color.
-  No change is needed here.
-*/
+// --- Ensure ALL btn-primary uses the primary (Yellow/Gold) color for high contrast ---
+.btn-primary {
+    // Background must be the primary color (Yellow/Gold)
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+
+    // Text color must be a contrasting dark color
+    color: var(--bs-dark, #333) !important;
+
+    // Ensure icons inside are also dark
+    .fas, .fab {
+        color: var(--bs-dark, #333) !important;
+    }
+
+    &:hover, &:focus {
+        // Use the slightly darker hover color
+        background-color: var(--bs-link-hover-color) !important;
+        border-color: var(--bs-link-hover-color) !important;
+        color: var(--bs-dark, #333) !important;
+    }
+}
+
 .btn-outline-primary,
 .btn-outline-secondary,
 .btn-secondary {
-  color: var(--bs-light) !important;
+  // Use btn-primary styles for these to ensure high-contrast look
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
+  color: var(--bs-dark, #333) !important;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-secondary:hover,
 .btn-secondary:hover {
-  color: var(--bs-light) !important;
-  background-color: var(--bs-primary) !important;
-  border-color: var(--bs-primary) !important;
+  background-color: var(--bs-link-hover-color) !important;
+  border-color: var(--bs-link-hover-color) !important;
+  color: var(--bs-dark, #333) !important;
 }
 
 .btn-outline-primary .fas,
 .btn-outline-secondary .fas,
 .btn-secondary .fas {
-  color: var(--bs-light) !important;
-}
-
-/* A new rule to make text on the new
-  yellow/gold buttons dark, so it's readable.
-*/
-[data-bs-theme="dark"] .btn-outline-primary,
-[data-bs-theme="dark"] .btn-outline-secondary,
-[data-bs-theme="dark"] .btn-secondary {
-  color: #333 !important; /* Dark text for light button */
-}
-[data-bs-theme="dark"] .btn-outline-primary .fas,
-[data-bs-theme="dark"] .btn-outline-secondary .fas,
-[data-bs-theme="dark"] .btn-secondary .fas {
-  color: #333 !important; /* Dark text for light button */
+  color: var(--bs-dark, #333) !important;
 }
 
 
@@ -709,3 +746,67 @@ button.copy-button::before {
 #left{float:left; width:0px;}
 #right{float:right; width:20px;}
 #center{margin:0 auto;width:0px;}
+
+// css/_custom.scss
+
+/* =================================================================
+   9. TECHNICAL ELEMENTS (TABLES)
+   ================================================================= */
+
+table {
+    // General table appearance
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1); /* Use a lighter shadow for light mode visibility */
+
+    // Base table color (will be overridden by theme vars if they exist)
+    background-color: var(--bs-card-bg);
+    color: var(--bs-body-color);
+}
+
+thead {
+    // Header background is darkest, regardless of theme
+    background-color: var(--bs-dark);
+
+    // CRITICAL FIX: Ensure text is light/white on the dark header background
+    color: var(--bs-light);
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0.75em;
+    // Remove the dark-mode specific text-shadow for light mode visibility
+    text-shadow: none;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+td {
+    padding: 0.75em;
+    // Set text color explicitly to body color
+    color: var(--bs-body-color);
+    border-top: 1px solid var(--bs-border-color);
+    font-size: 0.9em;
+}
+
+/* Ensure links inside table cells follow the primary link style */
+table a {
+    color: var(--bs-primary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--bs-link-hover-color);
+    }
+}
+
+// Optional: If you want table body rows to use a slightly lighter background in Light Mode:
+:root table {
+    background-color: #f7f7f7; /* Very light background for contrast */
+}
+
+// In Dark Mode, this is overridden:
+[data-bs-theme="dark"] table {
+    background-color: var(--bs-card-bg); // #444
+}
