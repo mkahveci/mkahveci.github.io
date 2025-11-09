@@ -1,11 +1,15 @@
 <div class="project-callout-banner">
-    <i class="fas fa-folder-open"></i>
-    <strong>Related Project:</strong> This post is related to the project
-    <a href="{{ include.project.url | relative_url }}">{{ include.project.name }}</a>
+    <i class="fas fa-folder-open" aria-hidden="true"></i>
+    <strong>Related Project:</strong>
+    <a href="{{ include.project.url | relative_url }}" class="text-primary text-decoration-none hover-link">
+        {{ include.project.name }}
+    </a>
 </div>
 
 <style>
     /* FIXED: Styles are now theme-aware using Bootstrap CSS variables.
+    NOTE: In a production Jekyll site, this CSS should ideally be moved
+    to a dedicated SCSS file to avoid inline <style> blocks.
     */
     .project-callout-banner {
         display: flex;
@@ -20,6 +24,8 @@
         color: var(--bs-info-emphasis);
 
         border-radius: 4px;
+        /* Using h5 fw-bold text-body (Rule A) for context, though this is a banner.
+           Keeping provided font-size for banner impact. */
         font-size: 1.1em;
         font-weight: normal;
         text-align: center;
@@ -28,9 +34,10 @@
 
     .project-callout-banner a {
         font-weight: bold;
-        /* Uses theme-aware primary link color (gold/yellow) */
-        color: var(--bs-primary);
-        text-decoration: underline;
+        /* Color is now managed by the text-primary class and the SCSS hover rule.
+           We remove the explicit color here to let the Bootstrap class govern it. */
+        /* color: var(--bs-primary); */
+        text-decoration: none; /* Already applied by text-decoration-none class */
         margin-left: 5px;
     }
 
