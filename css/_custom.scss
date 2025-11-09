@@ -393,8 +393,11 @@ blockquote {
 
 body .nav-pills .nav-link.active,
 body .nav-pills .show > .nav-link {
-    background-color: var(--bs-nav-pills-link-active-bg) !important;
-    color: var(--bs-nav-pills-link-active-color) !important;
+// Force the background color to your site's primary color (orange)
+    background-color: var(--bs-primary) !important;
+
+    // Force the text color to a contrasting dark color for readability on the orange background
+    color: var(--bs-dark) !important;
 }
 
 .nav-link {
@@ -706,28 +709,3 @@ button.copy-button::before {
 #left{float:left; width:0px;}
 #right{float:right; width:20px;}
 #center{margin:0 auto;width:0px;}
-
-/* --- FINAL FIX FOR ACTIVE NAVBAR LINK COLOR --- */
-/* This combines the most specific selector with the !important tag to win */
-[data-bs-theme="dark"] .navbar .nav-item .nav-link.active {
-    background-color: var(--bs-nav-pills-link-active-bg) !important;
-    color: var(--bs-nav-pills-link-active-color) !important;
-}
-[data-bs-theme="light"] .navbar .nav-item .nav-link.active {
-    background-color: var(--bs-nav-pills-link-active-bg) !important;
-    color: var(--bs-nav-pills-link-active-color) !important;
-}
-
-/* --- Project Content Link Consistency --- */
-.post-content a,
-.project-details a {
-  /* Use the primary color defined in :root */
-  color: var(--bs-primary) !important;
-  text-decoration: none;
-
-  &:hover {
-    /* Use the orange hover color defined in :root */
-    color: var(--bs-link-hover-color) !important;
-    text-decoration: underline; /* Add underline only on hover */
-  }
-}

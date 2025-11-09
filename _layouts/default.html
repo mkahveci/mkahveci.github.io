@@ -81,17 +81,17 @@
 					<li class="nav-item">
 						{% comment %} Use category OR url match for robustness {% endcomment %}
 						<a class="nav-link
-                      {% if page.categories.first == 'papers' or page.url == '/publications/' %}active bg-warning text-dark{% endif %}"
+                      {% if page.categories.first == 'papers' or page.url == '/publications/' %}active{% endif %}"
 						   href="/publications/">publications</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link
-                      {% if page.categories.first == 'projects' or page.url == '/projects/' %}active bg-warning text-dark{% endif %}"
+                      {% if page.categories.first == 'projects' or page.url == '/projects/' %}active{% endif %}"
 						   href="/projects/">projects</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link
-                      {% if page.categories.first == 'courses' or page.url == '/courses/' %}active bg-warning text-dark{% endif %}"
+                      {% if page.categories.first == 'courses' or page.url == '/courses/' %}active{% endif %}"
 						   href="/courses/">teaching</a>
 					</li>
 
@@ -99,12 +99,12 @@
 
 					<li class="nav-item">
 						<a class="nav-link
-                      {% if page.categories.first == 'team' or page.url == '/team/' %}active bg-warning text-dark{% endif %}"
+                      {% if page.categories.first == 'team' or page.url == '/team/' %}active{% endif %}"
 						   href="/team/">team</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link
-                      {% if page.categories.first == 'blog' or page.url == '/blog/' %}active bg-warning text-dark{% endif %}"
+                      {% if page.categories.first == 'blog' or page.url == '/blog/' %}active{% endif %}"
 						   href="/blog/">blog</a>
 					</li>
 
