@@ -108,7 +108,7 @@ layout: default
                                     {% if shared_tags.size > 0 %}
                                     <div class="mt-1">
                                         {% for tag in shared_tags %}
-                                        <span class="badge rounded-pill text-bg-secondary me-1 fw-normal">#{{ tag | capitalize }}</span>
+                                        <a href="/blog/#{{ tag | slugify }}" class="badge rounded-pill text-bg-secondary text-decoration-none me-1 fw-normal">#{{ tag }}</a>
                                         {% endfor %}
                                     </div>
                                     {% endif %}
