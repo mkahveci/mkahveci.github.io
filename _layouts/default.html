@@ -11,43 +11,45 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	{% comment %} UPDATED: Added Lato font for Jekyllrb.com consistency {% endcomment %}
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 	<script>
 		(function() {
-          const THEME_STORAGE_KEY = 'kahveci-pw-theme';
+           const THEME_STORAGE_KEY = 'kahveci-pw-theme';
 
-          function getPreferredTheme() {
-            const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-            if (storedTheme) {
-              return storedTheme;
-            }
-            // Check OS preference
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-          }
+           function getPreferredTheme() {
+             const storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+             if (storedTheme) {
+               return storedTheme;
+             }
+             // Check OS preference
+             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+           }
 
-          // Set the theme on the <html> element immediately
-          const theme = getPreferredTheme();
-          document.documentElement.setAttribute('data-bs-theme', theme);
-        })();
+           // Set the theme on the <html> element immediately
+           const theme = getPreferredTheme();
+           document.documentElement.setAttribute('data-bs-theme', theme);
+         })();
 	</script>
 	<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
 	<script>
 		MathJax = {
-             tex: {
-               // ONLY use \\(...\\) for inline math
-               inlineMath: [['\\(', '\\)']],
-               // Use $$...$$ and \\[...\\] for display math
-               displayMath: [['$$', '$$'], ['\\[', '\\]']]
-             },
-             options: {
-               // The ignoreHtmlClass and processHtmlClass lines are technically correct,
-               // but often omitted if not specifically needed. Keeping them for safety.
-               ignoreHtmlClass: 'tex2jax_ignore',
-               processHtmlClass: 'tex2jax_process'
-             }
-           };
+              tex: {
+                // ONLY use \\(...\\) for inline math
+                inlineMath: [['\\(', '\\)']],
+                // Use $$...$$ and \\[...\\] for display math
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+              },
+              options: {
+                // The ignoreHtmlClass and processHtmlClass lines are technically correct,
+                // but often omitted if not specifically needed. Keeping them for safety.
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+              }
+            };
 	</script>
 	<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 

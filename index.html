@@ -6,166 +6,84 @@ categories:
 ---
 
 <div class="container my-5">
-    <div class="row align-items-center mb-5 border-bottom pb-4">
-        <div class="col-md-2 text-center text-md-start">
+
+    <div class="row align-items-center mb-5 pb-4 text-center">
+        <div class="col-12 mb-3">
             <img src="/images/logo.svg" alt="Kahveci Nexus Logo" class="img-fluid rounded-circle shadow-sm" style="width: 120px; height: 120px;">
         </div>
-        <div class="col-md-10">
-            <h1 class="display-5 fw-bold">Kahveci Nexus</h1>
-            <p class="lead text-muted mb-0">A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.</p>
+        <div class="col-12">
+            <h1 class="bigtitle fw-bold text-body">Kahveci Nexus</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.
+            </p>
         </div>
     </div>
 
-    <div class="mb-4">
-        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/blog/" class="text-decoration-none text-body">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2 text-primary"></i></a>
-        </h2>
-        <div class="row g-2">
-            {% for post in site.categories.blog limit:3 %}
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0 p-2">
-                    <div class="card-body p-0 d-flex align-items-start">
-                        <i class="fa-regular fa-comment fa-fw fa-lg me-3 text-primary mt-1"></i>
-                        <div>
-                            <h6 class="mb-1 fw-medium">
-                                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-body">{{ post.title }}</a>
-                            </h6>
-                            <small class="text-muted d-block line-height-1-2">
-                                Posted {{ post.date | date: "%-d %b %Y" }}
-                                {% if post.author %}
-                                by {{ post.author }}
-                                {% endif %}
-                            </small>
-                            {% if post.excerpt %}
-                            <small class="text-muted d-block mt-1">
-                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ post.excerpt | strip_html }}</em>
-                            </small>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
+        <a href="/blog/" class="text-primary text-decoration-none">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
+    </h2>
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% for post in site.categories.blog limit:2 %}
+        <div class="col">
+            {% include home-card-item.html item=post type='post' color='primary' icon='fa-pen-to-square' %}
         </div>
+        {% endfor %}
     </div>
 
-    <div class="mb-4">
-        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/publications/" class="text-decoration-none text-body">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2 text-success"></i></a>
-        </h2>
-        <div class="row g-2">
-            {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
-            {% for publication in sorted_publications limit:3 %}
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0 p-2">
-                    <div class="card-body p-0 d-flex align-items-start">
-                        <i class="fa-regular fa-file-alt fa-fw fa-lg me-3 text-success mt-1"></i>
-                        <div>
-                            <h6 class="mb-1 fw-medium">
-                                <a href="/publications/#{{ publication.id }}" class="text-decoration-none text-body">{{ publication.title }}</a>
-                            </h6>
-                            <small class="text-muted d-block line-height-1-2">
-                                {{ publication.year }} in {{ publication.source_info }}
-                            </small>
-                            {% if publication.excerpt %}
-                            <small class="text-muted d-block mt-1">
-                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ publication.excerpt | strip_html }}</em>
-                            </small>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
+        <a href="/publications/" class="text-primary text-decoration-none">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
+    </h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
+        {% for publication in sorted_publications limit:2 %}
+        <div class="col">
+            {% include home-card-item.html item=publication type='publication' color='success' icon='fa-book-open-reader' %}
         </div>
+        {% endfor %}
     </div>
 
-    <div class="mb-4">
-        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/projects/" class="text-decoration-none text-body">Active Projects <i class="fas fa-arrow-right fa-xs ms-2 text-info"></i></a>
-        </h2>
-        <div class="row g-2">
-            {% for project in site.categories.projects limit:3 %}
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0 p-2">
-                    <div class="card-body p-0 d-flex align-items-start">
-                        <i class="fas fa-flask fa-fw fa-lg me-3 text-info mt-1"></i>
-                        <div>
-                            <h6 class="mb-1 fw-medium">
-                                <a href="{{ project.url | relative_url }}" class="text-decoration-none text-body">{{ project.title }}</a>
-                            </h6>
-                            {% if project.excerpt %}
-                            <small class="text-muted d-block mt-1">
-                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ project.excerpt | strip_html }}</em>
-                            </small>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
+        <a href="/projects/" class="text-primary text-decoration-none">Active Projects <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
+    </h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% for project in site.categories.projects limit:2 %}
+        <div class="col">
+            {% include home-card-item.html item=project type='project' color='info' icon='fa-flask' %}
         </div>
+        {% endfor %}
     </div>
 
-    <div class="mb-4">
-        <h2 class="h5 fw-semibold border-bottom pb-2 mb-3">
-            <a href="/news/" class="text-decoration-none text-body">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2 text-danger"></i></a>
-        </h2>
-        <div class="row g-2">
-            {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
-            {% for item in sorted_announcements limit:3 %}
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0 p-2">
-                    <div class="card-body p-0 d-flex align-items-start">
-                        <i class="fas fa-bullhorn fa-fw fa-lg me-3 text-danger mt-1"></i>
-                        <div>
-                            <h6 class="mb-1 fw-medium">
-                                <a href="/news/#{{ item.id }}" class="text-decoration-none text-body">{{ item.title }}</a>
-                            </h6>
-                            <small class="text-muted d-block line-height-1-2">
-                                Deadline: {{ item.deadline | date: "%b %d" }}
-                            </small>
-                            {% if item.excerpt %}
-                            <small class="text-muted d-block mt-1">
-                                <i class="fa-solid fa-quote-left fa-xs me-1 opacity-75"></i> <em class="line-height-1-2">{{ item.excerpt | strip_html }}</em>
-                            </small>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
+        <a href="/news/" class="text-primary text-decoration-none">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
+    </h2>
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
+        {% for item in sorted_announcements limit:2 %}
+        <div class="col">
+            {% include home-card-item.html item=item type='news' color='danger' icon='fa-bullhorn' %}
         </div>
+        {% endfor %}
     </div>
 
-    <div class="my-3">
-        <h2 class="h5 fw-semibold border-bottom pb-2 mb-2">Misc</h2>
+    <div class="mt-5 pt-3 border-top border-secondary text-center">
+        <h2 class="h5 fw-semibold mb-2 text-muted">Misc</h2>
         <ul class="list-inline small">
             <li class="list-inline-item me-3">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/about" class="text-decoration-none text-secondary">about</a>
+                <a href="/about" class="text-primary text-decoration-none">about</a>
             </li>
             <li class="list-inline-item me-3">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/news/" class="text-decoration-none text-secondary">news</a>
+                <a href="/news/" class="text-primary text-decoration-none">news</a>
             </li>
             <li class="list-inline-item me-3">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/join" class="text-decoration-none text-secondary">join</a>
+                <a href="/join" class="text-primary text-decoration-none">join</a>
             </li>
             <li class="list-inline-item me-3">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/album" class="text-decoration-none text-secondary">album</a>
+                <a href="/album" class="text-primary text-decoration-none">album</a>
             </li>
             <li class="list-inline-item me-3">
-                <i class="fa-solid fa-angle-right fa-fw text-primary"></i> <a href="/contact" class="text-decoration-none text-secondary">contact</a>
+                <a href="/contact" class="text-primary text-decoration-none">contact</a>
             </li>
         </ul>
     </div>
 </div>
-
-<style>
-    .line-height-1-2 {
-        line-height: 1.2;
-    }
-    .card-body.p-0.d-flex {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-</style>

@@ -12,9 +12,9 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
 
 <div class="container my-5">
 
-  {% comment %} --- HEADER SECTION (CONSISTENT ELEGANT STYLE) --- {% endcomment %}
-  <h1 class="mb-4 text-center">Photo Album</h1>
-  <p class="lead text-center text-muted mb-5">
+  {% comment %} --- HEADER SECTION (UPDATED TYPOGRAPHY) --- {% endcomment %}
+  <h1 class="bigtitle mb-4 text-center text-body">Photo Album</h1>
+  <p class="lead text-center text-muted mb-5 mx-auto" style="max-width: 800px;">
     A curated collection of moments that capture the essence of our work, collaborations, and milestones.
   </p>
 
@@ -22,19 +22,19 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
 
     {% for picture in site.categories.album %}
     <div class="col">
-      <div class="card h-100 shadow-sm border-0">
-        <div class="card-body d-flex align-items-center p-3">
+      <div class="card h-100 shadow-sm border-0" style="background-color: var(--bs-card-bg);">
+        <div class="card-body d-flex align-items-center p-4">
 
           <a href="{{ picture.url | relative_url }}" class="flex-shrink-0 me-4">
-            {% comment %} Use Bootstrap utilities for image sizing and rounding {% endcomment %}
             <img src="{{ picture.image | relative_url }}" class="img-fluid rounded shadow-sm"
                  alt="{{ picture.title }}"
                  style="width: 100px; height: 100px; object-fit: cover;">
           </a>
 
           <div class="flex-grow-1">
-            <h5 class="card-title fw-semibold mb-1">
-              <a href="{{ picture.url | relative_url }}" class="text-decoration-none text-body">{{ picture.title }}</a>
+            <h5 class="card-title fw-bold mb-1 text-body">
+              {% comment %} Title link uses mandated text-primary style {% endcomment %}
+              <a href="{{ picture.url | relative_url }}" class="text-primary text-decoration-none">{{ picture.title }}</a>
             </h5>
 
             <p class="card-text small text-muted">
@@ -42,7 +42,8 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
               by
               {% for member in site.categories.team %}
               {% if member.title == picture.author %}
-              <a href="{{ member.url | relative_url }}" class="text-decoration-none text-info">{{ picture.author }}</a>
+              {% comment %} Author link uses mandated text-primary style {% endcomment %}
+              <a href="{{ member.url | relative_url }}" class="text-primary text-decoration-none">{{ picture.author }}</a>
               {% endif %}
               {% endfor %}
               <br>
@@ -52,9 +53,10 @@ The custom CSS block is removed to rely entirely on modern Bootstrap utilities.
           </div>
         </div>
 
-        {% comment %} Optional Footer for consistency (shows date as a badge) {% endcomment %}
-        <div class="card-footer bg-body-tertiary border-top-0 pt-0">
-          <a href="{{ picture.url | relative_url }}" class="btn btn-sm btn-outline-info">View Album</a>
+        {% comment %} Footer: Uses theme-aware background and primary button {% endcomment %}
+        <div class="card-footer" style="background-color: var(--bs-card-bg); border-top: 1px solid var(--bs-border-color);">
+          {% comment %} Use solid btn-primary for high contrast {% endcomment %}
+          <a href="{{ picture.url | relative_url }}" class="btn btn-sm btn-primary">View Album</a>
         </div>
       </div>
     </div>
