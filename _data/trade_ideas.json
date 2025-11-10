@@ -1,7 +1,65 @@
 [
 
 
-
+  {
+    "publicationDate": "2025-11-07",
+    "tradeTitle": "Short Put on MRNA",
+    "summaryJustification": "A Short Put was placed at the $26.00 strike to collect a high premium post-earnings, aiming for an over 100% Annualized ROC. The trade capitalizes on high implied volatility (IV Rank 29%) which, although slightly below the 30 threshold, still provides an attractive credit well above the current stock price.",
+    "expectedReturnDisplay": "$330.00 Max Profit (110.60% Annualized ROC)",
+    "ticker": "MRNA",
+    "accountType": "IRA",
+    "currentPrice": 24.13,
+    "ivRank": 29.0,
+    "earningsDate": "2025-11-06",
+    "analysis": {
+      "thesis": "The stock has high implied volatility even post-earnings. Selling an out-of-the-money put with a strike of $26.00 allows for substantial premium collection, positioning the short strike relatively close to the money for an aggressive, high-return trade. The goal is to profit from time decay and the stock remaining above $26.00.",
+      "strategyType": "Short Put",
+      "tradeDetails": {
+        "expiration": "2025-12-19",
+        "dte": 42,
+        "maxProfit": 330.0,
+        "spreadDetails": {
+          "shortPutStrike": 26.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 0.0,
+          "netCredit": 3.3
+        }
+      },
+      "metrics": {
+        "roc": 12.69,
+        "annualizedRoc": 110.6,
+        "pop": 0.0,
+        "buyingPowerEffect": 2600.0,
+        "dailyProfitPotential": 7.86
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, or manage at 21 DTE."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-11-07",
+        "actionTaken": "STO 1 Short Put (Cash-Secured)",
+        "expiration": "2025-12-19",
+        "dteRemaining": 42,
+        "netCreditReceived": 3.3,
+        "commissionFee": 0.0,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Profit",
+        "notes": "Initial trade entry."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-10",
+        "actionTaken": "BOT 1 Short Put",
+        "closePrice": 3.25,
+        "closeCostType": "Debit",
+        "grossProfitLossAmount": 5.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed trade to lock in a $5.00 profit. (Credit: $3.30, Debit: $3.25)"
+      }
+    ]
+  },
   {
     "publicationDate": "2025-10-31",
     "tradeTitle": "The Wheel on BMNR",
@@ -69,58 +127,6 @@
         "commissionFee": 1.01,
         "grossCreditTotal": 96.00,
         "notes": "Sold a weekly covered call against the 200 assigned shares. Net credit received is (0.48 * 200) - 1.01 = $94.99. This premium adds to the total cycle profit."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-11-07",
-    "tradeTitle": "Short Put on MRNA",
-    "summaryJustification": "A Short Put was placed at the $26.00 strike to collect a high premium post-earnings, aiming for an over 100% Annualized ROC. The trade capitalizes on high implied volatility (IV Rank 29%) which, although slightly below the 30 threshold, still provides an attractive credit well above the current stock price.",
-    "expectedReturnDisplay": "$330.00 Max Profit (110.60% Annualized ROC)",
-    "ticker": "MRNA",
-    "accountType": "IRA",
-    "currentPrice": 24.13,
-    "ivRank": 29.0,
-    "earningsDate": "2025-11-06",
-    "analysis": {
-      "thesis": "The stock has high implied volatility even post-earnings. Selling an out-of-the-money put with a strike of $26.00 allows for substantial premium collection, positioning the short strike relatively close to the money for an aggressive, high-return trade. The goal is to profit from time decay and the stock remaining above $26.00.",
-      "strategyType": "Short Put",
-      "tradeDetails": {
-        "expiration": "2025-12-19",
-        "dte": 42,
-        "maxProfit": 330.0,
-        "spreadDetails": {
-          "shortPutStrike": 26.0,
-          "longPutStrike": 0.0,
-          "shortCallStrike": 0.0,
-          "longCallStrike": 0.0,
-          "netCredit": 3.3
-        }
-      },
-      "metrics": {
-        "roc": 12.69,
-        "annualizedRoc": 110.6,
-        "pop": 0.0,
-        "buyingPowerEffect": 2600.0,
-        "dailyProfitPotential": 7.86
-      },
-      "managementPlan": "Standard management plan: Target 50% profit, or manage at 21 DTE."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN",
-        "date": "2025-11-07",
-        "actionTaken": "STO 1 Short Put (Cash-Secured)",
-        "expiration": "2025-12-19",
-        "dte": 42,
-        "strikes": {
-          "shortPut": 26.0,
-          "longPut": 0.0,
-          "shortCall": 0.0,
-          "longCall": 0.0
-        },
-        "netCredit": 3.3,
-        "notes": "Initial trade entry."
       }
     ]
   },
