@@ -1,37 +1,37 @@
 [
   {
     "publicationDate": "2025-10-31",
-    "tradeTitle": "Short Put on BMNR",
-    "summaryJustification": "A short put is being sold on BMNR at the 45.00 strike with 7 days to expiration to capture a premium of 1.40, yielding a 140.00% annualized return. The trade is highly aggressive with a delta of -0.42, which prioritizes premium over high probability, making it a high-risk component for the 'Wheel' strategy.",
-    "expectedReturnDisplay": "140.00% Annualized ROC",
+    "tradeTitle": "The Wheel on BMNR",
+    "summaryJustification": "A highly aggressive weekly Short Put was assigned, triggering the Covered Call phase of The Wheel. The current Covered Call aims to generate weekly income against the assigned stock and will result in the shares being called away for a profit if BMNR closes above $47.00 by expiration.",
+    "expectedReturnDisplay": "Trade in Progression (Target $277.97 Realized P&L from Put Phase + Call P/L)",
     "ticker": "BMNR",
     "accountType": "IRA",
-    "currentPrice": 46.59,
+    "currentPrice": 42.25,
     "ivRank": 0.0,
     "earningsDate": "N/A",
     "analysis": {
-      "thesis": "BMNR is trading slightly above the short put strike. The trade is an aggressive weekly income play, capitalizing on high time decay (theta) and the high absolute IV of approximately 98.4%. The investor must be prepared for assignment at 45.00 per share, which is the risk taken in exchange for the large credit and high annualized return.",
-      "strategyType": "Short Put",
+      "thesis": "The trade is now in the 'Stock Owned' phase. The investor is selling a weekly Covered Call at the $47.00 strike, which is above the net cost basis of $43.61. This provides a potential profit of $3.39 per share if called away, plus the premium received. The goal is to either collect premium or get called away for a profit.",
+      "strategyType": "Covered Call (The Wheel Phase 2)",
       "tradeDetails": {
         "expiration": "2025-11-07",
         "dte": 7,
-        "maxProfit": 140.0,
+        "maxProfit": 140.00,
         "spreadDetails": {
-          "shortPutStrike": 45.0,
-          "longPutStrike": 0.0,
-          "shortCallStrike": 0.0,
-          "longCallStrike": 0.0,
-          "netCredit": 1.4
+          "shortPutStrike": 45.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.40
         }
       },
       "metrics": {
         "roc": 3.11,
-        "annualizedRoc": 140.0,
+        "annualizedRoc": 140.00,
         "pop": 58.0,
-        "buyingPowerEffect": 4500.0,
-        "dailyProfitPotential": 20.0
+        "buyingPowerEffect": 4500.00,
+        "dailyProfitPotential": 20.00
       },
-      "managementPlan": "Standard management plan for weekly trades: Target 80% of daily profit potential ($16.00) to close. Manage the position at any time if the stock price drops significantly below the strike, or be ready for assignment at expiration to begin the 'Wheel' strategy."
+      "managementPlan": "The Covered Call should be managed like a Short Put: close when 50% profit is achieved, or roll if the stock moves against the position significantly, though the primary goal is often assignment for a full cycle profit."
     },
     "tradeProgression": [
       {
@@ -40,7 +40,7 @@
         "actionTaken": "STO 2 BMNR 11/07 45.00 P",
         "expiration": "2025-11-07",
         "dteRemaining": 7,
-        "netCreditReceived": 280.0,
+        "netCreditReceived": 280.00,
         "commissionFee": 1.02,
         "grossProfitLossAmount": 278.98,
         "grossProfitLossType": "Profit",
@@ -50,11 +50,22 @@
         "stepType": "ASSIGNMENT",
         "date": "2025-11-07",
         "actionTaken": "Assigned 200 shares at strike",
-        "purchasePrice": 45.0,
+        "purchasePrice": 45.00,
         "sharesAcquired": 200,
         "netCostBasisPerShare": 43.61,
-        "totalNotionalCost": 9000.0,
-        "notes": "The 2 short put contracts were assigned at expiration. The net cost basis is the strike price (45.00) minus the net premium received per share (1.40 minus commission per share)."
+        "totalNotionalCost": 9000.00,
+        "notes": "The 2 short put contracts were assigned at expiration. Net cost basis is calculated as: 45.00 - (($278.98 - $1.02) / 200 shares) = 45.00 - 1.39 = $43.61 per share. (Using the journal's final realized P&L of $277.97 for the trade cycle)."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-11-10",
+        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
+        "expiration": "2025-11-14",
+        "dteRemaining": 4,
+        "netCreditReceived": 94.99,
+        "commissionFee": 1.01,
+        "grossCreditTotal": 96.00,
+        "notes": "Sold a weekly covered call against the 200 assigned shares. Net credit received is (0.48 * 200) - 1.01 = $94.99. This premium adds to the total cycle profit."
       }
     ]
   },
