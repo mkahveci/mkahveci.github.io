@@ -77,19 +77,26 @@ def format_management_alert(trade_data, latest_step):
     # Custom profit/loss extraction based on step type
     pnl_text = ''
 
+    def safe_float_local(value):
+        """Internal helper for numeric conversion."""
+        try:
+            return float(value)
+        except (ValueError, TypeError):
+            return 0.0
+
     if step_type == escape_markdown('ASSIGNMENT'):
         pnl_amount = latest_step.get('netCostBasisPerShare', 'N/A')
         # Cost basis is just a value, escape it without numeric format
         pnl_text = f"New Cost Basis: *\\${escape_markdown(pnl_amount)}*"
 
     elif step_type == escape_markdown('WHEEL_STEP: SELL_COVERED_CALL'):
-        credit = safe_float(latest_step.get('grossCreditTotal', 0.0))
+        credit = safe_float_local(latest_step.get('grossCreditTotal', 0.0))
         # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
         pnl_text = f"Credit Received: *+\\${escape_markdown(credit_formatted)}*"
 
     elif step_type in [escape_markdown('CALLED_AWAY'), escape_markdown('CLOSE'), escape_markdown('CLOSED_INDEPENDENT_PUT')]:
-        pnl_amount = safe_float(latest_step.get('grossProfitLossAmount', 0.0))
+        pnl_amount = safe_float_local(latest_step.get('grossProfitLossAmount', 0.0))
         pnl_type = escape_markdown(latest_step.get('grossProfitLossType', 'Profit/Loss'))
         emoji = "✅" if pnl_type == escape_markdown("Profit") else "❌"
         # FIX: Apply formatting, then escape the result
@@ -97,26 +104,29 @@ def format_management_alert(trade_data, latest_step):
         pnl_text = f"{emoji} Final P/L: *\\${escape_markdown(pnl_amount_formatted)}* ({pnl_type})"
 
     elif step_type == escape_markdown('ADJUSTMENT'):
-        change = safe_float(latest_step.get('netChange', 0.0))
+        change = safe_float_local(latest_step.get('netChange', 0.0))
         change_type = escape_markdown(latest_step.get('netChangeType', 'N/A'))
         # FIX: Apply formatting, then escape the result
         change_formatted = f"{change:.2f}"
         pnl_text = f"Net Change: *{change_type} of \\${escape_markdown(change_formatted)}*"
 
     else: # Default for OPEN_SHORT_PUT or unrecognized step
-        credit = safe_float(latest_step.get('grossProfitLossAmount', 'N/A'))
+        credit = safe_float_local(latest_step.get('grossProfitLossAmount', 'N/A'))
         # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
         pnl_text = f"Realized Options P/L: *+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else ""
+
+    # FIX: Define the escaped separator line once for the reserved hyphens
+    ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
 
     message = (
         f"🔔 *TRADE MANAGEMENT: {ticker}* 🔔\n\n"
         f"🔄 *Event Type:* {step_type}\n"
         f"📅 *Date:* {date}\n"
         f"📝 *Action:* {action}\n"
-        f"-----------------------------------------\n"
+        f"{ESCAPED_SEPARATOR}\n"
         f"{pnl_text}\n"
-        f"-----------------------------------------\n"
+        f"{ESCAPED_SEPARATOR}\n"
     )
 
     if notes:
@@ -164,6 +174,9 @@ def format_initial_alert(data):
     else:
         strike_line = f"🎯 *Strikes:* See trade details"
 
+    # FIX: Define the escaped separator line once for the reserved hyphens
+    ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
+
     # MESSAGE CONSTRUCTION (Using MarkdownV2 Bolding/Italics)
     message = (
         f"🚨 *NEW TRADE: {trade_title}* 🚨\n\n"
@@ -171,11 +184,11 @@ def format_initial_alert(data):
         f"🛠️ *Strategy:* {strategy}\n"
         f"📆 *Expiration:* {expiration} (Published: {publication_date})\n"
         f"{strike_line}\n"
-        f"-----------------------------------------\n"
+        f"{ESCAPED_SEPARATOR}\n"
         f"✅ *Prob\\. of Profit (PoP):* *{pop_str}*\\%\n" # Escaping %
         f"💰 *Max Annualized ROC:* {expected_return}\n"
         f"💵 *Max Profit:* *\\${max_profit_str}*\n"
-        f"-----------------------------------------\n"
+        f"{ESCAPED_SEPARATOR}\n"
         f"\n*Summary Justification:*\n"
         f"_{summary_justification}_\n\n"
         f"*Management Plan:*\n"
