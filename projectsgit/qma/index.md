@@ -6,7 +6,7 @@ repo: mkahveci/qma
 permalink: /:path/:basename:output_ext
 ---
 
-## Jekyll Trade Journal
+## Quantitative Market Analysis 
 
 **An open-source tool to track and analyze options trade ideas.**
 

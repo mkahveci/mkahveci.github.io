@@ -6,7 +6,7 @@ permalink: /projectsgit/qma/docs/readings/
 
 <div class="container my-5">
     <header class="mb-5"> 
-        <p class="lead">A curated list of blog posts and guides detailing the theoretical and practical trading strategies that underpin the <b>qma</b> (Jekyll Trade Journal) project.</p> 
+        <p class="lead">A curated list of blog posts and guides detailing the theoretical and practical trading strategies that underpin Quantitative Market Analysis (qma) project.</p> 
         <hr>
     </header>
 
