@@ -10,7 +10,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
 
-# --- Helper Function for MarkdownV2 Escaping (CORRECTED) ---
+# --- Helper Function for MarkdownV2 Escaping ---
 def escape_markdown(text):
     """
     Escapes special characters in a string for Telegram's MarkdownV2 parse mode.
@@ -86,35 +86,30 @@ def format_management_alert(trade_data, latest_step):
 
     if step_type == escape_markdown('ASSIGNMENT'):
         pnl_amount = latest_step.get('netCostBasisPerShare', 'N/A')
-        # Cost basis is just a value, escape it without numeric format
         pnl_text = f"New Cost Basis: *\\${escape_markdown(pnl_amount)}*"
 
     elif step_type == escape_markdown('WHEEL_STEP: SELL_COVERED_CALL'):
         credit = safe_float_local(latest_step.get('grossCreditTotal', 0.0))
-        # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
-        pnl_text = f"Credit Received: *\\+\\${escape_markdown(credit_formatted)}*" # FIXED '+' ESCAPING
+        pnl_text = f"Credit Received: *\\+\\${escape_markdown(credit_formatted)}*"
 
     elif step_type in [escape_markdown('CALLED_AWAY'), escape_markdown('CLOSE'), escape_markdown('CLOSED_INDEPENDENT_PUT')]:
         pnl_amount = safe_float_local(latest_step.get('grossProfitLossAmount', 0.0))
         pnl_type = escape_markdown(latest_step.get('grossProfitLossType', 'Profit/Loss'))
         emoji = "✅" if pnl_type == escape_markdown("Profit") else "❌"
-        # FIX: Apply formatting, then escape the result
         pnl_amount_formatted = f"{pnl_amount:.2f}"
         pnl_text = f"{emoji} Final P/L: *\\${escape_markdown(pnl_amount_formatted)}* ({pnl_type})"
 
     elif step_type == escape_markdown('ADJUSTMENT'):
         change = safe_float_local(latest_step.get('netChange', 0.0))
         change_type = escape_markdown(latest_step.get('netChangeType', 'N/A'))
-        # FIX: Apply formatting, then escape the result
         change_formatted = f"{change:.2f}"
         pnl_text = f"Net Change: *{change_type} of \\${escape_markdown(change_formatted)}*"
 
     else: # Default for OPEN_SHORT_PUT or unrecognized step
         credit = safe_float_local(latest_step.get('grossProfitLossAmount', 'N/A'))
-        # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
-        pnl_text = f"Realized Options P/L: *\\+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else "" # FIXED '+' ESCAPING
+        pnl_text = f"Realized Options P/L: *\\+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else ""
 
     # Define the escaped separator line once for the reserved hyphens
     ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
@@ -196,7 +191,7 @@ def format_initial_alert(data):
     )
 
     # Permalink
-    STATIC_DOC_URL = escape_markdown("[https://kahveci.pw/trades/](https://kahveci.pw/trades/)")
+    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
     message += (
         f"\n[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
     )
@@ -218,19 +213,26 @@ def format_telegram_message(data):
 def send_telegram_notification(message):
     """Sends the formatted message via the Telegram API."""
 
+    # FIX 1: Strip whitespace from token to ensure clean URL construction
     local_bot_token = os.environ.get('BOT_TOKEN')
+    if local_bot_token:
+        local_bot_token = local_bot_token.strip()
+
     local_chat_id = os.environ.get('CHAT_ID')
 
     if not all([local_bot_token, local_chat_id]):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"[https://api.telegram.org/bot](https://api.telegram.org/bot){local_bot_token}/sendMessage"
+    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
+
+    # DEBUG: Print URL to see if it's correct before the call (first 50 chars for security)
+    print(f"DEBUG: Attempting to connect to URL: {TELEGRAM_API_URL[:50]}...")
 
     payload = {
         'chat_id': local_chat_id,
         'text': message,
-        'parse_mode': 'MarkdownV2'  # CRITICAL FIX: CHANGED TO MARKDOWNV2
+        'parse_mode': 'MarkdownV2'
     }
 
     try:
@@ -239,7 +241,6 @@ def send_telegram_notification(message):
         print(f"Telegram notification sent successfully. Status: {response.status_code}")
     except requests.exceptions.HTTPError as e:
         print(f"Error sending message to Telegram API: {e}")
-        # Print the problematic payload text for debugging if it fails again
         print(f"Attempted Payload Text: {message}")
         print(f"Response Content: {response.text}")
         raise
@@ -248,6 +249,7 @@ if __name__ == "__main__":
 
     local_file_path = os.environ.get('FILE_PATH')
 
+    # Initial check (using os.environ.get directly to allow .strip() above)
     if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID'), local_file_path]):
         print("Setup error: One or more environment variables (secrets or file path) are missing.")
         sys.exit(1)
