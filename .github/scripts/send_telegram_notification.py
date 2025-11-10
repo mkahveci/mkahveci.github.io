@@ -67,8 +67,7 @@ def get_top_trade(file_path):
 
 def format_management_alert(trade_data, latest_step):
     """
-    Formats a simplified Telegram message for an adjustment, close, or assignment
-    to avoid MarkdownV2 parsing errors, and includes the permalink.
+    Formats a simplified Telegram message for an adjustment, close, or assignment.
     (This is the simplified version we already fixed)
     """
 
@@ -93,8 +92,8 @@ def format_management_alert(trade_data, latest_step):
 
 def format_initial_alert(data):
     """
-    Formats a *simplified* Telegram message for a brand new trade idea (OPEN)
-    to avoid all parsing errors from free-text fields.
+    Formats a *super simplified* Telegram message for a brand new trade idea (OPEN)
+    to match the user's requested template.
     """
 
     # Get essential, structured data
@@ -106,32 +105,17 @@ def format_initial_alert(data):
     trade_details = analysis.get('tradeDetails', {})
     expiration = escape_markdown(trade_details.get('expiration', 'N/A'))
 
-    # Get P/L metrics
-    pop_str = escape_markdown(safe_float(data.get('analysis', {}).get('metrics', {}).get('pop', 'N/A')))
-    max_profit_str = escape_markdown(safe_float(data.get('analysis', {}).get('tradeDetails', {}).get('maxProfit', 'N/A')))
-    expected_return = escape_markdown(data.get('expectedReturnDisplay', 'N/A'))
-
-    # Define the escaped separator line
-    ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
-
     # Permalink
     STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
+    LINK_TEXT = escape_markdown("View Full Analysis on Kahveci Nexus")
 
-    # MESSAGE CONSTRUCTION (Simplified)
+    # MESSAGE CONSTRUCTION (Super Simplified)
     message = (
         f"🚨 *NEW TRADE: {trade_title}* 🚨\n\n"
         f"📈 *Asset:* `{ticker}`\n"
         f"🛠️ *Strategy:* {strategy}\n"
-        f"📆 *Expiration:* {expiration}\n"
-        f"{ESCAPED_SEPARATOR}\n"
-        #
-        # *** THIS IS THE FIX: Escaped \. and \( \) for Python/Telegram ***
-        #
-        f"✅ *Prob\\. of Profit \\(PoP\\):* *{pop_str}*\\%\n"
-        f"💰 *Max Annualized ROC:* {expected_return}\n"
-        f"💵 *Max Profit:* *\\${max_profit_str}*\n"
-        f"{ESCAPED_SEPARATOR}\n\n"
-        f"[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
+        f"📆 *Expiration:* {expiration}\n\n"
+        f"[{LINK_TEXT}]({STATIC_DOC_URL})"
     )
 
     return message
