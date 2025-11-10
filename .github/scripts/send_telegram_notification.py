@@ -68,7 +68,7 @@ def get_top_trade(file_path):
 def format_management_alert(trade_data, latest_step):
     """
     Formats a simplified Telegram message for an adjustment, close, or assignment
-    to avoid MarkdownV2 parsing errors, as requested.
+    to avoid MarkdownV2 parsing errors, and includes the permalink.
     """
 
     ticker = escape_markdown(trade_data.get('ticker', 'N/A'))
@@ -76,12 +76,16 @@ def format_management_alert(trade_data, latest_step):
     date = escape_markdown(latest_step.get('date', 'N/A'))
     action = escape_markdown(latest_step.get('actionTaken', 'N/A'))
 
+    # Permalink
+    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
+
     # Construct the simplified message
     message = (
         f"🔔 *TRADE MANAGEMENT: {ticker}*\n\n"
         f"🔄 *Event Type:* {step_type}\n"
         f"📅 *Date:* {date}\n"
-        f"📝 *Action:* {action}\n"
+        f"📝 *Action:* {action}\n\n"
+        f"[View Full Progression on Kahveci Nexus]({STATIC_DOC_URL})"
     )
 
     return message
@@ -175,7 +179,7 @@ def send_telegram_notification(message):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
+    TELEGRAM_API_URL = f"httpsS://api.telegram.org/bot{local_bot_token}/sendMessage"
 
     # DEBUG: Print URL to see if it's correct before the call (first 50 chars for security)
     print(f"DEBUG: Attempting to connect to URL: {TELEGRAM_API_URL[:50]}...")
