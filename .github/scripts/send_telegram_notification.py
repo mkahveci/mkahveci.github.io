@@ -102,10 +102,7 @@ def format_initial_alert(data):
     ticker = escape_markdown(data.get('ticker', 'N/A'))
 
     analysis = data.get('analysis', {})
-
-    # *** THIS IS THE FIX: Completed the string 'N/A' ***
     strategy = escape_markdown(analysis.get('strategyType', 'N/A'))
-
     trade_details = analysis.get('tradeDetails', {})
     expiration = escape_markdown(trade_details.get('expiration', 'N/A'))
 
@@ -127,7 +124,10 @@ def format_initial_alert(data):
         f"🛠️ *Strategy:* {strategy}\n"
         f"📆 *Expiration:* {expiration}\n"
         f"{ESCAPED_SEPARATOR}\n"
-        f"✅ *Prob\. of Profit (PoP):* *{pop_str}*\\%\n" # Escaping %
+        #
+        # *** THIS IS THE FIX: Escaped \. and \( \) for Python/Telegram ***
+        #
+        f"✅ *Prob\\. of Profit \\(PoP\\):* *{pop_str}*\\%\n"
         f"💰 *Max Annualized ROC:* {expected_return}\n"
         f"💵 *Max Profit:* *\\${max_profit_str}*\n"
         f"{ESCAPED_SEPARATOR}\n\n"
@@ -198,7 +198,7 @@ if __name__ == "__main__":
             message = format_telegram_message(top_trade)
             send_telegram_notification(message)
         else:
-            print("No valid trade data found to send notification.")
+            print("No valid trade data found to send.")
     except Exception as e:
         print(f"A final critical error occurred: {e}")
         sys.exit(1)
