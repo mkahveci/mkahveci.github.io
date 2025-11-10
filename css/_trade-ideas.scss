@@ -1,0 +1,232 @@
+/* =========================================
+   TRADE IDEAS PAGE STYLES
+   ========================================= */
+
+/* --- Date Block Styling (Used for Trade Card Headers) --- */
+.date-block {
+    text-align: center;
+    line-height: 1;
+    flex-shrink: 0; /* Prevents date block from shrinking */
+
+    .month {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--bs-primary); /* Primary color for month */
+    }
+    .day {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--bs-body-color);
+    }
+}
+
+/* --- Trade Card Header Status Pills --- */
+.status-pill {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem; /* Rounded corners */
+}
+
+/* Specific Pill Colors */
+.status-open {
+    color: var(--bs-dark);
+    background-color: var(--bs-success);
+}
+
+.status-closed {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-color-secondary);
+}
+
+.account-ira {
+    color: var(--bs-dark);
+    background-color: var(--bs-primary); /* Gold/Yellow */
+}
+
+.account-margin {
+    color: var(--bs-body-color);
+    background-color: var(--bs-secondary);
+}
+
+.account-paper {
+    color: var(--bs-body-color);
+    background-color: var(--bs-info);
+}
+
+
+/* --- Trade Leg Details Grid --- */
+.leg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bs-body-bg);
+    border-radius: var(--bs-border-radius);
+
+    .leg-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.25rem;
+        border: 1px dashed var(--bs-border-color);
+        border-radius: var(--bs-border-radius-sm);
+
+        strong {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+        }
+
+        span {
+            font-family: var(--bs-font-monospace);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
+}
+
+/* --- Trade Metrics Grid --- */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+    .metric-item {
+        strong {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--bs-body-color);
+        }
+        span {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 400;
+            font-family: var(--bs-font-monospace);
+            color: var(--bs-secondary-color);
+        }
+    }
+}
+
+
+/* =========================================
+   TRADE PROGRESSION TIMELINE STYLES
+   ========================================= */
+
+.progression-timeline {
+    list-style: none;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--bs-border-color);
+    position: relative;
+    margin-top: 1rem;
+}
+
+.progression-step {
+    position: relative;
+    padding-bottom: 1.5rem;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    /* The timeline circle marker */
+    &::before {
+        content: "";
+        position: absolute;
+        left: -1.9rem; /* Position to the left of the border */
+        top: 0.2rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--bs-secondary); /* Default neutral color */
+        border: 2px solid var(--bs-body-bg);
+        z-index: 10;
+    }
+}
+
+/* Specific marker colors based on step type */
+/* --- UPDATED TO MATCH LIQUID OUTPUT --- */
+.progression-step.step-open-short-put::before { background-color: var(--bs-primary); } /* Gold/Yellow for initiation */
+.progression-step.step-assignment::before { background-color: var(--bs-indigo); } /* Indigo for stock acquisition */
+.progression-step.step-wheel-step-sell-covered-call::before,
+.progression-step.step-wheel-step-close-covered-call::before { background-color: var(--bs-info); } /* Info blue for wheel management */
+.progression-step.step-close::before { background-color: var(--bs-success); } /* Green for successful close */
+.progression-step.step-called-away::before { background-color: var(--bs-success); }
+.progression-step.step-closed-independent-put::before { background-color: var(--bs-success); }
+.progression-step.estimated-scenario::before { background-color: var(--bs-body-color-secondary); border-style: dashed; }
+
+/* Progression Header (Pill and Date) */
+.progression-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.progression-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.375rem;
+    text-transform: uppercase;
+}
+
+/* Specific Pill Colors for Progression */
+/* --- UPDATED TO MATCH LIQUID OUTPUT --- */
+.progression-tag.tag-open-short-put {
+    background-color: var(--bs-primary); /* Gold */
+    color: var(--bs-dark);
+}
+.progression-tag.tag-assignment {
+    background-color: var(--bs-indigo); /* Indigo for assignment */
+    color: var(--bs-white);
+}
+.progression-tag.tag-wheel-step-sell-covered-call,
+.progression-tag.tag-wheel-step-close-covered-call {
+    background-color: var(--bs-info); /* Info Blue */
+    color: var(--bs-dark);
+}
+.progression-tag.tag-called-away {
+    background-color: var(--bs-success);
+    color: var(--bs-dark);
+}
+.progression-tag.tag-closed-independent-put {
+    background-color: var(--bs-success);
+    color: var(--bs-dark);
+}
+.progression-tag.tag-close {
+    background-color: var(--bs-success);
+    color: var(--bs-dark);
+}
+.progression-tag.tag-adjustment {
+    background-color: var(--bs-warning);
+    color: var(--bs-dark);
+}
+.progression-tag.tag-estimated {
+    background-color: var(--bs-body-color-secondary);
+    color: var(--bs-body-bg);
+}
+
+.progression-date {
+    font-size: 0.75rem;
+    color: var(--bs-secondary-color);
+}
+
+.progression-details {
+    padding-left: 0.5rem;
+
+    .profit-loss {
+        display: block;
+        font-weight: 700;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+    }
+}

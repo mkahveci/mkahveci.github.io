@@ -4,6 +4,7 @@
 
 // 1. Your custom component styles (like _blog.scss)
 @import "blog";
+@import "trade-ideas"; /* <-- ADDED: Trade Log Styles */
 
 // 2. Font Awesome setup
 $fa-font-path: "font";

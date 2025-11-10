@@ -247,19 +247,31 @@
                                 <ol class="progression-timeline">
                                     {% for step in trade.tradeProgression %}
                                     {% assign step_type_lower = step.stepType | downcase %}
-                                    <li class="progression-step step-{{ step_type_lower }}">
+
+                                    {% comment %}
+                                    Robustly clean the stepType:
+                                    1. Replace ': ' (colon + space) with '-'
+                                    2. Replace ':' with '-'
+                                    3. Replace '_' with '-'
+                                    4. Replace ' ' with '-'
+                                    This handles all known separators and prevents double hyphens.
+                                    {% endcomment %}
+                                    {% assign step_class = step_type_lower | replace: ': ', '-' | replace: ':', '-' | replace: '_', '-' | replace: ' ', '-' %}
+
+                                    <li class="progression-step step-{{ step_class }}">
                                         <div class="progression-header">
 
                                             {% comment %} --- UPDATED PILL TEXT LOGIC --- {% endcomment %}
                                             {% assign pill_text = step.stepType %}
                                             {% if step.stepType == 'ASSIGNMENT' %}{% assign pill_text = "ASSIGNED" %}
                                             {% elsif step.stepType == 'WHEEL_STEP: SELL_COVERED_CALL' %}{% assign pill_text = "WHEEL: COVERED CALL" %}
+                                            {% elsif step.stepType == 'WHEEL_STEP: CLOSE_COVERED_CALL' %}{% assign pill_text = "WHEEL: CALL CLOSED" %}
                                             {% elsif step.stepType == 'CALLED_AWAY' %}{% assign pill_text = "CALLED AWAY" %}
                                             {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}{% assign pill_text = "INDEPENDENT CLOSE" %}
                                             {% elsif step.stepType == 'OPEN_SHORT_PUT' %}{% assign pill_text = "PUT OPENED" %}
                                             {% endif %}
 
-                                            <span class="progression-tag tag-{{ step_type_lower }}">{{ pill_text }}</span>
+                                            <span class="progression-tag tag-{{ step_class }}">{{ pill_text }}</span>
                                             {% comment %} NOTE: step.dteRemaining is used if available, otherwise it falls back to a default value. {% endcomment %}
                                             <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({% if step.dteRemaining %}{{ step.dteRemaining }}{% else %}N/A{% endif %} DTE)</span>
                                         </div>
@@ -293,7 +305,7 @@
 
 
                                             {% elsif step.stepType contains 'WHEEL_STEP' %}
-                                            <p><strong>Phase 2 Action:</strong> {{ step.actionTaken }} expiring {{ step.expiration | date: "%b %d" }}.</p>
+                                            <p><strong>Phase 2 Action:</strong> {{ step.actionTaken }}</p>
 
                                             {% comment %} Logic to handle both open call (credit) and close call (P/L) steps {% endcomment %}
                                             {% if step.grossCreditTotal %}
@@ -434,11 +446,11 @@
                                 Strategy: {{ trade.analysis.strategyType }} ({{ trade.analysis.tradeDetails.dte }} DTE)
                                 Expiration: {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }}
                                 {% if trade.analysis.tradeDetails.spreadDetails %}
-                                Short Put: &#36;{{ trade.analysis.tradeDetails.spreadDetails.shortPutStrike | round: 2 }}
-                                Long Put: &#36;{{ trade.analysis.tradeDetails.spreadDetails.longPutStrike | round: 2 }}
-                                Short Call: &#36;{{ trade.analysis.tradeDetails.spreadDetails.shortCallStrike | round: 2 }}
-                                Long Call: &#36;{{ trade.analysis.tradeDetails.spreadDetails.longCallStrike | round: 2 }}
-                                Net Credit: &#36;{{ trade.analysis.tradeDetails.spreadDetails.netCredit | round: 2 }}
+                                Short Put: &#36;{{ details.shortPutStrike | round: 2 }}
+                                Long Put: &#36;{{ details.longPutStrike | round: 2 }}
+                                Short Call: &#36;{{ details.shortCallStrike | round: 2 }}
+                                Long Call: &#36;{{ details.longCallStrike | round: 2 }}
+                                Net Credit: &#36;{{ details.netCredit | round: 2 }}
                                 Max Profit: &#36;{{ trade.analysis.tradeDetails.maxProfit | round: 2 }}
                                 {% else %}
                                 Strike/Premium: &#36;{{ trade.analysis.tradeDetails.putStrike | round: 2 }} / &#36;{{ trade.analysis.tradeDetails.putPremium | round: 2 }}
@@ -454,7 +466,7 @@
                             <div class="small p-3 rounded bg-warning-subtle">
                                 <h6 class="h6 small"><strong>Thesis</strong></h6>
                                 <p>{{ trade.analysis.thesis }}</p>
-                                <h6 classs="h6 small mt-3"><strong>Management Plan</strong></h6>
+                                <h6 class="h6 small mt-3"><strong>Management Plan</strong></h6>
                                 <p class="mb-0">{{ trade.analysis.managementPlan
                                     | replace: '\\$', '&#36;'
                                     | replace: '\\%', '%'
