@@ -102,4 +102,103 @@ def format_initial_alert(data):
     ticker = escape_markdown(data.get('ticker', 'N/A'))
 
     analysis = data.get('analysis', {})
-    strategy = escape_markdown(analysis.get('strategyType', 'N
+
+    # *** THIS IS THE FIX: Completed the string 'N/A' ***
+    strategy = escape_markdown(analysis.get('strategyType', 'N/A'))
+
+    trade_details = analysis.get('tradeDetails', {})
+    expiration = escape_markdown(trade_details.get('expiration', 'N/A'))
+
+    # Get P/L metrics
+    pop_str = escape_markdown(safe_float(data.get('analysis', {}).get('metrics', {}).get('pop', 'N/A')))
+    max_profit_str = escape_markdown(safe_float(data.get('analysis', {}).get('tradeDetails', {}).get('maxProfit', 'N/A')))
+    expected_return = escape_markdown(data.get('expectedReturnDisplay', 'N/A'))
+
+    # Define the escaped separator line
+    ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
+
+    # Permalink
+    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
+
+    # MESSAGE CONSTRUCTION (Simplified)
+    message = (
+        f"🚨 *NEW TRADE: {trade_title}* 🚨\n\n"
+        f"📈 *Asset:* `{ticker}`\n"
+        f"🛠️ *Strategy:* {strategy}\n"
+        f"📆 *Expiration:* {expiration}\n"
+        f"{ESCAPED_SEPARATOR}\n"
+        f"✅ *Prob\. of Profit (PoP):* *{pop_str}*\\%\n" # Escaping %
+        f"💰 *Max Annualized ROC:* {expected_return}\n"
+        f"💵 *Max Profit:* *\\${max_profit_str}*\n"
+        f"{ESCAPED_SEPARATOR}\n\n"
+        f"[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
+    )
+
+    return message
+
+def format_telegram_message(data):
+    """Determines if the alert is for a new trade or a management step."""
+
+    progression = data.get('tradeProgression', [])
+
+    if not progression:
+        # No progression steps: must be a brand new trade open
+        return format_initial_alert(data)
+    else:
+        # Progression steps exist: send alert for the LAST (latest) step
+        return format_management_alert(data, progression[-1])
+
+def send_telegram_notification(message):
+    """Sends the formatted message via the Telegram API."""
+
+    local_bot_token = os.environ.get('BOT_TOKEN')
+    if local_bot_token:
+        local_bot_token = local_bot_token.strip()
+
+    local_chat_id = os.environ.get('CHAT_ID')
+
+    if not all([local_bot_token, local_chat_id]):
+        print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
+        raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
+
+    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
+
+    # DEBUG: Print URL to see if it's correct before the call (first 50 chars for security)
+    print(f"DEBUG: Attempting to connect to URL: {TELEGRAM_API_URL[:50]}...")
+
+    payload = {
+        'chat_id': local_chat_id,
+        'text': message,
+        'parse_mode': 'MarkdownV2'
+    }
+
+    try:
+        response = requests.post(TELEGRAM_API_URL, data=payload)
+        response.raise_for_status()
+        print(f"Telegram notification sent successfully. Status: {response.status_code}")
+    except requests.exceptions.HTTPError as e:
+        print(f"Error sending message to Telegram API: {e}")
+        print(f"Attempted Payload Text: {message}")
+        print(f"Response Content: {response.text}")
+        raise
+
+if __name__ == "__main__":
+
+    local_file_path = os.environ.get('FILE_PATH')
+
+    if not all([os.environ.get('BOT_TOKEN'), os.environ.get('CHAT_ID'), local_file_path]):
+        print("Setup error: One or more environment variables (secrets or file path) are missing.")
+        sys.exit(1)
+
+    try:
+        top_trade = get_top_trade(local_file_path)
+
+        if top_trade:
+            # Format message based on whether it's an OPEN or a management step
+            message = format_telegram_message(top_trade)
+            send_telegram_notification(message)
+        else:
+            print("No valid trade data found to send notification.")
+    except Exception as e:
+        print(f"A final critical error occurred: {e}")
+        sys.exit(1)
