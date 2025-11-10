@@ -69,6 +69,7 @@ def format_management_alert(trade_data, latest_step):
     """
     Formats a simplified Telegram message for an adjustment, close, or assignment
     to avoid MarkdownV2 parsing errors, and includes the permalink.
+    (This is the simplified version we already fixed)
     """
 
     ticker = escape_markdown(trade_data.get('ticker', 'N/A'))
@@ -91,7 +92,10 @@ def format_management_alert(trade_data, latest_step):
     return message
 
 def format_initial_alert(data):
-    """Formats a Telegram message for a brand new trade idea (OPEN)."""
+    """
+    Formats a Telegram message for a brand new trade idea (OPEN).
+    *** UPDATED to escape hard-coded parentheses. ***
+    """
 
     trade_title = escape_markdown(data.get('tradeTitle', 'New Trade Idea'))
     ticker = escape_markdown(data.get('ticker', 'N/A'))
@@ -120,7 +124,8 @@ def format_initial_alert(data):
     if strategy in [escape_markdown('Short Put'), escape_markdown('Cash-Secured Put')]:
         strike_line = f"🎯 *Short Put Strike:* *\\${s_put}*"
     elif strategy in [escape_markdown('Short Strangle'), escape_markdown('Iron Condor'), escape_markdown('Skewed Iron Condor'), escape_markdown('Delta-Skewed Short Iron Condor'), escape_markdown('Covered Short Strangle')]:
-        strike_line = f"🎯 *Strikes (P/C):* *\\${s_put} / \\${s_call}*"
+        # *** FIX HERE: Escaped (P/C) ***
+        strike_line = f"🎯 *Strikes \(P/C\):* *\\${s_put} / \\${s_call}*"
     else:
         strike_line = f"🎯 *Strikes:* See trade details"
 
@@ -130,9 +135,11 @@ def format_initial_alert(data):
     # MESSAGE CONSTRUCTION (Using MarkdownV2 Bolding/Italics)
     message = (
         f"🚨 *NEW TRADE: {trade_title}* 🚨\n\n"
-        f"📈 *Asset:* `{ticker}` (Current Price: \\${current_price_str})\n"
+        # *** FIX HERE: Escaped (Current Price: ...) ***
+        f"📈 *Asset:* `{ticker}` \(Current Price: \\${current_price_str}\)\n"
         f"🛠️ *Strategy:* {strategy}\n"
-        f"📆 *Expiration:* {expiration} (Published: {publication_date})\n"
+        # *** FIX HERE: Escaped (Published: ...) ***
+        f"📆 *Expiration:* {expiration} \(Published: {publication_date}\)\n"
         f"{strike_line}\n"
         f"{ESCAPED_SEPARATOR}\n"
         f"✅ *Prob\\. of Profit (PoP):* *{pop_str}*\\%\n" # Escaping %
@@ -176,11 +183,9 @@ def send_telegram_notification(message):
     local_chat_id = os.environ.get('CHAT_ID')
 
     if not all([local_bot_token, local_chat_id]):
-        print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
+        print("Error: Missing BOT_TOKEN or CH_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    # *** THE FIX IS HERE ***
-    # Changed from "httpsS://" to "https://"
     TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
 
     # DEBUG: Print URL to see if it's correct before the call (first 50 chars for security)
