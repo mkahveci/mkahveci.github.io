@@ -179,7 +179,9 @@ def send_telegram_notification(message):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"httpsS://api.telegram.org/bot{local_bot_token}/sendMessage"
+    # *** THE FIX IS HERE ***
+    # Changed from "httpsS://" to "https://"
+    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
 
     # DEBUG: Print URL to see if it's correct before the call (first 50 chars for security)
     print(f"DEBUG: Attempting to connect to URL: {TELEGRAM_API_URL[:50]}...")
