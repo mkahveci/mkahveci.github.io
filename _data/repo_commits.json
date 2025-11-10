@@ -1,5 +1,75 @@
 [
   {
+    "repo": "mkahveci/email-signature",
+    "message": "update",
+    "url": "https://github.com/mkahveci/email-signature/commit/301ae26d5dd4b3e05baeb467d0ea45201f8012b2",
+    "author": "mkahveci",
+    "date": "2025-11-09T16:39:37Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ad1c0039056b802f62341281da672e52cbada278",
+    "author": "mkahveci",
+    "date": "2025-11-09T15:35:39Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0254ac0677e41303fac806c990a5b94776d97dad",
+    "author": "mkahveci",
+    "date": "2025-11-09T12:23:50Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/100af139c6f6a895f5352799df8a4e15f7d9b46a",
+    "author": "mkahveci",
+    "date": "2025-11-09T11:26:02Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e3a98b771a8d452fe053d18a41ec1efe3935d365",
+    "author": "mkahveci",
+    "date": "2025-11-09T11:25:47Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge pull request #57 from mkahveci/CSS-Update-Jekyllrb\n\nUpdate",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/8a6a9d3424b25ea340ad0a5286a177081e3cd9ae",
+    "author": "Murat Kahveci",
+    "date": "2025-11-09T11:21:17Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bad24c919fd844dd863e66095f8e7752d996a559",
+    "author": "mkahveci",
+    "date": "2025-11-09T11:20:37Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5dc7d327889ec20f16c5fb87e045d42b6f3e66ee",
+    "author": "mkahveci",
+    "date": "2025-11-09T09:47:34Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/17b45dbde5620d605221ba7457bc18033532ff22",
+    "author": "mkahveci",
+    "date": "2025-11-09T01:54:14Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ccd3fe1b69f556cc839aebed9e9af69c05410672",
+    "author": "github-actions[bot]",
+    "date": "2025-11-09T01:28:48Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a18efebdbcad91312a065ba508f0543600eb7e87",
@@ -665,39 +735,11 @@
     "date": "2025-10-26T18:50:38Z"
   },
   {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "feat: performance script",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ccd04d4cf4d5338facc23dd812537a3d80912678",
-    "author": "mkahveci",
-    "date": "2025-10-26T16:52:16Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "feat: performance script",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/eda777707dbe1f9327d68cddb670f7f89a7d36d2",
-    "author": "mkahveci",
-    "date": "2025-10-26T16:48:08Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "feat: Implement filtered content and expanded course page\n\nIntroduce may-filtered content on pages for courses, blog posts, and\npublications to enhance relevance.\n\nExpand the PHYS course page to include course materials organized by due\ndates for better student access.\n\nRework blog post tags using advanced content analysis for improved\ncategorization.",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/780a365aae00db7a551d399dac498d32d7ea8dcf",
-    "author": "mkahveci",
-    "date": "2025-10-26T00:10:25Z"
-  },
-  {
     "repo": "mkahveci/qma",
     "message": "feat: Display filtered trade list and improve load efficiency\n\nUpdate trade-ideas.md to show a filtered list of trades, defaulting to today's trades. Also, improve page load efficiency by limiting the initial display to the last 50 trades.\n\nRename reading.md title to \"Readings & Documentation\".",
     "url": "https://github.com/mkahveci/qma/commit/2c1a2b7dac01d5d3c9f5c2fe5bca00abc4bc1e48",
     "author": "mkahveci",
     "date": "2025-10-25T22:40:18Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f6a92dd4c2fc776a1a8d88d52c5967bc7d3a4e0a",
-    "author": "mkahveci",
-    "date": "2025-10-25T14:24:45Z"
   },
   {
     "repo": "mkahveci/qma",
@@ -714,34 +756,6 @@
     "date": "2025-10-25T14:22:50Z"
   },
   {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/dc09ef66e56075a99cf426bf2a381a2829e4d83d",
-    "author": "mkahveci",
-    "date": "2025-10-25T14:20:22Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b179777d986e485f0f84769ece777259f8c7fadc",
-    "author": "mkahveci",
-    "date": "2025-10-25T14:15:30Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6be940e53931cb9faae7940395df1e8c04afe9f9",
-    "author": "mkahveci",
-    "date": "2025-10-25T14:05:27Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2613ccebb9792de268df04506306233d6042ac21",
-    "author": "mkahveci",
-    "date": "2025-10-25T13:59:46Z"
-  },
-  {
     "repo": "mkahveci/qma",
     "message": "root: Update README with official Telegram feed link",
     "url": "https://github.com/mkahveci/qma/commit/bd15e9525a6ed9b29f7855a1df4c8ca1dd5c3398",
@@ -754,13 +768,6 @@
     "url": "https://github.com/mkahveci/qma/commit/c7c4d75a3e0bfa867e1dd79d177ca9931b3d5b4e",
     "author": "mkahveci",
     "date": "2025-10-25T13:52:44Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0f5404eef50d76e6c9266c284ede27b66a034ca8",
-    "author": "mkahveci",
-    "date": "2025-10-25T04:43:52Z"
   },
   {
     "repo": "mkahveci/qma",
