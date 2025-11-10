@@ -10,8 +10,8 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
 
-# --- Helper Function for MarkdownV2 Escaping (UPDATED) ---
-def escape_markdown_v2(text):
+# --- Helper Function for MarkdownV2 Escaping (CORRECTED) ---
+def escape_markdown(text):
     """
     Escapes special characters in a string for Telegram's MarkdownV2 parse mode.
     This is critical for preventing Parse Errors, especially with financial data.
@@ -23,14 +23,7 @@ def escape_markdown_v2(text):
     text = str(text)
 
     # 1. Escape the core reserved and problematic characters for MarkdownV2.
-    # Pattern: \ (backslash), _ (underscore), * (asterisk), [ (opening square bracket),
-    # ] (closing square bracket), ( (opening parenthesis), ) (closing parenthesis),
-    # ~ (tilde), ` (backtick), > (greater than), # (hash), + (plus), - (minus),
-    # = (equals), | (pipe), { (opening curly brace), } (closing curly brace),
-    # . (period), ! (exclamation mark), and $ (dollar sign - highly problematic with financial data).
-
-    # We use a pattern to escape all known reserved/problematic characters.
-    # Note: \ must be escaped as \\\\ when defining the pattern string in Python.
+    # Pattern: \, _, *, [, ], (, ), ~, `, >, #, +, -, =, |, {, }, ., !, $
     reserved_chars = r'([_*\[\]()~`>#+=\-|{}.!$])'
 
     # Use re.sub to replace these characters with an escaped version.
@@ -44,8 +37,12 @@ def escape_markdown_v2(text):
 
     return escaped_text
 
-# Renamed original escape_markdown to use the new V2 function
-escape_markdown = escape_markdown_v2
+def safe_float(value):
+    """Converts a value to float safely, returning 0.0 on error."""
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return 0.0
 
 def get_top_trade(file_path):
     """
@@ -82,31 +79,35 @@ def format_management_alert(trade_data, latest_step):
 
     if step_type == escape_markdown('ASSIGNMENT'):
         pnl_amount = latest_step.get('netCostBasisPerShare', 'N/A')
-        # Apply escaping to the dynamic price value
+        # Cost basis is just a value, escape it without numeric format
         pnl_text = f"New Cost Basis: *\\${escape_markdown(pnl_amount)}*"
 
     elif step_type == escape_markdown('WHEEL_STEP: SELL_COVERED_CALL'):
-        credit = latest_step.get('grossCreditTotal', 0.0)
-        # Apply escaping to the dynamic price value
-        pnl_text = f"Credit Received: *+\\${escape_markdown(credit):.2f}*"
+        credit = safe_float(latest_step.get('grossCreditTotal', 0.0))
+        # FIX: Apply formatting, then escape the result
+        credit_formatted = f"{credit:.2f}"
+        pnl_text = f"Credit Received: *+\\${escape_markdown(credit_formatted)}*"
 
     elif step_type in [escape_markdown('CALLED_AWAY'), escape_markdown('CLOSE'), escape_markdown('CLOSED_INDEPENDENT_PUT')]:
-        pnl_amount = latest_step.get('grossProfitLossAmount', 0.0)
+        pnl_amount = safe_float(latest_step.get('grossProfitLossAmount', 0.0))
         pnl_type = escape_markdown(latest_step.get('grossProfitLossType', 'Profit/Loss'))
         emoji = "✅" if pnl_type == escape_markdown("Profit") else "❌"
-        # Apply escaping to the dynamic price value
-        pnl_text = f"{emoji} Final P/L: *\\${escape_markdown(pnl_amount):.2f}* ({pnl_type})"
+        # FIX: Apply formatting, then escape the result
+        pnl_amount_formatted = f"{pnl_amount:.2f}"
+        pnl_text = f"{emoji} Final P/L: *\\${escape_markdown(pnl_amount_formatted)}* ({pnl_type})"
 
     elif step_type == escape_markdown('ADJUSTMENT'):
-        change = latest_step.get('netChange', 0.0)
+        change = safe_float(latest_step.get('netChange', 0.0))
         change_type = escape_markdown(latest_step.get('netChangeType', 'N/A'))
-        # Apply escaping to the dynamic price value
-        pnl_text = f"Net Change: *{change_type} of \\${escape_markdown(change):.2f}*"
+        # FIX: Apply formatting, then escape the result
+        change_formatted = f"{change:.2f}"
+        pnl_text = f"Net Change: *{change_type} of \\${escape_markdown(change_formatted)}*"
 
     else: # Default for OPEN_SHORT_PUT or unrecognized step
-        credit = latest_step.get('grossProfitLossAmount', 'N/A')
-        # Apply escaping to the dynamic price value
-        pnl_text = f"Realized Options P/L: *+\\${escape_markdown(credit):.2f}*" if credit != 'N/A' else ""
+        credit = safe_float(latest_step.get('grossProfitLossAmount', 'N/A'))
+        # FIX: Apply formatting, then escape the result
+        credit_formatted = f"{credit:.2f}"
+        pnl_text = f"Realized Options P/L: *+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else ""
 
     message = (
         f"🔔 *TRADE MANAGEMENT: {ticker}* 🔔\n\n"
@@ -119,13 +120,9 @@ def format_management_alert(trade_data, latest_step):
     )
 
     if notes:
-        # Notes are in italics using single underscores, but the escape function
-        # already handles the content, so we just wrap it with the correct V2 italic markers.
         message += f"\n*Notes/Rationale:*\n_{notes}_\n"
 
     # Permalink
-    # Note: URLs in MarkdownV2 must be escaped if they contain special characters,
-    # but the characters in this URL are generally safe.
     STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
     message += (
         f"\n[View Full Progression on Kahveci Nexus]({STATIC_DOC_URL})"
@@ -138,7 +135,12 @@ def format_initial_alert(data):
 
     trade_title = escape_markdown(data.get('tradeTitle', 'New Trade Idea'))
     ticker = escape_markdown(data.get('ticker', 'N/A'))
-    current_price = data.get('currentPrice', 'N/A')
+
+    # Prices and percentages must be converted to string, then escaped
+    current_price_str = escape_markdown(safe_float(data.get('currentPrice', 'N/A')))
+    pop_str = escape_markdown(safe_float(data.get('analysis', {}).get('metrics', {}).get('pop', 'N/A')))
+    max_profit_str = escape_markdown(safe_float(data.get('analysis', {}).get('tradeDetails', {}).get('maxProfit', 'N/A')))
+
     expected_return = escape_markdown(data.get('expectedReturnDisplay', 'N/A'))
     summary_justification = escape_markdown(data.get('summaryJustification', 'No summary provided.'))
     publication_date = escape_markdown(data.get('publicationDate', 'YYYY-MM-DD'))
@@ -148,34 +150,31 @@ def format_initial_alert(data):
     trade_details = analysis.get('tradeDetails', {})
     spread_details = trade_details.get('spreadDetails', {})
     expiration = escape_markdown(trade_details.get('expiration', 'N/A'))
-    metrics = analysis.get('metrics', {})
-    pop = metrics.get('pop', 'N/A')
-    max_profit = trade_details.get('maxProfit', 'N/A')
     management = escape_markdown(analysis.get('managementPlan', 'Standard management plan.'))
 
     # Dynamic Strike Price Generation (Updated with escaping)
-    s_put = spread_details.get('shortPutStrike', 'N/A')
-    s_call = spread_details.get('shortCallStrike', 'N/A')
+    s_put = escape_markdown(spread_details.get('shortPutStrike', 'N/A'))
+    s_call = escape_markdown(spread_details.get('shortCallStrike', 'N/A'))
 
     strike_line = ""
     if strategy in [escape_markdown('Short Put'), escape_markdown('Cash-Secured Put')]:
-        strike_line = f"🎯 *Short Put Strike:* *\\${escape_markdown(s_put)}*"
+        strike_line = f"🎯 *Short Put Strike:* *\\${s_put}*"
     elif strategy in [escape_markdown('Short Strangle'), escape_markdown('Iron Condor'), escape_markdown('Skewed Iron Condor'), escape_markdown('Delta-Skewed Short Iron Condor'), escape_markdown('Covered Short Strangle')]:
-        strike_line = f"🎯 *Strikes (P/C):* *\\${escape_markdown(s_put)} / \\${escape_markdown(s_call)}*"
+        strike_line = f"🎯 *Strikes (P/C):* *\\${s_put} / \\${s_call}*"
     else:
         strike_line = f"🎯 *Strikes:* See trade details"
 
     # MESSAGE CONSTRUCTION (Using MarkdownV2 Bolding/Italics)
     message = (
         f"🚨 *NEW TRADE: {trade_title}* 🚨\n\n"
-        f"📈 *Asset:* `{ticker}` (Current Price: \\${escape_markdown(current_price)})\n"
+        f"📈 *Asset:* `{ticker}` (Current Price: \\${current_price_str})\n"
         f"🛠️ *Strategy:* {strategy}\n"
         f"📆 *Expiration:* {expiration} (Published: {publication_date})\n"
         f"{strike_line}\n"
         f"-----------------------------------------\n"
-        f"✅ *Prob\\. of Profit (PoP):* *{escape_markdown(pop)}\\%\n"
+        f"✅ *Prob\\. of Profit (PoP):* *{pop_str}*\\%\n" # Escaping %
         f"💰 *Max Annualized ROC:* {expected_return}\n"
-        f"💵 *Max Profit:* *\\${escape_markdown(max_profit)}*\n"
+        f"💵 *Max Profit:* *\\${max_profit_str}*\n"
         f"-----------------------------------------\n"
         f"\n*Summary Justification:*\n"
         f"_{summary_justification}_\n\n"
@@ -218,7 +217,7 @@ def send_telegram_notification(message):
     payload = {
         'chat_id': local_chat_id,
         'text': message,
-        'parse_mode': 'MarkdownV2'  # <--- CRITICAL FIX: CHANGED TO MARKDOWNV2
+        'parse_mode': 'MarkdownV2'  # CRITICAL FIX: CHANGED TO MARKDOWNV2
     }
 
     try:
