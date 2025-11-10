@@ -93,7 +93,7 @@ def format_management_alert(trade_data, latest_step):
         credit = safe_float_local(latest_step.get('grossCreditTotal', 0.0))
         # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
-        pnl_text = f"Credit Received: *+\\${escape_markdown(credit_formatted)}*"
+        pnl_text = f"Credit Received: *\\+\\${escape_markdown(credit_formatted)}*" # FIXED '+' ESCAPING
 
     elif step_type in [escape_markdown('CALLED_AWAY'), escape_markdown('CLOSE'), escape_markdown('CLOSED_INDEPENDENT_PUT')]:
         pnl_amount = safe_float_local(latest_step.get('grossProfitLossAmount', 0.0))
@@ -114,9 +114,9 @@ def format_management_alert(trade_data, latest_step):
         credit = safe_float_local(latest_step.get('grossProfitLossAmount', 'N/A'))
         # FIX: Apply formatting, then escape the result
         credit_formatted = f"{credit:.2f}"
-        pnl_text = f"Realized Options P/L: *+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else ""
+        pnl_text = f"Realized Options P/L: *\\+\\${escape_markdown(credit_formatted)}*" if credit != 0.0 else "" # FIXED '+' ESCAPING
 
-    # FIX: Define the escaped separator line once for the reserved hyphens
+    # Define the escaped separator line once for the reserved hyphens
     ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
 
     message = (
@@ -174,7 +174,7 @@ def format_initial_alert(data):
     else:
         strike_line = f"🎯 *Strikes:* See trade details"
 
-    # FIX: Define the escaped separator line once for the reserved hyphens
+    # Define the escaped separator line once for the reserved hyphens
     ESCAPED_SEPARATOR = escape_markdown("-----------------------------------------")
 
     # MESSAGE CONSTRUCTION (Using MarkdownV2 Bolding/Italics)
@@ -196,9 +196,9 @@ def format_initial_alert(data):
     )
 
     # Permalink
-    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
+    STATIC_DOC_URL = escape_markdown("[https://kahveci.pw/trades/](https://kahveci.pw/trades/)")
     message += (
-        f"[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
+        f"\n[View Full Analysis on Kahveci Nexus]({STATIC_DOC_URL})"
     )
 
     return message
@@ -225,7 +225,7 @@ def send_telegram_notification(message):
         print("Error: Missing BOT_TOKEN or CHAT_ID during function call. Check GitHub secrets.")
         raise ValueError("Missing Telegram BOT_TOKEN or CHAT_ID.")
 
-    TELEGRAM_API_URL = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
+    TELEGRAM_API_URL = f"[https://api.telegram.org/bot](https://api.telegram.org/bot){local_bot_token}/sendMessage"
 
     payload = {
         'chat_id': local_chat_id,
