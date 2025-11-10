@@ -1,7 +1,42 @@
 [
 
 
-
+  {
+    "publicationDate": "2025-11-10",
+    "tradeTitle": "Call Debit Spread on CSCO",
+    "summaryJustification": "This is a journaled Call Debit Spread on CSCO, opened 2025-11-10. This bullish position was entered for a net debit of $3.70, risking $370 for a potential max profit of $630.",
+    "expectedReturnDisplay": "$630 Max Profit",
+    "ticker": "CSCO",
+    "accountType": "Margin",
+    "currentPrice": 72.17,
+    "ivRank": 76.67,
+    "earningsDate": "2025-11-12",
+    "analysis": {
+      "thesis": "This is a journal entry for an existing long call vertical spread, entered on 2025-11-10. The position is bullish, risking $370 (the net debit) to make a potential $630 if CSCO closes at or above $80 by expiration. The trade was opened with 67 DTE. Current IV Rank is high at 76.67%.",
+      "strategyType": "Call Debit Spread",
+      "tradeDetails": {
+        "expiration": "2026-01-16",
+        "dte": 67,
+        "maxProfit": 630.00,
+        "spreadDetails": {
+          "shortPutStrike": 0.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 80.00,
+          "longCallStrike": 70.00,
+          "netCredit": -3.70
+        }
+      },
+      "metrics": {
+        "roc": 170.27,
+        "annualizedRoc": 927.50,
+        "pop": 0.0,
+        "buyingPowerEffect": 370.00,
+        "dailyProfitPotential": 9.40
+      },
+      "managementPlan": "Standard management for a debit spread: Max profit is realized if the price is at or above the short strike ($80) at expiration. Max loss ($370) occurs if the price is at or below the long strike ($70) at expiration."
+    },
+    "tradeProgression": []
+  },
   {
     "publicationDate": "2025-11-07",
     "tradeTitle": "Short Put on MRNA",
