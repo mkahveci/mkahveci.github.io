@@ -3,7 +3,7 @@ layout: projectgit
 title: physics-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /physics-ell/
 ---
 
 ## Physics ELL Content Modification Template

@@ -1,7 +1,8 @@
 ---
 layout: projectgit
 title: "Readings & Documentation"
-permalink: /projectsgit/qma/docs/readings/
+project: qma
+permalink: /qma-readings/
 ---
 
 <div class="container my-5">
@@ -19,7 +20,7 @@ permalink: /projectsgit/qma/docs/readings/
             {% for reading in sorted_readings %}
             <div class="col">
                 <a href="{{ reading.link | relative_url }}" class="text-decoration-none">
-                    <div class="card shadow-sm h-100 border-0">
+                    <div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
                         <div class="card-body d-flex">
                             
                             <div class="me-3 text-primary" style="min-width: 50px;">
@@ -33,7 +34,7 @@ permalink: /projectsgit/qma/docs/readings/
                                 <footer class="mt-2 border-top pt-2">
                                     <small class="text-secondary d-block">
                                         <i class="fas fa-calendar-alt me-1"></i> {{ reading.date | date: "%Y-%m-%d" }} 
-                                        <span class="ms-3"><i class="fas fa-user me-1"></i> <a href="#" class="text-body">{{ reading.author }}</a></span>
+                                        <span class="ms-3"><i class="fas fa-user me-1"></i> {{ reading.author }}</span>
                                     </small>
                                 </footer>
                             </div>

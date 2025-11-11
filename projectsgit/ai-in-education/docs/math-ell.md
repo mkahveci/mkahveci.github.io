@@ -3,7 +3,7 @@ layout: projectgit
 title: math-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /math-ell/
 ---
 
 ## Mathematics ELL Content Modification Template

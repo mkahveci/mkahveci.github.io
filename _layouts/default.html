@@ -207,32 +207,28 @@
 {% if page.mermaid %}
 <script src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
 <script>
-	const isDarkMode = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+    const isDarkMode = document.documentElement.getAttribute('data-bs-theme') === 'dark';
 
     mermaid.initialize({
-        startOnLoad: true,
-        theme: isDarkMode ? 'dark' : 'default', // Use built-in 'dark' theme for overall rendering
-        securityLevel: 'loose',
+      startOnLoad: true,
+      theme: isDarkMode ? 'dark' : 'default',
+      securityLevel: 'loose',
 
-        // --- ADDED: Custom style for improved visibility in DARK MODE ---
-        // We override the theme to force light colors on arrows/text
-        flowchart: {
-            // Note: This style is only applied when mermaid.initialize runs
-        },
-        gantt: {
-            // Note: This style is only applied when mermaid.initialize runs
-        },
-        themeVariables: isDarkMode ? {
-            // Force light colors for arrows, text, and lines in the dark theme
-            lineColor: '#EEEEEE',
-            textColor: '#EEEEEE',
-            mainBkg: '#2a2a2a', // Ensure background matches the site body
-            nodeBorder: '#999999'
-        } : {}
-        // --- END ADDED CONFIG ---
+      flowchart: {
+        htmlLabels: true,  // ✅ REQUIRED to allow FontAwesome & HTML labels
+        useMaxWidth: false
+      },
+
+      themeVariables: isDarkMode ? {
+        lineColor: '#EEEEEE',
+        textColor: '#EEEEEE',
+        mainBkg: '#2a2a2a',
+        nodeBorder: '#999999'
+      } : {}
     });
 </script>
 {% endif %}
+
 
 {% if page.toc %}
 <script src="{{ "/assets/js/toc.js" | relative_url }}"></script>

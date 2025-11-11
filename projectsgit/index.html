@@ -8,7 +8,7 @@ permalink: /projectsgit/
 
     {% comment %} --- HEADER SECTION (UPDATED TYPOGRAPHY) --- {% endcomment %}
     <h1 class="bigtitle mb-4 text-center text-body">Technical & Automation Projects</h1>
-    <p class="lead text-center text-muted mx-auto mb-5" style="max-width: 800px;">
+    <p class="lead text-center text-muted mx_auto mb-5" style="max-width: 800px;">
         This is a dynamically updated list of our technical projects and code repositories, including AI prompt tools for education, maintained directly through <i class="fab fa-github"></i> <b>GitHub</b>.
     </p>
     {% comment %} --- END HEADER SECTION --- {% endcomment %}
@@ -20,36 +20,42 @@ permalink: /projectsgit/
             <div class="card h-100 shadow-sm w-100 border-0" style="background-color: var(--bs-card-bg);">
                 <div class="card-body d-flex flex-column p-4">
 
-                    {% comment %} Project Title and Icon (Use text-primary for the icon color) {% endcomment %}
+                    {% comment %}
+                    FIX: Now uses 'project.slug' for the title
+                    {% endcomment %}
                     <h5 class="card-title fw-bold mb-2 text-body">
                         <i class="fas fa-code-branch fa-fw text-primary me-2"></i>
-                        {% comment %} Link uses mandated text-primary and text-decoration-none {% endcomment %}
-                        <a href="{{ project.local_url | default: project.url }}" class="text-primary text-decoration-none">{{ project.title }}</a>
+                        <a href="{{ project.local_url | default: project.url }}" class="text-primary text-decoration-none">{{ project.slug }}</a>
                     </h5>
 
-                    <p class="card-text small text-muted flex-grow-1 mb-3">{{ project.description }}</p>
+                    {% comment %}
+                    FIX: Now uses 'project.description' for the paragraph
+                    {% endcomment %}
+                    <p class="card-text small text-muted flex-grow-1 mb-3">{{ project.excerpt }}</p>
 
                     {% if project.topics %}
                     <div class="mb-3">
                         {% for topic in project.topics %}
-                        {% comment %} USE THEME-AWARE BADGE STYLE {% endcomment %}
                         <span class="badge rounded-pill text-bg-secondary me-1 fw-normal">#{{ topic }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
 
-                    {% comment %} Use solid btn-primary for high-contrast action button {% endcomment %}
-                    <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-auto">
+                    {% comment %}
+                    FIX: Removed target="_blank" to open in same window
+                    {% endcomment %}
+                    <a href="{{ project.url }}" class="btn btn-sm btn-primary mt-auto">
                         View Repository <i class="fab fa-github ms-1"></i>
                     </a>
                 </div>
 
-                {% comment %} Card Footer Styling (Use theme-aware colors) {% endcomment %}
                 <div class="card-footer" style="background-color: var(--bs-tertiary-bg); border-top: 1px solid var(--bs-border-color);">
                     <small class="text-muted">
                         Last updated on
-                        {% comment %} Link consistency applied to date link {% endcomment %}
-                        <a href="{{ project.commits.first.url }}" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">
+                        {% comment %}
+                        FIX: Removed target="_blank" to open in same window
+                        {% endcomment %}
+                        <a href="{{ project.commits.first.url }}" class="text-primary text-decoration-none">
                             {{ project.commits.first.date | date: "%-d %b %Y" }}
                         </a>
                         by {{ project.commits.first.author_login }}

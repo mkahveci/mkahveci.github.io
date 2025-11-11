@@ -3,7 +3,7 @@ layout: projectgit
 title: learning-target-helper
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /learning-target-helper/
 ---
 
 ## Learning Target Helper Template

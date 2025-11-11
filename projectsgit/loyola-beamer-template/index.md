@@ -3,7 +3,7 @@ layout: projectgit
 title: loyola-beamer-template/
 project: loyola-beamer-template
 repo: mkahveci/loyola-beamer-template
-permalink: /:path/:basename:output_ext
+permalink: /loyola-beamer-template/
 ---
 
 # A Loyola LaTeX Beamer Template

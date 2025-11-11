@@ -2,29 +2,56 @@
 layout: default
 ---
 
-{% comment %} Get the project data using the 'slug' from the page's front matter {% endcomment %}
-{% assign project = site.data.projectsgit | where: "slug", page.slug | first %}
+{% comment %}
+--- 1. GET PROJECT KEY ---
+Gets the key (e.g., "qma") from the page's 'project' front matter.
+{% endcomment %}
+{% assign project_key = page.project %}
 
 {% comment %}
-The custom style block is removed. We now rely on utility classes
-and strong explicit colors (text-primary) for active/hover states.
+--- 2. GET SUPPLEMENTAL PROJECT DATA ---
+Finds the matching project in '_data/projectsgit.yml'
+by comparing its 'slug' field to the 'project_key'.
 {% endcomment %}
+{% assign current_project = site.data.projectsgit | where: "slug", project_key | first %}
+
+{% comment %}
+--- 3. GET ALL RELATED DOCUMENTS ---
+Finds all other pages/documents that share the same 'project' key.
+{% endcomment %}
+{% if project_key %}
+{% assign all_content = site.pages | concat: site.documents %}
+{% assign unique_content = all_content | uniq %}
+{% assign project_documents = unique_content | where: "project", project_key | sort: "title" %}
+{% endif %}
+
 
 <div class="container my-5">
 
+    {% comment %}
+    Breadcrumb uses the 'page.title' from this page's front matter.
+    {% endcomment %}
     {% include breadcrumb-github-projects.html
     collection_url = "/projectsgit/"
     collection_name = "GitHub Projects"
     item_icon = "fab fa-github"
+    item_name = page.title
     %}
 
     <div class="row">
         <main class="col-lg-8">
             <div class="post-content">
                 <header class="mb-4">
-                    {% comment %} Use display-4/fw-bold for a strong, clean main title {% endcomment %}
+                    {% comment %}
+                    Main H1 also uses the 'page.title' from front matter.
+                    {% endcomment %}
                     <h1 class="display-4 fw-bold mb-1">{{ page.title }}</h1>
-                    <p class="lead text-muted">{{ page.excerpt }}</p>
+
+                    {% comment %}
+                    The lead paragraph uses this page's 'excerpt' first,
+                    then falls back to the data file's 'excerpt' if needed.
+                    {% endcomment %}
+                    <p class="lead text-muted">{{ page.excerpt | default: current_project.excerpt }}</p>
                 </header>
                 <hr class="my-4">
                 {{ content }}
@@ -34,40 +61,23 @@ and strong explicit colors (text-primary) for active/hover states.
         <aside class="col-lg-4">
             <div class="sticky-top pt-md-3" style="top: 2rem;">
 
-                {% if project.repo %}
+                {% comment %} Source Code box (uses 'current_project.repo') {% endcomment %}
+                {% if current_project.repo %}
                 <div class="mb-4 p-3 bg-tertiary-subtle rounded-3 shadow-sm">
                     <h6 class="mb-2 fw-semibold text-primary">Source Code</h6>
-                    <a href="https://github.com/{{ project.repo }}" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/{{ current_project.repo }}" target="_blank" rel="noopener noreferrer"
                        class="text-body text-decoration-none small d-block">
-                        <i class="fab fa-github fa-fw me-2"></i>github.com/{{ project.repo }}
+                        <i class="fab fa-github fa-fw me-2"></i>github.com/{{ current_project.repo }}
                     </a>
                 </div>
                 {% endif %}
 
-                {% comment %}
-                FINAL, DEFINITIVE LOGIC:
-                (Filtering logic is retained from original to ensure functionality)
-                {% endcomment %}
-                {% assign url_parts = page.url | split: '/' %}
-                {% assign current_project_slug = url_parts[2] %}
-                {% assign project_doc_path_segment = '/projectsgit/' | append: current_project_slug | append: '/docs/' %}
-
-                {% assign all_content = site.pages | concat: site.documents %}
-                {% assign unique_content = all_content | uniq %}
-
-                {% assign project_documents = "" | split: "" %}
-                {% for doc in unique_content %}
-                {% if doc.url contains project_doc_path_segment %}
-                {% assign project_documents = project_documents | push: doc %}
-                {% endif %}
-                {% endfor %}
-
+                {% comment %} Project Documents box (uses 'project_documents') {% endcomment %}
                 {% if project_documents.size > 0 %}
                 <div class="mb-4 card shadow-sm border-0">
                     <div class="card-body p-3">
                         <h6 class="mb-3 fw-semibold">Project Documents</h6>
                         <div class="small">
-                            {% comment %} Separate the index page from the other documents {% endcomment %}
                             {% assign index_doc = nil %}
                             {% assign other_docs = "" | split: "" %}
                             {% for doc in project_documents %}
@@ -78,7 +88,6 @@ and strong explicit colors (text-primary) for active/hover states.
                             {% endif %}
                             {% endfor %}
 
-                            {% comment %} Display 'Project Main' first, if it exists {% endcomment %}
                             {% if index_doc %}
                             <p class="mb-1">
                                 <a href="{{ index_doc.url | relative_url }}" class="text-decoration-none {% if page.url == index_doc.url %}text-primary fw-bold{% else %}text-body{% endif %}">
@@ -87,7 +96,6 @@ and strong explicit colors (text-primary) for active/hover states.
                             </p>
                             {% endif %}
 
-                            {% comment %} Sort and display the rest of the documents alphabetically {% endcomment %}
                             {% assign sorted_other_docs = other_docs | sort: "title" %}
                             {% for doc in sorted_other_docs %}
                             <p class="mb-1">
@@ -101,11 +109,12 @@ and strong explicit colors (text-primary) for active/hover states.
                 </div>
                 {% endif %}
 
-                {% if project.contributors.size > 0 %}
+                {% comment %} Contributors box (uses 'current_project.contributors') {% endcomment %}
+                {% if current_project.contributors.size > 0 %}
                 <div class="mb-4 card shadow-sm border-0">
                     <div class="card-body p-3">
                         <h6 class="mb-3 fw-semibold">Contributors</h6>
-                        {% for contributor in project.contributors %}
+                        {% for contributor in current_project.contributors %}
                         <a href="{{ contributor.url }}" class="d-flex align-items-center text-body text-decoration-none mb-2">
                             <img class="rounded-circle me-2" src="{{ contributor.avatar }}" width="32" height="32" alt="{{ contributor.login }}">
                             <span class="small">{{ contributor.login }}</span>
@@ -115,11 +124,12 @@ and strong explicit colors (text-primary) for active/hover states.
                 </div>
                 {% endif %}
 
-                {% if project.commits.size > 0 %}
+                {% comment %} Commits box (uses 'current_project.commits') {% endcomment %}
+                {% if current_project.commits.size > 0 %}
                 <div class="mb-4 card shadow-sm border-0">
                     <div class="card-body p-3">
                         <h6 class="mb-3 fw-semibold">Latest Commits</h6>
-                        {% for commit in project.commits limit: 5 %}
+                        {% for commit in current_project.commits limit: 5 %}
                         <a href="{{ commit.url }}" target="_blank" rel="noopener noreferrer" class="text-body text-decoration-none d-block mb-3">
                             <p class="mb-0 fw-bold small">{{ commit.message | truncatewords: 8 }}</p>
                             <p class="mb-0 text-muted small">{{ commit.date | date: "%-d %b %Y" }}</p>

@@ -1,4 +1,12 @@
 
+- title: "Deep Research on Futures Pair Trades within the Tom Sosnoff 10/20/20/50 Portfolio Management Framework"
+  link: /xgb/
+  excerpt: "This research details the quantitative construction and risk management of futures pair trades within the capital-efficient 10/20/20/50 portfolio framework."
+  icon: fas fa-chart-line
+  author: Murat Kahveci
+  tags: quantitative finance, futures trading, pairs trading
+  date: 2025-11-11
+
 - title: "Trading with Confluence: A 3-Factor Strategy for Intraday Traders"
   link: /eyz/
   excerpt: "A quantitative approach to filter market noise using a three-factor momentum confluence."

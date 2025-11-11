@@ -3,7 +3,7 @@ layout: projectgit
 title: ela-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /ela-ell/
 ---
 
 ## English Language Arts (ELA) ELL Content Modification Template

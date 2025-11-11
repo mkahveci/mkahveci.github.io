@@ -82,18 +82,17 @@ module ReadmeDownloader
     def self.create_docs_redirect(project_name)
         redirect_html = <<~HTML
         ---
-        permalink: /#{REPO_DIR}/#{project_name}/docs/
+        permalink: /#{project_name}/docs/
         ---
         <!DOCTYPE html>
         <html>
         <head>
             <title>Redirecting...</title>
-            <!-- Redirects to the main project index -->
-            <meta http-equiv="refresh" content="0; url=/#{REPO_DIR}/#{project_name}/" />
-            <link rel="canonical" href="/#{REPO_DIR}/#{project_name}/">
+            <meta http-equiv="refresh" content="0; url=/#{project_name}/" />
+            <link rel="canonical" href="/#{project_name}/">
         </head>
         <body>
-            <p>This folder is for source files. Redirecting to <a href="/#{REPO_DIR}/#{project_name}/">the main project page</a>.</p>
+            <p>This folder is for source files. Redirecting to <a href="/#{project_name}/">the main project page</a>.</p>
         </body>
         </html>
         HTML
@@ -244,7 +243,7 @@ module MarkdownPreprocessor
                  front_matter += "\ntitle: #{title}"
                  front_matter += "\nproject: #{project_name}"
                  front_matter += "\nrepo: #{repo}"
-                 front_matter += "\npermalink: /:path/:basename:output_ext"
+                 front_matter += "\npermalink: /#{title}"
               end
               front_matter += "\n---"
               front_matter += "\n\n"
@@ -306,7 +305,7 @@ module DataGenerator
                 project_title = octokit_repo.name
                 project_owner = octokit_repo.owner.login
                 project_description = octokit_repo.description
-                project_url = "/#{REPO_DIR}/#{project_title}/"
+                project_url = "/#{project_title}/"
                 project_date = octokit_repo.updated_at
 
                 # load contributor metadata
@@ -350,9 +349,9 @@ module DataGenerator
                 # assemble metadata
                 project_data << {
                    "repo" => repo,
-                   "title" => project_title,
+                   "slug" => project_title,
                    "owner" => project_owner,
-                   "description" => project_description,
+                   "excerpt" => project_description,
                    "url" => project_url,
                    "contributors" => project_contributors,
                    "commits" => project_commits,

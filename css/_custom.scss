@@ -810,3 +810,16 @@ table a {
 [data-bs-theme="dark"] table {
     background-color: var(--bs-card-bg); // #444
 }
+
+.mermaid {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto; /* enables horizontal scroll if needed */
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100% !important; /* scale down instead of overflow */
+  height: auto !important;
+}

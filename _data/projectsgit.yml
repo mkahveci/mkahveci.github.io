@@ -1,61 +1,71 @@
 ---
 - repo: mkahveci/qma
-  title: qma
+  slug: qma
   owner: mkahveci
-  description: Quantitative Market Analysis (QMA) is an open-source project for logging
+  excerpt: Quantitative Market Analysis (QMA) is an open-source project for logging
     and analyzing options trading strategies. It uses a Jekyll front-end and a simple
     JSON data file to track market data. Designed for educational purposes, it provides
     a lightweight, self-hosted solution.
-  url: "/projectsgit/qma/"
+  url: "/qma/"
   contributors:
   - login: mkahveci
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
-  - date: 2025-10-31 20:17:53.000000000 Z
+  - date: 2025-11-11 16:43:49.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/qma/commit/79d89379f31be1f02f5e6dc118e7511591b27d53
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:10:16.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/qma/commit/ea9d9ada0096e39fc1feb8a0b305d39a7e357269
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-10 20:29:22.000000000 Z
+    message: Merge remote-tracking branch 'origin/main'
+    url: https://github.com/mkahveci/qma/commit/748a73981a75076d524e286c5bb2224922a731ae
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-10 20:28:56.000000000 Z
     message: trade-ideas.md
-    url: https://github.com/mkahveci/qma/commit/ee85f0682952e450858425abeaa79b6e025afa1f
+    url: https://github.com/mkahveci/qma/commit/bcc3de593c253fe52f9677e297315ce8dd30968c
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-10-25 22:40:18.000000000 Z
-    message: |-
-      feat: Display filtered trade list and improve load efficiency
-
-      Update trade-ideas.md to show a filtered list of trades, defaulting to today's trades. Also, improve page load efficiency by limiting the initial display to the last 50 trades.
-
-      Rename reading.md title to "Readings & Documentation".
-    url: https://github.com/mkahveci/qma/commit/2c1a2b7dac01d5d3c9f5c2fe5bca00abc4bc1e48
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-25 14:23:45.000000000 Z
-    message: 'readings: editing LaTeX field delimiters'
-    url: https://github.com/mkahveci/qma/commit/5f87dd8ffe38f4a7d3e516d13e3ec80352d0ec92
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-25 14:22:50.000000000 Z
-    message: 'root: Update README with official Telegram feed link'
-    url: https://github.com/mkahveci/qma/commit/dc05fc02039fd3dd18b428ebda525f4c56568439
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-25 13:57:56.000000000 Z
-    message: 'root: Update README with official Telegram feed link'
-    url: https://github.com/mkahveci/qma/commit/bd15e9525a6ed9b29f7855a1df4c8ca1dd5c3398
+  - date: 2025-11-07 09:00:50.000000000 Z
+    message: Update trade-ideas.md
+    url: https://github.com/mkahveci/qma/commit/dda79c181217c3c9882164250e2fa3903a5acee7
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
 - repo: mkahveci/ai-in-education
-  title: ai-in-education
+  slug: ai-in-education
   owner: mkahveci
-  description: Designing scalable AI prompt architectures for diverse learning contexts,
+  excerpt: Designing scalable AI prompt architectures for diverse learning contexts,
     from K-12 chemistry scaffolding to undergraduate research assistance. This project
     validates custom prompts that maximize student self-efficacy, minimize factual
     error, and provide equitable linguistic support across educational levels.
-  url: "/projectsgit/ai-in-education/"
+  url: "/ai-in-education/"
   contributors:
   - login: mkahveci
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
     url: https://github.com/mkahveci
   commits:
+  - date: 2025-11-11 13:09:52.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/ai-in-education/commit/1e9ad458be00ba8519e50b88b255cee9a40e2a4c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:04:03.000000000 Z
+    message: Merge remote-tracking branch 'origin/main'
+    url: https://github.com/mkahveci/ai-in-education/commit/69dd7a0a6569236938c8cd6101f84ccf1f206840
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:03:51.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/ai-in-education/commit/3a798bd1a5f8ea19c81e20efa218830cad8c7dd7
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
   - date: 2025-10-18 13:14:08.000000000 Z
     message: |-
       Feat: Implement and document new ELL Content Modification Templates
@@ -71,27 +81,12 @@
     url: https://github.com/mkahveci/ai-in-education/commit/82b4518c81671a918e2125f9d321a404d5b50809
     author_login: mkahveci
     author_url: https://github.com/mkahveci
-  - date: 2025-10-17 02:16:21.000000000 Z
-    message: update
-    url: https://github.com/mkahveci/ai-in-education/commit/1919bcd6674effe2c0375e2a6c05289b6bb0787c
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-17 02:10:47.000000000 Z
-    message: update
-    url: https://github.com/mkahveci/ai-in-education/commit/4b719719739695f614d84cb1857ca402050057cc
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-17 02:09:13.000000000 Z
-    message: update
-    url: https://github.com/mkahveci/ai-in-education/commit/116709fea03e5c2c9d95a95ff8bb236a7ad448fb
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
   readme_only: true
 - repo: mkahveci/loyola-beamer-template
-  title: loyola-beamer-template
+  slug: loyola-beamer-template
   owner: mkahveci
-  description: A Loyola LaTeX Beamer Template
-  url: "/projectsgit/loyola-beamer-template/"
+  excerpt: A Loyola LaTeX Beamer Template
+  url: "/loyola-beamer-template/"
   contributors:
   - login: mkahveci
     avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50

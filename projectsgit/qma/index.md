@@ -3,10 +3,10 @@ layout: projectgit
 title: qma/
 project: qma
 repo: mkahveci/qma
-permalink: /:path/:basename:output_ext
+permalink: /qma/
 ---
 
-## Quantitative Market Analysis 
+## Quantitative Market Analysis
 
 **An open-source tool to track and analyze options trade ideas.**
 

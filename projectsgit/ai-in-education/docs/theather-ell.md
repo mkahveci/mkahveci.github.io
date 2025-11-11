@@ -3,7 +3,7 @@ layout: projectgit
 title: theather-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /theather-ell/
 ---
 
 ## Theater Arts ELL Content Modification Template

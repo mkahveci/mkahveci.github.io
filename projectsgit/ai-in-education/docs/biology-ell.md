@@ -3,7 +3,7 @@ layout: projectgit
 title: biology-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /biology-ell/
 ---
 
 ## Biology ELL Content Modification Template

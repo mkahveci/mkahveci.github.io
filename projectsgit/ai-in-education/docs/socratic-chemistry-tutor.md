@@ -3,7 +3,7 @@ layout: projectgit
 title: socratic-chemistry-tutor
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /socratic-chemistry-tutor/
 ---
 
 ## Socratic Chemistry Tutor: Stoichiometry

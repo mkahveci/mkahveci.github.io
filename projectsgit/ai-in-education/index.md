@@ -3,7 +3,7 @@ layout: projectgit
 title: ai-in-education/
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /ai-in-education/
 ---
 
 # AI Tools in Education Project

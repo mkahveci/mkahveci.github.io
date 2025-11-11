@@ -35,6 +35,9 @@ defaults:
 collections:
   seminars:
     output: true
+  projects:
+    output: true
+    permalink: /:title/
 
 toc:
   min_level: 1

@@ -3,7 +3,7 @@ layout: projectgit
 title: forensic-ell
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /forensic-ell/
 ---
 
 ## Forensic Science ELL Content Modification Template
