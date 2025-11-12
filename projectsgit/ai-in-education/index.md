@@ -4,6 +4,8 @@ title: ai-in-education/
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /ai-in-education/
+redirect_from:
+  - /projectsgit/ai-in-education/
 ---
 
 # AI Tools in Education Project

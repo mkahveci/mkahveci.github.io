@@ -24,6 +24,11 @@ analytics:
 plugins:
   - jekyll-twitter-plugin
   - jekyll-toc
+  - jekyll-redirect-from
+
+# Redirect configuration
+jekyll_redirect_from:
+  layout: "redirect"
 
 defaults:
   - scope:
