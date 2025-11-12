@@ -36,7 +36,31 @@
       },
       "managementPlan": "Standard management for a debit spread: Max profit is realized if the price is at or above the short strike ($80) at expiration. Max loss ($370) occurs if the price is at or below the long strike ($70) at expiration."
     },
-    "tradeProgression": []
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_VERTICAL_SPREAD",
+        "date": "2025-11-10",
+        "actionTaken": "BTO 70 Call @ 4.63 & STO 80 Call @ 0.93",
+        "expiration": "2026-01-16",
+        "dteRemaining": 67,
+        "netDebitPaid": 3.70,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Not Realized",
+        "notes": "Opened 1-lot Long Call Vertical Spread (70/80) for a net debit of $3.70 (plus $1.02 fees)."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-12",
+        "actionTaken": "STC 70 Call @ 5.37 & BOT 80 Call @ 1.20",
+        "closePrice": 4.17,
+        "closeCostType": "Credit",
+        "commissionFee": 2.04,
+        "grossProfitLossAmount": 44.96,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed the entire 1-lot Call Vertical Spread for a net credit of $4.17. The trade realized a profit of $44.96 ($47.00 gross P&L - $2.04 commissions) over 2 days."
+      }
+    ]
   },
   {
     "publicationDate": "2025-11-07",
