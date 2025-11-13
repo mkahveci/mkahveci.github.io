@@ -6,13 +6,39 @@
         </p>
     </div>
 
-    {% comment %} --- LIQUID DATA ASSIGNMENT (Now trusts file order) --- {% endcomment %}
+    {% comment %} --- LIQUID DATA ASSIGNMENT --- {% endcomment %}
     {% assign sorted_trades = site.data.trade_ideas %}
+    {% assign all_strategies = sorted_trades | map: 'analysis' | map: 'strategyType' | uniq | sort %}
 
     <section id="dashboard" class="mb-5">
         <h2 class="display-6 mb-4"><i class="fas fa-tachometer-alt fa-fw text-muted me-2"></i> Performance Dashboard</h2>
 
         <div class="d-flex justify-content-end mb-3" style="gap: 0.5rem;">
+            <div class="d-flex align-items-center" style="gap: 0.5rem;">
+                <label for="unified-filter" class="form-label small text-muted mb-0">Filter By:</label>
+                <select id="unified-filter" class="form-select form-select-sm d-inline-block w-auto">
+                    <option value="all" selected>All Trades & Periods</option>
+
+                    <optgroup label="Position Status">
+                        <option value="position-open">Open Positions Only</option>
+                        <option value="position-closed">Closed Positions Only</option>
+                    </optgroup>
+
+                    <optgroup label="Trading Strategy">
+                        {% for strategy in all_strategies %}
+                        {% unless strategy == nil or strategy == empty %}
+                        <option value="strategy-{{ strategy | slugify }}">{{ strategy }}</option>
+                        {% endunless %}
+                        {% endfor %}
+                    </optgroup>
+
+                    <optgroup label="Time Period">
+                        <option value="period-{{ site.time | date: '%Y' }}">This Year ({{ site.time | date: '%Y' }})</option>
+                        <option value="period-{{ site.time | date: '%Y' | minus: 1 }}">Last Year ({{ site.time | date: '%Y' | minus: 1 }})</option>
+                        <option value="period-all-time">All Periods</option>
+                    </optgroup>
+                </select>
+            </div>
             <div class="d-flex align-items-center" style="gap: 0.5rem;">
                 <label for="dash-account-filter" class="form-label small text-muted mb-0">Account:</label>
                 <select id="dash-account-filter" class="form-select form-select-sm d-inline-block w-auto">
@@ -20,15 +46,6 @@
                     <option value="margin">Margin</option>
                     <option value="ira">IRA</option>
                     <option value="paper">Paper</option>
-                </select>
-            </div>
-            <div class="d-flex align-items-center" style="gap: 0.5rem;">
-                <label for="dash-time-filter" class="form-label small text-muted mb-0">Period:</label>
-                <select id="dash-time-filter" class="form-select form-select-sm d-inline-block w-auto">
-                    <option value="all" selected>All Time</option>
-                    <option value="365">This Year</option>
-                    <option value="30">Last 30 Days</option>
-                    <option value="7">Last 7 Days</option>
                 </select>
             </div>
         </div>
@@ -107,35 +124,32 @@
     <section id="trades">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
 
-
-        {% comment %} --- FILTERS & DASHBOARD LINK --- {% endcomment %}
-        <div class="d-flex justify-content-end align-items-center mb-4" style="gap: 0.5rem;">
-
-            {% comment %} --- Filter Group --- {% endcomment %}
-            <div class="d-flex justify-content-end" style="gap: 0.5rem;">
-                <div class="limit-filter-container d-flex align-items-center" style="gap: 0.5rem;">
-                    <label for="limit-filter-selector" class="form-label d-none d-lg-inline-block small text-muted mb-0">Show:</label>
-                    <select id="limit-filter-selector" class="form-select form-select-sm d-inline-block w-auto">
-                        <option value="10" selected>Last 10</option>
-                        <option value="50">Last 50</option>
-                    </select>
-                </div>
-            </div>
-        </div>
+        {% comment %} --- LOG FILTERS (Removed "Show: Last X" filter entirely) --- {% endcomment %}
 
         <div class="row row-cols-1 g-4">
-            {% assign trades_to_show = 50 %}
+            {% assign trades_to_show = 9999 %}
             {% assign current_count = 0 %}
 
             {% for trade in sorted_trades %}
 
-            {% comment %} MANUAL LIMIT ENFORCEMENT: STOP AFTER 50 RECORDS {% endcomment %}
-            {% if current_count >= trades_to_show %}
-            {% break %}
+            {% comment %} --- DATA ATTRIBUTES FOR JS FILTERING --- {% endcomment %}
+            {% assign last_step = trade.tradeProgression | last %}
+            {% if last_step and last_step.stepType == 'CLOSE' or last_step and last_step.stepType == 'CALLED_AWAY' %}
+            {% assign trade_status_slug = "closed" %}
+            {% else %}
+            {% assign trade_status_slug = "open" %}
             {% endif %}
 
+            {% assign trade_strategy_slug = trade.analysis.strategyType | slugify | default: 'unknown' %}
+            {% assign trade_year = trade.publicationDate | date: "%Y" %}
             {% assign account_lower = trade.accountType | downcase | default: 'margin' %}
-            <div class="col trade-card-wrapper" data-account-type="{{ account_lower }}">
+
+            <div class="col trade-card-wrapper"
+                 data-account-type="{{ account_lower }}"
+                 data-position="{{ trade_status_slug }}"
+                 data-strategy="{{ trade_strategy_slug }}"
+                 data-year="{{ trade_year }}">
+
                 <div class="card h-100 shadow-sm border-0 d-flex">
                     <div class="card-body d-flex">
 
@@ -146,26 +160,17 @@
 
                         <div class="flex-grow-1">
 
-                            {% comment %} --- NEW STATUS LOGIC --- {% endcomment %}
-                            {% assign last_step = trade.tradeProgression | last %}
-                            {% if last_step and last_step.stepType == 'CLOSE' %}
-                            {% assign trade_status = "CLOSED" %}
-                            {% else %}
-                            {% assign trade_status = "OPEN" %}
-                            {% endif %}
-
                             <div class="trade-card-header d-flex justify-content-between align-items-start" style="gap: 0.5rem;">
                                 <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
 
                                 <div class="d-flex flex-shrink-0" style="gap: 0.5rem;">
-                                    {% if trade_status == "OPEN" %}
+                                    {% if trade_status_slug == "open" %}
                                     <span class="status-pill status-open">Open</span>
                                     {% else %}
                                     <span class="status-pill status-closed">Closed</span>
                                     {% endif %}
 
                                     {% comment %} --- NEW ACCOUNT TYPE PILL --- {% endcomment %}
-                                    {% assign account_lower = trade.accountType | downcase | default: 'margin' %}
                                     <span class="status-pill account-{{ account_lower }}">{{ trade.accountType | default: "Margin" }}</span>
                                 </div>
                             </div>
@@ -238,14 +243,7 @@
                                     {% for step in trade.tradeProgression %}
                                     {% assign step_type_lower = step.stepType | downcase %}
 
-                                    {% comment %}
-                                    Robustly clean the stepType:
-                                    1. Replace ': ' (colon + space) with '-'
-                                    2. Replace ':' with '-'
-                                    3. Replace '_' with '-'
-                                    4. Replace ' ' with '-'
-                                    This handles all known separators and prevents double hyphens.
-                                    {% endcomment %}
+                                    {% comment %} Clean the stepType {% endcomment %}
                                     {% assign step_class = step_type_lower | replace: ': ', '-' | replace: ':', '-' | replace: '_', '-' | replace: ' ', '-' %}
 
                                     <li class="progression-step step-{{ step_class }}">
@@ -262,11 +260,9 @@
                                             {% endif %}
 
                                             <span class="progression-tag tag-{{ step_class }}">{{ pill_text }}</span>
-                                            {% comment %} NOTE: step.dteRemaining is used if available, otherwise it falls back to a default value. {% endcomment %}
                                             <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({% if step.dteRemaining %}{{ step.dteRemaining }}{% else %}N/A{% endif %} DTE)</span>
                                         </div>
                                         <div class="progression-details">
-                                            {% comment %} --- NEW WHEEL/ASSIGNMENT LOGIC --- {% endcomment %}
 
                                             {% if step.stepType == 'OPEN_SHORT_PUT' %}
                                             <p><strong>Phase 1 Initiated:</strong> {{ step.actionTaken }} for a gross credit of &#36;{{ step.netCreditReceived | times: step.sharesInvolved | divided_by: 100.0 | round: 2 }}.</p>
@@ -282,7 +278,6 @@
                                             {% elsif step.stepType == 'ASSIGNMENT' %}
                                             <p><strong>Transition to Phase 2:</strong> {{ step.actionTaken }}.</p>
 
-                                            {% comment %} Render notes here, which contains the formatted cost basis text from the image {% endcomment %}
                                             {% if step.notes %}
                                             <p class="small text-muted mb-0 mt-1">
                                                 {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
@@ -297,7 +292,6 @@
                                             {% elsif step.stepType contains 'WHEEL_STEP' %}
                                             <p><strong>Phase 2 Action:</strong> {{ step.actionTaken }}</p>
 
-                                            {% comment %} Logic to handle both open call (credit) and close call (P/L) steps {% endcomment %}
                                             {% if step.grossCreditTotal %}
                                             <span class="profit-loss text-primary">(Credit Received: +&#36;{{ step.grossCreditTotal | round: 2 }})</span>
                                             {% elsif step.grossProfitLossAmount %}
@@ -327,7 +321,6 @@
 
 
                                             {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}
-                                            {% comment %} --- UPDATED to use alert-warning for consistency and full markdownify --- {% endcomment %}
                                             {% if step.notes %}
                                             <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
                                                 {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
@@ -335,8 +328,6 @@
                                             {% endif %}
                                             <span class="profit-loss text-success">(Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
 
-
-                                            {% comment %} --- Original CLOSE and ADJUSTMENT Logic (Kept for compatibility) --- {% endcomment %}
 
                                             {% elsif step.stepType == 'ADJUSTMENT' %}
                                             <p>{{ step.actionTaken }}</p>
@@ -382,9 +373,6 @@
                                     {% endfor %}
 
                                     {% comment %} --- NEW ESTIMATED SCENARIO BLOCK --- {% endcomment %}
-                                    {% comment %}
-                                    Assuming a future step is available in the 'trade.estimatedScenario' data field.
-                                    {% endcomment %}
                                     {% if trade.estimatedScenario %}
                                     <li class="progression-step estimated-scenario">
                                         <div class="progression-header">
@@ -394,7 +382,6 @@
                                         <div class="progression-details">
                                             <p class="mb-1"><strong>Aim:</strong> {{ trade.estimatedScenario.aim }}</p>
                                             <p class="mb-0 small text-muted">{{ trade.estimatedScenario.condition }}</p>
-                                            {% comment %} Apply markdownify to the action as well, in case it contains formatting {% endcomment %}
                                             <p class="mb-0 small text-primary">{{ trade.estimatedScenario.action | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}</p>
                                         </div>
                                     </li>
@@ -415,10 +402,6 @@
                             {% comment %} --- Conditional Chart Link --- {% endcomment %}
                             {% assign search_term = trade.ticker | append: " stock" %}
                             {% if trade.tradeTitle contains "Futures" %}
-                            {% comment %}
-                            Targets CME Group's website directly
-                            e.g., "MNQ site:cmegroup.com"
-                            {% endcomment %}
                             {% assign search_term = trade.ticker | append: " site:cmegroup.com" %}
                             {% endif %}
 
@@ -476,76 +459,20 @@
 </div>
 
 <script>
+    // 1. Data Initialization (Must be first)
+    const jekyllData = {{ site.data.trade_ideas | jsonify }};
+
     document.addEventListener('DOMContentLoaded', function() {
-        const limitSelector = document.getElementById('limit-filter-selector');
-        const accountSelector = document.getElementById('dash-account-filter');
+        // --- 1. CONFIG & STATE ---
+        let allRealizedTrades = [];
+
+        // FILTER ELEMENTS
+        const unifiedFilter = document.getElementById('unified-filter');
+        const accountFilter = document.getElementById('dash-account-filter');
+
+        // LOG ELEMENTS
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
-        function applyFilters() {
-            const numLimit = parseInt(limitSelector.value);
-            const accountFilter = accountSelector.value;
-            let visibleCount = 0;
-
-            tradeCards.forEach((card) => {
-                const cardAccountType = card.dataset.accountType;
-
-                // Check if card matches account filter
-                const accountMatch = (accountFilter === 'all' || cardAccountType === accountFilter);
-
-                // Check if we are still within the display limit
-                const limitMatch = (visibleCount < numLimit);
-
-                if (accountMatch && limitMatch) {
-                    card.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        if (limitSelector && accountSelector) {
-            // Apply filters on initial page load
-            applyFilters();
-
-            // Add event listeners to both selectors
-            limitSelector.addEventListener('change', applyFilters);
-            accountSelector.addEventListener('change', applyFilters);
-        }
-    });
-</script>
-
-<script>
-    function copyTradeDetails(button) {
-      const detailsContainer = button.nextElementSibling;
-      const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
-
-      navigator.clipboard.writeText(detailsText).then(() => {
-        const originalIcon = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
-        button.classList.replace('btn-outline-secondary', 'btn-success');
-
-        setTimeout(() => {
-          button.innerHTML = originalIcon;
-          button.classList.replace('btn-success', 'btn-outline-secondary');
-        }, 2000);
-      }).catch(err => {
-        console.error('Failed to copy text: ', err);
-      });
-    }
-</script>
-
-<script>
-    const jekyllData = {{ site.data.trade_ideas | jsonify }};
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-        // --- 1. CONFIG & STATE (No charts needed) ---
-        let allRealizedTrades = []; // Master list of P/L
-        const accountFilter = document.getElementById('dash-account-filter');
-        const timeFilter = document.getElementById('dash-time-filter');
 
         // --- 2. DATA PROCESSING ---
         function loadAndProcessData() {
@@ -555,20 +482,24 @@
 
                 jekyllTrades.forEach(trade => {
                     const account = trade.accountType ? trade.accountType.toLowerCase() : 'margin';
-                    const strategy = trade.analysis.strategyType || 'Unknown';
+                    const strategy = (trade.analysis.strategyType || 'Unknown').toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+                    const entryYear = trade.publicationDate ? new Date(trade.publicationDate).getFullYear().toString() : 'unknown';
 
                     if (trade.tradeProgression && trade.tradeProgression.length > 0) {
+
+                        // Process realized P&L for KPIs
                         trade.tradeProgression.forEach(step => {
                             if (step.stepType === 'CLOSE' ||
                                 step.stepType === 'CALLED_AWAY' ||
                                 step.stepType === 'CLOSED_INDEPENDENT_PUT') {
 
                                 allRealizedTrades.push({
-                                    // Use standard JS Date objects
                                     date: new Date(step.date),
                                     pnl: parseFloat(step.grossProfitLossAmount || 0),
                                     account: account,
                                     strategy: strategy,
+                                    entryYear: entryYear,
+                                    positionStatus: 'closed',
                                     ticker: trade.ticker
                                 });
                             }
@@ -577,38 +508,88 @@
                 });
 
                 allRealizedTrades.sort((a, b) => a.date - b.date);
-                updateDashboard();
+                updateDashboardAndLog();
 
             } catch (error) {
                 console.error('Error processing dashboard data:', error);
             }
         }
 
-        // --- 3. DASHBOARD RENDERING ---
-        function updateDashboard() {
-            const selectedAccount = accountFilter.value;
-            const selectedTime = timeFilter.value;
+        // --- 3. FILTERING LOGIC (Trades/KPIs) ---
+        function filterTrades(tradeData, account, unifiedFilterValue) {
+            let filteredData = tradeData;
 
-            const filteredTrades = filterTrades(allRealizedTrades, selectedAccount, selectedTime);
-
-            // Only need to update the KPIs
-            updateKPIs(filteredTrades);
-        }
-
-        // Uses standard JS Date objects
-        function filterTrades(tradeData, account, time) {
-            let dateCutoff = new Date('1970-01-01');
-            if (time !== 'all') {
-                dateCutoff = new Date();
-                dateCutoff.setDate(dateCutoff.getDate() - parseInt(time));
+            // 1. Account Filter
+            if (account !== 'all') {
+                filteredData = filteredData.filter(trade => trade.account === account);
             }
 
-            return tradeData.filter(trade => {
-                const accountMatch = (account === 'all' || trade.account === account);
-                const timeMatch = trade.date >= dateCutoff;
-                return accountMatch && timeMatch;
+            // 2. Unified Filter Logic (Only applies Strategy and Period to KPIs)
+            if (unifiedFilterValue !== 'all') {
+
+                if (unifiedFilterValue.startsWith('strategy-')) {
+                    const strategySlug = unifiedFilterValue.replace('strategy-', '');
+                    filteredData = filteredData.filter(trade => trade.strategy === strategySlug);
+
+                } else if (unifiedFilterValue.startsWith('period-')) {
+                    const periodValue = unifiedFilterValue.replace('period-', '');
+
+                    if (periodValue !== 'all-time') {
+                        const selectedYear = parseInt(periodValue);
+                        filteredData = filteredData.filter(trade => trade.date.getFullYear() === selectedYear);
+                    }
+                }
+            }
+
+            return filteredData;
+        }
+
+
+        // --- 4. DASHBOARD & LOG RENDERING ---
+        function updateDashboardAndLog() {
+            const selectedAccount = accountFilter.value;
+            const unifiedFilterValue = unifiedFilter.value;
+
+            // Filter for KPI Calculations (uses allRealizedTrades)
+            const filteredKPIs = filterTrades(allRealizedTrades, selectedAccount, unifiedFilterValue);
+            updateKPIs(filteredKPIs);
+
+            // Filter for Log List Visibility (uses tradeCards)
+            tradeCards.forEach((card) => {
+                const cardAccountType = card.dataset.accountType;
+                const cardPosition = card.dataset.position;
+                const cardStrategy = card.dataset.strategy;
+                const cardYear = card.dataset.year;
+
+                // A. Account Match
+                const accountMatch = (selectedAccount === 'all' || cardAccountType === selectedAccount);
+
+                // B. Unified Match
+                let unifiedMatch = true;
+                if (unifiedFilterValue !== 'all') {
+                    if (unifiedFilterValue.startsWith('position-')) {
+                        const status = unifiedFilterValue.replace('position-', '');
+                        unifiedMatch = (cardPosition === status);
+                    } else if (unifiedFilterValue.startsWith('strategy-')) {
+                        const strategySlug = unifiedFilterValue.replace('strategy-', '');
+                        unifiedMatch = (cardStrategy === strategySlug);
+                    } else if (unifiedFilterValue.startsWith('period-')) {
+                        const periodValue = unifiedFilterValue.replace('period-', '');
+                        if (periodValue !== 'all-time') {
+                            unifiedMatch = (cardYear === periodValue);
+                        }
+                    }
+                }
+
+                // Display the card if both filters match (no limit check needed)
+                if (accountMatch && unifiedMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
             });
         }
+
 
         // EXPANDED KPI function
         function updateKPIs(tradeData) {
@@ -632,7 +613,7 @@
                     }
                 } else if (pnl < 0) {
                     losers++;
-                    totalLoss += pnl; // totalLoss will be negative
+                    totalLoss += pnl;
                     if (pnl < largestLoss) {
                         largestLoss = pnl;
                     }
@@ -642,32 +623,50 @@
             const totalTrades = winners + losers;
             const winRate = totalTrades > 0 ? (winners / totalTrades) * 100 : 0;
             const avgProfit = winners > 0 ? totalProfit / winners : 0;
-            const avgLoss = losers > 0 ? totalLoss / losers : 0; // avgLoss will be negative
+            const avgLoss = losers > 0 ? totalLoss / losers : 0;
 
-            // Calculate Profit Factor (Total Profit / Absolute Total Loss)
             const profitFactor = (totalLoss !== 0) ? totalProfit / Math.abs(totalLoss) : 0;
 
             // Update Row 1
             document.getElementById('kpi-total-pnl').textContent = `$${totalPnl.toFixed(2)}`;
             document.getElementById('kpi-win-rate').textContent = `${winRate.toFixed(1)}%`;
             document.getElementById('kpi-avg-profit').textContent = `$${avgProfit.toFixed(2)}`;
-            // Display avg loss as a positive number
             document.getElementById('kpi-avg-loss').textContent = `$${Math.abs(avgLoss).toFixed(2)}`;
 
             // Update Row 2
             document.getElementById('kpi-total-trades').textContent = totalTrades;
             document.getElementById('kpi-profit-factor').textContent = profitFactor.toFixed(2);
             document.getElementById('kpi-largest-profit').textContent = `$${largestProfit.toFixed(2)}`;
-            // Display largest loss as a negative number
             document.getElementById('kpi-largest-loss').textContent = `$${largestLoss.toFixed(2)}`;
         }
 
-        // --- 4. EVENT LISTENERS ---
-        accountFilter.addEventListener('change', updateDashboard);
-        timeFilter.addEventListener('change', updateDashboard);
 
-        // --- 5. INITIALIZE ---
+        // --- 5. EVENT LISTENERS ---
+        unifiedFilter.addEventListener('change', updateDashboardAndLog);
+        accountFilter.addEventListener('change', updateDashboardAndLog);
+
+        // --- 6. INITIALIZE ---
         loadAndProcessData();
-
     });
+</script>
+
+<script>
+    // Copy function
+    function copyTradeDetails(button) {
+      const detailsContainer = button.nextElementSibling;
+      const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
+
+      navigator.clipboard.writeText(detailsText).then(() => {
+        const originalIcon = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
+        button.classList.replace('btn-outline-secondary', 'btn-success');
+
+        setTimeout(() => {
+          button.innerHTML = originalIcon;
+          button.classList.replace('btn-success', 'btn-outline-secondary');
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
 </script>
