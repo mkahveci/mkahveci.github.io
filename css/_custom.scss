@@ -3,11 +3,11 @@
    ================================================================= */
 
 :root {
-  /* This is LIGHT mode (Jekyll Gold Palette) */
-  --bs-primary: #B8860B; /* DarkGoldenRod - Accessible on white */
-  --bs-primary-rgb: 184, 134, 11;
+  /* This is LIGHT mode (Updated Professional Gold Palette) */
+  --bs-primary: #C19D3F; /* Professional Light Gold - Accessible on white (updated from #B8860B) */
+  --bs-primary-rgb: 193, 157, 63;
   --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #ffaa00; /* FIXED: Now orange on hover */
+  --bs-link-hover-color: #DDAA33; /* Slightly brighter gold on hover */
 
   --bs-body-font-weight: 700; /* BOLD weight for Light Mode readability */
   --bs-body-text-shadow: none; /* DISABLED shadow for Light Mode */
@@ -25,12 +25,12 @@
   --code-type-bg: #f0f0f0;
 
   // Override for Bootstrap's light-mode active pill
-  --bs-nav-pills-link-active-bg: #ffaa00; /* FIXED: Now orange */
-  --bs-nav-pills-link-active-color: #333;  /* FIXED: Dark text for orange bg */
+  --bs-nav-pills-link-active-bg: var(--bs-primary); /* Uses new primary gold */
+  --bs-nav-pills-link-active-color: #333;  /* FIXED: Dark text for gold bg */
 }
 
 [data-bs-theme="dark"] {
-  /* This is DARK mode (Jekyllrb.com Palette) */
+  /* This is DARK mode (Updated Professional Gold Palette) */
 
   // Core Bootstrap overrides (Matching Jekyllrb.com #333 body, #ddd text)
   --bs-body-bg: #333333;
@@ -42,11 +42,11 @@
   --bs-body-font-weight: 300; // Light weight for Dark Mode Jekyllrb.com look
   --bs-body-text-shadow: 0 1px 3px rgba(0,0,0,.5); // ENABLED shadow for Dark Mode
 
-  // Primary color (links/accents) - Use the strong yellow/gold
-  --bs-primary: #FFCC00; /* jekyllrb.com link color (#fc0) */
-  --bs-primary-rgb: 255, 204, 0;
+  // Primary color (links/accents) - Use the strong professional gold
+  --bs-primary: #C5A335; /* UPDATED: Professional Gold (from #FFCC00) */
+  --bs-primary-rgb: 197, 163, 53;
   --bs-link-color: var(--bs-primary);
-  --bs-link-hover-color: #FF9900; /* jekyllrb.com orange hover (#f90) */
+  --bs-link-hover-color: #A3842C; /* Darker shade of new gold for hover (from #FF9900) */
 
   // Custom colors for elements
   --navbar-bg: #2D2D2D; /* Darker than body for header/footer */
@@ -61,7 +61,7 @@
   --code-type-bg: var(--bs-body-bg);
 
   // Override for Bootstrap's dark-mode active pill
-  --bs-nav-pills-link-active-bg: var(--bs-primary); /* New Orange/Yellow */
+  --bs-nav-pills-link-active-bg: var(--bs-primary); /* New Gold */
   --bs-nav-pills-link-active-color: var(--bs-dark); /* Dark text on bright background */
 
   // Fix for post headings
@@ -77,6 +77,7 @@
 
 /* =================================================================
    2. REFACTORED GENERAL STYLES
+   ... (rest of the file remains the same)
    ================================================================= */
 
 // 20px gutter
@@ -426,10 +427,10 @@ blockquote {
 
 body .nav-pills .nav-link.active,
 body .nav-pills .show > .nav-link {
-// Force the background color to your site's primary color (orange)
+// Force the background color to your site's primary color (gold)
     background-color: var(--bs-primary) !important;
 
-    // Force the text color to a contrasting dark color for readability on the orange background
+    // Force the text color to a contrasting dark color for readability on the gold background
     color: var(--bs-dark) !important;
 }
 
@@ -441,7 +442,7 @@ body .nav-pills .show > .nav-link {
 a:hover,
 i:hover,
 .nav-link a:hover {
-    color: var(--bs-link-hover-color) !important; /* This is your orange (#ffaa00) */
+    color: var(--bs-link-hover-color) !important; /* This is your new hover color */
     text-decoration: none !important;
 }
 
@@ -498,6 +499,7 @@ i:hover,
 
 /* =================================================================
    7. REFACTORED FOOTER
+   ... (rest of the file remains the same)
    ================================================================= */
 footer {
   background-color: transparent;
@@ -562,6 +564,7 @@ footer ul:nth-of-type(2) a:hover {
 
 /* =================================================================
    8. REFACTORED CODE & WIDGETS
+   ... (rest of the file remains the same)
    ================================================================= */
 
 .code-snippet {
