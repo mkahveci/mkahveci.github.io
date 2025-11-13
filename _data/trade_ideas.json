@@ -1,7 +1,51 @@
 [
 
 
-
+  {
+    "publicationDate": "2025-11-13",
+    "tradeTitle": "Short Iron Condor on SPX (1 DTE)",
+    "summaryJustification": "A 1.0 DTE Short Iron Condor initiated on SPX for a $1.90 net credit. This aggressive, high-theta trade aims for a quick profit capture with the index remaining between the short strikes (6730 and 6845).",
+    "expectedReturnDisplay": "12.67% ROC (4,625.55% Annualized ROC)",
+    "ticker": "SPX",
+    "accountType": "Paper",
+    "currentPrice": 6820.00,
+    "ivRank": 0.00,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "Selling premium in a Short Iron Condor with 1 day to expiration to capitalize on the rapid decay of index options. The wide put side (15 points) and narrow call side (5 points) suggest a slight bearish tilt or structural market preference. The goal is to close the position for max profit or a high percentage of max profit quickly.",
+      "strategyType": "Short Iron Condor",
+      "tradeDetails": {
+        "expiration": "2025-11-14",
+        "dte": 1,
+        "maxProfit": 190.00,
+        "spreadDetails": {
+          "shortPutStrike": 6730.00,
+          "longPutStrike": 6715.00,
+          "shortCallStrike": 6845.00,
+          "longCallStrike": 6860.00,
+          "netCredit": 1.90
+        }
+      },
+      "metrics": {
+        "roc": 12.67,
+        "annualizedRoc": 4625.55,
+        "pop": 0.0,
+        "buyingPowerEffect": 1500.00,
+        "dailyProfitPotential": 190.00
+      },
+      "managementPlan": "Standard management plan: Target 50% profit or close tomorrow morning after market open, as noted in the journal. Hold to expiration if the profit target is not met quickly and the position remains safe."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-11-13",
+        "actionTaken": "STO Iron Condor (6730P/6715P & 6845C/6860C)",
+        "netChange": 1.90,
+        "netChangeType": "Credit",
+        "notes": "Opened new 1.0 DTE Short Iron Condor. Mid-price iron condor outside of expected move (+/- 60) for a total net credit of $1.90."
+      }
+    ]
+  },
   {
     "publicationDate": "2025-11-10",
     "tradeTitle": "Call Debit Spread on CSCO",
