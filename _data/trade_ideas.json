@@ -1,6 +1,55 @@
 [
 
-
+  {
+    "publicationDate": "2025-11-13",
+    "tradeTitle": "Put Credit Vertical Spread on BMNR",
+    "summaryJustification": "A Put Credit Vertical Spread (Short 36 / Long 34) was opened for a net credit of $1.02 on BMNR. The trade is highly capital efficient, offering a 51.00% Return on Capital, and initiates the Wheel strategy at the first premium-selling leg.",
+    "expectedReturnDisplay": "432.85% Annualized ROC or $1,020.00 Max Profit",
+    "ticker": "BMNR",
+    "accountType": "Margin",
+    "currentPrice": 37.38,
+    "ivRank": 19.35,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "Initiate The Wheel strategy with a credit spread to efficiently monetize time decay and volatility. The high Annualized ROC justifies the trade despite a low IV Rank. The spread is placed at a delta appropriate for a premium-selling strategy, targeting 50% profit.",
+      "strategyType": "Put Credit Vertical Spread",
+      "tradeDetails": {
+        "expiration": "2025-12-26",
+        "dte": 43,
+        "maxProfit": 1020.00,
+        "spreadDetails": {
+          "shortPutStrike": 36.00,
+          "longPutStrike": 34.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.02,
+          "contracts": 10
+        }
+      },
+      "metrics": {
+        "roc": 51.00,
+        "annualizedRoc": 432.85,
+        "pop": 0.0,
+        "buyingPowerEffect": 2000.00,
+        "dailyProfitPotential": 23.72
+      },
+      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or let expire."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-11-13",
+        "actionTaken": "STO 10 BMNR 36/34 Puts",
+        "expiration": "2025-12-26",
+        "dteRemaining": 43,
+        "netCreditReceived": 1.02,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": 1020.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Initial Put Credit Vertical Spread (Short 36 / Long 34). Net Credit of $1.02 per contract (received $1,020 total credit for 10 contracts). BPE calculated as spread width * 100 * contracts."
+      }
+    ]
+  },
   {
     "publicationDate": "2025-11-13",
     "tradeTitle": "Short Iron Condor on SPX (1 DTE)",
