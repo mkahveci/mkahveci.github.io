@@ -1,5 +1,54 @@
 [
   {
+    "repo": "mkahveci/email-signature",
+    "message": "kahveci.pw",
+    "url": "https://github.com/mkahveci/email-signature/commit/fe91ecb1b70fe6d1b2e0d4d070ca5f3c1dc55b4f",
+    "author": "mkahveci",
+    "date": "2025-11-13T23:07:24Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/12b893dd2d685ed9d2a51a470362cacefc423846",
+    "author": "mkahveci",
+    "date": "2025-11-13T22:47:21Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/46635ef6d5aa36be531114abe1d52f53d820bf16",
+    "author": "mkahveci",
+    "date": "2025-11-13T22:47:12Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/83a63b0f3c590a64097e9965c4670877096b6cc3",
+    "author": "mkahveci",
+    "date": "2025-11-13T17:44:09Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5fa10d0f5fce301ae4c5c46318b332a143bdbc17",
+    "author": "mkahveci",
+    "date": "2025-11-13T17:17:38Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a4e4f77766308ddd2a94e3a7c422caca84264073",
+    "author": "mkahveci",
+    "date": "2025-11-13T16:13:54Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/715e466ef9cd46b0e0113e2647d97cf8c1766df2",
+    "author": "github-actions[bot]",
+    "date": "2025-11-13T01:26:31Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a53748661f8a9fa2222c22e663931f966dd711e7",
@@ -740,48 +789,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0050d7448ce84ac5616e6a17845638b95611c3b3",
     "author": "mkahveci",
     "date": "2025-11-03T17:47:45Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b8ddbd81b824eee9f312965b909431696b67eff2",
-    "author": "github-actions[bot]",
-    "date": "2025-11-03T01:27:51Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e16e0e37473d11076e4767436c8d4fccf014b0d2",
-    "author": "mkahveci",
-    "date": "2025-11-02T20:26:40Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/966975530835f5df6c806e6d0397365e61831e4e",
-    "author": "mkahveci",
-    "date": "2025-11-02T20:20:01Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge remote-tracking branch 'origin/master'",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/71f7ccaf72545761516d16f56c318a3fd117f959",
-    "author": "mkahveci",
-    "date": "2025-11-02T19:31:20Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b71b0fcd04d23b3b20ece0901cd626295a6b25bd",
-    "author": "mkahveci",
-    "date": "2025-11-02T19:30:53Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9a5037a1e44f4a2316804b709d9a9a639940b26b",
-    "author": "github-actions[bot]",
-    "date": "2025-11-02T19:02:30Z"
   },
   {
     "repo": "mkahveci/qma",
