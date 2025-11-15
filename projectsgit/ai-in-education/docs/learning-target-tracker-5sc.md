@@ -3,7 +3,7 @@ layout: projectgit
 title: learning-target-tracker-5sc
 project: ai-in-education
 repo: mkahveci/ai-in-education
-permalink: /:path/:basename:output_ext
+permalink: /learning-target-tracker-5sc/
 ---
 
 <div class="container my-5">

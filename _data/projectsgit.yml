@@ -1,4 +1,53 @@
 ---
+- repo: mkahveci/ai-in-education
+  slug: ai-in-education
+  owner: mkahveci
+  excerpt: Designing scalable AI prompt architectures for diverse learning contexts,
+    from K-12 chemistry scaffolding to undergraduate research assistance. This project
+    validates custom prompts that maximize student self-efficacy, minimize factual
+    error, and provide equitable linguistic support across educational levels.
+  url: "/ai-in-education/"
+  contributors:
+  - login: mkahveci
+    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
+    url: https://github.com/mkahveci
+  commits:
+  - date: 2025-11-15 05:52:22.000000000 Z
+    message: |-
+      Feat: Implement and document new ELL Content Modification Templates
+
+      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
+
+      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
+    url: https://github.com/mkahveci/ai-in-education/commit/aee7e4994fcd4fdf299320ecffee48d7db99c11f
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-15 05:50:42.000000000 Z
+    message: |-
+      Feat: Implement and document new ELL Content Modification Templates
+
+      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
+
+      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
+    url: https://github.com/mkahveci/ai-in-education/commit/dddcdc8fbca1677c319ac9bf6a599ff52d7365e6
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:09:52.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/ai-in-education/commit/1e9ad458be00ba8519e50b88b255cee9a40e2a4c
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:04:03.000000000 Z
+    message: Merge remote-tracking branch 'origin/main'
+    url: https://github.com/mkahveci/ai-in-education/commit/69dd7a0a6569236938c8cd6101f84ccf1f206840
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  - date: 2025-11-11 13:03:51.000000000 Z
+    message: permalink fixes
+    url: https://github.com/mkahveci/ai-in-education/commit/3a798bd1a5f8ea19c81e20efa218830cad8c7dd7
+    author_login: mkahveci
+    author_url: https://github.com/mkahveci
+  readme_only: true
 - repo: mkahveci/qma
   slug: qma
   owner: mkahveci
@@ -35,50 +84,6 @@
   - date: 2025-11-07 09:00:50.000000000 Z
     message: Update trade-ideas.md
     url: https://github.com/mkahveci/qma/commit/dda79c181217c3c9882164250e2fa3903a5acee7
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  readme_only: true
-- repo: mkahveci/ai-in-education
-  slug: ai-in-education
-  owner: mkahveci
-  excerpt: Designing scalable AI prompt architectures for diverse learning contexts,
-    from K-12 chemistry scaffolding to undergraduate research assistance. This project
-    validates custom prompts that maximize student self-efficacy, minimize factual
-    error, and provide equitable linguistic support across educational levels.
-  url: "/ai-in-education/"
-  contributors:
-  - login: mkahveci
-    avatar: https://avatars.githubusercontent.com/u/15982517?v=4&s=50
-    url: https://github.com/mkahveci
-  commits:
-  - date: 2025-11-11 13:09:52.000000000 Z
-    message: permalink fixes
-    url: https://github.com/mkahveci/ai-in-education/commit/1e9ad458be00ba8519e50b88b255cee9a40e2a4c
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-11-11 13:04:03.000000000 Z
-    message: Merge remote-tracking branch 'origin/main'
-    url: https://github.com/mkahveci/ai-in-education/commit/69dd7a0a6569236938c8cd6101f84ccf1f206840
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-11-11 13:03:51.000000000 Z
-    message: permalink fixes
-    url: https://github.com/mkahveci/ai-in-education/commit/3a798bd1a5f8ea19c81e20efa218830cad8c7dd7
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-18 13:14:08.000000000 Z
-    message: |-
-      Feat: Implement and document new ELL Content Modification Templates
-
-      This commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).
-
-      The documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.
-    url: https://github.com/mkahveci/ai-in-education/commit/d69a2ea8d9ff3aca7144ddfefe1bcdf796c53a88
-    author_login: mkahveci
-    author_url: https://github.com/mkahveci
-  - date: 2025-10-17 02:34:52.000000000 Z
-    message: update
-    url: https://github.com/mkahveci/ai-in-education/commit/82b4518c81671a918e2125f9d321a404d5b50809
     author_login: mkahveci
     author_url: https://github.com/mkahveci
   readme_only: true
