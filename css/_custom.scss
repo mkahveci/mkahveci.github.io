@@ -9,6 +9,9 @@
   --bs-link-color: var(--bs-primary);
   --bs-link-hover-color: #DDAA33; /* Slightly brighter gold on hover */
 
+  // Define a dark color for text on bright backgrounds in Light Mode
+  --bs-dark: #222222;
+
   --bs-body-font-weight: 700; /* BOLD weight for Light Mode readability */
   --bs-body-text-shadow: none; /* DISABLED shadow for Light Mode */
 
@@ -26,7 +29,7 @@
 
   // Override for Bootstrap's light-mode active pill
   --bs-nav-pills-link-active-bg: var(--bs-primary); /* Uses new primary gold */
-  --bs-nav-pills-link-active-color: #333;  /* FIXED: Dark text for gold bg */
+  --bs-nav-pills-link-active-color: var(--bs-dark);  /* FIXED: Use dark text for gold bg */
 }
 
 [data-bs-theme="dark"] {
@@ -77,7 +80,6 @@
 
 /* =================================================================
    2. REFACTORED GENERAL STYLES
-   ... (rest of the file remains the same)
    ================================================================= */
 
 // 20px gutter
@@ -135,7 +137,7 @@ b, strong {
 }
 
 /* =================================================================
-   3. REFACTORED NAVBAR
+   3. REFACTORED NAVBAR (RESIZE FIX)
    ================================================================= */
 
 .navbar-brand {
@@ -144,7 +146,8 @@ b, strong {
     color: var(--bs-secondary-color); // Use BS var
 }
 .navbar-nav {
-    font-size: 30px;
+    // REVISED: Allowing link-level size to govern
+    font-size: 1rem;
     font-weight: 100;
 }
 .navbar-text {
@@ -422,20 +425,36 @@ blockquote {
 }
 
 /* =================================================================
-   6. REFACTORED NAVIGATION & BUTTONS
+   6. REFACTORED NAVIGATION & BUTTONS (SIZE AND COLOR FIXES)
    ================================================================= */
 
+// Global Active Pill (e.g., in content body filters)
 body .nav-pills .nav-link.active,
 body .nav-pills .show > .nav-link {
-// Force the background color to your site's primary color (gold)
+    // Background must be the primary color (Gold)
     background-color: var(--bs-primary) !important;
 
-    // Force the text color to a contrasting dark color for readability on the gold background
+    // Text color must be a contrasting dark color for readability
     color: var(--bs-dark) !important;
 }
 
+// CRITICAL FIX: Main Menu Navigation Pill (size and color targeting)
+.navbar-nav .nav-link {
+    font-size: 28px !important; /* FIXED: Increased size to restore prominent look */
+    padding: 0.5rem 1.25rem !important; /* FIXED: Increased horizontal padding */
+    font-weight: 700 !important; /* Ensure bold text */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:focus,
+.navbar-nav .nav-link.active:hover {
+    color: var(--bs-dark) !important;
+    background-color: var(--bs-primary) !important;
+}
+
 .nav-link {
-    color: var(--bs-body-color) !important; // Use BS var
+    // Ensure non-active links are theme body color (white in dark mode)
+    color: var(--bs-body-color) !important;
 }
 
 /* Links will now get their color from --bs-link-color */
@@ -446,13 +465,13 @@ i:hover,
     text-decoration: none !important;
 }
 
-/* REMOVED the global 'a' selector.
-  Links will now be styled by Bootstrap's default
-  (which we have overridden with --bs-link-color).
-*/
 
 // --- Ensure ALL btn-primary uses the primary (Yellow/Gold) color for high contrast ---
 .btn-primary {
+    font-weight: 700 !important;
+    // ADDED: Remove all box shadow for a crisp, clear look
+    box-shadow: none !important;
+
     // Background must be the primary color (Yellow/Gold)
     background-color: var(--bs-primary) !important;
     border-color: var(--bs-primary) !important;
@@ -466,6 +485,8 @@ i:hover,
     }
 
     &:hover, &:focus {
+        // ADDED: Ensure shadow is removed even on hover/focus
+        box-shadow: none !important;
         // Use the slightly darker hover color
         background-color: var(--bs-link-hover-color) !important;
         border-color: var(--bs-link-hover-color) !important;
@@ -473,9 +494,15 @@ i:hover,
     }
 }
 
+// CRITICAL FIX: Apply the same high-contrast gold/dark text to outline buttons
+// and secondary buttons to follow the site's high-contrast button rule.
 .btn-outline-primary,
 .btn-outline-secondary,
 .btn-secondary {
+  font-weight: 700 !important;
+  // ADDED: Remove all box shadow for a crisp, clear look
+  box-shadow: none !important;
+
   // Use btn-primary styles for these to ensure high-contrast look
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
@@ -499,7 +526,6 @@ i:hover,
 
 /* =================================================================
    7. REFACTORED FOOTER
-   ... (rest of the file remains the same)
    ================================================================= */
 footer {
   background-color: transparent;
@@ -555,7 +581,7 @@ footer ul:nth-of-type(2) a:hover {
     height: 80px;
 }
 .footernav {
-    @extend .note; // This @extend is OK, it's a local class
+    @extend .note !optional; // CRITICAL FIX: Added !optional flag to resolve compilation error
     color: var(--bs-secondary-color); // Use BS var
     text-align: center;
     margin-right: 2px;
@@ -564,7 +590,6 @@ footer ul:nth-of-type(2) a:hover {
 
 /* =================================================================
    8. REFACTORED CODE & WIDGETS
-   ... (rest of the file remains the same)
    ================================================================= */
 
 .code-snippet {

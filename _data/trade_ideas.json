@@ -1,4 +1,5 @@
 [
+
 {
   "publicationDate": "2025-11-13",
   "tradeTitle": "Short Iron Condor on SPX (1 DTE)",
@@ -290,78 +291,6 @@
         "commissionFee": 1.01,
         "grossCreditTotal": 96.00,
         "notes": "Sold a weekly covered call against the 200 assigned shares. Net credit received is (0.48 * 200) - 1.01 = $94.99. This premium adds to the total cycle profit."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-11-06",
-    "tradeTitle": "Short Strangle on NQ225 (Dec '25 Paper Trade)",
-    "summaryJustification": "A Short Strangle was executed on the NQZ25 (E-mini Nasdaq 100 Futures) in PaperMoney, using the 44 DTE expiration for a substantial credit. The strategy tests premium selling on a high-volatility futures product, aiming for maximum profit by expiring worthless while the index stays within the 24000 and 27100 strikes.",
-    "expectedReturnDisplay": "258.46% Annualized ROC or $8,735.00 Max Profit",
-    "ticker": "NQZ25",
-    "accountType": "Paper",
-    "currentPrice": 25257.0,
-    "ivRank": 50.0,
-    "earningsDate": "N/A (Index Futures)",
-    "analysis": {
-      "thesis": "Testing a high-probability Short Strangle on the NQ futures index in a simulated environment to collect high premium. Strikes are set wide enough to achieve the stated objective delta (approx. 0.20-0.30 per side).",
-      "strategyType": "Short Strangle",
-      "tradeDetails": {
-        "expiration": "2025-12-20",
-        "dte": 44,
-        "maxProfit": 8735.0,
-        "spreadDetails": {
-          "shortPutStrike": 24000.0,
-          "longPutStrike": 0.0,
-          "shortCallStrike": 27100.0,
-          "longCallStrike": 0.0,
-          "netCredit": 8735.0
-        }
-      },
-      "metrics": {
-        "roc": 31.19,
-        "annualizedRoc": 258.46,
-        "pop": 68.0,
-        "buyingPowerEffect": 28000.0,
-        "dailyProfitPotential": 198.52
-      },
-      "managementPlan": "Standard management plan: Target 50% profit or manage if one of the short strikes is challenged, or at 21 DTE (November 29, 2025)."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN",
-        "date": "2025-11-06",
-        "actionTaken": "STO 1 Short Strangle (27100C/24000P)",
-        "expiration": "2025-12-20",
-        "dte": 44,
-        "strikes": {
-          "shortPut": 24000.0,
-          "longPut": 0.0,
-          "shortCall": 27100.0,
-          "longCall": 0.0
-        },
-        "netCredit": 8735.0,
-        "notes": "Initial trade entry in PaperMoney. Net credit of $8,735.00 confirmed by journal at 436.75 points."
-      },
-      {
-        "stepType": "ADJUSTMENT",
-        "date": "2025-11-07",
-        "actionTaken": "Roll Call Side Down and Out to reduce delta.",
-        "oldStrikes": {
-          "shortPut": 24000.0,
-          "longPut": 0.0,
-          "shortCall": 27100.0,
-          "longCall": 0.0
-        },
-        "newStrikes": {
-          "shortPut": 24000.0,
-          "longPut": 0.0,
-          "shortCall": 25900.0,
-          "longCall": 27100.0
-        },
-        "netChange": 5275.0,
-        "netChangeType": "Credit",
-        "notes": "Adjustment to reduce upside delta. The original 27,100 short call was closed (BOT), and a new 25,900 short call was opened (STO). The resulting short strikes (25900C/24000P) now have approximately 0.30 delta on both the call and put sides. Net credit received for the adjustment was $5,275.00. Total net credit on the trade is now $14,010.00."
       }
     ]
   },

@@ -22,7 +22,7 @@ permalink: /projects/
                         <p class="card-text small text-muted mb-0">
                             View our complete, dynamically updated list of code repositories and tools.
                         </p>
-                        <a href="/projectsgit/" class="btn btn-sm btn-primary mt-2">
+                        <a href="/projectsgit/" class="btn btn-sm btn-primary text-dark mt-2">
                             View GitHub Portfolio <i class="fas fa-arrow-right ms-2"></i>
                         </a>
                     </div>
@@ -81,11 +81,11 @@ permalink: /projects/
                         </p>
 
                         <div class="mt-3">
-                            <a href="{{ project.url | relative_url }}" class="btn btn-sm btn-primary me-2">
+                            <a href="{{ project.url | relative_url }}" class="btn btn-sm btn-primary text-dark me-2">
                                 <i class="fas fa-info-circle me-1"></i> Details
                             </a>
                             {% if project.github_repo %}
-                            <a href="{{ project.github_repo }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary me-2">
+                            <a href="{{ project.github_repo }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary text-dark me-2">
                                 <i class="fab fa-github fa-fw me-1"></i> GitHub
                             </a>
                             {% endif %}
