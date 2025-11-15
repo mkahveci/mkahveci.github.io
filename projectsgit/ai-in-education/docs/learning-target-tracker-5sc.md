@@ -4,6 +4,8 @@ title: learning-target-tracker-5sc
 project: ai-in-education
 repo: mkahveci/ai-in-education
 permalink: /learning-target-tracker-5sc/
+redirect_from: /projectsgit/ai-in-education/docs/learning-target-tracker-5sc.html
+  - 
 ---
 
 <div class="container my-5">
