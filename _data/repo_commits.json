@@ -1,5 +1,19 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update trade_ideas.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/65536dd81e0a35f0d19ec868c05081155ed170a7",
+    "author": "Murat Kahveci",
+    "date": "2025-11-14T18:05:28Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5e47730430dc380c4d72ca0b9b47d24a580abdd0",
+    "author": "github-actions[bot]",
+    "date": "2025-11-14T01:26:09Z"
+  },
+  {
     "repo": "mkahveci/email-signature",
     "message": "kahveci.pw",
     "url": "https://github.com/mkahveci/email-signature/commit/fe91ecb1b70fe6d1b2e0d4d070ca5f3c1dc55b4f",
@@ -775,20 +789,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e0ca56d764f2bf69d705d9b358a12fd3b7f0a92",
     "author": "mkahveci",
     "date": "2025-11-04T20:16:00Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/45c3c36cd8690aca38938ba35ef4acfe906dceb5",
-    "author": "github-actions[bot]",
-    "date": "2025-11-04T01:24:57Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0050d7448ce84ac5616e6a17845638b95611c3b3",
-    "author": "mkahveci",
-    "date": "2025-11-03T17:47:45Z"
   },
   {
     "repo": "mkahveci/qma",
