@@ -9,8 +9,18 @@
 
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal.css' | relative_url }}">
 
-    <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/theme/kahveci.css' | relative_url }}" id="theme">
-    <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal-custom.css' | relative_url }}">
+
+    {% comment %}
+    --- DYNAMIC THEME SELECTION ---
+    1. Check for 'page.presentation_theme' in front matter.
+    2. Default to 'kahveci' if not set.
+    3. Load the corresponding compiled CSS file.
+    {% endcomment %}
+    {% assign theme_name = page.presentation_theme | default: 'kahveci-dark' %}
+    <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/theme/' | relative_url }}{{ theme_name }}.css" id="theme">
+
+    {% assign timestamp = site.time | date: "%s" %}
+    <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal-custom.css' | relative_url }}?v={{ timestamp }}">
     <link rel="stylesheet" href="{{ '/assets/reveal.js/dist/reveal-dynamic.css' | relative_url }}">
 
     <link rel="stylesheet" href="{{ '/assets/reveal.js/plugin/highlight/monokai.css' | relative_url }}">

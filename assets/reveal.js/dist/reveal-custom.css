@@ -1,3 +1,70 @@
+/*
+ * Custom CSS Overrides for Reveal.js (kahveci.pw)
+ * Includes utility classes and fixes for layout and image scaling.
+ */
+
+/* =================================================================
+   1. FIGURE SLIDE AND IMAGE SCALING (CRITICAL FIT FIX)
+   ================================================================= */
+
+.figure-slide {
+  /* Parent container for absolute positioning */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  height: 100% !important;
+  padding: 0 !important;
+
+  /* 🎯 CRITICAL FIX: Make the slide section the absolute reference point */
+  position: relative !important;
+}
+
+.figure-slide .figure-container {
+  /* This container pushes the image up to reserve space for the caption */
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+
+  /* FINAL FIX: Bottom padding reserves space for the caption + margin (120px) */
+  padding-bottom: 120px !important;
+}
+
+/* 🎯 CRITICAL IMAGE CONSTRAINT (Ensures image scales down for vertical fit) */
+.reveal .figure-slide img {
+  /* Final, safe height constraint */
+  max-height: 40vh !important;
+  max-width: 95vw !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+}
+
+/* 🎯 CRITICAL FIX: ABSOLUTELY POSITION THE CAPTION (Anchors it above the footer) */
+.reveal .figure-slide .caption {
+  position: absolute !important;
+  bottom: 20px !important; /* Anchors 20px from bottom edge (clearance for navigation) */
+  left: 5% !important;
+  right: 5% !important;
+  width: 90% !important;
+  z-index: 100 !important;
+  margin: 0 auto !important;
+
+  /* Ensure text color and minimal spacing */
+  color: var(--r-main-color) !important;
+  text-align: center !important;
+  font-size: 0.8em !important;
+}
+
+/* =================================================================
+   2. TABLE RESPONSIVENESS AND TIGHT SPACING
+   ================================================================= */
+
 .reveal .responsive-table {
   /* Step 1: Reduce font size for the table */
   font-size: 0.8em;
@@ -5,7 +72,6 @@
   word-wrap: break-word;
   white-space: normal;
   /* Step 3: Apply transform: scale() to fit the entire table if necessary */
-  /* This is a fallback and can be adjusted */
   transform: scale(0.9);
   transform-origin: top center;
   /* Box model adjustments */
@@ -23,7 +89,94 @@
 }
 
 /* Negative vertical space */
-
 .reveal p.tight-spacing {
-  margin-top: -20px; /* Adjust the value to decrease the space */
+  margin-top: -20px;
+}
+
+/* =================================================================
+   3. SPLIT-SCREEN LAYOUT
+   ================================================================= */
+
+.split-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.split-layout .left-side,
+.split-layout .right-side {
+  width: 48%;
+  height: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Optional: Add a subtle visual divider */
+.split-layout .left-side {
+  /* Border color should be set by theme variable in the theme SCSS */
+  border-right: 1px solid var(--site-muted-light, #ccc);
+  padding-right: 2rem;
+}
+
+/* Optional: Make it responsive for smaller screens */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .split-layout .left-side,
+  .split-layout .right-side {
+    width: 90%;
+    padding: 1rem 0;
+  }
+}
+
+/* Ensure the heading and paragraph styles are consistent */
+.split-layout h3 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+/* =================================================================
+   4. END SLIDE STYLES
+   ================================================================= */
+.profile-photo-circular {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.end-slide-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 0.75em;
+  margin-top: 3em;
+}
+
+.end-slide-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.end-slide-column ul {
+  padding-left: 20px;
+}
+
+.end-slide-contact {
+  text-align: center;
+}
+
+.end-slide-contact-logo {
+  max-width: 120px;
+  height: auto;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  margin-bottom: 1em;
 }
