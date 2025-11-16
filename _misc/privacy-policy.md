@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Privacy Policy
+date: 2024-11-24 00:00:00
 ---
 <div class="bigspacer"></div>
 <p class="text-muted">

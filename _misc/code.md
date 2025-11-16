@@ -1,9 +1,9 @@
 ---
 layout: misc
 title: Code Snippets
+date: 2013-10-28 00:00:00
 permalink: /code
 mermaid: true
-figure_index: 0
 ---
 
 ### Page Redirect

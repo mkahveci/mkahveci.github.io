@@ -1,0 +1,36 @@
+{% comment %} --- Compute city + year --- {% endcomment %}
+{% assign city_only = include.location | split: ',' | first %}
+{% assign year_only = include.date | date: "%Y" %}
+{% assign city_year_text = city_only | append: ", " | append: year_only %}
+
+<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+
+<div style="margin-bottom: 2rem;">
+<h1 style="font-size: 3em; margin-bottom: 0.5em;">{{ include.slide_title }}</h1>
+<h2 class="subtitle" style="font-size: 1.5em; font-weight: 300; margin-top: 0;">{{ include.subtitle }}</h2>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem; flex-wrap: wrap;">
+
+{% for author in include.authors %}
+<div class="author-block" style="text-align: center;">
+<h3 class="author-name" style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">
+{{ author.name }}
+</h3>
+<p class="affiliation" style="font-size: 0.9em; margin: 0;">
+{{ author.affiliation }}
+</p>
+</div>
+{% endfor %}
+
+</div>
+
+<div style="text-align: center;">
+<img src="{{ include.logo_src | default: '/images/logo.svg' }}" alt="Event Logo"
+style="width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
+<p class="year" style="font-size: 0.9em; margin: 0; text-align: center;">
+{{ city_year_text }}
+</p>
+</div>
+
+</section>

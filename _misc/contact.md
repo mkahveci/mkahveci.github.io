@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: misc
 title: Contact
+date: 2022-08-19 00:00:00
 ---
 <div class="container my-5">
 

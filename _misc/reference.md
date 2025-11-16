@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: misc
 title: Letter of Recommendation
+date: 2024-11-24 00:00:00
 ---
 
 <div class="container my-5">

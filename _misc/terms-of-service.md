@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Terms of Service
+date: 2024-11-24 00:00:00
 ---
 <p class="text-muted">
   <b>Effective Date:</b> September 28, 2025

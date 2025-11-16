@@ -1,51 +1,43 @@
 ---
-# Layout must be 'reveal' to render as a presentation
 layout: reveal
 
-# ---- Main Information ----
-title: "Affective Dimensions in Chemistry Education: An Overview of the Volume"
+# PRESENTATION METADATA (Used for site listing and slide)
+title: "Affective Dimensions in Chemistry Education"
+subtitle_desc: "An Overview of the Volume"
 date: 2015-05-15
-category: talks # This is the crucial line!
-
-# DYNAMIC THEME SELECTION
-# Options: 'kahveci-light' (Default) or 'kahveci-dark'
-presentation_theme: kahveci-light
-
-# ---- Data for the Listing Page ----
-event: "Book Launch & Symposium"
-location: "Canakkale, Turkey"
+category: talks
+event: "Professional Development Seminar"
+location: "Canakkale, Turkey" # Used for slide footer and listing
 type: "invited" # Use "conference" or "invited"
+
+# ⭐ SLIDE CONFIGURATION
+# Options: 'kahveci-light' (Default) or 'kahveci-dark'
+presentation_theme: kahveci-dark
+
+# 🎯 AUTHOR DATA (The array needed for _includes/title-slide.html)
+authors:
+- name: Murat Kahveci, Ph.D.
+  affiliation: Canakkale Onsekiz Mart University
+  photo: "/images/team/murat-kahveci.jpg"
+  url: "/murat/"
 
 # ---- Optional Links for Buttons ----
 pdf:
 video:
-event_url: "https://www.springer.com/gp/book/9783662450840"
+event_url:
 published: true
 sitemap: false
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-<div style="margin-bottom: 2rem;">
-<h1 style="font-size: 3em; margin-bottom: 0.5em;">Affective Dimensions in Chemistry Education</h1>
-<h2 style="font-size: 1.5em; color: #555; font-weight: 300; margin-top: 0;">An Overview of the Edited Volume</h2>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem;">
-<div style="text-align: center;">
-    <h3 style="font-size: 1.2em; color: #555; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci</h3>
-    <p style="font-size: 0.9em; color: #777; margin: 0;">Canakkale Onsekiz Mart University</p>
-</div>
-<div style="text-align: center;">
-    <h3 style="font-size: 1.2em; color: #555; font-weight: bold; margin-bottom: 0.5rem;">MaryKay Orgill</h3>
-    <p style="font-size: 0.9em; color: #777; margin: 0;">University of Nevada Las Vegas</p>
-</div>
-</div>
-
-<div style="text-align: center;">
-<img src="/images/talks/logo/springer.png" alt="Event Logo" style="width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-    <p style="font-size: 0.9em; margin: 0; text-align: center;">Published 2015</p>
-</div>
-</section>
+{% include slide-title.html
+slide_title=page.title
+subtitle=page.subtitle_desc
+authors=page.authors
+location=page.location
+event=page.event
+date=page.date
+logo_src="/images/logo.svg"
+%}
 
 ---
 
@@ -197,15 +189,14 @@ This section presents a global collection of studies and practical applications.
 
 ---
 
-
 <section style="text-align: center;">
 <h2 style="margin-bottom: 2rem;">Acknowledgments</h2>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: #555; margin-bottom: 1rem;">
+    <h4 style="margin-bottom: 1rem;">
         <i class="fas fa-users fa-fw" style="margin-right: 10px;"></i>Team & Collaborators
     </h4>
-    <ul style="list-style: none; padding: 0; text-align: center; color: #555; font-size: 0.9em; margin: 0 auto; max-width: 80%;">
+    <ul style="list-style: none; padding: 0; text-align: center; font-size: 0.9em; margin: 0 auto; max-width: 80%;">
         <li>
             <i class="fas fa-user-circle fa-fw" style="margin-right: 5px;"></i>All contributing authors for their valuable work.
         </li>
@@ -213,10 +204,10 @@ This section presents a global collection of studies and practical applications.
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: #555; margin-bottom: 1rem;">
+    <h4 style="margin-bottom: 1rem;">
         <i class="fas fa-journal-whills fa-fw" style="margin-right: 10px;"></i>Reviewers & Publisher
     </h4>
-    <ul style="list-style: none; padding: 0; text-align: center; color: #555; font-size: 0.9em; margin: 0 auto; max-width: 80%;">
+    <ul style="list-style: none; padding: 0; text-align: center; font-size: 0.9em; margin: 0 auto; max-width: 80%;">
         <li>
             <i class="fas fa-file-alt fa-fw" style="margin-right: 5px;"></i>Anonymous reviewers for their insightful feedback.
         </li>
@@ -227,50 +218,24 @@ This section presents a global collection of studies and practical applications.
 </div>
 
 <div>
-<h4 style="color: #555; margin-bottom: 1rem;"><i class="fas fa-users fa-fw" style="margin-right: 10px;"></i>Editors</h4>
+<h4 style="margin-bottom: 1rem;"><i class="fas fa-users fa-fw" style="margin-right: 10px;"></i>Editors</h4>
 <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
 <div style="text-align: center;">
 <a href="/murat"><img src="/images/team/murat-kahveci.jpg" class="profile-photo-circular" alt="Murat Kahveci" style="width: 100px; height: 100px; border-radius: 50%;"></a>
-<p style="margin-top: 10px; font-weight: bold; color: #555;">Murat Kahveci</p>
+<p style="margin-top: 10px; font-weight: bold;">Murat Kahveci</p>
 </div>
 <div style="text-align: center;">
 <a href="/marykay"><img src="/images/team/marykay-orgill.png" class="profile-photo-circular" alt="MaryKay Orgill" style="width: 100px; height: 100px; border-radius: 50%;"></a>
-<p style="margin-top: 10px; font-weight: bold; color: #555;">MaryKay Orgill</p>
+<p style="margin-top: 10px; font-weight: bold;">MaryKay Orgill</p>
 </div>
 </div>
 </div>
 </section>
-
 
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-    <div style="margin-bottom: 2rem;">
-        <h2 style="font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
-        <p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"Thank you for attending!"</i></p>
-    </div>
-
-    <div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
-        <div style="text-align: center;">
-            <a href="https://kahveci.pw/" target="_blank">
-                <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-            </a>
-            <h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
-            <div style="display: flex; justify-content: center; gap: 20px;">
-                <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; ">
-                    <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-            </div>
-        </div>
-
-        <div id="timer-container" style="font-size: 4em; font-weight: bold; ">
-            <span id="countdown"></span>
-        </div>
-    </div>
-</section>
+{% include slide-questions-discussion.html
+title="Questions & Discussion"
+subtitle="Thank you for attending!"
+presenter="Murat Kahveci, Ph.D."
+%}

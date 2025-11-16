@@ -1,0 +1,31 @@
+<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+<div style="margin-bottom: 2rem;">
+<h2 style="font-size: 2.5em; margin-bottom: 0.5em;">{{ include.title | default: "Questions & Discussion" }}</h2>
+<p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"{{ include.subtitle | default: "Thank you for attending!" }}"</i></p>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
+<div style="text-align: center;">
+<a href="https://kahveci.pw/" target="_blank">
+    <img src="{{ include.logo_src | default: '/images/logo.svg' }}" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
+</a>
+<h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">{{ include.presenter | default: "Murat Kahveci, Ph.D." }}</h4>
+
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; color: var(--r-main-color);">
+        <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
+    </a>
+    <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; color: var(--r-main-color);">
+        <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
+    </a>
+    <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; color: var(--r-main-color);">
+        <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
+    </a>
+</div>
+</div>
+
+<div id="timer-container" style="font-size: 4em; font-weight: bold; color: var(--r-main-color);">
+<span id="countdown"></span>
+</div>
+</div>
+</section>

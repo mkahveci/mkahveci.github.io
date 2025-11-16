@@ -1,20 +1,32 @@
 ---
-# Layout must be 'reveal' to render as a presentation
 layout: reveal
 
-# ---- Main Information ----
-title: "Your Presentation Title Here"
-date: 2025-09-29
-category: talks # This is the crucial line for Jekyll collections!
+# PRESENTATION METADATA (Used for site listing and slide)
+title: "AI-Driven LT Tracker (5-SC)"
+subtitle_desc: "Data-Driven Instructional Planning"
+date: 2025-10-15
+category: talks
+event: "Professional Development Seminar"
+location: "Chicago" # Used for slide footer and listing
+type: "invited" # Use "conference" or "invited"
 
-# DYNAMIC THEME SELECTION
+# ⭐ SLIDE CONFIGURATION
 # Options: 'kahveci-light' (Default) or 'kahveci-dark'
 presentation_theme: kahveci-dark
 
-# ---- Data for the Listing Page ----
-event: "Event Name (e.g., Conference)"
-location: "City, State, Country"
-type: "template" # Use "conference" or "invited"
+# 🎯 AUTHOR DATA (The array needed for _includes/title-slide.html)
+authors:
+- name: Murat Kahveci, Ph.D.
+  affiliation: Chicago Public Schools
+  photo: "/images/team/murat-kahveci.jpg"
+  url: "/murat/"
+# Add more authors as needed...
+
+# FUNDING DATA
+funding:
+- "National Science Foundation"
+# Add more funding as needed...
+
 
 # ---- Optional Links for Buttons ----
 pdf:
@@ -24,29 +36,15 @@ published: true
 sitemap: false
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-<div style="margin-bottom: 2rem;">
-    <h1 style="font-size: 3em; margin-bottom: 0.5em;">Your Presentation Title Here</h1>
-    <h2 style="font-size: 1.5em; font-weight: 300; margin-top: 0;">A More Descriptive Subtitle if You Have One</h2>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem;">
-    <div style="text-align: center;">
-        <h3 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h3>
-        <p style="font-size: 0.9em; margin: 0;">Chicago Public Schools</p>
-    </div>
-    <div style="text-align: center;">
-        <h3 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Co-Author Name</h3>
-        <p style="font-size: 0.9em; margin: 0;">Co-Author Institution</p>
-    </div>
-</div>
-
-<div style="text-align: center;">
-    <img src="/images/logo.svg" alt="Event Logo" style="width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-    <p style="font-size: 0.9em; margin: 0; text-align: center;">Chicago, 2025</p>
-</div>
-</section>
-
+{% include slide-title.html
+    slide_title=page.title
+    subtitle=page.subtitle_desc
+    authors=page.authors
+    location=page.location
+    event=page.event
+    date=page.date
+    logo_src="/images/logo.svg"
+%}
 
 ---
 
@@ -72,63 +70,39 @@ A paragraph of text goes here to describe your methodology.
 
 ---
 
-## 4. Results & Discussion
-
-* Here you can present your main findings.
-* Use a table to present quantitative data.
-
-<table style="width:100%; font-size: 0.9em; margin-bottom: 2rem;">
-    <thead>
-    <tr>
-        <th style="text-align: left;">Header 1</th>
-        <th style="text-align: center;">Header 2</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="text-align: left;">Data A</td>
-        <td style="text-align: center;">Value X</td>
-    </tr>
-    <tr>
-        <td style="text-align: left;">Data B</td>
-        <td style="text-align: center;">Value Y</td>
-    </tr>
-    </tbody>
-</table>
-
-<p style="text-align: center; font-size: 0.8em; margin-top: 1rem;">
-    <strong>Table: Your Table Caption.</strong>
-</p>
+{% include slide-table-text.html
+title="Table with Analysis"
+headers="Col A,Col B"
+rows="Data 1|Data 2,Data 3|Data 4"
+caption="This is our data."
+text_items="Bullet point one; Bullet point two"
+table_align="left"
+%}
 
 ---
 
-<section class="figure-slide">
-
-<h2>Portrait Figures</h2>
-
-<div class="figure-container">
-    <img src="/images/blog/pab/mobile-data-entry.png" alt="Mobile data entry">
-</div>
-
-<p class="caption">
-    <strong>Figure 1: Mobile-Friendly Entry.</strong> The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students.
-</p>
-</section>
+{% include slide-figure-text.html
+title="Figure Only"
+image_src="/images/talks/narst-2015-stpd/diagram-landscape.png"
+fig_num="3"
+caption_title="Vertical Figure Layout"
+caption_body="The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students."
+text_items=""
+image_align="right"
+%}
 
 ---
 
-<section class="figure-slide">
 
-<h2>Lanscape Figures</h2>
-
-<div class="figure-container">
-    <img src="/images/talks/narst-2015-stpd/diagram-landscape.png" alt="Mobile data entry">
-</div>
-
-<p class="caption">
-    <strong>Figure 1: Mobile-Friendly Entry.</strong> The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students.
-</p>
-</section>
+{% include slide-figure-text.html
+title="Vertical Figure Layout with Text"
+image_src="/images/blog/pab/mobile-data-entry.png"
+fig_num="3"
+caption_title="Vertical Figure Layout"
+caption_body="The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students."
+text_items="Bullet point one; Bullet point two"
+image_align="right"
+%}
 
 ---
 
@@ -140,62 +114,16 @@ A paragraph of text goes here to describe your methodology.
 
 ---
 
-<section style="text-align: center;">
-
-<h2 style="margin-bottom: 2rem;">Acknowledgments</h2>
-
-<div style="margin-bottom: 4rem;">
-    <h4 style="margin-bottom: 1rem;"><i class="fas fa-handshake fa-fw" style="margin-right: 10px;"></i>Funding & Support</h4>
-    <ul style="list-style: none; padding: 0; text-align: center; font-size: 0.9em;">
-        <li><i class="fas fa-check-circle fa-fw" style="margin-right: 5px;"></i>Excellence Research Centre of Science and Mathematics Education, King Saud University</li>
-    </ul>
-</div>
-
-<div>
-    <h4 style="margin-bottom: 1rem;"><i class="fas fa-users fa-fw" style="margin-right: 10px;"></i>Contributors</h4>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
-        <div style="text-align: center;">
-            <a href="/murat"><img src="/images/team/murat-kahveci.jpg" class="profile-photo-circular" alt="Murat Kahveci" style="width: 100px; height: 100px; border-radius: 50%;"></a>
-            <p style="margin-top: 10px; font-weight: bold; ">Murat Kahveci</p>
-        </div>
-        <div style="text-align: center;">
-            <a href="/ajda"><img src="/images/team/ajda-kahveci.png" class="profile-photo-circular" alt="Ajda Kahveci" style="width: 100px; height: 100px; border-radius: 50%;"></a>
-            <p style="margin-top: 10px; font-weight: bold; ">Ajda Kahveci</p>
-        </div>
-    </div>
-</div>
-</section>
+{% include slide-acknowledgments.html
+funding=page.funding
+authors=page.authors
+%}
 
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-<div style="margin-bottom: 2rem;">
-    <h2 style="font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
-    <p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"Thank you for attending!"</i></p>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
-    <div style="text-align: center;">
-        <a href="https://kahveci.pw/" target="_blank">
-            <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-        </a>
-        <h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
-        <div style="display: flex; justify-content: center; gap: 20px;">
-            <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; ">
-                <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
-            </a>
-            <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; ">
-                <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
-            </a>
-            <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; ">
-                <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
-            </a>
-        </div>
-    </div>
-
-<div id="timer-container" style="font-size: 4em; font-weight: bold; ">
-    <span id="countdown"></span>
-</div>
-</div>
-</section>
+{% include slide-questions-discussion.html
+title="Questions & Discussion"
+subtitle="Thank you for attending!"
+presenter="Murat Kahveci, Ph.D."
+%}
 

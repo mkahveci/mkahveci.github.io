@@ -31,18 +31,45 @@ jekyll_redirect_from:
   layout: "redirect"
 
 defaults:
+  # 1. Standard Jekyll Posts
   - scope:
       path: ""
       type: "posts"
     values:
       toc: true
 
+  # 2. Seminars Collection (Assuming you want TOC here)
+  - scope:
+      path: ""
+      type: "seminars"
+    values:
+      toc: true
+
+  # 3. Projects Collection (Assuming you want TOC here)
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      toc: true
+
+  # 4. Misc Collection (TOC for those documents)
+  - scope:
+      path: ""
+      type: "misc"
+    values:
+      toc: true
+      layout: misc
+      permalink: /:title/
+
 collections:
   seminars:
     output: true
   projects:
     output: true
-    permalink: /:title/
+  misc:
+    output: true
+    date_field: null
+
 
 toc:
   min_level: 1

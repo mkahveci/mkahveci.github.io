@@ -1,0 +1,56 @@
+<section style="text-align: center;">
+
+<h2 style="margin-bottom: 2rem;">Acknowledgments</h2>
+
+{% comment %}
+-------------------------------------
+FUNDING & SUPPORT
+-------------------------------------
+{% endcomment %}
+{% if include.funding %}
+<div style="margin-bottom: 4rem;">
+<h4 style="margin-bottom: 1rem;">
+<i class="fas fa-handshake fa-fw" style="margin-right: 10px;"></i>
+Funding & Support
+</h4>
+
+<ul style="list-style: none; padding: 0; text-align: center; font-size: 0.9em;">
+{% for item in include.funding %}
+<li>
+    <i class="fas fa-check-circle fa-fw" style="margin-right: 5px;"></i>
+    {{ item }}
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+
+{% comment %}
+-------------------------------------
+CONTRIBUTORS (uses authors array)
+-------------------------------------
+{% endcomment %}
+{% if include.authors %}
+<div>
+<h4 style="margin-bottom: 1rem;">
+<i class="fas fa-users fa-fw" style="margin-right: 10px;"></i>
+Contributors
+</h4>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+{% for a in include.authors %}
+<div style="text-align: center;">
+    <a href="{{ a.url }}">
+        <img src="{{ a.photo }}"
+             alt="{{ a.name }}"
+             style="width: 100px; height: 100px; border-radius: 50%;">
+    </a>
+    <p style="margin-top: 10px; font-weight: bold;">{{ a.name }}</p>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endif %}
+
+</section>

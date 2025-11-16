@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: misc
 title: About the Kahveci Nexus
+date: 2022-08-21 00:00:00
 ---
 
 {% comment %} --- HEADER SECTION (THEME-AWARE BACKGROUND) --- {% endcomment %}

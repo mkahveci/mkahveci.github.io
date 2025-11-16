@@ -7,6 +7,7 @@ published: true
 <style>
     /* REFINED: The year-block uses the PRIMARY color for its background
     and the DARK color for its text for the highest contrast.
+    This remains as the only necessary structural style block.
     */
     .year-block {
       width: 60px;
@@ -22,6 +23,12 @@ published: true
       font-weight: bold;
       border-radius: 0.25rem;
     }
+    /* Custom utility class for button container alignment */
+    .btn-container-indent {
+        gap: 0.5rem;
+        /* Aligns buttons with the card content by offsetting the width of the year-block + margin */
+        margin-left: 76px;
+    }
 </style>
 
 <div class="container my-5">
@@ -33,6 +40,7 @@ published: true
         </p>
     </div>
 
+    {% comment %} --- LOGIC: Sort and separate talks by type --- {% endcomment %}
     {% assign talks = site.categories.talks | sort: "date" | reverse %}
     {% assign invited_talks = talks | where: "type", "invited" %}
     {% assign conference_talks = talks | where: "type", "conference" %}
@@ -40,22 +48,29 @@ published: true
     {% if invited_talks.size > 0 %}
     <section id="invited-talks" class="mb-5">
         <h2 class="head fw-bold text-primary mb-4 mt-5"><i class="fas fa-bullhorn fa-fw text-primary me-2"></i> Invited Talks</h2>
+
+        {% comment %} --- B. Listing Layout: Two-Column Grid (row-cols-1 row-cols-lg-2 g-4) --- {% endcomment %}
         <div class="row row-cols-1 row-cols-lg-2 g-4">
             {% for talk in invited_talks %}
             <div class="col">
+                {% comment %} --- B. Card Structure: Card, Shadow, Border-0, Theme Background --- {% endcomment %}
                 <div class="card h-100 shadow-sm border-0" style="background-color: var(--bs-card-bg);">
                     <div class="card-body d-flex p-4">
+                        {% comment %} --- B. Content Flow: Icon/Date on Left (year-block) --- {% endcomment %}
                         <div class="year-block me-4 fw-bold">{{ talk.date | date: "%Y" }}</div>
                         <div class="flex-grow-1">
+                            {% comment %} --- A. Typography: h5 fw-bold text-body for card titles --- {% endcomment %}
                             <h5 class="card-title fw-bold text-body mb-1">{{ talk.title }}</h5>
                             <p class="card-text small text-muted fst-italic mt-2 mb-0">
                                 Presented at: {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
                             </p>
                         </div>
                     </div>
+
+                    {% comment %} --- Card Footer (Button Section) --- {% endcomment %}
                     <div class="card-footer border-top-0 pt-0" style="background-color: var(--bs-card-bg);">
-                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
-                            {% comment %} All buttons converted to btn-primary or btn-outline-primary for consistency {% endcomment %}
+                        <div class="d-flex flex-wrap btn-container-indent">
+                            {% comment %} A. Buttons (btn-primary for main CTA, btn-outline-primary for secondary) {% endcomment %}
                             <a href="{{ talk.url | relative_url }}" class="btn btn-sm btn-primary"><i class="fas fa-desktop fa-fw me-1"></i> Open Presentation</a>
                             {% if talk.pdf %}<a href="{{ talk.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
                             {% if talk.video %}<a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-video fa-fw me-1"></i> Recording</a>{% endif %}
@@ -72,13 +87,18 @@ published: true
     {% if conference_talks.size > 0 %}
     <section id="conference-talks" class="mb-5">
         <h2 class="head fw-bold text-primary mb-4 mt-5"><i class="fas fa-users fa-fw text-primary me-2"></i> Conference Presentations</h2>
+
+        {% comment %} --- B. Listing Layout: Two-Column Grid (row-cols-1 row-cols-lg-2 g-4) --- {% endcomment %}
         <div class="row row-cols-1 row-cols-lg-2 g-4">
             {% for talk in conference_talks %}
             <div class="col">
+                {% comment %} --- B. Card Structure: Card, Shadow, Border-0, Theme Background --- {% endcomment %}
                 <div class="card h-100 shadow-sm border-0" style="background-color: var(--bs-card-bg);">
                     <div class="card-body d-flex p-4">
+                        {% comment %} --- B. Content Flow: Icon/Date on Left (year-block) --- {% endcomment %}
                         <div class="year-block me-4 fw-bold">{{ talk.date | date: "%Y" }}</div>
                         <div class="flex-grow-1">
+                            {% comment %} --- A. Typography: h5 fw-bold text-body for card titles --- {% endcomment %}
                             <h5 class="card-title fw-bold text-body mb-1">{{ talk.title }}</h5>
                             <p class="card-text small text-muted fst-italic mt-2 mb-0">
                                 Presented at: {{ talk.event }}{% if talk.location %}, {{ talk.location }}{% endif %}
@@ -86,7 +106,7 @@ published: true
                         </div>
                     </div>
                     <div class="card-footer border-top-0 pt-0" style="background-color: var(--bs-card-bg);">
-                        <div class="d-flex flex-wrap" style="gap: 0.5rem; margin-left: 76px;">
+                        <div class="d-flex flex-wrap btn-container-indent">
                             <a href="{{ talk.url | relative_url }}" class="btn btn-sm btn-primary"><i class="fas fa-desktop fa-fw me-1"></i> Open Presentation</a>
                             {% if talk.pdf %}<a href="{{ talk.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-file-pdf fa-fw me-1"></i> PDF</a>{% endif %}
                             {% if talk.video %}<a href="{{ talk.video }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary"><i class="fas fa-video fa-fw me-1"></i> Recording</a>{% endif %}

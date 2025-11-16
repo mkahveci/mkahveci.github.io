@@ -1,0 +1,173 @@
+{%- comment -%}
+========================================================================
+_includes/slide-table-text.html
+A specialized slide layout that auto-detects content.
+
+- If text (text_items or text) is provided, it creates a two-column
+layout (table + caption in one col, text in the other).
+- If NO text is provided, it creates a single-column, centered
+table layout.
+========================================================================
+Usage (Two-Column):
+{% include slide-table-text.html
+title="Table with Analysis"
+headers="Col A,Col B"
+rows="Data 1|Data 2,Data 3|Data 4"
+caption="This is our data."
+text_items="Bullet point one; Bullet point two"
+table_align="left"
+%}
+
+Usage (Single-Column):
+{% include slide-table-text.html
+title="Full-Width Table"
+headers="Col A,Col B"
+rows="Data 1|Data 2,Data 3|Data 4"
+caption="This is our data."
+text_items=""
+%}
+========================================================================
+{%- endcomment -%}
+
+{%- comment -%}
+--- Check if any text content exists ---
+We must check the *size* of the string after stripping
+whitespace. An empty string "" is 'truthy' but has a size of 0.
+---
+{%- endcomment -%}
+{% assign text_items_size = include.text_items | strip | size %}
+{% assign text_size = include.text | strip | size %}
+
+{% assign has_text_content = false %}
+{% if text_items_size > 0 or text_size > 0 %}
+{% assign has_text_content = true %}
+{% endif %}
+
+
+<section class="table-slide">
+
+{% if include.title %}
+<h2>{{ include.title }}</h2>
+{% endif %}
+
+{%- comment -%}
+========================================================================
+A) TWO-COLUMN LAYOUT (Text + Table)
+Render this block if text content was found.
+========================================================================
+{%- endcomment -%}
+{% if has_text_content %}
+
+{%- comment -%} --- Define the Table Column (Table + Caption) --- {%- endcomment -%}
+{% capture table_col %}
+<div class="col" style="flex:1; min-width:300px;">
+{% assign headers = include.headers | split: "," %}
+{% assign raw_rows = include.rows | split: "," %}
+<table class="data-table" style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr>
+{% for h in headers %}
+<th style="text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid #ddd;">{{ h | strip }}</th>
+{% endfor %}
+</tr>
+</thead>
+<tbody>
+{% for r in raw_rows %}
+{% assign cells = r | split: "|" %}
+<tr>
+{% for c in cells %}
+<td style="padding:0.5rem 0.8rem; border-bottom:1px solid #eee;">{{ c | strip }}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% if include.caption %}
+<p class="caption" style="font-size:0.95rem; margin-top:0.6rem;">
+<strong>Table:</strong> {{ include.caption }}
+</p>
+{% endif %}
+</div>
+{% endcapture %}
+
+{%- comment -%} --- Define the Text Column (Bullets or Paragraph) --- {%- endcomment -%}
+{% capture text_col %}
+<div class="col" style="flex:1; min-width:300px;">
+{% if text_items_size > 0 %}
+<ul style="padding-left: 1.2rem;">
+{% if include.text_items contains ";" or include.text_items contains "," %}
+{% assign items = include.text_items | replace: ";", "," | split: "," %}
+{% for it in items %}
+<li style="margin-bottom: 0.5rem;">{{ it | strip }}</li>
+{% endfor %}
+{% else %}
+{% for it in include.text_items %}
+<li style="margin-bottom: 0.5rem;">{{ it }}</li>
+{% endfor %}
+{% endif %}
+</ul>
+{% elsif text_size > 0 %}
+{{ include.text | markdownify }}
+{% endif %}
+</div>
+{% endcapture %}
+
+{%- comment -%} --- Render the Two-Column Container --- {%- endcomment -%}
+<div class="slide-two-col" style="display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;">
+{% if include.table_align == "right" %}
+{{ text_col }}
+{{ table_col }}
+{% else %}
+{{ table_col }}
+{{ text_col }}
+{% endif %}
+</div>
+
+{%- comment -%}
+========================================================================
+B) SINGLE-COLUMN LAYOUT (Table Only)
+Render this block if NO text content was found.
+========================================================================
+{%- endcomment -%}
+{% else %}
+
+<div class="slide-single-col-wrapper"
+style="display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;">
+
+<div class="slide-single-col" style="width: 80%;">
+{% assign headers = include.headers | split: "," %}
+{% assign raw_rows = include.rows | split: "," %}
+<table class="data-table" style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr>
+{% for h in headers %}
+<th style="text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid #ddd;">{{ h | strip }}</th>
+{% endfor %}
+</tr>
+</thead>
+<tbody>
+{% for r in raw_rows %}
+{% assign cells = r | split: "|" %}
+<tr>
+{% for c in cells %}
+<td style="padding:0.5rem 0.8rem; border-bottom:1px solid #eee;">{{ c | strip }}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% if include.caption %}
+<p class="caption" style="font-size:0.95rem; margin-top:0.6rem; text-align: center;">
+<strong>Table:</strong> {{ include.caption }}
+</p>
+{% endif %}
+</div>
+
+</div>
+
+{% endif %}
+
+</section>

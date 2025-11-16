@@ -1,16 +1,27 @@
 ---
-# Layout must be 'reveal' to render as a presentation
 layout: reveal
 
-# ---- Main Information ----
+# PRESENTATION METADATA (Used for site listing and slide)
 title: "AI-Powered Differentiation"
+subtitle_desc: "A Practical Guide for Supporting ELLs"
 date: 2025-09-30
-category: talks # This is the crucial line!
-
-# ---- Data for the Listing Page ----
-event: "A Practical Guide for Supporting ELLs"
-location: "Chicago"
+category: talks
+event: "Professional Development Seminar"
+location: "Chicago" # Used for slide footer and listing
 type: "invited" # Use "conference" or "invited"
+
+# ⭐ SLIDE CONFIGURATION
+# Options: 'kahveci-light' (Default) or 'kahveci-dark'
+presentation_theme: kahveci-dark
+
+# 🎯 AUTHOR DATA (The array needed for _includes/title-slide.html)
+authors:
+- name: Murat Kahveci, Ph.D.
+  affiliation: Chicago Public Schools
+  photo: "/images/team/murat-kahveci.jpg"
+  url: "/murat/"
+# Add more authors as needed...
+
 
 # ---- Optional Links for Buttons ----
 pdf:
@@ -20,24 +31,15 @@ published: true
 sitemap: false
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-<div style="margin-bottom: 2rem;">
-    <h1 style="font-size: 3em; margin-bottom: 0.5em;">AI-Powered Differentiation</h1>
-    <h2 style="font-size: 1.5em; color: #555; font-weight: 300; margin-top: 0;">A Practical Guide for Supporting ELLs</h2>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem;">
-    <div style="text-align: center;">
-        <h3 style="font-size: 1.2em; color: #555; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h3>
-        <p style="font-size: 0.9em; color: #777; margin: 0;">Chicago Public Schools</p>
-    </div>
-</div>
-
-<div style="text-align: center;">
-    <img src="/images/logo.svg" alt="Event Logo" style="width: 200px; height: auto; border: 0; background: none; box-shadow: none;">
-    <p style="font-size: 0.9em; margin: 0; text-align: center;">Harlan HS, 2025</p>
-</div>
-</section>
+{% include slide-title.html
+slide_title=page.title
+subtitle=page.subtitle_desc
+authors=page.authors
+location=page.location
+event=page.event
+date=page.date
+logo_src="/images/logo.svg"
+%}
 
 ---
 
@@ -150,32 +152,32 @@ This approach isn't just for science. We have templates for:
 ---
 
 <section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-    <div style="margin-bottom: 2rem;">
-        <h2 style="font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
-        <p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"Thank you for attending!"</i></p>
-    </div>
+<div style="margin-bottom: 2rem;">
+    <h2 style="font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
+    <p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"Thank you for attending!"</i></p>
+</div>
 
-    <div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
-        <div style="text-align: center;">
-            <a href="https://kahveci.pw/" target="_blank">
-                <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
+<div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
+    <div style="text-align: center;">
+        <a href="https://kahveci.pw/" target="_blank">
+            <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
+        </a>
+        <h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; ">
+                <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
             </a>
-            <h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
-            <div style="display: flex; justify-content: center; gap: 20px;">
-                <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; ">
-                    <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-            </div>
-        </div>
-
-        <div id="timer-container" style="font-size: 4em; font-weight: bold; ">
-            <span id="countdown"></span>
+            <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; ">
+                <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
+            </a>
+            <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; ">
+                <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
+            </a>
         </div>
     </div>
+
+<div id="timer-container" style="font-size: 4em; font-weight: bold; ">
+    <span id="countdown"></span>
+</div>
+</div>
 </section>

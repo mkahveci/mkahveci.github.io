@@ -1,16 +1,32 @@
 ---
-# Layout must be 'reveal' to render as a presentation
 layout: reveal
 
-# ---- Main Information ----
-title: "AI-Driven LT Tracker (5-SC): Data-Driven Instructional Planning"
+# PRESENTATION METADATA (Used for site listing and slide)
+title: "AI-Driven LT Tracker (5-SC)"
+subtitle_desc: "Data-Driven Instructional Planning"
 date: 2025-10-15
-category: talks # This is the crucial line for Jekyll collections!
-
-# ---- Data for the Listing Page ----
+category: talks
 event: "Professional Development Seminar"
-location: "Chicago, IL, USA"
+location: "Chicago" # Used for slide footer and listing
 type: "invited" # Use "conference" or "invited"
+
+# ⭐ SLIDE CONFIGURATION
+# Options: 'kahveci-light' (Default) or 'kahveci-dark'
+presentation_theme: kahveci-dark
+
+# 🎯 AUTHOR DATA (The array needed for _includes/title-slide.html)
+authors:
+- name: Murat Kahveci, Ph.D.
+  affiliation: Chicago Public Schools
+  photo: "/images/team/murat-kahveci.jpg"
+  url: "/murat/"
+# Add more authors as needed...
+
+# FUNDING DATA
+funding:
+- "Excellence Research Centre of Science and Mathematics Education, King Saud University"
+# Add more funding as needed...
+
 
 # ---- Optional Links for Buttons ----
 pdf:
@@ -18,30 +34,17 @@ video:
 event_url:
 published: true
 sitemap: false
-# Add the dynamic theme variable
-presentation_theme: kahveci-dark
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-<div style="margin-bottom: 2rem;">
-    <h1 style="font-size: 3em; margin-bottom: 0.5em;">AI-Driven LT Tracker (5-SC)</h1>
-    <h2 style="font-size: 1.5em; font-weight: 300; margin-top: 0;">Data-Driven Instructional Planning</h2>
-</div>
-
-
-
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 4rem; margin-bottom: 2rem;">
-    <div style="text-align: center;">
-        <h3 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h3>
-        <p style="font-size: 0.9em; color: #777; margin: 0;">Chicago Public Schools</p>
-    </div>
-</div>
-    
-<div style="text-align: center;">
-    <img src="/images/logo.svg" alt="Event Logo" style="width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-    <p style="font-size: 0.9em; margin: 0; text-align: center;">Chicago, 2025</p>
-</div>
-</section>
+{% include slide-title.html
+    slide_title=page.title
+    subtitle=page.subtitle_desc
+    authors=page.authors
+    location=page.location
+    event=page.event
+    date=page.date
+    logo_src="/images/logo.svg"
+%}
 
 ---
 
@@ -114,18 +117,15 @@ This workflow is designed for speed and accuracy, allowing you to capture data l
 
 ---
 
-<section class="figure-slide">
-
-<h2>Data Entry</h2>
-
-<div class="figure-container">
-    <img src="/images/blog/pab/mobile-data-entry.png" alt="Mobile data entry">
-</div>
-
-<p class="caption">
-    <strong>Figure 1: Mobile-Friendly Entry.</strong> The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students.
-</p>
-</section>
+{% include slide-figure-text.html
+title="Mobile Data Entry"
+image_src="/images/blog/pab/mobile-data-entry.png"
+fig_num="1"
+caption_title=""
+caption_body="The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students."
+text_items=""
+image_align="right"
+%}
 
 ---
 
@@ -135,14 +135,15 @@ The **Dashboard** tab automatically aggregates and visualizes all the data you e
 
 ---
 
-<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
-    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-        <img src="/images/blog/pab/make-a-copy.png" alt="Teacher Dashboard View" class="standard-image">
-        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
-            <strong>Figure 2: The Teacher Dashboard.</strong> A snapshot that summarizes class performance and highlights individual student needs without any manual data entry.
-        </p>
-    </div>
-</section>
+{% include slide-figure-text.html
+title="Interpreting the Dashboard"
+image_src="/images/blog/pab/make-a-copy.png"
+fig_num="2"
+caption_title=""
+caption_body="A snapshot that summarizes class performance and highlights individual student needs without any manual data entry."
+text_items=""
+image_align="right"
+%}
 
 ---
 
@@ -166,14 +167,15 @@ This chart provides the "30,000-foot view" of class mastery for the entire Learn
 
 ---
 
-<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
-    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-        <img src="/images/blog/jpq/pie-overall.png" alt="Overall Performance Pie Chart" class="standard-image">
-        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
-            <strong>Figure 3: Overall Performance.</strong> A summary of class-wide performance on the learning target.
-        </p>
-    </div>
-</section>
+{% include slide-figure-text.html
+title="Chart 1: Overall Performance (Pie Chart)"
+image_src="/images/blog/jpq/pie-overall.png"
+fig_num="3"
+caption_title=""
+caption_body="A summary of class-wide performance on the learning target."
+text_items=""
+image_align="right"
+%}
 
 ---
 
@@ -188,14 +190,14 @@ This is your most powerful **diagnostic tool**. It breaks down the LT and shows 
 
 ---
 
-<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
-    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-        <img src="/images/blog/jpq/column-sc.png" alt="Performance by Success Criterion Chart" class="standard-image">
-        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
-            <strong>Figure 4: Performance by Success Criterion.</strong> A detailed breakdown of class performance for each specific skill.
-        </p>
-    </div>
-</section>
+{% include slide-figure-text.html
+    title="Performance by Success Criterion"
+    image_src="/images/blog/jpq/column-sc.png"
+    alt_text="Performance by Success Criterion"
+    fig_num="4"
+    caption_title=""
+    caption_body="A detailed breakdown of class performance for each specific skill."
+%}
 
 ---
 
@@ -210,14 +212,14 @@ This chart compares the performance of your different classes, providing a key t
 
 ---
 
-<section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
-    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-        <img src="/images/blog/jpq/column-section.png" alt="Performance by Class Section Chart" class="standard-image">
-        <p style="font-size: 0.8em; margin-top: 1rem; text-align: center;">
-            <strong>Figure 5: Performance by Class Section.</strong> See how your instructional approaches landed with each class.
-        </p>
-    </div>
-</section>
+{% include slide-figure-text.html
+title="Performance by Class Section"
+image_src="/images/blog/jpq/column-section.png"
+alt_text="Performance by Class Section Chart"
+fig_num="5"
+caption_title="Performance by Class Section"
+caption_body="See how your instructional approaches landed with each class."
+%}
 
 ---
 
@@ -240,8 +242,7 @@ We can export data from the dashboard and use a large language model (like Gemin
 
 ## Sample AI Prompt: Instructional Planning
 
-```text
-PROMPT:
+```prompt
 You are an expert high school science instructional coach. Based on the following student performance data for Learning Target 'LT1 - Chemical Reactions', please do the following:
 
 1.  Identify the most challenging Success Criterion for the class as a whole.
@@ -260,7 +261,6 @@ Goal: Move from random grouping to data-informed, strategic grouping.
 Sample AI Prompt: Kagan Grouping
 
 ```prompt
-PROMPT:
 You are an expert in Kagan cooperative learning structures. Based on the student data provided below, create four heterogeneous groups of four students for a 'RallyCoach' activity that will focus on SC-3.
 
 Ensure each group has a mix of students who have 'Met' the LT and those who have 'Not Met' it, balancing the different performance levels across all groups.
@@ -271,6 +271,7 @@ Ensure each group has a mix of students who have 'Met' the LT and those who have
 ---
 
 ## Advanced Customization (FAQ)
+
 The tracker is flexible and can be adapted to your needs.
 
 * Fewer than 5 SCs? Hide the unused `SC-X_Entry` tabs and, crucially, delete the headers for the unused SCs on the Dashboard tab.
@@ -287,49 +288,16 @@ The tracker is flexible and can be adapted to your needs.
 
 ---
 
-<section style="text-align: center;">
-
-<h2 style="margin-bottom: 2rem;">Acknowledgments</h2>
-
-<div style="margin-bottom: 4rem;">
-    <h4 style="margin-bottom: 1rem;"><i class="fas fa-tools fa-fw" style="margin-right: 10px;"></i>Concept and Design</h4>
-    <p style="font-size: 0.9em;">
-        Murat Kahveci, Ph.D. (Chicago, IL)
-    </p>
-    <p style="color: #777; font-size: 0.8em;">Version 1.0 - September 2025</p>
-</div>
-
-</section>
+{% include slide-acknowledgments.html
+funding=page.funding
+authors=page.authors
+%}
 
 ---
 
-<section style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-    <div style="margin-bottom: 2rem;">
-        <h2 style="font-size: 2.5em; margin-bottom: 0.5em;">Questions & Discussion</h2>
-        <p style="font-size: 1.5em; text-align: center; font-weight: 300; margin-top: 0;"><i>"Thank you for attending!"</i></p>
-    </div>
+{% include slide-questions-discussion.html
+title="Questions & Discussion"
+subtitle="Thank you for attending!"
+presenter="Murat Kahveci, Ph.D."
+%}
 
-    <div style="display: flex; justify-content: center; align-items: center; gap: 4rem;">
-        <div style="text-align: center;">
-            <a href="https://kahveci.pw/" target="_blank">
-                <img src="/images/logo.svg" alt="Murat Kahveci's Logo" style="max-width: 100px; height: auto; border: 0; background: none; box-shadow: none;">
-            </a>
-            <h4 style="font-size: 1.2em; font-weight: bold; margin-bottom: 0.5rem;">Murat Kahveci, Ph.D.</h4>
-            <div style="display: flex; justify-content: center; gap: 20px;">
-                <a href="https://kahveci.pw/contact" target="_blank" style="text-decoration: none; ">
-                    <i class="fas fa-envelope fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://twitter.com/imuratkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-twitter fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-                <a href="https://linkedin.com/in/mkahveci" target="_blank" style="text-decoration: none; ">
-                    <i class="fab fa-linkedin fa-fw" style="font-size: 1.2em;"></i>
-                </a>
-            </div>
-        </div>
-
-        <div id="timer-container" style="font-size: 4em; font-weight: bold; ">
-            <span id="countdown"></span>
-        </div>
-    </div>
-</section>

@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Style
+date: 2013-10-26 00:00:00
 permalink: /style
 ---
 

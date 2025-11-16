@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Format
+date: 2013-10-27 00:00:00
 permalink: /format
 ---
 ## Blog
@@ -41,7 +42,7 @@ doi: "10.1007/s11165-016-9606-y"
 pdf:
 supplement:
 github:
-book: false[2013-10-27-format.md](2013-10-27-format.md)
+book: false[2013-10-27-format.md](format.md)
 journal: true
 conference: false
 ---

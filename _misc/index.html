@@ -1,0 +1,87 @@
+---
+layout: default
+title: Site Reference & Miscellaneous
+description: A central index for technical notes, policy documents, and site reference materials.
+permalink: /misc/
+---
+
+<div class="container my-5">
+
+    {% comment %} Breadcrumb pointing to the homepage {% endcomment %}
+    {% include breadcrumb-github-projects.html
+    collection_url = "/misc/"
+    collection_name = "Misc"
+    item_icon = "fas fa-folder-open"
+    %}
+
+    <header class="text-center mb-5">
+        {% comment %} Using the bigtitle style for the main H1 {% endcomment %}
+        <h1 class="bigtitle fw-bold text-body">{{ page.title | escape }}</h1>
+        <p class="lead text-muted">{{ page.description }}</p>
+    </header>
+
+    <hr class="my-4">
+
+    {% comment %}
+    We iterate through the entire 'misc' collection (site.misc).
+    The 'where' filter ensures we only include files with a layout.
+    ===================================================================
+    {% endcomment %}
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        {% comment %}
+        Simplified logic: Iterate over the collection, sort by title,
+        and only list items that have a title and are NOT the index page itself.
+        This reliably lists all your collection documents.
+        {% endcomment %}
+        {% assign sorted_misc_pages = site.misc | sort: 'title' %}
+
+        {% for item in sorted_misc_pages %}
+
+        {% if item.title and item.url != page.url %}
+
+        <div class="col">
+            <a href="{{ item.url | relative_url }}" class="text-decoration-none">
+
+                <div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
+
+                    <div class="d-flex p-3">
+
+                        <div class="flex-shrink-0 text-primary p-2 text-center" style="min-width: 60px;">
+                            <i class="fas fa-file-alt fa-2x"></i>
+                        </div>
+
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="h5 fw-bold text-body mb-1">{{ item.title | escape }}</h5>
+
+                            {% if item.description %}
+                            <p class="text-muted small mb-2">{{ item.description | strip_html | truncatewords: 20 }}</p>
+                            {% endif %}
+
+                            <small class="text-muted">
+                                {% if item.date %}
+                                Updated: {{ item.date | date: "%B %d, %Y" }}
+                                {% else %}
+                                Reference Document
+                                {% endif %}
+                            </small>
+
+                            {% if item.tags %}
+                            <div class="mt-2">
+                                {% for tag in item.tags %}
+                                <span class="badge rounded-pill text-bg-secondary me-1 fw-normal">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+</div>

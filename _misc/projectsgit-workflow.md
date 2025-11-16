@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Code Snippets
+date: 2025-09-28 00:00:00
 permalink: /pgit-workflow
 ---
 

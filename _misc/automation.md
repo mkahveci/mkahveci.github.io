@@ -1,6 +1,7 @@
 ---
 layout: misc
 title: Automated Post Creation Script
+date: 2024-12-14 00:00:00
 ---
 
 I've developed a Python script, `permalink.py`, to streamline the process of creating new posts for various content types on {% include knx.html %} (papers, projects, courses, albums, and blog posts). This script automates several tasks:
