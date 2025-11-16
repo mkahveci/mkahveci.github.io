@@ -1,0 +1,18 @@
+# Base template for 'blog' posts
+layout: post
+author: Murat Kahveci
+title: "Default Title" # Will be overwritten
+date: "YYYY-MM-DD" # Will be overwritten
+year: YYYY # Will be overwritten
+permalink: "/xyz" # Will be replaced by script
+
+# --- STATIC DEFAULTS ---
+mermaid: false
+
+# --- FIELDS TO BE FILLED (by script) ---
+tags:
+  - Misc
+excerpt: "A brief post excerpt."
+related_project:
+  name: ""
+  url: ""

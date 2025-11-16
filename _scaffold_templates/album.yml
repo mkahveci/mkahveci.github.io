@@ -1,0 +1,13 @@
+# Base template for 'album' posts
+layout: album
+title: "Default Title" # Will be overwritten
+date: "YYYY-MM-DD" # Will be overwritten
+permalink: "/xyz" # Will be replaced by script
+
+# --- STATIC DEFAULTS ---
+author: Murat Kahveci
+published: true
+
+# --- FIELDS TO BE FILLED (by script) ---
+image: /images/album/placeholder.jpg # Will be overwritten by prompt
+place: "Default Place" # Will be overwritten by prompt

@@ -1,0 +1,22 @@
+# Base template for 'course' posts
+layout: course
+title: "Default Title" # Will be overwritten
+date: "YYYY-MM-DD" # Will be overwritten
+year: YYYY # Will be overwritten
+permalink: "/xyz" # Will be replaced by script
+
+# --- STATIC DEFAULTS ---
+image: /images/courses/cps.png
+instructor: Murat Kahveci
+instructorurl: /murat
+pdf: ""
+
+# --- FIELDS TO BE FILLED (by script) ---
+code: "CODE"
+institution: "Default Institution"
+insturl: ""
+web: ""
+clevel: "University"
+level: "U"
+semester: "Fall YYYY"
+excerpt: "A brief course description."

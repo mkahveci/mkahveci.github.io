@@ -1,1 +1,0 @@
-python3 _plugins/permalink.py project

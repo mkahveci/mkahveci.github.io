@@ -1,0 +1,24 @@
+# Base template for 'project' posts
+layout: project
+title: "Default Title"
+date: "YYYY-MM-DD"
+permalink: "/xyz" # Will be replaced by script
+
+# --- STATIC DEFAULTS ---
+# Using a standard placeholder
+image: "https://placehold.co/200x200/006400/ffffff?text=Project"
+publisher: ""
+budget: "N/A"
+pdf: ""
+web: ""
+project: true
+
+# --- FIELDS TO BE FILLED (by script or manually) ---
+projectid: "default-id"
+contributors: ""
+duration: "YYYY - YYYY"
+year: YYYY
+position: ""
+hostedby: ""
+fundedby: ""
+excerpt: "A brief project excerpt."

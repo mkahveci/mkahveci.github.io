@@ -1,5 +1,5 @@
 ---
-layout: misc
+layout: default
 title: Contact
 date: 2022-08-19 00:00:00
 ---

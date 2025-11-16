@@ -1,0 +1,90 @@
+{% include slide-title.html
+slide_title=page.title
+subtitle=page.subtitle_desc
+authors=page.authors
+location=page.location
+event=page.event
+date=page.date
+logo_src="/images/logo.svg"
+%}
+
+---
+
+## 1. Introduction & Background
+
+* Use bullet points for key concepts.
+* Keep text concise and to the point.
+* You can use **bold** or *italic* formatting for emphasis.
+
+---
+
+## 2. The Methodological Approach
+
+A paragraph of text goes here to describe your methodology.
+
+---
+
+## 3. Key Steps in the Method
+
+1.  **Step 1:** Use an ordered list to describe a process.
+2.  **Step 2:** Explain the second step.
+3.  **Step 3:** The third step in your process.
+
+---
+
+{% include slide-table-text.html
+title="Table with Analysis"
+headers="Col A,Col B"
+rows="Data 1|Data 2,Data 3|Data 4"
+caption="This is our data."
+text_items="Bullet point one; Bullet point two"
+table_align="left"
+%}
+
+---
+
+{% include slide-figure-text.html
+title="Figure Only"
+image_src="/images/talks/narst-2015-stpd/diagram-landscape.png"
+fig_num="3"
+caption_title="Vertical Figure Layout"
+caption_body="The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students."
+text_items=""
+image_align="right"
+%}
+
+---
+
+
+{% include slide-figure-text.html
+title="Vertical Figure Layout with Text"
+image_src="/images/blog/pab/mobile-data-entry.png"
+fig_num="3"
+caption_title="Vertical Figure Layout"
+caption_body="The tracker is designed for quick, on-the-go use, allowing for instant data entry while observing students."
+text_items="Bullet point one; Bullet point two"
+image_align="right"
+%}
+
+---
+
+## 5. Conclusion
+
+* Summarize your main points.
+* Restate your key findings.
+* Discuss the implications of your work.
+
+---
+
+{% include slide-acknowledgments.html
+funding=page.funding
+authors=page.authors
+%}
+
+---
+
+{% include slide-questions-discussion.html
+title="Questions & Discussion"
+subtitle="Thank you for attending!"
+presenter="Murat Kahveci, Ph.D."
+%}

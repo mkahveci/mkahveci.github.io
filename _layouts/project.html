@@ -40,7 +40,7 @@ layout: default
 
                 {% assign details_count = 0 %}
                 {% if page.contributors %}{% assign details_count = details_count | plus: 1 %}{% endif %}
-                {% if page.duration %}{% assign details_count = details_count | plus: 1 %}{% endif %}
+                {% if page.position %}{% assign details_count = details_count | plus: 1 %}{% endif %} {% if page.duration %}{% assign details_count = details_count | plus: 1 %}{% endif %}
                 {% if page.hostedby %}{% assign details_count = details_count | plus: 1 %}{% endif %}
                 {% if page.fundedby %}{% assign details_count = details_count | plus: 1 %}{% endif %}
                 {% if page.budget %}{% assign details_count = details_count | plus: 1 %}{% endif %}
@@ -57,6 +57,12 @@ layout: default
                         </div>
                         {% endif %}
 
+                        {% if page.position %}
+                        <div class="mb-3">
+                            <strong class="text-primary small d-block">Position</strong>
+                            <div class="text-body small">{{ page.position | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+                        </div>
+                        {% endif %}
                         {% if page.duration %}
                         <div class="mb-3">
                             <strong class="text-primary small d-block">Duration</strong>

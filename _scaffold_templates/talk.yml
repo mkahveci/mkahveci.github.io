@@ -1,0 +1,26 @@
+# Base template for 'talk' posts (layout: reveal)
+layout: reveal
+
+# --- METADATA (Will be overwritten by script) ---
+title: "Default Title"
+subtitle_desc: "Default Subtitle"
+date: "YYYY-MM-DD"
+event: "Default Event"
+location: "Default Location"
+type: "invited" # conference or invited
+permalink: "/xyz" # Will be replaced by script
+
+# --- STATIC DEFAULTS (These will be included as-is) ---
+category: talks
+presentation_theme: kahveci-dark # 'kahveci-light' or 'kahveci-dark'
+published: true
+sitemap: false
+
+# --- LISTS (Will be populated by script) ---
+authors: []
+funding: []
+
+# --- OPTIONAL LINKS (Leave blank) ---
+pdf:
+video:
+event_url:
