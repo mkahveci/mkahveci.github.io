@@ -440,9 +440,9 @@ body .nav-pills .show > .nav-link {
 
 // CRITICAL FIX: Main Menu Navigation Pill (size and color targeting)
 .navbar-nav .nav-link {
-    font-size: 28px !important; /* FIXED: Increased size to restore prominent look */
+    font-size: 24px !important; /* FIXED: Increased size to restore prominent look */
     padding: 0.5rem 1.25rem !important; /* FIXED: Increased horizontal padding */
-    font-weight: 700 !important; /* Ensure bold text */
+    font-weight: 500 !important; /* Ensure bold text */
 }
 
 .navbar-nav .nav-link.active,
