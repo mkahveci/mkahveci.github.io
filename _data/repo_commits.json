@@ -1,6 +1,90 @@
 [
   {
     "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0ae9f7bc425e8803ed6ad5017e205f7683aaa4fd",
+    "author": "mkahveci",
+    "date": "2025-11-15T16:38:05Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2d50d19ecf12f8137e0874094b52d2e3148a3c7c",
+    "author": "mkahveci",
+    "date": "2025-11-15T16:05:11Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/be43a7a7bca88f60eb31b3b7e061b07bb90ea5d1",
+    "author": "mkahveci",
+    "date": "2025-11-15T09:39:29Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b09444eb2c8137f71b5dfcfecbe84dc55194ab48",
+    "author": "mkahveci",
+    "date": "2025-11-15T06:09:50Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c22248d573d3b417786fc4ad8fba90f53c141d07",
+    "author": "mkahveci",
+    "date": "2025-11-15T06:04:56Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1b3fe1eb130db669545580edfd0d7a20c36c9360",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:59:40Z"
+  },
+  {
+    "repo": "mkahveci/ai-in-education",
+    "message": "Feat: Implement and document new ELL Content Modification Templates\n\nThis commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).\n\nThe documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.",
+    "url": "https://github.com/mkahveci/ai-in-education/commit/c618e95827f3bf2fe55f250a1727efa9611cde87",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:56:37Z"
+  },
+  {
+    "repo": "mkahveci/ai-in-education",
+    "message": "Feat: Implement and document new ELL Content Modification Templates\n\nThis commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).\n\nThe documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.",
+    "url": "https://github.com/mkahveci/ai-in-education/commit/aee7e4994fcd4fdf299320ecffee48d7db99c11f",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:52:22Z"
+  },
+  {
+    "repo": "mkahveci/ai-in-education",
+    "message": "Feat: Implement and document new ELL Content Modification Templates\n\nThis commit adds structured documentation for a suite of AI templates designed to scaffold content for English Language Learners (ELLs) across various high school subjects (Physics, Chemistry, Biology, ELA, Math, Forensics, Spanish, Theater Arts).\n\nThe documentation also includes the Socratic Chemistry Tutor and the Learning Target Helper, centralizing tools for differentiated instruction and formative learning cycles. Templates follow the REACH proficiency scale.",
+    "url": "https://github.com/mkahveci/ai-in-education/commit/dddcdc8fbca1677c319ac9bf6a599ff52d7365e6",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:50:42Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/872bb1c6552ef0285dd752a28db93be1a11e9c4c",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:46:26Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bc1953d067e4638d6c33155de35f74d1fe2bcfd8",
+    "author": "mkahveci",
+    "date": "2025-11-15T05:46:11Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b752101a3f189eae8af66589e878e5d50597a2df",
+    "author": "github-actions[bot]",
+    "date": "2025-11-15T01:23:15Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
     "message": "Update trade_ideas.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/65536dd81e0a35f0d19ec868c05081155ed170a7",
     "author": "Murat Kahveci",
@@ -721,74 +805,11 @@
     "date": "2025-11-07T02:33:15Z"
   },
   {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/84e5f3c7921639574c68b822a12565f2d66364c4",
-    "author": "mkahveci",
-    "date": "2025-11-07T02:33:08Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2ced9e6d57745d8c62ab4d98afdb1f97473466ba",
-    "author": "github-actions[bot]",
-    "date": "2025-11-07T01:25:18Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/720d2a5cd0926271b5fc053e31a1f82efc825ef2",
-    "author": "mkahveci",
-    "date": "2025-11-06T02:55:57Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/780fdfad165a4ae4490528181122a621c09bbe48",
-    "author": "github-actions[bot]",
-    "date": "2025-11-06T01:25:38Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6812af1bb06eea683de74b085d019f075607f498",
-    "author": "mkahveci",
-    "date": "2025-11-05T17:19:24Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge remote-tracking branch 'origin/master'",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b3531894def60b8d77a816744bc1671024ef27d2",
-    "author": "mkahveci",
-    "date": "2025-11-05T08:01:21Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2b071d7c4e0a59ba1f6a1da4b2cf26988f9dccf3",
-    "author": "mkahveci",
-    "date": "2025-11-05T08:01:01Z"
-  },
-  {
     "repo": "mkahveci/email-signature",
     "message": "initial comit",
     "url": "https://github.com/mkahveci/email-signature/commit/15151a92ab518b5c6e93eac065ca8c138ff0b686",
     "author": "mkahveci",
     "date": "2025-11-05T07:53:58Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f40c1add5265f7779257ab3a5ee8761712f3286a",
-    "author": "github-actions[bot]",
-    "date": "2025-11-05T01:26:01Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e0ca56d764f2bf69d705d9b358a12fd3b7f0a92",
-    "author": "mkahveci",
-    "date": "2025-11-04T20:16:00Z"
   },
   {
     "repo": "mkahveci/qma",
