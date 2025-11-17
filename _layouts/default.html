@@ -67,49 +67,48 @@
 <header id="header">
     <nav class="navbar navbar-expand-md navbar-light bg-navbar">
         <div class="container">
+
             {% if page.categories.first != 'home' %}
             <a class="navbar-brand d-flex align-items-center" href="/">
-                <img class="logo navbar-brand d-inline-block align-top me-1" src="/images/logo.svg" alt="Logo" style="max-width: 75px; height: auto; border-radius: 50%;">
-            </a>
+                <img class="logo d-inline-block align-top"
+                     src="/images/logo.svg"
+                     style="max-width: 50px; height: auto; border-radius: 50%;"></a>
             {% else %}
-            <a class="navbar-brand" href="/"></a>
+            <span class="navbar-brand d-none"></span>
             {% endif %}
+
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-pills ms-auto">
                     <li class="nav-item">
-                        {% comment %} Use category OR url match for robustness {% endcomment %}
                         <a class="nav-link
-                      {% if page.categories.first == 'papers' or page.url == '/publications/' %}active{% endif %}"
+                     {% if page.categories.first == 'papers' or page.url == '/publications/' %}active{% endif %}"
                            href="/publications/">publications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link
-                      {% if page.categories.first == 'projects' or page.url == '/projects/' %}active{% endif %}"
+                     {% if page.categories.first == 'projects' or page.url == '/projects/' %}active{% endif %}"
                            href="/projects/">projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link
-                      {% if page.categories.first == 'courses' or page.url == '/courses/' %}active{% endif %}"
+                     {% if page.categories.first == 'courses' or page.url == '/courses/' %}active{% endif %}"
                            href="/courses/">teaching</a>
                     </li>
-
-                    {% comment %} --- NEWS LINK HAS BEEN REMOVED FROM PRIMARY NAVIGATION --- {% endcomment %}
-
                     <li class="nav-item">
                         <a class="nav-link
-                      {% if page.categories.first == 'team' or page.url == '/team/' %}active{% endif %}"
+                     {% if page.categories.first == 'team' or page.url == '/team/' %}active{% endif %}"
                            href="/team/">team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link
-                      {% if page.categories.first == 'blog' or page.url == '/blog/' %}active{% endif %}"
+                     {% if page.categories.first == 'blog' or page.url == '/blog/' %}active{% endif %}"
                            href="/blog/">blog</a>
                     </li>
-
                     <li class="nav-item ms-md-2">
                         <button class="nav-link" id="theme-toggler" type="button" aria-label="Toggle theme">
                             <i class="fa-solid fa-sun d-none"></i>
@@ -146,61 +145,140 @@
 <script>
     'use strict';
 
-    // ... (all your other script code like copyBibtex) ...
-
     // ==========================================================
-    // 2. DOM UTILITIES (Wrapped in DOMContentLoaded)
+    // 1. GLOBAL HELPER FUNCTIONS
     // ==========================================================
-    document.addEventListener('DOMContentLoaded', () => {
 
-        // ... (your other init code for current-year and scrollToTopBtn) ...
+    /**
+     * --- NEW FUNCTION ---
+     * Generates BibTeX on-the-fly from data attributes
+     * and copies it to the clipboard.
+     */
+    function generateAndCopyBibtex(button) {
+        const originalHTML = button.innerHTML;
+        const data = button.dataset;
 
-        // --- Theme Toggler Initialization ---
-        const themeToggler = document.getElementById('theme-toggler');
-        if (themeToggler) {
-            initThemeToggler(themeToggler);
+        try {
+            // 1. Get data from attributes
+            const type = data.type || 'misc'; // 'article', 'inproceedings'
+            const id = data.id || `temp${new Date().getTime()}`;
+            const title = data.title || 'No Title';
+            const year = data.year || 'YYYY';
+
+            // 2. Format authors: "A, B, C" -> "A and B and C"
+            const authors = (data.authors || 'No Authors').replace(/, /g, ' and ');
+
+            // 3. Handle source info based on type
+            let sourceField = '';
+            const source = data.source || 'Unknown';
+
+            if (type === 'article') {
+                sourceField = `  journal   = {${source}},\n`;
+            } else if (type === 'inproceedings') {
+                sourceField = `  booktitle = {${source}},\n`;
+            } else {
+                sourceField = `  howpublished = {${source}},\n`;
+            }
+
+            // 4. Build the BibTeX string
+            const bibtexString = `@${type}{${id},
+  title     = {${title}},
+  author    = {${authors}},
+  year      = {${year}},
+${sourceField}
+}`;
+
+            // 5. Copy to clipboard
+            navigator.clipboard.writeText(bibtexString.trim()).then(() => {
+                // Show Success
+                button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
+                button.classList.add('btn-success');
+                button.classList.remove('btn-outline-primary', 'btn-outline-secondary');
+
+                // Restore after 2 seconds
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('btn-success');
+                    button.classList.add('btn-outline-primary');
+                }, 2000);
+            }).catch(err => {
+                throw new Error('Clipboard write failed: ' + err);
+            });
+
+        } catch (err) {
+            console.error('Failed to copy BibTeX: ', err);
+            // Show a generic error
+            button.innerHTML = '<i class="fas fa-times fa-fw me-1"></i> Error';
+            button.classList.add('btn-danger');
+            button.classList.remove('btn-outline-primary', 'btn-outline-secondary');
+
+            // Restore after 2 seconds
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.classList.remove('btn-danger');
+                button.classList.add('btn-outline-primary');
+            }, 2000);
         }
-    });
+    }
 
-    // ==========================================================
-    // 3. UTILITY FUNCTIONS
-    // ==========================================================
 
-    // ... (your initScrollToTop function) ...
-
-    // --- REPLACED: Corrected Theme Toggler Logic ---
+    /**
+     * Theme Toggler function
+     */
     function initThemeToggler(button) {
         const THEME_STORAGE_KEY = 'kahveci-pw-theme';
         const sunIcon = button.querySelector('.fa-sun');
         const moonIcon = button.querySelector('.fa-moon');
-
-        // 1. Set the initial icon state on load
-        // (This reads the theme set by the script in the <head>)
         const currentTheme = document.documentElement.getAttribute('data-bs-theme');
 
-        // --- THIS LOGIC IS NOW CORRECTED ---
-        // Show SUN icon if theme is DARK
-        // Show MOON icon if theme is LIGHT
         sunIcon.classList.toggle('d-none', currentTheme === 'light');
         moonIcon.classList.toggle('d-none', currentTheme === 'dark');
 
-        // 2. Add the click listener to toggle the theme
         button.addEventListener('click', () => {
-            // Get the *new* theme by flipping the current one
             const newTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-
-            // Save and apply the new theme
             localStorage.setItem(THEME_STORAGE_KEY, newTheme);
             document.documentElement.setAttribute('data-bs-theme', newTheme);
-
-            // Update the icon
-            // Show SUN icon if new theme is DARK
-            // Show MOON icon if new theme is LIGHT
             sunIcon.classList.toggle('d-none', newTheme === 'light');
             moonIcon.classList.toggle('d-none', newTheme === 'dark');
         });
     }
-    // --- END REPLACEMENT ---
+
+    // ==========================================================
+    // 2. DOM-DEPENDENT CODE
+    // (This runs only *after* the HTML page is fully loaded)
+    // ==========================================================
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // --- Dynamic Year Script ---
+      const currentYearEl = document.getElementById('current-year');
+      if (currentYearEl) {
+          currentYearEl.textContent = new Date().getFullYear();
+      }
+
+      // --- Modern Scroll to Top Script ---
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      if (scrollToTopBtn) {
+        // Show or hide the button based on scroll position
+        window.addEventListener('scroll', () => {
+          const isScrolled = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+          scrollToTopBtn.classList.toggle('show', isScrolled);
+        });
+
+        // Smoothly scroll to the top when the button is clicked
+        scrollToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+
+      // --- Theme Toggler Initialization ---
+      const themeToggler = document.getElementById('theme-toggler');
+      if (themeToggler) {
+          initThemeToggler(themeToggler);
+      }
+    });
 
 </script>
 

@@ -11,8 +11,6 @@ Requires: pub (publication object), index (forloop.index), total_count (total pu
         {% comment %} --- TOP SECTION: Metadata Tags and Type Badge --- {% endcomment %}
         <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="badge rounded-pill text-bg-secondary me-1 fw-normal text-uppercase small">{{ pub.type }}</span>
-
-            {% comment %} Index and Total Count Display (Optional, useful for tracking) {% endcomment %}
             <small class="text-muted fw-bold">
                 #{{ include.index }} / {{ include.total_count }}
             </small>
@@ -21,12 +19,10 @@ Requires: pub (publication object), index (forloop.index), total_count (total pu
         {% comment %} --- MIDDLE SECTION: Title and Details --- {% endcomment %}
         <div class="flex-grow-1">
             <h5 class="fw-bold mb-2">
-                {% comment %} Title uses mandated text-primary and text-decoration-none {% endcomment %}
                 <a href="/publications/#{{ pub.id }}" class="text-primary text-decoration-none">
                     {{ pub.title }}
                 </a>
             </h5>
-
             <p class="small text-muted mb-2">
                 {{ pub.authors }}
                 {% if pub.year %}
@@ -49,38 +45,41 @@ Requires: pub (publication object), index (forloop.index), total_count (total pu
             </a>
             {% endif %}
 
-            <button class="btn btn-sm btn-outline-primary" onclick="copyBibtex('{{ pub.id }}')">
+            {% comment %}
+            --- THIS IS THE FIX ---
+            - The 'onclick' attribute now calls 'generateAndCopyBibtex(this)'.
+            - 'data-*' attributes are added to hold the publication data.
+            - The old hidden <div> is completely removed.
+            {% endcomment %}
+            <button class="btn btn-sm btn-outline-primary"
+                    onclick="generateAndCopyBibtex(this)"
+                    data-type="{{ pub.type | default: 'article' | downcase }}"
+                    data-id="{{ pub.id | default: pub.title | slugify }}"
+                    data-title="{{ pub.title | escape }}"
+                    data-authors="{{ pub.authors | escape }}"
+                    data-year="{{ pub.year | escape }}"
+                    data-source="{{ pub.source_info | escape }}">
                 <i class="fas fa-copy me-1"></i> Copy BibTeX
             </button>
         </div>
+        </div>
     </div>
-</div>
 
-{% comment %} --- MODAL FOR ABSTRACT --- {% endcomment %}
-{% if pub.abstract %}
-<div class="modal fade" id="abstractModal{{ pub.id }}" tabindex="-1" aria-labelledby="abstractModalLabel{{ pub.id }}" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content" style="background-color: var(--bs-body-bg);">
-            <div class="modal-header">
-                <h5 class="modal-title" id="abstractModalLabel{{ pub.id }}">{{ pub.title }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="small text-muted mb-3">{{ pub.authors }} ({{ pub.year }})</p>
-                <p>{{ pub.abstract }}</p>
-                <p class="text-muted mt-3 small">Source: {{ pub.source_info }}</p>
+    {% comment %} --- MODAL FOR ABSTRACT --- {% endcomment %}
+    {% if pub.abstract %}
+    <div class="modal fade" id="abstractModal{{ pub.id }}" tabindex="-1" aria-labelledby="abstractModalLabel{{ pub.id }}" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: var(--bs-body-bg);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="abstractModalLabel{{ pub.id }}">{{ pub.title }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-muted mb-3">{{ pub.authors }} ({{ pub.year }})</p>
+                    <p>{{ pub.abstract }}</p>
+                    <p class="text-muted mt-3 small">Source: {{ pub.source_info }}</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-{% endif %}
-
-<script>
-    // Assuming you have a global copyBibtex function loaded, or we'd define it here.
-    function copyBibtex(id) {
-        // Placeholder for the actual copy logic using the publication data/ID
-        console.log('Copying BibTeX for ID:', id);
-        // Implement the actual fetch/copy logic here...
-        alert('BibTeX copied to clipboard for: ' + id);
-    }
-</script>
+    {% endif %}
