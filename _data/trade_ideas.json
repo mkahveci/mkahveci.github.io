@@ -1,6 +1,67 @@
 [
   {
     "publicationDate": "2025-11-19",
+    "tradeTitle": "Long Call Diagonal Spread on NVO",
+    "summaryJustification": "A Long Call Diagonal Spread was opened and immediately closed on the same day for a profit. The swift closing action realized a profit of $42.00, likely due to a favorable movement or a rapid adjustment in IV/Greeks following the trade entry.",
+    "expectedReturnDisplay": "CLOSED: +$42.00 Realized Profit (17.14% Return on Capital)",
+    "ticker": "NVO",
+    "accountType": "Margin",
+    "currentPrice": 47.57,
+    "ivRank": 79.90,
+    "earningsDate": "2026-02-04",
+    "analysis": {
+      "thesis": "The high IVR setup allowed the trader to enter the spread at a low net debit relative to the potential for a quick reversal in premium value. The position was immediately closed to realize the profit achieved from the initial market movement or beneficial decay/IV drop.",
+      "strategyType": "Long Call Diagonal Spread",
+      "tradeDetails": {
+        "expiration": "2026-01-02",
+        "dte": 44,
+        "maxProfit": 9999.99,
+        "spreadDetails": {
+          "shortPutStrike": 0.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 52.00,
+          "longCallStrike": 50.00,
+          "netCredit": -2.45
+        }
+      },
+      "metrics": {
+        "roc": 17.14,
+        "annualizedRoc": 0.00,
+        "pop": 50.00,
+        "buyingPowerEffect": 245.00,
+        "dailyProfitPotential": 0.00
+      },
+      "managementPlan": "The original management plan was overridden by the decision to close for a quick profit shortly after opening."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_LONG_CALL_DIAGONAL",
+        "date": "2025-11-19",
+        "actionTaken": "STO 1 NVO Nov 21 52C @ 0.52; BTO 1 NVO Jan 2 50C @ 2.97",
+        "expirationFront": "2025-11-21",
+        "expirationBack": "2026-01-02",
+        "dteFrontRemaining": 2,
+        "dteBackRemaining": 44,
+        "netDebitPaid": 2.45,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": -245.00,
+        "grossProfitLossType": "Loss (Max)",
+        "notes": "Opened a Debit Diagonal Call Spread. The $50 long strike is slightly OTM, making this a directional trade."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-19",
+        "actionTaken": "BTC 1 NVO Nov 21 52C & STC 1 NVO Jan 2 50C",
+        "closePrice": 2.87,
+        "closeCostType": "Credit",
+        "grossProfitLossAmount": 42.00,
+        "grossProfitLossType": "Profit",
+        "notes": "The entire diagonal spread was closed on the same day for a net credit of $2.87, realizing a profit of $42.00 ($0.42 per share) in a short period."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-11-19",
     "tradeTitle": "Long Call Calendar Spread on NVDA (Earnings Play)",
     "summaryJustification": "A Long Call Calendar Spread was opened on NVDA at the $195 strike right before its Q3 earnings release (Nov 19 after close). This position successfully captured the Implied Volatility crush, allowing for a quick close for a realized profit of $31.00.",
     "expectedReturnDisplay": "CLOSED: +$31.00 Realized Profit (5.52% Return on Capital)",
@@ -57,57 +118,6 @@
         "grossProfitLossAmount": 31.00,
         "grossProfitLossType": "Profit",
         "notes": "The entire calendar spread was closed post-earnings (Nov 20) for a net credit of $5.92. This realized a profit of $31.00, confirming a successful volatility crush play."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-11-19",
-    "tradeTitle": "Long Call Diagonal Spread on NVO",
-    "summaryJustification": "A Long Call Diagonal Spread was opened on NVO to capitalize on its high IV Rank (79.9) by selling the short-dated 52 Call (2 DTE) for premium decay, while holding a longer-dated 50 Call (44 DTE) for a bullish move and long-term Vega exposure. The trade has a net debit of $2.45.",
-    "expectedReturnDisplay": "Max Loss: $245.00 (Net Debit)",
-    "ticker": "NVO",
-    "accountType": "Margin",
-    "currentPrice": 47.57,
-    "ivRank": 79.90,
-    "earningsDate": "2026-02-04",
-    "analysis": {
-      "thesis": "NVO's high IVR favors selling premium. The trade is moderately bullish, positioned to profit if the stock rises toward the long strike ($50.00) and the short call ($52.00) expires worthless. The short call, with only 2 DTE, will decay rapidly, reducing the cost basis of the valuable long 50 Call.",
-      "strategyType": "Long Call Diagonal Spread",
-      "tradeDetails": {
-        "expiration": "2026-01-02",
-        "dte": 44,
-        "maxProfit": 9999.99,
-        "spreadDetails": {
-          "shortPutStrike": 0.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 52.00,
-          "longCallStrike": 50.00,
-          "netCredit": -2.45
-        }
-      },
-      "metrics": {
-        "roc": 0.00,
-        "annualizedRoc": 0.00,
-        "pop": 50.00,
-        "buyingPowerEffect": 245.00,
-        "dailyProfitPotential": 0.00
-      },
-      "managementPlan": "The short 52C must be managed before or at the Nov 21 expiration. If it expires worthless, the position converts to a simple Long 50 Call, and a new short call would be sold against it (Rolling Diagonal). If the stock moves significantly higher, consider closing the entire spread for a profit. If the stock drops, the max loss is the debit paid."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_LONG_CALL_DIAGONAL",
-        "date": "2025-11-19",
-        "actionTaken": "STO 1 NVO Nov 21 52C @ 0.52; BTO 1 NVO Jan 2 50C @ 2.97",
-        "expirationFront": "2025-11-21",
-        "expirationBack": "2026-01-02",
-        "dteFrontRemaining": 2,
-        "dteBackRemaining": 44,
-        "netDebitPaid": 2.45,
-        "commissionFee": 0.00,
-        "grossProfitLossAmount": -245.00,
-        "grossProfitLossType": "Loss (Max)",
-        "notes": "Opened a Debit Diagonal Call Spread. The $50 long strike is slightly OTM, making this a directional trade. The short 52 Call is far OTM to minimize assignment risk while capitalizing on rapid 2 DTE decay."
       }
     ]
   },
