@@ -2,15 +2,15 @@
   {
     "publicationDate": "2025-11-19",
     "tradeTitle": "Long Call Calendar Spread on NVDA (Earnings Play)",
-    "summaryJustification": "A Long Call Calendar Spread was opened on NVDA at the $195 strike right before its Q3 earnings release (Nov 19 after close). This position is highly sensitive to the Implied Volatility crush that occurs immediately after earnings, aiming to profit from the rapid devaluation of the 2 DTE short call relative to the long 44 DTE call.",
-    "expectedReturnDisplay": "Max Loss: $561.00 (Net Debit)",
+    "summaryJustification": "A Long Call Calendar Spread was opened on NVDA at the $195 strike right before its Q3 earnings release (Nov 19 after close). This position successfully captured the Implied Volatility crush, allowing for a quick close for a realized profit of $31.00.",
+    "expectedReturnDisplay": "CLOSED: +$31.00 Realized Profit (5.52% Return on Capital)",
     "ticker": "NVDA",
     "accountType": "Margin",
     "currentPrice": 182.15,
     "ivRank": 38.00,
     "earningsDate": "2025-11-19 (After Close)",
     "analysis": {
-      "thesis": "The trade is an aggressive volatility play. The short 195 Call (2 DTE) is exposed to the maximum IV crush post-earnings. As the high premium on the short leg evaporates faster than the long leg, the net debit cost basis is rapidly reduced. The trade is directional to the upside, profiting best if NVDA rises towards $195 or if IV expands again after the crush.",
+      "thesis": "The aggressive volatility play worked: the IV crush post-earnings caused the short 195 Call (2 DTE) to lose value faster than the long 195 Call, creating a net gain in the spread's value. The position was closed quickly to bank the premium capture.",
       "strategyType": "Calendar Spread (Long Call)",
       "tradeDetails": {
         "expiration": "2026-01-02",
@@ -25,13 +25,13 @@
         }
       },
       "metrics": {
-        "roc": 0.00,
+        "roc": 5.52,
         "annualizedRoc": 0.00,
         "pop": 50.00,
         "buyingPowerEffect": 561.00,
         "dailyProfitPotential": 0.00
       },
-      "managementPlan": "The short 195 Call must be managed immediately post-earnings (Nov 20). If the stock moves significantly past $195, the short leg must be managed immediately to avoid deep assignment risk. If the short leg decays rapidly, roll it to the next weekly expiration (Nov 28) for additional credit (Rolling Calendar). If the short leg expires worthless on Nov 21, the trade converts to a Long Call, and a new short call is sold."
+      "managementPlan": "The original plan was executed: close immediately post-earnings to capture the IV crush profit."
     },
     "tradeProgression": [
       {
@@ -47,6 +47,16 @@
         "grossProfitLossAmount": -561.00,
         "grossProfitLossType": "Loss (Max)",
         "notes": "Opened an earnings-sensitive Debit Calendar Spread with 2 DTE on the front month to maximize the post-earnings IV crush benefit against the long call."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-11-20",
+        "actionTaken": "BTC 1 NVDA Nov 21 195C & STC 1 NVDA Jan 2 195C",
+        "closePrice": 5.92,
+        "closeCostType": "Credit",
+        "grossProfitLossAmount": 31.00,
+        "grossProfitLossType": "Profit",
+        "notes": "The entire calendar spread was closed post-earnings (Nov 20) for a net credit of $5.92. This realized a profit of $31.00, confirming a successful volatility crush play."
       }
     ]
   },
