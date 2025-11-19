@@ -1,107 +1,285 @@
 [
-
-{
-  "publicationDate": "2025-11-13",
-  "tradeTitle": "Short Iron Condor on SPX (1 DTE)",
-  "summaryJustification": "A 1.0 DTE Short Iron Condor initiated on SPX for a $1.90 net credit. This aggressive, high-theta trade aims for a quick profit capture with the index remaining between the short strikes (6730 and 6845).",
-  "expectedReturnDisplay": "12.67% ROC (4,625.55% Annualized ROC)",
-  "ticker": "SPX",
-  "accountType": "Paper",
-  "currentPrice": 6820.00,
-  "ivRank": 0.00,
-  "earningsDate": "N/A",
-  "analysis": {
-    "thesis": "Selling premium in a Short Iron Condor with 1 day to expiration to capitalize on the rapid decay of index options. The wide put side (15 points) and narrow call side (5 points) suggest a slight bearish tilt or structural market preference. The goal is to close the position for max profit or a high percentage of max profit quickly.",
-    "strategyType": "Short Iron Condor",
-    "tradeDetails": {
-      "expiration": "2025-11-14",
-      "dte": 1,
-      "maxProfit": 190.00,
-      "spreadDetails": {
-        "shortPutStrike": 6730.00,
-        "longPutStrike": 6715.00,
-        "shortCallStrike": 6845.00,
-        "longCallStrike": 6860.00,
-        "netCredit": 1.90
-      }
-    },
-    "metrics": {
-      "roc": 12.67,
-      "annualizedRoc": 4625.55,
-      "pop": 0.0,
-      "buyingPowerEffect": 1500.00,
-      "dailyProfitPotential": 190.00
-    },
-    "managementPlan": "Standard management plan: Target 50% profit or close tomorrow morning after market open, as noted in the journal. Hold to expiration if the profit target is not met quickly and the position remains safe."
-    },
-  "tradeProgression": [
-    {
-      "stepType": "ADJUSTMENT",
-      "date": "2025-11-13",
-      "actionTaken": "STO Iron Condor (6730P/6715P & 6845C/6860C)",
-      "netChange": 1.90,
-      "netChangeType": "Credit",
-      "notes": "Opened new 1.0 DTE Short Iron Condor. Mid-price iron condor outside of expected move (+/- 60) for a total net credit of $1.90."
-    },
-    {
-      "stepType": "CLOSE",
-      "date": "2025-11-14",
-      "actionTaken": "BOT Put Spread & BOT Call Spread (Closed IC)",
-      "closePrice": 0.00,
-      "closeCostType": "Debit",
-      "grossProfitLossAmount": 215.00,
-      "grossProfitLossType": "Profit",
-      "notes": "Closed the Iron Condor (both spreads) early on expiration day (1 DTE open) to capture rapid time decay and volatility crush. The realized P&L is taken directly from the journal's top summary row ($215.00), which already accounts for all commissions and leg adjustments."
-    }
-  ]
-},
   {
-    "publicationDate": "2025-11-13",
-    "tradeTitle": "Put Credit Vertical Spread on BMNR",
-    "summaryJustification": "A Put Credit Vertical Spread (Short 36 / Long 34) was opened for a net credit of $1.02 on BMNR. The trade is highly capital efficient, offering a 51.00% Return on Capital, and initiates the Wheel strategy at the first premium-selling leg.",
-    "expectedReturnDisplay": "432.85% Annualized ROC or $1,020.00 Max Profit",
-    "ticker": "BMNR",
+    "publicationDate": "2025-11-19",
+    "tradeTitle": "Long Call Calendar Spread on NVDA (Earnings Play)",
+    "summaryJustification": "A Long Call Calendar Spread was opened on NVDA at the $195 strike right before its Q3 earnings release (Nov 19 after close). This position is highly sensitive to the Implied Volatility crush that occurs immediately after earnings, aiming to profit from the rapid devaluation of the 2 DTE short call relative to the long 44 DTE call.",
+    "expectedReturnDisplay": "Max Loss: $561.00 (Net Debit)",
+    "ticker": "NVDA",
     "accountType": "Margin",
-    "currentPrice": 37.38,
-    "ivRank": 19.35,
-    "earningsDate": "N/A",
+    "currentPrice": 182.15,
+    "ivRank": 38.00,
+    "earningsDate": "2025-11-19 (After Close)",
     "analysis": {
-      "thesis": "Initiate The Wheel strategy with a credit spread to efficiently monetize time decay and volatility. The high Annualized ROC justifies the trade despite a low IV Rank. The spread is placed at a delta appropriate for a premium-selling strategy, targeting 50% profit.",
-      "strategyType": "Put Credit Vertical Spread",
+      "thesis": "The trade is an aggressive volatility play. The short 195 Call (2 DTE) is exposed to the maximum IV crush post-earnings. As the high premium on the short leg evaporates faster than the long leg, the net debit cost basis is rapidly reduced. The trade is directional to the upside, profiting best if NVDA rises towards $195 or if IV expands again after the crush.",
+      "strategyType": "Calendar Spread (Long Call)",
       "tradeDetails": {
-        "expiration": "2025-12-26",
-        "dte": 43,
-        "maxProfit": 1020.00,
+        "expiration": "2026-01-02",
+        "dte": 44,
+        "maxProfit": 9999.99,
         "spreadDetails": {
-          "shortPutStrike": 36.00,
-          "longPutStrike": 34.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 1.02,
-          "contracts": 10
+          "shortPutStrike": 0.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 195.00,
+          "longCallStrike": 195.00,
+          "netCredit": -5.61
         }
       },
       "metrics": {
-        "roc": 51.00,
-        "annualizedRoc": 432.85,
-        "pop": 0.0,
-        "buyingPowerEffect": 2000.00,
-        "dailyProfitPotential": 23.72
+        "roc": 0.00,
+        "annualizedRoc": 0.00,
+        "pop": 50.00,
+        "buyingPowerEffect": 561.00,
+        "dailyProfitPotential": 0.00
       },
-      "managementPlan": "Standard management plan: Target 50% profit, manage at 21 DTE, or let expire."
+      "managementPlan": "The short 195 Call must be managed immediately post-earnings (Nov 20). If the stock moves significantly past $195, the short leg must be managed immediately to avoid deep assignment risk. If the short leg decays rapidly, roll it to the next weekly expiration (Nov 28) for additional credit (Rolling Calendar). If the short leg expires worthless on Nov 21, the trade converts to a Long Call, and a new short call is sold."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_LONG_CALL_CALENDAR",
+        "date": "2025-11-19",
+        "actionTaken": "STO 1 NVDA Nov 21 195C @ 2.85; BTO 1 NVDA Jan 2 195C @ 8.46",
+        "expirationFront": "2025-11-21",
+        "expirationBack": "2026-01-02",
+        "dteFrontRemaining": 2,
+        "dteBackRemaining": 44,
+        "netDebitPaid": 5.61,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": -561.00,
+        "grossProfitLossType": "Loss (Max)",
+        "notes": "Opened an earnings-sensitive Debit Calendar Spread with 2 DTE on the front month to maximize the post-earnings IV crush benefit against the long call."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-11-19",
+    "tradeTitle": "Long Call Diagonal Spread on NVO",
+    "summaryJustification": "A Long Call Diagonal Spread was opened on NVO to capitalize on its high IV Rank (79.9) by selling the short-dated 52 Call (2 DTE) for premium decay, while holding a longer-dated 50 Call (44 DTE) for a bullish move and long-term Vega exposure. The trade has a net debit of $2.45.",
+    "expectedReturnDisplay": "Max Loss: $245.00 (Net Debit)",
+    "ticker": "NVO",
+    "accountType": "Margin",
+    "currentPrice": 47.57,
+    "ivRank": 79.90,
+    "earningsDate": "2026-02-04",
+    "analysis": {
+      "thesis": "NVO's high IVR favors selling premium. The trade is moderately bullish, positioned to profit if the stock rises toward the long strike ($50.00) and the short call ($52.00) expires worthless. The short call, with only 2 DTE, will decay rapidly, reducing the cost basis of the valuable long 50 Call.",
+      "strategyType": "Long Call Diagonal Spread",
+      "tradeDetails": {
+        "expiration": "2026-01-02",
+        "dte": 44,
+        "maxProfit": 9999.99,
+        "spreadDetails": {
+          "shortPutStrike": 0.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 52.00,
+          "longCallStrike": 50.00,
+          "netCredit": -2.45
+        }
+      },
+      "metrics": {
+        "roc": 0.00,
+        "annualizedRoc": 0.00,
+        "pop": 50.00,
+        "buyingPowerEffect": 245.00,
+        "dailyProfitPotential": 0.00
+      },
+      "managementPlan": "The short 52C must be managed before or at the Nov 21 expiration. If it expires worthless, the position converts to a simple Long 50 Call, and a new short call would be sold against it (Rolling Diagonal). If the stock moves significantly higher, consider closing the entire spread for a profit. If the stock drops, the max loss is the debit paid."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_LONG_CALL_DIAGONAL",
+        "date": "2025-11-19",
+        "actionTaken": "STO 1 NVO Nov 21 52C @ 0.52; BTO 1 NVO Jan 2 50C @ 2.97",
+        "expirationFront": "2025-11-21",
+        "expirationBack": "2026-01-02",
+        "dteFrontRemaining": 2,
+        "dteBackRemaining": 44,
+        "netDebitPaid": 2.45,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": -245.00,
+        "grossProfitLossType": "Loss (Max)",
+        "notes": "Opened a Debit Diagonal Call Spread. The $50 long strike is slightly OTM, making this a directional trade. The short 52 Call is far OTM to minimize assignment risk while capitalizing on rapid 2 DTE decay."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-11-19",
+    "tradeTitle": "Short Iron Condor on SPY",
+    "summaryJustification": "A Short Iron Condor was opened on SPY using the Jan 2, 2026, 44 DTE expiration. The IV Rank of 37.2 is conducive to premium selling, and the trade targets the 1-standard deviation range (approx. 67% POP) to profit from time decay and non-directional price movement.",
+    "expectedReturnDisplay": "200.00% ROC ($200.00 Max Profit)",
+    "ticker": "SPY",
+    "accountType": "Margin",
+    "currentPrice": 661.05,
+    "ivRank": 37.20,
+    "earningsDate": "N/A (ETF)",
+    "analysis": {
+      "thesis": "SPY has a suitable IV Rank (37.2) for selling premium. The Condor is centered near the current price and aims for maximum profit if SPY remains between the short strikes ($658 - $685) until expiration. The high ROC indicates the tight spread is highly capital efficient.",
+      "strategyType": "Short Iron Condor",
+      "tradeDetails": {
+        "expiration": "2026-01-02",
+        "dte": 44,
+        "maxProfit": 200.00,
+        "spreadDetails": {
+          "shortPutStrike": 658.00,
+          "longPutStrike": 655.00,
+          "shortCallStrike": 685.00,
+          "longCallStrike": 688.00,
+          "netCredit": 2.00
+        }
+      },
+      "metrics": {
+        "roc": 200.00,
+        "annualizedRoc": 1659.09,
+        "pop": 67.00,
+        "buyingPowerEffect": 100.00,
+        "dailyProfitPotential": 4.55
+      },
+      "managementPlan": "Target 50% max profit ($100.00). Manage the untested side (roll the strikes further out) if the short strike on the tested side is breached. Adjust or close the entire position at 21 DTE to avoid unnecessary gamma risk."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_IRON_CONDOR",
+        "date": "2025-11-19",
+        "actionTaken": "STO 1 SPY Jan 2 658P/685C; BTO 1 SPY Jan 2 655P/688C",
+        "expiration": "2026-01-02",
+        "dteRemaining": 44,
+        "netCreditReceived": 2.00,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": 200.00,
+        "grossProfitLossType": "Profit (Max)",
+        "notes": "Opened 1 contract for a net credit of $2.00. Max risk is $100.00 per contract."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-11-19",
+    "tradeTitle": "Long Call Calendar Spread on BMNR",
+    "summaryJustification": "A Debit Call Calendar Spread was opened at the 36 strike to capitalize on the high IV Rank (43.7) by selling the 3 DTE front-month volatility and buying the 44 DTE back-month option. This aims to profit from the fast decay of the short leg and a potential rise in volatility (Vega) in the longer-term option.",
+    "expectedReturnDisplay": "Max Loss: $338.00 (Net Debit)",
+    "ticker": "BMNR",
+    "accountType": "Margin",
+    "currentPrice": 31.71,
+    "ivRank": 43.70,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "The trade is a Long Call Calendar Spread, which is an overall *Long Vega* and *Long Theta* strategy designed to profit if the underlying remains near the strike price at the front-month expiration (Nov 21), or if Implied Volatility expands over the life of the back-month option. The 3 DTE short leg provides rapid time decay to offset the cost of the 44 DTE long leg.",
+      "strategyType": "Calendar Spread (Long Call)",
+      "tradeDetails": {
+        "expiration": "2026-01-02",
+        "dte": 44,
+        "maxProfit": 9999.99,
+        "spreadDetails": {
+          "shortPutStrike": 0.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 36.00,
+          "longCallStrike": 36.00,
+          "netCredit": -3.38
+        }
+      },
+      "metrics": {
+        "roc": 0.00,
+        "annualizedRoc": 0.00,
+        "pop": 50.00,
+        "buyingPowerEffect": 338.00,
+        "dailyProfitPotential": 0.00
+      },
+      "managementPlan": "The short leg (Nov 21 36C) should be managed independently by targeting 50-75% profit, or allowing it to expire worthless. The standard progression is the 'Rolling Calendar': once the short leg is closed/expired, sell a new short call (e.g., Dec 5) against the long Jan 2 call to continue collecting premium. The full spread is closed when the long leg's value is maximized due to IV expansion or favorable directional movement."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_LONG_CALL_CALENDAR",
+        "date": "2025-11-19",
+        "actionTaken": "STO 1 BMNR Nov 21 36C @ 0.61; BTO 1 BMNR Jan 2 36C @ 3.99",
+        "expirationFront": "2025-11-21",
+        "expirationBack": "2026-01-02",
+        "dteFrontRemaining": 3,
+        "dteBackRemaining": 44,
+        "netDebitPaid": 3.38,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": -338.00,
+        "grossProfitLossType": "Loss (Max)",
+        "notes": "Opened a Debit Call Calendar Spread (Long Vega) to hedge against the short-term volatility crush and position for long-term expansion due to high overall IVR."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-10-31",
+    "tradeTitle": "The Wheel on BMNR",
+    "summaryJustification": "A highly aggressive weekly Short Put was assigned, triggering the Covered Call phase of The Wheel. The current Covered Call aims to generate weekly income against the assigned stock and will result in the shares being called away for a profit if BMNR closes above $47.00 by expiration.",
+    "expectedReturnDisplay": "Trade in Progression (Target $372.96 Realized P&L + New Call P/L)",
+    "ticker": "BMNR",
+    "accountType": "IRA",
+    "currentPrice": 46.78,
+    "ivRank": 0.0,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "The trade is now in the 'Stock Owned' phase.",
+      "strategyType": "Covered Call (The Wheel Phase 2)",
+      "tradeDetails": {
+        "expiration": "2025-11-21",
+        "dte": 2,
+        "maxProfit": 100.00,
+        "spreadDetails": {
+          "shortPutStrike": 45.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 47.00,
+          "longCallStrike": 0.00,
+          "netCredit": 0.50
+        }
+      },
+      "metrics": {
+        "roc": 1.13,
+        "annualizedRoc": 207.36,
+        "pop": 58.0,
+        "buyingPowerEffect": 8722.00,
+        "dailyProfitPotential": 50.00
+      },
+      "managementPlan": "The Covered Call should be managed like a Short Put: close when 50% profit is achieved, or roll if the stock moves against the position significantly, though the primary goal is often assignment for a full cycle profit."
     },
     "tradeProgression": [
       {
         "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-11-13",
-        "actionTaken": "STO 10 BMNR 36/34 Puts",
-        "expiration": "2025-12-26",
-        "dteRemaining": 43,
-        "netCreditReceived": 1.02,
-        "commissionFee": 0.00,
-        "grossProfitLossAmount": 1020.00,
+        "date": "2025-10-31",
+        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
+        "expiration": "2025-11-07",
+        "dteRemaining": 7,
+        "netCreditReceived": 280.00,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 278.98,
         "grossProfitLossType": "Profit",
-        "notes": "Initial Put Credit Vertical Spread (Short 36 / Long 34). Net Credit of $1.02 per contract (received $1,020 total credit for 10 contracts). BPE calculated as spread width * 100 * contracts."
+        "notes": "Opened 2 contracts at 1.40 for 7 DTE. This premium is realized as profit from the put side of the trade, reducing the cost basis of any future assignment."
+      },
+      {
+        "stepType": "ASSIGNMENT",
+        "date": "2025-11-07",
+        "actionTaken": "Assigned 200 shares at strike",
+        "purchasePrice": 45.00,
+        "sharesAcquired": 200,
+        "netCostBasisPerShare": 43.61,
+        "totalNotionalCost": 9000.00,
+        "notes": "The 2 short put contracts were assigned at expiration. Net cost basis is calculated as: 45.00 - (($278.98 - $1.02) / 200 shares) = 45.00 - 1.39 = $43.61 per share. (Using the journal's final realized P&L of $277.97 for the trade cycle)."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-11-10",
+        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
+        "expiration": "2025-11-14",
+        "dteRemaining": 4,
+        "netCreditReceived": 94.99,
+        "commissionFee": 1.01,
+        "grossCreditTotal": 96.00,
+        "notes": "Sold a weekly covered call against the 200 assigned shares. Net credit received is (0.48 * 200) - 1.01 = $94.99. This premium adds to the total cycle profit."
+      },
+      {
+        "stepType": "WHEEL_STEP: CALL_EXPIRED_WORTHLESS",
+        "date": "2025-11-14",
+        "actionTaken": "11/14 47.00 C expired OTM. Premium of $94.99 fully realized.",
+        "expiration": "2025-11-14",
+        "dteRemaining": 0,
+        "netCreditReceived": 0.00,
+        "commissionFee": 0.00,
+        "grossProfitLossAmount": 94.99,
+        "grossProfitLossType": "Profit",
+        "notes": "The call expired worthless as BMNR closed below $47.00. The full credit collected from the previous step is now realized. Total realized P&L is now $372.96."
       }
     ]
   },
@@ -221,76 +399,6 @@
         "grossProfitLossAmount": 5.00,
         "grossProfitLossType": "Profit",
         "notes": "Closed trade to lock in a $5.00 profit. (Credit: $3.30, Debit: $3.25)"
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-10-31",
-    "tradeTitle": "The Wheel on BMNR",
-    "summaryJustification": "A highly aggressive weekly Short Put was assigned, triggering the Covered Call phase of The Wheel. The current Covered Call aims to generate weekly income against the assigned stock and will result in the shares being called away for a profit if BMNR closes above $47.00 by expiration.",
-    "expectedReturnDisplay": "Trade in Progression (Target $277.97 Realized P&L from Put Phase + Call P/L)",
-    "ticker": "BMNR",
-    "accountType": "IRA",
-    "currentPrice": 42.25,
-    "ivRank": 0.0,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "The trade is now in the 'Stock Owned' phase. The investor is selling a weekly Covered Call at the $47.00 strike, which is above the net cost basis of $43.61. This provides a potential profit of $3.39 per share if called away, plus the premium received. The goal is to either collect premium or get called away for a profit.",
-      "strategyType": "Covered Call (The Wheel Phase 2)",
-      "tradeDetails": {
-        "expiration": "2025-11-07",
-        "dte": 7,
-        "maxProfit": 140.00,
-        "spreadDetails": {
-          "shortPutStrike": 45.00,
-          "longPutStrike": 0.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 1.40
-        }
-      },
-      "metrics": {
-        "roc": 3.11,
-        "annualizedRoc": 140.00,
-        "pop": 58.0,
-        "buyingPowerEffect": 4500.00,
-        "dailyProfitPotential": 20.00
-      },
-      "managementPlan": "The Covered Call should be managed like a Short Put: close when 50% profit is achieved, or roll if the stock moves against the position significantly, though the primary goal is often assignment for a full cycle profit."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-10-31",
-        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
-        "expiration": "2025-11-07",
-        "dteRemaining": 7,
-        "netCreditReceived": 280.00,
-        "commissionFee": 1.02,
-        "grossProfitLossAmount": 278.98,
-        "grossProfitLossType": "Profit",
-        "notes": "Opened 2 contracts at 1.40 for 7 DTE. This premium is realized as profit from the put side of the trade, reducing the cost basis of any future assignment."
-      },
-      {
-        "stepType": "ASSIGNMENT",
-        "date": "2025-11-07",
-        "actionTaken": "Assigned 200 shares at strike",
-        "purchasePrice": 45.00,
-        "sharesAcquired": 200,
-        "netCostBasisPerShare": 43.61,
-        "totalNotionalCost": 9000.00,
-        "notes": "The 2 short put contracts were assigned at expiration. Net cost basis is calculated as: 45.00 - (($278.98 - $1.02) / 200 shares) = 45.00 - 1.39 = $43.61 per share. (Using the journal's final realized P&L of $277.97 for the trade cycle)."
-      },
-      {
-        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
-        "date": "2025-11-10",
-        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
-        "expiration": "2025-11-14",
-        "dteRemaining": 4,
-        "netCreditReceived": 94.99,
-        "commissionFee": 1.01,
-        "grossCreditTotal": 96.00,
-        "notes": "Sold a weekly covered call against the 200 assigned shares. Net credit received is (0.48 * 200) - 1.01 = $94.99. This premium adds to the total cycle profit."
       }
     ]
   },
@@ -773,42 +881,6 @@
         "notes": "Position expired worthless, capturing 100% of the $25.00 max profit."
       }
     ]
-  },
-  {
-    "publicationDate": "2025-10-22",
-    "tradeTitle": "Skewed Iron Condor on TXN",
-    "summaryJustification": "The Skewed Iron Condor was placed after the post-earnings drop, centering the risk around the current price of 169.33. The wider 5.00 put spread reflects a more bullish bias to defend the recent support area, collecting a net credit of 3.02.",
-    "expectedReturnDisplay": "60.40% Max ROC",
-    "ticker": "TXN",
-    "accountType": "Margin",
-    "currentPrice": 169.33,
-    "ivRank": 35.0,
-    "earningsDate": "2025-10-21",
-    "analysis": {
-      "thesis": "The stock has experienced a significant volatility event and price drop. An Iron Condor is used to sell volatility and collect premium, centered around the current price. The spread is skewed (wider put spread) to position defensively against further downward momentum while capitalizing on the elevated implied volatility.",
-      "strategyType": "Skewed Iron Condor",
-      "tradeDetails": {
-        "expiration": "2025-11-21",
-        "dte": 30,
-        "maxProfit": 302.0,
-        "spreadDetails": {
-          "shortPutStrike": 167.5,
-          "longPutStrike": 162.5,
-          "shortCallStrike": 170.0,
-          "longCallStrike": 172.5,
-          "netCredit": 3.02
-        }
-      },
-      "metrics": {
-        "roc": 60.4,
-        "annualizedRoc": 734.87,
-        "pop": 65.0,
-        "buyingPowerEffect": 500.0,
-        "dailyProfitPotential": 10.07
-      },
-      "managementPlan": "Standard management plan: Target 50% profit, or manage by closing/rolling the unchallenged side at 21 DTE."
-    },
-    "tradeProgression": []
   },
   {
     "publicationDate": "2025-10-21",

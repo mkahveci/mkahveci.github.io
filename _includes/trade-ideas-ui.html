@@ -243,136 +243,108 @@
                                     {% for step in trade.tradeProgression %}
                                     {% assign step_type_lower = step.stepType | downcase %}
 
-                                    {% comment %} Clean the stepType {% endcomment %}
+                                    {% comment %} Clean the stepType for CSS class {% endcomment %}
                                     {% assign step_class = step_type_lower | replace: ': ', '-' | replace: ':', '-' | replace: '_', '-' | replace: ' ', '-' %}
 
                                     <li class="progression-step step-{{ step_class }}">
                                         <div class="progression-header">
 
-                                            {% comment %} --- UPDATED PILL TEXT LOGIC --- {% endcomment %}
-                                            {% assign pill_text = step.stepType %}
-                                            {% if step.stepType == 'ASSIGNMENT' %}{% assign pill_text = "ASSIGNED" %}
-                                            {% elsif step.stepType == 'WHEEL_STEP: SELL_COVERED_CALL' %}{% assign pill_text = "WHEEL: COVERED CALL" %}
-                                            {% elsif step.stepType == 'WHEEL_STEP: CLOSE_COVERED_CALL' %}{% assign pill_text = "WHEEL: CALL CLOSED" %}
-                                            {% elsif step.stepType == 'CALLED_AWAY' %}{% assign pill_text = "CALLED AWAY" %}
-                                            {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}{% assign pill_text = "INDEPENDENT CLOSE" %}
-                                            {% elsif step.stepType == 'OPEN_SHORT_PUT' %}{% assign pill_text = "PUT OPENED" %}
-                                            {% endif %}
+                                            {% comment %} --- UNIVERSAL PILL TEXT LOGIC START --- {% endcomment %}
+                                            {% assign original_text = step.stepType | replace: '_', ' ' %}
+                                            {% assign default_text = original_text | capitalize %}
 
-                                            <span class="progression-tag tag-{{ step_class }}">{{ pill_text }}</span>
+                                            {% comment %} Define Action Category for Coloring/Context {% endcomment %}
+                                            {% assign action_category = "default" %}
+
+                                            {% comment %} Explicit Mappings for complex step types {% endcomment %}
+                                            {% if step.stepType contains 'OPEN' %}
+                                            {% assign pill_text = "OPEN TRADE" %}
+                                            {% assign action_category = "open" %}
+                                            {% elsif step.stepType contains 'CLOSE' %}
+                                            {% assign pill_text = "CLOSE TRADE" %}
+                                            {% assign action_category = "close" %}
+                                            {% elsif step.stepType contains 'ADJUSTMENT' %}
+                                            {% assign pill_text = "ADJUSTMENT" %}
+                                            {% assign action_category = "adjust" %}
+                                            {% elsif step.stepType contains 'ASSIGNMENT' %}
+                                            {% assign pill_text = "ASSIGNMENT" %}
+                                            {% assign action_category = "risk" %}
+                                            {% elsif step.stepType contains 'CALLED_AWAY' %}
+                                            {% assign pill_text = "CALLED AWAY" %}
+                                            {% assign action_category = "close" %}
+                                            {% elsif step.stepType contains 'WHEEL_STEP: SELL_COVERED_CALL' %}
+                                            {% assign pill_text = "WHEEL: COVERED CALL" %}
+                                            {% assign action_category = "open" %}
+                                            {% elsif step.stepType contains 'WHEEL_STEP: CLOSE_COVERED_CALL' %}
+                                            {% assign pill_text = "WHEEL: CALL CLOSED" %}
+                                            {% assign action_category = "close" %}
+                                            {% elsif step.stepType contains 'OPEN_SHORT_PUT' %}
+                                            {% assign pill_text = "SHORT PUT OPENED" %}
+                                            {% assign action_category = "open" %}
+                                            {% elsif step.stepType contains 'CLOSED_INDEPENDENT_PUT' %}
+                                            {% assign pill_text = "PUT CLOSED (PROFIT)" %}
+                                            {% assign action_category = "close" %}
+                                            {% elsif step.stepType contains 'OPEN_LONG_CALL_CALENDAR' %}
+                                            {% assign pill_text = "CALENDAR OPENED" %}
+                                            {% assign action_category = "open" %}
+                                            {% elsif step.stepType contains 'ROLL_SHORT_LEG' %}
+                                            {% assign pill_text = "SHORT LEG ROLLED" %}
+                                            {% assign action_category = "adjust" %}
+                                            {% else %}
+                                            {% comment %} Default to capitalized and space-separated text for any new/unknown stepType {% endcomment %}
+                                            {% assign pill_text = default_text %}
+                                            {% assign action_category = "new" %}
+                                            {% endif %}
+                                            {% comment %} --- UNIVERSAL PILL TEXT LOGIC END --- {% endcomment %}
+
+                                            <span class="progression-tag tag-{{ action_category }}">{{ pill_text }}</span>
                                             <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({% if step.dteRemaining %}{{ step.dteRemaining }}{% else %}N/A{% endif %} DTE)</span>
                                         </div>
                                         <div class="progression-details">
 
-                                            {% if step.stepType == 'OPEN_SHORT_PUT' %}
-                                            <p><strong>Phase 1 Initiated:</strong> {{ step.actionTaken }} for a gross credit of &#36;{{ step.netCreditReceived | times: step.sharesInvolved | divided_by: 100.0 | round: 2 }}.</p>
-                                            <span class="profit-loss text-success">(Realized Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
-
-                                            {% if step.notes %}
-                                            <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </div>
+                                            {% comment %} 1. DISPLAY ACTION TAKEN {% endcomment %}
+                                            {% if step.actionTaken %}
+                                            <p class="mb-1"><strong>Action:</strong> {{ step.actionTaken }}</p>
                                             {% endif %}
 
-
-                                            {% elsif step.stepType == 'ASSIGNMENT' %}
-                                            <p><strong>Transition to Phase 2:</strong> {{ step.actionTaken }}.</p>
-
-                                            {% if step.notes %}
-                                            <p class="small text-muted mb-0 mt-1">
-                                                {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </p>
-                                            {% else %}
-                                            <p class="small text-muted mb-0 mt-1">
-                                                Stock acquired at a net **Cost Basis of &#36;{{ step.netCostBasisPerShare | round: 2 }}** ({{ step.purchasePrice }} strike price less put premium collected).
-                                            </p>
-                                            {% endif %}
-
-
-                                            {% elsif step.stepType contains 'WHEEL_STEP' %}
-                                            <p><strong>Phase 2 Action:</strong> {{ step.actionTaken }}</p>
-
-                                            {% if step.grossCreditTotal %}
-                                            <span class="profit-loss text-primary">(Credit Received: +&#36;{{ step.grossCreditTotal | round: 2 }})</span>
-                                            {% elsif step.grossProfitLossAmount %}
-                                            <span class="profit-loss {% if step.grossProfitLossType == 'Profit' %}text-success{% else %}text-danger{% endif %}">
-                        ({{ step.grossProfitLossType }}: {% if step.grossProfitLossType == 'Profit' %}+{% else %}-{% endif %}&#36;{{ step.grossProfitLossAmount | round: 2 }})
-                    </span>
-                                            {% endif %}
-
-                                            {% if step.notes %}
-                                            <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </div>
-                                            {% endif %}
-
-
-                                            {% elsif step.stepType == 'CALLED_AWAY' %}
-                                            <p><strong>Cycle Complete:</strong> {{ step.actionTaken }} at &#36;{{ step.salePrice | round: 2 }}.</p>
-                                            <span class="profit-loss text-success">
-                    <strong class="text-success">Total Cycle Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }}</strong>
-                </span>
-
-                                            {% if step.notes %}
-                                            <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </div>
-                                            {% endif %}
-
-
-                                            {% elsif step.stepType == 'CLOSED_INDEPENDENT_PUT' %}
-                                            {% if step.notes %}
-                                            <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </div>
-                                            {% endif %}
-                                            <span class="profit-loss text-success">(Profit: +&#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
-
-
-                                            {% elsif step.stepType == 'ADJUSTMENT' %}
-                                            <p>{{ step.actionTaken }}</p>
+                                            {% comment %} 2. DISPLAY PROFIT/LOSS/CREDIT/DEBIT {% endcomment %}
+                                            {% if step.grossProfitLossAmount %}
                                             <span class="profit-loss
-                    {% if step.netChangeType == 'Credit' %}text-primary{% else %}text-danger{% endif %}">
-                    ({{ step.netChangeType }}: &#36;{{ step.netChange | round: 2 }})
-                </span>
-
-                                            {% if step.notes %}
-                                            <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
-                                            </div>
+                                                    {% if step.grossProfitLossType == 'Profit' or step.grossCreditTotal > 0 %}text-success{% else %}text-danger{% endif %}">
+                                                    ({{ step.grossProfitLossType | default: "P/L" }}:
+                                                    {% if step.grossProfitLossType == 'Profit' or step.grossProfitLossAmount >= 0 %}+{% else %}-{% endif %}
+                                                    &#36;{{ step.grossProfitLossAmount | abs | round: 2 }})
+                                                </span>
+                                            {% elsif step.netChange %}
+                                            <span class="profit-loss
+                                                    {% if step.netChangeType == 'Credit' %}text-primary{% else %}text-danger{% endif %}">
+                                                    ({{ step.netChangeType }}: &#36;{{ step.netChange | round: 2 }})
+                                                </span>
+                                            {% elsif step.grossCreditTotal %}
+                                            <span class="profit-loss text-primary">(Credit Received: +&#36;{{ step.grossCreditTotal | round: 2 }})</span>
+                                            {% elsif step.netDebitPaid %}
+                                            <span class="profit-loss text-danger">(Debit Paid: -&#36;{{ step.netDebitPaid | round: 2 }})</span>
                                             {% endif %}
 
-
-                                            {% elsif step.stepType == 'CLOSE' %}
-                                            <span class="profit-loss">
-                    {% if step.grossProfitLossType == 'Profit' %}
-                        <span class="text-success">(Profit: &#36;{{ step.grossProfitLossAmount | round: 2 }})</span>
-                    {% else %}
-                        <span class="text-danger">(Loss: &#36;{{ step.grossProfitLossAmount | abs | round: 2 }})</span>
-                    {% endif %}
-                </span>
+                                            {% comment %} 3. DISPLAY ASSIGNMENT DETAILS (Specific for Assignment) {% endcomment %}
+                                            {% if step.stepType == 'ASSIGNMENT' %}
                                             <p class="small text-muted mb-0 mt-1">
-                                                Transaction:
-                                                {% if step.closeCostType == 'Debit' %}
-                                                <strong class="text-danger">Debit Paid &#36;{{ step.closePrice | round: 2 }}</strong>
-                                                {% else %}
-                                                <strong class="text-success">Credit Received &#36;{{ step.closePrice | round: 2 }}</strong>
-                                                {% endif %}
-                                                <span class="ms-2">({{ step.actionTaken }})</span>
+                                                Stock acquired at a net **Cost Basis of &#36;{{ step.netCostBasisPerShare | round: 2 }}** (&#36;{{ step.purchasePrice }} strike less put premium collected).
                                             </p>
+                                            {% endif %}
 
+                                            {% comment %} 4. DISPLAY NOTES (Always) {% endcomment %}
                                             {% if step.notes %}
                                             <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
                                                 <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
                                             </div>
                                             {% endif %}
 
-                                            {% endif %}
                                         </div>
                                     </li>
                                     {% endfor %}
 
-                                    {% comment %} --- NEW ESTIMATED SCENARIO BLOCK --- {% endcomment %}
+                                    {% comment %} --- NEW ESTIMATED SCENARIO BLOCK (Kept separate) --- {% endcomment %}
                                     {% if trade.estimatedScenario %}
                                     <li class="progression-step estimated-scenario">
                                         <div class="progression-header">
