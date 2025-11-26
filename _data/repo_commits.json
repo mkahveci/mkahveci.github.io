@@ -2,6 +2,13 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9922cd49fd6dd444e06bcde499aecf2b4a973496",
+    "author": "github-actions[bot]",
+    "date": "2025-11-25T01:25:49Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/348bf00682bd566507a99c9dde78961ff0e7753c",
     "author": "github-actions[bot]",
     "date": "2025-11-24T01:40:21Z"
@@ -782,13 +789,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/802d02fd7bad406e682d150f4cbc10691f134a84",
     "author": "github-actions[bot]",
     "date": "2025-11-08T01:20:36Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/51ba9bb61baeb0c6303bf71a43cc14473ccdd983",
-    "author": "mkahveci",
-    "date": "2025-11-07T20:36:17Z"
   },
   {
     "repo": "mkahveci/qma",
