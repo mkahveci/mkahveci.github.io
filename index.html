@@ -5,19 +5,42 @@ categories:
 - home
 ---
 
-<div class="container my-5">
+<div class="container-fluid p-0 mb-5">
+    <div class="p-4 p-md-5 rounded-3 text-center shadow-sm"
+         style="
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('/images/nexus-cover.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;">
 
-    <div class="row align-items-center mb-5 pb-4 text-center">
-        <div class="col-12 mb-3">
-            <img src="/images/logo.svg" alt="Kahveci Nexus Logo" class="img-fluid rounded-circle shadow-sm" style="width: 120px; height: 120px;">
-        </div>
-        <div class="col-12">
-            <h1 class="bigtitle fw-bold text-body">Kahveci Nexus</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 800px;">
-                A research group working at the interface of chemistry education, psychometrics, and educational technology. We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.
+        <div class="col-md-10 mx-auto">
+            <img src="/images/logo.svg"
+                 alt="Kahveci Nexus Logo"
+                 class="img-fluid rounded-circle border border-3 border-white shadow mb-3"
+                 style="width: 120px; height: 120px; background-color: rgba(255,255,255,0.1);">
+
+            <h1 class="display-4 fw-bold text-white mb-3">Kahveci Nexus</h1>
+
+            <p class="lead text-white mx-auto fw-light" style="max-width: 800px; text-shadow: 0px 1px 3px rgba(0,0,0,0.8);">
+                A research group working at the interface of
+                <span class="fw-bold text-info">chemistry education</span>,
+                <span class="fw-bold text-info">psychometrics</span>, and
+                <span class="fw-bold text-info">educational technology</span>.
+                We develop and validate tools to understand affective dimensions of learning and enhance science education through innovative, student-centered approaches.
             </p>
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+                <a href="/publications/" class="btn btn-outline-light btn-lg px-4 gap-3">View Publications</a>
+                <a href="/join" class="btn btn-primary btn-lg px-4">Join the Group</a>
+            </div>
         </div>
     </div>
+</div>
+<div class="container my-5">
 
     <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
         <a href="/blog/" class="text-primary text-decoration-none">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
