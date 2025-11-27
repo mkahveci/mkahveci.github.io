@@ -87,14 +87,14 @@ date: 2022-08-21 00:00:00
 </div>
 
 <div class="row mt-5 justify-content-center">
-    {% comment %} --- WORKFLOW CARDS: Use subtle text-muted icon color, btn-outline-primary --- {% endcomment %}
+
     <div class="col-lg-3 col-md-6 mb-4">
         <div class="card text-center p-3 shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
             <div class="card-body d-flex flex-column">
-                <i class="fas fa-code-branch fa-2x text-muted mb-3"></i>
-                <h5 class="card-title fw-bold text-body">Projects Workflow</h5>
-                <p class="card-text small text-muted flex-grow-1">Guide to the pgit-workflow.</p>
-                <a href="/pgit-workflow" class="btn btn-sm btn-outline-primary mt-auto">View Guide</a>
+                <i class="fas fa-robot fa-2x text-muted mb-3"></i>
+                <h5 class="card-title fw-bold text-body">Post Automation</h5>
+                <p class="card-text small text-muted flex-grow-1">Using automation scripts.</p>
+                <a href="/scaffold" class="btn btn-sm btn-outline-primary mt-auto">View Guide</a>
             </div>
         </div>
     </div>
@@ -102,14 +102,14 @@ date: 2022-08-21 00:00:00
     <div class="col-lg-3 col-md-6 mb-4">
         <div class="card text-center p-3 shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
             <div class="card-body d-flex flex-column">
-                <i class="fas fa-play fa-2x text-muted mb-3"></i>
-                <h5 class="card-title fw-bold text-body">Presentation Slides</h5>
-                <p class="card-text small text-muted flex-grow-1">How to use the /slide layout.</p>
-                <a href="/slide" class="btn btn-sm btn-outline-primary mt-auto">View Guide</a>
+                <i class="fas fa-cubes fa-2x text-muted mb-3"></i>
+                <h5 class="card-title fw-bold text-body">Site Development Guide</h5>
+                <p class="card-text small text-muted flex-grow-1">Reusable code blocks.</p>
+                <a href="/development-guides/" class="btn btn-sm btn-outline-primary mt-auto">View Snippets</a>
             </div>
         </div>
     </div>
-    
+
     <div class="col-lg-3 col-md-6 mb-4">
         <div class="card text-center p-3 shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
             <div class="card-body d-flex flex-column">
@@ -117,28 +117,6 @@ date: 2022-08-21 00:00:00
                 <h5 class="card-title fw-bold text-body">Metadata Format</h5>
                 <p class="card-text small text-muted flex-grow-1">Data entry rules for /format.</p>
                 <a href="/format" class="btn btn-sm btn-outline-primary mt-auto">View Guide</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card text-center p-3 shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
-            <div class="card-body d-flex flex-column">
-                <i class="fas fa-robot fa-2x text-muted mb-3"></i>
-                <h5 class="card-title fw-bold text-body">Post Automation</h5>
-                <p class="card-text small text-muted flex-grow-1">Using automation scripts.</p>
-                <a href="/automation" class="btn btn-sm btn-outline-primary mt-auto">View Guide</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card text-center p-3 shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
-            <div class="card-body d-flex flex-column">
-                <i class="fas fa-cubes fa-2x text-muted mb-3"></i>
-                <h5 class="card-title fw-bold text-body">Code Snippets</h5>
-                <p class="card-text small text-muted flex-grow-1">Reusable code blocks.</p>
-                <a href="/code" class="btn btn-sm btn-outline-primary mt-auto">View Snippets</a>
             </div>
         </div>
     </div>

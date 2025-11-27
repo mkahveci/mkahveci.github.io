@@ -4,63 +4,149 @@ layout: default
 
 <div class="container my-5">
 
-	{% comment %}
-	NOTE: Assuming breadcrumb-github-projects.html is meant to be a general breadcrumb include.
-	The include call is updated to use the theme-aware text-primary for the icon.
-	{% endcomment %}
-	{% include breadcrumb-github-projects.html
-	collection_url = "/album/"
-	collection_name = "Photo Album"
-	item_icon = "fas fa-images"
-	%}
+    {% include breadcrumb-github-projects.html
+    collection_url = "/album/"
+    collection_name = "Photo Album"
+    item_icon = "fas fa-images"
+    %}
 
-	<div class="row">
-		<div class="col-lg-10 mx-auto">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
 
-			<header class="text-center mb-5">
-				{% comment %} Use bigtitle class and text-body color {% endcomment %}
-				<h1 class="bigtitle fw-bold text-body">{{ page.title }}</h1>
+            <header class="text-center mb-5">
+                <h1 class="bigtitle fw-bold text-body">{{ page.title }}</h1>
+                <p class="lead text-muted">
+                    <i class="far fa-calendar-alt fa-fw me-1"></i> Posted on {{ page.date | date: "%-d %b %Y" }}
+                    {% if page.author %}
+                    | by <span class="text-primary fw-bold">{{ page.author }}</span>
+                    {% endif %}
+                </p>
+            </header>
 
-				<p class="lead text-muted">
-					<i class="far fa-calendar-alt fa-fw me-1"></i> Posted on {{ page.date | date: "%-d %b %Y" }}
+            <div class="post-content text-body mb-5">
+                {{ content }}
+            </div>
 
-					{% if page.author %}
-					| by
-					{% comment %} Use the robust team member lookup logic with text-primary links {% endcomment %}
-					{% assign author_found = false %}
-					{% for member in site.categories.team %}
-					{% if member.name == page.author %}
-					<a href="{{ member.url | relative_url }}" class="text-primary text-decoration-none">{{ page.author }}</a>
-					{% assign author_found = true %}
-					{% break %}
-					{% endif %}
-					{% endfor %}
-					{% unless author_found %}
-					<span class="text-muted">{{ page.author }}</span>
-					{% endunless %}
-					{% endif %}
+            {% if page.media %}
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                {% for item in page.media %}
+                <div class="col">
+                    <div class="card shadow-sm border-0 h-100" style="background-color: var(--bs-card-bg);">
 
-					{% if page.place %}
-					| <i class="fas fa-map-marker-alt fa-fw me-1"></i>
-					{% comment %} Place link uses text-primary if it's a link, otherwise it's muted {% endcomment %}
-					{% if page.place_url %}
-					<a href="{{ page.place_url }}" class="text-primary text-decoration-none">{{ page.place }}</a>
-					{% else %}
-					<span class="text-muted">{{ page.place }}</span>
-					{% endif %}
-					{% endif %}
-				</p>
-			</header>
+                        {% case item.type %}
 
-			{% if page.image %}
-			<div class="text-center mb-5">
-				<img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title }}">
-			</div>
-			{% endif %}
+                        {% when 'youtube' %}
+                        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+                            <iframe src="https://www.youtube.com/embed/{{ item.id }}"
+                                    title="{{ item.title | default: 'YouTube video' }}"
+                                    allowfullscreen
+                                    loading="lazy">
+                            </iframe>
+                        </div>
 
-			<div class="post-content text-body">
-				{{ content }}
-			</div>
-		</div>
-	</div>
+                        {% when 'image' %}
+                        <div class="ratio ratio-16x9">
+                            <a href="#"
+                               class="d-block w-100 h-100"
+                               data-bs-toggle="modal"
+                               data-bs-target="#galleryModal"
+                               data-bs-img-src="{{ item.url | relative_url }}"
+                               data-bs-img-caption="{{ item.caption | default: '' }}">
+
+                                <img src="{{ item.url | relative_url }}"
+                                     class="card-img-top object-fit-cover w-100 h-100 rounded-top"
+                                     style="object-position: center 20%;"
+                                     alt="{{ item.caption | default: 'Photo' }}"
+                                     loading="lazy">
+
+                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 hover-overlay" style="background: rgba(0,0,0,0.3); transition: opacity 0.2s;">
+                                    <i class="fas fa-search-plus text-white fa-2x"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        {% endcase %}
+
+                        {% if item.caption or item.title %}
+                        <div class="card-body p-3">
+                            <p class="card-text small text-muted mb-0">
+                                {% if item.type == 'youtube' %}
+                                <i class="fab fa-youtube text-danger me-1"></i>
+                                <span class="fw-bold">{{ item.title }}</span>
+                                {% else %}
+                                {{ item.caption }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        {% endif %}
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
 </div>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0 shadow-none">
+
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body p-0 text-center position-relative">
+                <img src="" id="modalImage" class="img-fluid rounded shadow-lg" style="max-height: 90vh;" alt="Full size view">
+
+                <div class="mt-2">
+                    <p id="modalCaption" class="text-white fw-light bg-dark d-inline-block px-3 py-1 rounded-pill opacity-75"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var galleryModal = document.getElementById('galleryModal');
+
+        if (galleryModal) {
+            galleryModal.addEventListener('show.bs.modal', function (event) {
+                // 1. Find which link was clicked
+                var button = event.relatedTarget;
+
+                // 2. Extract data from that link
+                var imgSrc = button.getAttribute('data-bs-img-src');
+                var imgCaption = button.getAttribute('data-bs-img-caption');
+
+                // 3. Update the Modal's content
+                var modalImage = galleryModal.querySelector('#modalImage');
+                var modalCaption = galleryModal.querySelector('#modalCaption');
+
+                modalImage.src = imgSrc;
+
+                // Handle caption visibility
+                if (imgCaption) {
+                    modalCaption.textContent = imgCaption;
+                    modalCaption.style.display = 'inline-block';
+                } else {
+                    modalCaption.style.display = 'none';
+                }
+            });
+
+            // 4. Cleanup when closed (prevents old image flashing next time)
+            galleryModal.addEventListener('hidden.bs.modal', function () {
+                var modalImage = galleryModal.querySelector('#modalImage');
+                modalImage.src = '';
+            });
+        }
+    });
+</script>
+
+<style>
+    .card:hover .hover-overlay {
+        opacity: 1 !important;
+    }
+</style>

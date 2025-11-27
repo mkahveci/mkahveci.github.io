@@ -1,0 +1,17 @@
+<!--
+USAGE:
+Here is the concept we discussed in class:
+
+{% include youtube.html id="dQw4w9WgXcQ" %}
+
+As you can see in the video above...
+-->
+<div class="card shadow-sm border-0 my-4" style="background-color: var(--bs-card-bg);">
+    <div class="ratio ratio-16x9 rounded overflow-hidden">
+        <iframe src="https://www.youtube.com/embed/{{ include.id }}"
+                title="YouTube video player"
+                allowfullscreen
+                loading="lazy">
+        </iframe>
+    </div>
+</div>
