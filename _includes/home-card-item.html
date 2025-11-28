@@ -1,64 +1,88 @@
 {% comment %}
-Renders a single content item (post, pub, project, news) for the homepage list.
-Requires: item (Jekyll object), type (string), color (Bootstrap color), icon (Font Awesome class)
+--- URL & CONTENT RESOLUTION ---
+Priority:
+1. Custom Parameters (passed directly for static Misc cards)
+2. Data Items (Publications - DOI/PDF logic)
+3. Standard Items (Post/Project/News - item.url)
 {% endcomment %}
 
-{% assign item = include.item %}
-{% assign item_type = include.type %}
-{% assign item_color = include.color %}
-{% assign item_icon = include.icon %}
+{% assign final_url = '#' %}
+{% assign final_title = '' %}
+{% assign final_excerpt = '' %}
+{% assign final_date = '' %}
 
-<div class="card shadow-sm h-100 border-0" style="background-color: var(--bs-card-bg);">
-    <div class="card-body p-4 d-flex">
+{% comment %} 1. RESOLVE URL {% endcomment %}
+{% if include.custom_url %}
+{% assign final_url = include.custom_url %}
+{% elsif include.type == 'publication' %}
+{% if include.item.doi %}
+{% assign final_url = 'https://doi.org/' | append: include.item.doi %}
+{% elsif include.item.url %}
+{% assign final_url = include.item.url %}
+{% elsif include.item.link %}
+{% assign final_url = include.item.link %}
+{% elsif include.item.pdf %}
+{% assign final_url = include.item.pdf %}
+{% else %}
+{% assign final_url = '/publications/' %}
+{% endif %}
+{% else %}
+{% assign final_url = include.item.url %}
+{% endif %}
 
-        {% comment %} LEFT: Icon/Date Column (Flex Shrink) {% endcomment %}
-        <div class="flex-shrink-0 me-4 text-center">
-            <i class="fa-solid {{ item_icon }} fa-2xl text-{{ item_color }} mb-1"></i>
+{% comment %} 2. RESOLVE TEXT CONTENT {% endcomment %}
+{% assign final_title = include.custom_title | default: include.item.title %}
 
-            <div class="small text-muted fw-bold mt-1">
-                {% if item.date %}
-                {{ item.date | date: "%b %d" }}
-                {% elsif item.year %}
-                {{ item.year }}
-                {% endif %}
+{% if include.custom_excerpt %}
+{% assign final_excerpt = include.custom_excerpt %}
+{% elsif include.type == 'publication' %}
+{% assign final_excerpt = include.item.journal %}
+{% else %}
+{% assign final_excerpt = include.item.excerpt | strip_html | truncate: 80 %}
+{% endif %}
+
+{% if include.custom_date %}
+{% assign final_date = include.custom_date %}
+{% elsif include.item.year %}
+{% assign final_date = include.item.year %}
+{% elsif include.item.date %}
+{% assign final_date = include.item.date | date: "%B %d, %Y" %}
+{% endif %}
+
+<div class="card shadow-sm h-100 border-0 position-relative" style="background-color: var(--bs-card-bg);">
+
+    {% if include.category_url %}
+    <a href="{{ include.category_url }}"
+       class="badge rounded-pill text-bg-{{ include.color }} text-decoration-none position-absolute top-0 end-0 m-3 z-2 shadow-sm"
+       title="View {{ include.category_label }}">
+        {{ include.category_label }} <i class="fas fa-arrow-right fa-xs ms-1 opacity-50"></i>
+    </a>
+    {% endif %}
+
+    <div class="card-body d-flex p-4">
+        <div class="flex-shrink-0 me-3 mt-1">
+            <div class="d-flex align-items-center justify-content-center rounded-circle bg-{{ include.color }} bg-opacity-10 text-{{ include.color }}"
+                 style="width: 48px; height: 48px;">
+                <i class="fas {{ include.icon }} fa-lg"></i>
             </div>
         </div>
 
-        {% comment %} RIGHT: Content Column (Flex Grow) {% endcomment %}
         <div class="flex-grow-1">
+            {% if final_date != '' %}
+            <div class="small text-muted mb-1">
+                {{ final_date }}
+            </div>
+            {% endif %}
 
-            <h5 class="fw-bold mb-1">
-                {% assign item_url = item.url | default: "/#fallback" %}
-                {% if item_type == 'publication' %}
-                {% assign item_url = '/publications/#' | append: item.id %}
-                {% elsif item_type == 'news' %}
-                {% assign item_url = '/news/#' | append: item.id %}
-                {% endif %}
-
-                <a href="{{ item_url | relative_url }}" class="text-primary text-decoration-none">
-                    {{ item.title }}
+            <h5 class="fw-bold text-body mb-2 pe-5">
+                <a href="{{ final_url }}" class="text-decoration-none text-body stretched-link">
+                    {{ final_title | truncate: 60 }}
                 </a>
             </h5>
 
-            {% comment %} Secondary Meta Info (e.g., source, author, deadline) {% endcomment %}
-            <div class="small text-muted line-height-1-2">
-                {% if item.source_info %}
-                {{ item.source_info }}
-                {% elsif item.author %}
-                by {{ item.author }}
-                {% elsif item.deadline %}
-                Deadline: {{ item.deadline | date: "%b %d %Y" }}
-                {% endif %}
-            </div>
-
-            {% comment %} Excerpt/Description {% endcomment %}
-            {% assign excerpt = item.excerpt | default: item.description %}
-            {% if excerpt %}
-            <p class="small text-muted mt-2 mb-0">
-                {{ excerpt | strip_html | truncatewords: 25 }}
+            <p class="card-text small text-muted mb-0">
+                {{ final_excerpt }}
             </p>
-            {% endif %}
-
         </div>
     </div>
 </div>

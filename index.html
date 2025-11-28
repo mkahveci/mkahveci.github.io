@@ -40,73 +40,118 @@ categories:
         </div>
     </div>
 </div>
+
 <div class="container my-5">
 
-    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
-        <a href="/blog/" class="text-primary text-decoration-none">Recent Posts <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
-    </h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for post in site.categories.blog limit:2 %}
+        {% comment %} --- BLOG --- {% endcomment %}
+        {% for post in site.categories.blog limit:3 %}
         <div class="col">
-            {% include home-card-item.html item=post type='post' color='primary' icon='fa-pen-to-square' %}
+            {% include home-card-item.html
+            item=post
+            type='post'
+            color='primary'
+            icon='fa-pen-to-square'
+            category_label='Blog'
+            category_url='/blog/'
+            %}
         </div>
         {% endfor %}
-    </div>
 
-    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
-        <a href="/publications/" class="text-primary text-decoration-none">Recent Publications <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
-    </h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% comment %} --- PUBLICATIONS --- {% endcomment %}
         {% assign sorted_publications = site.data.publications | sort: 'year' | reverse %}
-        {% for publication in sorted_publications limit:2 %}
+        {% for publication in sorted_publications limit:3 %}
         <div class="col">
-            {% include home-card-item.html item=publication type='publication' color='success' icon='fa-book-open-reader' %}
+            {% include home-card-item.html
+            item=publication
+            type='publication'
+            color='success'
+            icon='fa-book-open-reader'
+            category_label='Publications'
+            category_url='/publications/'
+            %}
         </div>
         {% endfor %}
-    </div>
 
-    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
-        <a href="/projects/" class="text-primary text-decoration-none">Active Projects <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
-    </h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
-        {% for project in site.categories.projects limit:2 %}
+        {% comment %} --- PROJECTS --- {% endcomment %}
+        {% for project in site.categories.projects limit:3 %}
         <div class="col">
-            {% include home-card-item.html item=project type='project' color='info' icon='fa-flask' %}
+            {% include home-card-item.html
+            item=project
+            type='project'
+            color='info'
+            icon='fa-flask'
+            category_label='Projects'
+            category_url='/projects/'
+            %}
         </div>
         {% endfor %}
-    </div>
 
-    <h2 class="head fw-bold mt-5 mb-4 text-center text-primary">
-        <a href="/news/" class="text-primary text-decoration-none">Recent News & Opportunities <i class="fas fa-arrow-right fa-xs ms-2"></i></a>
-    </h2>
-    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        {% comment %} --- NEWS --- {% endcomment %}
         {% assign sorted_announcements = site.data.announcements | sort: 'date' | reverse %}
-        {% for item in sorted_announcements limit:2 %}
+        {% for item in sorted_announcements limit:3 %}
         <div class="col">
-            {% include home-card-item.html item=item type='news' color='danger' icon='fa-bullhorn' %}
+            {% include home-card-item.html
+            item=item
+            type='news'
+            color='danger'
+            icon='fa-bullhorn'
+            category_label='News'
+            category_url='/news/'
+            %}
         </div>
         {% endfor %}
-    </div>
 
-    <div class="mt-5 pt-3 border-top border-secondary text-center">
-        <h2 class="h5 fw-semibold mb-2 text-muted">Misc</h2>
-        <ul class="list-inline small">
-            <li class="list-inline-item me-3">
-                <a href="/about" class="text-primary text-decoration-none">about</a>
-            </li>
-            <li class="list-inline-item me-3">
-                <a href="/news/" class="text-primary text-decoration-none">news</a>
-            </li>
-            <li class="list-inline-item me-3">
-                <a href="/join" class="text-primary text-decoration-none">join</a>
-            </li>
-            <li class="list-inline-item me-3">
-                <a href="/album" class="text-primary text-decoration-none">album</a>
-            </li>
-            <li class="list-inline-item me-3">
-                <a href="/contact" class="text-primary text-decoration-none">contact</a>
-            </li>
-        </ul>
+        {% comment %} --- MISC STATIC PAGES (Manually Added as Cards) --- {% endcomment %}
+
+        <div class="col">
+            {% include home-card-item.html
+            custom_title="About the Group"
+            custom_url="/about"
+            custom_excerpt="Learn about our mission, vision, and the principal investigator."
+            color="secondary"
+            icon="fa-circle-info"
+            category_label="Info"
+            category_url="/about"
+            %}
+        </div>
+
+        <div class="col">
+            {% include home-card-item.html
+            custom_title="Join the Team"
+            custom_url="/join"
+            custom_excerpt="Information for prospective students, postdocs, and researchers."
+            color="primary"
+            icon="fa-user-plus"
+            category_label="Career"
+            category_url="/join"
+            %}
+        </div>
+
+        <div class="col">
+            {% include home-card-item.html
+            custom_title="Photo Album"
+            custom_url="/album"
+            custom_excerpt="A visual journey of our academic conferences and social events."
+            color="warning"
+            icon="fa-images"
+            category_label="Gallery"
+            category_url="/album"
+            %}
+        </div>
+
+        <div class="col">
+            {% include home-card-item.html
+            custom_title="Contact Us"
+            custom_url="/contact"
+            custom_excerpt="Get in touch for collaborations, speaking engagements, or inquiries."
+            color="dark"
+            icon="fa-paper-plane"
+            category_label="Connect"
+            category_url="/contact"
+            %}
+        </div>
+
     </div>
 </div>
