@@ -15,23 +15,26 @@ mermaid: true
   <p>This section covers the standard Liquid includes for adding rich content to any page.</p>
 
 <h3 class="h5 fw-bold text-body mt-4">Page Redirect</h3>
-  <p>Add this to the front matter of a page to create a redirect from an old URL.</p>
-  {% highlight yaml %}
-  {% raw %}
-  redirect_from:
-  - /projectsgit/ai-in-education/
-  {% endraw %}
-  {% endhighlight %}
+<p>Add this to the front matter of a page to create a redirect from an old URL.</p>
+
+{% highlight yaml %}
+{% raw %}
+redirect_from:
+- /projectsgit/ai-in-education/
+{% endraw %}
+{% endhighlight %}
 
 <h3 class="h5 fw-bold text-body mt-4">Related Protects Call Out</h3>
-  <p>Adds a small "Related Project" box, typically at the top of a page or post.</p>
-  {% highlight yaml %}
-  {% raw %}
-  related_project:
-    name: "Quantitative Market Analysis (qma)"
-    url: /projectsgit/qma/
-  {% endraw %}
-  {% endhighlight %}
+
+<p>Adds a small "Related Project" box, typically at the top of a page or post.</p>
+
+{% highlight yaml %}
+{% raw %}
+related_project:
+  name: "Quantitative Market Analysis (qma)"
+  url: /qma/
+{% endraw %}
+{% endhighlight %}
 
 <h3 class="h5 fw-bold text-body mt-4">Universal Figure Include (Image & Flowchart)</h3>
   <p>This single include can render either a <strong>standard image</strong> or a <strong>Mermaid flowchart</strong>, complete with automatic figure numbering (requires <code>figure_counter: 0</code> in the front matter).</p>
