@@ -1,5 +1,115 @@
 [
-
+  {
+    "meta": {
+      "publicationDate": "2025-12-01",
+      "tradeTitle": "Short Strangle on /NQ",
+      "ticker": "/NQZ25",
+      "accountType": "PaperMoney ($200k)",
+      "tags": ["Ladder Strategy", "Strangle", "Neutral", "21 DTE Rule", "Defensive Roll"]
+    },
+    "marketContext": {
+      "currentPrice": 25550.00,
+      "ivRank": 45.00,
+      "earningsDate": "N/A",
+      "thesis": "High IV play on Nasdaq. Neutral assumption. Managed for Time/Gamma risk."
+    },
+    "strategyDetails": {
+      "type": "Strangle",
+      "direction": "Neutral",
+      "entryType": "Credit",
+      "expirationDate": "2025-12-19",
+      "dte": 43,
+      "legs": [
+        { "action": "Sell", "type": "Call", "strike": 27100.00, "expiry": "2025-12-19" },
+        { "action": "Sell", "type": "Put",  "strike": 24000.00, "expiry": "2025-12-19" }
+      ]
+    },
+    "financials": {
+      "entryPrice": 436.75,
+      "maxProfit": 8735.00,
+      "maxLoss": "Undefined",
+      "buyingPowerEffect": 14500.00,
+      "riskRewardRatio": "Undefined",
+      "metrics": {
+        "roc": 0.44,
+        "annualizedRoc": 6.42,
+        "dailyProfitPotential": 116.46
+      }
+    },
+    "managementPlan": {
+      "profitTarget": 4367.50,
+      "stopLoss": 10000.00,
+      "daysToManage": 21,
+      "notes": "Mandatory exit at 21 DTE to avoid Gamma risk. Position closed at 18 DTE."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-11-06",
+        "action": "Opened Position",
+        "details": {
+          "strategy": "Short Strangle",
+          "netPrice": 436.75,
+          "priceType": "Credit",
+          "contracts": 1
+        },
+        "financials": {
+          "commission": 4.50,
+          "totalCost": -8735.00
+        },
+        "notes": "Filled: Sold 27100 Call / 24000 Put."
+      },
+      {
+        "stepType": "ADJUST_ROLL",
+        "date": "2025-11-07",
+        "action": "Rolled Position",
+        "details": {
+          "fromExpiry": "DEC 19",
+          "toExpiry": "DEC 19",
+          "oldStrikes": "27100 Call",
+          "newStrikes": "25900 Call",
+          "rollCredit": 5275.00
+        },
+        "financials": {
+          "commission": 4.50,
+          "realizedPnlForLeg": 0.00
+        },
+        "notes": "Defense 1: Rolled Call down to reduce Delta."
+      },
+      {
+        "stepType": "ADJUST_ROLL",
+        "date": "2025-11-14",
+        "action": "Rolled Position",
+        "details": {
+          "fromExpiry": "DEC 19",
+          "toExpiry": "DEC 19",
+          "oldStrikes": "25900 Call",
+          "newStrikes": "25400 Call",
+          "rollCredit": 3515.00
+        },
+        "financials": {
+          "commission": 4.50,
+          "realizedPnlForLeg": 0.00
+        },
+        "notes": "Defense 2: Rolled Call down further. Tightened Strangle."
+      },
+      {
+        "stepType": "CLOSE_TRADE",
+        "date": "2025-12-01",
+        "action": "Closed Position",
+        "details": {
+          "closingPrice": 553.25,
+          "priceType": "Debit"
+        },
+        "financials": {
+          "commission": 4.50,
+          "grossPnl": 6460.00,
+          "netPnl": 6442.00
+        },
+        "notes": "Strategy Exit: Closed at 18 DTE (inside 21-day window). Bought back Strangle (25400/24000). Total Credits: $17,525. Debit Paid: $11,065."
+      }
+    ]
+  },
   {
     "meta": {
       "publicationDate": "2025-12-01",
