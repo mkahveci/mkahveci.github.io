@@ -6,9 +6,12 @@
         </p>
     </div>
 
-    {% comment %} --- LIQUID DATA ASSIGNMENT --- {% endcomment %}
-    {% assign sorted_trades = site.data.trade_ideas %}
-    {% assign all_strategies = sorted_trades | map: 'analysis' | map: 'strategyType' | uniq | sort %}
+    {% comment %} --- 1. DATA PREPARATION --- {% endcomment %}
+    {% assign sorted_trades = site.data.trade_ideas | default: [] %}
+
+    {% assign strategies_new = sorted_trades | map: 'strategyDetails' | map: 'type' | compact %}
+    {% assign strategies_old = sorted_trades | map: 'analysis' | map: 'strategyType' | compact %}
+    {% assign all_strategies = strategies_new | concat: strategies_old | uniq | sort %}
 
     <section id="dashboard" class="mb-5">
         <h2 class="display-6 mb-4"><i class="fas fa-tachometer-alt fa-fw text-muted me-2"></i> Performance Dashboard</h2>
@@ -18,20 +21,15 @@
                 <label for="unified-filter" class="form-label small text-muted mb-0">Filter By:</label>
                 <select id="unified-filter" class="form-select form-select-sm d-inline-block w-auto">
                     <option value="all" selected>All Trades & Periods</option>
-
                     <optgroup label="Position Status">
                         <option value="position-open">Open Positions Only</option>
                         <option value="position-closed">Closed Positions Only</option>
                     </optgroup>
-
                     <optgroup label="Trading Strategy">
                         {% for strategy in all_strategies %}
-                        {% unless strategy == nil or strategy == empty %}
                         <option value="strategy-{{ strategy | slugify }}">{{ strategy }}</option>
-                        {% endunless %}
                         {% endfor %}
                     </optgroup>
-
                     <optgroup label="Time Period">
                         <option value="period-{{ site.time | date: '%Y' }}">This Year ({{ site.time | date: '%Y' }})</option>
                         <option value="period-{{ site.time | date: '%Y' | minus: 1 }}">Last Year ({{ site.time | date: '%Y' | minus: 1 }})</option>
@@ -50,99 +48,64 @@
             </div>
         </div>
 
+        {% comment %} --- KPI DASHBOARD (Requires JS to populate) --- {% endcomment %}
         <div class="row g-3" id="kpi-container">
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Total P/L</h6>
-                        <h6 class="card-title mb-0" id="kpi-total-pnl">$0.00</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Win Rate</h6>
-                        <h6 class="card-title mb-0" id="kpi-win-rate">0%</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Avg. Profit</h6>
-                        <h6 class="card-title mb-0" id="kpi-avg-profit">$0.00</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Avg. Loss</h6>
-                        <h6 class="card-title mb-0" id="kpi-avg-loss">$0.00</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-3 mt-3">
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Total Trades</h6>
-                        <h6 class="card-title mb-0" id="kpi-total-trades">0</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Profit Factor</h6>
-                        <h6 class="card-title mb-0" id="kpi-profit-factor">0.00</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Largest Profit</h6>
-                        <h6 class="card-title mb-0 text-success" id="kpi-largest-profit">$0.00</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="p-2 rounded bg-body-tertiary shadow-sm h-100">
-                    <div class="text-center">
-                        <h6 class="card-subtitle mb-1 small text-body fw-bold">Largest Loss</h6>
-                        <h6 class="card-title mb-0 text-danger" id="kpi-largest-loss">$0.00</h6>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-3 col-6"><div class="p-2 rounded bg-body-tertiary shadow-sm h-100 text-center"><h6 class="card-subtitle mb-1 small text-body fw-bold">Total P/L</h6><h6 class="card-title mb-0" id="kpi-total-pnl">$0.00</h6></div></div>
+            <div class="col-md-3 col-6"><div class="p-2 rounded bg-body-tertiary shadow-sm h-100 text-center"><h6 class="card-subtitle mb-1 small text-body fw-bold">Win Rate</h6><h6 class="card-title mb-0" id="kpi-win-rate">0%</h6></div></div>
+            <div class="col-md-3 col-6"><div class="p-2 rounded bg-body-tertiary shadow-sm h-100 text-center"><h6 class="card-subtitle mb-1 small text-body fw-bold">Avg. Profit</h6><h6 class="card-title mb-0" id="kpi-avg-profit">$0.00</h6></div></div>
+            <div class="col-md-3 col-6"><div class="p-2 rounded bg-body-tertiary shadow-sm h-100 text-center"><h6 class="card-subtitle mb-1 small text-body fw-bold">Avg. Loss</h6><h6 class="card-title mb-0" id="kpi-avg-loss">$0.00</h6></div></div>
         </div>
     </section>
 
     <section id="trades">
         <h2 class="display-6 mb-4 mt-5"><i class="fas fa-chart-line fa-fw text-muted me-2"></i> Options Trading Log</h2>
 
-        {% comment %} --- LOG FILTERS (Removed "Show: Last X" filter entirely) --- {% endcomment %}
-
         <div class="row row-cols-1 g-4">
-            {% assign trades_to_show = 9999 %}
             {% assign current_count = 0 %}
 
             {% for trade in sorted_trades %}
 
-            {% comment %} --- DATA ATTRIBUTES FOR JS FILTERING --- {% endcomment %}
+            {% comment %} --- NORMALIZATION LAYER --- {% endcomment %}
+
+            {% comment %} 1. Meta Data {% endcomment %}
+            {% assign t_title = trade.meta.tradeTitle | default: trade.tradeTitle %}
+            {% assign t_date  = trade.meta.publicationDate | default: trade.publicationDate %}
+            {% assign t_account = trade.meta.accountType | default: trade.accountType | default: 'Margin' %}
+            {% assign t_ticker = trade.meta.ticker | default: trade.ticker %}
+
+            {% comment %} 2. Market Context {% endcomment %}
+            {% assign t_price = trade.marketContext.currentPrice | default: trade.currentPrice %}
+            {% assign t_iv = trade.marketContext.ivRank | default: trade.ivRank %}
+            {% assign t_earnings = trade.marketContext.earningsDate | default: trade.earningsDate %}
+            {% assign t_thesis = trade.marketContext.thesis | default: trade.analysis.thesis %}
+            {% assign t_plan = trade.managementPlan.notes | default: trade.analysis.managementPlan %}
+
+            {% comment %} 3. Strategy Details {% endcomment %}
+            {% assign t_strat_type = trade.strategyDetails.type | default: trade.analysis.strategyType %}
+            {% assign t_expiration = trade.strategyDetails.expirationDate | default: trade.analysis.tradeDetails.expiration %}
+            {% assign t_dte = trade.strategyDetails.dte | default: trade.analysis.tradeDetails.dte %}
+            {% assign t_legs = trade.strategyDetails.legs %}
+            {% assign t_spread_details = trade.analysis.tradeDetails.spreadDetails %}
+
+            {% comment %} 4. Financials {% endcomment %}
+            {% assign t_max_profit = trade.financials.maxProfit | default: trade.analysis.tradeDetails.maxProfit %}
+            {% assign t_roc = trade.financials.metrics.roc | default: trade.analysis.metrics.roc %}
+            {% assign t_pop = trade.financials.metrics.pop | default: trade.analysis.metrics.pop %}
+            {% assign t_bp = trade.financials.buyingPowerEffect | default: trade.analysis.metrics.buyingPowerEffect %}
+            {% assign t_entry_price = trade.financials.entryPrice | default: t_spread_details.netCredit %}
+
+            {% comment %} 5. Status Logic {% endcomment %}
             {% assign last_step = trade.tradeProgression | last %}
-            {% if last_step and last_step.stepType == 'CLOSE' or last_step and last_step.stepType == 'CALLED_AWAY' %}
+            {% if last_step.stepType == 'CLOSE_TRADE' or last_step.stepType == 'CLOSE' or last_step.stepType == 'CALLED_AWAY' or last_step.stepType == 'CLOSED_INDEPENDENT_PUT' %}
             {% assign trade_status_slug = "closed" %}
             {% else %}
             {% assign trade_status_slug = "open" %}
             {% endif %}
 
-            {% assign trade_strategy_slug = trade.analysis.strategyType | slugify | default: 'unknown' %}
-            {% assign trade_year = trade.publicationDate | date: "%Y" %}
-            {% assign account_lower = trade.accountType | downcase | default: 'margin' %}
+            {% assign account_lower = t_account | downcase %}
+            {% assign trade_strategy_slug = t_strat_type | slugify | default: 'unknown' %}
+            {% assign trade_year = t_date | date: "%Y" %}
+
 
             <div class="col trade-card-wrapper"
                  data-account-type="{{ account_lower }}"
@@ -154,14 +117,14 @@
                     <div class="card-body d-flex">
 
                         <div class="date-block me-3">
-                            <span class="month">{{ trade.publicationDate | date: "%b" | upcase }}</span>
-                            <span class="day">{{ trade.publicationDate | date: "%d" }}</span>
+                            <span class="month">{{ t_date | date: "%b" | upcase }}</span>
+                            <span class="day">{{ t_date | date: "%d" }}</span>
                         </div>
 
                         <div class="flex-grow-1">
 
                             <div class="trade-card-header d-flex justify-content-between align-items-start" style="gap: 0.5rem;">
-                                <h5 class="card-title h6 mb-1">{{ trade.tradeTitle }}</h5>
+                                <h5 class="card-title h6 mb-1">{{ t_title }}</h5>
 
                                 <div class="d-flex flex-shrink-0" style="gap: 0.5rem;">
                                     {% if trade_status_slug == "open" %}
@@ -169,199 +132,115 @@
                                     {% else %}
                                     <span class="status-pill status-closed">Closed</span>
                                     {% endif %}
-
-                                    {% comment %} --- NEW ACCOUNT TYPE PILL --- {% endcomment %}
-                                    <span class="status-pill account-{{ account_lower }}">{{ trade.accountType | default: "Margin" }}</span>
+                                    <span class="status-pill account-{{ account_lower }}">{{ t_account }}</span>
                                 </div>
                             </div>
 
-                            <p class="card-text small text-muted"><strong>Return:</strong> {{ trade.expectedReturnDisplay }}</p>
+                            {% if trade.meta.tags %}
+                            <div class="mb-2">
+                                {% for tag in trade.meta.tags limit:2 %}
+                                <span class="badge text-bg-light fw-normal text-secondary border me-1">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
 
                             <div class="d-flex justify-content-between small p-2 rounded bg-tertiary-subtle mt-2">
-                                <span>Price: <strong>&#36;{%- capture price %}{% assign p = trade.currentPrice | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ price | strip }}</strong></span>
-                                <span>IV Rank: <strong>{{ trade.ivRank | default: "N/A" }}%</strong></span>
-                                <span>Earnings: <strong>{{ trade.earningsDate | default: "N/A" }}</strong></span>
+                                <span>Price: <strong>{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_price | round: 2 }}</strong></span>
+                                <span>IV Rank: <strong>{{ t_iv }}%</strong></span>
+                                <span>Earnings: <strong>{{ t_earnings | default: "N/A" }}</strong></span>
                             </div>
 
-                            <p class="card-text small mt-3">{{ trade.summaryJustification }}</p>
+                            <p class="card-text small mt-3">{{ t_thesis | truncatewords: 30 }}</p>
 
                             <div class="trade-card-section bg-tertiary-subtle">
                                 <ul class="list-unstyled small mb-0">
-                                    <li class="d-flex justify-content-between"><span><strong>Strategy:</strong></span><span class="font-monospace">{{ trade.analysis.strategyType }}</span></li>
-                                    <li class="d-flex justify-content-between pt-1"><span><strong>Expiration (DTE):</strong></span><span class="font-monospace">{{ trade.analysis.tradeDetails.expiration | date: "%b %d, %Y" }} ({{ trade.analysis.tradeDetails.dte }})</span></li>
-                                    <li class="d-flex justify-content-between pt-1"><span><strong>Net Credit:</strong></span><span class="font-monospace text-primary">&#36;{%- capture net_credit %}{% assign p = trade.analysis.tradeDetails.spreadDetails.netCredit | default: trade.analysis.tradeDetails.putPremium | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ net_credit | strip }}</span></li>
-                                    <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">&#36;{%- capture max_profit %}{% assign p = trade.analysis.tradeDetails.maxProfit | to_s | split: '.' %}{{ p[0] }}.{% if p[1] == nil %}00{% elsif p[1].size == 1 %}{{ p[1] }}0{% else %}{{ p[1] | slice: 0, 2 }}{% endif %}{% endcapture %}{{ max_profit | strip }}</span></li>
+                                    <li class="d-flex justify-content-between"><span><strong>Strategy:</strong></span><span class="font-monospace">{{ t_strat_type }}</span></li>
+                                    <li class="d-flex justify-content-between pt-1"><span><strong>Expiration (DTE):</strong></span><span class="font-monospace">{{ t_expiration | date: "%b %d, %Y" }} ({{ t_dte }})</span></li>
+                                    <li class="d-flex justify-content-between pt-1"><span><strong>Entry Price:</strong></span><span class="font-monospace text-primary">{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_entry_price }}</span></li>
+                                    {% comment %} Max Profit/BP are usually hard dollars, so we keep the $ sign here {% endcomment %}
+                                    <li class="d-flex justify-content-between pt-1"><span><strong>Max Profit:</strong></span><span class="font-monospace text-success">&#36;{{ t_max_profit }}</span></li>
                                 </ul>
 
                                 <h6 class="small mt-3 mb-1"><strong>Leg Details</strong></h6>
                                 <div class="leg-grid">
-                                    {% assign details = trade.analysis.tradeDetails.spreadDetails %}
-
-                                    {% if details.shortPutStrike > 0 %}
+                                    {% if t_legs %}
+                                    {% for leg in t_legs %}
                                     <div class="leg-item">
-                                        <strong>SELL PUT</strong>
-                                        <span class="text-danger">&#36;{{ details.shortPutStrike | round: 2 }}</span>
+                                        <strong class="{% if leg.action == 'Sell' %}text-danger{% else %}text-success{% endif %}">{{ leg.action | upcase }} {{ leg.type | upcase }}</strong>
+                                        <span>{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ leg.strike }}</span>
+                                        <span class="text-muted small" style="font-size: 0.7em;">{{ leg.expiry | date: "%b %d" }}</span>
                                     </div>
+                                    {% endfor %}
+                                    {% else %}
+                                    {% comment %} OLD JSON FORMAT FALLBACK {% endcomment %}
+                                    {% if t_spread_details.shortPutStrike > 0 %}
+                                    <div class="leg-item"><strong>SELL PUT</strong><span class="text-danger">{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_spread_details.shortPutStrike }}</span></div>
                                     {% endif %}
-
-                                    {% if details.longPutStrike > 0 %}
-                                    <div class="leg-item">
-                                        <strong>BUY PUT</strong>
-                                        <span class="text-success">&#36;{{ details.longPutStrike | round: 2 }}</span>
-                                    </div>
+                                    {% if t_spread_details.longPutStrike > 0 %}
+                                    <div class="leg-item"><strong>BUY PUT</strong><span class="text-success">{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_spread_details.longPutStrike }}</span></div>
                                     {% endif %}
-
-                                    {% if details.shortCallStrike > 0 %}
-                                    <div class="leg-item">
-                                        <strong>SELL CALL</strong>
-                                        <span class="text-danger">&#36;{{ details.shortCallStrike | round: 2 }}</span>
-                                    </div>
+                                    {% if t_spread_details.shortCallStrike > 0 %}
+                                    <div class="leg-item"><strong>SELL CALL</strong><span class="text-danger">{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_spread_details.shortCallStrike }}</span></div>
                                     {% endif %}
-
-                                    {% if details.longCallStrike > 0 %}
-                                    <div class="leg-item">
-                                        <strong>BUY CALL</strong>
-                                        <span class="text-success">&#36;{{ details.longCallStrike | round: 2 }}</span>
-                                    </div>
+                                    {% if t_spread_details.longCallStrike > 0 %}
+                                    <div class="leg-item"><strong>BUY CALL</strong><span class="text-success">{% unless t_ticker contains '/' %}&#36;{% endunless %}{{ t_spread_details.longCallStrike }}</span></div>
+                                    {% endif %}
                                     {% endif %}
                                 </div>
                             </div>
+
                             <div class="trade-card-section bg-info-subtle">
                                 <div class="metrics-grid">
-                                    <div class="metric-item text-center"><strong>ROC</strong><span>{{ trade.analysis.metrics.roc | round: 2 }}%</span></div>
-                                    <div class="metric-item text-center"><strong>Annualized</strong><span>{{ trade.analysis.metrics.annualizedRoc | round: 2 }}%</span></div>
-                                    <div class="metric-item text-center"><strong>POP</strong><span>{{ trade.analysis.metrics.pop | round: 1 }}%</span></div>
-                                    <div class="metric-item text-center"><strong>Buying Power</strong><span>&#36;{{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}</span></div>
+                                    <div class="metric-item text-center"><strong>ROC</strong><span>{{ t_roc | round: 1 }}%</span></div>
+                                    <div class="metric-item text-center"><strong>POP</strong><span>{{ t_pop | round: 0 }}%</span></div>
+                                    <div class="metric-item text-center"><strong>Buying Power</strong><span>&#36;{{ t_bp | round: 0 }}</span></div>
                                 </div>
                             </div>
 
                             <div class="trade-progression-container small">
                                 <h6 class="h6 small"><strong>Trade Progression Log</strong></h6>
-
                                 {% if trade.tradeProgression and trade.tradeProgression.size > 0 %}
                                 <ol class="progression-timeline">
                                     {% for step in trade.tradeProgression %}
                                     {% assign step_type_lower = step.stepType | downcase %}
-
-                                    {% comment %} Clean the stepType for CSS class {% endcomment %}
-                                    {% assign step_class = step_type_lower | replace: ': ', '-' | replace: ':', '-' | replace: '_', '-' | replace: ' ', '-' %}
+                                    {% assign step_class = step_type_lower | replace: ': ', '-' | replace: ':', '-' | replace: '_', '-' %}
 
                                     <li class="progression-step step-{{ step_class }}">
                                         <div class="progression-header">
-
-                                            {% comment %} --- UNIVERSAL PILL TEXT LOGIC START --- {% endcomment %}
                                             {% assign original_text = step.stepType | replace: '_', ' ' %}
-                                            {% assign default_text = original_text | capitalize %}
-
-                                            {% comment %} Define Action Category for Coloring/Context {% endcomment %}
+                                            {% assign pill_text = original_text | capitalize %}
                                             {% assign action_category = "default" %}
 
-                                            {% comment %} Explicit Mappings for complex step types {% endcomment %}
-                                            {% if step.stepType contains 'OPEN' %}
-                                            {% assign pill_text = "OPEN TRADE" %}
-                                            {% assign action_category = "open" %}
-                                            {% elsif step.stepType contains 'CLOSE' %}
-                                            {% assign pill_text = "CLOSE TRADE" %}
-                                            {% assign action_category = "close" %}
-                                            {% elsif step.stepType contains 'ADJUSTMENT' %}
-                                            {% assign pill_text = "ADJUSTMENT" %}
-                                            {% assign action_category = "adjust" %}
-                                            {% elsif step.stepType contains 'ASSIGNMENT' %}
-                                            {% assign pill_text = "ASSIGNMENT" %}
-                                            {% assign action_category = "risk" %}
-                                            {% elsif step.stepType contains 'CALLED_AWAY' %}
-                                            {% assign pill_text = "CALLED AWAY" %}
-                                            {% assign action_category = "close" %}
-                                            {% elsif step.stepType contains 'WHEEL_STEP: SELL_COVERED_CALL' %}
-                                            {% assign pill_text = "WHEEL: COVERED CALL" %}
-                                            {% assign action_category = "open" %}
-                                            {% elsif step.stepType contains 'WHEEL_STEP: CLOSE_COVERED_CALL' %}
-                                            {% assign pill_text = "WHEEL: CALL CLOSED" %}
-                                            {% assign action_category = "close" %}
-                                            {% elsif step.stepType contains 'OPEN_SHORT_PUT' %}
-                                            {% assign pill_text = "SHORT PUT OPENED" %}
-                                            {% assign action_category = "open" %}
-                                            {% elsif step.stepType contains 'CLOSED_INDEPENDENT_PUT' %}
-                                            {% assign pill_text = "PUT CLOSED (PROFIT)" %}
-                                            {% assign action_category = "close" %}
-                                            {% elsif step.stepType contains 'OPEN_LONG_CALL_CALENDAR' %}
-                                            {% assign pill_text = "CALENDAR OPENED" %}
-                                            {% assign action_category = "open" %}
-                                            {% elsif step.stepType contains 'ROLL_SHORT_LEG' %}
-                                            {% assign pill_text = "SHORT LEG ROLLED" %}
-                                            {% assign action_category = "adjust" %}
-                                            {% else %}
-                                            {% comment %} Default to capitalized and space-separated text for any new/unknown stepType {% endcomment %}
-                                            {% assign pill_text = default_text %}
-                                            {% assign action_category = "new" %}
+                                            {% if step.stepType contains 'OPEN' %} {% assign action_category = "open" %}
+                                            {% elsif step.stepType contains 'CLOSE' %} {% assign action_category = "close" %}
+                                            {% elsif step.stepType contains 'ADJUST' or step.stepType contains 'ROLL' %} {% assign action_category = "adjust" %}
                                             {% endif %}
-                                            {% comment %} --- UNIVERSAL PILL TEXT LOGIC END --- {% endcomment %}
 
                                             <span class="progression-tag tag-{{ action_category }}">{{ pill_text }}</span>
-                                            <span class="progression-date">{{ step.date | date: "%b %d, %Y" }} ({% if step.dteRemaining %}{{ step.dteRemaining }}{% else %}N/A{% endif %} DTE)</span>
+                                            <span class="progression-date">{{ step.date | date: "%b %d" }}</span>
                                         </div>
                                         <div class="progression-details">
-
-                                            {% comment %} 1. DISPLAY ACTION TAKEN {% endcomment %}
-                                            {% if step.actionTaken %}
-                                            <p class="mb-1"><strong>Action:</strong> {{ step.actionTaken }}</p>
+                                            {% if step.action or step.actionTaken %}
+                                            <p class="mb-1"><strong>Action:</strong> {{ step.action | default: step.actionTaken }}</p>
                                             {% endif %}
 
-                                            {% comment %} 2. DISPLAY PROFIT/LOSS/CREDIT/DEBIT {% endcomment %}
-                                            {% if step.grossProfitLossAmount %}
-                                            <span class="profit-loss
-                                                    {% if step.grossProfitLossType == 'Profit' or step.grossCreditTotal > 0 %}text-success{% else %}text-danger{% endif %}">
-                                                    ({{ step.grossProfitLossType | default: "P/L" }}:
-                                                    {% if step.grossProfitLossType == 'Profit' or step.grossProfitLossAmount >= 0 %}+{% else %}-{% endif %}
-                                                    &#36;{{ step.grossProfitLossAmount | abs | round: 2 }})
+                                            {% comment %} Financials Check {% endcomment %}
+                                            {% assign pnl = step.financials.netPnl | default: step.grossProfitLossAmount %}
+                                            {% if pnl %}
+                                            <span class="profit-loss {% if pnl >= 0 %}text-success{% else %}text-danger{% endif %}">
+                                                    (P/L: {% if pnl >= 0 %}+{% endif %}&#36;{{ pnl | round: 2 }})
                                                 </span>
-                                            {% elsif step.netChange %}
-                                            <span class="profit-loss
-                                                    {% if step.netChangeType == 'Credit' %}text-primary{% else %}text-danger{% endif %}">
-                                                    ({{ step.netChangeType }}: &#36;{{ step.netChange | round: 2 }})
-                                                </span>
-                                            {% elsif step.grossCreditTotal %}
-                                            <span class="profit-loss text-primary">(Credit Received: +&#36;{{ step.grossCreditTotal | round: 2 }})</span>
-                                            {% elsif step.netDebitPaid %}
-                                            <span class="profit-loss text-danger">(Debit Paid: -&#36;{{ step.netDebitPaid | round: 2 }})</span>
                                             {% endif %}
 
-                                            {% comment %} 3. DISPLAY ASSIGNMENT DETAILS (Specific for Assignment) {% endcomment %}
-                                            {% if step.stepType == 'ASSIGNMENT' %}
-                                            <p class="small text-muted mb-0 mt-1">
-                                                Stock acquired at a net **Cost Basis of &#36;{{ step.netCostBasisPerShare | round: 2 }}** (&#36;{{ step.purchasePrice }} strike less put premium collected).
-                                            </p>
-                                            {% endif %}
-
-                                            {% comment %} 4. DISPLAY NOTES (Always) {% endcomment %}
                                             {% if step.notes %}
                                             <div class="bg-warning-subtle p-2 small mt-1 mb-0 border-0">
-                                                <strong>Note:</strong> {{ step.notes | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}
+                                                {{ step.notes | markdownify | strip_newlines }}
                                             </div>
                                             {% endif %}
-
                                         </div>
                                     </li>
                                     {% endfor %}
-
-                                    {% comment %} --- NEW ESTIMATED SCENARIO BLOCK (Kept separate) --- {% endcomment %}
-                                    {% if trade.estimatedScenario %}
-                                    <li class="progression-step estimated-scenario">
-                                        <div class="progression-header">
-                                            <span class="progression-tag tag-estimated">ESTIMATED SCENARIO</span>
-                                            <span class="progression-date">Future (N/A DTE)</span>
-                                        </div>
-                                        <div class="progression-details">
-                                            <p class="mb-1"><strong>Aim:</strong> {{ trade.estimatedScenario.aim }}</p>
-                                            <p class="mb-0 small text-muted">{{ trade.estimatedScenario.condition }}</p>
-                                            <p class="mb-0 small text-primary">{{ trade.estimatedScenario.action | replace: '\\$', '&#36;' | replace: '\\%', '%' | markdownify | strip_newlines }}</p>
-                                        </div>
-                                    </li>
-                                    {% endif %}
-
                                 </ol>
-                                {% else %}
-                                <p class="small text-muted mt-2 mb-0">No management steps recorded yet.</p>
                                 {% endif %}
                             </div>
 
@@ -370,54 +249,21 @@
 
                     <div class="card-footer bg-body-tertiary">
                         <div class="d-flex flex-wrap justify-content-end" style="gap: 0.5rem;">
+                            {% assign search_term = t_ticker | append: " stock" %}
+                            {% if t_title contains "Futures" or t_ticker contains "/" %}{% assign search_term = t_ticker | append: " site:cmegroup.com" %}{% endif %}
 
-                            {% comment %} --- Conditional Chart Link --- {% endcomment %}
-                            {% assign search_term = trade.ticker | append: " stock" %}
-                            {% if trade.tradeTitle contains "Futures" %}
-                            {% assign search_term = trade.ticker | append: " site:cmegroup.com" %}
-                            {% endif %}
-
-                            <a href="https://www.google.com/search?q={{ search_term | url_encode }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
-                                <i class="fas fa-chart-line fa-fw me-1"></i> Chart
-                            </a>
-
-                            <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ current_count }}" aria-expanded="false" aria-controls="collapse-{{ current_count }}">
-                                <i class="fas fa-info-circle fa-fw me-1"></i> Thesis & Plan
-                            </button>
-                            <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy trade details"><i class="fas fa-copy fa-fw me-1"></i> Copy</button>
+                            <a href="https://www.google.com/search?q={{ search_term | url_encode }}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fas fa-chart-line fa-fw me-1"></i> Chart</a>
+                            <button class="btn btn-sm btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ current_count }}"><i class="fas fa-info-circle fa-fw me-1"></i> Plan</button>
+                            <button onclick="copyTradeDetails(this)" class="btn btn-sm btn-outline-secondary" title="Copy"><i class="fas fa-copy fa-fw me-1"></i> Copy</button>
 
                             <div class="trade-details-data" style="display: none;">
-                                Trade: {{ trade.tradeTitle }}
-                                Strategy: {{ trade.analysis.strategyType }} ({{ trade.analysis.tradeDetails.dte }} DTE)
-                                Expiration: {{ trade.analysis.tradeDetails.expiration | date: "%b %d" }}
-                                {% if trade.analysis.tradeDetails.spreadDetails %}
-                                Short Put: &#36;{{ details.shortPutStrike | round: 2 }}
-                                Long Put: &#36;{{ details.longPutStrike | round: 2 }}
-                                Short Call: &#36;{{ details.shortCallStrike | round: 2 }}
-                                Long Call: &#36;{{ details.longCallStrike | round: 2 }}
-                                Net Credit: &#36;{{ details.netCredit | round: 2 }}
-                                Max Profit: &#36;{{ trade.analysis.tradeDetails.maxProfit | round: 2 }}
-                                {% else %}
-                                Strike/Premium: &#36;{{ trade.analysis.tradeDetails.putStrike | round: 2 }} / &#36;{{ trade.analysis.tradeDetails.putPremium | round: 2 }}
-                                Max Profit: &#36;{{ trade.analysis.tradeDetails.maxProfit | round: 2 }}
-                                {% endif %}
-                                ROC: {{ trade.analysis.metrics.roc | round: 2 }}%
-                                Buying Power: &#36;{{ trade.analysis.metrics.buyingPowerEffect | round: 0 }}
-                                POP: {{ trade.analysis.metrics.pop | round: 1 }}%
+                                Trade: {{ t_title }} | Strategy: {{ t_strat_type }} | Max Profit: &#36;{{ t_max_profit }}
                             </div>
                         </div>
-
                         <div class="collapse mt-3" id="collapse-{{ current_count }}">
                             <div class="small p-3 rounded bg-warning-subtle">
-                                <h6 class="h6 small"><strong>Thesis</strong></h6>
-                                <p>{{ trade.analysis.thesis }}</p>
-                                <h6 class="h6 small mt-3"><strong>Management Plan</strong></h6>
-                                <p class="mb-0">{{ trade.analysis.managementPlan
-                                    | replace: '\\$', '&#36;'
-                                    | replace: '\\%', '%'
-                                    | markdownify
-                                    | strip_newlines
-                                    }}</p>
+                                <h6 class="h6 small"><strong>Management Plan</strong></h6>
+                                <p class="mb-0">{{ t_plan | default: "No plan recorded." }}</p>
                             </div>
                         </div>
                     </div>
@@ -431,199 +277,120 @@
 </div>
 
 <script>
-    // 1. Data Initialization (Must be first)
+    // --- JS LOGIC FOR FILTERS & KPIS ---
     const jekyllData = {{ site.data.trade_ideas | jsonify }};
 
     document.addEventListener('DOMContentLoaded', function() {
-        // --- 1. CONFIG & STATE ---
         let allRealizedTrades = [];
-
-        // FILTER ELEMENTS
         const unifiedFilter = document.getElementById('unified-filter');
         const accountFilter = document.getElementById('dash-account-filter');
-
-        // LOG ELEMENTS
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
-
-        // --- 2. DATA PROCESSING ---
         function loadAndProcessData() {
             try {
-                const jekyllTrades = jekyllData;
-                allRealizedTrades = [];
+                if (!jekyllData) return;
+                jekyllData.forEach(trade => {
+                    // Normalization for JS
+                    const meta = trade.meta || {};
+                    const account = (meta.accountType || trade.accountType || 'margin').toLowerCase();
+                    const analysis = trade.strategyDetails || trade.analysis || {};
+                    const strategy = (analysis.type || analysis.strategyType || 'unknown').toLowerCase().replace(/[^a-z0-9]/g, '-');
+                    const pubDate = meta.publicationDate || trade.publicationDate;
+                    const entryYear = pubDate ? new Date(pubDate).getFullYear().toString() : 'unknown';
 
-                jekyllTrades.forEach(trade => {
-                    const account = trade.accountType ? trade.accountType.toLowerCase() : 'margin';
-                    const strategy = (trade.analysis.strategyType || 'Unknown').toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-                    const entryYear = trade.publicationDate ? new Date(trade.publicationDate).getFullYear().toString() : 'unknown';
-
-                    if (trade.tradeProgression && trade.tradeProgression.length > 0) {
-
-                        // Process realized P&L for KPIs
+                    if (trade.tradeProgression) {
                         trade.tradeProgression.forEach(step => {
-                            if (step.stepType === 'CLOSE' ||
-                                step.stepType === 'CALLED_AWAY' ||
-                                step.stepType === 'CLOSED_INDEPENDENT_PUT') {
+                            if (['CLOSE_TRADE', 'CLOSE', 'CALLED_AWAY'].includes(step.stepType)) {
+                                let pnl = 0;
+                                if(step.financials) pnl = step.financials.netPnl;
+                                else pnl = step.grossProfitLossAmount;
 
                                 allRealizedTrades.push({
                                     date: new Date(step.date),
-                                    pnl: parseFloat(step.grossProfitLossAmount || 0),
+                                    pnl: parseFloat(pnl || 0),
                                     account: account,
                                     strategy: strategy,
-                                    entryYear: entryYear,
-                                    positionStatus: 'closed',
-                                    ticker: trade.ticker
+                                    entryYear: entryYear
                                 });
                             }
                         });
                     }
                 });
-
-                allRealizedTrades.sort((a, b) => a.date - b.date);
                 updateDashboardAndLog();
-
-            } catch (error) {
-                console.error('Error processing dashboard data:', error);
-            }
+            } catch (error) { console.error('Error:', error); }
         }
 
-        // --- 3. FILTERING LOGIC (Trades/KPIs) ---
-        function filterTrades(tradeData, account, unifiedFilterValue) {
-            let filteredData = tradeData;
-
-            // 1. Account Filter
-            if (account !== 'all') {
-                filteredData = filteredData.filter(trade => trade.account === account);
-            }
-
-            // 2. Unified Filter Logic (Only applies Strategy and Period to KPIs)
-            if (unifiedFilterValue !== 'all') {
-
-                if (unifiedFilterValue.startsWith('strategy-')) {
-                    const strategySlug = unifiedFilterValue.replace('strategy-', '');
-                    filteredData = filteredData.filter(trade => trade.strategy === strategySlug);
-
-                } else if (unifiedFilterValue.startsWith('period-')) {
-                    const periodValue = unifiedFilterValue.replace('period-', '');
-
-                    if (periodValue !== 'all-time') {
-                        const selectedYear = parseInt(periodValue);
-                        filteredData = filteredData.filter(trade => trade.date.getFullYear() === selectedYear);
-                    }
-                }
-            }
-
-            return filteredData;
-        }
-
-
-        // --- 4. DASHBOARD & LOG RENDERING ---
         function updateDashboardAndLog() {
             const selectedAccount = accountFilter.value;
             const unifiedFilterValue = unifiedFilter.value;
 
-            // Filter for KPI Calculations (uses allRealizedTrades)
-            const filteredKPIs = filterTrades(allRealizedTrades, selectedAccount, unifiedFilterValue);
-            updateKPIs(filteredKPIs);
+            // KPI Update
+            let filteredTrades = allRealizedTrades;
+            if (selectedAccount !== 'all') filteredTrades = filteredTrades.filter(t => t.account === selectedAccount);
 
-            // Filter for Log List Visibility (uses tradeCards)
+            updateKPIs(filteredTrades);
+
+            // Card Visibility
             tradeCards.forEach((card) => {
-                const cardAccountType = card.dataset.accountType;
-                const cardPosition = card.dataset.position;
-                const cardStrategy = card.dataset.strategy;
+                const cardAccount = card.dataset.accountType;
+                const cardStrat = card.dataset.strategy;
                 const cardYear = card.dataset.year;
+                const cardPos = card.dataset.position;
 
-                // A. Account Match
-                const accountMatch = (selectedAccount === 'all' || cardAccountType === selectedAccount);
-
-                // B. Unified Match
+                const accMatch = (selectedAccount === 'all' || cardAccount === selectedAccount);
                 let unifiedMatch = true;
+
                 if (unifiedFilterValue !== 'all') {
                     if (unifiedFilterValue.startsWith('position-')) {
-                        const status = unifiedFilterValue.replace('position-', '');
-                        unifiedMatch = (cardPosition === status);
+                        unifiedMatch = (cardPos === unifiedFilterValue.replace('position-', ''));
                     } else if (unifiedFilterValue.startsWith('strategy-')) {
-                        const strategySlug = unifiedFilterValue.replace('strategy-', '');
-                        unifiedMatch = (cardStrategy === strategySlug);
+                        unifiedMatch = (cardStrat === unifiedFilterValue.replace('strategy-', ''));
                     } else if (unifiedFilterValue.startsWith('period-')) {
-                        const periodValue = unifiedFilterValue.replace('period-', '');
-                        if (periodValue !== 'all-time') {
-                            unifiedMatch = (cardYear === periodValue);
-                        }
+                         const pVal = unifiedFilterValue.replace('period-', '');
+                         if(pVal !== 'all-time') unifiedMatch = (cardYear === pVal);
                     }
                 }
 
-                // Display the card if both filters match (no limit check needed)
-                if (accountMatch && unifiedMatch) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+                card.style.display = (accMatch && unifiedMatch) ? 'block' : 'none';
             });
         }
 
+        function updateKPIs(data) {
+            let totalPnl = 0; let winners = 0; let losers = 0;
+            let totalProfit = 0; let totalLoss = 0;
+            let largestProfit = 0; let largestLoss = 0;
 
-        // EXPANDED KPI function
-        function updateKPIs(tradeData) {
-            let totalPnl = 0;
-            let winners = 0;
-            let losers = 0;
-            let totalProfit = 0;
-            let totalLoss = 0;
-            let largestProfit = 0;
-            let largestLoss = 0;
-
-            tradeData.forEach(trade => {
-                const pnl = trade.pnl;
+            data.forEach(t => {
+                const pnl = t.pnl;
                 totalPnl += pnl;
-
-                if (pnl > 0) {
+                if(pnl > 0) {
                     winners++;
                     totalProfit += pnl;
-                    if (pnl > largestProfit) {
-                        largestProfit = pnl;
-                    }
-                } else if (pnl < 0) {
+                    if(pnl > largestProfit) largestProfit = pnl;
+                }
+                else if(pnl < 0) {
                     losers++;
                     totalLoss += pnl;
-                    if (pnl < largestLoss) {
-                        largestLoss = pnl;
-                    }
+                    if(pnl < largestLoss) largestLoss = pnl;
                 }
             });
-
             const totalTrades = winners + losers;
-            const winRate = totalTrades > 0 ? (winners / totalTrades) * 100 : 0;
-            const avgProfit = winners > 0 ? totalProfit / winners : 0;
-            const avgLoss = losers > 0 ? totalLoss / losers : 0;
+            const winRate = totalTrades > 0 ? (winners/totalTrades)*100 : 0;
+            const avgProfit = winners > 0 ? totalProfit/winners : 0;
+            const avgLoss = losers > 0 ? totalLoss/losers : 0;
+            const pf = totalLoss !== 0 ? totalProfit/Math.abs(totalLoss) : 0;
 
-            const profitFactor = (totalLoss !== 0) ? totalProfit / Math.abs(totalLoss) : 0;
-
-            // Update Row 1
-            document.getElementById('kpi-total-pnl').textContent = `$${totalPnl.toFixed(2)}`;
-            document.getElementById('kpi-win-rate').textContent = `${winRate.toFixed(1)}%`;
-            document.getElementById('kpi-avg-profit').textContent = `$${avgProfit.toFixed(2)}`;
-            document.getElementById('kpi-avg-loss').textContent = `$${Math.abs(avgLoss).toFixed(2)}`;
-
-            // Update Row 2
-            document.getElementById('kpi-total-trades').textContent = totalTrades;
-            document.getElementById('kpi-profit-factor').textContent = profitFactor.toFixed(2);
-            document.getElementById('kpi-largest-profit').textContent = `$${largestProfit.toFixed(2)}`;
-            document.getElementById('kpi-largest-loss').textContent = `$${largestLoss.toFixed(2)}`;
+            document.getElementById('kpi-total-pnl').textContent = '$' + totalPnl.toFixed(2);
+            document.getElementById('kpi-win-rate').textContent = winRate.toFixed(1) + '%';
+            document.getElementById('kpi-avg-profit').textContent = '$' + avgProfit.toFixed(2);
+            document.getElementById('kpi-avg-loss').textContent = '$' + Math.abs(avgLoss).toFixed(2);
         }
 
-
-        // --- 5. EVENT LISTENERS ---
         unifiedFilter.addEventListener('change', updateDashboardAndLog);
         accountFilter.addEventListener('change', updateDashboardAndLog);
-
-        // --- 6. INITIALIZE ---
         loadAndProcessData();
     });
-</script>
 
-<script>
-    // Copy function
     function copyTradeDetails(button) {
       const detailsContainer = button.nextElementSibling;
       const detailsText = detailsContainer.textContent.trim().replace(/\s+/g, ' ');
@@ -632,7 +399,6 @@
         const originalIcon = button.innerHTML;
         button.innerHTML = '<i class="fas fa-check fa-fw me-1"></i> Copied!';
         button.classList.replace('btn-outline-secondary', 'btn-success');
-
         setTimeout(() => {
           button.innerHTML = originalIcon;
           button.classList.replace('btn-success', 'btn-outline-secondary');

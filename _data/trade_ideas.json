@@ -1,5 +1,83 @@
 [
   {
+    "meta": {
+      "publicationDate": "2025-12-01",
+      "tradeTitle": "Long Call Calendar on /MESH6",
+      "ticker": "/MESH6",
+      "accountType": "Margin",
+      "tags": [
+        "Ladder Strategy",
+        "Calendar Spread",
+        "Neutral/Bullish",
+        "Low IV"
+      ]
+    },
+    "marketContext": {
+      "currentPrice": 6906.50,
+      "ivRank": 16.10,
+      "earningsDate": "N/A",
+      "thesis": "Entered Defensive Income trade due to Low IV Rank (<30). Buying Feb Volatility vs Selling Jan Theta. Centered at 7000 for slight upside drift."
+    },
+    "strategyDetails": {
+      "type": "Calendar Spread",
+      "direction": "Neutral/Bullish",
+      "entryType": "Debit",
+      "expirationDate": "2026-01-16",
+      "dte": 46,
+      "legs": [
+        {
+          "action": "Sell",
+          "type": "Call",
+          "strike": 7000.00,
+          "expiry": "2026-01-16"
+        },
+        {
+          "action": "Buy",
+          "type": "Call",
+          "strike": 7000.00,
+          "expiry": "2026-02-20"
+        }
+      ]
+    },
+    "financials": {
+      "entryPrice": 50.50,
+      "multiplier": 5.00,
+      "maxProfit": 0.00,
+      "maxLoss": 252.50,
+      "buyingPowerEffect": 252.50,
+      "riskRewardRatio": "Theoretical",
+      "metrics": {
+        "roc": 0.00,
+        "annualizedRoc": 0.00,
+        "dailyProfitPotential": 2.72
+      }
+    },
+    "managementPlan": {
+      "profitTarget": 125.00,
+      "stopLoss": 0.00,
+      "daysToManage": 21,
+      "notes": "GTC Sell Limit set at 75.00 (approx 50% profit on capital). Watch 6800 level for defensive adjustments."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-12-01",
+        "action": "Opened Position",
+        "details": {
+          "strategy": "Calendar Spread",
+          "netPrice": 50.50,
+          "priceType": "Debit",
+          "contracts": 1
+        },
+        "financials": {
+          "commission": 2.50,
+          "totalCost": 255.00
+        },
+        "notes": "Filled at 50.50 Debit. Mid-price fill achieved via walk-up."
+      }
+    ]
+  },
+  {
     "publicationDate": "2025-11-19",
     "tradeTitle": "Long Call Diagonal Spread on NVO",
     "summaryJustification": "A Long Call Diagonal Spread was opened and immediately closed on the same day for a profit. The swift closing action realized a profit of $42.00, likely due to a favorable movement or a rapid adjustment in IV/Greeks following the trade entry.",
