@@ -4,7 +4,7 @@
       "publicationDate": "2025-12-01",
       "tradeTitle": "Short Strangle on /NQ",
       "ticker": "/NQZ25",
-      "accountType": "PaperMoney ($200k)",
+      "accountType": "Paper",
       "tags": ["Ladder Strategy", "Strangle", "Neutral", "21 DTE Rule", "Defensive Roll"]
     },
     "marketContext": {
