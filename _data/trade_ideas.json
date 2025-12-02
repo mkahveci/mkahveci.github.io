@@ -1,6 +1,55 @@
 [
   {
     "publicationDate": "2025-12-02",
+    "tradeTitle": "Short Put Vertical on BMNR",
+    "summaryJustification": "Filled 20-lot ITM Bull Put Spread (34/32). Collected $1.21 credit on $2.00 width. Trade requires slight bullish move > $32.79 breakeven but offers 153% ROC.",
+    "expectedReturnDisplay": "153% ROC / $2,420 Max Profit",
+    "ticker": "BMNR",
+    "accountType": "Margin",
+    "currentPrice": 32.52,
+    "ivRank": 37.8,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "Aggressive directional play. By selling the ITM 34 Put and buying the 32 Put, the trade capitalizes on the credit inversion (Credit > Risk). Requires BMNR to hold or rise slightly above $32.79.",
+      "strategyType": "Short Put Vertical",
+      "tradeDetails": {
+        "expiration": "2026-01-16",
+        "dte": 45,
+        "maxProfit": 2420.00,
+        "spreadDetails": {
+          "shortPutStrike": 34.00,
+          "longPutStrike": 32.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.21
+        }
+      },
+      "metrics": {
+        "roc": 153.16,
+        "annualizedRoc": 1242.30,
+        "pop": 45.00,
+        "buyingPowerEffect": 1580.00,
+        "dailyProfitPotential": 53.77
+      },
+      "managementPlan": "GTC Limit Order placed to close at $0.60 (approx 50% max profit)."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-12-02",
+        "actionTaken": "STO 20x BMNR Jan 16 34/32 Put Vertical @ 1.21",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 2420.00,
+        "commissionFee": 20.00,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Profit",
+        "notes": "Filled at $5.91 (Short) and $4.70 (Long). Net Credit $1.21. Max risk $0.79. Comm capped at $20 total."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-12-02",
     "tradeTitle": "The Wheel + 'Super-Bull' Income Array on BMNR",
     "summaryJustification": "Aggressive adjustments executed. Position converted to a 'Covered Strangle' variant. Short Calls rolled up to $50 to capture upside, while 5x Put Credit Spreads (30/25) were deployed to generate $954 in auxiliary income. This massive credit collection aims to lower the effective share basis to ~$35.46 if all options expire OTM.",
     "expectedReturnDisplay": "Net Credit Collected: $1,263.88 / Effective Basis Target: $35.46",
