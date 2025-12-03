@@ -1,37 +1,37 @@
 [
   {
     "publicationDate": "2025-12-03",
-    "tradeTitle": "The Wheel on BMNR: Rescue Flight v2 Landed",
-    "summaryJustification": "Successfully closed the 'Rescue Flight v2' (Auxiliary 30/25 Put Spreads) for a profit of ~$100. This tactical trade reduced risk exposure while further lowering the cost basis. The position is now simplified back to the core holding: 200 Long Shares + 2 Short Covered Calls (Jan 16 $50).",
-    "expectedReturnDisplay": "Realized Basis Reduction: ~$0.50/share | Current Breakeven: $41.31",
+    "tradeTitle": "The Wheel + 'Rescue Flight v3' on BMNR",
+    "summaryJustification": "Deployed 'Rescue Flight v3' by selling a single OTM Put (Jan 16 30.0). This aggressive income step collected $310 in premium, further hammering down the cost basis of the core position. The trade structure is now a 'Ratio Covered Strangle' (200 Long Shares, 2 Short Calls, 1 Short Put).",
+    "expectedReturnDisplay": "New Breakeven: ~$39.76 | Total Net Credit: $1,650+",
     "ticker": "BMNR",
     "accountType": "IRA",
-    "currentPrice": 29.90,
-    "ivRank": 35.0,
+    "currentPrice": 32.50,
+    "ivRank": 38.0,
     "earningsDate": "2025-12-18",
     "analysis": {
-      "thesis": "Risk Reduction / Basis Management. With the Put Spreads closed, the immediate downside leverage is removed. We are now holding a standard Covered Call position with a deep OTM strike ($50). The focus shifts entirely to managing the shares through the Dec 18 earnings, with a lowered breakeven of $41.31.",
-      "strategyType": "Covered Stock (Post-Adjustment)",
+      "thesis": "Aggressive Basis Reduction. With the stock stabilizing above $30 (implied by the 30 delta put), we are capitalizing on elevated IV before earnings. \n1. Upside: Capped at $50 (Covered Calls). \n2. Downside: Protected down to ~$39.76 breakeven on existing shares. \n3. New Risk: If stock drops <$30, we may be assigned 100 more shares, increasing total holding to 300.",
+      "strategyType": "Ratio Covered Strangle (200 Long / 2 Short Call / 1 Short Put)",
       "tradeDetails": {
         "expiration": "2026-01-16",
         "dte": 44,
-        "maxProfit": 1738.00,
+        "maxProfit": 2048.00,
         "spreadDetails": {
-          "shortPutStrike": 0.0,
+          "shortPutStrike": 30.0,
           "longPutStrike": 0.0,
           "shortCallStrike": 50.0,
           "longCallStrike": 0.0,
-          "netCredit": 0.0
+          "netCredit": 3.10
         }
       },
       "metrics": {
-        "roc": "N/A",
-        "annualizedRoc": "N/A",
-        "pop": 72.0,
-        "buyingPowerEffect": 0.0,
-        "dailyProfitPotential": "Theta Decay"
+        "roc": 10.3,
+        "annualizedRoc": 85.5,
+        "pop": 76.0,
+        "buyingPowerEffect": 3000.0,
+        "dailyProfitPotential": 7.04
       },
-      "managementPlan": "1. Hold Covered Calls through Earnings (Dec 18). \n2. If stock rallies > $41.31, position moves to green. \n3. If stock drops significantly, consider deploying 'Rescue Flight v3' (selling new puts) only after earnings volatility settles."
+      "managementPlan": "Earnings Event (Dec 18): \n1. Short Put (30): Monitor closely. If price drops near $30, consider rolling OUT and DOWN or accepting assignment to average down. \n2. Short Calls (50): Likely safe; let theta decay. \n3. Goal: Keep collecting premium to drive basis toward spot price."
     },
     "tradeProgression": [
       {
@@ -136,7 +136,19 @@
         "commissionFee": 5.11,
         "grossProfitLossAmount": 99.89,
         "grossProfitLossType": "Profit",
-        "notes": "Closed Rescue Flight v2. Spread opened for $1.92 cr, closed for $1.71 dr. Net Profit $99.89. New Breakeven per log: $41.31."
+        "notes": "Closed Rescue Flight v2. Net Profit $99.89. New Breakeven: $41.31."
+      },
+      {
+        "stepType": "AUXILIARY: OPEN_SHORT_PUT",
+        "date": "2025-12-03",
+        "actionTaken": "STO 1 BMNR 01/16 30.00 P",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netCreditReceived": 309.49,
+        "commissionFee": 0.51,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Open",
+        "notes": "Rescue Flight v3. Sold 1x 30 Put @ $3.10. Delta 30.56. Credit $309.49. New Effective Basis: ~$39.76."
       }
     ]
   },
