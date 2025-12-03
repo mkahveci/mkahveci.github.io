@@ -3,93 +3,147 @@ import requests
 import json
 import re
 import sys
-import time
-from datetime import datetime
 
 # --- Configuration ---
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
 
-# NEW: Define the Live URL to check against
-# Assuming your file is accessible at this URL structure
-LIVE_DATA_URL = "https://kahveci.pw/trades/data.json" # <--- UPDATE THIS TO YOUR ACTUAL JSON URL
-
 # --- Helper Function for MarkdownV2 Escaping ---
 def escape_markdown(text):
-    if text is None: return 'N/A'
+    """
+    Escapes special characters in a string for Telegram's MarkdownV2 parse mode.
+    """
+    if text is None:
+        return 'N/A'
     text = str(text)
+    # Escape core reserved characters
     reserved_chars = r'([_*\[\]()~`>#+=\-|{}.!$])'
     escaped_text = re.sub(reserved_chars, r'\\\1', text)
-    escaped_text = escaped_text.replace('&', r'\&').replace('%', r'\%')
     return escaped_text
 
 def get_top_trade(file_path):
+    """Reads the JSON array and returns the first trade object."""
     try:
         with open(file_path, 'r') as f:
             data_array = json.load(f)
-        return data_array[0] if data_array else None
+        if data_array and isinstance(data_array, list):
+            return data_array[0]
+        return None
     except Exception as e:
         print(f"Error reading local file: {e}")
         return None
 
 def extract_trade_data(data):
-    # ... (Keep your existing extraction logic here) ...
-    # Simplified for brevity in this snippet
+    """Normalizes trade data from different JSON versions."""
     meta = data.get('meta', {})
+    # Fallback logic for various JSON structures
+    title = meta.get('tradeTitle') or data.get('tradeTitle') or 'New Trade Idea'
+    ticker = meta.get('ticker') or data.get('ticker') or 'N/A'
+
+    # Strategy extraction
+    strat_details = data.get('strategyDetails', {})
+    analysis = data.get('analysis', {})
+    trade_details_old = analysis.get('tradeDetails', {})
+
+    strategy = strat_details.get('type') or analysis.get('strategyType') or 'N/A'
+    expiration = strat_details.get('expirationDate') or trade_details_old.get('expiration') or 'N/A'
+
     return {
-        'title': meta.get('tradeTitle') or data.get('tradeTitle') or 'New Trade',
-        'ticker': meta.get('ticker') or data.get('ticker') or 'N/A',
-        'strategy': data.get('strategyDetails', {}).get('type') or 'N/A',
-        'expiration': data.get('strategyDetails', {}).get('expirationDate') or 'N/A'
+        'title': title,
+        'ticker': ticker,
+        'strategy': strategy,
+        'expiration': expiration
     }
 
-# ... (Keep your format functions: format_initial_alert, format_management_alert, format_telegram_message) ...
+def format_initial_alert(data):
+    """Formats a message for a NEW trade."""
+    info = extract_trade_data(data)
 
-def verify_deployment(local_trade, live_url, retries=10, delay=15):
-    """
-    Checks the LIVE URL to ensure the new trade is actually visible to the public.
-    """
-    print(f"Checking live deployment at: {live_url}")
+    # Escape all dynamic data
+    title = escape_markdown(info['title'])
+    ticker = escape_markdown(info['ticker'])
+    strategy = escape_markdown(info['strategy'])
+    expiration = escape_markdown(info['expiration'])
 
-    local_ticker = extract_trade_data(local_trade)['ticker']
-    local_title = extract_trade_data(local_trade)['title']
+    # Static Links (Escaped)
+    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
+    LINK_TEXT = escape_markdown("View Full Analysis on Kahveci Nexus")
 
-    for i in range(retries):
-        try:
-            # Add a timestamp to bypass caching
-            response = requests.get(f"{live_url}?t={int(time.time())}")
+    message = (
+        f"🚨 *NEW TRADE: {title}* 🚨\n\n"
+        f"📈 *Asset:* `{ticker}`\n"
+        f"🛠️ *Strategy:* {strategy}\n"
+        f"📆 *Expiration:* {expiration}\n\n"
+        f"[{LINK_TEXT}]({STATIC_DOC_URL})"
+    )
+    return message
 
-            if response.status_code == 200:
-                live_data = response.json()
-                if live_data and len(live_data) > 0:
-                    live_top_trade = live_data[0]
-                    live_ticker = extract_trade_data(live_top_trade)['ticker']
+def format_management_alert(data, latest_step):
+    """Formats a message for a trade UPDATE (Close, Roll, etc)."""
+    info = extract_trade_data(data)
+    ticker = escape_markdown(info['ticker'])
 
-                    # Compare Local Data vs Live Data
-                    if live_ticker == local_ticker:
-                        print("✅ Verification Success: Live site matches local data.")
-                        return True
-                    else:
-                        print(f"⏳ Attempt {i+1}/{retries}: Live site has '{live_ticker}', waiting for '{local_ticker}'...")
-            else:
-                print(f"⚠️ Attempt {i+1}/{retries}: URL returned status {response.status_code}")
+    # Step Data
+    step_type_raw = latest_step.get('stepType', 'Update').replace('_', ' ')
+    step_type = escape_markdown(step_type_raw)
 
-        except Exception as e:
-            print(f"⚠️ Attempt {i+1}/{retries}: Error checking URL - {e}")
+    date = escape_markdown(latest_step.get('date', 'N/A'))
+    action_raw = latest_step.get('action') or latest_step.get('actionTaken') or 'N/A'
+    action = escape_markdown(action_raw)
 
-        time.sleep(delay)
+    STATIC_DOC_URL = escape_markdown("https://kahveci.pw/trades/")
 
-    print("❌ Verification Failed: Live site did not update in time. Sending message anyway (risk of 404).")
-    return False
+    message = (
+        f"🔔 *TRADE MANAGEMENT: {ticker}*\n\n"
+        f"🔄 *Event Type:* {step_type}\n"
+        f"📅 *Date:* {date}\n"
+        f"📝 *Action:* {action}\n\n"
+        f"[View Full Progression on Kahveci Nexus]({STATIC_DOC_URL})"
+    )
+    return message
+
+def format_telegram_message(data):
+    """Decides which message format to use based on trade progression."""
+    progression = data.get('tradeProgression', [])
+
+    # If no progression, it's a new V1 trade
+    if not progression:
+        return format_initial_alert(data)
+
+    last_step = progression[-1]
+    step_type = last_step.get('stepType', '').upper()
+
+    # List of "Entry" step types
+    entry_types = ['OPEN_TRADE', 'OPEN_SHORT_PUT', 'OPEN_LONG_CALL_CALENDAR', 'OPEN_SHORT_STRANGLE', 'OPEN_IRON_CONDOR', 'OPEN_SHORT_VERTICAL']
+
+    # If the last step is an entry, treat as New Trade Alert
+    if step_type in entry_types:
+        return format_initial_alert(data)
+
+    # Otherwise, it is an Adjustment/Management Alert
+    return format_management_alert(data, last_step)
 
 def send_telegram_notification(message):
-    # ... (Keep your existing send logic) ...
-    local_bot_token = os.environ.get('BOT_TOKEN')
-    local_chat_id = os.environ.get('CHAT_ID')
-    url = f"https://api.telegram.org/bot{local_bot_token}/sendMessage"
-    payload = {'chat_id': local_chat_id, 'text': message, 'parse_mode': 'MarkdownV2'}
-    requests.post(url, data=payload).raise_for_status()
+    """Sends the actual HTTP request."""
+    if not BOT_TOKEN or not CHAT_ID:
+        raise ValueError("Missing BOT_TOKEN or CHAT_ID.")
+
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    payload = {
+        'chat_id': CHAT_ID,
+        'text': message,
+        'parse_mode': 'MarkdownV2'
+    }
+
+    try:
+        response = requests.post(url, data=payload)
+        response.raise_for_status()
+        print("Telegram notification sent successfully.")
+    except requests.exceptions.HTTPError as e:
+        print(f"Error sending to Telegram: {e}")
+        print(f"Response: {response.text}")
+        raise
 
 if __name__ == "__main__":
     if not all([BOT_TOKEN, CHAT_ID, FILE_PATH]):
@@ -98,16 +152,10 @@ if __name__ == "__main__":
 
     try:
         top_trade = get_top_trade(FILE_PATH)
-
         if top_trade:
-            # 1. VERIFY THE DEPLOYMENT
-            # Only run this if you have a valid JSON URL to check against
-            verify_deployment(top_trade, LIVE_DATA_URL)
-
-            # 2. SEND MESSAGE
-            message = format_telegram_message(top_trade)
-            send_telegram_notification(message)
-            print("Process Complete.")
+            # Simply format and send - NO live verification
+            msg = format_telegram_message(top_trade)
+            send_telegram_notification(msg)
         else:
             print("No valid trade data found.")
     except Exception as e:
