@@ -2,14 +2,17 @@
 
 name: Telegram Notification on New Trade
 
+# Trigger specifically when a deployment status update is received
 on:
-  push:
-    paths:
-      - '_data/trade_ideas.json'
+  deployment_status:
 
 jobs:
   notify:
     runs-on: ubuntu-latest
+    # 1. Only run if the deployment was successful
+    # 2. (Optional) Ensure it matches your specific environment name (usually 'github-pages')
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -22,13 +25,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # CRITICAL STEP: Give the CDN time to propagate the new file globally
+      - name: Wait for CDN Propagation
+        run: sleep 30
+
       - name: Send Telegram Notification
         env:
-          # CRITICAL FIX: Ensure secrets are referenced correctly without extra prefixes
-          # IMPORTANT: The Chat ID secret must be defined in your GitHub settings (it is the number -1003194962725)
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FILE_PATH: '_data/trade_ideas.json'
+          # If your script needs the live URL for verification, you can add it here
+          # LIVE_DATA_URL: 'https://kahveci.pw/trades/_data/trade_ideas.json'
         run: |
-          # Execute the Python script
           python .github/scripts/send_telegram_notification.py
