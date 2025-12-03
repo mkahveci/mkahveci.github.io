@@ -1,5 +1,82 @@
 [
   {
+    "meta": {
+      "publicationDate": "2025-12-02",
+      "tradeTitle": "Short Put Vertical on BMNR",
+      "ticker": "BMNR",
+      "accountType": "Margin",
+      "tags": ["Ladder Strategy", "Vertical", "Bullish", "Rule Violation", "Closed"]
+    },
+    "marketContext": {
+      "currentPrice": 32.52,
+      "ivRank": 37.8,
+      "earningsDate": "N/A",
+      "thesis": "Aggressive directional play. Capitalizing on credit inversion (Credit > Risk). [WARNING: Position size violated 50% Rule and Concentration Rule]."
+    },
+    "strategyDetails": {
+      "type": "Vertical",
+      "direction": "Bullish",
+      "entryType": "Credit",
+      "expirationDate": "2026-01-16",
+      "dte": 45,
+      "legs": [
+        { "action": "Sell", "type": "Put", "strike": 34.00, "expiry": "2026-01-16" },
+        { "action": "Buy",  "type": "Put", "strike": 32.00, "expiry": "2026-01-16" }
+      ]
+    },
+    "financials": {
+      "entryPrice": 1.21,
+      "maxProfit": 2420.00,
+      "maxLoss": 1580.00,
+      "buyingPowerEffect": 1580.00,
+      "riskRewardRatio": "1.5:1",
+      "metrics": {
+        "roc": 153.16,
+        "annualizedRoc": 1242.30,
+        "dailyProfitPotential": 53.77
+      }
+    },
+    "managementPlan": {
+      "profitTarget": 0.60,
+      "stopLoss": 0.00,
+      "daysToManage": 21,
+      "notes": " EMERGENCY EXIT: Position closed early due to excessive risk concentration."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-12-02",
+        "action": "Opened Position",
+        "details": {
+          "strategy": "Short Put Vertical",
+          "netPrice": 1.21,
+          "priceType": "Credit",
+          "contracts": 20
+        },
+        "financials": {
+          "commission": 20.00,
+          "totalCost": -2420.00
+        },
+        "notes": "Filled 20 contracts (High Risk)."
+      },
+      {
+        "stepType": "CLOSE_TRADE",
+        "date": "2025-12-03",
+        "action": "Closed Position",
+        "details": {
+          "closingPrice": 1.17,
+          "priceType": "Debit"
+        },
+        "financials": {
+          "commission": 4.62,
+          "grossPnl": 80.00,
+          "netPnl": 75.38
+        },
+        "notes": "Manual override to reduce risk. Bought back 34 Put @ 5.44, Sold 32 Put @ 4.27. Net Debit 1.17."
+      }
+    ]
+  },
+  {
     "publicationDate": "2025-12-03",
     "tradeTitle": "Aggressive Bullish Put Vertical on CPB",
     "summaryJustification": "CPB has an elevated IV Rank of 89.3, creating inflated option premiums. This specific setup sells an In-The-Money (32 Strike) put spread to collect a large credit ($1.25), offering a high Return on Capital if the stock rallies back above $32.",
@@ -45,55 +122,6 @@
         "grossProfitLossAmount": 0.00,
         "grossProfitLossType": "Profit",
         "notes": "Filled at $1.25 credit. Defined risk trade with $75 capital requirement per spread."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-12-02",
-    "tradeTitle": "Short Put Vertical on BMNR",
-    "summaryJustification": "Filled 20-lot ITM Bull Put Spread (34/32). Collected $1.21 credit on $2.00 width. Trade requires slight bullish move > $32.79 breakeven but offers 153% ROC.",
-    "expectedReturnDisplay": "153% ROC / $2,420 Max Profit",
-    "ticker": "BMNR",
-    "accountType": "Margin",
-    "currentPrice": 32.52,
-    "ivRank": 37.8,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "Aggressive directional play. By selling the ITM 34 Put and buying the 32 Put, the trade capitalizes on the credit inversion (Credit > Risk). Requires BMNR to hold or rise slightly above $32.79.",
-      "strategyType": "Short Put Vertical",
-      "tradeDetails": {
-        "expiration": "2026-01-16",
-        "dte": 45,
-        "maxProfit": 2420.00,
-        "spreadDetails": {
-          "shortPutStrike": 34.00,
-          "longPutStrike": 32.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 1.21
-        }
-      },
-      "metrics": {
-        "roc": 153.16,
-        "annualizedRoc": 1242.30,
-        "pop": 45.00,
-        "buyingPowerEffect": 1580.00,
-        "dailyProfitPotential": 53.77
-      },
-      "managementPlan": "GTC Limit Order placed to close at $0.60 (approx 50% max profit)."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-12-02",
-        "actionTaken": "STO 20x BMNR Jan 16 34/32 Put Vertical @ 1.21",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 2420.00,
-        "commissionFee": 20.00,
-        "grossProfitLossAmount": 0.00,
-        "grossProfitLossType": "Profit",
-        "notes": "Filled at $5.91 (Short) and $4.70 (Long). Net Credit $1.21. Max risk $0.79. Comm capped at $20 total."
       }
     ]
   },
