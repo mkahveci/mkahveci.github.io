@@ -1,5 +1,146 @@
 [
   {
+    "publicationDate": "2025-12-03",
+    "tradeTitle": "The Wheel on BMNR: Rescue Flight v2 Landed",
+    "summaryJustification": "Successfully closed the 'Rescue Flight v2' (Auxiliary 30/25 Put Spreads) for a profit of ~$100. This tactical trade reduced risk exposure while further lowering the cost basis. The position is now simplified back to the core holding: 200 Long Shares + 2 Short Covered Calls (Jan 16 $50).",
+    "expectedReturnDisplay": "Realized Basis Reduction: ~$0.50/share | Current Breakeven: $41.31",
+    "ticker": "BMNR",
+    "accountType": "IRA",
+    "currentPrice": 29.90,
+    "ivRank": 35.0,
+    "earningsDate": "2025-12-18",
+    "analysis": {
+      "thesis": "Risk Reduction / Basis Management. With the Put Spreads closed, the immediate downside leverage is removed. We are now holding a standard Covered Call position with a deep OTM strike ($50). The focus shifts entirely to managing the shares through the Dec 18 earnings, with a lowered breakeven of $41.31.",
+      "strategyType": "Covered Stock (Post-Adjustment)",
+      "tradeDetails": {
+        "expiration": "2026-01-16",
+        "dte": 44,
+        "maxProfit": 1738.00,
+        "spreadDetails": {
+          "shortPutStrike": 0.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 50.0,
+          "longCallStrike": 0.0,
+          "netCredit": 0.0
+        }
+      },
+      "metrics": {
+        "roc": "N/A",
+        "annualizedRoc": "N/A",
+        "pop": 72.0,
+        "buyingPowerEffect": 0.0,
+        "dailyProfitPotential": "Theta Decay"
+      },
+      "managementPlan": "1. Hold Covered Calls through Earnings (Dec 18). \n2. If stock rallies > $41.31, position moves to green. \n3. If stock drops significantly, consider deploying 'Rescue Flight v3' (selling new puts) only after earnings volatility settles."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-10-31",
+        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
+        "expiration": "2025-11-07",
+        "dteRemaining": 7,
+        "netCreditReceived": 280.0,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 278.98,
+        "grossProfitLossType": "Profit",
+        "notes": "Opened 2 contracts at 1.40 for 7 DTE."
+      },
+      {
+        "stepType": "ASSIGNMENT",
+        "date": "2025-11-07",
+        "actionTaken": "Assigned 200 shares at strike",
+        "purchasePrice": 45.0,
+        "sharesAcquired": 200,
+        "netCostBasisPerShare": 43.61,
+        "totalNotionalCost": 9000.0,
+        "notes": "Assigned at $45."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-11-10",
+        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
+        "expiration": "2025-11-14",
+        "dteRemaining": 4,
+        "netCreditReceived": 94.99,
+        "commissionFee": 1.01,
+        "grossCreditTotal": 96.0,
+        "notes": "Sold weekly covered call."
+      },
+      {
+        "stepType": "WHEEL_STEP: CALL_EXPIRED_WORTHLESS",
+        "date": "2025-11-14",
+        "actionTaken": "11/14 47.00 C expired OTM",
+        "expiration": "2025-11-14",
+        "dteRemaining": 0,
+        "netCreditReceived": 0.0,
+        "commissionFee": 0.0,
+        "grossProfitLossAmount": 94.99,
+        "grossProfitLossType": "Profit",
+        "notes": "Premium realized."
+      },
+      {
+        "stepType": "WHEEL_STEP: BASIS_REDUCTION",
+        "date": "2025-12-01",
+        "actionTaken": "AUXILIARY: Long Call Vertical 30/35",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 0.0,
+        "commissionFee": 7.61,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "N/A",
+        "notes": "Rescue mission initiated."
+      },
+      {
+        "stepType": "WHEEL_STEP: BASIS_REDUCTION_CLOSE",
+        "date": "2025-12-02",
+        "actionTaken": "Closed Call Vertical @ Profit",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netCreditReceived": 374.78,
+        "commissionFee": 7.61,
+        "grossProfitLossAmount": 374.78,
+        "grossProfitLossType": "Profit",
+        "notes": "Profit applied to basis. New Basis: $41.78."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-12-02",
+        "actionTaken": "STO 2 BMNR 01/16 50.00 C",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 308.98,
+        "commissionFee": 1.02,
+        "grossCreditTotal": 310.0,
+        "notes": "Sold 2x 50 Calls @ $1.55. Net credit $308.98."
+      },
+      {
+        "stepType": "AUXILIARY: OPEN_PUT_SPREAD",
+        "date": "2025-12-02",
+        "actionTaken": "STO 5 BMNR 01/16 30/25 Put Vertical",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 954.9,
+        "commissionFee": 5.1,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Open",
+        "notes": "Sold 5x Put Credit Spreads @ $1.92 net."
+      },
+      {
+        "stepType": "AUXILIARY: CLOSE_PUT_SPREAD",
+        "date": "2025-12-03",
+        "actionTaken": "BTC 5 BMNR 01/16 30.0 P / STC 5 BMNR 01/16 25.0 P",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netCreditReceived": -855.0,
+        "commissionFee": 5.11,
+        "grossProfitLossAmount": 99.89,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed Rescue Flight v2. Spread opened for $1.92 cr, closed for $1.71 dr. Net Profit $99.89. New Breakeven per log: $41.31."
+      }
+    ]
+  },
+  {
     "meta": {
       "publicationDate": "2025-12-03",
       "tradeTitle": "Iron Condor on GLD",
@@ -187,135 +328,6 @@
         "grossProfitLossAmount": 0.00,
         "grossProfitLossType": "Profit",
         "notes": "Filled at $1.25 credit. Defined risk trade with $75 capital requirement per spread."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-12-02",
-    "tradeTitle": "The Wheel + 'Super-Bull' Income Array on BMNR",
-    "summaryJustification": "Aggressive adjustments executed. Position converted to a 'Covered Strangle' variant. Short Calls rolled up to $50 to capture upside, while 5x Put Credit Spreads (30/25) were deployed to generate $954 in auxiliary income. This massive credit collection aims to lower the effective share basis to ~$35.46 if all options expire OTM.",
-    "expectedReturnDisplay": "Net Credit Collected: $1,263.88 / Effective Basis Target: $35.46",
-    "ticker": "BMNR",
-    "accountType": "IRA",
-    "currentPrice": 32.66,
-    "ivRank": 39.2,
-    "earningsDate": "2025-12-18",
-    "analysis": {
-      "thesis": "Bullish/Neutral Income. Leveraging high IV (112% implied) ahead of Dec 18 earnings. The 30/25 Put Spreads provide a robust buffer against a moderate drop, while the $50 Calls leave room for a post-earnings rally. The combined theta decay is now the primary profit driver.",
-      "strategyType": "Covered Stock + Aux Put Credit Spreads",
-      "tradeDetails": {
-        "expiration": "2026-01-16",
-        "dte": 45,
-        "maxProfit": 1263.88,
-        "spreadDetails": {
-          "shortPutStrike": 30.0,
-          "longPutStrike": 25.0,
-          "shortCallStrike": 50.0,
-          "longCallStrike": 0.0,
-          "netCredit": 3.50
-        }
-      },
-      "metrics": {
-        "roc": 38.0,
-        "annualizedRoc": 308.0,
-        "pop": 68.0,
-        "buyingPowerEffect": 2500.0,
-        "dailyProfitPotential": 28.08
-      },
-      "managementPlan": "CRITICAL DATE: Dec 18 (Earnings). Hold through volatility. \n1. Upside: If stock > $50, shares called away at massive profit. \n2. Downside: If stock < $30, manage Put Spreads (roll or take assignment). \n3. Sweet Spot: Stock between $30-$50 = Max Profit."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-10-31",
-        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
-        "expiration": "2025-11-07",
-        "dteRemaining": 7,
-        "netCreditReceived": 280.0,
-        "commissionFee": 1.02,
-        "grossProfitLossAmount": 278.98,
-        "grossProfitLossType": "Profit",
-        "notes": "Opened 2 contracts at 1.40 for 7 DTE."
-      },
-      {
-        "stepType": "ASSIGNMENT",
-        "date": "2025-11-07",
-        "actionTaken": "Assigned 200 shares at strike",
-        "purchasePrice": 45.0,
-        "sharesAcquired": 200,
-        "netCostBasisPerShare": 43.61,
-        "totalNotionalCost": 9000.0,
-        "notes": "Assigned at $45."
-      },
-      {
-        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
-        "date": "2025-11-10",
-        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
-        "expiration": "2025-11-14",
-        "dteRemaining": 4,
-        "netCreditReceived": 94.99,
-        "commissionFee": 1.01,
-        "grossCreditTotal": 96.0,
-        "notes": "Sold weekly covered call."
-      },
-      {
-        "stepType": "WHEEL_STEP: CALL_EXPIRED_WORTHLESS",
-        "date": "2025-11-14",
-        "actionTaken": "11/14 47.00 C expired OTM",
-        "expiration": "2025-11-14",
-        "dteRemaining": 0,
-        "netCreditReceived": 0.0,
-        "commissionFee": 0.0,
-        "grossProfitLossAmount": 94.99,
-        "grossProfitLossType": "Profit",
-        "notes": "Premium realized."
-      },
-      {
-        "stepType": "WHEEL_STEP: BASIS_REDUCTION",
-        "date": "2025-12-01",
-        "actionTaken": "AUXILIARY: Long Call Vertical 30/35",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 0.0,
-        "commissionFee": 7.61,
-        "grossProfitLossAmount": 0.0,
-        "grossProfitLossType": "N/A",
-        "notes": "Rescue mission initiated."
-      },
-      {
-        "stepType": "WHEEL_STEP: BASIS_REDUCTION_CLOSE",
-        "date": "2025-12-02",
-        "actionTaken": "Closed Call Vertical @ Profit",
-        "expiration": "2026-01-16",
-        "dteRemaining": 44,
-        "netCreditReceived": 374.78,
-        "commissionFee": 7.61,
-        "grossProfitLossAmount": 374.78,
-        "grossProfitLossType": "Profit",
-        "notes": "Profit applied to basis. New Basis: $41.78."
-      },
-      {
-        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
-        "date": "2025-12-02",
-        "actionTaken": "STO 2 BMNR 01/16 50.00 C",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 308.98,
-        "commissionFee": 1.02,
-        "grossCreditTotal": 310.0,
-        "notes": "Sold 2x 50 Calls @ $1.55. Net credit $308.98. Strike allows $5/share stock appreciation."
-      },
-      {
-        "stepType": "AUXILIARY: OPEN_PUT_SPREAD",
-        "date": "2025-12-02",
-        "actionTaken": "STO 5 BMNR 01/16 30/25 Put Vertical",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 954.9,
-        "commissionFee": 5.1,
-        "grossProfitLossAmount": 0.0,
-        "grossProfitLossType": "Open",
-        "notes": "Sold 5x Put Credit Spreads @ $1.92 net ($3.48 cr - $1.56 dr). Total Aux Credit: $954.90. This buffer protects against downside drift."
       }
     ]
   },
