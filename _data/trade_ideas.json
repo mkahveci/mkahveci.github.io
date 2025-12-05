@@ -1,37 +1,86 @@
 [
   {
-    "publicationDate": "2025-12-03",
-    "tradeTitle": "The Wheel + 'Rescue Flight v3' on BMNR",
-    "summaryJustification": "Deployed 'Rescue Flight v3' by selling a single OTM Put (Jan 16 30.0). This aggressive income step collected $310 in premium, further hammering down the cost basis of the core position. The trade structure is now a 'Ratio Covered Strangle' (200 Long Shares, 2 Short Calls, 1 Short Put).",
-    "expectedReturnDisplay": "New Breakeven: ~$39.76 | Total Net Credit: $1,650+",
+    "meta": {
+      "publicationDate": "2025-12-04",
+      "tradeTitle": "Bullish Risk Reversal on BMNR",
+      "ticker": "BMNR",
+      "accountType": "Margin",
+      "tags": ["Speculative", "Equity", "Risk Reversal", "LEAPS"]
+    },
+    "marketContext": {
+      "currentPrice": 0.00,
+      "ivRank": 0.00,
+      "earningsDate": "N/A",
+      "thesis": "Super Bullish: Financing long-term upside (LEAPS) by selling near-term downside put premium."
+    },
+    "strategyDetails": {
+      "type": "Risk Reversal",
+      "expirationDate": "2026-01-23",
+      "dte": 50,
+      "legs": [
+        { "action": "Sell", "type": "Put", "strike": 30.00, "expiry": "2026-01-23" },
+        { "action": "Buy",  "type": "Call", "strike": 50.00, "expiry": "2027-01-15" }
+      ]
+    },
+    "financials": {
+      "entryPrice": 8.00,
+      "maxProfit": "Unlimited",
+      "buyingPowerEffect": 2403.00,
+      "metrics": {
+        "roc": 0.00,
+        "annualizedRoc": 0.00,
+        "pop": 50.0
+      }
+    },
+    "managementPlan": {
+      "notes": "Monitor the Short Put (Jan '26). If tested, roll out in time. The Long Call is a long-term hold."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-12-04",
+        "actionTaken": "STO Jan'26 30 Put / BTO Jan'27 50 Call",
+        "netChange": -800.00,
+        "commissionFee": 2.22,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "notes": "Entry filled. Net Debit 8.00."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-12-05",
+    "tradeTitle": "Super Bull / Stock Replacement on BMNR",
+    "summaryJustification": "Corrected progression: The Dec 3rd partial entry was merged into the definitive Dec 4th execution. We have officially pivoted from 'The Wheel' to a 'Super Bull' structure. By selling the 200 shares (stopping the equity bleed) and replacing them with 2x Jan '27 LEAPS financed by 2x Jan '26 Short Puts, we maintain 200-share equivalent delta with significantly reduced capital at risk.",
+    "expectedReturnDisplay": "Capital Efficiency Play | Net Debit: ~$2,652 | Delta: ~160+",
     "ticker": "BMNR",
     "accountType": "IRA",
     "currentPrice": 32.50,
     "ivRank": 38.0,
     "earningsDate": "2025-12-18",
     "analysis": {
-      "thesis": "Aggressive Basis Reduction. With the stock stabilizing above $30 (implied by the 30 delta put), we are capitalizing on elevated IV before earnings. \n1. Upside: Capped at $50 (Covered Calls). \n2. Downside: Protected down to ~$39.76 breakeven on existing shares. \n3. New Risk: If stock drops <$30, we may be assigned 100 more shares, increasing total holding to 300.",
-      "strategyType": "Ratio Covered Strangle (200 Long / 2 Short Call / 1 Short Put)",
+      "thesis": "Recovery & Repair. This 'Super Bull' (Ratio Diagonal) setup allows us to participate in a recovery above $30 without holding the physical stock. \n1. Financing: The 2 Short Puts ($630 credit) help offset the cost of the LEAPS. \n2. Risk: We are still short 30 Puts (x2), so downside risk exists below $30, but it is identical to holding the stock, minus the capital layout. \n3. Earnings: The short puts benefit from IV crush post-earnings (Dec 18).",
+      "strategyType": "Super Bull (2 Long LEAPS / 2 Short Puts)",
       "tradeDetails": {
-        "expiration": "2026-01-16",
-        "dte": 44,
-        "maxProfit": 2048.00,
+        "expiration": "2027-01-15",
+        "dte": 406,
+        "maxProfit": 0.00,
         "spreadDetails": {
           "shortPutStrike": 30.0,
           "longPutStrike": 0.0,
-          "shortCallStrike": 50.0,
-          "longCallStrike": 0.0,
-          "netCredit": 3.10
+          "shortCallStrike": 0.0,
+          "longCallStrike": 30.0,
+          "netCredit": 0.00
         }
       },
       "metrics": {
-        "roc": 10.3,
-        "annualizedRoc": 85.5,
-        "pop": 76.0,
-        "buyingPowerEffect": 3000.0,
-        "dailyProfitPotential": 7.04
+        "roc": 0.0,
+        "annualizedRoc": 0.0,
+        "pop": 68.0,
+        "buyingPowerEffect": 5200.0,
+        "dailyProfitPotential": 0.0
       },
-      "managementPlan": "Earnings Event (Dec 18): \n1. Short Put (30): Monitor closely. If price drops near $30, consider rolling OUT and DOWN or accepting assignment to average down. \n2. Short Calls (50): Likely safe; let theta decay. \n3. Goal: Keep collecting premium to drive basis toward spot price."
+      "managementPlan": "1. Short Puts (Jan '26): These are the engine. Roll them if tested or manage at 50% profit to lower basis further. \n2. LEAPS (Jan '27): Hold as the core long asset. \n3. Earnings (Dec 18): Monitor the Short Puts closely."
     },
     "tradeProgression": [
       {
@@ -101,7 +150,7 @@
         "commissionFee": 7.61,
         "grossProfitLossAmount": 374.78,
         "grossProfitLossType": "Profit",
-        "notes": "Profit applied to basis. New Basis: $41.78."
+        "notes": "Profit applied to basis."
       },
       {
         "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
@@ -112,7 +161,7 @@
         "netCreditReceived": 308.98,
         "commissionFee": 1.02,
         "grossCreditTotal": 310.0,
-        "notes": "Sold 2x 50 Calls @ $1.55. Net credit $308.98."
+        "notes": "Sold 2x 50 Calls @ $1.55."
       },
       {
         "stepType": "AUXILIARY: OPEN_PUT_SPREAD",
@@ -124,7 +173,7 @@
         "commissionFee": 5.1,
         "grossProfitLossAmount": 0.0,
         "grossProfitLossType": "Open",
-        "notes": "Sold 5x Put Credit Spreads @ $1.92 net."
+        "notes": "Sold 5x Put Credit Spreads."
       },
       {
         "stepType": "AUXILIARY: CLOSE_PUT_SPREAD",
@@ -136,19 +185,131 @@
         "commissionFee": 5.11,
         "grossProfitLossAmount": 99.89,
         "grossProfitLossType": "Profit",
-        "notes": "Closed Rescue Flight v2. Net Profit $99.89. New Breakeven: $41.31."
+        "notes": "Closed Rescue Flight v2. Net Profit $99.89."
       },
       {
-        "stepType": "AUXILIARY: OPEN_SHORT_PUT",
-        "date": "2025-12-03",
-        "actionTaken": "STO 1 BMNR 01/16 30.00 P",
-        "expiration": "2026-01-16",
-        "dteRemaining": 44,
-        "netCreditReceived": 309.49,
-        "commissionFee": 0.51,
-        "grossProfitLossAmount": 0.0,
-        "grossProfitLossType": "Open",
-        "notes": "Rescue Flight v3. Sold 1x 30 Put @ $3.10. Delta 30.56. Credit $309.49. New Effective Basis: ~$39.76."
+        "stepType": "CLOSE",
+        "date": "2025-12-04",
+        "actionTaken": "STC 200 Shares BMNR @ 33.23",
+        "closePrice": 33.23,
+        "closeCostType": "Credit",
+        "grossProfitLossAmount": -2354.0,
+        "grossProfitLossType": "Loss",
+        "notes": "STRATEGY PIVOT: Stop Loss triggered on Stock. Realized ~$2.3k loss to free capital."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-04",
+        "actionTaken": "STO 2 BMNR 01/16/26 30.00 P",
+        "netChange": 628.98,
+        "netChangeType": "Credit",
+        "notes": "Super Bull Leg 1: Sold 2x Puts @ 3.15 (Merged execution)."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-04",
+        "actionTaken": "BTO 2 BMNR 01/15/27 30.00 C",
+        "netChange": 3281.02,
+        "netChangeType": "Debit",
+        "notes": "Super Bull Leg 2: Bought 2x LEAPS @ 16.40 for stock replacement."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-05",
+        "actionTaken": "BTC 2 BMNR 01/16/26 50.00 C",
+        "netChange": 0.98,
+        "netChangeType": "Credit",
+        "grossProfitLossAmount": 0.98,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed lingering Short Calls from Dec 2. Scratch/Tiny Profit. (StepType set to ADJUSTMENT to keep trade OPEN in UI)."
+      }
+    ]
+  },
+  {
+    "meta": {
+      "publicationDate": "2025-12-05",
+      "tradeTitle": "Long Call Calendar on /MESH6",
+      "ticker": "/MESH6",
+      "accountType": "Margin",
+      "tags": [
+        "Ladder Strategy",
+        "Calendar Spread",
+        "Neutral/Bullish",
+        "Closed"
+      ]
+    },
+    "marketContext": {
+      "currentPrice": 6906.50,
+      "ivRank": 16.10,
+      "earningsDate": "N/A",
+      "thesis": "Trade closed early. Volatility expansion in back month allowed for a net credit close higher than debit paid."
+    },
+    "strategyDetails": {
+      "type": "Calendar Spread",
+      "direction": "Neutral/Bullish",
+      "entryType": "Debit",
+      "expirationDate": "2026-01-16",
+      "dte": 42,
+      "legs": [
+        {
+          "action": "Sell",
+          "type": "Call",
+          "strike": 7000.00,
+          "expiry": "2026-01-16"
+        },
+        {
+          "action": "Buy",
+          "type": "Call",
+          "strike": 7000.00,
+          "expiry": "2026-02-20"
+        }
+      ]
+    },
+    "financials": {
+      "entryPrice": 50.50,
+      "multiplier": 5.00,
+      "maxProfit": 0.00,
+      "maxLoss": 252.50,
+      "buyingPowerEffect": 0.00,
+      "riskRewardRatio": "Realized",
+      "metrics": {
+        "roc": 1.63,
+        "annualizedRoc": 148.73,
+        "dailyProfitPotential": 0.00
+      }
+    },
+    "managementPlan": {
+      "profitTarget": 125.00,
+      "stopLoss": 0.00,
+      "daysToManage": 0,
+      "notes": "Position Closed."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-12-01",
+        "action": "Opened Position",
+        "details": {
+          "strategy": "Calendar Spread",
+          "netPrice": 50.50,
+          "priceType": "Debit",
+          "contracts": 1
+        },
+        "financials": {
+          "commission": 2.50,
+          "totalCost": 255.00
+        },
+        "notes": "Filled at 50.50 Debit. Mid-price fill achieved via walk-up."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-05",
+        "actionTaken": "STC Long Leg / BTC Short Leg",
+        "closePrice": 2.61,
+        "closeCostType": "Credit",
+        "grossProfitLossAmount": 4.16,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed for a net profit of $4.16 after 4 days. Net spread basis improved from 2.52 debit to 2.61 credit."
       }
     ]
   },
@@ -455,95 +616,17 @@
     ]
   },
   {
-    "meta": {
-      "publicationDate": "2025-12-01",
-      "tradeTitle": "Long Call Calendar on /MESH6",
-      "ticker": "/MESH6",
-      "accountType": "Margin",
-      "tags": [
-        "Ladder Strategy",
-        "Calendar Spread",
-        "Neutral/Bullish",
-        "Low IV"
-      ]
-    },
-    "marketContext": {
-      "currentPrice": 6906.50,
-      "ivRank": 16.10,
-      "earningsDate": "N/A",
-      "thesis": "Entered Defensive Income trade due to Low IV Rank (<30). Buying Feb Volatility vs Selling Jan Theta. Centered at 7000 for slight upside drift."
-    },
-    "strategyDetails": {
-      "type": "Calendar Spread",
-      "direction": "Neutral/Bullish",
-      "entryType": "Debit",
-      "expirationDate": "2026-01-16",
-      "dte": 46,
-      "legs": [
-        {
-          "action": "Sell",
-          "type": "Call",
-          "strike": 7000.00,
-          "expiry": "2026-01-16"
-        },
-        {
-          "action": "Buy",
-          "type": "Call",
-          "strike": 7000.00,
-          "expiry": "2026-02-20"
-        }
-      ]
-    },
-    "financials": {
-      "entryPrice": 50.50,
-      "multiplier": 5.00,
-      "maxProfit": 0.00,
-      "maxLoss": 252.50,
-      "buyingPowerEffect": 252.50,
-      "riskRewardRatio": "Theoretical",
-      "metrics": {
-        "roc": 0.00,
-        "annualizedRoc": 0.00,
-        "dailyProfitPotential": 2.72
-      }
-    },
-    "managementPlan": {
-      "profitTarget": 125.00,
-      "stopLoss": 0.00,
-      "daysToManage": 21,
-      "notes": "GTC Sell Limit set at 75.00 (approx 50% profit on capital). Watch 6800 level for defensive adjustments."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_TRADE",
-        "date": "2025-12-01",
-        "action": "Opened Position",
-        "details": {
-          "strategy": "Calendar Spread",
-          "netPrice": 50.50,
-          "priceType": "Debit",
-          "contracts": 1
-        },
-        "financials": {
-          "commission": 2.50,
-          "totalCost": 255.00
-        },
-        "notes": "Filled at 50.50 Debit. Mid-price fill achieved via walk-up."
-      }
-    ]
-  },
-  {
     "publicationDate": "2025-11-19",
     "tradeTitle": "Long Call Diagonal Spread on NVO",
-    "summaryJustification": "A Long Call Diagonal Spread was opened and immediately closed on the same day for a profit. The swift closing action realized a profit of $42.00, likely due to a favorable movement or a rapid adjustment in IV/Greeks following the trade entry.",
-    "expectedReturnDisplay": "CLOSED: +$42.00 Realized Profit (17.14% Return on Capital)",
+    "summaryJustification": "A Long Call Diagonal Spread was opened and immediately closed on the same day for a profit. The swift closing action realized a profit of $42.00.",
+    "expectedReturnDisplay": "CLOSED: +$42.00 Realized Profit",
     "ticker": "NVO",
     "accountType": "Margin",
     "currentPrice": 47.57,
     "ivRank": 79.90,
     "earningsDate": "2026-02-04",
     "analysis": {
-      "thesis": "The high IVR setup allowed the trader to enter the spread at a low net debit relative to the potential for a quick reversal in premium value. The position was immediately closed to realize the profit achieved from the initial market movement or beneficial decay/IV drop.",
+      "thesis": "High IVR setup. Quick reversal allowed for immediate profit taking.",
       "strategyType": "Long Call Diagonal Spread",
       "tradeDetails": {
         "expiration": "2026-01-02",
@@ -564,7 +647,7 @@
         "buyingPowerEffect": 245.00,
         "dailyProfitPotential": 0.00
       },
-      "managementPlan": "The original management plan was overridden by the decision to close for a quick profit shortly after opening."
+      "managementPlan": "Closed for quick profit."
     },
     "tradeProgression": [
       {
@@ -577,9 +660,9 @@
         "dteBackRemaining": 44,
         "netDebitPaid": 2.45,
         "commissionFee": 0.00,
-        "grossProfitLossAmount": -245.00,
-        "grossProfitLossType": "Loss (Max)",
-        "notes": "Opened a Debit Diagonal Call Spread. The $50 long strike is slightly OTM, making this a directional trade."
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "N/A",
+        "notes": "Opened a Debit Diagonal Call Spread. Cost Basis: $245."
       },
       {
         "stepType": "CLOSE",
@@ -589,7 +672,7 @@
         "closeCostType": "Credit",
         "grossProfitLossAmount": 42.00,
         "grossProfitLossType": "Profit",
-        "notes": "The entire diagonal spread was closed on the same day for a net credit of $2.87, realizing a profit of $42.00 ($0.42 per share) in a short period."
+        "notes": "Closed for net credit $2.87. Realized Profit: $42.00."
       }
     ]
   },
@@ -638,9 +721,9 @@
         "dteBackRemaining": 44,
         "netDebitPaid": 5.61,
         "commissionFee": 0.00,
-        "grossProfitLossAmount": -561.00,
-        "grossProfitLossType": "Loss (Max)",
-        "notes": "Opened an earnings-sensitive Debit Calendar Spread with 2 DTE on the front month to maximize the post-earnings IV crush benefit against the long call."
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "N/A",
+        "notes": "Opened an earnings-sensitive Debit Calendar Spread. Cost Basis: $561.00."
       },
       {
         "stepType": "CLOSE",
@@ -650,7 +733,7 @@
         "closeCostType": "Credit",
         "grossProfitLossAmount": 31.00,
         "grossProfitLossType": "Profit",
-        "notes": "The entire calendar spread was closed post-earnings (Nov 20) for a net credit of $5.92. This realized a profit of $31.00, confirming a successful volatility crush play."
+        "notes": "The entire calendar spread was closed post-earnings (Nov 20) for a net credit of $5.92. This realized a profit of $31.00."
       }
     ]
   },

@@ -281,56 +281,104 @@
     const jekyllData = {{ site.data.trade_ideas | jsonify }};
 
     document.addEventListener('DOMContentLoaded', function() {
-        let allRealizedTrades = [];
+        let closedTradesData = [];
         const unifiedFilter = document.getElementById('unified-filter');
         const accountFilter = document.getElementById('dash-account-filter');
         const tradeCards = document.querySelectorAll('.trade-card-wrapper');
 
+        // Definition of a "Closed" status based on the final step
+        const CLOSED_STEPS = ['CLOSE_TRADE', 'CLOSE', 'CALLED_AWAY', 'CLOSED_INDEPENDENT_PUT'];
+
         function loadAndProcessData() {
             try {
                 if (!jekyllData) return;
+
                 jekyllData.forEach(trade => {
-                    // Normalization for JS
-                    const meta = trade.meta || {};
-                    const account = (meta.accountType || trade.accountType || 'margin').toLowerCase();
-                    const analysis = trade.strategyDetails || trade.analysis || {};
-                    const strategy = (analysis.type || analysis.strategyType || 'unknown').toLowerCase().replace(/[^a-z0-9]/g, '-');
-                    const pubDate = meta.publicationDate || trade.publicationDate;
-                    const entryYear = pubDate ? new Date(pubDate).getFullYear().toString() : 'unknown';
+                    if (!trade.tradeProgression || trade.tradeProgression.length === 0) return;
 
-                    if (trade.tradeProgression) {
+                    // 1. Determine Trade Status
+                    const lastStep = trade.tradeProgression[trade.tradeProgression.length - 1];
+                    const lastStepType = (lastStep.stepType || "").toUpperCase();
+
+                    // Only process CLOSED trades
+                    if (CLOSED_STEPS.includes(lastStepType)) {
+
+                        // 2. Calculate Total Trade P/L
+                        let tradeTotalPnl = 0;
                         trade.tradeProgression.forEach(step => {
-                            if (['CLOSE_TRADE', 'CLOSE', 'CALLED_AWAY'].includes(step.stepType)) {
-                                let pnl = 0;
-                                if(step.financials) pnl = step.financials.netPnl;
-                                else pnl = step.grossProfitLossAmount;
+                            const stepType = (step.stepType || "").toUpperCase();
 
-                                allRealizedTrades.push({
-                                    date: new Date(step.date),
-                                    pnl: parseFloat(pnl || 0),
-                                    account: account,
-                                    strategy: strategy,
-                                    entryYear: entryYear
-                                });
+                            // --- CRITICAL FIX: IGNORE "OPEN" STEPS ---
+                            // Opening a trade (Debit or Credit) is not a Realized P/L event.
+                            // This prevents debit paid (-$245) from counting as a Loss.
+                            if (stepType.startsWith('OPEN')) return;
+
+                            let stepPnl = 0;
+                            // Handle schema variations
+                            if (step.financials && step.financials.netPnl !== undefined) {
+                                stepPnl = parseFloat(step.financials.netPnl);
+                            } else if (step.grossProfitLossAmount !== undefined) {
+                                stepPnl = parseFloat(step.grossProfitLossAmount);
                             }
+
+                            if (!isNaN(stepPnl)) {
+                                tradeTotalPnl += stepPnl;
+                            }
+                        });
+
+                        // 3. Extract Meta for Filtering
+                        const meta = trade.meta || {};
+                        const account = (meta.accountType || trade.accountType || 'margin').toLowerCase();
+                        const analysis = trade.strategyDetails || trade.analysis || {};
+                        const strategy = (analysis.type || analysis.strategyType || 'unknown').toLowerCase().replace(/[^a-z0-9]/g, '-');
+
+                        // Use the CLOSE DATE for time-period filtering
+                        const closeDate = new Date(lastStep.date);
+                        const closeYear = closeDate.getFullYear().toString();
+
+                        // 4. Push to Data Array
+                        closedTradesData.push({
+                            pnl: tradeTotalPnl,
+                            account: account,
+                            strategy: strategy,
+                            year: closeYear,
+                            status: 'closed'
                         });
                     }
                 });
+
                 updateDashboardAndLog();
-            } catch (error) { console.error('Error:', error); }
+            } catch (error) { console.error('Error processing trade data:', error); }
         }
 
         function updateDashboardAndLog() {
             const selectedAccount = accountFilter.value;
             const unifiedFilterValue = unifiedFilter.value;
 
-            // KPI Update
-            let filteredTrades = allRealizedTrades;
-            if (selectedAccount !== 'all') filteredTrades = filteredTrades.filter(t => t.account === selectedAccount);
+            // --- 1. Filter Metrics Data ---
+            let metricsSource = closedTradesData;
 
-            updateKPIs(filteredTrades);
+            if (selectedAccount !== 'all') {
+                metricsSource = metricsSource.filter(t => t.account === selectedAccount);
+            }
 
-            // Card Visibility
+            if (unifiedFilterValue !== 'all') {
+                if (unifiedFilterValue.startsWith('strategy-')) {
+                    const strat = unifiedFilterValue.replace('strategy-', '');
+                    metricsSource = metricsSource.filter(t => t.strategy === strat);
+                } else if (unifiedFilterValue.startsWith('period-')) {
+                    const period = unifiedFilterValue.replace('period-', '');
+                    if (period !== 'all-time') {
+                        metricsSource = metricsSource.filter(t => t.year === period);
+                    }
+                } else if (unifiedFilterValue === 'position-open') {
+                    metricsSource = [];
+                }
+            }
+
+            updateKPIs(metricsSource);
+
+            // --- 2. Filter Trade Cards ---
             tradeCards.forEach((card) => {
                 const cardAccount = card.dataset.accountType;
                 const cardStrat = card.dataset.strategy;
@@ -358,32 +406,37 @@
         function updateKPIs(data) {
             let totalPnl = 0; let winners = 0; let losers = 0;
             let totalProfit = 0; let totalLoss = 0;
-            let largestProfit = 0; let largestLoss = 0;
 
             data.forEach(t => {
                 const pnl = t.pnl;
                 totalPnl += pnl;
-                if(pnl > 0) {
+                if (pnl > 0) {
                     winners++;
                     totalProfit += pnl;
-                    if(pnl > largestProfit) largestProfit = pnl;
-                }
-                else if(pnl < 0) {
+                } else if (pnl < 0) {
                     losers++;
                     totalLoss += pnl;
-                    if(pnl < largestLoss) largestLoss = pnl;
                 }
             });
-            const totalTrades = winners + losers;
-            const winRate = totalTrades > 0 ? (winners/totalTrades)*100 : 0;
-            const avgProfit = winners > 0 ? totalProfit/winners : 0;
-            const avgLoss = losers > 0 ? totalLoss/losers : 0;
-            const pf = totalLoss !== 0 ? totalProfit/Math.abs(totalLoss) : 0;
 
-            document.getElementById('kpi-total-pnl').textContent = '$' + totalPnl.toFixed(2);
+            const totalTrades = winners + losers;
+            const winRate = totalTrades > 0 ? (winners / totalTrades) * 100 : 0;
+            const avgProfit = winners > 0 ? totalProfit / winners : 0;
+            const avgLoss = losers > 0 ? totalLoss / losers : 0;
+
+            const pnlEl = document.getElementById('kpi-total-pnl');
+            pnlEl.textContent = '$' + totalPnl.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            pnlEl.className = `card-title mb-0 ${totalPnl >= 0 ? 'text-success' : 'text-danger'}`;
+
             document.getElementById('kpi-win-rate').textContent = winRate.toFixed(1) + '%';
-            document.getElementById('kpi-avg-profit').textContent = '$' + avgProfit.toFixed(2);
-            document.getElementById('kpi-avg-loss').textContent = '$' + Math.abs(avgLoss).toFixed(2);
+
+            const avgProfitEl = document.getElementById('kpi-avg-profit');
+            avgProfitEl.textContent = '$' + avgProfit.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            avgProfitEl.className = 'card-title mb-0 text-success';
+
+            const avgLossEl = document.getElementById('kpi-avg-loss');
+            avgLossEl.textContent = '$' + Math.abs(avgLoss).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            avgLossEl.className = 'card-title mb-0 text-danger';
         }
 
         unifiedFilter.addEventListener('change', updateDashboardAndLog);
