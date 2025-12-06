@@ -1,18 +1,17 @@
-# .github/workflows/telegram.yml
-
 name: Telegram Notification on New Trade
 
-# Trigger specifically when a deployment status update is received
+# CHANGED: Trigger specifically on changes to the trade file
 on:
-  deployment_status:
+  push:
+    branches:
+      - master  # Ensure this matches your default branch (master or main)
+    paths:
+      - '_data/trade_ideas.json' # <--- This stops the loop. Only runs if this specific file changes.
+  workflow_dispatch: # Allows manual testing button
 
 jobs:
   notify:
     runs-on: ubuntu-latest
-    # 1. Only run if the deployment was successful
-    # 2. (Optional) Ensure it matches your specific environment name (usually 'github-pages')
-    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages'
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -25,16 +24,17 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # CRITICAL STEP: Give the CDN time to propagate the new file globally
-      - name: Wait for CDN Propagation
-        run: sleep 30
+      # OPTIONAL: A small delay to allow GitHub Pages to start building
+      # Since we removed 'deployment_status', this runs immediately on push.
+      # If you want the link in the message to work instantly, you might keep a sleep,
+      # but usually, it's not strictly necessary since the user reads the msg first.
+      - name: Buffer for Build Start
+        run: sleep 10
 
       - name: Send Telegram Notification
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FILE_PATH: '_data/trade_ideas.json'
-          # If your script needs the live URL for verification, you can add it here
-          # LIVE_DATA_URL: 'https://kahveci.pw/trades/_data/trade_ideas.json'
         run: |
           python .github/scripts/send_telegram_notification.py
