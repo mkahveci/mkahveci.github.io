@@ -1,6 +1,27 @@
 [
   {
     "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5630cd03db6884c965a5313570df283047e4d156",
+    "author": "mkahveci",
+    "date": "2025-12-05T08:04:42Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6f494f1e88a3c23dfff643da2eb0692be548d60c",
+    "author": "mkahveci",
+    "date": "2025-12-05T08:04:32Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bafa971ba4fcc12f38168962e69e3e646c8d72e7",
+    "author": "github-actions[bot]",
+    "date": "2025-12-05T01:28:20Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0c612042d7bf339db712fd04aff73dc879807675",
     "author": "github-actions[bot]",
@@ -761,27 +782,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/dbd180b431f737794a90e764d304db7b7405c8ee",
     "author": "mkahveci",
     "date": "2025-11-10T18:47:12Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6e959c49ccd6767328f2b8241e90d85e2d73c7f9",
-    "author": "mkahveci",
-    "date": "2025-11-10T18:45:08Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1c7c71bfe993f27f805ba378aa711c945ae7cec7",
-    "author": "mkahveci",
-    "date": "2025-11-10T18:44:56Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/71adb6e3fed2c2a302c26c20c780d4ef78ddccd4",
-    "author": "mkahveci",
-    "date": "2025-11-10T18:42:49Z"
   },
   {
     "repo": "mkahveci/email-signature",
