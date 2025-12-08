@@ -5,11 +5,16 @@
       "tradeTitle": "Bullish Risk Reversal on BMNR",
       "ticker": "BMNR",
       "accountType": "Margin",
-      "tags": ["Speculative", "Equity", "Risk Reversal", "LEAPS"]
+      "tags": [
+        "Speculative",
+        "Equity",
+        "Risk Reversal",
+        "LEAPS"
+      ]
     },
     "marketContext": {
-      "currentPrice": 0.00,
-      "ivRank": 38.0,
+      "currentPrice": 0,
+      "ivRank": 38,
       "earningsDate": "2025-12-18",
       "thesis": "Super Bullish: Financing long-term upside (LEAPS) by selling near-term downside put premium."
     },
@@ -18,18 +23,28 @@
       "expirationDate": "2026-01-23",
       "dte": 50,
       "legs": [
-        { "action": "Sell", "type": "Put", "strike": 30.00, "expiry": "2026-01-23" },
-        { "action": "Buy",  "type": "Call", "strike": 50.00, "expiry": "2027-01-15" }
+        {
+          "action": "Sell",
+          "type": "Put",
+          "strike": 30,
+          "expiry": "2026-01-23"
+        },
+        {
+          "action": "Buy",
+          "type": "Call",
+          "strike": 50,
+          "expiry": "2027-01-15"
+        }
       ]
     },
     "financials": {
-      "entryPrice": 8.00,
+      "entryPrice": 8,
       "maxProfit": "Unlimited",
-      "buyingPowerEffect": 2403.00,
+      "buyingPowerEffect": 2403,
       "metrics": {
-        "roc": 0.00,
-        "annualizedRoc": 0.00,
-        "pop": 50.0
+        "roc": 0,
+        "annualizedRoc": 0,
+        "pop": 50
       }
     },
     "managementPlan": {
@@ -40,11 +55,21 @@
         "stepType": "OPEN_TRADE",
         "date": "2025-12-04",
         "actionTaken": "STO Jan'26 30 Put / BTO Jan'27 50 Call",
-        "netChange": -800.00,
+        "netChange": -800,
         "commissionFee": 2.22,
-        "grossProfitLossAmount": 0.00,
+        "grossProfitLossAmount": 0,
         "grossProfitLossType": "Open",
         "notes": "Entry filled. Net Debit 8.00."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-08",
+        "actionTaken": "BTC Jan'26 30 Put @ 3.00 / STC Jan'27 50 Call @ 12.45",
+        "netChange": 945,
+        "commissionFee": 0.22,
+        "grossProfitLossAmount": 145,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed full position for a quick 18% return on risk in 4 days."
       }
     ]
   },
