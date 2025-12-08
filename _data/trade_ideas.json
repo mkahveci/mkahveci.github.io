@@ -1,6 +1,74 @@
 [
   {
     "meta": {
+      "publicationDate": "2025-12-03",
+      "tradeTitle": "Iron Condor on GLD",
+      "ticker": "GLD",
+      "accountType": "Margin",
+      "tags": ["Ladder Strategy", "Iron Condor", "Neutral", "Non-Correlated"]
+    },
+    "marketContext": {
+      "currentPrice": 386.35,
+      "ivRank": 43.1,
+      "earningsDate": "N/A",
+      "thesis": "Volatility play on Gold. Selling aggressive 25 Delta Call side to finance high credit collection (37% of width)."
+    },
+    "strategyDetails": {
+      "type": "Iron Condor",
+      "direction": "Neutral",
+      "entryType": "Credit",
+      "expirationDate": "2026-01-16",
+      "dte": 44,
+      "legs": [
+        { "action": "Sell", "type": "Call", "strike": 408.00, "expiry": "2026-01-16", "fillPrice": 4.42 },
+        { "action": "Buy",  "type": "Call", "strike": 413.00, "expiry": "2026-01-16", "fillPrice": 3.47 },
+        { "action": "Sell", "type": "Put",  "strike": 367.00, "expiry": "2026-01-16", "fillPrice": 3.15 },
+        { "action": "Buy",  "type": "Put",  "strike": 362.00, "expiry": "2026-01-16", "fillPrice": 2.23 }
+      ]
+    },
+    "financials": {
+      "entryPrice": 1.87,
+      "maxProfit": 187.00,
+      "maxLoss": 313.00,
+      "buyingPowerEffect": 313.00,
+      "riskRewardRatio": "1:1.67",
+      "metrics": {
+        "roc": 59.74,
+        "annualizedRoc": 495.51,
+        "dailyProfitPotential": 4.25
+      }
+    },
+    "managementPlan": {
+      "profitTarget": 0.94,
+      "stopLoss": 0.00,
+      "daysToManage": 21,
+      "notes": "GTC Limit Order set to close @ $0.94. Monitor 408 Short Call (25 Delta) for pressure."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_TRADE",
+        "date": "2025-12-03",
+        "actionTaken": "Opened Position",
+        "netChange": 182.56,
+        "commissionFee": 4.44,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "notes": "Filled at 1:05 PM ET. Collected $1.87 credit."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-08",
+        "actionTaken": "BTC Jan 16 (367P/408C) / STC Jan 16 (362P/413C)",
+        "netChange": -162.44,
+        "commissionFee": 0.44,
+        "grossProfitLossAmount": 20.12,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed early for $1.62 Debit. Total Net Profit $20.12 after fees. 13% of max profit captured in 5 days."
+      }
+    ]
+  },
+  {
+    "meta": {
       "publicationDate": "2025-12-08",
       "tradeTitle": "Earnings Volatility Strangle on ORCL",
       "ticker": "ORCL",
@@ -403,71 +471,6 @@
         "grossProfitLossAmount": 4.16,
         "grossProfitLossType": "Profit",
         "notes": "Closed for a net profit of $4.16 after 4 days. Net spread basis improved from 2.52 debit to 2.61 credit."
-      }
-    ]
-  },
-  {
-    "meta": {
-      "publicationDate": "2025-12-03",
-      "tradeTitle": "Iron Condor on GLD",
-      "ticker": "GLD",
-      "accountType": "Margin",
-      "tags": ["Ladder Strategy", "Iron Condor", "Neutral", "Non-Correlated"]
-    },
-    "marketContext": {
-      "currentPrice": 386.35,
-      "ivRank": 43.1,
-      "earningsDate": "N/A",
-      "thesis": "Volatility play on Gold. Selling aggressive 25 Delta Call side to finance high credit collection (37% of width)."
-    },
-    "strategyDetails": {
-      "type": "Iron Condor",
-      "direction": "Neutral",
-      "entryType": "Credit",
-      "expirationDate": "2026-01-16",
-      "dte": 44,
-      "legs": [
-        { "action": "Sell", "type": "Call", "strike": 408.00, "expiry": "2026-01-16", "fillPrice": 4.42 },
-        { "action": "Buy",  "type": "Call", "strike": 413.00, "expiry": "2026-01-16", "fillPrice": 3.47 },
-        { "action": "Sell", "type": "Put",  "strike": 367.00, "expiry": "2026-01-16", "fillPrice": 3.15 },
-        { "action": "Buy",  "type": "Put",  "strike": 362.00, "expiry": "2026-01-16", "fillPrice": 2.23 }
-      ]
-    },
-    "financials": {
-      "entryPrice": 1.87,
-      "maxProfit": 187.00,
-      "maxLoss": 313.00,
-      "buyingPowerEffect": 313.00,
-      "riskRewardRatio": "1:1.67",
-      "metrics": {
-        "roc": 59.74,
-        "annualizedRoc": 495.51,
-        "dailyProfitPotential": 4.25
-      }
-    },
-    "managementPlan": {
-      "profitTarget": 0.94,
-      "stopLoss": 0.00,
-      "daysToManage": 21,
-      "notes": "GTC Limit Order set to close @ $0.94. Monitor 408 Short Call (25 Delta) for pressure."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_TRADE",
-        "date": "2025-12-03",
-        "action": "Opened Position",
-        "details": {
-          "strategy": "Iron Condor",
-          "netPrice": 1.87,
-          "priceType": "Credit",
-          "contracts": 1
-        },
-        "financials": {
-          "commission": 4.00,
-          "fees": 0.44,
-          "totalCost": -182.56
-        },
-        "notes": "Filled at 1:05 PM ET. Collected $1.87 credit."
       }
     ]
   },
