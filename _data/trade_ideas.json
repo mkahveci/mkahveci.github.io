@@ -1,5 +1,66 @@
 [
   {
+    "publicationDate": "2025-12-03",
+    "tradeTitle": "Aggressive Bullish Put Vertical on CPB",
+    "summaryJustification": "CPB has an elevated IV Rank of 89.3, creating inflated option premiums. This specific setup sells an In-The-Money (32 Strike) put spread to collect a large credit ($1.25), offering a high Return on Capital if the stock rallies back above $32.",
+    "expectedReturnDisplay": "166.67% Return on Risk / $125 Max Profit",
+    "ticker": "CPB",
+    "accountType": "Margin",
+    "currentPrice": 30.01,
+    "ivRank": 89.3,
+    "earningsDate": "N/A",
+    "analysis": {
+      "thesis": "High volatility allows for an aggressive bullish skew. By selling the 32/30 vertical for $1.25, the trade risks only $0.75 to make $1.25. However, because the short strike (32) is above the current price (30.01), this trade requires a bullish move to be profitable.",
+      "strategyType": "Short Put Vertical",
+      "tradeDetails": {
+        "expiration": "2026-01-16",
+        "dte": 44,
+        "maxProfit": 125.00,
+        "spreadDetails": {
+          "shortPutStrike": 32.00,
+          "longPutStrike": 30.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.25
+        }
+      },
+      "metrics": {
+        "roc": 166.67,
+        "annualizedRoc": 1382.58,
+        "pop": 40.00,
+        "buyingPowerEffect": 75.00,
+        "dailyProfitPotential": 2.84
+      },
+      "managementPlan": "This is a directional trade. Manage early if CPB fails to break $31 within 21 days. Take profit at 50% of max profit ($62.50) if the move happens quickly."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-12-03",
+        "actionTaken": "STO Jan 16 32/30 Put Vertical",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netChange": 1.25,
+        "commissionFee": 2.00,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "notes": "Filled at $1.25 credit. Defined risk trade with $75 capital requirement per spread."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-08",
+        "actionTaken": "BTC 32 Put @ 2.72 / STC 30 Put @ 1.42",
+        "expiration": "2026-01-16",
+        "dteRemaining": 39,
+        "netChange": -1.30,
+        "commissionFee": 0.47,
+        "grossProfitLossAmount": -0.05,
+        "grossProfitLossType": "Loss",
+        "notes": "Closed for a minimal loss ($0.05 per contract). The spread widened slightly against the position as the required bullish move did not materialize quickly enough."
+      }
+    ]
+  },
+  {
     "meta": {
       "publicationDate": "2025-12-03",
       "tradeTitle": "Iron Condor on GLD",
@@ -548,55 +609,6 @@
           "netPnl": 75.38
         },
         "notes": "Manual override to reduce risk. Bought back 34 Put @ 5.44, Sold 32 Put @ 4.27. Net Debit 1.17."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-12-03",
-    "tradeTitle": "Aggressive Bullish Put Vertical on CPB",
-    "summaryJustification": "CPB has an elevated IV Rank of 89.3, creating inflated option premiums. This specific setup sells an In-The-Money (32 Strike) put spread to collect a large credit ($1.25), offering a high Return on Capital if the stock rallies back above $32.",
-    "expectedReturnDisplay": "166.67% Return on Risk / $125 Max Profit",
-    "ticker": "CPB",
-    "accountType": "Margin",
-    "currentPrice": 30.01,
-    "ivRank": 89.3,
-    "earningsDate": "N/A",
-    "analysis": {
-      "thesis": "High volatility allows for an aggressive bullish skew. By selling the 32/30 vertical for $1.25, the trade risks only $0.75 to make $1.25. However, because the short strike (32) is above the current price (30.01), this trade requires a bullish move to be profitable.",
-      "strategyType": "Short Put Vertical",
-      "tradeDetails": {
-        "expiration": "2026-01-16",
-        "dte": 44,
-        "maxProfit": 125.00,
-        "spreadDetails": {
-          "shortPutStrike": 32.00,
-          "longPutStrike": 30.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 1.25
-        }
-      },
-      "metrics": {
-        "roc": 166.67,
-        "annualizedRoc": 1382.58,
-        "pop": 40.00,
-        "buyingPowerEffect": 75.00,
-        "dailyProfitPotential": 2.84
-      },
-      "managementPlan": "This is a directional trade. Manage early if CPB fails to break $31 within 21 days. Take profit at 50% of max profit ($62.50) if the move happens quickly."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-12-03",
-        "actionTaken": "STO Jan 16 32/30 Put Vertical",
-        "expiration": "2026-01-16",
-        "dteRemaining": 44,
-        "netCreditReceived": 1.25,
-        "commissionFee": 2.00,
-        "grossProfitLossAmount": 0.00,
-        "grossProfitLossType": "Profit",
-        "notes": "Filled at $1.25 credit. Defined risk trade with $75 capital requirement per spread."
       }
     ]
   },
