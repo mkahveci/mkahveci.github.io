@@ -1,6 +1,55 @@
 [
   {
     "publicationDate": "2025-12-09",
+    "tradeTitle": "Earnings Put BWB on ORCL",
+    "summaryJustification": "Opened a Broken Wing Butterfly for a credit to capitalize on earnings volatility. The credit eliminates upside risk, with a profit target at the $200 strike pin.",
+    "expectedReturnDisplay": "$604 Max Profit / Risk Free Upside",
+    "ticker": "ORCL",
+    "accountType": "Margin",
+    "currentPrice": 217.50,
+    "ivRank": 65.00,
+    "earningsDate": "2025-12-10",
+    "analysis": {
+      "thesis": "High IV ahead of earnings allows structuring this 5-wide/10-wide Butterfly for a Net Credit. We are positioning for a neutral-to-bullish move, or a slight pullback to 200, while removing all risk if the stock rallies.",
+      "strategyType": "Broken Wing Butterfly",
+      "tradeDetails": {
+        "expiration": "2026-01-23",
+        "dte": 45,
+        "maxProfit": 604.00,
+        "spreadDetails": {
+          "shortPutStrike": 200.00,
+          "longPutStrike": 190.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.04
+        }
+      },
+      "metrics": {
+        "roc": 152.0,
+        "annualizedRoc": 1232.0,
+        "pop": 85.0,
+        "buyingPowerEffect": 396.00,
+        "dailyProfitPotential": 13.42
+      },
+      "managementPlan": "Take profit at 25-50% of max profit potential if early, or hold for the pin if price drifts to 200. Bail if price violates 194."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-12-09",
+        "actionTaken": "Opened +1 205P / -2 200P / +1 190P BWB",
+        "netChange": 104.00,
+        "commissionFee": 3.00,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "expiration": "2026-01-23",
+        "dteRemaining": 45,
+        "notes": "Opened for Net Credit of $1.04. Risk Free to upside > 205."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-12-09",
     "tradeTitle": "Super Bull / Stock Replacement on BMNR",
     "summaryJustification": "CLOSED. The repair trade was executed and closed successfully. We exited the 'Super Bull' structure after a rapid 5-day rally. The Short Puts were bought back at exactly 50% max profit, and the Long LEAPS were sold into strength to capture delta expansion. We have banked ~$1,146 in profit, significantly reducing the prior loss from the stock stop-out.",
     "expectedReturnDisplay": "Trade Closed | Realized Profit: +$1,145.96 | Cash Flow: +$3,798",
@@ -312,74 +361,6 @@
         "grossProfitLossAmount": 20.12,
         "grossProfitLossType": "Profit",
         "notes": "Closed early for $1.62 Debit. Total Net Profit $20.12 after fees. 13% of max profit captured in 5 days."
-      }
-    ]
-  },
-  {
-    "meta": {
-      "publicationDate": "2025-12-08",
-      "tradeTitle": "Earnings Volatility Strangle on ORCL",
-      "ticker": "ORCL",
-      "accountType": "Margin",
-      "tags": [
-        "Earnings Play",
-        "Short Strangle",
-        "High IV",
-        "Volatility Crush"
-      ]
-    },
-    "marketContext": {
-      "currentPrice": 232.50,
-      "ivRank": 82.0,
-      "earningsDate": "2025-12-10",
-      "thesis": "Selling the pre-earnings volatility crush. With a 76% POP, the 185/280 strikes provide a massive buffer against the expected move."
-    },
-    "strategyDetails": {
-      "type": "Short Strangle",
-      "expirationDate": "2026-01-16",
-      "dte": 39,
-      "legs": [
-        {
-          "action": "Sell",
-          "type": "Put",
-          "strike": 185.00,
-          "expiry": "2026-01-16"
-        },
-        {
-          "action": "Sell",
-          "type": "Call",
-          "strike": 280.00,
-          "expiry": "2026-01-16"
-        }
-      ]
-    },
-    "financials": {
-      "entryPrice": -7.01,
-      "maxProfit": 701.00,
-      "buyingPowerEffect": 3500.00,
-      "metrics": {
-        "roc": 20.0,
-        "annualizedRoc": 187.0,
-        "pop": 76.0,
-        "breakEvens": [
-          177.99,
-          287.01
-        ]
-      }
-    },
-    "managementPlan": {
-      "notes": "Earnings on Dec 10. Look for IV crush to close early for a profit. If tested, roll the untested side (roll up Put or roll down Call) to collect more credit."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_TRADE",
-        "date": "2025-12-08",
-        "actionTaken": "STO Jan'26 185 Put / STO Jan'26 280 Call",
-        "netChange": 698.78,
-        "commissionFee": 2.22,
-        "grossProfitLossAmount": 0.00,
-        "grossProfitLossType": "Open",
-        "notes": "Filled at decent credit ($7.01). Strikes 185/280. Net cash inflow $698.78 after fees."
       }
     ]
   },
