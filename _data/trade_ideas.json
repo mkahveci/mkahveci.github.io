@@ -1,86 +1,37 @@
 [
   {
     "publicationDate": "2025-12-09",
-    "tradeTitle": "Earnings Put BWB on ORCL",
-    "summaryJustification": "Opened a Broken Wing Butterfly for a credit to capitalize on earnings volatility. The credit eliminates upside risk, with a profit target at the $200 strike pin.",
-    "expectedReturnDisplay": "$604 Max Profit / Risk Free Upside",
-    "ticker": "ORCL",
-    "accountType": "Margin",
-    "currentPrice": 217.50,
-    "ivRank": 65.00,
-    "earningsDate": "2025-12-10",
-    "analysis": {
-      "thesis": "High IV ahead of earnings allows structuring this 5-wide/10-wide Butterfly for a Net Credit. We are positioning for a neutral-to-bullish move, or a slight pullback to 200, while removing all risk if the stock rallies.",
-      "strategyType": "Broken Wing Butterfly",
-      "tradeDetails": {
-        "expiration": "2026-01-23",
-        "dte": 45,
-        "maxProfit": 604.00,
-        "spreadDetails": {
-          "shortPutStrike": 200.00,
-          "longPutStrike": 190.00,
-          "shortCallStrike": 0.00,
-          "longCallStrike": 0.00,
-          "netCredit": 1.04
-        }
-      },
-      "metrics": {
-        "roc": 152.0,
-        "annualizedRoc": 1232.0,
-        "pop": 85.0,
-        "buyingPowerEffect": 396.00,
-        "dailyProfitPotential": 13.42
-      },
-      "managementPlan": "Take profit at 25-50% of max profit potential if early, or hold for the pin if price drifts to 200. Bail if price violates 194."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-12-09",
-        "actionTaken": "Opened +1 205P / -2 200P / +1 190P BWB",
-        "netChange": 104.00,
-        "commissionFee": 3.00,
-        "grossProfitLossAmount": 0.00,
-        "grossProfitLossType": "Open",
-        "expiration": "2026-01-23",
-        "dteRemaining": 45,
-        "notes": "Opened for Net Credit of $1.04. Risk Free to upside > 205."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-12-09",
-    "tradeTitle": "Super Bull / Stock Replacement on BMNR",
-    "summaryJustification": "CLOSED. The repair trade was executed and closed successfully. We exited the 'Super Bull' structure after a rapid 5-day rally. The Short Puts were bought back at exactly 50% max profit, and the Long LEAPS were sold into strength to capture delta expansion. We have banked ~$1,146 in profit, significantly reducing the prior loss from the stock stop-out.",
-    "expectedReturnDisplay": "Trade Closed | Realized Profit: +$1,145.96 | Cash Flow: +$3,798",
+    "tradeTitle": "Covered Call (Buy-Write) on BMNR",
+    "summaryJustification": "Capitalizing on high IV and recent momentum. Re-entered 200 shares and sold ATM/OTM calls for massive premium ($2.60) with only 10 days to expiration. The 6.5% downside protection (breakeven $36.98) offers a strong buffer.",
+    "expectedReturnDisplay": "Max Profit: $604 (7.6% Return on Risk in 10 Days)",
     "ticker": "BMNR",
     "accountType": "IRA",
-    "currentPrice": 39.03,
-    "ivRank": 30.0,
+    "currentPrice": 39.58,
+    "ivRank": 35.0,
     "earningsDate": "2025-12-18",
     "analysis": {
-      "thesis": "Mission Accomplished. The goal was to repair the damage from the stock assignment/stop-loss, and we recovered 50% of that loss in under a week. We are now completely flat BMNR ahead of the Dec 18 earnings, removing binary event risk.",
-      "strategyType": "Super Bull (Closed)",
+      "thesis": "Aggressive income scalp. The stock has rallied, and IV is inflated. By selling the 40C against new shares, we lock in a high probability of profit. If the stock stays flat, drops slightly, or rips higher, we win. We only lose if BMNR crashes below $36.98 before Dec 19.",
+      "strategyType": "Covered Call",
       "tradeDetails": {
-        "expiration": "2027-01-15",
-        "dte": 0,
-        "maxProfit": 0.00,
+        "expiration": "2025-12-19",
+        "dte": 10,
+        "maxProfit": 604.00,
         "spreadDetails": {
-          "shortPutStrike": 30.0,
+          "shortPutStrike": 0.0,
           "longPutStrike": 0.0,
-          "shortCallStrike": 0.0,
-          "longCallStrike": 30.0,
-          "netCredit": 0.00
+          "shortCallStrike": 40.0,
+          "longCallStrike": 0.0,
+          "netCredit": 520.0
         }
       },
       "metrics": {
-        "roc": 0.0,
-        "annualizedRoc": 0.0,
-        "pop": 0.0,
-        "buyingPowerEffect": 0.0,
-        "dailyProfitPotential": 0.0
+        "roc": 7.6,
+        "annualizedRoc": 277.0,
+        "pop": 65.0,
+        "buyingPowerEffect": 7396.0,
+        "dailyProfitPotential": 60.4
       },
-      "managementPlan": "1. Wait. Do not chase the stock at $39. \n2. Watch for a pullback to $35-$36 to potentially sell new Puts. \n3. Enjoy the recovered capital."
+      "managementPlan": "1. If Stock > $40 on Dec 19: Let shares be called away. Realize $604 profit. \n2. If Stock < $40: Keep shares, keep $520 premium, and sell new calls for Jan. \n3. Earnings (Dec 18): Note that expiration is 1 day after earnings. This is a binary volatility play."
     },
     "tradeProgression": [
       {
@@ -231,7 +182,78 @@
         "commissionFee": 2.04,
         "grossProfitLossAmount": 1145.96,
         "grossProfitLossType": "Profit",
-        "notes": "CLOSED SUPER BULL. Perfect Execution: Puts closed at ~50% profit. Calls sold into strength. Net +$1,146 realized."
+        "notes": "CLOSED SUPER BULL. Perfect Execution. Net +$1,146 realized."
+      },
+      {
+        "stepType": "AUXILIARY: BUY_SHARES",
+        "date": "2025-12-09",
+        "actionTaken": "BTO 200 Shares BMNR @ 39.58",
+        "netChange": -7916.0,
+        "commissionFee": 0.0,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Open",
+        "notes": "Re-Entry: Bought 200 shares to restart Wheel logic."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-12-09",
+        "actionTaken": "STO 2 BMNR Dec 19 40.0 C @ 2.60",
+        "expiration": "2025-12-19",
+        "dteRemaining": 10,
+        "netChange": 520.0,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Open",
+        "notes": "Sold aggressive 10-day calls. Breakeven lowered to 36.98."
+      }
+    ]
+  },
+  {
+    "publicationDate": "2025-12-09",
+    "tradeTitle": "Earnings Put BWB on ORCL",
+    "summaryJustification": "Opened a Broken Wing Butterfly for a credit to capitalize on earnings volatility. The credit eliminates upside risk, with a profit target at the $200 strike pin.",
+    "expectedReturnDisplay": "$604 Max Profit / Risk Free Upside",
+    "ticker": "ORCL",
+    "accountType": "Margin",
+    "currentPrice": 217.50,
+    "ivRank": 65.00,
+    "earningsDate": "2025-12-10",
+    "analysis": {
+      "thesis": "High IV ahead of earnings allows structuring this 5-wide/10-wide Butterfly for a Net Credit. We are positioning for a neutral-to-bullish move, or a slight pullback to 200, while removing all risk if the stock rallies.",
+      "strategyType": "Broken Wing Butterfly",
+      "tradeDetails": {
+        "expiration": "2026-01-23",
+        "dte": 45,
+        "maxProfit": 604.00,
+        "spreadDetails": {
+          "shortPutStrike": 200.00,
+          "longPutStrike": 190.00,
+          "shortCallStrike": 0.00,
+          "longCallStrike": 0.00,
+          "netCredit": 1.04
+        }
+      },
+      "metrics": {
+        "roc": 152.0,
+        "annualizedRoc": 1232.0,
+        "pop": 85.0,
+        "buyingPowerEffect": 396.00,
+        "dailyProfitPotential": 13.42
+      },
+      "managementPlan": "Take profit at 25-50% of max profit potential if early, or hold for the pin if price drifts to 200. Bail if price violates 194."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-12-09",
+        "actionTaken": "Opened +1 205P / -2 200P / +1 190P BWB",
+        "netChange": 104.00,
+        "commissionFee": 3.00,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "expiration": "2026-01-23",
+        "dteRemaining": 45,
+        "notes": "Opened for Net Credit of $1.04. Risk Free to upside > 205."
       }
     ]
   },
