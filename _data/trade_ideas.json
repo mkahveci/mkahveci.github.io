@@ -1,5 +1,192 @@
 [
   {
+    "publicationDate": "2025-12-09",
+    "tradeTitle": "Super Bull / Stock Replacement on BMNR",
+    "summaryJustification": "CLOSED. The repair trade was executed and closed successfully. We exited the 'Super Bull' structure after a rapid 5-day rally. The Short Puts were bought back at exactly 50% max profit, and the Long LEAPS were sold into strength to capture delta expansion. We have banked ~$1,146 in profit, significantly reducing the prior loss from the stock stop-out.",
+    "expectedReturnDisplay": "Trade Closed | Realized Profit: +$1,145.96 | Cash Flow: +$3,798",
+    "ticker": "BMNR",
+    "accountType": "IRA",
+    "currentPrice": 39.03,
+    "ivRank": 30.0,
+    "earningsDate": "2025-12-18",
+    "analysis": {
+      "thesis": "Mission Accomplished. The goal was to repair the damage from the stock assignment/stop-loss, and we recovered 50% of that loss in under a week. We are now completely flat BMNR ahead of the Dec 18 earnings, removing binary event risk.",
+      "strategyType": "Super Bull (Closed)",
+      "tradeDetails": {
+        "expiration": "2027-01-15",
+        "dte": 0,
+        "maxProfit": 0.00,
+        "spreadDetails": {
+          "shortPutStrike": 30.0,
+          "longPutStrike": 0.0,
+          "shortCallStrike": 0.0,
+          "longCallStrike": 30.0,
+          "netCredit": 0.00
+        }
+      },
+      "metrics": {
+        "roc": 0.0,
+        "annualizedRoc": 0.0,
+        "pop": 0.0,
+        "buyingPowerEffect": 0.0,
+        "dailyProfitPotential": 0.0
+      },
+      "managementPlan": "1. Wait. Do not chase the stock at $39. \n2. Watch for a pullback to $35-$36 to potentially sell new Puts. \n3. Enjoy the recovered capital."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-10-31",
+        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
+        "expiration": "2025-11-07",
+        "dteRemaining": 7,
+        "netCreditReceived": 280.0,
+        "commissionFee": 1.02,
+        "grossProfitLossAmount": 278.98,
+        "grossProfitLossType": "Profit",
+        "notes": "Opened 2 contracts at 1.40 for 7 DTE."
+      },
+      {
+        "stepType": "ASSIGNMENT",
+        "date": "2025-11-07",
+        "actionTaken": "Assigned 200 shares at strike",
+        "purchasePrice": 45.0,
+        "sharesAcquired": 200,
+        "netCostBasisPerShare": 43.61,
+        "totalNotionalCost": 9000.0,
+        "notes": "Assigned at $45."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-11-10",
+        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
+        "expiration": "2025-11-14",
+        "dteRemaining": 4,
+        "netCreditReceived": 94.99,
+        "commissionFee": 1.01,
+        "grossCreditTotal": 96.0,
+        "notes": "Sold weekly covered call."
+      },
+      {
+        "stepType": "WHEEL_STEP: CALL_EXPIRED_WORTHLESS",
+        "date": "2025-11-14",
+        "actionTaken": "11/14 47.00 C expired OTM",
+        "expiration": "2025-11-14",
+        "dteRemaining": 0,
+        "netCreditReceived": 0.0,
+        "commissionFee": 0.0,
+        "grossProfitLossAmount": 94.99,
+        "grossProfitLossType": "Profit",
+        "notes": "Premium realized."
+      },
+      {
+        "stepType": "WHEEL_STEP: BASIS_REDUCTION",
+        "date": "2025-12-01",
+        "actionTaken": "AUXILIARY: Long Call Vertical 30/35",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 0.0,
+        "commissionFee": 7.61,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "N/A",
+        "notes": "Rescue mission initiated."
+      },
+      {
+        "stepType": "WHEEL_STEP: BASIS_REDUCTION_CLOSE",
+        "date": "2025-12-02",
+        "actionTaken": "Closed Call Vertical @ Profit",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netCreditReceived": 374.78,
+        "commissionFee": 7.61,
+        "grossProfitLossAmount": 374.78,
+        "grossProfitLossType": "Profit",
+        "notes": "Profit applied to basis."
+      },
+      {
+        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
+        "date": "2025-12-02",
+        "actionTaken": "STO 2 BMNR 01/16 50.00 C",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 308.98,
+        "commissionFee": 1.02,
+        "grossCreditTotal": 310.0,
+        "notes": "Sold 2x 50 Calls @ $1.55."
+      },
+      {
+        "stepType": "AUXILIARY: OPEN_PUT_SPREAD",
+        "date": "2025-12-02",
+        "actionTaken": "STO 5 BMNR 01/16 30/25 Put Vertical",
+        "expiration": "2026-01-16",
+        "dteRemaining": 45,
+        "netCreditReceived": 954.9,
+        "commissionFee": 5.1,
+        "grossProfitLossAmount": 0.0,
+        "grossProfitLossType": "Open",
+        "notes": "Sold 5x Put Credit Spreads."
+      },
+      {
+        "stepType": "AUXILIARY: CLOSE_PUT_SPREAD",
+        "date": "2025-12-03",
+        "actionTaken": "BTC 5 BMNR 01/16 30.0 P / STC 5 BMNR 01/16 25.0 P",
+        "expiration": "2026-01-16",
+        "dteRemaining": 44,
+        "netCreditReceived": -855.0,
+        "commissionFee": 5.11,
+        "grossProfitLossAmount": 99.89,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed Rescue Flight v2. Net Profit $99.89."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-04",
+        "actionTaken": "STC 200 Shares BMNR @ 33.23",
+        "closePrice": 33.23,
+        "closeCostType": "Credit",
+        "grossProfitLossAmount": -2354.0,
+        "grossProfitLossType": "Loss",
+        "notes": "STRATEGY PIVOT: Stop Loss triggered on Stock. Realized ~$2.3k loss to free capital."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-04",
+        "actionTaken": "STO 2 BMNR 01/16/26 30.00 P",
+        "netChange": 628.98,
+        "netChangeType": "Credit",
+        "notes": "Super Bull Leg 1: Sold 2x Puts @ 3.15 (Merged execution)."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-04",
+        "actionTaken": "BTO 2 BMNR 01/15/27 30.00 C",
+        "netChange": -3281.02,
+        "netChangeType": "Debit",
+        "notes": "Super Bull Leg 2: Bought 2x LEAPS @ 16.40 for stock replacement."
+      },
+      {
+        "stepType": "ADJUSTMENT",
+        "date": "2025-12-05",
+        "actionTaken": "BTC 2 BMNR 01/16/26 50.00 C",
+        "netChange": 0.98,
+        "netChangeType": "Credit",
+        "grossProfitLossAmount": 0.98,
+        "grossProfitLossType": "Profit",
+        "notes": "Closed lingering Short Calls from Dec 2. Scratch/Tiny Profit."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-09",
+        "actionTaken": "STC 2 Jan'27 30C @ 20.55 / BTC 2 Jan'26 30P @ 1.56",
+        "netChange": 3798.00,
+        "commissionFee": 2.04,
+        "grossProfitLossAmount": 1145.96,
+        "grossProfitLossType": "Profit",
+        "notes": "CLOSED SUPER BULL. Perfect Execution: Puts closed at ~50% profit. Calls sold into strength. Net +$1,146 realized."
+      }
+    ]
+  },
+  {
     "publicationDate": "2025-12-03",
     "tradeTitle": "Aggressive Bullish Put Vertical on CPB",
     "summaryJustification": "CPB has an elevated IV Rank of 89.3, creating inflated option premiums. This specific setup sells an In-The-Money (32 Strike) put spread to collect a large credit ($1.25), offering a high Return on Capital if the stock rallies back above $32.",
@@ -267,183 +454,6 @@
         "grossProfitLossAmount": 145,
         "grossProfitLossType": "Profit",
         "notes": "Closed full position for a quick 18% return on risk in 4 days."
-      }
-    ]
-  },
-  {
-    "publicationDate": "2025-12-05",
-    "tradeTitle": "Super Bull / Stock Replacement on BMNR",
-    "summaryJustification": "Corrected progression: The Dec 3rd partial entry was merged into the definitive Dec 4th execution. We have officially pivoted from 'The Wheel' to a 'Super Bull' structure. By selling the 200 shares (stopping the equity bleed) and replacing them with 2x Jan '27 LEAPS financed by 2x Jan '26 Short Puts, we maintain 200-share equivalent delta with significantly reduced capital at risk.",
-    "expectedReturnDisplay": "Capital Efficiency Play | Net Debit: ~$2,652 | Delta: ~160+",
-    "ticker": "BMNR",
-    "accountType": "IRA",
-    "currentPrice": 32.50,
-    "ivRank": 38.0,
-    "earningsDate": "2025-12-18",
-    "analysis": {
-      "thesis": "Recovery & Repair. This 'Super Bull' (Ratio Diagonal) setup allows us to participate in a recovery above $30 without holding the physical stock. \n1. Financing: The 2 Short Puts ($630 credit) help offset the cost of the LEAPS. \n2. Risk: We are still short 30 Puts (x2), so downside risk exists below $30, but it is identical to holding the stock, minus the capital layout. \n3. Earnings: The short puts benefit from IV crush post-earnings (Dec 18).",
-      "strategyType": "Super Bull (2 Long LEAPS / 2 Short Puts)",
-      "tradeDetails": {
-        "expiration": "2027-01-15",
-        "dte": 406,
-        "maxProfit": 0.00,
-        "spreadDetails": {
-          "shortPutStrike": 30.0,
-          "longPutStrike": 0.0,
-          "shortCallStrike": 0.0,
-          "longCallStrike": 30.0,
-          "netCredit": 0.00
-        }
-      },
-      "metrics": {
-        "roc": 0.0,
-        "annualizedRoc": 0.0,
-        "pop": 68.0,
-        "buyingPowerEffect": 5200.0,
-        "dailyProfitPotential": 0.0
-      },
-      "managementPlan": "1. Short Puts (Jan '26): These are the engine. Roll them if tested or manage at 50% profit to lower basis further. \n2. LEAPS (Jan '27): Hold as the core long asset. \n3. Earnings (Dec 18): Monitor the Short Puts closely."
-    },
-    "tradeProgression": [
-      {
-        "stepType": "OPEN_SHORT_PUT",
-        "date": "2025-10-31",
-        "actionTaken": "STO 2 BMNR 11/07 45.00 P",
-        "expiration": "2025-11-07",
-        "dteRemaining": 7,
-        "netCreditReceived": 280.0,
-        "commissionFee": 1.02,
-        "grossProfitLossAmount": 278.98,
-        "grossProfitLossType": "Profit",
-        "notes": "Opened 2 contracts at 1.40 for 7 DTE."
-      },
-      {
-        "stepType": "ASSIGNMENT",
-        "date": "2025-11-07",
-        "actionTaken": "Assigned 200 shares at strike",
-        "purchasePrice": 45.0,
-        "sharesAcquired": 200,
-        "netCostBasisPerShare": 43.61,
-        "totalNotionalCost": 9000.0,
-        "notes": "Assigned at $45."
-      },
-      {
-        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
-        "date": "2025-11-10",
-        "actionTaken": "STO 2 BMNR 11/14 47.00 C",
-        "expiration": "2025-11-14",
-        "dteRemaining": 4,
-        "netCreditReceived": 94.99,
-        "commissionFee": 1.01,
-        "grossCreditTotal": 96.0,
-        "notes": "Sold weekly covered call."
-      },
-      {
-        "stepType": "WHEEL_STEP: CALL_EXPIRED_WORTHLESS",
-        "date": "2025-11-14",
-        "actionTaken": "11/14 47.00 C expired OTM",
-        "expiration": "2025-11-14",
-        "dteRemaining": 0,
-        "netCreditReceived": 0.0,
-        "commissionFee": 0.0,
-        "grossProfitLossAmount": 94.99,
-        "grossProfitLossType": "Profit",
-        "notes": "Premium realized."
-      },
-      {
-        "stepType": "WHEEL_STEP: BASIS_REDUCTION",
-        "date": "2025-12-01",
-        "actionTaken": "AUXILIARY: Long Call Vertical 30/35",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 0.0,
-        "commissionFee": 7.61,
-        "grossProfitLossAmount": 0.0,
-        "grossProfitLossType": "N/A",
-        "notes": "Rescue mission initiated."
-      },
-      {
-        "stepType": "WHEEL_STEP: BASIS_REDUCTION_CLOSE",
-        "date": "2025-12-02",
-        "actionTaken": "Closed Call Vertical @ Profit",
-        "expiration": "2026-01-16",
-        "dteRemaining": 44,
-        "netCreditReceived": 374.78,
-        "commissionFee": 7.61,
-        "grossProfitLossAmount": 374.78,
-        "grossProfitLossType": "Profit",
-        "notes": "Profit applied to basis."
-      },
-      {
-        "stepType": "WHEEL_STEP: SELL_COVERED_CALL",
-        "date": "2025-12-02",
-        "actionTaken": "STO 2 BMNR 01/16 50.00 C",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 308.98,
-        "commissionFee": 1.02,
-        "grossCreditTotal": 310.0,
-        "notes": "Sold 2x 50 Calls @ $1.55."
-      },
-      {
-        "stepType": "AUXILIARY: OPEN_PUT_SPREAD",
-        "date": "2025-12-02",
-        "actionTaken": "STO 5 BMNR 01/16 30/25 Put Vertical",
-        "expiration": "2026-01-16",
-        "dteRemaining": 45,
-        "netCreditReceived": 954.9,
-        "commissionFee": 5.1,
-        "grossProfitLossAmount": 0.0,
-        "grossProfitLossType": "Open",
-        "notes": "Sold 5x Put Credit Spreads."
-      },
-      {
-        "stepType": "AUXILIARY: CLOSE_PUT_SPREAD",
-        "date": "2025-12-03",
-        "actionTaken": "BTC 5 BMNR 01/16 30.0 P / STC 5 BMNR 01/16 25.0 P",
-        "expiration": "2026-01-16",
-        "dteRemaining": 44,
-        "netCreditReceived": -855.0,
-        "commissionFee": 5.11,
-        "grossProfitLossAmount": 99.89,
-        "grossProfitLossType": "Profit",
-        "notes": "Closed Rescue Flight v2. Net Profit $99.89."
-      },
-      {
-        "stepType": "CLOSE",
-        "date": "2025-12-04",
-        "actionTaken": "STC 200 Shares BMNR @ 33.23",
-        "closePrice": 33.23,
-        "closeCostType": "Credit",
-        "grossProfitLossAmount": -2354.0,
-        "grossProfitLossType": "Loss",
-        "notes": "STRATEGY PIVOT: Stop Loss triggered on Stock. Realized ~$2.3k loss to free capital."
-      },
-      {
-        "stepType": "ADJUSTMENT",
-        "date": "2025-12-04",
-        "actionTaken": "STO 2 BMNR 01/16/26 30.00 P",
-        "netChange": 628.98,
-        "netChangeType": "Credit",
-        "notes": "Super Bull Leg 1: Sold 2x Puts @ 3.15 (Merged execution)."
-      },
-      {
-        "stepType": "ADJUSTMENT",
-        "date": "2025-12-04",
-        "actionTaken": "BTO 2 BMNR 01/15/27 30.00 C",
-        "netChange": 3281.02,
-        "netChangeType": "Debit",
-        "notes": "Super Bull Leg 2: Bought 2x LEAPS @ 16.40 for stock replacement."
-      },
-      {
-        "stepType": "ADJUSTMENT",
-        "date": "2025-12-05",
-        "actionTaken": "BTC 2 BMNR 01/16/26 50.00 C",
-        "netChange": 0.98,
-        "netChangeType": "Credit",
-        "grossProfitLossAmount": 0.98,
-        "grossProfitLossType": "Profit",
-        "notes": "Closed lingering Short Calls from Dec 2. Scratch/Tiny Profit. (StepType set to ADJUSTMENT to keep trade OPEN in UI)."
       }
     ]
   },
