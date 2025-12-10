@@ -4,7 +4,7 @@ import json
 import re
 import sys
 
-# --- Configuration ---
+# --- Configuration (Kept for completeness) ---
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 FILE_PATH = os.environ.get('FILE_PATH')
@@ -57,13 +57,66 @@ def extract_trade_data(data):
         'expiration': expiration
     }
 
-def format_net_value_display(latest_step):
-    """Formats the net change/credit value into an escaped Telegram string."""
+# NEW HELPER FUNCTION TO GET REALIZED P/L
+def format_realized_pnl_display(latest_step):
+    """
+    Attempts to find the final realized P/L, preferring a direct field
+    or parsing the notes, and formats it for display.
+    """
+    # 1. Check for a direct field (e.g., if JSON structure includes it)
+    pnl_value = latest_step.get('realizedPNL')
+    pnl_label = "P/L"
+
+    # 2. If not found, attempt to parse the notes field
+    notes = latest_step.get('notes', '')
+    pnl_match = re.search(r'\(\$([\d\.\,]+) realized (gain|loss)\)', notes, re.IGNORECASE)
+
+    if pnl_match:
+        # Extract the number and determine sign
+        pnl_str = pnl_match.group(1).replace(',', '')
+        pnl_value = float(pnl_str)
+
+        # If it's a loss, make the value negative
+        if pnl_match.group(2).lower() == 'loss':
+            pnl_value = -pnl_value
+
+        pnl_label = "Realized P/L"
+
+    # 3. Fallback to transaction net change (as cents)
+    elif latest_step.get('netChange') is not None or latest_step.get('netCredit') is not None:
+        return format_transaction_net_value_display(latest_step)
+
+
+    # 4. Format the final realized P/L value
+    if isinstance(pnl_value, (int, float)):
+        # Display as currency value (NO division by 100 for realized P/L)
+        net_value_str = f"{abs(pnl_value):.2f}"
+
+        if pnl_value > 0:
+            prefix = "+"
+        elif pnl_value < 0:
+            prefix = "-"
+        else:
+            prefix = ""
+
+        net_value_display = escape_markdown(f"{prefix}${net_value_str}")
+
+    else:
+        # Final fallback if parsing failed
+        net_value_display = escape_markdown('N/A')
+        pnl_label = "Change"
+
+    return net_value_display, escape_markdown(pnl_label)
+
+def format_transaction_net_value_display(latest_step):
+    """
+    Formats the net credit/debit value of the *transaction* (used for Entry/Roll).
+    Values are assumed to be in cents and displayed as currency.
+    """
     net_change = latest_step.get('netChange')
     net_credit = latest_step.get('netCredit')
     net_debit = latest_step.get('netDebit')
 
-    # Prioritize netCredit/netDebit for clearer terminology, falling back to netChange
     if net_credit is not None:
          net_value = net_credit
          net_label = "Credit"
@@ -76,35 +129,24 @@ def format_net_value_display(latest_step):
     else:
         return escape_markdown('N/A'), escape_markdown('Change')
 
-    # Format the net value (e.g., 104.00 -> $1.04)
+    # Format the net value (dividing by 100 for transaction price)
     if isinstance(net_value, (int, float)):
-        # Display as currency value / 100
         net_value_str = f"{abs(net_value) / 100.0:.2f}"
 
         if net_value > 0:
-            prefix = "+" # Credit/Gain
+            prefix = "+"
         elif net_value < 0:
-            prefix = "-" # Debit/Loss
+            prefix = "-"
         else:
-            prefix = "" # Neutral
+            prefix = ""
 
         net_value_display = escape_markdown(f"{prefix}${net_value_str}")
-
-        # Adjust label for "Close" actions where net change often means P/L
-        if latest_step.get('stepType', '').upper().startswith('CLOSE'):
-             net_label = "P/L"
-        elif net_credit is not None and net_debit is None:
-             net_label = "Credit"
-        elif net_debit is not None and net_credit is None:
-             net_label = "Debit"
-
-
     else:
          net_value_display = escape_markdown(str(net_value))
-         net_label = "Change"
 
     return net_value_display, escape_markdown(net_label)
 
+# ... (format_entry_alert remains the same as it uses format_transaction_net_value_display)
 
 def format_entry_alert(data, entry_step=None):
     """
@@ -127,7 +169,8 @@ def format_entry_alert(data, entry_step=None):
         step_type = escape_markdown(step_type_raw)
 
         action_taken = escape_markdown(entry_step.get('actionTaken') or entry_step.get('action'))
-        net_credit_display, net_label_display = format_net_value_display(entry_step)
+        # Use transaction net value for Entry
+        net_credit_display, net_label_display = format_transaction_net_value_display(entry_step)
 
         expiration_step = escape_markdown(entry_step.get('expiration'))
         dte_remaining = escape_markdown(str(entry_step.get('dteRemaining', 'N/A')))
@@ -165,7 +208,7 @@ def format_entry_alert(data, entry_step=None):
     return message
 
 
-# MODIFIED TO INCLUDE EXECUTION DETAILS
+# REVISED format_management_alert
 def format_management_alert(data, latest_step):
     """Formats a message for a trade UPDATE (Close, Roll, etc) with execution details."""
     info = extract_trade_data(data)
@@ -173,6 +216,7 @@ def format_management_alert(data, latest_step):
 
     # --- Step Data Extraction ---
     step_type_raw = latest_step.get('stepType', 'Update').replace('_', ' ')
+    step_type_upper = latest_step.get('stepType', '').upper()
     step_type = escape_markdown(step_type_raw)
 
     date = escape_markdown(latest_step.get('date', 'N/A'))
@@ -181,13 +225,16 @@ def format_management_alert(data, latest_step):
     action_raw = latest_step.get('action') or latest_step.get('actionTaken') or 'N/A'
     action = escape_markdown(action_raw)
 
-    # Net value formatting
-    net_value_display, net_label_display = format_net_value_display(latest_step)
+    # Net value formatting: Use Realized P/L for CLOSES, use Transaction Net Value otherwise
+    if step_type_upper.startswith('CLOSE'):
+        net_value_display, net_label_display = format_realized_pnl_display(latest_step)
+    else:
+        net_value_display, net_label_display = format_transaction_net_value_display(latest_step)
 
     # Adjustment/Management specific fields
     notes = escape_markdown(latest_step.get('notes'))
 
-    # If the adjustment is a roll, the expiration will be present in the step
+    # Conditional Expiration details
     expiration_step = escape_markdown(latest_step.get('expiration', 'N/A'))
     dte_remaining = escape_markdown(str(latest_step.get('dteRemaining', 'N/A')))
 
@@ -203,12 +250,12 @@ def format_management_alert(data, latest_step):
         f"📝 *Action:* `{action}`\n"
     )
 
-    # Only include net value if it's not 'N/A'
+    # Include net value
     if net_value_display != escape_markdown('N/A'):
         message += f"💰 *Net {net_label_display}:* {net_value_display}\n"
 
-    # Only include expiration fields if they are available (i.e., for a Roll)
-    if expiration_step != escape_markdown('N/A'):
+    # Only include expiration fields for non-Closing actions, or if it's explicitly a Roll
+    if step_type_upper.startswith('ROLL') or (step_type_upper != 'CLOSE' and expiration_step != escape_markdown('N/A')):
          message += f"📆 *New Expiration:* {expiration_step} \\(DTE: {dte_remaining}\\)\n"
 
     if notes != escape_markdown('N/A'):
