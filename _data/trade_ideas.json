@@ -1,5 +1,87 @@
 [
   {
+    "publicationDate": "2025-12-10",
+    "tradeTitle": "BMNR Short Strangle - 1-Day Close",
+    "summaryJustification": "Successful high-velocity trade management. A highly profitable Short Strangle was opened and closed in just one day, capturing significant extrinsic value due to the extreme implied volatility of BMNR. The trade was managed aggressively, closing the entire position at a large realized profit (~$250) on Dec 10.",
+    "expectedReturnDisplay": "Realized Profit: $249.56 (Closed)",
+    "ticker": "BMNR",
+    "accountType": "Margin",
+    "currentPrice": 39.17,
+    "ivRank": 25.3,
+    "earningsDate": "Q1 2026 Est.",
+    "analysis": {
+      "thesis": "High premium collection on BMNR's extreme implied volatility. The goal was to capture maximum theta decay and volatility crush quickly, which was successfully executed by closing the entire position the day after opening.",
+      "strategyType": "Short Strangle (Closed)",
+      "tradeDetails": {
+        "expiration": "2026-01-16 & 2026-02-20",
+        "dte": 0,
+        "maxProfit": 0.00,
+        "spreadDetails": {
+          "shortPutStrike": 32.00,
+          "longPutStrike": 0.00,
+          "shortCallStrike": 40.00,
+          "longCallStrike": 0.00,
+          "netCredit": 8.41
+        }
+      },
+      "metrics": {
+        "roc": 0.0,
+        "annualizedRoc": 0.0,
+        "pop": 100.0,
+        "buyingPowerEffect": 0.0,
+        "dailyProfitPotential": 0.0,
+        "realizedGain": 249.56
+      },
+      "managementPlan": "The management plan was completed by closing the entire position (100% profit realized in a single day)."
+    },
+    "tradeProgression": [
+      {
+        "stepType": "OPEN_SHORT_PUT",
+        "date": "2025-12-09",
+        "actionTaken": "STO 1 BMNR Jan 16, 2026 32 Put @ 2.83",
+        "netChange": 282.89,
+        "commissionFee": 0.11,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "expiration": "2026-01-16",
+        "notes": "Opened Short Put leg (Net Credit: $282.89)."
+      },
+      {
+        "stepType": "OPEN_SHORT_CALL",
+        "date": "2025-12-09",
+        "actionTaken": "STO 1 BMNR Feb 20, 2026 40 Call @ 5.58",
+        "netChange": 557.89,
+        "commissionFee": 0.11,
+        "grossProfitLossAmount": 0.00,
+        "grossProfitLossType": "Open",
+        "expiration": "2026-02-20",
+        "notes": "Opened Short Call leg (Net Credit: $557.89)."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-10",
+        "actionTaken": "BTC 1 BMNR Feb 20, 2026 40 Call @ 7.17",
+        "netChange": -717.11,
+        "commissionFee": 0.11,
+        "grossProfitLossAmount": 158.78,
+        "grossProfitLossType": "Profit",
+        "expiration": "2026-02-20",
+        "notes": "Closed Short Call for a profit ($158.78 realized gain)."
+      },
+      {
+        "stepType": "CLOSE",
+        "date": "2025-12-10",
+        "actionTaken": "BTC 1 BMNR Jan 16, 2026 32 Put @ 1.92",
+        "netChange": -192.11,
+        "commissionFee": 0.11,
+        "grossProfitLossAmount": 90.78,
+        "grossProfitLossType": "Profit",
+        "expiration": "2026-01-16",
+        "notes": "Closed Short Put for a profit ($90.78 realized gain)."
+      }
+    ]
+  },
+  {
     "publicationDate": "2025-12-09",
     "tradeTitle": "Covered Call (Buy-Write) on BMNR",
     "summaryJustification": "Capitalizing on high IV and recent momentum. Re-entered 200 shares and sold ATM/OTM calls for massive premium ($2.60) with only 10 days to expiration. The 6.5% downside protection (breakeven $36.98) offers a strong buffer.",
