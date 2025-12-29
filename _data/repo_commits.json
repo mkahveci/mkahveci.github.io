@@ -2,6 +2,13 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a1c276323ca5947a89e2af300fc50825d4a9ad7f",
+    "author": "github-actions[bot]",
+    "date": "2025-12-28T01:49:36Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/275c099572c739d6cc235984cabb29dba0955b34",
     "author": "github-actions[bot]",
     "date": "2025-12-27T01:28:38Z"
@@ -691,13 +698,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5bef7945fb73c8c2391177f253b805d5fe6ad632",
     "author": "mkahveci",
     "date": "2025-11-16T22:27:44Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7b685910a05fa1a647f564cc49800c412712d199",
-    "author": "mkahveci",
-    "date": "2025-11-16T19:29:28Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
