@@ -1,5 +1,40 @@
 [
   {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Release: v2.8.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/de4a721c04e91a7e1b64d4966359e1074e0d7301",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T21:48:02Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Release: v2.7.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/004e423fca99005fbbf9ccc76ce3279033bced68",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T05:40:55Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Release: v2.6.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/f06a71858cdf8f0f8ee33c38499996a415342a74",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T04:36:49Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Release: v2.4.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9dac732e2229fcc546e6463c38b221bd9a8dd199",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T03:27:53Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c743d27da05a82c7d2348c43748c06d7bd1dfceb",
+    "author": "github-actions[bot]",
+    "date": "2025-12-31T01:41:03Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/33e69234b917eb4f44963da5ed6ea77d68b258e1",
@@ -726,13 +761,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/89a2b2d2f6d05a0c376db166c997749656c1175d",
     "author": "github-actions[bot]",
     "date": "2025-11-17T01:26:34Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/32ce7892898585a086237b06118200cfac96db3c",
-    "author": "mkahveci",
-    "date": "2025-11-17T00:17:10Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
