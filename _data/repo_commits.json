@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2bceb0b406f532904cf429b3e4218554ee23a134",
+    "author": "github-actions[bot]",
+    "date": "2026-01-08T01:42:33Z"
+  },
+  {
     "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.15.1",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/899a2905bc73acf2fa7fe2888991f67fb707a9a9",
@@ -824,13 +831,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/739fd42e3bfa901264f015068e58eef9573dbc67",
     "author": "github-actions[bot]",
     "date": "2025-11-22T01:22:08Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e22d42b4b3654d5f10f139e05538e814da42c184",
-    "author": "github-actions[bot]",
-    "date": "2025-11-21T01:24:47Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
