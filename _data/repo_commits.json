@@ -1,10 +1,80 @@
 [
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge pull request #3 from mkahveci/feature/db-updates\n\nfeature/db-updates",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/264d7088f17abadebcb37bd4922c63e0b98ca44f",
+    "author": "Murat Kahveci",
+    "date": "2026-01-11T01:31:18Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.17.0 stable - testing git deploy",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/6de508726de8d8bcd88b536b83a5a3173fff5d29",
+    "author": "mkahveci",
+    "date": "2026-01-11T01:27:41Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge pull request #2\n\nv2.17.0 stable - testing git deploy",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/80b15a78282b0bee29b010205dc486c2b5052b8e",
+    "author": "Murat Kahveci",
+    "date": "2026-01-10T23:57:35Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.17.0 stable - testing git deploy",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/4d25aa8ee424dd18ab3b7543c80af72795668d88",
+    "author": "mkahveci",
+    "date": "2026-01-10T23:44:38Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge pull request #1\n\nDev local",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/dac87d000821ce21d03fc871604c9affd05569f8",
+    "author": "Murat Kahveci",
+    "date": "2026-01-10T23:20:08Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge remote-tracking branch 'origin/main' into dev-local\n\n# Conflicts:\n#\t.htaccess\n#\tactions/ingest_json.php\n#\tai_dev_prompt_generator.php\n#\tconfig/local.php",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/040a167d0fd5e3ef2e0f2e208dda447483867948",
+    "author": "mkahveci",
+    "date": "2026-01-10T23:02:39Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.17.0 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/00cc634872b541e127581f3ee27b2adea154c7f0",
+    "author": "mkahveci",
+    "date": "2026-01-10T22:12:04Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Release: v2.17.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/f939ed16dc292dc6f90ab024e118e61ebe3e1998",
+    "author": "Murat Kahveci",
+    "date": "2026-01-10T22:00:55Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6f876516fbd50530eb156bd3a8f5195cb82af0bb",
+    "author": "github-actions[bot]",
+    "date": "2026-01-10T01:39:28Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.16.0",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9d4e38b9f5df151b8c87014a5da8b8bf6c717eb9",
     "author": "Murat Kahveci",
     "date": "2026-01-09T04:16:22Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.16.0 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/4cd77a56428e006c70ebe40d398ba462420cfa67",
+    "author": "mkahveci",
+    "date": "2026-01-09T04:09:13Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -26,6 +96,13 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/899a2905bc73acf2fa7fe2888991f67fb707a9a9",
     "author": "Murat Kahveci",
     "date": "2026-01-07T04:37:48Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.15.1 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9dcea168dd7d7ed3b6b1bd5eeb32a76517fd1067",
+    "author": "mkahveci",
+    "date": "2026-01-07T04:26:30Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
@@ -57,6 +134,13 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.14.1 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/a40a1ef984dabb9b34ea89dd8b1f7509fa7434ef",
+    "author": "mkahveci",
+    "date": "2026-01-05T02:51:34Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.14.1",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/40e30c2d63cb88db627804145f20f79a6c5c4114",
     "author": "Murat Kahveci",
@@ -77,6 +161,20 @@
     "date": "2026-01-04T23:13:31Z"
   },
   {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.14.0 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/2a52628e0b1af6b7f02df108c14ffa99190ba904",
+    "author": "mkahveci",
+    "date": "2026-01-04T23:10:42Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.14.0 stable",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/f319a22617ee9bf0a17f598819c9932c107e6513",
+    "author": "mkahveci",
+    "date": "2026-01-04T23:07:53Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/79afedd83afd400a64c06427c3c41da464615517",
@@ -89,6 +187,13 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/fe121faa1d794f2e3a1ca729b8cf4b5c6f97a03d",
     "author": "Murat Kahveci",
     "date": "2026-01-03T03:43:07Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.13.1",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/d9767552099dede35a8e5f2c6a7990d9b7c88af0",
+    "author": "Murat Kahveci",
+    "date": "2026-01-03T03:42:31Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -106,10 +211,24 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.13.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/a4cbaaab8708884d422525fa76d90a391abcd147",
+    "author": "Murat Kahveci",
+    "date": "2026-01-03T00:21:08Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.12.0",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/64dd4da0dffa55c0c7ac491abf99eb4f18624b7a",
     "author": "Murat Kahveci",
     "date": "2026-01-02T21:46:07Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.12.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/1afa8e9fd1019517f735c664b0e2d81811b0c37c",
+    "author": "Murat Kahveci",
+    "date": "2026-01-02T21:45:18Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -127,10 +246,24 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.11.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/5aee39bdb4a7bf65ee2abea5b6aa65119a3e83e8",
+    "author": "Murat Kahveci",
+    "date": "2026-01-01T22:42:08Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.10.0",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/1839689c581a2cd5c969b349af8dd6bcfb5b44f9",
     "author": "Murat Kahveci",
     "date": "2026-01-01T17:26:17Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.10.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/fed05bbf5bad8ac1c3be867c04332162cbf4ec3d",
+    "author": "Murat Kahveci",
+    "date": "2026-01-01T17:24:15Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -148,10 +281,24 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.8.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/8f687fbb2a1507225debde14e32013242bd5cb32",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T21:27:53Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.7.0",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/004e423fca99005fbbf9ccc76ce3279033bced68",
     "author": "Murat Kahveci",
     "date": "2025-12-31T05:40:55Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.7.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/1617978de84789535c3954faba1426e9397456c2",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T05:36:12Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
@@ -162,10 +309,24 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.6.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/d6d0f61f0387685719dda664c14d52b36ffcd9d1",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T04:35:46Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.4.0",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9dac732e2229fcc546e6463c38b221bd9a8dd199",
     "author": "Murat Kahveci",
     "date": "2025-12-31T03:27:53Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.4.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/de7a69f19c4005ca16e152958a94c4b26ae34942",
+    "author": "Murat Kahveci",
+    "date": "2025-12-31T02:55:11Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -190,6 +351,20 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.3.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9d8f7a27b102916201b547f853fa2aee91202fbc",
+    "author": "Murat Kahveci",
+    "date": "2025-12-29T21:51:58Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: v2.2.0",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/65f58d3e97b9ce2d07ef8a165a7e41aca3a3eeeb",
+    "author": "Murat Kahveci",
+    "date": "2025-12-29T20:54:08Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: v2.1.0 - Testing the workflow.",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/9a11a2dc664e13ce672765a0d80dc2371cea8011",
     "author": "Murat Kahveci",
@@ -197,10 +372,31 @@
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "KA Edit improvements.",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/731dafcd8cb2b57cd50c97593a97e93ba9b102e9",
+    "author": "Murat Kahveci",
+    "date": "2025-12-29T17:28:56Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Release: add Admin SOP KB category",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/8d2c7e0b1332b58eaff99e694a06a316b42c7a37",
     "author": "Murat Kahveci",
     "date": "2025-12-29T12:46:47Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: add Admin SOP KB category + auto-select for internal prompt",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/a9971582244843b9e744565168f0c88880de8d97",
+    "author": "Murat Kahveci",
+    "date": "2025-12-29T12:44:06Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Dev: initialize dev branch",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/cd43fd505e0d418e920413e836160c5b3bb41626",
+    "author": "Murat Kahveci",
+    "date": "2025-12-29T12:19:53Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
@@ -831,13 +1027,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/348bf00682bd566507a99c9dde78961ff0e7753c",
     "author": "github-actions[bot]",
     "date": "2025-11-24T01:40:21Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d7059df01814ecb0f5967eac0fefe5f0d26785da",
-    "author": "github-actions[bot]",
-    "date": "2025-11-23T01:44:49Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
