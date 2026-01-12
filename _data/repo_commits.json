@@ -1,6 +1,48 @@
 [
   {
     "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge pull request #5\n\nlocalhost/2026-01-11",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/3cf4d05a3d80c5f0f72d324d67cd3948eae095af",
+    "author": "Murat Kahveci",
+    "date": "2026-01-11T23:20:50Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.18.0 2026-01-11",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/5e106073adf2304ade36938f47fea72b6b3eaad1",
+    "author": "mkahveci",
+    "date": "2026-01-11T23:20:14Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "Merge pull request #4 from mkahveci/localhost/2026-01-11\n\nLocalhost/2026 01 11",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/ce61cceb976df8e7a7a94e4372598547a1b42a1e",
+    "author": "Murat Kahveci",
+    "date": "2026-01-11T22:06:51Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.17.1 2026-01-11",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/24262ea82e6b1034986c6a177e35ca051a3083c2",
+    "author": "mkahveci",
+    "date": "2026-01-11T22:05:42Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
+    "message": "v2.17.0 2026-01-11",
+    "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/908c79835143ab9aa59bf1109d3ccbc0be322705",
+    "author": "mkahveci",
+    "date": "2026-01-11T20:13:10Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b0912f5b88e4526eea438028a5b64b882a227ac5",
+    "author": "github-actions[bot]",
+    "date": "2026-01-11T01:50:51Z"
+  },
+  {
+    "repo": "mkahveci/TradeTrack-Pro",
     "message": "Merge pull request #3 from mkahveci/feature/db-updates\n\nfeature/db-updates",
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/264d7088f17abadebcb37bd4922c63e0b98ca44f",
     "author": "Murat Kahveci",
@@ -1020,13 +1062,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9922cd49fd6dd444e06bcde499aecf2b4a973496",
     "author": "github-actions[bot]",
     "date": "2025-11-25T01:25:49Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/348bf00682bd566507a99c9dde78961ff0e7753c",
-    "author": "github-actions[bot]",
-    "date": "2025-11-24T01:40:21Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
