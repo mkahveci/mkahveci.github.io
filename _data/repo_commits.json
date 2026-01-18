@@ -1,5 +1,26 @@
 [
   {
+    "repo": "mkahveci/academic-applications",
+    "message": "Delete sender's information from LaTeX template\n\nRemoved LaTeX template for sender's information.",
+    "url": "https://github.com/mkahveci/academic-applications/commit/6bd5071110e5781b4a3744dcad71958403864616",
+    "author": "Murat Kahveci",
+    "date": "2026-01-17T14:53:25Z"
+  },
+  {
+    "repo": "mkahveci/academic-applications",
+    "message": "Custom prompts are generated.",
+    "url": "https://github.com/mkahveci/academic-applications/commit/d8a505c54ab6549026cc068cc977d0650b002d23",
+    "author": "mkahveci",
+    "date": "2026-01-17T14:37:02Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4a222257a3059f405d55294ad2bad74d137ff349",
+    "author": "github-actions[bot]",
+    "date": "2026-01-17T01:38:19Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e55bfd0d647e2203c28a9bcdff25755500509abd",
@@ -1083,13 +1104,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2b00d6fcfccd3b69a1c07c1e94659f7881eb3f6c",
     "author": "mkahveci",
     "date": "2025-11-27T22:36:33Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/12206f9cd013689025ba562e0a3d631cf5ece810",
-    "author": "mkahveci",
-    "date": "2025-11-27T21:42:48Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
