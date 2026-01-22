@@ -2,6 +2,13 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/abf614553e485d324535baea8c379ef587fb0b88",
+    "author": "github-actions[bot]",
+    "date": "2026-01-21T01:46:14Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/97b4956461f0a07f890100ea0c14825244d88804",
     "author": "github-actions[bot]",
     "date": "2026-01-20T01:43:13Z"
@@ -1097,13 +1104,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f856d50074d39a4f042ed2d289165a40c228ffa9",
     "author": "mkahveci",
     "date": "2025-11-28T22:47:52Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge remote-tracking branch 'origin/master'",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/135a2ea19c343cdd03acbe996b42ea83788dc982",
-    "author": "mkahveci",
-    "date": "2025-11-28T03:57:00Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
