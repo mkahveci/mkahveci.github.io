@@ -1,4 +1,11 @@
 
+- title: "MES Structure Trader: 5-Min Permission + 10-Second Execution (VWAP + HTF 200 + Transition Regimes)"
+  link: /esg/
+  excerpt: "This article details a multi-timeframe trading strategy for /MES futures, utilizing structural permission and execution precision."
+  icon: fas fa-microchip
+  author: Murat Kahveci
+  tags: functional logs, tools, tradovate
+  date: 2026-02-14
 
 - title: 'From Scalper to Seller: Why I Built "QMA" to Fix My Trading Psychology'
   link: /cpa/

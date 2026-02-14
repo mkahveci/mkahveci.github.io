@@ -5,6 +5,11 @@ gem "jekyll", "4.2.0"
 gem "execjs"
 # octokit
 gem 'octokit'
+# build scripts (downloads + faraday retry middleware)
+gem "down"
+gem "faraday", "~> 2.0"
+gem "faraday-retry"
+
 gem 'netrc'
 # Twitter
 gem 'jekyll-twitter-plugin'
