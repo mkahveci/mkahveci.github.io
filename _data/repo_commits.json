@@ -1,6 +1,13 @@
 [
   {
     "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b1c5db97e11066aa7d19142e54a2211bb3e888e5",
+    "author": "github-actions[bot]",
+    "date": "2026-02-15T02:09:37Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
     "message": "Update",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/eee9f3c23e1ffe35ea4d1efcbc0bd4d49cebb045",
     "author": "Murat Kahveci",
@@ -1097,13 +1104,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c637b900c6445af1077ad8527a5fe68d022240b2",
     "author": "mkahveci",
     "date": "2025-12-03T21:04:05Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a2101de057cf41716fd6a848fb5df0d7d282e63a",
-    "author": "mkahveci",
-    "date": "2025-12-03T20:49:13Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
