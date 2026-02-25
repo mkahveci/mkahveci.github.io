@@ -76,7 +76,7 @@ Requires: pub (publication object), index (forloop.index), total_count (total pu
                 </div>
                 <div class="modal-body">
                     <p class="small text-muted mb-3">{{ pub.authors }} ({{ pub.year }})</p>
-                    <p>{{ pub.abstract }}</p>
+                    <p>{{ pub.abstract | markdownify }}</p>
                     <p class="text-muted mt-3 small">Source: {{ pub.source_info }}</p>
                 </div>
             </div>
