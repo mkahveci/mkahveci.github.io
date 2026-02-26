@@ -1,6 +1,27 @@
 [
   {
     "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/31bf19e6117439c242fb8ae78b2cb10317ba25e3",
+    "author": "Murat Kahveci",
+    "date": "2026-02-25T19:03:20Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/70d698ea31c5a5d890f66000a105c636e9d3b1d8",
+    "author": "Murat Kahveci",
+    "date": "2026-02-25T19:02:24Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ae08c9a8efbb93087dd9ce2af912b313f8d70765",
+    "author": "github-actions[bot]",
+    "date": "2026-02-25T02:05:12Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5dac58d431d49c9167cc72215365ce4d4832a6ba",
     "author": "github-actions[bot]",
@@ -1083,27 +1104,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9679f110186570a17f984b8e3afc138214b50fe5",
     "author": "github-actions[bot]",
     "date": "2025-12-07T01:44:04Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5e6f1f981da4ae0b1150bfc0d916af71e3ea17d1",
-    "author": "mkahveci",
-    "date": "2025-12-06T18:20:32Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/132a31c3c44b9049fc42b6ca8a95fce6ad0c3ef3",
-    "author": "mkahveci",
-    "date": "2025-12-06T18:17:45Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/62df011f45adf9c1ed4e707409b3abecaa005913",
-    "author": "mkahveci",
-    "date": "2025-12-06T18:08:30Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
