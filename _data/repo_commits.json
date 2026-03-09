@@ -1,5 +1,222 @@
 [
   {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4047d040cf554994d8be007f4fc4651346857273",
+    "author": "mkahveci",
+    "date": "2026-03-08T19:27:30Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/130826dcc2d5f92bf905a764470e6aac6f2d4ac4",
+    "author": "mkahveci",
+    "date": "2026-03-08T19:24:16Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b96c291c70bfe89c5c7c65487fb8fe4bc392fbc6",
+    "author": "mkahveci",
+    "date": "2026-03-08T18:20:37Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ac61184a4839b952a339ad86e4d644788a0713e5",
+    "author": "mkahveci",
+    "date": "2026-03-08T18:13:55Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/72425516cf0d589e561e025fe717a76add83065e",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:58:23Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7e08328a3ab387314433d93f93d860bd2c86f29e",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:36:11Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/d22e92a319c0e2d13c8ea5ed2af453be3bedd013",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:26:22Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c0e0a041b19352b74639053b1845b8a042b6a124",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:23:43Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ec74c5d6e579f16a5bc12a2371439dfd6560aab0",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:20:28Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c12584298761f3dbb244f5fd3bbc04cffbdf7c1e",
+    "author": "mkahveci",
+    "date": "2026-03-08T17:07:21Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8dfb1405c0113734753951ca392adfebe92d7699",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:53:36Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/20f68d79254938e974d8b91e904947b9d38670e4",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:49:44Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/74edba76b8c04d42331ae6a5de6105315d159f65",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:41:46Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/3480a40288d3b4874d9907552e49f8d34dc8066e",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:34:18Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/d3114bee51dce05112659f5264bab382c1f811a5",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:31:15Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/66ae96f7208c4a1e2027223973d7f499a341f8b2",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:26:06Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b9203028ab25984ef10f90f502455b41784a5ad7",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:23:41Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Remove Tailored CV and Draft functionality",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a820db0363a964452153b6cdb06b62f028c489fe",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:20:03Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Feature 5",
+    "url": "https://github.com/mkahveci/facultyapp/commit/bb6af2dafe62c0e99ea87640893e9fa7d0201689",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:04:24Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/65353e85f455424d06f6a32f811715c633c72aa7",
+    "author": "mkahveci",
+    "date": "2026-03-08T16:00:49Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/080e0957775fff6c1d093f8d089ff9666f20bcf2",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:57:47Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "u",
+    "url": "https://github.com/mkahveci/facultyapp/commit/035530d14ca6fc5afe5da095306e674f74642d48",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:50:29Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "u",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8b4bcf1da8ef5f81c9464c8a41aadb559c84c588",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:39:45Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "update",
+    "url": "https://github.com/mkahveci/facultyapp/commit/5d09b1fa0c289768ed1086a21d46d3ee423f773c",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:35:48Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "update",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a14967dab4d751e1cf93373bf46bc1e9508c1d8f",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:32:05Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "FEATURES 2",
+    "url": "https://github.com/mkahveci/facultyapp/commit/3027e0ada614953b1098fab6f6cd2df1a5219cde",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:29:21Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "update",
+    "url": "https://github.com/mkahveci/facultyapp/commit/19689c70d2af0c8d7e26e0ab3fa33b52c989ad0c",
+    "author": "mkahveci",
+    "date": "2026-03-08T15:17:32Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "FEATURE 1",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c9b6b583a110742792b5dfe1ec7fd69fce260442",
+    "author": "mkahveci",
+    "date": "2026-03-08T14:36:51Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7088c61a3879fec6eebe0504fa271635eb6058b7",
+    "author": "mkahveci",
+    "date": "2026-03-08T14:21:21Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/facultyapp/commit/48e28c0298eada95f0319a23d35aec2be27ea653",
+    "author": "Murat Kahveci",
+    "date": "2026-03-08T03:19:23Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ab949ad2516a0268e49932575744ad92d0358e34",
+    "author": "github-actions[bot]",
+    "date": "2026-03-08T02:03:24Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bd6c9b3f6df8aa58cdc21513d2ce551f4b890eea",
@@ -1097,13 +1314,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/20c49ff6f39876e4c543f69d0ce3302cf3250113",
     "author": "mkahveci",
     "date": "2025-12-10T13:52:03Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/00ad45d057b9996e8669b579ef66710e9cc763ff",
-    "author": "github-actions[bot]",
-    "date": "2025-12-10T01:39:13Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
