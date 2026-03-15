@@ -1,6 +1,475 @@
 [
   {
     "repo": "mkahveci/facultyapp",
+    "message": "feat: enable user-defined public URL slugs with updated UI, API, and a migration script for consistent storage.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/6fdd14926fe4246d0a0e1af2f558babc679ed66e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:36:20Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "refactor: enhance public slug management to tombstone slugs for non-public records and support desired slug updates or auto-generation.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/edb0095ccf921cfda451d88da753674b056e31a8",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:28:09Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Remove '/blog' prefix from blog post URL slugs in display and edit fields.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/6eb7421955dd9bcb0993c155d3d617a7fb534615",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:24:07Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: add `public_slug` column to `dossier_publications` table.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/32e0cc578272bd0cb1a350b4774389aff9d06d94",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:21:16Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement full-page blog post editor for creating and managing blog content with Markdown support.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2e5ee1d7a3b4b3181c65734dac5fadbb7cbaed74",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:19:18Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Remove \"Powered by Professional Dossier Hub\" link from footer.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/08c9e1f94650b235c91c0747a7ac61c90de0ff95",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T01:04:22Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: update Google Scholar and ORCID profile links and change the Google Scholar icon",
+    "url": "https://github.com/mkahveci/facultyapp/commit/36b354d08fbf45e0b3f775b30e9994e9616d00bf",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T00:58:45Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: update contact email address, office location, and social media links",
+    "url": "https://github.com/mkahveci/facultyapp/commit/aca72150927260c80df4119933d6be18ce062112",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T00:52:13Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Configure default sorting for various dossier modules and initialize new database files.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/230a3b9a3bfb88a767b134519ec7df14670f9c5a",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T00:01:24Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "style: Extend hover color to links within `.cv-title` to match `.cv-content h4 a`.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8a254bc726fe5eaa037579e2b21e76343e4135fe",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:46:15Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "style: Centralize typography control by removing inline font sizes and adjusting CSS definitions.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/faaeb84a85c9a9210983f83a13b0639ef51da899",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:42:22Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "style: Reduce padding and font sizes for a more compact UI in detail views and navigation.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4304685c0a24b9fbb4c416364650ca281e3e7fec",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:35:50Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement a new left-aligned sidebar with scrollspy navigation and details cards on project, publication, and course pages.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/078fca1c2b97587202a13fbe4ae46971a3b5bf1e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:32:48Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement a sticky sidebar navigation for profile pages with updated styling and scroll behavior.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b03a8dc4faec9ba2f2849e3458663008bc591f6d",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:14:47Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Document recent major features in the changelog, add Team Profiles and update Teaching Portfolio in the manual, and clear the roadmap.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/50d9094142bb55ea110734a542bb175b4c444ebb",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:08:48Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "style: Extend link styling to include `.cv-title a` alongside `.cv-content h4 a`.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4e54f8b22c41df0a3cf059cac16d55dde3c9b477",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:05:25Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "refactor: standardize CV item classes and improve course title linking logic.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/6bbe723483ba85ae53b2a2606a760e4fe538648c",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T23:02:35Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Conditionally display the last taught semester and year, and update styling for course level information.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4567d8b66c3a7867b7bf0d607a3ae7368d76128d",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:55:04Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Aggregate public teaching history on person profiles and remove detailed semester information from public course pages.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e5d6cf8b237d217e7d26a7e4d1138990d82cef52",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:51:24Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "fix: Add HTML escaping utility, improve team member loading error handling, and ensure public description editor value is consistently set.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e045f59a2f8af6b29552844d1f5f22a0aecfb681",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:45:42Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Extract course and semester management functionality from `teaching.php` into a new dedicated `teaching_edit.php` page.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/de9e0d7e5902c33cbc4f68409021e8baaa01b056",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:40:52Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b72426a394deb843f5c6c2aadb2c18bcc4b959eb",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:33:27Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c29feb45922526ccc6ef1f91288f4a0eb68d67eb",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:26:32Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/194e801c42dd2f9543aaa7f25b7b698861f7374e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:22:14Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/36814cdbfa8959b742485893145c982bbe2126ad",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:15:54Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/da68b99d0d7c16409285d9a568de6d85ff3a910c",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:08:44Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4232d7b9056b1c24b844898cb44f21a6966fd959",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T22:02:10Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/1125b628cc80b240db5a152e093e75be5be44a4e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:58:18Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/6d4fdf75bc9e9d7df33e77b3181bfdd8b7ac0ee9",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:53:42Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b9a29cc3a0fe5bd4f57cdbd400040f25752dd59e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:50:03Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ec0dcf2dafe89254b51a0c76bedb88443b3e191f",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:43:04Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/9f8254dbe7f503bd73dbb5cafda581c989b0894c",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:36:38Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8d36a5e6bbac44d61f7323321494ff360d9f6326",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:28:22Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e1bb61d8c0f3d58d0411c4a9135d212e50cad964",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:26:02Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8c7177f3a388bb8b4d57af355631aed846ecc8c4",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:20:43Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/05b6334421f9355a3ff30b4a4e691f9653fdce19",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:13:42Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2a782bce1cad2ceeaa762fd9d349c9992cd4f6f9",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:09:50Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e80665ae887ec742a8314bd93fb85289dd10ab06",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T21:06:34Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "V3.2 member CV update",
+    "url": "https://github.com/mkahveci/facultyapp/commit/cc6e619ee4519a43847ba0323d908c489d862555",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T20:46:53Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "Course Intructor Associations",
+    "url": "https://github.com/mkahveci/facultyapp/commit/f82132b97171a70034f8fe2ad7aea8be2ec5ba4a",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T20:28:13Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/eb91f3f58c4d631c68a5e793db0fad14aa7f301d",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T20:06:39Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/38d822966869f2258146eb5df4fd623229a52c72",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T20:02:57Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/945e0fdad6524bda2371ce3499228ddc4dcdda94",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T20:00:50Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e7d3c0f7427b7e52b310d52c49c76c7f9b7db9fa",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T19:59:05Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/fd051733b8a803787537789a998eca7abd6545e4",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T19:55:02Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/d79736a96728b2b2e2d06051829953df654313f2",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T19:52:25Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7c83b476c26e1780ca13713e43f10ef7c49b669e",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T19:45:41Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/bdaea03751ecd1ce0ab0ca5797644a8c61e83b54",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:44:52Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/badffa5705bcbd96b5d5c8f3ab28b79dfdfecf20",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:40:34Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c620e7e5d07523a0c5a41a5d6ba468b988c121f1",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:18:48Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/9be8de2a71cb6eee004e70c746eddd557de463d2",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:10:35Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b20a208a2dbc13219b69af48052354f502654549",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:06:37Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a573cf16d3c5b87dc7e41839f6ff5a48f7b582c4",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T16:00:49Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b04e6a52e7b6232d720eb78d656ffefe3b9e31b1",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:58:10Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/07ee7e6168b87f61814adb8529a9d7ea79453931",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:56:24Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/683a3958d6b19a5559397e8a48824fcd1655abc0",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:52:58Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "dark theme",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2ed07172c12d9f641710ca7d0f1dae8fbdf21736",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:43:52Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7f9c5b067b6c2a9f1079813c2e3ecd5a8015ac43",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:36:05Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/db35f79007e0a6a30f22a6bca329be8883285de5",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T15:32:14Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2fe5845ba0e0ed1ab236f2d4fbe2ffd9ed3ba8a8",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:45:18Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/980c69428a1dbb30110cc1203c45e2723584a62f",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:38:17Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ae2ed7b919cd8863c8a7e466370b97d7d4e1e522",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:36:40Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7df9f06d7c6bd778b3446935c242e7f2f9ae66df",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:33:47Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2120ab9d3853fb80335ace50a082782134e4bcba",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:23:07Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/629a3f47e9240fb357b4acb22896b99e3777021f",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:02:41Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/0e6014f3dace4d8de1c1ced04f242d8275c45408",
+    "author": "Murat Kahveci",
+    "date": "2026-03-14T02:00:16Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/22b3aa24e86d77f14312f0c5d2dd141ec2ee78cb",
+    "author": "github-actions[bot]",
+    "date": "2026-03-14T01:58:22Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/59976485d75d6af5008e10f9a8f27e504c5ab822",
     "author": "Murat Kahveci",
@@ -238,242 +707,11 @@
     "date": "2026-03-13T17:34:07Z"
   },
   {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/bebf799c0c46b11bd107f8d91f344ece78e5cd8a",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T17:28:15Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/ec2687305f90d048a349460c16de44b591c5b875",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T17:20:28Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/a17853e7dc4b17abc08abb274134f47bdebac318",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T16:53:30Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/1a81f3c98bf7eada2644e80486a418b3428318f0",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T16:52:41Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/0c563a25516b8ed6bc594dc8bc86944fcccace39",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T16:40:10Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e5e4b5927f697c5c64d15748e8511461a12924c3",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T16:35:09Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e6885e4ae20a68ce79358ec7df05343ff9d6fc24",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T16:19:42Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/1633507f274929fa52daad077a87b9f0596b11e9",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T11:49:27Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/b2ed661e2b18e19ca404723d63e55a16e3648430",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T11:29:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/586983018a694bfffad604c508e5da11900f610f",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T11:25:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Slug System Upgrade",
-    "url": "https://github.com/mkahveci/facultyapp/commit/2420baf92b50d46b37b70c7095aa2001dea7c6ef",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T11:12:23Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d8193ff4568428eecb5a2a162b63acd6501b0882",
     "author": "github-actions[bot]",
     "date": "2026-03-13T02:00:53Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/3393637c89bdd3f8cf72753124c12a2795a556a1",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T00:37:35Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/665b57f917a8ad2aa8702d3a0a2cc87af458efac",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T17:44:45Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/8c7c895bc53b4dac6ad97ba0d90e8fa6db02c9f3",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T17:38:17Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/0e39296e6f4ffc33af2bd66a997a06d693fcb0ca",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T17:28:57Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Codex fix v3 Phase 7",
-    "url": "https://github.com/mkahveci/facultyapp/commit/a8e070bc82e2e1692ea0dcdcab3e9941f541311c",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T17:22:57Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Added robust error handling and indicators to all Phase 7 admin modules",
-    "url": "https://github.com/mkahveci/facultyapp/commit/2c8e875e112a80f4277e376cc14f713ec441bbff",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:11:34Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Added robust error handling and UI refinements to Gallery admin",
-    "url": "https://github.com/mkahveci/facultyapp/commit/101541615deb56a3a3b9073d33510729f1dc2bf8",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:11:12Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Completed API response status check corrections in all admin modules",
-    "url": "https://github.com/mkahveci/facultyapp/commit/0b5fa5e7e3a4af4c31b7c28c3172f65954ab4a02",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:07:38Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Resolved admin loading state by correcting API response handling and sorting logic",
-    "url": "https://github.com/mkahveci/facultyapp/commit/23face65cbadcb70ade670ae59db9995284280e2",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:06:39Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Resolved 500 errors in admin modules and fixed contact form submission",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e8d5e70af3430ea7f8ab897f47426873808d1d02",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:02:58Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Updated admin menu links for News, Gallery, and Contact Inbox",
-    "url": "https://github.com/mkahveci/facultyapp/commit/cd442e3c68e8ce558a8352a02f8da526c7a86f36",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T03:01:01Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix: Added missing routes for album and contact pages in .htaccess",
-    "url": "https://github.com/mkahveci/facultyapp/commit/427a9836d4b56e1acf398b8ea9dc02bc03f6eb00",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:58:46Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Phase 7: News, Gallery, and Contact modules implemented",
-    "url": "https://github.com/mkahveci/facultyapp/commit/1b52dd305157ff6ea3eecd94be39e67b05f44205",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:56:13Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e8d250da8f44df3b72937b003ccb72a9ec9fe93c",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:49:17Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix(api): fix ownership check in handle_update for no_user_id modules",
-    "url": "https://github.com/mkahveci/facultyapp/commit/4c619627b3cb85636d23ee32ac35d0ed5469e93a",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:47:15Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat(courses): add institution and terms metadata to courses module",
-    "url": "https://github.com/mkahveci/facultyapp/commit/eae4171dbc0f8b4f47841430b0b21b35f00c261f",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:44:45Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix(pub): correct Back to Teaching link destination",
-    "url": "https://github.com/mkahveci/facultyapp/commit/118abf1ae6f6acb56df5497402952431196aeb78",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:42:12Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix(pub): centralize markdown logic and fix route collision triggering 404",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e224392613d381b08c66cd6b6cce87557af21406",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:40:45Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat(pub): implement courses listing page to fix 404",
-    "url": "https://github.com/mkahveci/facultyapp/commit/77b030d21c86d75e62a3c8a1881cd22c6416ea92",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:38:43Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix(api): comprehensive support for no_user_id modules in all CRUD actions",
-    "url": "https://github.com/mkahveci/facultyapp/commit/2557888bdfa3fbab0fc03c5d2e765901e002a5ac",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:33:54Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix(api): conditionally apply user_id filter based on module config\nfeat(menu): add Pages & Courses link to PubliView menu",
-    "url": "https://github.com/mkahveci/facultyapp/commit/64a9f803b9991845bc565cba7c9266ff2bb8cce9",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:30:52Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat(publiview): implement Phase 6 - Custom Pages & Courses\n\n- added pub_pages table schema\n- registered pub_pages module in dossier api\n- created pub_pages.php admin editor\n- created pub/page.php and pub/course.php public renderers\n- updated .htaccess with clean URL rewrites for pages and courses",
-    "url": "https://github.com/mkahveci/facultyapp/commit/dffba6bcff1afdc3de4959494bdd64f5f6cfe346",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T02:24:18Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -483,242 +721,11 @@
     "date": "2026-03-12T02:03:09Z"
   },
   {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/d253f78a3791aacec4cfc203478168d2c8058e39",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:34:45Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/aa5b6178ded9ee45620f42f72233be88b787735b",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:27:47Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/73ed27cf15641ae75fa96bc3a6bf88fb547b81ee",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:24:28Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/887a782b2cf3f442973d3af0eff8cdd476c67824",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:21:32Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/442b95b38470810e9d37cb44371ef4a25cee06e0",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:10:19Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/0e510288e45e3ff403ce75afbd90196716767347",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:07:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/98a964a7b1ca7f9c555e2800e1c5261fdfff4f5a",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T01:02:03Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/d536db699d5ab1102efa06137f8ac5c78c065387",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:58:39Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/62be0d61286174a8724fd5c0a18c7a8fb4d6fbff",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:56:23Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/7a739e9a152ad3f6144be135b7860d42e315eb34",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:48:56Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/f25a08eef7299fe1f7383fe1c5485daf1e2c28e2",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:43:02Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "v3 Phase 5",
-    "url": "https://github.com/mkahveci/facultyapp/commit/8c94503fd7dc430f1b7c0ee745261af7790ceada",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:32:04Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix CSRF: add csrf-token meta tag to page_header so api() JS helper works",
-    "url": "https://github.com/mkahveci/facultyapp/commit/81ffd9762c2a02c5c9dafde69578270f14160073",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:17:39Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix api/publiview.php to include missing group_tagline column",
-    "url": "https://github.com/mkahveci/facultyapp/commit/bdeea51b482416f1ced84ec8664b4e978d2af429",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:13:07Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix SimpleMDE dark theme styles",
-    "url": "https://github.com/mkahveci/facultyapp/commit/f7aaccf85cc19f6a70689a1c31110bcf4204da4c",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:09:29Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Fix HTTP 500 by adding api/media.php and removing dossier_files join from public pages",
-    "url": "https://github.com/mkahveci/facultyapp/commit/cbd2f19091cf9745c51c8997c22f25ce800bd63d",
-    "author": "Murat Kahveci",
-    "date": "2026-03-12T00:03:22Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "v3 Phase 4",
-    "url": "https://github.com/mkahveci/facultyapp/commit/92dfa723b5b1388b247fc1355e6c0968ffe57c54",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T23:46:19Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "v3 Phase 3",
-    "url": "https://github.com/mkahveci/facultyapp/commit/1243de0cf3616e421982d168b3262b456076be9e",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T23:29:39Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/59dd9cf5a5af76559835e46791aef9e63b351a57",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T20:56:01Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/b023ae775f53c53a1451039848fdf9261d2b38ce",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T20:17:34Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "v3 Phase 2",
-    "url": "https://github.com/mkahveci/facultyapp/commit/d63171f10ef27c096ebb06081a73ff0fa1f0df00",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T20:05:17Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "V3 Pub View",
-    "url": "https://github.com/mkahveci/facultyapp/commit/b4b899f43207b677f325da5095ca683cf9553bc4",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T19:46:43Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/adeb3cf9291708476bc2e3d0260d4d2c95f23ad6",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T16:48:39Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/accb8d19bffdedc011262c8260cc795a3bd385df",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T16:44:15Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Faculty app expansion with file attachements and more",
-    "url": "https://github.com/mkahveci/facultyapp/commit/9c915adebb246bc72b41ff960fbc72fee41a893b",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T16:37:09Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7f5c1082b352ed25042da30122575f19b4d1ad94",
     "author": "github-actions[bot]",
     "date": "2026-03-11T01:56:41Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/56b866287d82af39be670c41ef9007c4d9914791",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:52:17Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Version, Manual, Chengelog, Roadmap",
-    "url": "https://github.com/mkahveci/facultyapp/commit/cdea7e2a22d7f033828a331f68e7c89d8e51230e",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:50:06Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Phase 5",
-    "url": "https://github.com/mkahveci/facultyapp/commit/20465b41b3c7d2cf46dd7c2a78e105a135f2c553",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:40:22Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/41467efe965fe3ab26be7608160b50d3db4420b9",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:33:58Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Phase 4",
-    "url": "https://github.com/mkahveci/facultyapp/commit/fc98c634ab1d0b9a1541aeb3cf54b08e5b4220b0",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:26:51Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e92044671692872926b97649c289f30f70377f84",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:20:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Phase 3",
-    "url": "https://github.com/mkahveci/facultyapp/commit/3ce98d8da9f65e28cc2e06ebdf7095a2ff2fee66",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T01:08:51Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/4a6c48ec29d56702371d97e720781549aa1f5d0f",
-    "author": "Murat Kahveci",
-    "date": "2026-03-11T00:49:43Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1797,13 +1804,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e335e54676fac5d3e9f4ebdf1cff9b31cd445a5d",
     "author": "mkahveci",
     "date": "2025-12-10T16:08:22Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/89f43004185f3c8902c220f2fd0fa9a10b74309a",
-    "author": "mkahveci",
-    "date": "2025-12-10T16:08:11Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
