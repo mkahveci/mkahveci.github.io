@@ -1,6 +1,97 @@
 [
   {
     "repo": "mkahveci/facultyapp",
+    "message": "Remove slug debugging endpoints and script, and update blog post sorting to use `published_at`.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/136607cfd205a607235e59579e7d3bc20a60729f",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:58:29Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Improve slug generation and assignment by enabling recycling of inactive slugs, ensuring atomic updates with UPSERTs and sequence tracking, and adding a debug script.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/d7b9e7bb6fd828e3d90376d55ea04422f7e6d0b1",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:48:10Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "fix: Correct API error responses to return HTTP 500 and ensure slug generation considers all slugs to prevent unique constraint issues.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/f64e95e71038663fef9b1f78b6eaa245e550eb16",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:45:20Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "refactor: Enhance error reporting in slugs API with file/line details, improve slug sequence initialization robustness, and remove debug_slug.php.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/de89d3fc09ab9b82de9e8c2ad431020d18ec3288",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:42:39Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: optimize slug generation to prioritize 1-2 character gaps and add robust API error handling.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/626c92d28f25b95c81ce9d3ebb525b8166f8cbe6",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:40:19Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: implement shortest available slug generation for `pub_next_slug` by checking active and reserved slugs, falling back to sequential generation.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/0a6a1ae74cfe7d59a4232567d157f70ffe5170d6",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:38:07Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Add slug sequence debug endpoint and script, and implement a safety reset for malformed sequences.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7a85f1f70337dba90d89b2ac97e0080cf06999d8",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:32:54Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement forced slug re-assignment by deactivating existing slugs for a record.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/27e91403a73ded2ba2a07d375d7c234d03f8749b",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:29:10Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement new slug field UI with object-based initialization, update application version, and refresh asset cache.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/3ae4479717dd5525d71e5757e56ed66728602b39",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:25:48Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Enhance `initSlugField` to dynamically render the slug UI and accept flexible arguments, removing direct slug field population from PHP templates.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/06e76a7ef21deed631fb47ccc88ca11691bf0c74",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:21:12Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Introduce dedicated edit pages for team members, grants, and publications, and implement public URL slug generation.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/9958941844ef002695afba485a4177635156718b",
+    "author": "mkahveci",
+    "date": "2026-03-16T00:12:02Z"
+  },
+  {
+    "repo": "mkahveci/job-applications-2025-2026",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/job-applications-2025-2026/commit/6eb9da3a11605508a547bea32bc953062c0896ae",
+    "author": "Murat Kahveci",
+    "date": "2026-03-15T14:58:11Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c926e531fe2d948139c75351adba335cbbc1aa3a",
+    "author": "github-actions[bot]",
+    "date": "2026-03-15T02:22:56Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
     "message": "feat: enable user-defined public URL slugs with updated UI, API, and a migration script for consistent storage.",
     "url": "https://github.com/mkahveci/facultyapp/commit/6fdd14926fe4246d0a0e1af2f558babc679ed66e",
     "author": "Murat Kahveci",
@@ -628,83 +719,6 @@
     "url": "https://github.com/mkahveci/facultyapp/commit/5e4b5a50a323041f1f2e29d5ffdea64a64dad277",
     "author": "Murat Kahveci",
     "date": "2026-03-13T19:44:19Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/c02807f8fcd1bfd7b66709dcdf8e72d488528c26",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T19:36:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/fb1b45c7510fd6d22dffc951e0af0e8d7849e34f",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T19:20:12Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/913468ed580e12646e93a068f35582bdb93e718f",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T19:13:05Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/526c826640eb8a09b8cab8d5a2bdc0b590c09331",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T19:05:20Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/1069ea32868ceb7ae3da25bac03f029d33af99bb",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T18:55:57Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/cf405e2b4f07f9b2ee77eec77ef84e8dc6840706",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T18:34:04Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/c811891eb20f49bfb46de6498f824201649f54d3",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T18:29:32Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/75ff833c2c164bfb162c5fb133c959c0480f067d",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T18:23:52Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/ab4dbe7da2dcd1605857d2697c8160319e4e4f14",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T18:10:32Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e67152ea8319dec97259e99c237fa9d52f2a93a7",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T17:49:36Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/d01a018dc241e77cb055f1ee71e631ecf8483199",
-    "author": "Murat Kahveci",
-    "date": "2026-03-13T17:34:07Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1797,13 +1811,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d111646cc930311cca8c3930681e8e2c5eb357f7",
     "author": "github-actions[bot]",
     "date": "2025-12-11T01:39:41Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e335e54676fac5d3e9f4ebdf1cff9b31cd445a5d",
-    "author": "mkahveci",
-    "date": "2025-12-10T16:08:22Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
