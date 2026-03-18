@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9f4e6b6f60ded40ad865d8338fd773e41cdc6fdd",
+    "author": "github-actions[bot]",
+    "date": "2026-03-17T02:03:26Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "Refactor: Adjust 'New Application' button styling to be smaller, bolder, and remove width constraints.",
     "url": "https://github.com/mkahveci/facultyapp/commit/03881feef2f783bd65eeadb58b058bea710b9a55",
@@ -1804,13 +1811,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e99d68f9bcf627d7fc594ff826d02fa129334175",
     "author": "github-actions[bot]",
     "date": "2025-12-12T01:39:15Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6fc5730e523257b0719b0856686115ba47463b3e",
-    "author": "mkahveci",
-    "date": "2025-12-11T16:30:52Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
