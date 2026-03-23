@@ -1,5 +1,54 @@
 [
   {
+    "repo": "mkahveci/facultyapp",
+    "message": "Stop tracking .htaccess locally to prevent overwriting PROD",
+    "url": "https://github.com/mkahveci/facultyapp/commit/e6e69fc5e21527bcc46fdc0fa9ca6a6be39849d7",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:25:06Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement application management with database schema updates, user file storage, and URL constant refactoring.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/f3b580bb31d58dd49bd0e796483b70159e72c35c",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:22:16Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement comprehensive public URL routing and standardize base path resolution for API endpoints and navigation.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a56d20b834f9299bcb6063f55e617ad72b1f863b",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:00:11Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "refactor: Standardize application URLs using `PUBLIC_URL` constant and add environment and IDE configuration files.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/d7bac476def4e4c4cd62ae3da20285a1221a0c33",
+    "author": "mkahveci",
+    "date": "2026-03-22T16:36:11Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "style: Remove emojis from application status labels and refine the styling of the status dropdown and its items.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ce9e3d289258d00cabd850fd808957cef92a9d7f",
+    "author": "mkahveci",
+    "date": "2026-03-22T15:19:15Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Add faculty profile data via `profile.json` and update application files to display and style it.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/81a27b736c249d06058b10cb3db9534b830d9e70",
+    "author": "mkahveci",
+    "date": "2026-03-22T15:14:37Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ee48867eea65d7604016e47ffc7b86fc74016cb1",
+    "author": "github-actions[bot]",
+    "date": "2026-03-22T02:08:53Z"
+  },
+  {
     "repo": "mkahveci/email-signature",
     "message": "Update",
     "url": "https://github.com/mkahveci/email-signature/commit/63d4e7bbfa299c26240dc68c20de3833a23faf65",
@@ -719,48 +768,6 @@
     "url": "https://github.com/mkahveci/facultyapp/commit/b20a208a2dbc13219b69af48052354f502654549",
     "author": "Murat Kahveci",
     "date": "2026-03-14T16:06:37Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/a573cf16d3c5b87dc7e41839f6ff5a48f7b582c4",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T16:00:49Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/b04e6a52e7b6232d720eb78d656ffefe3b9e31b1",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T15:58:10Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/07ee7e6168b87f61814adb8529a9d7ea79453931",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T15:56:24Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/683a3958d6b19a5559397e8a48824fcd1655abc0",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T15:52:58Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "dark theme",
-    "url": "https://github.com/mkahveci/facultyapp/commit/2ed07172c12d9f641710ca7d0f1dae8fbdf21736",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T15:43:52Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "U",
-    "url": "https://github.com/mkahveci/facultyapp/commit/7f9c5b067b6c2a9f1079813c2e3ecd5a8015ac43",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T15:36:05Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1811,13 +1818,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e05d6d632c4a5867d80dddeb1d4e40b922bc59b1",
     "author": "github-actions[bot]",
     "date": "2025-12-17T01:26:17Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f91ca42522de3b686d74a192a8107e7e5a04dc34",
-    "author": "github-actions[bot]",
-    "date": "2025-12-16T01:40:18Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
