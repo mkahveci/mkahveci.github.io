@@ -1,6 +1,34 @@
 [
   {
     "repo": "mkahveci/facultyapp",
+    "message": "feat: Enhance save templates button with loading, success, and error states during template saving.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/91df77b633ce6613d94d2510fbb2cdba7bffa6da",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:53:56Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Introduce data management and admin operation tables, and enhance user settings with Anthropic API key and version override.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/b578ab2baf87cbaf633783ea7c4ad2717b445122",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:28:45Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement Anthropic API key management with dynamic database column creation and refactor user settings queries.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/22e0621ee64f22adfb92292b9f0618feaed11107",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:02:14Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3409c8435facfbd9bde40e4cb00fe1d2378bccf1",
+    "author": "github-actions[bot]",
+    "date": "2026-03-24T02:01:57Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/a00e9325c5b0603660e6511fef5b0aab7ad1c277",
     "author": "mkahveci",
@@ -754,27 +782,6 @@
     "url": "https://github.com/mkahveci/facultyapp/commit/6bbe723483ba85ae53b2a2606a760e4fe538648c",
     "author": "Murat Kahveci",
     "date": "2026-03-14T23:02:35Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Conditionally display the last taught semester and year, and update styling for course level information.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/4567d8b66c3a7867b7bf0d607a3ae7368d76128d",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T22:55:04Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Aggregate public teaching history on person profiles and remove detailed semester information from public course pages.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e5d6cf8b237d217e7d26a7e4d1138990d82cef52",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T22:51:24Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "fix: Add HTML escaping utility, improve team member loading error handling, and ensure public description editor value is consistently set.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/e045f59a2f8af6b29552844d1f5f22a0aecfb681",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T22:45:42Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1811,13 +1818,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/65c107b0ec77d3edb019a5910c04cc782b103c45",
     "author": "github-actions[bot]",
     "date": "2025-12-19T01:39:17Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b8b3132059d36b6f9759190d57e4d38358cec68e",
-    "author": "github-actions[bot]",
-    "date": "2025-12-18T01:26:59Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
