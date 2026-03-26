@@ -1,6 +1,160 @@
 [
   {
     "repo": "mkahveci/facultyapp",
+    "message": "fix: Standardize venue display by ensuring single trailing periods and include course codes in course search.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a26a277ad8c3ad6897f5412e82a742fc2e51b1b8",
+    "author": "mkahveci",
+    "date": "2026-03-26T01:06:59Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Enhance institution input fields with datalist suggestions populated from existing database records across dossier forms.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ae7b6cb8391b8db8dd179b7bae29c1a3de59d5af",
+    "author": "mkahveci",
+    "date": "2026-03-25T22:04:14Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/cb03d4398205ac37f3d23dae98fd378d96339810",
+    "author": "mkahveci",
+    "date": "2026-03-25T21:47:06Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ba71b0d250799f23106d4ea16ae45449d8ab9a92",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:49:29Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/f5fffa35f1b03c8afaa916447b50cf726e6e40ad",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:44:13Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c7daeaba3ff056b9a8d2b6d0eb82e183a492fd1f",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:31:31Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/4c8115e751a0a11ad7c4a05047b77870d61dd4a6",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:52:51Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/9b164b4ab048033971cf334e87a0278720abff89",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:40:03Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/171f688c3ad0c4bd9aee7aa2260cd783ff270650",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:36:04Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "refactor: Update API calls to use relative paths and implement autosave for publication forms.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/9292edfba133626ebdde6f190883fcf2e8f5980b",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:34:13Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Auto-save all modules.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/c1618c0cf70194b5d3757b214694b755ca39fd0a",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:31:30Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Add 'latest' sort option for the teaching module API and replace the semester text input with a select dropdown, including legacy value handling. Auto-save was implemented.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/770c672dacf9a51b2fab24ea02e3a8c8228b00bf",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:58:05Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/2a06979db392755d8fcd4bb0bf472a2b82d2f653",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:48:54Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Implement institution filtering and enhanced sorting for teaching records, displaying all associated teaching instances on public course pages and within the faculty dossier.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/3875cc7f519ea0ccacd97f8dad88056bac1971ae",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:38:07Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/ce1c6d342dfb35c5b0908165218ea039fae8d348",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:33:46Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Update page title with course code and refine evaluation score display to only show positive scores.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/7aad2feb98da7fcaefac76de5a538594a8554f7f",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:24:38Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: introduce dynamic file type icons and refactor file upload to use a shared API helper, improving button state and conditional data refresh.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/8d94a86b7de8fec4ef706e5ff1f0722e65723000",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:15:56Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/35117b39877ac8b0639211f9949126529ee0f9e3",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:12:42Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/6ea1246e46a053139cc3f04ddf8014884e61a2f0",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:21:35Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "feat: Display attached files for teaching instances in the UI, supported by API changes to fetch and associate files with records.",
+    "url": "https://github.com/mkahveci/facultyapp/commit/a6e382f6d4bdc40d531c108cd0775db22025d270",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:10:56Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
+    "message": "U",
+    "url": "https://github.com/mkahveci/facultyapp/commit/3c22634f3617d98f9bb4bf7d5bbfe6a2eb164072",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:08:23Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c8ec9743ba7b3c016e5c6583eac779b36a9a35bb",
+    "author": "github-actions[bot]",
+    "date": "2026-03-25T02:07:31Z"
+  },
+  {
+    "repo": "mkahveci/facultyapp",
     "message": "feat: Enhance save templates button with loading, success, and error states during template saving.",
     "url": "https://github.com/mkahveci/facultyapp/commit/91df77b633ce6613d94d2510fbb2cdba7bffa6da",
     "author": "mkahveci",
@@ -623,34 +777,6 @@
     "date": "2026-03-16T00:32:54Z"
   },
   {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Implement forced slug re-assignment by deactivating existing slugs for a record.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/27e91403a73ded2ba2a07d375d7c234d03f8749b",
-    "author": "mkahveci",
-    "date": "2026-03-16T00:29:10Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Implement new slug field UI with object-based initialization, update application version, and refresh asset cache.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/3ae4479717dd5525d71e5757e56ed66728602b39",
-    "author": "mkahveci",
-    "date": "2026-03-16T00:25:48Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Enhance `initSlugField` to dynamically render the slug UI and accept flexible arguments, removing direct slug field population from PHP templates.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/06e76a7ef21deed631fb47ccc88ca11691bf0c74",
-    "author": "mkahveci",
-    "date": "2026-03-16T00:21:12Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Introduce dedicated edit pages for team members, grants, and publications, and implement public URL slug generation.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/9958941844ef002695afba485a4177635156718b",
-    "author": "mkahveci",
-    "date": "2026-03-16T00:12:02Z"
-  },
-  {
     "repo": "mkahveci/job-applications-2025-2026",
     "message": "Initial commit",
     "url": "https://github.com/mkahveci/job-applications-2025-2026/commit/6eb9da3a11605508a547bea32bc953062c0896ae",
@@ -663,125 +789,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c926e531fe2d948139c75351adba335cbbc1aa3a",
     "author": "github-actions[bot]",
     "date": "2026-03-15T02:22:56Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: enable user-defined public URL slugs with updated UI, API, and a migration script for consistent storage.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/6fdd14926fe4246d0a0e1af2f558babc679ed66e",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:36:20Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "refactor: enhance public slug management to tombstone slugs for non-public records and support desired slug updates or auto-generation.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/edb0095ccf921cfda451d88da753674b056e31a8",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:28:09Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Remove '/blog' prefix from blog post URL slugs in display and edit fields.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/6eb7421955dd9bcb0993c155d3d617a7fb534615",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:24:07Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: add `public_slug` column to `dossier_publications` table.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/32e0cc578272bd0cb1a350b4774389aff9d06d94",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:21:16Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Implement full-page blog post editor for creating and managing blog content with Markdown support.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/2e5ee1d7a3b4b3181c65734dac5fadbb7cbaed74",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:19:18Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "Remove \"Powered by Professional Dossier Hub\" link from footer.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/08c9e1f94650b235c91c0747a7ac61c90de0ff95",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T01:04:22Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: update Google Scholar and ORCID profile links and change the Google Scholar icon",
-    "url": "https://github.com/mkahveci/facultyapp/commit/36b354d08fbf45e0b3f775b30e9994e9616d00bf",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T00:58:45Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: update contact email address, office location, and social media links",
-    "url": "https://github.com/mkahveci/facultyapp/commit/aca72150927260c80df4119933d6be18ce062112",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T00:52:13Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Configure default sorting for various dossier modules and initialize new database files.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/230a3b9a3bfb88a767b134519ec7df14670f9c5a",
-    "author": "Murat Kahveci",
-    "date": "2026-03-15T00:01:24Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "style: Extend hover color to links within `.cv-title` to match `.cv-content h4 a`.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/8a254bc726fe5eaa037579e2b21e76343e4135fe",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:46:15Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "style: Centralize typography control by removing inline font sizes and adjusting CSS definitions.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/faaeb84a85c9a9210983f83a13b0639ef51da899",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:42:22Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "style: Reduce padding and font sizes for a more compact UI in detail views and navigation.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/4304685c0a24b9fbb4c416364650ca281e3e7fec",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:35:50Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Implement a new left-aligned sidebar with scrollspy navigation and details cards on project, publication, and course pages.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/078fca1c2b97587202a13fbe4ae46971a3b5bf1e",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:32:48Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Implement a sticky sidebar navigation for profile pages with updated styling and scroll behavior.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/b03a8dc4faec9ba2f2849e3458663008bc591f6d",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:14:47Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "feat: Document recent major features in the changelog, add Team Profiles and update Teaching Portfolio in the manual, and clear the roadmap.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/50d9094142bb55ea110734a542bb175b4c444ebb",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:08:48Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "style: Extend link styling to include `.cv-title a` alongside `.cv-content h4 a`.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/4e54f8b22c41df0a3cf059cac16d55dde3c9b477",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:05:25Z"
-  },
-  {
-    "repo": "mkahveci/facultyapp",
-    "message": "refactor: standardize CV item classes and improve course title linking logic.",
-    "url": "https://github.com/mkahveci/facultyapp/commit/6bbe723483ba85ae53b2a2606a760e4fe538648c",
-    "author": "Murat Kahveci",
-    "date": "2026-03-14T23:02:35Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1811,13 +1818,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6fba0a9eeaf44c9b7c06c0c9839c2b6cb78a92c4",
     "author": "github-actions[bot]",
     "date": "2025-12-20T01:26:06Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/65c107b0ec77d3edb019a5910c04cc782b103c45",
-    "author": "github-actions[bot]",
-    "date": "2025-12-19T01:39:17Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
