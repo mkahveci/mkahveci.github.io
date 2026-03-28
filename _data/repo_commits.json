@@ -1,8 +1,92 @@
 [
   {
+    "repo": "mkahveci/pedal",
+    "message": "Add files via upload",
+    "url": "https://github.com/mkahveci/pedal/commit/4c400348ebd724008d31a03b8166ae8e3ec90609",
+    "author": "Murat Kahveci",
+    "date": "2026-03-27T21:33:19Z"
+  },
+  {
+    "repo": "mkahveci/pedal",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/pedal/commit/030b1831ecbae34c8c23e58eaf2a8f7b0e804c37",
+    "author": "Murat Kahveci",
+    "date": "2026-03-27T21:24:06Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4c03c6e86cfed3e035009f59a9483a719888dd47",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:55:14Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Merge remote-tracking branch 'origin/master'",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/86c43ece216d7fb4cb797f6391dc2ab3819db6ea",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:51:06Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/33099e413be8bd63f268fa06d7842871ec2a6b26",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:50:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Test",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0341af8db1bdeda93a65a3ed53c0b6fb56443aad",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:39:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2b9f47c17493b41cf8d248cf53540da5bcf14a28",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:25:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Testing GitHub deployment",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/dc2ca60462ab9857258eb2567ba417f70540b081",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:21:08Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d2c479c198c016f7edd24e16c11d3007c90327f7",
+    "author": "mkahveci",
+    "date": "2026-03-27T04:09:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Initial commit for kahveci.pw root",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d96968b23eb7edc6cc7a853458ef482d9cc90b9",
+    "author": "mkahveci",
+    "date": "2026-03-27T03:56:44Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1e22cf7d48c7d9a6f887cbef94619c0a9d225f77",
+    "author": "github-actions[bot]",
+    "date": "2026-03-27T02:22:02Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/18f0ea2e6fcc3a3a22924b79ad0bd2b2460e49d0",
+    "author": "mkahveci",
+    "date": "2026-03-27T02:09:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/18f0ea2e6fcc3a3a22924b79ad0bd2b2460e49d0",
     "author": "mkahveci",
     "date": "2026-03-27T02:09:19Z"
   },
@@ -14,9 +98,23 @@
     "date": "2026-03-27T02:04:28Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9cd65b9844f011d80e50b673350facd2a473f09d",
+    "author": "mkahveci",
+    "date": "2026-03-27T02:04:28Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/d69484f227fb711577781efdf976e01c2e33b54e",
+    "author": "mkahveci",
+    "date": "2026-03-27T01:52:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d69484f227fb711577781efdf976e01c2e33b54e",
     "author": "mkahveci",
     "date": "2026-03-27T01:52:23Z"
   },
@@ -28,9 +126,23 @@
     "date": "2026-03-27T01:33:22Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f850207d32a76f8c04cde5195f16bd3d2e415fa5",
+    "author": "mkahveci",
+    "date": "2026-03-27T01:33:22Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/0147e9b4127816c415864c8fd6dfa2371f836906",
+    "author": "mkahveci",
+    "date": "2026-03-27T01:28:44Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0147e9b4127816c415864c8fd6dfa2371f836906",
     "author": "mkahveci",
     "date": "2026-03-27T01:28:44Z"
   },
@@ -42,9 +154,23 @@
     "date": "2026-03-27T00:50:50Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/af44850bd2dd7a866f41db1bcc54e98da7f0cb59",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:50:50Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/2800d165684ff13058de065828ab47af54cd742c",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:48:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2800d165684ff13058de065828ab47af54cd742c",
     "author": "mkahveci",
     "date": "2026-03-27T00:48:19Z"
   },
@@ -56,9 +182,23 @@
     "date": "2026-03-27T00:44:05Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b047f7148e033753be5eadb664fb872a74e3a67e",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:44:05Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/cab7a0e74b2f9097d75cfba0bc4e37f0d7fb04d9",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:36:18Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/cab7a0e74b2f9097d75cfba0bc4e37f0d7fb04d9",
     "author": "mkahveci",
     "date": "2026-03-27T00:36:18Z"
   },
@@ -70,9 +210,23 @@
     "date": "2026-03-27T00:27:15Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/027fe148e1f2044b48ae1deef71ba52ac1df6282",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:27:15Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/def52ba06c42e06cb0e0b9b9ffc20d32f2aedf72",
+    "author": "mkahveci",
+    "date": "2026-03-27T00:22:50Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/def52ba06c42e06cb0e0b9b9ffc20d32f2aedf72",
     "author": "mkahveci",
     "date": "2026-03-27T00:22:50Z"
   },
@@ -84,9 +238,23 @@
     "date": "2026-03-26T23:43:41Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/244861477a90908d7508f3e4c0ff4023d4cd3e41",
+    "author": "mkahveci",
+    "date": "2026-03-26T23:43:41Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/0ffc74941755de112d67f8b00ba1d3caaf15003c",
+    "author": "mkahveci",
+    "date": "2026-03-26T23:32:49Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0ffc74941755de112d67f8b00ba1d3caaf15003c",
     "author": "mkahveci",
     "date": "2026-03-26T23:32:49Z"
   },
@@ -98,9 +266,23 @@
     "date": "2026-03-26T23:27:36Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9fe46eead276678ef1ced443a255cf534bfe6a1c",
+    "author": "mkahveci",
+    "date": "2026-03-26T23:27:36Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/e7968a932c3b92c26276cd8190be57ccc1e89b96",
+    "author": "mkahveci",
+    "date": "2026-03-26T23:23:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e7968a932c3b92c26276cd8190be57ccc1e89b96",
     "author": "mkahveci",
     "date": "2026-03-26T23:23:34Z"
   },
@@ -112,9 +294,23 @@
     "date": "2026-03-26T23:16:22Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b750ff5ef045a84f5673f6d9709f6b4f7cf1f9ed",
+    "author": "mkahveci",
+    "date": "2026-03-26T23:16:22Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/61a0103db7d8bd8f2a55f1b08acc8e30f4ea30da",
+    "author": "mkahveci",
+    "date": "2026-03-26T22:40:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/61a0103db7d8bd8f2a55f1b08acc8e30f4ea30da",
     "author": "mkahveci",
     "date": "2026-03-26T22:40:38Z"
   },
@@ -126,9 +322,23 @@
     "date": "2026-03-26T22:27:07Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d2bd2e188d775efde25e53af8f3d098bb5ce5e6b",
+    "author": "mkahveci",
+    "date": "2026-03-26T22:27:07Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/0c4f7acf1484de09e45baede068985f5d5217582",
+    "author": "mkahveci",
+    "date": "2026-03-26T22:07:22Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0c4f7acf1484de09e45baede068985f5d5217582",
     "author": "mkahveci",
     "date": "2026-03-26T22:07:22Z"
   },
@@ -140,9 +350,23 @@
     "date": "2026-03-26T22:02:40Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/282ec250ca35d442341a75dcb784e27b906dc3fd",
+    "author": "mkahveci",
+    "date": "2026-03-26T22:02:40Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Persist team filter selection using local storage and strengthen nav tab CSS with `!important` declarations.",
     "url": "https://github.com/mkahveci/facultyapp/commit/1e89e4f2ff6bb49978516ce02bc23286fcd50fe2",
+    "author": "mkahveci",
+    "date": "2026-03-26T21:40:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Persist team filter selection using local storage and strengthen nav tab CSS with `!important` declarations.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1e89e4f2ff6bb49978516ce02bc23286fcd50fe2",
     "author": "mkahveci",
     "date": "2026-03-26T21:40:31Z"
   },
@@ -154,9 +378,23 @@
     "date": "2026-03-26T21:20:26Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5c1c1f31a0fb2bc9b145f2b4a85e916a2e96d06f",
+    "author": "mkahveci",
+    "date": "2026-03-26T21:20:26Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/9f1bfaf9d4d626793c5713c7edf7db9bac8d1c2e",
+    "author": "mkahveci",
+    "date": "2026-03-26T19:13:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9f1bfaf9d4d626793c5713c7edf7db9bac8d1c2e",
     "author": "mkahveci",
     "date": "2026-03-26T19:13:46Z"
   },
@@ -168,9 +406,23 @@
     "date": "2026-03-26T18:01:59Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5290b0263614d65703fae399c9def0729e3fbabf",
+    "author": "mkahveci",
+    "date": "2026-03-26T18:01:59Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/8d91dc660433106bce1b1f52727cf748a4e90ae4",
+    "author": "mkahveci",
+    "date": "2026-03-26T17:57:59Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d91dc660433106bce1b1f52727cf748a4e90ae4",
     "author": "mkahveci",
     "date": "2026-03-26T17:57:59Z"
   },
@@ -182,9 +434,23 @@
     "date": "2026-03-26T17:44:31Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a0f28dbe9d041150b841429aa045fe633895c3c6",
+    "author": "mkahveci",
+    "date": "2026-03-26T17:44:31Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/05063c54649112f92ef5ac8f1c63e62d465cb106",
+    "author": "mkahveci",
+    "date": "2026-03-26T17:25:40Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/05063c54649112f92ef5ac8f1c63e62d465cb106",
     "author": "mkahveci",
     "date": "2026-03-26T17:25:40Z"
   },
@@ -196,9 +462,23 @@
     "date": "2026-03-26T17:17:31Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/194f71ac8a838db2c3e2f44b302985e09b669d91",
+    "author": "mkahveci",
+    "date": "2026-03-26T17:17:31Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add API endpoint for listing team members, improve team member form's slug initialization, and enhance media file display.",
     "url": "https://github.com/mkahveci/facultyapp/commit/49b6f867a2031b41c5e2782770db9a1d2d0aea89",
+    "author": "mkahveci",
+    "date": "2026-03-26T16:58:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add API endpoint for listing team members, improve team member form's slug initialization, and enhance media file display.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/49b6f867a2031b41c5e2782770db9a1d2d0aea89",
     "author": "mkahveci",
     "date": "2026-03-26T16:58:47Z"
   },
@@ -210,9 +490,23 @@
     "date": "2026-03-26T16:47:49Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add cooking module specifications and refactor file download paths to use dynamic base URLs.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9aa09a1dc3de7cf6f99f5e3cc416b994abc969d7",
+    "author": "mkahveci",
+    "date": "2026-03-26T16:47:49Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement project association for publications, blog posts, and seminars, enhance API field handling, and remove `test_api.php`.",
     "url": "https://github.com/mkahveci/facultyapp/commit/30c7bac3d9cac8a43398381c1d3c324b460ae155",
+    "author": "mkahveci",
+    "date": "2026-03-26T02:34:09Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement project association for publications, blog posts, and seminars, enhance API field handling, and remove `test_api.php`.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/30c7bac3d9cac8a43398381c1d3c324b460ae155",
     "author": "mkahveci",
     "date": "2026-03-26T02:34:09Z"
   },
@@ -231,9 +525,23 @@
     "date": "2026-03-26T01:06:59Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: Standardize venue display by ensuring single trailing periods and include course codes in course search.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a26a277ad8c3ad6897f5412e82a742fc2e51b1b8",
+    "author": "mkahveci",
+    "date": "2026-03-26T01:06:59Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Enhance institution input fields with datalist suggestions populated from existing database records across dossier forms.",
     "url": "https://github.com/mkahveci/facultyapp/commit/ae7b6cb8391b8db8dd179b7bae29c1a3de59d5af",
+    "author": "mkahveci",
+    "date": "2026-03-25T22:04:14Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Enhance institution input fields with datalist suggestions populated from existing database records across dossier forms.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ae7b6cb8391b8db8dd179b7bae29c1a3de59d5af",
     "author": "mkahveci",
     "date": "2026-03-25T22:04:14Z"
   },
@@ -245,9 +553,23 @@
     "date": "2026-03-25T21:47:06Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/cb03d4398205ac37f3d23dae98fd378d96339810",
+    "author": "mkahveci",
+    "date": "2026-03-25T21:47:06Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/ba71b0d250799f23106d4ea16ae45449d8ab9a92",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:49:29Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ba71b0d250799f23106d4ea16ae45449d8ab9a92",
     "author": "mkahveci",
     "date": "2026-03-25T20:49:29Z"
   },
@@ -259,9 +581,23 @@
     "date": "2026-03-25T20:44:13Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f5fffa35f1b03c8afaa916447b50cf726e6e40ad",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:44:13Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/c7daeaba3ff056b9a8d2b6d0eb82e183a492fd1f",
+    "author": "mkahveci",
+    "date": "2026-03-25T20:31:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c7daeaba3ff056b9a8d2b6d0eb82e183a492fd1f",
     "author": "mkahveci",
     "date": "2026-03-25T20:31:31Z"
   },
@@ -273,9 +609,23 @@
     "date": "2026-03-25T18:52:51Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4c8115e751a0a11ad7c4a05047b77870d61dd4a6",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:52:51Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/9b164b4ab048033971cf334e87a0278720abff89",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:40:03Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9b164b4ab048033971cf334e87a0278720abff89",
     "author": "mkahveci",
     "date": "2026-03-25T18:40:03Z"
   },
@@ -287,9 +637,23 @@
     "date": "2026-03-25T18:36:04Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/171f688c3ad0c4bd9aee7aa2260cd783ff270650",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:36:04Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "refactor: Update API calls to use relative paths and implement autosave for publication forms.",
     "url": "https://github.com/mkahveci/facultyapp/commit/9292edfba133626ebdde6f190883fcf2e8f5980b",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:34:13Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: Update API calls to use relative paths and implement autosave for publication forms.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9292edfba133626ebdde6f190883fcf2e8f5980b",
     "author": "mkahveci",
     "date": "2026-03-25T18:34:13Z"
   },
@@ -301,9 +665,23 @@
     "date": "2026-03-25T18:31:30Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Auto-save all modules.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c1618c0cf70194b5d3757b214694b755ca39fd0a",
+    "author": "mkahveci",
+    "date": "2026-03-25T18:31:30Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add 'latest' sort option for the teaching module API and replace the semester text input with a select dropdown, including legacy value handling. Auto-save was implemented.",
     "url": "https://github.com/mkahveci/facultyapp/commit/770c672dacf9a51b2fab24ea02e3a8c8228b00bf",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:58:05Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add 'latest' sort option for the teaching module API and replace the semester text input with a select dropdown, including legacy value handling. Auto-save was implemented.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/770c672dacf9a51b2fab24ea02e3a8c8228b00bf",
     "author": "mkahveci",
     "date": "2026-03-25T17:58:05Z"
   },
@@ -315,9 +693,23 @@
     "date": "2026-03-25T17:48:54Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2a06979db392755d8fcd4bb0bf472a2b82d2f653",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:48:54Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement institution filtering and enhanced sorting for teaching records, displaying all associated teaching instances on public course pages and within the faculty dossier.",
     "url": "https://github.com/mkahveci/facultyapp/commit/3875cc7f519ea0ccacd97f8dad88056bac1971ae",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:38:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement institution filtering and enhanced sorting for teaching records, displaying all associated teaching instances on public course pages and within the faculty dossier.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3875cc7f519ea0ccacd97f8dad88056bac1971ae",
     "author": "mkahveci",
     "date": "2026-03-25T17:38:07Z"
   },
@@ -329,9 +721,23 @@
     "date": "2026-03-25T17:33:46Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ce1c6d342dfb35c5b0908165218ea039fae8d348",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:33:46Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Update page title with course code and refine evaluation score display to only show positive scores.",
     "url": "https://github.com/mkahveci/facultyapp/commit/7aad2feb98da7fcaefac76de5a538594a8554f7f",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:24:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Update page title with course code and refine evaluation score display to only show positive scores.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7aad2feb98da7fcaefac76de5a538594a8554f7f",
     "author": "mkahveci",
     "date": "2026-03-25T17:24:38Z"
   },
@@ -343,9 +749,23 @@
     "date": "2026-03-25T17:15:56Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: introduce dynamic file type icons and refactor file upload to use a shared API helper, improving button state and conditional data refresh.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d94a86b7de8fec4ef706e5ff1f0722e65723000",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:15:56Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/35117b39877ac8b0639211f9949126529ee0f9e3",
+    "author": "mkahveci",
+    "date": "2026-03-25T17:12:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/35117b39877ac8b0639211f9949126529ee0f9e3",
     "author": "mkahveci",
     "date": "2026-03-25T17:12:42Z"
   },
@@ -357,6 +777,13 @@
     "date": "2026-03-25T15:21:35Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6ea1246e46a053139cc3f04ddf8014884e61a2f0",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:21:35Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Display attached files for teaching instances in the UI, supported by API changes to fetch and associate files with records.",
     "url": "https://github.com/mkahveci/facultyapp/commit/a6e382f6d4bdc40d531c108cd0775db22025d270",
@@ -364,9 +791,23 @@
     "date": "2026-03-25T15:10:56Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Display attached files for teaching instances in the UI, supported by API changes to fetch and associate files with records.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a6e382f6d4bdc40d531c108cd0775db22025d270",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:10:56Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/3c22634f3617d98f9bb4bf7d5bbfe6a2eb164072",
+    "author": "mkahveci",
+    "date": "2026-03-25T15:08:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3c22634f3617d98f9bb4bf7d5bbfe6a2eb164072",
     "author": "mkahveci",
     "date": "2026-03-25T15:08:23Z"
   },
@@ -385,6 +826,13 @@
     "date": "2026-03-24T22:53:56Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Enhance save templates button with loading, success, and error states during template saving.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/91df77b633ce6613d94d2510fbb2cdba7bffa6da",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:53:56Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Introduce data management and admin operation tables, and enhance user settings with Anthropic API key and version override.",
     "url": "https://github.com/mkahveci/facultyapp/commit/b578ab2baf87cbaf633783ea7c4ad2717b445122",
@@ -392,9 +840,23 @@
     "date": "2026-03-24T22:28:45Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Introduce data management and admin operation tables, and enhance user settings with Anthropic API key and version override.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b578ab2baf87cbaf633783ea7c4ad2717b445122",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:28:45Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement Anthropic API key management with dynamic database column creation and refactor user settings queries.",
     "url": "https://github.com/mkahveci/facultyapp/commit/22e0621ee64f22adfb92292b9f0618feaed11107",
+    "author": "mkahveci",
+    "date": "2026-03-24T22:02:14Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement Anthropic API key management with dynamic database column creation and refactor user settings queries.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/22e0621ee64f22adfb92292b9f0618feaed11107",
     "author": "mkahveci",
     "date": "2026-03-24T22:02:14Z"
   },
@@ -413,9 +875,23 @@
     "date": "2026-03-23T23:27:03Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a00e9325c5b0603660e6511fef5b0aab7ad1c277",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:27:03Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Enhance database connection logic to prefer Unix sockets for localhost or fall back to 127.0.0.1.",
     "url": "https://github.com/mkahveci/facultyapp/commit/fa56ccef5ae62083c4aaf73eb71b60bd033a174d",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:24:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Enhance database connection logic to prefer Unix sockets for localhost or fall back to 127.0.0.1.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fa56ccef5ae62083c4aaf73eb71b60bd033a174d",
     "author": "mkahveci",
     "date": "2026-03-23T23:24:58Z"
   },
@@ -427,9 +903,23 @@
     "date": "2026-03-23T23:21:13Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: Use binary mode for database file operations and improve subprocess error decoding.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e15128140039859adba04a508f783bf7dafeeeb7",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:21:13Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "refactor: simplify database host default to 'localhost' and remove explicit 'localhost' to '127.0.0.1' conversion.",
     "url": "https://github.com/mkahveci/facultyapp/commit/7a2b407ea5af415e9fc9d7c8aa13ff7d129c7bb0",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:17:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: simplify database host default to 'localhost' and remove explicit 'localhost' to '127.0.0.1' conversion.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7a2b407ea5af415e9fc9d7c8aa13ff7d129c7bb0",
     "author": "mkahveci",
     "date": "2026-03-23T23:17:38Z"
   },
@@ -441,9 +931,23 @@
     "date": "2026-03-23T23:16:19Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Python 3.6 compatibility for `shutil.copytree` in backup and restore scripts.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/26738fd26d2d75101ab045ce1715dabdfe051044",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:16:19Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/57351ec3d1159ae21ba63a503ac7821633fc3e0a",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:12:30Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/57351ec3d1159ae21ba63a503ac7821633fc3e0a",
     "author": "mkahveci",
     "date": "2026-03-23T23:12:30Z"
   },
@@ -455,9 +959,23 @@
     "date": "2026-03-23T23:11:08Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Extract `STORAGE_ROOT` environment variable in sync, backup, and restore scripts.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7a4b953fede7a2222eaa33bb624f2d277da35152",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:11:08Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "refactor: Replace `text=True` with `universal_newlines=True` in `subprocess.run` calls across database backup, restore, and sync scripts.",
     "url": "https://github.com/mkahveci/facultyapp/commit/fb773384b1677e160732f132c957e234d0ca8d52",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:09:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: Replace `text=True` with `universal_newlines=True` in `subprocess.run` calls across database backup, restore, and sync scripts.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fb773384b1677e160732f132c957e234d0ca8d52",
     "author": "mkahveci",
     "date": "2026-03-23T23:09:46Z"
   },
@@ -469,9 +987,23 @@
     "date": "2026-03-23T23:08:32Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: Improve config parsing regex for robustness and standardize database host defaults to 127.0.0.1.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/17a945193eea6701d10c4c29a6a8f189e29894d6",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:08:32Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Load database configuration from PHP config files before falling back to .env.",
     "url": "https://github.com/mkahveci/facultyapp/commit/34de3e70195c9828ae16d1861760993488d3d91e",
+    "author": "mkahveci",
+    "date": "2026-03-23T23:05:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Load database configuration from PHP config files before falling back to .env.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/34de3e70195c9828ae16d1861760993488d3d91e",
     "author": "mkahveci",
     "date": "2026-03-23T23:05:19Z"
   },
@@ -483,9 +1015,23 @@
     "date": "2026-03-23T22:57:00Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update MySQL subprocess calls to use list arguments for improved security and error handling.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2d399c67d42c60c608c3686210f56aab07db2c26",
+    "author": "mkahveci",
+    "date": "2026-03-23T22:57:00Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement full backup and restore functionality with Python scripts, update configurations, schema, and add DevOps setup documentation.",
     "url": "https://github.com/mkahveci/facultyapp/commit/e26ca4309bca36650b1369dde88088fd2b9a8dd1",
+    "author": "mkahveci",
+    "date": "2026-03-23T22:54:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement full backup and restore functionality with Python scripts, update configurations, schema, and add DevOps setup documentation.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e26ca4309bca36650b1369dde88088fd2b9a8dd1",
     "author": "mkahveci",
     "date": "2026-03-23T22:54:24Z"
   },
@@ -497,9 +1043,23 @@
     "date": "2026-03-23T22:54:06Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement full backup and restore scripts, database synchronization, and add Hostinger setup documentation.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/39edfcba089131d7acd762f274ce7383f63e5c85",
+    "author": "mkahveci",
+    "date": "2026-03-23T22:54:06Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Introduce timezone settings, standardize date input processing, and update date display formats.",
     "url": "https://github.com/mkahveci/facultyapp/commit/747215a8c6641f3f0658f714488afb5e8628c0fc",
+    "author": "mkahveci",
+    "date": "2026-03-23T22:13:02Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Introduce timezone settings, standardize date input processing, and update date display formats.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/747215a8c6641f3f0658f714488afb5e8628c0fc",
     "author": "mkahveci",
     "date": "2026-03-23T22:13:02Z"
   },
@@ -511,9 +1071,23 @@
     "date": "2026-03-23T20:40:26Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add v3.6 data management and DevOps specifications, implement Server Settings GUI, infrastructure hardening, and update application to v3.5.0.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/71b0bb394361fc5f911ce7ea0f78a1d14b8bf600",
+    "author": "mkahveci",
+    "date": "2026-03-23T20:40:26Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: add server settings page for managing storage and environment configurations",
     "url": "https://github.com/mkahveci/facultyapp/commit/1aa1bd9017dc7ff5fdc11a9fd78ee7236a508a80",
+    "author": "mkahveci",
+    "date": "2026-03-23T20:30:53Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add server settings page for managing storage and environment configurations",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1aa1bd9017dc7ff5fdc11a9fd78ee7236a508a80",
     "author": "mkahveci",
     "date": "2026-03-23T20:30:53Z"
   },
@@ -525,9 +1099,23 @@
     "date": "2026-03-23T19:59:40Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Adjust CodeMirror editor and preview height and overflow properties, and update asset cache bust versions.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/535459c9759f115e956837eeb155e55169754d94",
+    "author": "mkahveci",
+    "date": "2026-03-23T19:59:40Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #4 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nstyle: add height constraints and overflow-y properties to SimpleMDE …",
     "url": "https://github.com/mkahveci/facultyapp/commit/0592853365136247979fb3ea927aff4638b7bc33",
+    "author": "Murat Kahveci",
+    "date": "2026-03-23T19:55:33Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Merge pull request #4 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nstyle: add height constraints and overflow-y properties to SimpleMDE …",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0592853365136247979fb3ea927aff4638b7bc33",
     "author": "Murat Kahveci",
     "date": "2026-03-23T19:55:33Z"
   },
@@ -539,9 +1127,23 @@
     "date": "2026-03-23T19:54:32Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: add height constraints and overflow-y properties to SimpleMDE editor and preview components",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6697fc0280dc4e2f96016bb8dfd9b15839e5a6d7",
+    "author": "mkahveci",
+    "date": "2026-03-23T19:54:32Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #3 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfix: Remove duplicate `page_header` calls from blog and publication e…",
     "url": "https://github.com/mkahveci/facultyapp/commit/5a22ee36dcaaa240242cad1a42d660e8cb45b999",
+    "author": "Murat Kahveci",
+    "date": "2026-03-23T19:51:53Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Merge pull request #3 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfix: Remove duplicate `page_header` calls from blog and publication e…",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5a22ee36dcaaa240242cad1a42d660e8cb45b999",
     "author": "Murat Kahveci",
     "date": "2026-03-23T19:51:53Z"
   },
@@ -553,9 +1155,23 @@
     "date": "2026-03-23T19:50:32Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: Remove duplicate `page_header` calls from blog and publication edit forms.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c582e51d771d5b49301a0611e9923dc4487e2e23",
+    "author": "mkahveci",
+    "date": "2026-03-23T19:50:32Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #2 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfeat: Enhance prompt testing UI with dynamic parameter previews and i…",
     "url": "https://github.com/mkahveci/facultyapp/commit/9e843ac9a4eabb4eda51951c8ca5de0e79308c5d",
+    "author": "Murat Kahveci",
+    "date": "2026-03-23T19:47:21Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Merge pull request #2 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfeat: Enhance prompt testing UI with dynamic parameter previews and i…",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9e843ac9a4eabb4eda51951c8ca5de0e79308c5d",
     "author": "Murat Kahveci",
     "date": "2026-03-23T19:47:21Z"
   },
@@ -567,9 +1183,23 @@
     "date": "2026-03-23T19:46:48Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Enhance prompt testing UI with dynamic parameter previews and introduce public prompt details with execution and version history.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a49418d2a145e12e754453492905c1baa5877ed3",
+    "author": "mkahveci",
+    "date": "2026-03-23T19:46:48Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #1 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nDossier v3.5 prompt engineering specs.md",
     "url": "https://github.com/mkahveci/facultyapp/commit/fd094fc465c58cfc4c8532261fb1c5a02159fe8a",
+    "author": "Murat Kahveci",
+    "date": "2026-03-23T17:13:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Merge pull request #1 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nDossier v3.5 prompt engineering specs.md",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fd094fc465c58cfc4c8532261fb1c5a02159fe8a",
     "author": "Murat Kahveci",
     "date": "2026-03-23T17:13:07Z"
   },
@@ -581,9 +1211,23 @@
     "date": "2026-03-23T17:09:58Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add Gemini model support, update prompt engineering specifications, and remove unused API rewrite rules from htaccess.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8851451353a11a134ca1b3e8c2fdc5dbf8115166",
+    "author": "mkahveci",
+    "date": "2026-03-23T17:09:58Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Introduce Dossier v3.5 prompt engineering and management features, including UI, API, and Anthropic/Gemini client integrations.",
     "url": "https://github.com/mkahveci/facultyapp/commit/da5f78fdc3a783a7e2f4d1c84bae8802b81484d6",
+    "author": "mkahveci",
+    "date": "2026-03-23T17:08:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Introduce Dossier v3.5 prompt engineering and management features, including UI, API, and Anthropic/Gemini client integrations.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/da5f78fdc3a783a7e2f4d1c84bae8802b81484d6",
     "author": "mkahveci",
     "date": "2026-03-23T17:08:35Z"
   },
@@ -595,9 +1239,23 @@
     "date": "2026-03-23T16:29:10Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement global SimpleMDE dark theme and sticky toolbar, and add copy-to-clipboard functionality for code blocks.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ad34c8dc380fce316341d6b7d5ec1725d28c655a",
+    "author": "mkahveci",
+    "date": "2026-03-23T16:29:10Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: remove public notes from seminar query and improve tag display logic",
     "url": "https://github.com/mkahveci/facultyapp/commit/33fcf941863e355cfd53860d2582db6fa1af8ecf",
+    "author": "mkahveci",
+    "date": "2026-03-23T14:29:01Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: remove public notes from seminar query and improve tag display logic",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/33fcf941863e355cfd53860d2582db6fa1af8ecf",
     "author": "mkahveci",
     "date": "2026-03-23T14:29:01Z"
   },
@@ -609,9 +1267,23 @@
     "date": "2026-03-23T14:20:30Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Refactor seminar saving to use a `getVal` helper for safer form field access and add robust error handling with a `try...catch` block for API calls.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8072a668e9fbd263e21f3dbb332157127c219c4f",
+    "author": "mkahveci",
+    "date": "2026-03-23T14:20:30Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add antigravity agent configuration, update environment sync rules, and improve dossier API data type handling and error reporting.",
     "url": "https://github.com/mkahveci/facultyapp/commit/4f89f5f137c343a724bdc1922b2f93911498959b",
+    "author": "mkahveci",
+    "date": "2026-03-23T14:13:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add antigravity agent configuration, update environment sync rules, and improve dossier API data type handling and error reporting.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4f89f5f137c343a724bdc1922b2f93911498959b",
     "author": "mkahveci",
     "date": "2026-03-23T14:13:51Z"
   },
@@ -623,9 +1295,23 @@
     "date": "2026-03-23T14:03:08Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Enable public slug management for new seminars, standardize public URL generation, and refactor slug API logic.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e68022c91a30cda5268abbc551c285f780486f57",
+    "author": "mkahveci",
+    "date": "2026-03-23T14:03:08Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Introduce comprehensive seminar management with public display and dossier integration.",
     "url": "https://github.com/mkahveci/facultyapp/commit/4a7be9c74fdde6764a405c30713c2b2a1c696c8d",
+    "author": "mkahveci",
+    "date": "2026-03-23T13:20:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Introduce comprehensive seminar management with public display and dossier integration.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4a7be9c74fdde6764a405c30713c2b2a1c696c8d",
     "author": "mkahveci",
     "date": "2026-03-23T13:20:11Z"
   },
@@ -644,9 +1330,23 @@
     "date": "2026-03-22T22:25:06Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Stop tracking .htaccess locally to prevent overwriting PROD",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e6e69fc5e21527bcc46fdc0fa9ca6a6be39849d7",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:25:06Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement application management with database schema updates, user file storage, and URL constant refactoring.",
     "url": "https://github.com/mkahveci/facultyapp/commit/f3b580bb31d58dd49bd0e796483b70159e72c35c",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:22:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement application management with database schema updates, user file storage, and URL constant refactoring.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f3b580bb31d58dd49bd0e796483b70159e72c35c",
     "author": "mkahveci",
     "date": "2026-03-22T22:22:16Z"
   },
@@ -658,9 +1358,23 @@
     "date": "2026-03-22T22:00:11Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement comprehensive public URL routing and standardize base path resolution for API endpoints and navigation.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a56d20b834f9299bcb6063f55e617ad72b1f863b",
+    "author": "mkahveci",
+    "date": "2026-03-22T22:00:11Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "refactor: Standardize application URLs using `PUBLIC_URL` constant and add environment and IDE configuration files.",
     "url": "https://github.com/mkahveci/facultyapp/commit/d7bac476def4e4c4cd62ae3da20285a1221a0c33",
+    "author": "mkahveci",
+    "date": "2026-03-22T16:36:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: Standardize application URLs using `PUBLIC_URL` constant and add environment and IDE configuration files.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d7bac476def4e4c4cd62ae3da20285a1221a0c33",
     "author": "mkahveci",
     "date": "2026-03-22T16:36:11Z"
   },
@@ -672,9 +1386,23 @@
     "date": "2026-03-22T15:19:15Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: Remove emojis from application status labels and refine the styling of the status dropdown and its items.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ce9e3d289258d00cabd850fd808957cef92a9d7f",
+    "author": "mkahveci",
+    "date": "2026-03-22T15:19:15Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add faculty profile data via `profile.json` and update application files to display and style it.",
     "url": "https://github.com/mkahveci/facultyapp/commit/81a27b736c249d06058b10cb3db9534b830d9e70",
+    "author": "mkahveci",
+    "date": "2026-03-22T15:14:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Add faculty profile data via `profile.json` and update application files to display and style it.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/81a27b736c249d06058b10cb3db9534b830d9e70",
     "author": "mkahveci",
     "date": "2026-03-22T15:14:37Z"
   },
@@ -735,9 +1463,23 @@
     "date": "2026-03-16T20:58:03Z"
   },
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "Refactor: Adjust 'New Application' button styling to be smaller, bolder, and remove width constraints.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/03881feef2f783bd65eeadb58b058bea710b9a55",
+    "author": "mkahveci",
+    "date": "2026-03-16T20:58:03Z"
+  },
+  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement app version synchronization settings and update roadmap and changelog for v3.3.0.",
     "url": "https://github.com/mkahveci/facultyapp/commit/5364a5c473a690d1b244b5c323ab5da664f7c607",
+    "author": "mkahveci",
+    "date": "2026-03-16T20:52:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: Implement app version synchronization settings and update roadmap and changelog for v3.3.0.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5364a5c473a690d1b244b5c323ab5da664f7c607",
     "author": "mkahveci",
     "date": "2026-03-16T20:52:58Z"
   },
@@ -1790,34 +2532,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2239a8321cf8144dc72cbc6d7789737996adc74e",
     "author": "github-actions[bot]",
     "date": "2025-12-25T01:39:54Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/504bdaf7dd714969961969e5f11840ca5babc10c",
-    "author": "github-actions[bot]",
-    "date": "2025-12-24T01:38:31Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5428fc4efe9b40f85fb9a3da37637a8fa19517a8",
-    "author": "github-actions[bot]",
-    "date": "2025-12-23T01:39:58Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/47577e23c2f07c35ae384423294561fcf66e8d7b",
-    "author": "github-actions[bot]",
-    "date": "2025-12-22T01:44:21Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6de935ece1c7cc151caf3b2c7821db0fed34ba95",
-    "author": "github-actions[bot]",
-    "date": "2025-12-21T01:44:42Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
