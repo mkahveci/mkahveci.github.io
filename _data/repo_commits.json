@@ -1,6 +1,20 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement PEDAL v4.0 research classification system with structured prompt metadata, NGSS standards alignment, and expanded analytics.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/457fe2f5e73e5001296524da6cde28e77cd39654",
+    "author": "mkahveci",
+    "date": "2026-04-01T03:14:35Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/342ae4b50ff88049ed0bf7ddd0c552c124c2cbe7",
+    "author": "github-actions[bot]",
+    "date": "2026-04-01T02:32:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "fix: exclude archived items from public queries and deactivate associated slugs upon archival",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/515e68f0b54b0e6d7be9c8bd577cf0876992de7c",
     "author": "Murat Kahveci",
@@ -1379,13 +1393,6 @@
     "date": "2026-03-23T14:29:01Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: remove public notes from seminar query and improve tag display logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/33fcf941863e355cfd53860d2582db6fa1af8ecf",
-    "author": "mkahveci",
-    "date": "2026-03-23T14:29:01Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "Refactor seminar saving to use a `getVal` helper for safer form field access and add robust error handling with a `try...catch` block for API calls.",
     "url": "https://github.com/mkahveci/facultyapp/commit/8072a668e9fbd263e21f3dbb332157127c219c4f",
@@ -2525,13 +2532,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/cd5ee02880acdf4e1abf2215c3a63b8deb4d55fe",
     "author": "Murat Kahveci",
     "date": "2025-12-29T11:52:13Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9f3b73a7dafca7f3beef482cf36038bc295c498c",
-    "author": "github-actions[bot]",
-    "date": "2025-12-29T01:48:16Z"
   },
   {
     "repo": "mkahveci/ai-in-education",
