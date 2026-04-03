@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/db98c28d9e1c527f88460d6b2d87f1e05163c106",
+    "author": "github-actions[bot]",
+    "date": "2026-04-02T02:11:07Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: implement PEDAL v4.0 research classification system with structured prompt metadata, NGSS standards alignment, and expanded analytics.",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/457fe2f5e73e5001296524da6cde28e77cd39654",
@@ -2455,13 +2462,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c743d27da05a82c7d2348c43748c06d7bd1dfceb",
     "author": "github-actions[bot]",
     "date": "2025-12-31T01:41:03Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/33e69234b917eb4f44963da5ed6ea77d68b258e1",
-    "author": "github-actions[bot]",
-    "date": "2025-12-30T01:40:29Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
