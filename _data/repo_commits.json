@@ -1,5 +1,75 @@
 [
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: rename site branding from PEDAL Nexus to PEDAL Archive across public-facing pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3cc42ba3ef2c0d04b48df21a5c171afffa5bbdde",
+    "author": "mkahveci",
+    "date": "2026-04-04T01:13:29Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "docs: remove obsolete test header from technical specification",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7788d5ef0463f9a1bc1e1e9a2a3016f86e087214",
+    "author": "mkahveci",
+    "date": "2026-04-04T01:03:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "docs: add test placeholder to technical specification document",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0816a41e8c141e23705256ef96d1c7a45296928a",
+    "author": "mkahveci",
+    "date": "2026-04-04T00:58:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add deployment script to trigger shell execution for server updates",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/72b8625c44532469f6b1feaaea5c082cf5d265fa",
+    "author": "mkahveci",
+    "date": "2026-04-04T00:56:30Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: simplify slug generation logic and remove redundant sequence tracking",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f870ae82356aee35d11d66357901311b6051b166",
+    "author": "mkahveci",
+    "date": "2026-04-04T00:39:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: reorganize project documentation into a dedicated specs directory and add debug utility",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/122b66cae96add625b17b4373b9e1617e7f54d8f",
+    "author": "mkahveci",
+    "date": "2026-04-04T00:19:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: introduce PEDAL Nexus module and update public interface with arXiv-inspired typography and styling",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/cad214637ac736836eecc9e522d7388bf1fd9382",
+    "author": "mkahveci",
+    "date": "2026-04-04T00:00:02Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update BibTeX citation format and expose raw citation data to prompt preview script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f61dc953d5ebbd7c674f4872903a31eb04890988",
+    "author": "mkahveci",
+    "date": "2026-04-03T22:42:56Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Zenodo integration to deposit and version prompt records with DOIs",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/726e8c8dda1bef531aa772082cae40fdf8da08c8",
+    "author": "mkahveci",
+    "date": "2026-04-03T11:33:40Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/fc14e42e6d44ccc81be72017e165a9258510ed4b",
+    "author": "github-actions[bot]",
+    "date": "2026-04-03T02:12:47Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/db98c28d9e1c527f88460d6b2d87f1e05163c106",
@@ -1274,23 +1344,9 @@
     "date": "2026-03-23T19:54:32Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: add height constraints and overflow-y properties to SimpleMDE editor and preview components",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6697fc0280dc4e2f96016bb8dfd9b15839e5a6d7",
-    "author": "mkahveci",
-    "date": "2026-03-23T19:54:32Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #3 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfix: Remove duplicate `page_header` calls from blog and publication e…",
     "url": "https://github.com/mkahveci/facultyapp/commit/5a22ee36dcaaa240242cad1a42d660e8cb45b999",
-    "author": "Murat Kahveci",
-    "date": "2026-03-23T19:51:53Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "Merge pull request #3 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfix: Remove duplicate `page_header` calls from blog and publication e…",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5a22ee36dcaaa240242cad1a42d660e8cb45b999",
     "author": "Murat Kahveci",
     "date": "2026-03-23T19:51:53Z"
   },
@@ -1302,23 +1358,9 @@
     "date": "2026-03-23T19:50:32Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: Remove duplicate `page_header` calls from blog and publication edit forms.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c582e51d771d5b49301a0611e9923dc4487e2e23",
-    "author": "mkahveci",
-    "date": "2026-03-23T19:50:32Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #2 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfeat: Enhance prompt testing UI with dynamic parameter previews and i…",
     "url": "https://github.com/mkahveci/facultyapp/commit/9e843ac9a4eabb4eda51951c8ca5de0e79308c5d",
-    "author": "Murat Kahveci",
-    "date": "2026-03-23T19:47:21Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "Merge pull request #2 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nfeat: Enhance prompt testing UI with dynamic parameter previews and i…",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9e843ac9a4eabb4eda51951c8ca5de0e79308c5d",
     "author": "Murat Kahveci",
     "date": "2026-03-23T19:47:21Z"
   },
@@ -1330,23 +1372,9 @@
     "date": "2026-03-23T19:46:48Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Enhance prompt testing UI with dynamic parameter previews and introduce public prompt details with execution and version history.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a49418d2a145e12e754453492905c1baa5877ed3",
-    "author": "mkahveci",
-    "date": "2026-03-23T19:46:48Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "Merge pull request #1 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nDossier v3.5 prompt engineering specs.md",
     "url": "https://github.com/mkahveci/facultyapp/commit/fd094fc465c58cfc4c8532261fb1c5a02159fe8a",
-    "author": "Murat Kahveci",
-    "date": "2026-03-23T17:13:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "Merge pull request #1 from mkahveci/DOSSIER_v3.5_PROMPT_ENGINEERING_SPECS.md\n\nDossier v3.5 prompt engineering specs.md",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/fd094fc465c58cfc4c8532261fb1c5a02159fe8a",
     "author": "Murat Kahveci",
     "date": "2026-03-23T17:13:07Z"
   },
@@ -1358,13 +1386,6 @@
     "date": "2026-03-23T17:09:58Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Add Gemini model support, update prompt engineering specifications, and remove unused API rewrite rules from htaccess.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8851451353a11a134ca1b3e8c2fdc5dbf8115166",
-    "author": "mkahveci",
-    "date": "2026-03-23T17:09:58Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Introduce Dossier v3.5 prompt engineering and management features, including UI, API, and Anthropic/Gemini client integrations.",
     "url": "https://github.com/mkahveci/facultyapp/commit/da5f78fdc3a783a7e2f4d1c84bae8802b81484d6",
@@ -1372,23 +1393,9 @@
     "date": "2026-03-23T17:08:35Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Introduce Dossier v3.5 prompt engineering and management features, including UI, API, and Anthropic/Gemini client integrations.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/da5f78fdc3a783a7e2f4d1c84bae8802b81484d6",
-    "author": "mkahveci",
-    "date": "2026-03-23T17:08:35Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement global SimpleMDE dark theme and sticky toolbar, and add copy-to-clipboard functionality for code blocks.",
     "url": "https://github.com/mkahveci/facultyapp/commit/ad34c8dc380fce316341d6b7d5ec1725d28c655a",
-    "author": "mkahveci",
-    "date": "2026-03-23T16:29:10Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Implement global SimpleMDE dark theme and sticky toolbar, and add copy-to-clipboard functionality for code blocks.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ad34c8dc380fce316341d6b7d5ec1725d28c655a",
     "author": "mkahveci",
     "date": "2026-03-23T16:29:10Z"
   },
@@ -2455,13 +2462,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/de7a69f19c4005ca16e152958a94c4b26ae34942",
     "author": "Murat Kahveci",
     "date": "2025-12-31T02:55:11Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c743d27da05a82c7d2348c43748c06d7bd1dfceb",
-    "author": "github-actions[bot]",
-    "date": "2025-12-31T01:41:03Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
