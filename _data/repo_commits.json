@@ -1,6 +1,279 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: integrate PEDAL Archive citation and enable the pedal navigation link",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0467739e48405b420324ee2523d967a7e5dc7a81",
+    "author": "mkahveci",
+    "date": "2026-04-06T00:46:02Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: ignore .DS_Store files in repository",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/78db20d10c7be5301d464dff09297a60a6661ae3",
+    "author": "mkahveci",
+    "date": "2026-04-06T00:10:26Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize Zenodo public URL generation using slug_functions and remove migration script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/bcf5fb5d0756caba87cc345a60a446dd19dfd54a",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:43:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add public_slug column to prompts table and backfill existing data from pub_slugs",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d747a01f08d78f19ab1c448e8f6639c43140a479",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:32:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: add module parameter to handle_save and implement transaction handling with logging for slug generation and updates",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0f57c12c82c740fb1dc4fbdcc759da0d7e149914",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:29:22Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve slug generation logic and remove temporary Zenodo diagnostic scripts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9fa6f86294c20eec255fe2c075d216325b53f342",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:22:48Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add UI for manual slug editing and regeneration to prompt management interface",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2e6472324b996a76ad04656a0ceb7092899946b6",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:16:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update default upload MIME type to application/octet-stream and add diagnostic upload test to ping script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f78c10152960910a474854692d6619f0427b5aa6",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:10:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add User-Agent to Zenodo API requests and include diagnostic scripts for token verification and connectivity testing",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7ebb3d247a84eb4488d362963eac66fc598c2d83",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:08:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: improve Zenodo API error reporting with specific 403 guidance and server-side logging",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/318e49e34c5a08a880627d61b1af0eee0c4d031f",
+    "author": "mkahveci",
+    "date": "2026-04-05T23:00:27Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update real_score calculation to use average core rubric scores per execution",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d68c77359f6bf5bb8c2085f9c66c802453c8f55d",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:46:40Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update prompt schema with textbook fields, add database diagnostic utilities, and switch prompt rating calculation to use real-time execution scores.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1d58f71cb5305c342acd425408e259a599d547a2",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:41:27Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: return empty arrays instead of errors for missing IDs in prompt and rubric handlers to reduce UI noise",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7bb5d9b1b678039b36f37347a889d4fae349d144",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:28:20Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: implement consistent error handling and logging across all dossier prompt API functions",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d04ec079a6948174e1f2e7c06afc6fdcd481f39",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:22:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add API endpoints for log retrieval, future research saving, bulk rubric updates, auto-evaluation, and execution history",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/65a016384e872f9d0163107bfc4e83ef68d6cf99",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:10:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update authorization logic to validate prompt ownership via prompt chain instead of execution creator",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/be202e33ac1bd079cbc127366763db99d2a00d2a",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:03:43Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: pre-populate log model from database with localStorage override",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d2c248b7a0e2558c177f341ee4d5950b15ce18f",
+    "author": "mkahveci",
+    "date": "2026-04-05T22:00:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update classification badge container ID and add null check for rendering logic",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/091abec7f9d832ecea8c0b69922846fa50511fde",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:58:04Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add textbook name and chapter fields to prompt edit mapping",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f593d7333cf29cf53886bab52a3f610878ee8df6",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:54:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update field validation logic to use direct POST access and allow empty string values",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e95f9469f70e181a0927700c42dca450f05f59b5",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:51:03Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add subject domain and textbook reference fields to the research classification panel with updated data mapping.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1d24f6540d003719c68d2da9190e01f7613b1eff",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:47:44Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add AI-powered prompt classification and real-time metadata badge rendering to prompt edit and test interfaces",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ccd070fc9daedab99a2817d5482fb12253cdeaa3",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:45:32Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement AI-driven prompt classification and update orchestration logic for pedagogical metadata.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4f4415974eb4acdd819e3093328f5e552a3aa2c5",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:36:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add prior knowledge and argumentation format fields to prompt generation logic",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f9dcb09ef83f499963ef84617d3becd6b56c390a",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:27:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: expand SS2 framework with audience, strategy, 5E phase, modality, and output format parameters",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3482801b7922f45a447cd59feeae70892308bae8",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:23:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement hierarchical textbook alignment and DOK filtering system for prompts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a5e3672ec9c45da737ca54913e4987cc63ea67d0",
+    "author": "mkahveci",
+    "date": "2026-04-05T21:13:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement future research directions module with database schema updates, API handling, and admin UI integration.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/63262c232634c00e2a5d961da03283a5b9b523e2",
+    "author": "mkahveci",
+    "date": "2026-04-05T17:28:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add DeepSeek client support, integrate automated AI judge functionality, and update model selection options.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2c2d8f1f924706eaa96693fe054be111c0542b0c",
+    "author": "mkahveci",
+    "date": "2026-04-05T17:12:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: darken accent color for contrast and update button typography and hover effects",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/08c13666f471237e209d92c3b639d6c92242ded1",
+    "author": "mkahveci",
+    "date": "2026-04-05T14:45:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add project_url column to schema and integrate PEDAL flagship project section into homepage",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/302374c71bfd98a0eb5f18bbc377bba4066065e7",
+    "author": "mkahveci",
+    "date": "2026-04-05T14:42:39Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add project URL support to dossier grants and update public-facing project views and schema",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6a7934113be3111b0b41b5d3ecc55897de4b8f6d",
+    "author": "mkahveci",
+    "date": "2026-04-05T12:54:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add PI hyperlinking to project roles and shorten senior personnel label",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/173691f451d24f373cf322cfd476a48001dbace1",
+    "author": "mkahveci",
+    "date": "2026-04-05T12:44:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add self-funded and active project statuses, expand prompt metadata schema, and introduce new tables for standards alignment and quality rubrics.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/286ddf873199e0c87595bd8389c33889dd250eda",
+    "author": "mkahveci",
+    "date": "2026-04-05T12:07:10Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "docs: update PEDAL APA citation format and improve layout formatting for execution metrics",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7f8db9218d2f1217abd9a8254a6bb246ee89cfbb",
+    "author": "mkahveci",
+    "date": "2026-04-05T11:49:09Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: reformat code for consistent indentation and improved readability",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e36ddf165c87d38d7e6ccd92ee72f172a7d47b5e",
+    "author": "mkahveci",
+    "date": "2026-04-05T11:33:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add APA citation formatting and clipboard copy functionality across publication pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/cce6ecb39c4a577f0038ef6e14cc8db65c13fe21",
+    "author": "mkahveci",
+    "date": "2026-04-05T11:31:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: comment out pedal navigation link and improve Google Analytics script formatting",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0a47896c6d605aae7e282577d7fb3b190f630f6c",
+    "author": "mkahveci",
+    "date": "2026-04-05T03:27:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement high-fidelity research orchestrator and pedagogical metadata tooling for PEDAL system",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5e9fe4da48f378d7236501edba6183611443056e",
+    "author": "mkahveci",
+    "date": "2026-04-05T03:23:08Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a72c8ece062c8cfef088bb5c86dea1a297963ceb",
+    "author": "github-actions[bot]",
+    "date": "2026-04-05T02:27:04Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: include slugs in analytics query and update view links to prioritize slug-based URLs",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/4786fef74d975a4662108f0dd71782d0a73f1f7f",
     "author": "mkahveci",
@@ -651,23 +924,9 @@
     "date": "2026-03-26T23:23:34Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e7968a932c3b92c26276cd8190be57ccc1e89b96",
-    "author": "mkahveci",
-    "date": "2026-03-26T23:23:34Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/b750ff5ef045a84f5673f6d9709f6b4f7cf1f9ed",
-    "author": "mkahveci",
-    "date": "2026-03-26T23:16:22Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b750ff5ef045a84f5673f6d9709f6b4f7cf1f9ed",
     "author": "mkahveci",
     "date": "2026-03-26T23:16:22Z"
   },
@@ -679,23 +938,9 @@
     "date": "2026-03-26T22:40:38Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/61a0103db7d8bd8f2a55f1b08acc8e30f4ea30da",
-    "author": "mkahveci",
-    "date": "2026-03-26T22:40:38Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/d2bd2e188d775efde25e53af8f3d098bb5ce5e6b",
-    "author": "mkahveci",
-    "date": "2026-03-26T22:27:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d2bd2e188d775efde25e53af8f3d098bb5ce5e6b",
     "author": "mkahveci",
     "date": "2026-03-26T22:27:07Z"
   },
@@ -707,23 +952,9 @@
     "date": "2026-03-26T22:07:22Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0c4f7acf1484de09e45baede068985f5d5217582",
-    "author": "mkahveci",
-    "date": "2026-03-26T22:07:22Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/282ec250ca35d442341a75dcb784e27b906dc3fd",
-    "author": "mkahveci",
-    "date": "2026-03-26T22:02:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/282ec250ca35d442341a75dcb784e27b906dc3fd",
     "author": "mkahveci",
     "date": "2026-03-26T22:02:40Z"
   },
@@ -735,23 +966,9 @@
     "date": "2026-03-26T21:40:31Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Persist team filter selection using local storage and strengthen nav tab CSS with `!important` declarations.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1e89e4f2ff6bb49978516ce02bc23286fcd50fe2",
-    "author": "mkahveci",
-    "date": "2026-03-26T21:40:31Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/5c1c1f31a0fb2bc9b145f2b4a85e916a2e96d06f",
-    "author": "mkahveci",
-    "date": "2026-03-26T21:20:26Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5c1c1f31a0fb2bc9b145f2b4a85e916a2e96d06f",
     "author": "mkahveci",
     "date": "2026-03-26T21:20:26Z"
   },
@@ -763,23 +980,9 @@
     "date": "2026-03-26T19:13:46Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9f1bfaf9d4d626793c5713c7edf7db9bac8d1c2e",
-    "author": "mkahveci",
-    "date": "2026-03-26T19:13:46Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/5290b0263614d65703fae399c9def0729e3fbabf",
-    "author": "mkahveci",
-    "date": "2026-03-26T18:01:59Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5290b0263614d65703fae399c9def0729e3fbabf",
     "author": "mkahveci",
     "date": "2026-03-26T18:01:59Z"
   },
@@ -791,23 +994,9 @@
     "date": "2026-03-26T17:57:59Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d91dc660433106bce1b1f52727cf748a4e90ae4",
-    "author": "mkahveci",
-    "date": "2026-03-26T17:57:59Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/a0f28dbe9d041150b841429aa045fe633895c3c6",
-    "author": "mkahveci",
-    "date": "2026-03-26T17:44:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a0f28dbe9d041150b841429aa045fe633895c3c6",
     "author": "mkahveci",
     "date": "2026-03-26T17:44:31Z"
   },
@@ -819,23 +1008,9 @@
     "date": "2026-03-26T17:25:40Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/05063c54649112f92ef5ac8f1c63e62d465cb106",
-    "author": "mkahveci",
-    "date": "2026-03-26T17:25:40Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/194f71ac8a838db2c3e2f44b302985e09b669d91",
-    "author": "mkahveci",
-    "date": "2026-03-26T17:17:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/194f71ac8a838db2c3e2f44b302985e09b669d91",
     "author": "mkahveci",
     "date": "2026-03-26T17:17:31Z"
   },
@@ -847,13 +1022,6 @@
     "date": "2026-03-26T16:58:47Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Add API endpoint for listing team members, improve team member form's slug initialization, and enhance media file display.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/49b6f867a2031b41c5e2782770db9a1d2d0aea89",
-    "author": "mkahveci",
-    "date": "2026-03-26T16:58:47Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add cooking module specifications and refactor file download paths to use dynamic base URLs.",
     "url": "https://github.com/mkahveci/facultyapp/commit/9aa09a1dc3de7cf6f99f5e3cc416b994abc969d7",
@@ -861,23 +1029,9 @@
     "date": "2026-03-26T16:47:49Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Add cooking module specifications and refactor file download paths to use dynamic base URLs.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9aa09a1dc3de7cf6f99f5e3cc416b994abc969d7",
-    "author": "mkahveci",
-    "date": "2026-03-26T16:47:49Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement project association for publications, blog posts, and seminars, enhance API field handling, and remove `test_api.php`.",
     "url": "https://github.com/mkahveci/facultyapp/commit/30c7bac3d9cac8a43398381c1d3c324b460ae155",
-    "author": "mkahveci",
-    "date": "2026-03-26T02:34:09Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Implement project association for publications, blog posts, and seminars, enhance API field handling, and remove `test_api.php`.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/30c7bac3d9cac8a43398381c1d3c324b460ae155",
     "author": "mkahveci",
     "date": "2026-03-26T02:34:09Z"
   },
@@ -896,23 +1050,9 @@
     "date": "2026-03-26T01:06:59Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: Standardize venue display by ensuring single trailing periods and include course codes in course search.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a26a277ad8c3ad6897f5412e82a742fc2e51b1b8",
-    "author": "mkahveci",
-    "date": "2026-03-26T01:06:59Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Enhance institution input fields with datalist suggestions populated from existing database records across dossier forms.",
     "url": "https://github.com/mkahveci/facultyapp/commit/ae7b6cb8391b8db8dd179b7bae29c1a3de59d5af",
-    "author": "mkahveci",
-    "date": "2026-03-25T22:04:14Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Enhance institution input fields with datalist suggestions populated from existing database records across dossier forms.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ae7b6cb8391b8db8dd179b7bae29c1a3de59d5af",
     "author": "mkahveci",
     "date": "2026-03-25T22:04:14Z"
   },
@@ -924,23 +1064,9 @@
     "date": "2026-03-25T21:47:06Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/cb03d4398205ac37f3d23dae98fd378d96339810",
-    "author": "mkahveci",
-    "date": "2026-03-25T21:47:06Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/ba71b0d250799f23106d4ea16ae45449d8ab9a92",
-    "author": "mkahveci",
-    "date": "2026-03-25T20:49:29Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ba71b0d250799f23106d4ea16ae45449d8ab9a92",
     "author": "mkahveci",
     "date": "2026-03-25T20:49:29Z"
   },
@@ -952,23 +1078,9 @@
     "date": "2026-03-25T20:44:13Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f5fffa35f1b03c8afaa916447b50cf726e6e40ad",
-    "author": "mkahveci",
-    "date": "2026-03-25T20:44:13Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/c7daeaba3ff056b9a8d2b6d0eb82e183a492fd1f",
-    "author": "mkahveci",
-    "date": "2026-03-25T20:31:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c7daeaba3ff056b9a8d2b6d0eb82e183a492fd1f",
     "author": "mkahveci",
     "date": "2026-03-25T20:31:31Z"
   },
@@ -980,23 +1092,9 @@
     "date": "2026-03-25T18:52:51Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/4c8115e751a0a11ad7c4a05047b77870d61dd4a6",
-    "author": "mkahveci",
-    "date": "2026-03-25T18:52:51Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/9b164b4ab048033971cf334e87a0278720abff89",
-    "author": "mkahveci",
-    "date": "2026-03-25T18:40:03Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9b164b4ab048033971cf334e87a0278720abff89",
     "author": "mkahveci",
     "date": "2026-03-25T18:40:03Z"
   },
@@ -1008,23 +1106,9 @@
     "date": "2026-03-25T18:36:04Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/171f688c3ad0c4bd9aee7aa2260cd783ff270650",
-    "author": "mkahveci",
-    "date": "2026-03-25T18:36:04Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "refactor: Update API calls to use relative paths and implement autosave for publication forms.",
     "url": "https://github.com/mkahveci/facultyapp/commit/9292edfba133626ebdde6f190883fcf2e8f5980b",
-    "author": "mkahveci",
-    "date": "2026-03-25T18:34:13Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: Update API calls to use relative paths and implement autosave for publication forms.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9292edfba133626ebdde6f190883fcf2e8f5980b",
     "author": "mkahveci",
     "date": "2026-03-25T18:34:13Z"
   },
@@ -1036,23 +1120,9 @@
     "date": "2026-03-25T18:31:30Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Auto-save all modules.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c1618c0cf70194b5d3757b214694b755ca39fd0a",
-    "author": "mkahveci",
-    "date": "2026-03-25T18:31:30Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Add 'latest' sort option for the teaching module API and replace the semester text input with a select dropdown, including legacy value handling. Auto-save was implemented.",
     "url": "https://github.com/mkahveci/facultyapp/commit/770c672dacf9a51b2fab24ea02e3a8c8228b00bf",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:58:05Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Add 'latest' sort option for the teaching module API and replace the semester text input with a select dropdown, including legacy value handling. Auto-save was implemented.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/770c672dacf9a51b2fab24ea02e3a8c8228b00bf",
     "author": "mkahveci",
     "date": "2026-03-25T17:58:05Z"
   },
@@ -1064,23 +1134,9 @@
     "date": "2026-03-25T17:48:54Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2a06979db392755d8fcd4bb0bf472a2b82d2f653",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:48:54Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Implement institution filtering and enhanced sorting for teaching records, displaying all associated teaching instances on public course pages and within the faculty dossier.",
     "url": "https://github.com/mkahveci/facultyapp/commit/3875cc7f519ea0ccacd97f8dad88056bac1971ae",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:38:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Implement institution filtering and enhanced sorting for teaching records, displaying all associated teaching instances on public course pages and within the faculty dossier.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3875cc7f519ea0ccacd97f8dad88056bac1971ae",
     "author": "mkahveci",
     "date": "2026-03-25T17:38:07Z"
   },
@@ -1092,23 +1148,9 @@
     "date": "2026-03-25T17:33:46Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ce1c6d342dfb35c5b0908165218ea039fae8d348",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:33:46Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Update page title with course code and refine evaluation score display to only show positive scores.",
     "url": "https://github.com/mkahveci/facultyapp/commit/7aad2feb98da7fcaefac76de5a538594a8554f7f",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:24:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Update page title with course code and refine evaluation score display to only show positive scores.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7aad2feb98da7fcaefac76de5a538594a8554f7f",
     "author": "mkahveci",
     "date": "2026-03-25T17:24:38Z"
   },
@@ -1120,23 +1162,9 @@
     "date": "2026-03-25T17:15:56Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: introduce dynamic file type icons and refactor file upload to use a shared API helper, improving button state and conditional data refresh.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d94a86b7de8fec4ef706e5ff1f0722e65723000",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:15:56Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/35117b39877ac8b0639211f9949126529ee0f9e3",
-    "author": "mkahveci",
-    "date": "2026-03-25T17:12:42Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/35117b39877ac8b0639211f9949126529ee0f9e3",
     "author": "mkahveci",
     "date": "2026-03-25T17:12:42Z"
   },
@@ -1148,13 +1176,6 @@
     "date": "2026-03-25T15:21:35Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6ea1246e46a053139cc3f04ddf8014884e61a2f0",
-    "author": "mkahveci",
-    "date": "2026-03-25T15:21:35Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "feat: Display attached files for teaching instances in the UI, supported by API changes to fetch and associate files with records.",
     "url": "https://github.com/mkahveci/facultyapp/commit/a6e382f6d4bdc40d531c108cd0775db22025d270",
@@ -1162,23 +1183,9 @@
     "date": "2026-03-25T15:10:56Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: Display attached files for teaching instances in the UI, supported by API changes to fetch and associate files with records.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a6e382f6d4bdc40d531c108cd0775db22025d270",
-    "author": "mkahveci",
-    "date": "2026-03-25T15:10:56Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/3c22634f3617d98f9bb4bf7d5bbfe6a2eb164072",
-    "author": "mkahveci",
-    "date": "2026-03-25T15:08:23Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3c22634f3617d98f9bb4bf7d5bbfe6a2eb164072",
     "author": "mkahveci",
     "date": "2026-03-25T15:08:23Z"
   },
@@ -2371,13 +2378,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/1afa8e9fd1019517f735c664b0e2d81811b0c37c",
     "author": "Murat Kahveci",
     "date": "2026-01-02T21:45:18Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3876082b4ba11edc6620ac57659ef1da245aed00",
-    "author": "github-actions[bot]",
-    "date": "2026-01-02T01:42:30Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
