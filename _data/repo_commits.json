@@ -1,6 +1,48 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: normalize version strings and apply sentence case to BibTeX titles",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b52f075c519aa8ec68294fc8b84c15a64bb2ae6e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-06T20:59:06Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize prompt title formatting to sentence case and update citation metadata structure",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/63b14aeda0dc9eaae94f770db39f4c4edc0022ba",
+    "author": "Murat Kahveci",
+    "date": "2026-04-06T20:51:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: update PEDAL citation format and author name in prompts.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6eb6e9f6dbade7a2116089cbaa72d72a9d3f8445",
+    "author": "Murat Kahveci",
+    "date": "2026-04-06T20:28:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: update PEDAL citation publisher and improve textbook badge formatting",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/44c575eef15ec1b48a2a95fc2543f74fdb3c2eea",
+    "author": "Murat Kahveci",
+    "date": "2026-04-06T20:17:41Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: refactor code formatting and update citation author name in prompts.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5debf1dcc07aa9c89e747b48560de219e8b1bf64",
+    "author": "Murat Kahveci",
+    "date": "2026-04-06T20:10:49Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/98de16ad5440d05eb036729206af2e771a6745d4",
+    "author": "github-actions[bot]",
+    "date": "2026-04-06T02:28:09Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: integrate PEDAL Archive citation and enable the pedal navigation link",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/0467739e48405b420324ee2523d967a7e5dc7a81",
     "author": "mkahveci",
@@ -854,23 +896,9 @@
     "date": "2026-03-27T00:27:15Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/027fe148e1f2044b48ae1deef71ba52ac1df6282",
-    "author": "mkahveci",
-    "date": "2026-03-27T00:27:15Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/def52ba06c42e06cb0e0b9b9ffc20d32f2aedf72",
-    "author": "mkahveci",
-    "date": "2026-03-27T00:22:50Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/def52ba06c42e06cb0e0b9b9ffc20d32f2aedf72",
     "author": "mkahveci",
     "date": "2026-03-27T00:22:50Z"
   },
@@ -882,13 +910,6 @@
     "date": "2026-03-26T23:43:41Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/244861477a90908d7508f3e4c0ff4023d4cd3e41",
-    "author": "mkahveci",
-    "date": "2026-03-26T23:43:41Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/0ffc74941755de112d67f8b00ba1d3caaf15003c",
@@ -896,23 +917,9 @@
     "date": "2026-03-26T23:32:49Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0ffc74941755de112d67f8b00ba1d3caaf15003c",
-    "author": "mkahveci",
-    "date": "2026-03-26T23:32:49Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/9fe46eead276678ef1ced443a255cf534bfe6a1c",
-    "author": "mkahveci",
-    "date": "2026-03-26T23:27:36Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9fe46eead276678ef1ced443a255cf534bfe6a1c",
     "author": "mkahveci",
     "date": "2026-03-26T23:27:36Z"
   },
@@ -2343,13 +2350,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/d9767552099dede35a8e5f2c6a7990d9b7c88af0",
     "author": "Murat Kahveci",
     "date": "2026-01-03T03:42:31Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5aeb05b6d873ca17664819cec96e340b0276a386",
-    "author": "github-actions[bot]",
-    "date": "2026-01-03T01:27:52Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
