@@ -1,6 +1,202 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add format_pedal_value helper and apply it to standardize scholarly metadata labels in JSON output",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/88ac3f90d66cc832152a35cf603d68e588610696",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T23:27:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: include slug, analysis criterion, and accessibility level in metadata and update download filename format",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c2fd17736b0bfc3152e9cee22d6b9cc7f3056142",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T23:21:06Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: implement getLabel helper to capture human-readable select text instead of raw values in prompt generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2a8f0b09986a19ba21fa6c4c72271b5f6eb9cac2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T23:13:53Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add analysis criterion and accessibility level fields to prompt editor and update orchestration logic",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9f0944c8a6c44a332a78e7ee15e0fff2b7343dfb",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T23:04:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add PDF brancher orchestration, update model registry, and extend modality enum with text-based inquiry support",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5357cc82c21b6d166ad54ff6de26055637258b60",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T22:56:59Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update default AI model to gemini-3.1-pro across dossier prompt interfaces",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/91989c009aee7d79e186716d4d88541b639d14ed",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T22:33:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add aiCriterion field and implement robust value normalization for form select elements",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/58ad1e5c13cafa5175fdd583951b61424d8e9f1d",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T22:29:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: remove obsolete SQL migration scripts and temporary diagnostic files while adding a schema validation tool",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/42844f9bb9e114c721b27183c3c606a7c944f917",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T18:25:15Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: wrap prompt version update in try-catch block to handle database exceptions gracefully",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/cd7f8fcf0f725b7c188127a50b81cb534243acdd",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:54:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement dual-layer classification by migrating prompting strategy to version-specific storage and adding scholarly metadata for SEO.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/272ed63ce9f566fed13ddcde5cdddb61de3fac79",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:51:33Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add prompting_strategy field to prompt editor and add optional chaining to badge updates, plus temporary database schema check script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/31233c203fb86943d0c86d59c8b777d034622f6b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:46:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add prompting_strategy field to prompt database schema and edit interface",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7f743053bdce10e421e9d2dbb62ffa92efea66a2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:42:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove legacy sitemap files and debug utilities while updating changelog and rewrite rules",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d06c829c0b19ae54d9cf9cae0d85f59bcf1c1f2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:38:10Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add rewrite rule for sitemap-feed endpoint",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7591d3ebb971da4721df7f67e03a3f789054de62",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:23:08Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add static sitemap file and corresponding rewrite rule to htaccess",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/df848807f0febdd647342d5e555d032e4c3f9192",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:05:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add sitemap_index.xml support and implement cache-control headers for sitemap reliability",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5dccac41efef44a686ef5cca44e26a136ed1ea49",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T17:03:03Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update keywords JSON generation to use comma-separated string parsing",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c5d0a38d92408a4ae64365c94fe72d4d02f53b81",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:56:48Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement auto-keyword generation fallback for prompts missing manual tags",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6ca3173c03b28a567f32fc22ac5355d07205b9da",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:55:39Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add keyword meta tags and scholarly citation metadata to prompt pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7f2f6255d2289e6f7cd9336ed7450348d691fe45",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:51:14Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: harden sitemap generation with error suppression, improved output buffering, and secure headers",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/42685551b5db1eb11b9033eb2ad2187e6cff4046",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:46:53Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: consolidate sitemap generation to use a unified registry-based query for all slug types",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c35aefd20ec856b96794997c4e14473af101fba8",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:41:55Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add slug diagnostic tool and refactor sitemap generation to include a catch-all active slug index",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/86045dc64374dc5d836bc4abc3b534540de5359b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:32:28Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement URL deduplication and update prompt sitemap generation to include registry slugs and non-archived prompts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3934e0b3c0b0789ccf52c7a85b43055237bb9e4b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:31:26Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update sitemap queries to use consistent is_public flags and standardized table schemas",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/facddb83c19e3ba88e312c883337a5a6ba976971",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:27:30Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update sitemap generation logic, add prompt redirect, and include database diagnostic scripts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/72362641761f19c7041af7a4f006d03b618f6eb1",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:24:30Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Google site verification file",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/87fdef46a075fe61ca2d59ce7fa7f46f9bf1ec04",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T16:00:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: migrate pedal archive route to /pedal, update sitemap, and remove temporary database check script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0dc40e2ba0e510c6a8b78f1598cfdeedf97d5016",
+    "author": "Murat Kahveci",
+    "date": "2026-04-08T15:54:40Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4fea0e81f46b81a92cd60f054a77b9101d779db1",
+    "author": "github-actions[bot]",
+    "date": "2026-04-08T02:24:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add pedal-ideation workflow and initial research pitch for Stefanie Lenzer",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/54ab28578139b1f80c5eb5e79f45da4c0e086ea6",
     "author": "mkahveci",
@@ -532,200 +728,11 @@
     "date": "2026-04-05T02:27:04Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: include slugs in analytics query and update view links to prioritize slug-based URLs",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/4786fef74d975a4662108f0dd71782d0a73f1f7f",
-    "author": "mkahveci",
-    "date": "2026-04-04T13:36:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: expand analytics and exports to include prompt collections and library data",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/df6a6f957bcc644d463ad5cd70037703cfb3c1af",
-    "author": "mkahveci",
-    "date": "2026-04-04T13:22:52Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: expand analytics scope to include prompt collections and pedal library and update page tracking accordingly",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f33f96af0c66e827494909b488484733e2c87933",
-    "author": "mkahveci",
-    "date": "2026-04-04T13:02:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add record_type, record_id, and user_agent columns to pub_pageviews table via self-healing migration",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8762f100c53fccce9b679d54be81dc55ceba8e06",
-    "author": "mkahveci",
-    "date": "2026-04-04T13:00:20Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement PEDAL artifact analytics dashboard with data export functionality and tracking integration",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/402e6b99f35bd6ab2c322e7f92d20b0d5f8d8be3",
-    "author": "mkahveci",
-    "date": "2026-04-04T12:58:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analytics schema migration and implement reserved slug validation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9d94d79f1fce710c2da1b0c49fc446c6060c9add",
-    "author": "mkahveci",
-    "date": "2026-04-04T12:45:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: log auto-save rejection errors to console for improved debugging",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d78e63107a95c0133a3fc533bc46fc6a8666c11b",
-    "author": "mkahveci",
-    "date": "2026-04-04T12:43:25Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add group tagline field, implement auto-save functionality for profile settings, and include citation block in public prompts view",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c1f93bcfc9ccf37907d14ce7a7e81528ab4da54a",
-    "author": "mkahveci",
-    "date": "2026-04-04T12:40:47Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement site analytics tracking and dashboard overview for public profiles",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b8c730dacbc8387e947f7cfa959e3cf3bd379c68",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:52:43Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: replace synchronous deployment execution with AJAX-based UI for improved responsiveness",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/74b1599110d52d5e0a3e9e8834973fe8c90ce9a9",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:40:59Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: correct deployment link path and remove placeholder text from module specifications",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2e4e1c35016739b433391800a25c30175c0e604c",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:38:35Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "docs: update branding domain and add test placeholder to cooking module specs",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/78b3927439810abdb530a76fb2b1d2a2bd26dde4",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:35:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: separate manual deployment UI into admin_deploy.php and convert deploy.php to a dedicated webhook endpoint.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/56d97629c41162541935a26d003cb9ed1aca11aa",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:34:24Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove SQL migration logic and simplify deployment UI layout",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/94e6f3c9d996754dfa27b145c0fbcffec6b0949b",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:31:04Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add production deployment dashboard with SQL migration utility and navigation link",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/bcc681c3c7ac8f67db902610ec6db45552a1f16a",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:26:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove unused development scripts and update publication overview to include news items and albums",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/54e822b0ba33d44f3b8c045b3ba682e622fb8b72",
-    "author": "mkahveci",
-    "date": "2026-04-04T11:15:53Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update breadcrumb navigation path and standardize code formatting in layout and prompt files",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d8434eaac5a8866a7b309e89c7fff1436dea55b7",
-    "author": "mkahveci",
-    "date": "2026-04-04T03:17:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement client-side sorting for prompt library and add database schema verification script",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/912deb4dd4258928d01ed448c445f82d208282e3",
-    "author": "mkahveci",
-    "date": "2026-04-04T03:08:18Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add #KahveciNexus hashtag to Twitter share link in prompt.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1367568277fe70393d37bd51813c12e020b34b1e",
-    "author": "mkahveci",
-    "date": "2026-04-04T02:45:47Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add social sharing card with platform links and permalink copy functionality to prompt view",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/903452f0453406d33ba1e87cec88659fb09df47e",
-    "author": "mkahveci",
-    "date": "2026-04-04T02:35:15Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add PEDAL logo branding and implement print-optimized CSS for artifact pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/13816b2694e62b1d8bdfdea25fe4d5f7300fce5e",
-    "author": "mkahveci",
-    "date": "2026-04-04T02:16:53Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/746039a1cdd5c6576576d1f8ee5ec53fd2194730",
     "author": "github-actions[bot]",
     "date": "2026-04-04T02:05:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: rename site branding from PEDAL Nexus to PEDAL Archive across public-facing pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3cc42ba3ef2c0d04b48df21a5c171afffa5bbdde",
-    "author": "mkahveci",
-    "date": "2026-04-04T01:13:29Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "docs: remove obsolete test header from technical specification",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7788d5ef0463f9a1bc1e1e9a2a3016f86e087214",
-    "author": "mkahveci",
-    "date": "2026-04-04T01:03:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "docs: add test placeholder to technical specification document",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0816a41e8c141e23705256ef96d1c7a45296928a",
-    "author": "mkahveci",
-    "date": "2026-04-04T00:58:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add deployment script to trigger shell execution for server updates",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/72b8625c44532469f6b1feaaea5c082cf5d265fa",
-    "author": "mkahveci",
-    "date": "2026-04-04T00:56:30Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: simplify slug generation logic and remove redundant sequence tracking",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f870ae82356aee35d11d66357901311b6051b166",
-    "author": "mkahveci",
-    "date": "2026-04-04T00:39:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: reorganize project documentation into a dedicated specs directory and add debug utility",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/122b66cae96add625b17b4373b9e1617e7f54d8f",
-    "author": "mkahveci",
-    "date": "2026-04-04T00:19:35Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2308,13 +2315,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/40e30c2d63cb88db627804145f20f79a6c5c4114",
     "author": "Murat Kahveci",
     "date": "2026-01-05T02:50:41Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ec489dde07b4072750f6726882b0fd509cffb294",
-    "author": "github-actions[bot]",
-    "date": "2026-01-05T01:50:58Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
