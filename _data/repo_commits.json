@@ -1,6 +1,62 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add analysis_criterion column to schema table",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ad6baca2a5d77a60d6aa81417986d5dcc88c1426",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:26:08Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove recently updated section and unify main table layout in prompts library",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b2fbce53e790d3c9e97a407e627ab5c63883d4df",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:23:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: include metadata_helpers in prompts page for extended functionality",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f01e024879c5c7c2f23d9535d0ecd34d8237ad77",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:20:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement format_pedal_ref helper and update ID displays to use standardized archival reference codes",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/338b767f310520e170c954fd5c4669e11ae3d65e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:18:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add analysis_criterion column, update modality ENUM, and persist prompt field selections in edit UI",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e1b289c3b41e8e7fc176dac91de4e6aa29387a20",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:06:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add analysis_criterion field to prompts schema and include scratch debugging scripts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/651505a29ea700365e55d384b279b63ea1e820ae",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T01:53:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement schema validation and collation alignment tools for database management",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e7bb88f6d57e8e40e53f4e5cf9706206d064eb00",
+    "author": "mkahveci",
+    "date": "2026-04-09T03:11:42Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6d88acd4bb43e2eb74fe5046d4374c32951d9cbc",
+    "author": "github-actions[bot]",
+    "date": "2026-04-09T02:10:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add format_pedal_value helper and apply it to standardize scholarly metadata labels in JSON output",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/88ac3f90d66cc832152a35cf603d68e588610696",
     "author": "Murat Kahveci",
@@ -670,55 +726,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/6a7934113be3111b0b41b5d3ecc55897de4b8f6d",
     "author": "mkahveci",
     "date": "2026-04-05T12:54:19Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add PI hyperlinking to project roles and shorten senior personnel label",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/173691f451d24f373cf322cfd476a48001dbace1",
-    "author": "mkahveci",
-    "date": "2026-04-05T12:44:35Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add self-funded and active project statuses, expand prompt metadata schema, and introduce new tables for standards alignment and quality rubrics.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/286ddf873199e0c87595bd8389c33889dd250eda",
-    "author": "mkahveci",
-    "date": "2026-04-05T12:07:10Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "docs: update PEDAL APA citation format and improve layout formatting for execution metrics",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7f8db9218d2f1217abd9a8254a6bb246ee89cfbb",
-    "author": "mkahveci",
-    "date": "2026-04-05T11:49:09Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: reformat code for consistent indentation and improved readability",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e36ddf165c87d38d7e6ccd92ee72f172a7d47b5e",
-    "author": "mkahveci",
-    "date": "2026-04-05T11:33:57Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add APA citation formatting and clipboard copy functionality across publication pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/cce6ecb39c4a577f0038ef6e14cc8db65c13fe21",
-    "author": "mkahveci",
-    "date": "2026-04-05T11:31:34Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: comment out pedal navigation link and improve Google Analytics script formatting",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0a47896c6d605aae7e282577d7fb3b190f630f6c",
-    "author": "mkahveci",
-    "date": "2026-04-05T03:27:52Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement high-fidelity research orchestrator and pedagogical metadata tooling for PEDAL system",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5e9fe4da48f378d7236501edba6183611443056e",
-    "author": "mkahveci",
-    "date": "2026-04-05T03:23:08Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2294,13 +2301,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ba76704fbd4fe54f78ed2aff46a5f8fda3616c91",
     "author": "github-actions[bot]",
     "date": "2026-01-07T01:42:06Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b2b1ec1c5d6d4248f49a8d6dccdb49d580680e13",
-    "author": "github-actions[bot]",
-    "date": "2026-01-06T01:42:29Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
