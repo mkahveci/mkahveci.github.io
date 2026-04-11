@@ -1,6 +1,27 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add fAnalysisCriterion to prompt mapping in prompt_edit.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1eeb7dc92a44523828b23abd76203ec98dc40fea",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:41:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update prompt output requirements and analysis criteria keys to snake_case",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c289c988cccadf9909c0249548d99428bde524d2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-10T02:38:36Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e1f52ca77f58b0bef121aaf80d36c6de4e64cdf6",
+    "author": "github-actions[bot]",
+    "date": "2026-04-10T02:29:33Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add analysis_criterion column to schema table",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/ad6baca2a5d77a60d6aa81417986d5dcc88c1426",
     "author": "Murat Kahveci",
@@ -712,20 +733,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/08c13666f471237e209d92c3b639d6c92242ded1",
     "author": "mkahveci",
     "date": "2026-04-05T14:45:58Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add project_url column to schema and integrate PEDAL flagship project section into homepage",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/302374c71bfd98a0eb5f18bbc377bba4066065e7",
-    "author": "mkahveci",
-    "date": "2026-04-05T14:42:39Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add project URL support to dossier grants and update public-facing project views and schema",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6a7934113be3111b0b41b5d3ecc55897de4b8f6d",
-    "author": "mkahveci",
-    "date": "2026-04-05T12:54:19Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2294,13 +2301,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/96c0da50f99393ae038ced7ca837dc87a0b0a5ff",
     "author": "Murat Kahveci",
     "date": "2026-01-07T04:18:27Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ba76704fbd4fe54f78ed2aff46a5f8fda3616c91",
-    "author": "github-actions[bot]",
-    "date": "2026-01-07T01:42:06Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
