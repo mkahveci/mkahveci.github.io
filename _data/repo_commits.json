@@ -1,6 +1,69 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement multi-select chapter dropdown and add version filtering to prompt queries",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/02bff64e4d447a49f14a4d1a4da8b0c7993a68f8",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:55:08Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: restrict prompt count visibility to specific user profile",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6f86ad1de0919e2dff9c97bd734090e2f3a86266",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:44:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: integrate public PEDAL prompt architectures into faculty profile and update search UI styling",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8f10f48af436d8985db8954ec539198490ad825b",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:41:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement dynamic textbook-based chapter filtering with persistent state management",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/00c1e43d4fbc74bfe08c0ed21ad2c5617f23084d",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:25:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement persistent filter state using localStorage to maintain user selections across sessions",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3f6192229de917a6df3a66b5fc33c1c0f0fcddbb",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:22:33Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement natural sorting for textbook and chapter lists in frontend and backend",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/37558b39effd4e8ba0c0f5ec257ccbd4be28f388",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:21:20Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement server-side pagination and add textbook/chapter filtering to dossier prompts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/90b42bc1609d957df517ded30e2c68ceafbb47c3",
+    "author": "mkahveci",
+    "date": "2026-04-12T01:19:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize UI components and color schemes using CSS variables across the faculty application.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/33ea6bb69f5cc1a7f7bc78ca883e5a4e71c29fa0",
+    "author": "mkahveci",
+    "date": "2026-04-12T00:54:50Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e11369e5897462e64632354e60dff6283cd7ee87",
+    "author": "github-actions[bot]",
+    "date": "2026-04-11T02:09:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add fAnalysisCriterion to prompt mapping in prompt_edit.php",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/1eeb7dc92a44523828b23abd76203ec98dc40fea",
     "author": "Murat Kahveci",
@@ -677,62 +740,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/1d24f6540d003719c68d2da9190e01f7613b1eff",
     "author": "mkahveci",
     "date": "2026-04-05T21:47:44Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add AI-powered prompt classification and real-time metadata badge rendering to prompt edit and test interfaces",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ccd070fc9daedab99a2817d5482fb12253cdeaa3",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:45:32Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement AI-driven prompt classification and update orchestration logic for pedagogical metadata.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/4f4415974eb4acdd819e3093328f5e552a3aa2c5",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:36:25Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add prior knowledge and argumentation format fields to prompt generation logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f9dcb09ef83f499963ef84617d3becd6b56c390a",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:27:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: expand SS2 framework with audience, strategy, 5E phase, modality, and output format parameters",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3482801b7922f45a447cd59feeae70892308bae8",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:23:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement hierarchical textbook alignment and DOK filtering system for prompts",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a5e3672ec9c45da737ca54913e4987cc63ea67d0",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:13:24Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement future research directions module with database schema updates, API handling, and admin UI integration.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/63262c232634c00e2a5d961da03283a5b9b523e2",
-    "author": "mkahveci",
-    "date": "2026-04-05T17:28:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add DeepSeek client support, integrate automated AI judge functionality, and update model selection options.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2c2d8f1f924706eaa96693fe054be111c0542b0c",
-    "author": "mkahveci",
-    "date": "2026-04-05T17:12:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: darken accent color for contrast and update button typography and hover effects",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/08c13666f471237e209d92c3b639d6c92242ded1",
-    "author": "mkahveci",
-    "date": "2026-04-05T14:45:58Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2266,13 +2273,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/34005e2d0278eb11e8f63ab5670744d617a5e3e2",
     "author": "github-actions[bot]",
     "date": "2026-01-09T01:42:56Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2bceb0b406f532904cf429b3e4218554ee23a134",
-    "author": "github-actions[bot]",
-    "date": "2026-01-08T01:42:33Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
