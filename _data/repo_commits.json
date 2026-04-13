@@ -1,6 +1,300 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize URL structure with forced HTTPS, non-www redirection, trailing slashes, and improved canonical URL generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/42643d0076472d82e85b89375f1110db3a56dc17",
+    "author": "Murat Kahveci",
+    "date": "2026-04-13T00:37:06Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove social media copy button from prompt description section",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b971c4ddd56581bb96a8969572c2a94072805e4d",
+    "author": "Murat Kahveci",
+    "date": "2026-04-13T00:31:21Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize social share description generation using strip_tags across public pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/402d9726b80b774b47af430cd4dcfd315b0aa1a3",
+    "author": "mkahveci",
+    "date": "2026-04-12T21:26:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement social media content sharing functionality with automated description and URL copying",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a43ef84c70905eb774f1685960f02825d847d983",
+    "author": "mkahveci",
+    "date": "2026-04-12T21:23:49Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add CSV and LaTeX export functionality for prompt research metadata",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0c6cf3359e918b79d62a0f0de86fe475a5ca4815",
+    "author": "mkahveci",
+    "date": "2026-04-12T20:48:44Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update social card subtitle and refresh default open graph image assets",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3560245a4024f3fecf59370b93320c4d9540fbe5",
+    "author": "mkahveci",
+    "date": "2026-04-12T20:14:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update publication and project metadata fields and add text truncation for social card stats",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6922d7570cb5436652bc84cdd941e3836855d426",
+    "author": "mkahveci",
+    "date": "2026-04-12T20:02:14Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add support for projects, blog posts, courses, team members, and seminars to social card generator",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3fb3b14d2b60158d116a1c071a0021c1629caf78",
+    "author": "mkahveci",
+    "date": "2026-04-12T19:48:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: integrate social share sidebar across public-facing entity pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f6368763a5548d9e3d67c43fb1fca81f8bed20e9",
+    "author": "mkahveci",
+    "date": "2026-04-12T19:22:53Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update social card branding, reposition share sidebar, and remove legacy share card UI",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/26a2bd178e386628e1dadda4aee5e758cd64f16b",
+    "author": "mkahveci",
+    "date": "2026-04-12T19:18:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add reusable floating social share sidebar to project, prompt, and publication detail pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e8258c004f5af5695d076bf97f49a2dd21f4818f",
+    "author": "mkahveci",
+    "date": "2026-04-12T19:10:41Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: swap theme toggle icons to correctly match light and dark mode states",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e411a75982006c981240d618a679226faa046d77",
+    "author": "mkahveci",
+    "date": "2026-04-12T18:59:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve theme selector specificity, refine URL path resolution, and add theme change event dispatching",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a0ce3eb0d12db3d1a47a204692335bd9fb793a1d",
+    "author": "Murat Kahveci",
+    "date": "2026-04-12T17:18:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement dynamic timezone synchronization between PHP and MySQL session",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/70a9a48262a74374d4b2fee383db1ea5bcde3103",
+    "author": "Murat Kahveci",
+    "date": "2026-04-12T16:10:27Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: sanitize facet values and support multiple parent classes for active state toggling",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6d4b9e4209238cdb0bcf7b70107e116481ba0e12",
+    "author": "mkahveci",
+    "date": "2026-04-12T04:01:06Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Instagram social card download button to prompt view",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f1bf7f667c3844c69292a56fa99893b2ce8f7752",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:54:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Open Graph metadata and implement server-side caching for social card images",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4038e8362ae92f222257cd7eb8db460a17287f13",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:51:28Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: append timestamp to social card image URL to prevent caching",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e580c5d85ad7d31b04bbdf64564ef6c7ee12492d",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:43:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: append timestamp to social card image URL to prevent browser caching",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/09fd5dd9f64a527efb17873e140f669429ec66e7",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:43:02Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: resize background image to match 1200x630 Open Graph dimensions and remove debug error reporting",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c2496acca452ea640d82d31d6d146c4d0e9dc287",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:40:00Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: adjust social card text layout constants for improved vertical spacing",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7cfa97b8f17aa1ab23bac9349aac1cf1be814b86",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:38:45Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: adjust social card text wrapping and refine element positioning for better alignment",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/23710f3e3d3a06185923006d1fa1d02774cb10d5",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:36:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update social card text rendering to use smaller font size and center alignment for titles and subtitles",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5cd30ce364f40bd1d8eb5e3d46809ce1469ec670",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:35:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: update open graph background image asset",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/26aabd0f36aa9ac3b8e2782fa2851e51236f8b91",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:33:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: adjust social card text layout by reducing font size, line height, and container width for improved wrapping",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8182f840388a136ac4713d2bf3ea63d67b7fc7d4",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:31:01Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: update open graph background image asset",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/25cb761e20fb9b3871898dff21f8f7abfd188f1a",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:29:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update pedal ID format and padding in social card API",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/990e421e7a45157c05886c9dc13bf4b4b068e152",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:24:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update social card generator to support JPEG backgrounds and adjust text vertical centering",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b30f0298ea7e98da688b46733685e37c95abb4a1",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:20:59Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add dynamic permalink slug retrieval and implement vertical text centering for social card generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f96b4d49159463a57fec930c9108c2f3cefd5205",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:14:32Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: replace character-count title wrapping with pixel-width calculation in social card generator",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2960ad7e6e33269e884968f6685c532d7a7ff4fb",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:12:01Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: add cURL fallback for background image retrieval and improve debug error reporting in social_card.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0c470221202367d6493258e19789fe9bc053ff75",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:09:54Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add public URL fallback for social card background image loading",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/dceaf49c462df823c85c843b9d7d5c77c08fb700",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:08:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: implement multi-path fallback strategy for locating social card background image",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7506d53d31d16c0c74c2f53b314fae2abc9294ae",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:05:56Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update background image path resolution to use absolute server paths with fallback",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/94d62640ca506930b6356a90c4f54e863b5060b9",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:04:29Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update social card background image path resolution to support multiple directory structures",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/10ca8c38ff5a219b25682bb179df150305ca8d91",
+    "author": "mkahveci",
+    "date": "2026-04-12T03:02:30Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update background image path and add debug fallback hint to social card generator",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a7e914e3e35c177730105c2c06afe1c15501e318",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:59:58Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add custom font asset and update social card font resolution path priority",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/10f6974ae10437bbb9cd5cd671c5daa150bf4013",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:57:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve social card generation with robust font detection, error handling, and dynamic layout rendering",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ca684d9eb753ee02160b5885311cf51c05d34e09",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:50:55Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove redundant image output and memory cleanup calls in social_card.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6cb74b9b1163b38b643116ebd5e3cfcb08db5c77",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:45:18Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: redesign social card generator with dynamic metadata, model tracking, and updated visual layout",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2359471372f66fc5f75104344672958a36ebd5ea",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:38:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement dynamic social card generation and add Twitter meta tags to public pages",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1c06c0f1e25ca2d558362abfe881e7adaffb79a5",
+    "author": "mkahveci",
+    "date": "2026-04-12T02:35:20Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/781b706e9c55e522f965f1ee662c7bb148b8b6af",
+    "author": "github-actions[bot]",
+    "date": "2026-04-12T02:31:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: implement multi-select chapter dropdown and add version filtering to prompt queries",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/02bff64e4d447a49f14a4d1a4da8b0c7993a68f8",
     "author": "mkahveci",
@@ -441,111 +735,6 @@
     "date": "2026-04-07T12:39:15Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: display branch name in prompt version history and rename commit action to saveVersion",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/68d182e2f4c7b84561c7915d3b13e57401d55098",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T12:32:44Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update prompt instructions to include suggested commit message generation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7619e34e82cc8a7b5171aaa0997ff8601f01c510",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T12:19:27Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add New Version LLM iteration tool to prompt editor and implement Zenodo changelog workflow generator",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/148ed2d9d3247c503be0625b57221078ba8d5ac5",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T12:03:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement date-filtered top architectures query using positional parameters",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/729201d28617fa63d120a6c95dda6bca20d7158b",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T11:31:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add dynamic date range filtering and export support to PEDAL analytics dashboard",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/18f1ba26178e35217ee7489ce1bab6d57d6e5837",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T11:27:47Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove research classification panel and add resolved prompt display to prompt logging interface",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6f1575651ee6868ced01c2d74ec8713dccb1286b",
-    "author": "mkahveci",
-    "date": "2026-04-07T06:28:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analytics_id and ga_tracking_id to branding configuration in pub_bootstrap",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/00574bba1e95c352ad60cc0e4e85475d175ca975",
-    "author": "mkahveci",
-    "date": "2026-04-07T04:50:35Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: replace prompt grid with high-density table, update router to sanitize query parameters, and include active slugs in API response",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/90a46e9cd41451aea414e17b10b5e9d1084fa85a",
-    "author": "mkahveci",
-    "date": "2026-04-07T04:31:13Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: reorder record navigation and version lineage sections in prompt view",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3aaa95c92256745a5b8e8b6f4ad8e1e6aa2e5b45",
-    "author": "mkahveci",
-    "date": "2026-04-07T04:15:30Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement record navigation for prompt test and public views, and add public link visibility in dashboard.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1089c43f0ccfb50d98fbc0fc3c7bf9b179461805",
-    "author": "mkahveci",
-    "date": "2026-04-07T04:11:05Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: apply consistent code formatting and indentation to pedal_analytics.php and pub_layout.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0723dd4c21f14f11ec8ae4f5d27f9647eea65990",
-    "author": "mkahveci",
-    "date": "2026-04-07T03:46:57Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: redesign share card with interactive permalink copy and streamlined social buttons",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a9c5148aac65c4fa9e0b004e62f60740d1d48984",
-    "author": "mkahveci",
-    "date": "2026-04-07T03:45:00Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: enable and style axes in pedal analytics chart",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8c41340d2907f9e3677da3ffc08eea272d80f16e",
-    "author": "mkahveci",
-    "date": "2026-04-07T03:40:53Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: correct ResearchStats path and implement aggregate score calculation for preferred lab version",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/4a7aae8259e0df3a7b0ab9ceed6e43932a85cb11",
-    "author": "mkahveci",
-    "date": "2026-04-07T03:31:49Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "Work from yesterday on iMac",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f60a028f49008e19bd5626eb12d8998167870473",
-    "author": "mkahveci",
-    "date": "2026-04-07T03:20:00Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/48d9ad1fa37fd234ed28839013068dadb28f344b",
@@ -553,193 +742,11 @@
     "date": "2026-04-07T02:23:32Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: normalize version strings and apply sentence case to BibTeX titles",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b52f075c519aa8ec68294fc8b84c15a64bb2ae6e",
-    "author": "Murat Kahveci",
-    "date": "2026-04-06T20:59:06Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize prompt title formatting to sentence case and update citation metadata structure",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/63b14aeda0dc9eaae94f770db39f4c4edc0022ba",
-    "author": "Murat Kahveci",
-    "date": "2026-04-06T20:51:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: update PEDAL citation format and author name in prompts.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6eb6e9f6dbade7a2116089cbaa72d72a9d3f8445",
-    "author": "Murat Kahveci",
-    "date": "2026-04-06T20:28:24Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: update PEDAL citation publisher and improve textbook badge formatting",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/44c575eef15ec1b48a2a95fc2543f74fdb3c2eea",
-    "author": "Murat Kahveci",
-    "date": "2026-04-06T20:17:41Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: refactor code formatting and update citation author name in prompts.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5debf1dcc07aa9c89e747b48560de219e8b1bf64",
-    "author": "Murat Kahveci",
-    "date": "2026-04-06T20:10:49Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/98de16ad5440d05eb036729206af2e771a6745d4",
     "author": "github-actions[bot]",
     "date": "2026-04-06T02:28:09Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: integrate PEDAL Archive citation and enable the pedal navigation link",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0467739e48405b420324ee2523d967a7e5dc7a81",
-    "author": "mkahveci",
-    "date": "2026-04-06T00:46:02Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: ignore .DS_Store files in repository",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/78db20d10c7be5301d464dff09297a60a6661ae3",
-    "author": "mkahveci",
-    "date": "2026-04-06T00:10:26Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize Zenodo public URL generation using slug_functions and remove migration script",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/bcf5fb5d0756caba87cc345a60a446dd19dfd54a",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:43:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add public_slug column to prompts table and backfill existing data from pub_slugs",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d747a01f08d78f19ab1c448e8f6639c43140a479",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:32:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: add module parameter to handle_save and implement transaction handling with logging for slug generation and updates",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0f57c12c82c740fb1dc4fbdcc759da0d7e149914",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:29:22Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: improve slug generation logic and remove temporary Zenodo diagnostic scripts",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9fa6f86294c20eec255fe2c075d216325b53f342",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:22:48Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add UI for manual slug editing and regeneration to prompt management interface",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2e6472324b996a76ad04656a0ceb7092899946b6",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:16:58Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: update default upload MIME type to application/octet-stream and add diagnostic upload test to ping script",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f78c10152960910a474854692d6619f0427b5aa6",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:10:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add User-Agent to Zenodo API requests and include diagnostic scripts for token verification and connectivity testing",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7ebb3d247a84eb4488d362963eac66fc598c2d83",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:08:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: improve Zenodo API error reporting with specific 403 guidance and server-side logging",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/318e49e34c5a08a880627d61b1af0eee0c4d031f",
-    "author": "mkahveci",
-    "date": "2026-04-05T23:00:27Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update real_score calculation to use average core rubric scores per execution",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d68c77359f6bf5bb8c2085f9c66c802453c8f55d",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:46:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update prompt schema with textbook fields, add database diagnostic utilities, and switch prompt rating calculation to use real-time execution scores.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1d58f71cb5305c342acd425408e259a599d547a2",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:41:27Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: return empty arrays instead of errors for missing IDs in prompt and rubric handlers to reduce UI noise",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7bb5d9b1b678039b36f37347a889d4fae349d144",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:28:20Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: implement consistent error handling and logging across all dossier prompt API functions",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8d04ec079a6948174e1f2e7c06afc6fdcd481f39",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:22:23Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add API endpoints for log retrieval, future research saving, bulk rubric updates, auto-evaluation, and execution history",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/65a016384e872f9d0163107bfc4e83ef68d6cf99",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:10:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: update authorization logic to validate prompt ownership via prompt chain instead of execution creator",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/be202e33ac1bd079cbc127366763db99d2a00d2a",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:03:43Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: pre-populate log model from database with localStorage override",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d2c248b7a0e2558c177f341ee4d5950b15ce18f",
-    "author": "mkahveci",
-    "date": "2026-04-05T22:00:46Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update classification badge container ID and add null check for rendering logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/091abec7f9d832ecea8c0b69922846fa50511fde",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:58:04Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add textbook name and chapter fields to prompt edit mapping",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f593d7333cf29cf53886bab52a3f610878ee8df6",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:54:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update field validation logic to use direct POST access and allow empty string values",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e95f9469f70e181a0927700c42dca450f05f59b5",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:51:03Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add subject domain and textbook reference fields to the research classification panel with updated data mapping.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1d24f6540d003719c68d2da9190e01f7613b1eff",
-    "author": "mkahveci",
-    "date": "2026-04-05T21:47:44Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2266,13 +2273,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/4cd77a56428e006c70ebe40d398ba462420cfa67",
     "author": "mkahveci",
     "date": "2026-01-09T04:09:13Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/34005e2d0278eb11e8f63ab5670744d617a5e3e2",
-    "author": "github-actions[bot]",
-    "date": "2026-01-09T01:42:56Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
