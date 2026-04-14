@@ -1,6 +1,20 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update dashboard routes to clean URLs and improve textarea responsiveness with layout constraints",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b890000aeda635fac626d33a3c1d5678b1bea4eb",
+    "author": "mkahveci",
+    "date": "2026-04-13T12:19:09Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/98425c8f6737ab4506e386befc3f2250366c3c0e",
+    "author": "github-actions[bot]",
+    "date": "2026-04-13T02:36:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "refactor: standardize URL structure with forced HTTPS, non-www redirection, trailing slashes, and improved canonical URL generation",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/42643d0076472d82e85b89375f1110db3a56dc17",
     "author": "Murat Kahveci",
@@ -726,13 +740,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/3b401ba8486b2052b03f1e97ee18f2f053151f97",
     "author": "Murat Kahveci",
     "date": "2026-04-07T12:53:50Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: replace linear version list with a visual git-style branch graph and increase version history limit",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/23bec459b7edc840a5dc44157bbf9e41cd16b70a",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T12:39:15Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2252,13 +2259,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/f939ed16dc292dc6f90ab024e118e61ebe3e1998",
     "author": "Murat Kahveci",
     "date": "2026-01-10T22:00:55Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6f876516fbd50530eb156bd3a8f5195cb82af0bb",
-    "author": "github-actions[bot]",
-    "date": "2026-01-10T01:39:28Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
