@@ -1,6 +1,55 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3d2b344201c160f113f7c4949578e0a73a34024c",
+    "author": "mkahveci",
+    "date": "2026-04-15T02:09:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add social card API endpoint and implement forced file download headers for generated images",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b384e8105f09eb3bce1de455b2349f2cfd9a5418",
+    "author": "mkahveci",
+    "date": "2026-04-15T02:04:55Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "U",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9ae5108082d9817d32d97892ae0e6ad2d6caa3dc",
+    "author": "mkahveci",
+    "date": "2026-04-15T01:50:05Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove registration functionality and associated UI elements from login page",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b5f17faf964cf525d1d60c9bb062555b4fcab62f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-14T16:57:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: cast coordinate calculations to integers and clear output buffer before generating social card image",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6bb4aa02633c34569d2e20067dfbf081464b8826",
+    "author": "mkahveci",
+    "date": "2026-04-14T03:13:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve prompt log layout with responsive full-width cards and auto-expanding textareas",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/604f0d5dc01d4dde5e81b56b4904b8b4c9a0fc5d",
+    "author": "mkahveci",
+    "date": "2026-04-14T03:06:01Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9686fd8c9f6c2b378a0e3197ad9bde58461c5c5e",
+    "author": "github-actions[bot]",
+    "date": "2026-04-14T02:30:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "refactor: update dashboard routes to clean URLs and improve textarea responsiveness with layout constraints",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/b890000aeda635fac626d33a3c1d5678b1bea4eb",
     "author": "mkahveci",
@@ -698,48 +747,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/a78a0cdf1dc8ee0da124a787e18c5381bd0716e9",
     "author": "mkahveci",
     "date": "2026-04-07T17:37:18Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: introduce metadata_helpers.php to standardize research badge rendering and scholarly metadata JSON generation in prompt.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/831b1cd5901cbd106aed9ac5535eb5552ad9d575",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:23:34Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: update branchInfoLabel element ID to match DOM reference in prompt_edit.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/686e9997892faab338ec885fdbacf01a089af6d0",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:08:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: enforce immutability for historical prompt versions by locking the editor and preventing updates to non-tip records.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3365d306478938f04495c6e6f8678592a6331a34",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:00:33Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement unique node ID resolution for version navigation and add DOI support to prompt versions",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/85ead36b9a2ce04cc2d9e2897bdc7a45d6778b2e",
-    "author": "mkahveci",
-    "date": "2026-04-07T16:03:35Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add Zenodo packaging workflow and integrate version-specific DOI tracking into prompt lineage",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/95103cb276d0c25ec062873d582cde80c800284e",
-    "author": "mkahveci",
-    "date": "2026-04-07T15:49:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update zenodo-changelog workflow to support module-specific versioning and auto-incrementing logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3b401ba8486b2052b03f1e97ee18f2f053151f97",
-    "author": "Murat Kahveci",
-    "date": "2026-04-07T12:53:50Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2196,13 +2203,6 @@
     "url": "https://github.com/mkahveci/TradeTrack-Pro/commit/908c79835143ab9aa59bf1109d3ccbc0be322705",
     "author": "mkahveci",
     "date": "2026-01-11T20:13:10Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b0912f5b88e4526eea438028a5b64b882a227ac5",
-    "author": "github-actions[bot]",
-    "date": "2026-01-11T01:50:51Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
