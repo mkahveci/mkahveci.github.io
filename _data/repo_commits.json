@@ -1,6 +1,62 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: append timestamp to social card URLs to force cache invalidation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fb8f5893106c2985bb3fbbbb06cd7e29d000e7d7",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:54:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add dynamic social media preview images to public-facing pages and support news item cards",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ff1c16c7167954246d048960cfe1b0336e135696",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:51:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update social card URL generation and remove redundant Content-Length headers in social_card.php",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/22269e7dbb290e76f3aa0b30131f76ee6b471cd6",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:46:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: standardize social card image URLs to a query-based API and simplify inline content-disposition headers",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6dd81763441e48af13ffde3f2a94c7273c3831b9",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:43:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update social card image URLs to use a static path structure and add test image asset",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/91f9ffd234e23bacef35f5340dec61847d44295c",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:39:21Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: replace timestamp-based social card cache busting with static file extension parameters",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e4381d21b4bed69f2ddb6892e64b3b7a96a80710",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:35:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update social card to support inline viewing and force download via dl parameter",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/313a02ff6448969573e34dce80ccfac7928dd57e",
+    "author": "mkahveci",
+    "date": "2026-04-16T01:27:57Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c9cacefa1210c13fca247a68f09f221a78c78e95",
+    "author": "github-actions[bot]",
+    "date": "2026-04-15T02:28:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "U",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/3d2b344201c160f113f7c4949578e0a73a34024c",
     "author": "mkahveci",
@@ -698,55 +754,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/54ab28578139b1f80c5eb5e79f45da4c0e086ea6",
     "author": "mkahveci",
     "date": "2026-04-07T19:53:33Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: consolidate PEDAL tools into a dedicated navigation dropdown and update active state logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/277ecbe992eb9c3b68d22cbe7629983a23f5ae4f",
-    "author": "mkahveci",
-    "date": "2026-04-07T19:17:10Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement dynamic citation management with Zenodo integration and update UI to support APA/BibTeX copying",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/383dfe308330f580d00cc2460d5a16706ed3f8ee",
-    "author": "mkahveci",
-    "date": "2026-04-07T19:12:01Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update \"LAB PREFERRED\" badging logic and add technical documentation for the Mann-Whitney U statistical engine.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/63d5b5d29e8a09ad0af3113a756eb73bf502ae47",
-    "author": "mkahveci",
-    "date": "2026-04-07T18:18:54Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: enforce type casting for prompt version IDs and quality scores during statistical analysis",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/aef8f1ba0c7e60a440837028cc7d59fd5317a68a",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:55:48Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: cast version IDs to integers for consistent comparison in prompt evaluation logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/420c54a3d9c260ec55091a256ae69ab526dc4a25",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:49:30Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add diagnostic script for prompt tree investigation and update winner node resolution logic in prompt evaluation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/866f4c3045104ae1084a62a25cdbb060861cff40",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:48:20Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement statistical version selection using Mann-Whitney U test and add lab preference metadata support",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a78a0cdf1dc8ee0da124a787e18c5381bd0716e9",
-    "author": "mkahveci",
-    "date": "2026-04-07T17:37:18Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2161,13 +2168,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d4bec4cc5921e74ce1dc5de02bb1fa21947843d9",
     "author": "github-actions[bot]",
     "date": "2026-01-13T01:39:14Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1838e512d16f1cd9f2a657d63dcd3d13b46de4a3",
-    "author": "github-actions[bot]",
-    "date": "2026-01-12T01:47:22Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
