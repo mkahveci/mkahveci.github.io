@@ -1,6 +1,76 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add PEDAL settings page and implement configurable versioning in the footer",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9969a66e92e9dc14d76d2c1cd78cfed3d83c8e94",
+    "author": "mkahveci",
+    "date": "2026-04-19T23:46:11Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: remove 30-character truncation limit for artifact titles in LaTeX export",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a3d87251efad998db1caa9f5666d7a72fcb3641c",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:36:33Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: update LaTeX longtable column widths for improved layout in PEDAL analytics export",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2cf67dc92ba5b45ea06c2283e81775060c3e40be",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:30:48Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: aggregate visit logs by date, artifact, location, and browser profile with view counts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/77d2cdded7b933fd12a7014fe2a917d61f5eb709",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:27:29Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add PEDAL analytics v1.5.1 documentation and LaTeX export specifications",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/dbe84ca37e2e827257221f344b0de0c738d2657b",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:21:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: upgrade LaTeX export to use longtable with full dataset support and character escaping",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3c75e8bfd6765f7997f9122783f57c0463cc4804",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:14:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: include city data and add browser profile classification to export reports",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c85c54e769a9215d2c7c2fe43f6cb25c24680bd2",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:08:14Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add browser profile analytics and visualization to the dashboard",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2f1f11c3a3dfa510d28432570c208a6770508553",
+    "author": "mkahveci",
+    "date": "2026-04-19T20:03:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement geographic tracking for pageviews and add publication strategy documentation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9992bf138359d7cec77f3fac55620904f14984bb",
+    "author": "mkahveci",
+    "date": "2026-04-19T19:59:53Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0f2283c28c27053905c9db45b37718afc9aa3980",
+    "author": "github-actions[bot]",
+    "date": "2026-04-19T02:36:43Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "refactor: remove created_at from sitemap query and add error logging for generation failures",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/8f8ab0a3798d2c31909785367f45c86753d9692a",
     "author": "mkahveci",
@@ -705,69 +775,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/58ad1e5c13cafa5175fdd583951b61424d8e9f1d",
     "author": "Murat Kahveci",
     "date": "2026-04-08T22:29:42Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: remove obsolete SQL migration scripts and temporary diagnostic files while adding a schema validation tool",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/42844f9bb9e114c721b27183c3c606a7c944f917",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T18:25:15Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: wrap prompt version update in try-catch block to handle database exceptions gracefully",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/cd7f8fcf0f725b7c188127a50b81cb534243acdd",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:54:19Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement dual-layer classification by migrating prompting strategy to version-specific storage and adding scholarly metadata for SEO.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/272ed63ce9f566fed13ddcde5cdddb61de3fac79",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:51:33Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add prompting_strategy field to prompt editor and add optional chaining to badge updates, plus temporary database schema check script",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/31233c203fb86943d0c86d59c8b777d034622f6b",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:46:16Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add prompting_strategy field to prompt database schema and edit interface",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7f743053bdce10e421e9d2dbb62ffa92efea66a2",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:42:23Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove legacy sitemap files and debug utilities while updating changelog and rewrite rules",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d06c829c0b19ae54d9cf9cae0d85f59bcf1c1f2",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:38:10Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add rewrite rule for sitemap-feed endpoint",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7591d3ebb971da4721df7f67e03a3f789054de62",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:23:08Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add static sitemap file and corresponding rewrite rule to htaccess",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/df848807f0febdd647342d5e555d032e4c3f9192",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:05:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add sitemap_index.xml support and implement cache-control headers for sitemap reliability",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5dccac41efef44a686ef5cca44e26a136ed1ea49",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T17:03:03Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2133,13 +2140,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4a222257a3059f405d55294ad2bad74d137ff349",
     "author": "github-actions[bot]",
     "date": "2026-01-17T01:38:19Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e55bfd0d647e2203c28a9bcdff25755500509abd",
-    "author": "github-actions[bot]",
-    "date": "2026-01-16T01:43:21Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
