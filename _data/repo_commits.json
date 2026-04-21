@@ -1,6 +1,132 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: render LlmGeneratedComponent JSON blocks as interactive iframes in PEDAL prompt pages (Band Theory simulator)",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/50acddd79e4b851b9b3d4e4ba60982c1f9954034",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T19:15:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: align PEDAL prompt page typography with academic journal standard - compact headings, tighter section spacing",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/465c40f3018798fa44822b66df467930d132976f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T19:11:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: constrain line width to 72ch, add h2 divider, tighten inline code, improve print CSS",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9073a54b2be481549fa9e936b5eff16fde16d84d",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T19:05:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: scale down heading sizes inside post content to academic journal proportions",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/27eaed4831bd6e9ee41a54afc3cdd99244c13393",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T19:02:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: tighten pub content spacing to academic journal standard (compact paragraphs, headings, lists)",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b5a851ad64adc248e7a6030a102cefd8a22d41a0",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T19:00:10Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: remove local SimpleMDE overrides from teaching_edit and publications_edit to unify editor styling via app.css",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6736df711c672ce4c0bfc2798d26a180873b5965",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T18:54:49Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: rewrite Markdown list parser to support true nested ol/ul lists",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/12d0950344b02b2373c596036fd4550700688237",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T18:50:40Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: compact list indentation and normalize nested list spacing in pub.css",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c0fe4f755e38fdb04c48c53ffb958b165cd05c7b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T18:46:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: kill SimpleMDE cm-header line-heights causing visible lines in light theme editor",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b4aa738991e3607dbc14bd1f9c4ca2142de0d178",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T18:41:40Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: update CodeMirror scrollbar styling and increment asset versioning for cache busting",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9d9d9be5d1f6093799dc04ddd08ff13a887469d1",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T16:26:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: refine nested list spacing and update CodeMirror light theme appearance",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a81ea84fb3403e84784a2ca240320b19bd885738",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T16:22:44Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: add list nesting indentation and refine CodeMirror editor appearance",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/27c2812e858116d14ff764d4556b0bdb1bbcbde3",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T16:15:42Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: increase CodeMirror selection opacity, disable inline markdown styling, and adjust list padding in public content",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ee91463fd6f922f18d16ea23c73cf16000c615d1",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T16:06:22Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: simplify post URL structure and improve email sharing and social description generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fe6116506659e565af4884cace4d6d158bd09cb8",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T15:35:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update project page styles to use theme-aware CSS variables for text and background colors",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6092bb0ffa6e343ae9211eba31651816710891ae",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T15:15:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: enable auto-saving for new posts and update URL via history API without full page reload",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fc5a7340d804c778ca12270d719e83ab7a564b89",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T15:08:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: remove no_user_id constraint from dossier API configuration",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/af19ea146a848d85235af31b2abade96a9ad78aa",
+    "author": "Murat Kahveci",
+    "date": "2026-04-20T15:05:21Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/92bbf2056cca87ad063f1ddcf34a2319247dbdfc",
+    "author": "github-actions[bot]",
+    "date": "2026-04-20T02:37:06Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add PEDAL settings page and implement configurable versioning in the footer",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/9969a66e92e9dc14d76d2c1cd78cfed3d83c8e94",
     "author": "mkahveci",
@@ -637,32 +763,11 @@
     "date": "2026-04-12T01:19:31Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize UI components and color schemes using CSS variables across the faculty application.",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/33ea6bb69f5cc1a7f7bc78ca883e5a4e71c29fa0",
-    "author": "mkahveci",
-    "date": "2026-04-12T00:54:50Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e11369e5897462e64632354e60dff6283cd7ee87",
     "author": "github-actions[bot]",
     "date": "2026-04-11T02:09:19Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add fAnalysisCriterion to prompt mapping in prompt_edit.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/1eeb7dc92a44523828b23abd76203ec98dc40fea",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:41:57Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update prompt output requirements and analysis criteria keys to snake_case",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c289c988cccadf9909c0249548d99428bde524d2",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:38:36Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -672,109 +777,11 @@
     "date": "2026-04-10T02:29:33Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analysis_criterion column to schema table",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ad6baca2a5d77a60d6aa81417986d5dcc88c1426",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:26:08Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove recently updated section and unify main table layout in prompts library",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b2fbce53e790d3c9e97a407e627ab5c63883d4df",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:23:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: include metadata_helpers in prompts page for extended functionality",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f01e024879c5c7c2f23d9535d0ecd34d8237ad77",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:20:23Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement format_pedal_ref helper and update ID displays to use standardized archival reference codes",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/338b767f310520e170c954fd5c4669e11ae3d65e",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:18:34Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analysis_criterion column, update modality ENUM, and persist prompt field selections in edit UI",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e1b289c3b41e8e7fc176dac91de4e6aa29387a20",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T02:06:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analysis_criterion field to prompts schema and include scratch debugging scripts",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/651505a29ea700365e55d384b279b63ea1e820ae",
-    "author": "Murat Kahveci",
-    "date": "2026-04-10T01:53:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement schema validation and collation alignment tools for database management",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e7bb88f6d57e8e40e53f4e5cf9706206d064eb00",
-    "author": "mkahveci",
-    "date": "2026-04-09T03:11:42Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6d88acd4bb43e2eb74fe5046d4374c32951d9cbc",
     "author": "github-actions[bot]",
     "date": "2026-04-09T02:10:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add format_pedal_value helper and apply it to standardize scholarly metadata labels in JSON output",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/88ac3f90d66cc832152a35cf603d68e588610696",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T23:27:19Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: include slug, analysis criterion, and accessibility level in metadata and update download filename format",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c2fd17736b0bfc3152e9cee22d6b9cc7f3056142",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T23:21:06Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: implement getLabel helper to capture human-readable select text instead of raw values in prompt generation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2a8f0b09986a19ba21fa6c4c72271b5f6eb9cac2",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T23:13:53Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add analysis criterion and accessibility level fields to prompt editor and update orchestration logic",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9f0944c8a6c44a332a78e7ee15e0fff2b7343dfb",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T23:04:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add PDF brancher orchestration, update model registry, and extend modality enum with text-based inquiry support",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/5357cc82c21b6d166ad54ff6de26055637258b60",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T22:56:59Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update default AI model to gemini-3.1-pro across dossier prompt interfaces",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/91989c009aee7d79e186716d4d88541b639d14ed",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T22:33:57Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add aiCriterion field and implement robust value normalization for form select elements",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/58ad1e5c13cafa5175fdd583951b61424d8e9f1d",
-    "author": "Murat Kahveci",
-    "date": "2026-04-08T22:29:42Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2133,13 +2140,6 @@
     "url": "https://github.com/mkahveci/academic-applications/commit/d8a505c54ab6549026cc068cc977d0650b002d23",
     "author": "mkahveci",
     "date": "2026-01-17T14:37:02Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4a222257a3059f405d55294ad2bad74d137ff349",
-    "author": "github-actions[bot]",
-    "date": "2026-01-17T01:38:19Z"
   },
   {
     "repo": "mkahveci/TradeTrack-Pro",
