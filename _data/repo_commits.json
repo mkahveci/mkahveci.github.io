@@ -1,6 +1,20 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: replace manual PEDAL version overrides with dynamic Zenodo citation data ingestion",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a9786c4c0339c584a35c85bfd3ce9a5d441bae9c",
+    "author": "mkahveci",
+    "date": "2026-04-22T17:31:27Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3c5c045ff27f1a525f1c132c9ad78f197535e769",
+    "author": "github-actions[bot]",
+    "date": "2026-04-22T02:30:54Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "Update prompt citations with ordered coauthor metadata",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/17f5ef5312e7111d5ff38958e7644e4c4fcc2854",
     "author": "Murat Kahveci",
@@ -761,13 +775,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/70a9a48262a74374d4b2fee383db1ea5bcde3103",
     "author": "Murat Kahveci",
     "date": "2026-04-12T16:10:27Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: sanitize facet values and support multiple parent classes for active state toggling",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6d4b9e4209238cdb0bcf7b70107e116481ba0e12",
-    "author": "mkahveci",
-    "date": "2026-04-12T04:01:06Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2119,13 +2126,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/97b4956461f0a07f890100ea0c14825244d88804",
     "author": "github-actions[bot]",
     "date": "2026-01-20T01:43:13Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/75697fdce06d2e60e6aceb2972b0e35e454a7571",
-    "author": "github-actions[bot]",
-    "date": "2026-01-19T01:48:11Z"
   },
   {
     "repo": "mkahveci/academic-applications",
