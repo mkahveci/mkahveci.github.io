@@ -1,6 +1,34 @@
 [
   {
     "repo": "mkahveci/nexaie",
+    "message": "feat: implement custom light theme stylesheet to rebrand header and navigation aesthetics",
+    "url": "https://github.com/mkahveci/nexaie/commit/4630a8f190b123626ec79208461cc43220d6f140",
+    "author": "Murat Kahveci",
+    "date": "2026-04-24T22:54:59Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/nexaie/commit/abf04f9c84a0b8315a82e410ae8eb22d46872619",
+    "author": "Murat Kahveci",
+    "date": "2026-04-24T08:09:18Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "Fresh install of OJS 3.5.0-4",
+    "url": "https://github.com/mkahveci/nexaie/commit/274eeba6df11405d1c0818311fa3197e25be03a4",
+    "author": "mkahveci",
+    "date": "2026-04-24T02:43:47Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e29605bf53b8e3445d2219c447ea076ef8c6b423",
+    "author": "github-actions[bot]",
+    "date": "2026-04-24T02:35:06Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
     "message": "U",
     "url": "https://github.com/mkahveci/nexaie/commit/ad4a2db7dac64feabb69177bc4477cf89ed2d091",
     "author": "mkahveci",
@@ -2374,27 +2402,6 @@
   },
   {
     "repo": "mkahveci/nexaie",
-    "message": "Submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/2a613c3a3731bc73a1da35307d6945946325330a",
-    "author": "Alec Smecher",
-    "date": "2026-03-13T23:53:40Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Merge pull request #5406 from blesildaramirez/i12436_stable-3_5_0\n\npkp/pkp-lib#12436 [stable-3_5_0] Submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/4487a7ff678d92175ebf2bdc3c8290850aed8a36",
-    "author": "Blesilda Biazon",
-    "date": "2026-03-13T21:30:02Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12436 Submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/7cc8063c48dbbe3b8cf4bd30a182e6cef4c28fd7",
-    "author": "Blesilda Biazon",
-    "date": "2026-03-13T19:57:16Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
     "message": "Translated using Weblate (Norwegian Bokmål)\n\nCurrently translated at 100.0% (38 of 38 strings)\n\nTranslation: Open Journal Systems/default\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/default/nb_NO/",
     "url": "https://github.com/mkahveci/nexaie/commit/dc1ece5ec6d5447872e7d2d612f218fd003216f3",
     "author": "Eirik Hanssen",
@@ -2812,13 +2819,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5642712ba634a33eb2e9136c4cc1415676335ba0",
     "author": "github-actions[bot]",
     "date": "2026-01-22T01:45:59Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/abf614553e485d324535baea8c379ef587fb0b88",
-    "author": "github-actions[bot]",
-    "date": "2026-01-21T01:46:14Z"
   },
   {
     "repo": "mkahveci/academic-applications",
