@@ -1,6 +1,76 @@
 [
   {
     "repo": "mkahveci/nexaie",
+    "message": "chore: configure SMTP mail settings and fix minor configuration file formatting",
+    "url": "https://github.com/mkahveci/nexaie/commit/01387966b1945a6d5df3bd502bbe92140ce20ee5",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T00:45:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: add error handling and improved diagnostics for shell_exec in deployment scripts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0021fd6c5d89dd869bbb53905020cdba572324f1",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T18:00:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add NExAIE journal section and navigation link to homepage",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fe9c9c113a0bba1d9f6191f1b78c673d3c3279ac",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T17:55:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve slug validation against reserved paths and filesystem, and add a health check script to synchronize missing slugs",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0159eb3049479aeba298b7d0f42720cc516e5dec",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T17:15:28Z"
+  },
+  {
+    "repo": "mkahveci/nexaie-journal-template",
+    "message": "docs: update PEDAL Archive URLs and add technical writing resources to documentation and LaTeX template",
+    "url": "https://github.com/mkahveci/nexaie-journal-template/commit/fe04d3f8ba83169936e94ad8778d0e710d9145b0",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T17:02:03Z"
+  },
+  {
+    "repo": "mkahveci/nexaie-journal-template",
+    "message": "docs: update Overleaf template link in README",
+    "url": "https://github.com/mkahveci/nexaie-journal-template/commit/55c1a94ad7518005c684f8bb76d8f691dc32ce89",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T16:40:01Z"
+  },
+  {
+    "repo": "mkahveci/nexaie-journal-template",
+    "message": "docs: add official journal links to author guide, LaTeX metadata, and README",
+    "url": "https://github.com/mkahveci/nexaie-journal-template/commit/62710015d2920bae9035cd9c77664348360f170c",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T16:23:45Z"
+  },
+  {
+    "repo": "mkahveci/nexaie-journal-template",
+    "message": "Initial release of NExAIE Journal Template v1.0",
+    "url": "https://github.com/mkahveci/nexaie-journal-template/commit/08dda7a50adcf003f0fac6db2aea71693ce683c0",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T05:52:07Z"
+  },
+  {
+    "repo": "mkahveci/nexaie-journal-template",
+    "message": "Initial commit",
+    "url": "https://github.com/mkahveci/nexaie-journal-template/commit/58f022c8ca0afe88a66085c061076e8597e8b03e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-25T05:50:20Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/560b3c612fc5bc15d23001ef070010c0587bd657",
+    "author": "github-actions[bot]",
+    "date": "2026-04-25T02:24:52Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
     "message": "feat: implement custom light theme stylesheet to rebrand header and navigation aesthetics",
     "url": "https://github.com/mkahveci/nexaie/commit/4630a8f190b123626ec79208461cc43220d6f140",
     "author": "Murat Kahveci",
@@ -894,27 +964,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/f6368763a5548d9e3d67c43fb1fca81f8bed20e9",
     "author": "mkahveci",
     "date": "2026-04-12T19:22:53Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update social card branding, reposition share sidebar, and remove legacy share card UI",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/26a2bd178e386628e1dadda4aee5e758cd64f16b",
-    "author": "mkahveci",
-    "date": "2026-04-12T19:18:38Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add reusable floating social share sidebar to project, prompt, and publication detail pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e8258c004f5af5695d076bf97f49a2dd21f4818f",
-    "author": "mkahveci",
-    "date": "2026-04-12T19:10:41Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: swap theme toggle icons to correctly match light and dark mode states",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e411a75982006c981240d618a679226faa046d77",
-    "author": "mkahveci",
-    "date": "2026-04-12T18:59:46Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2360,13 +2409,6 @@
   },
   {
     "repo": "mkahveci/nexaie",
-    "message": "Audit dependency update",
-    "url": "https://github.com/mkahveci/nexaie/commit/581059db45348ac2ba6518ad691c5cf06f566d81",
-    "author": "Jarda Kotěšovec",
-    "date": "2026-03-16T08:45:14Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
     "message": "pkp/pkp-lib#12140 migration for missing decision",
     "url": "https://github.com/mkahveci/nexaie/commit/c65e8994b96d089820e7a5b5df8de97f34869f2e",
     "author": "Touhidur Rahman",
@@ -2812,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/616de09dd27ba1b197923b23ffed2ab46f582c74",
     "author": "github-actions[bot]",
     "date": "2026-01-23T01:42:52Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5642712ba634a33eb2e9136c4cc1415676335ba0",
-    "author": "github-actions[bot]",
-    "date": "2026-01-22T01:45:59Z"
   },
   {
     "repo": "mkahveci/academic-applications",
