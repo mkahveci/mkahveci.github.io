@@ -1,6 +1,314 @@
 [
   {
     "repo": "mkahveci/nexaie",
+    "message": "refactor: remove debug logging and diagnostic files from ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/fa7a60ad2185bc763240d80dab7ca7178c316de2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T01:36:26Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add imprint publisher field to Zenodo deposit metadata",
+    "url": "https://github.com/mkahveci/nexaie/commit/3e1b6ba26611013b111590e8e48a8ecc5205adcd",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T01:03:38Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: prevent duplicate Zenodo drafts by checking for existing DOIs in publication metadata",
+    "url": "https://github.com/mkahveci/nexaie/commit/8ea70361d3a8d7ea2f01a1dd5ab8d301dafd0646",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:53:27Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: improve Zenodo deposit metadata by adding default descriptions, conditional DOI handling, and journal publication details",
+    "url": "https://github.com/mkahveci/nexaie/commit/ef63de30b3b6ba04f77a3a5b602e1f6c5b54ef89",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:49:30Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: update handlePublication argument to match event publication property",
+    "url": "https://github.com/mkahveci/nexaie/commit/595b5890518719c41c85d3c0d7fb10109f584fb5",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:44:02Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: update file upload Content-Type to octet-stream and include raw response in error handling",
+    "url": "https://github.com/mkahveci/nexaie/commit/1e3e9e2cbe8f9c9ee38f79948a95876b46ba3bb5",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:42:01Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: cast isSandbox setting to boolean in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/98861055c0a1b770b7850f959ada8a1b2ec9ac89",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:40:07Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: wrap Zenodo deposit process in a try-catch block to log execution errors",
+    "url": "https://github.com/mkahveci/nexaie/commit/a567275f1ee678cc4c52cdda2e40ca4cb867b42e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:38:57Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: add existence check and logging for ZenodoService to troubleshoot deposit failures",
+    "url": "https://github.com/mkahveci/nexaie/commit/bb76c5ecf724a578da5254259b504057d962180f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:37:40Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: remove namespace qualifier and pass remote URL to Zenodo deposit service",
+    "url": "https://github.com/mkahveci/nexaie/commit/18a4d5f9c00ebff6e70ca3d1c93aaa09137a1088",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:35:50Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: prevent redundant publication handling and expand deposit criteria to include scheduled status",
+    "url": "https://github.com/mkahveci/nexaie/commit/de96b2061b5545316150fed12ffc16aef8ff9b7e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:34:29Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: remove auto-installation logic and debug exceptions from ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/666931370ed6e81adbb3c411e6651dcdb077937f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:31:28Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: correct application name in version manifest and add registration logging to ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/85bf1d917a62e2df88a5b87a229f30cc34345500",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:28:40Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: define INDEX_FILE_LOCATION constant in check_plugin.php",
+    "url": "https://github.com/mkahveci/nexaie/commit/e5e05983724737f2aa3be6d7f28fea3fd2918238",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:27:37Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: update bootstrap file path resolution using chdir to ensure correct working directory context",
+    "url": "https://github.com/mkahveci/nexaie/commit/5fa40355628fd2c9cb7d9cfabcc4bf42a012bcb4",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:26:54Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: update bootstrap file path in check_plugin.php",
+    "url": "https://github.com/mkahveci/nexaie/commit/9375576f054bca8f493628fd72af067b3170c7a4",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:26:00Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: enable full error reporting and display in plugin check script",
+    "url": "https://github.com/mkahveci/nexaie/commit/3127e494a60fa7b71fe0ca416141dc1fc871c620",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:25:02Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add diagnostic script to verify Zenodo plugin registration, settings, and load status",
+    "url": "https://github.com/mkahveci/nexaie/commit/2fd4df21ededfdf15ec1aa4c302aba43ac254297",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:23:59Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: improve plugin auto-installation logic with error handling and valid version check",
+    "url": "https://github.com/mkahveci/nexaie/commit/8ce6a2559cc845437772434b94f7cdb6adc110f7",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:21:10Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: auto-register plugin version in database upon first access to manage endpoint",
+    "url": "https://github.com/mkahveci/nexaie/commit/127195875fa457c36a4d5904dc7b75cd57d1b08b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:19:01Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "chore: update debug log extension and add execution test exceptions in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/b1b519e6be426029647c0f2cdcffc12aa2691a8e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:15:46Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add support for modern Laravel PublicationPublished events in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/1c9408ec9e34c1ccac301a2b7fa881727426408f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:13:12Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: update Zenodo debug log path to point to the public directory",
+    "url": "https://github.com/mkahveci/nexaie/commit/f263a70e531b874df65d8310597f77dbf090ebee",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:10:22Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: centralize log path and add registration status logging in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/e930ae2d931ef18d3a2d2cfe1961e79ca1cb3da0",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:09:21Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add debug logging and improve publication status validation in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/2fec3c5b25c2c0e45399a2a747ab35214cc86b07",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T00:03:02Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: remove DOI safety check in ZenodoDepositPlugin to allow deposits with existing DOIs",
+    "url": "https://github.com/mkahveci/nexaie/commit/e06e0286fde0535073c0f00a49cd2a510339afd9",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:56:22Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: update Zenodo settings form to support dynamic save actions and secure attribute encoding",
+    "url": "https://github.com/mkahveci/nexaie/commit/bf80fb708e4325397504b180c68001cbadd0e20b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:43:26Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: update ZenodoDepositPlugin settings URL to include plugin name and category arguments",
+    "url": "https://github.com/mkahveci/nexaie/commit/488e571bc1daf3c577581426ac1187a8b09cb747",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:26:37Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: remove template manager dependency from ZenodoDepositPlugin settings form logic",
+    "url": "https://github.com/mkahveci/nexaie/commit/44a70af41e8c97bc85d60726bd6db23e0445689d",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:23:40Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "chore: update settings link label in ZenodoDepositPlugin for consistency",
+    "url": "https://github.com/mkahveci/nexaie/commit/b12998747fa6508be3647dd7ac4caeb75211d115",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:20:38Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: simplify getActions to unconditionally provide settings link in ZenodoDepositPlugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/fb45bdc9160d8e34dd945e31488712fdfd21b3e2",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:18:26Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add configurable community ID setting to Zenodo deposit plugin",
+    "url": "https://github.com/mkahveci/nexaie/commit/e48ca4c65afeffed6a81fa58a97dbb2806cae087",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T23:07:46Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: prevent duplicate Zenodo deposits for submissions that already have a DOI",
+    "url": "https://github.com/mkahveci/nexaie/commit/d7d1aca2a7f1522c7e7a8bf36ae3ba3297249a37",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T21:00:57Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: implement ZenodoDepositPlugin to automate publication deposits to Zenodo via API integration",
+    "url": "https://github.com/mkahveci/nexaie/commit/3c3f9112e27dd9ae6f1305042ac690a2d17bfe4a",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:59:00Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: support inline file viewing by passing inline parameter to download handler",
+    "url": "https://github.com/mkahveci/nexaie/commit/952c9abcb5bdacfef61d39727409531fa34a3790",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:48:25Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: update PDF viewer to use native browser rendering and increase iframe height",
+    "url": "https://github.com/mkahveci/nexaie/commit/32900aeb15495239a98a69b4c13b80bdcc310761",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:45:37Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: strip domain from pdfUrl to prevent firewall blocking of external URLs in pdfJsViewer",
+    "url": "https://github.com/mkahveci/nexaie/commit/2cce0c5f09209383f910abdcac0d4005aa72dc50",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:43:00Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: resolve unclosed brace in citation data processing logic",
+    "url": "https://github.com/mkahveci/nexaie/commit/40cbf52fc9b33b55c817723efedf5b2c5156a62b",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:25:30Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: include authors when group lists are empty in citation style processing",
+    "url": "https://github.com/mkahveci/nexaie/commit/05857cf6a186f6bffedc4097210b04798da4e807",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:24:00Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "refactor: simplify global role logic in schema mapping and add context validation to submission access checks",
+    "url": "https://github.com/mkahveci/nexaie/commit/c3f624a292ab0ed0885105d4d58fffbf85b3ab07",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T20:11:06Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: grant journal admins and managers global metadata editing permissions in Schema map",
+    "url": "https://github.com/mkahveci/nexaie/commit/6aa5b41f2c251556c0e11a279af42e6bdefd0151",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T19:51:55Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "fix: allow metadata changes if stage assignment is not recommend-only",
+    "url": "https://github.com/mkahveci/nexaie/commit/fe702047aa7595ef9d03ffd441166ad4267a5f8e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T19:43:39Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: allow editors with full privileges to modify publications, update production workflow, and apply environment configuration",
+    "url": "https://github.com/mkahveci/nexaie/commit/7c3b7134f78f6b49d3d250175db2f9c91dc697c3",
+    "author": "Murat Kahveci",
+    "date": "2026-04-26T19:31:01Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d9fa69ee1146a3010b77a59cbee77f50f7deb944",
+    "author": "github-actions[bot]",
+    "date": "2026-04-26T02:39:47Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
     "message": "chore: configure SMTP mail settings and fix minor configuration file formatting",
     "url": "https://github.com/mkahveci/nexaie/commit/01387966b1945a6d5df3bd502bbe92140ce20ee5",
     "author": "Murat Kahveci",
@@ -1323,20 +1631,6 @@
     "date": "2026-03-30T02:27:24Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Ukrainian)\n\nCurrently translated at 100.0% (698 of 698 strings)\n\nTranslation: Open Journal Systems/manager\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/manager/uk/",
-    "url": "https://github.com/mkahveci/nexaie/commit/78fc9f41128cd657258fdc046a35221460f5826b",
-    "author": "Petro Bilous",
-    "date": "2026-03-29T10:58:20Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Ukrainian)\n\nCurrently translated at 100.0% (18 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/uk/",
-    "url": "https://github.com/mkahveci/nexaie/commit/b9549c2393a57268257e648c9da43f9c732605ac",
-    "author": "Petro Bilous",
-    "date": "2026-03-29T10:56:14Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/aa5d5d4a5ad3fccc359f9406fc4705115d1041b0",
@@ -1363,13 +1657,6 @@
     "url": "https://github.com/mkahveci/pedal/commit/030b1831ecbae34c8c23e58eaf2a8f7b0e804c37",
     "author": "Murat Kahveci",
     "date": "2026-03-27T21:24:06Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Armenian)\n\nCurrently translated at 100.0% (698 of 698 strings)\n\nTranslation: Open Journal Systems/manager\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/manager/hy/",
-    "url": "https://github.com/mkahveci/nexaie/commit/1bcc3af9bd4bbe6d7516540d40dc01c865ac9ca8",
-    "author": "Tigran Zargaryan",
-    "date": "2026-03-27T05:25:31Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -1519,13 +1806,6 @@
     "date": "2026-03-26T22:40:38Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/55326e85a52bf74d6953e9e840db3b78e572a994",
-    "author": "Alec Smecher",
-    "date": "2026-03-26T22:39:00Z"
-  },
-  {
     "repo": "mkahveci/facultyapp",
     "message": "U",
     "url": "https://github.com/mkahveci/facultyapp/commit/d2bd2e188d775efde25e53af8f3d098bb5ce5e6b",
@@ -1615,27 +1895,6 @@
     "url": "https://github.com/mkahveci/facultyapp/commit/9aa09a1dc3de7cf6f99f5e3cc416b994abc969d7",
     "author": "mkahveci",
     "date": "2026-03-26T16:47:49Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Bulgarian)\n\nCurrently translated at 100.0% (18 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/bg/",
-    "url": "https://github.com/mkahveci/nexaie/commit/d6305c8e044d9b51129d1d0a1235c0df9e9c2420",
-    "author": "Cyril Kamburov",
-    "date": "2026-03-26T09:25:47Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Danish)\n\nCurrently translated at 100.0% (18 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/da/",
-    "url": "https://github.com/mkahveci/nexaie/commit/1969a01bd22376cc9a84a89081ccfe8f38f8d341",
-    "author": "Alexandra Fogtmann-Schulz",
-    "date": "2026-03-26T07:22:10Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Czech)\n\nCurrently translated at 100.0% (18 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/cs/",
-    "url": "https://github.com/mkahveci/nexaie/commit/8fa004b0a40cd60a8b8b6d2a5554eec5d381fcde",
-    "author": "Jiří Dlouhý",
-    "date": "2026-03-26T06:27:27Z"
   },
   {
     "repo": "mkahveci/facultyapp",
@@ -1799,34 +2058,6 @@
     "date": "2026-03-25T15:08:23Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12154 submodule updates (#5443)",
-    "url": "https://github.com/mkahveci/nexaie/commit/9f6271b81a3d6198fae1d3e33e3d268adec72d23",
-    "author": "Kaitlin Newson",
-    "date": "2026-03-25T14:54:45Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12154 submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/8b8ec3f49e7c484c1d3837f21b0b4530224affc8",
-    "author": "Kaitlin Newson",
-    "date": "2026-03-25T14:49:17Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Don't mark English texts fuzzy",
-    "url": "https://github.com/mkahveci/nexaie/commit/43605a2476c128500b345a244c60283342824951",
-    "author": "Alec Smecher",
-    "date": "2026-03-25T14:17:57Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Czech)\n\nCurrently translated at 100.0% (69 of 69 strings)\n\nTranslation: Open Journal Systems/emails\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/emails/cs/",
-    "url": "https://github.com/mkahveci/nexaie/commit/d9d02aeaa6ccfe98d52319ac0d1c880b2b49c040",
-    "author": "Michal Jelínek",
-    "date": "2026-03-25T10:22:56Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c8ec9743ba7b3c016e5c6583eac779b36a9a35bb",
@@ -1853,13 +2084,6 @@
     "url": "https://github.com/mkahveci/facultyapp/commit/22e0621ee64f22adfb92292b9f0618feaed11107",
     "author": "mkahveci",
     "date": "2026-03-24T22:02:14Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Merge pull request #5421 from kaitlinnewson/12003-3_5_0\n\npkp/pkp-lib#12003 submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/94f40445088e22e79fd1e762fa65ab586421d653",
-    "author": "bozana",
-    "date": "2026-03-24T14:42:17Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2163,130 +2387,11 @@
     "date": "2026-03-21T01:56:35Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (698 of 698 strings)\n\nTranslation: Open Journal Systems/manager\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/manager/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/ec181aa762dcc9281aef6b6552864175310fd721",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T17:05:43Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (51 of 51 strings)\n\nTranslation: Open Journal Systems/admin\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/admin/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/1854eeae9c674fcbda899e26c6e53ac9cb71a5d3",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T17:04:33Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (95 of 95 strings)\n\nTranslation: Open Journal Systems/author\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/author/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/ab3df295e73cce0e31f708639ca6f30914b60c69",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T17:00:15Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (111 of 111 strings)\n\nTranslation: Open Journal Systems/submission\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/submission/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/301050df90b23fbcb19696dc4aebfa3bbd2bd504",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:54:20Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (641 of 641 strings)\n\nTranslation: Open Journal Systems/locale\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/locale/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/7fd4407c1b14648cf9fbc3e0320b1f0cc9661d62",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:38:15Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (143 of 143 strings)\n\nTranslation: Open Journal Systems/editor\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/editor/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/b18cac1008ca2d475e3bc3dec14865bab6379665",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:36:40Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (69 of 69 strings)\n\nTranslation: Open Journal Systems/emails\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/emails/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/ff1fc80bf8cd84f190df480ff6692857069f3eed",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:34:04Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (38 of 38 strings)\n\nTranslation: Open Journal Systems/default\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/default/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/ab4c9f263eaf52f3ceeb682b77acf95dda7f3b8b",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:21:16Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (3 of 3 strings)\n\nTranslation: Open Journal Systems/generic-recommendByAuthor\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/generic-recommendByAuthor/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/53c681216f19e2fe6e2e9740d53057c6ba680c96",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-20T16:18:38Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (18 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/ea0a19237ab6fdb1b2e21542c333bfe756b11c6f",
-    "author": "Gwenn Dossmann Ritter",
-    "date": "2026-03-20T14:40:33Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 55.5% (10 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/f32705a01537977b39dd255d17fb163fa6b30b85",
-    "author": "Gwenn Dossmann Ritter",
-    "date": "2026-03-20T14:34:24Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/2a0e9bad55d46aea915eedd51189b2a7f44cdba8",
-    "author": "Taslan A. Graham",
-    "date": "2026-03-20T14:20:49Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Fix iterate to foreach in userSubscriptions.tpl",
-    "url": "https://github.com/mkahveci/nexaie/commit/80db98f856f9dce4a1fcc31e4160da0615d87150",
-    "author": "Antti-Jussi Nygård",
-    "date": "2026-03-20T10:51:19Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e0fa72aeb842ab83d21523463cd3c9a956f7bf6",
     "author": "github-actions[bot]",
     "date": "2026-03-20T02:02:23Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/15a2e0ecf8df4716ddccec0805109b1c8fe895c4",
-    "author": "pkp-machine-user",
-    "date": "2026-03-19T19:59:08Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/f4c038c77b891e96a18655a11aa47bf64d29b851",
-    "author": "pkp-machine-user",
-    "date": "2026-03-19T19:09:36Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (698 of 698 strings)\n\nTranslation: Open Journal Systems/manager\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/manager/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/a842979f80e6918a07a86b35f3edfa6587bc31da",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-19T16:59:12Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 22.2% (4 of 18 strings)\n\nTranslation: Open Journal Systems/invitation\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/invitation/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/f2cbe72173d3083cb7dfab533678819d6afabdfa",
-    "author": "Jean-Blaise Claivaz",
-    "date": "2026-03-19T16:49:56Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2303,53 +2408,11 @@
     "date": "2026-03-18T16:26:55Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Merge pull request #5401 from blesildaramirez/i12273_stable-3_5_0\n\npkp/pkp-lib#12273 [stable-3_5_0] [UI Navigation] | Review Workflow - Previous Review round, several navigation elements are unclickable",
-    "url": "https://github.com/mkahveci/nexaie/commit/e7191841f8ac8ca6d3bb6d53ade638c5dd9a6791",
-    "author": "Blesilda Biazon",
-    "date": "2026-03-18T15:51:21Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12273 Submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/d5f40e5df8e9a3f2894957091b9fff32a7f1fd13",
-    "author": "Blesilda Biazon",
-    "date": "2026-03-18T14:34:42Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Update submodules",
-    "url": "https://github.com/mkahveci/nexaie/commit/5ded38e59548e81b12cd0085eb3186832edd6972",
-    "author": "Jarda Kotěšovec",
-    "date": "2026-03-18T12:27:04Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Merge pull request #5422 from kaitlinnewson/6682-3_5_0\n\npkp/pkp-lib#6682 remove inaccurate LOCKSS and CLOCKSS descriptions",
-    "url": "https://github.com/mkahveci/nexaie/commit/2c3b329139b6716026095a884817382b84416b5d",
-    "author": "bozana",
-    "date": "2026-03-18T12:18:59Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Basque)\n\nCurrently translated at 100.0% (111 of 111 strings)\n\nTranslation: Open Journal Systems/submission\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/submission/eu/",
-    "url": "https://github.com/mkahveci/nexaie/commit/4a5b7455eebe550786c537c3acb0a10ba21012ca",
-    "author": "Josu Acosta",
-    "date": "2026-03-18T10:58:09Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1b2b3adeba8b8222b1aed82c3393ca1eb21bdb8d",
     "author": "github-actions[bot]",
     "date": "2026-03-18T02:07:32Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#6682 remove inaccurate LOCKSS and CLOCKSS descriptions",
-    "url": "https://github.com/mkahveci/nexaie/commit/1aef9a6a505e9bd1ae4c0c9cb6d711bfb09a7115",
-    "author": "Kaitlin Newson",
-    "date": "2026-03-17T14:00:26Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2388,27 +2451,6 @@
   },
   {
     "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12003 submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/e3c6d1c42933f8055c9573b508b47be9e228e9bc",
-    "author": "Kaitlin Newson",
-    "date": "2026-03-16T18:56:19Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Update submodules",
-    "url": "https://github.com/mkahveci/nexaie/commit/bcd106ddbcd03aaeb5ec7b289d8255b8e1ebe557",
-    "author": "Jarda Kotěšovec",
-    "date": "2026-03-16T10:16:54Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Update submodules",
-    "url": "https://github.com/mkahveci/nexaie/commit/e9be383d016aef53fbfed361a0cc5202863e4677",
-    "author": "Jarda Kotěšovec",
-    "date": "2026-03-16T08:48:53Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
     "message": "pkp/pkp-lib#12140 migration for missing decision",
     "url": "https://github.com/mkahveci/nexaie/commit/c65e8994b96d089820e7a5b5df8de97f34869f2e",
     "author": "Touhidur Rahman",
@@ -2443,20 +2485,6 @@
     "date": "2026-03-14T01:58:22Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Norwegian Bokmål)\n\nCurrently translated at 100.0% (38 of 38 strings)\n\nTranslation: Open Journal Systems/default\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/default/nb_NO/",
-    "url": "https://github.com/mkahveci/nexaie/commit/dc1ece5ec6d5447872e7d2d612f218fd003216f3",
-    "author": "Eirik Hanssen",
-    "date": "2026-03-13T13:21:05Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (French)\n\nCurrently translated at 100.0% (95 of 95 strings)\n\nTranslation: Open Journal Systems/author\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/author/fr/",
-    "url": "https://github.com/mkahveci/nexaie/commit/582ff10060dc6a5a0a0c5ffae016eb5243ab4b5f",
-    "author": "Stéphanie Louison",
-    "date": "2026-03-13T13:17:01Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d8193ff4568428eecb5a2a162b63acd6501b0882",
@@ -2464,32 +2492,11 @@
     "date": "2026-03-13T02:00:53Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Czech)\n\nCurrently translated at 100.0% (69 of 69 strings)\n\nTranslation: Open Journal Systems/emails\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/emails/cs/",
-    "url": "https://github.com/mkahveci/nexaie/commit/49ad846c1104aec206abf9939bf4795ce83a9dc1",
-    "author": "Michal Jelínek",
-    "date": "2026-03-12T20:00:45Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Translated using Weblate (Czech)\n\nCurrently translated at 100.0% (51 of 51 strings)\n\nTranslation: Open Journal Systems/admin\nTranslate-URL: http://translate.pkp.sfu.ca/projects/ojs/admin/cs/",
-    "url": "https://github.com/mkahveci/nexaie/commit/d8de6323132a402069276f0d66044c304a3de788",
-    "author": "Michal Jelínek",
-    "date": "2026-03-12T19:57:49Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/de169f5d3c6001714568968f373018f3a05eb5a6",
     "author": "github-actions[bot]",
     "date": "2026-03-12T02:03:09Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12349 galley revision upload only for change file",
-    "url": "https://github.com/mkahveci/nexaie/commit/617c45d908b1e7b5b43c5ab3226e0dad138c87f1",
-    "author": "Touhidur Rahman",
-    "date": "2026-03-11T11:14:44Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ae7ea395795828fd2e12ed2779ddd948abee0ade",
     "author": "github-actions[bot]",
     "date": "2026-01-24T01:40:21Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/616de09dd27ba1b197923b23ffed2ab46f582c74",
-    "author": "github-actions[bot]",
-    "date": "2026-01-23T01:42:52Z"
   },
   {
     "repo": "mkahveci/academic-applications",
