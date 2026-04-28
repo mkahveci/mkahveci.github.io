@@ -1,5 +1,61 @@
 [
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement PI-based prompt approval overrides and enforce ownership constraints for rejection UI",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/1ad0f50283eba76c4dc31f095003a9e0f8a1384e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T02:07:22Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update Nexaie deployment UI and improve bootstrap modal initialization in prompt editor",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9e13ed36a63d45f0891373d68e16d6a739acba34",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T01:48:33Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "style: add mobile-specific layout refinements for site navigation and user menu components",
+    "url": "https://github.com/mkahveci/nexaie/commit/27f7b9da737d4aa223b4032737f750ff2b403657",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T01:29:54Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "style: add mobile navigation overrides for nexus light theme",
+    "url": "https://github.com/mkahveci/nexaie/commit/1fdf99ca26574414b6bd095ad3032e688acba783",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T01:20:57Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: apply custom light theme design and add project-specific git ignore rules",
+    "url": "https://github.com/mkahveci/nexaie/commit/00aa1b92be69bf5023c6d9a0623000b26f32004c",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T20:21:14Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "feat: add .gitignore and implement comprehensive industrial UI styling for the frontend theme",
+    "url": "https://github.com/mkahveci/nexaie/commit/8f8f93156d47abc72a6363118506cfc2dd68f069",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T20:05:39Z"
+  },
+  {
+    "repo": "mkahveci/nexaie",
+    "message": "chore: set api_key_secret and remove .DS_Store from version control",
+    "url": "https://github.com/mkahveci/nexaie/commit/29622d208923b43bf3adca2202664ae276a93bfd",
+    "author": "Murat Kahveci",
+    "date": "2026-04-27T13:53:22Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/fe60b8c7f3a281431bf6e19a9a54eb25febf3dd5",
+    "author": "github-actions[bot]",
+    "date": "2026-04-27T02:42:28Z"
+  },
+  {
     "repo": "mkahveci/nexaie",
     "message": "refactor: remove debug logging and diagnostic files from ZenodoDepositPlugin",
     "url": "https://github.com/mkahveci/nexaie/commit/fa7a60ad2185bc763240d80dab7ca7178c316de2",
@@ -1260,20 +1316,6 @@
     "date": "2026-04-12T20:02:14Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add support for projects, blog posts, courses, team members, and seminars to social card generator",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3fb3b14d2b60158d116a1c071a0021c1629caf78",
-    "author": "mkahveci",
-    "date": "2026-04-12T19:48:35Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: integrate social share sidebar across public-facing entity pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/f6368763a5548d9e3d67c43fb1fca81f8bed20e9",
-    "author": "mkahveci",
-    "date": "2026-04-12T19:22:53Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/781b706e9c55e522f965f1ee662c7bb148b8b6af",
@@ -1561,20 +1603,6 @@
     "date": "2026-04-01T17:44:47Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/credit#4 submodule update",
-    "url": "https://github.com/mkahveci/nexaie/commit/9d8df75ad336f98fea7e6652faeebafce1fe169e",
-    "author": "Kaitlin Newson",
-    "date": "2026-04-01T14:17:09Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/credit#4 remove jats-schematron submodule in credit plugin",
-    "url": "https://github.com/mkahveci/nexaie/commit/0cfc2b6a33b56e05a143fe280f43da1350f26be5",
-    "author": "Kaitlin Newson",
-    "date": "2026-04-01T14:16:28Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/342ae4b50ff88049ed0bf7ddd0c552c124c2cbe7",
@@ -1601,20 +1629,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/28d2b6a561759581396c6489d64b511c3658f292",
     "author": "github-actions[bot]",
     "date": "2026-03-31T02:22:26Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Submodule updates",
-    "url": "https://github.com/mkahveci/nexaie/commit/edea16b6967985ca10fe2ba457970521c5da29e7",
-    "author": "Alec Smecher",
-    "date": "2026-03-30T19:14:48Z"
-  },
-  {
-    "repo": "mkahveci/nexaie",
-    "message": "Merge remote-tracking branch 'translations/stable-3_5_0' into stable-3_5_0",
-    "url": "https://github.com/mkahveci/nexaie/commit/24d73e35e156a284e795be5bb43c25893e0a3c5a",
-    "author": "Alec Smecher",
-    "date": "2026-03-30T19:14:34Z"
   },
   {
     "repo": "mkahveci/nexaie",
@@ -2401,13 +2415,6 @@
     "date": "2026-03-19T02:08:23Z"
   },
   {
-    "repo": "mkahveci/nexaie",
-    "message": "pkp/pkp-lib#12468 Make the plugin gallery URL configurable (configuration change)",
-    "url": "https://github.com/mkahveci/nexaie/commit/22cec5fa93baf530e2faf43ece482e5b12aad08c",
-    "author": "Alec Smecher",
-    "date": "2026-03-18T16:26:55Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1b2b3adeba8b8222b1aed82c3393ca1eb21bdb8d",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/21f2ff6f9c9ba21abfba894d4c4fb65c1b30808a",
     "author": "github-actions[bot]",
     "date": "2026-01-25T01:52:31Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ae7ea395795828fd2e12ed2779ddd948abee0ade",
-    "author": "github-actions[bot]",
-    "date": "2026-01-24T01:40:21Z"
   },
   {
     "repo": "mkahveci/academic-applications",
