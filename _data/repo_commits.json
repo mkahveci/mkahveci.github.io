@@ -1,6 +1,34 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add meta description tag to page layout",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/2f83c9590c612ea863c746d77b4c687a1a7acb3a",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T18:39:41Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: improve SEO metadata with detailed Schema.org graph and integrate dynamic lastmod dates into sitemap generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/94e658d06ea0450c65fd04009eb68fcdea00107e",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T18:34:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: migrate and centralize NExAIE deployment processor script and update admin trigger path",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d96a916b37932a11d9757702746941d23024138f",
+    "author": "Murat Kahveci",
+    "date": "2026-04-28T16:05:44Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2f4b41fc546a500c4c1af04d07e7687c509edb34",
+    "author": "github-actions[bot]",
+    "date": "2026-04-28T02:49:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: implement PI-based prompt approval overrides and enforce ownership constraints for rejection UI",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/1ad0f50283eba76c4dc31f095003a9e0f8a1384e",
     "author": "Murat Kahveci",
@@ -1293,27 +1321,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/a43ef84c70905eb774f1685960f02825d847d983",
     "author": "mkahveci",
     "date": "2026-04-12T21:23:49Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add CSV and LaTeX export functionality for prompt research metadata",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/0c6cf3359e918b79d62a0f0de86fe475a5ca4815",
-    "author": "mkahveci",
-    "date": "2026-04-12T20:48:44Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update social card subtitle and refresh default open graph image assets",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3560245a4024f3fecf59370b93320c4d9540fbe5",
-    "author": "mkahveci",
-    "date": "2026-04-12T20:14:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update publication and project metadata fields and add text truncation for social card stats",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6922d7570cb5436652bc84cdd941e3836855d426",
-    "author": "mkahveci",
-    "date": "2026-04-12T20:02:14Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e771ded41e5ec4c7df97355515979a45a778a717",
     "author": "github-actions[bot]",
     "date": "2026-01-26T01:51:58Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/21f2ff6f9c9ba21abfba894d4c4fb65c1b30808a",
-    "author": "github-actions[bot]",
-    "date": "2026-01-25T01:52:31Z"
   },
   {
     "repo": "mkahveci/academic-applications",
