@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/69fcec56051bc1a357a0ab3bb1694200f929bb73",
+    "author": "github-actions[bot]",
+    "date": "2026-04-29T02:48:59Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: add meta description tag to page layout",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/2f83c9590c612ea863c746d77b4c687a1a7acb3a",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/95603c093c410958a780ff963ab7e4c76a70ad20",
     "author": "github-actions[bot]",
     "date": "2026-01-27T01:49:15Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/e771ded41e5ec4c7df97355515979a45a778a717",
-    "author": "github-actions[bot]",
-    "date": "2026-01-26T01:51:58Z"
   },
   {
     "repo": "mkahveci/academic-applications",
