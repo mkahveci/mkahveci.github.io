@@ -1,5 +1,82 @@
 [
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: move pedal route rules to process before physical directory check",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e1de9bf4fc97e14abfde7cc322b2034f3d646325",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T02:31:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: simplify publication badge mapping by removing default key",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/248424533ecebaab4861c95efc3d4556eb8807da",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:51:37Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: correct LinkedIn URL, standardize base URL via constant, and add URL diagnostic script",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/648934fa7077cd23e0aa6c297cc7777afa66be8f",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:47:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: include in_press and under_review statuses in public publications query",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/ebe662265465cd0e01e1ad2b11d492e5135ca404",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:44:26Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: reorder publication list by type and status precedence and update preprint labeling",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9cec723445975406ff138bb965da94521ae291f5",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:35:32Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement project ID routing support and clean up project URL paths",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/97cd063a4f2118dfbf4c904e5432bfc45ae4d192",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:31:57Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add project relationship display to publication detail page",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/528deccf5bebb411e7af553e2fc59f3c767d454e",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:29:24Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add preprint type and dynamic status badges for publications",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6104007e8f2cd43edf870a3b2485a07a5496450a",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:19:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add publication status visibility to index, list, and detail views",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/73a037d7e87e9eda1cc75acb4c0dee157929bb1f",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:14:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: introduce PEDAL project repository with technical documentation, LaTeX templates, and prompt engineering resources",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/3f7cd6acb0e9b073aee1adbc4836d6500e119e96",
+    "author": "Murat Kahveci",
+    "date": "2026-05-08T20:12:46Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1a2823bd5265aa474c51e9446e12e5273cc73f24",
+    "author": "github-actions[bot]",
+    "date": "2026-05-08T02:50:51Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/00853c86328e28e8c30e7a406eb967bd82fc9088",
@@ -1281,27 +1358,6 @@
     "date": "2026-04-15T02:09:42Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add social card API endpoint and implement forced file download headers for generated images",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b384e8105f09eb3bce1de455b2349f2cfd9a5418",
-    "author": "mkahveci",
-    "date": "2026-04-15T02:04:55Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9ae5108082d9817d32d97892ae0e6ad2d6caa3dc",
-    "author": "mkahveci",
-    "date": "2026-04-15T01:50:05Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove registration functionality and associated UI elements from login page",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b5f17faf964cf525d1d60c9bb062555b4fcab62f",
-    "author": "Murat Kahveci",
-    "date": "2026-04-14T16:57:12Z"
-  },
-  {
     "repo": "mkahveci/nexaie",
     "message": "pkp/pkp-lib#12461 submodule update",
     "url": "https://github.com/mkahveci/nexaie/commit/9853f16688e69a4f2a45b2d7936e3bc450576772",
@@ -1323,20 +1379,6 @@
     "date": "2026-04-14T16:22:58Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: cast coordinate calculations to integers and clear output buffer before generating social card image",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6bb4aa02633c34569d2e20067dfbf081464b8826",
-    "author": "mkahveci",
-    "date": "2026-04-14T03:13:19Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: improve prompt log layout with responsive full-width cards and auto-expanding textareas",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/604f0d5dc01d4dde5e81b56b4904b8b4c9a0fc5d",
-    "author": "mkahveci",
-    "date": "2026-04-14T03:06:01Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/9686fd8c9f6c2b378a0e3197ad9bde58461c5c5e",
@@ -1344,46 +1386,11 @@
     "date": "2026-04-14T02:30:31Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update dashboard routes to clean URLs and improve textarea responsiveness with layout constraints",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b890000aeda635fac626d33a3c1d5678b1bea4eb",
-    "author": "mkahveci",
-    "date": "2026-04-13T12:19:09Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/98425c8f6737ab4506e386befc3f2250366c3c0e",
     "author": "github-actions[bot]",
     "date": "2026-04-13T02:36:47Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize URL structure with forced HTTPS, non-www redirection, trailing slashes, and improved canonical URL generation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/42643d0076472d82e85b89375f1110db3a56dc17",
-    "author": "Murat Kahveci",
-    "date": "2026-04-13T00:37:06Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove social media copy button from prompt description section",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b971c4ddd56581bb96a8969572c2a94072805e4d",
-    "author": "Murat Kahveci",
-    "date": "2026-04-13T00:31:21Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize social share description generation using strip_tags across public pages",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/402d9726b80b774b47af430cd4dcfd315b0aa1a3",
-    "author": "mkahveci",
-    "date": "2026-04-12T21:26:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement social media content sharing functionality with automated description and URL copying",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a43ef84c70905eb774f1685960f02825d847d983",
-    "author": "mkahveci",
-    "date": "2026-04-12T21:23:49Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e21395e8c2e3f91da469745a9a6932b1ec7d171",
     "author": "github-actions[bot]",
     "date": "2026-02-05T02:01:00Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ffa957d3647a3aa4af02d17396af7c310029c946",
-    "author": "github-actions[bot]",
-    "date": "2026-02-04T01:59:38Z"
   },
   {
     "repo": "mkahveci/academic-applications",
