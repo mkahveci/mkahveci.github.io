@@ -1,6 +1,55 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add public slug retrieval to prompt queries and update prompt_edit UI with public view links",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9a9ddfc7eef1081ffdffc033621e15a564a10dbe",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T17:08:45Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "style: adjust metadata grid layout for print view and hide social share sidebar in print mode",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/11d504bcd7ff449d2e21351edab5c4b1140402e4",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T16:54:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement print-optimized layout and update BibTeX metadata generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/39c6d980fa569e8d6ac825a986a9555ee69e6756",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T16:47:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add LaTeX-to-markdown preprocessing for common formatting and special characters",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/c48f8506f9691d8230432282c13f0eaaaf7d11a0",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T03:23:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: optimize admin session checks and prevent unnecessary session creation for public visitors",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6392c14eae93eeba99e383ef847f3aaa46acdb61",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T02:52:46Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add conditional edit buttons to publication content pages for authenticated admins",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a007c935f6b9408cba2f704b3fdad739093e1935",
+    "author": "Murat Kahveci",
+    "date": "2026-05-09T02:46:04Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/6e212e4030dc1b8106b7fadb4f42d4504dc405af",
+    "author": "github-actions[bot]",
+    "date": "2026-05-09T02:45:16Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "refactor: move pedal route rules to process before physical directory check",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/e1de9bf4fc97e14abfde7cc322b2034f3d646325",
     "author": "Murat Kahveci",
@@ -1295,41 +1344,6 @@
     "date": "2026-04-16T01:51:24Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update social card URL generation and remove redundant Content-Length headers in social_card.php",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/22269e7dbb290e76f3aa0b30131f76ee6b471cd6",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:46:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: standardize social card image URLs to a query-based API and simplify inline content-disposition headers",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6dd81763441e48af13ffde3f2a94c7273c3831b9",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:43:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update social card image URLs to use a static path structure and add test image asset",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/91f9ffd234e23bacef35f5340dec61847d44295c",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:39:21Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: replace timestamp-based social card cache busting with static file extension parameters",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/e4381d21b4bed69f2ddb6892e64b3b7a96a80710",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:35:42Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: update social card to support inline viewing and force download via dl parameter",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/313a02ff6448969573e34dce80ccfac7928dd57e",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:27:57Z"
-  },
-  {
     "repo": "mkahveci/nexaie",
     "message": "Merge pull request #5494 from kaitlinnewson/12461-3_5_0\n\npkp/pkp-lib#12461 align UI text for inactive sections",
     "url": "https://github.com/mkahveci/nexaie/commit/bb4cf0ac61f160feed16bffd82da70397371194c",
@@ -1349,13 +1363,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c9cacefa1210c13fca247a68f09f221a78c78e95",
     "author": "github-actions[bot]",
     "date": "2026-04-15T02:28:57Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "U",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3d2b344201c160f113f7c4949578e0a73a34024c",
-    "author": "mkahveci",
-    "date": "2026-04-15T02:09:42Z"
   },
   {
     "repo": "mkahveci/nexaie",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/06edda910656e57161e86c2cb98f302bc01d9548",
     "author": "github-actions[bot]",
     "date": "2026-02-06T02:00:34Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/7e21395e8c2e3f91da469745a9a6932b1ec7d171",
-    "author": "github-actions[bot]",
-    "date": "2026-02-05T02:01:00Z"
   },
   {
     "repo": "mkahveci/academic-applications",
