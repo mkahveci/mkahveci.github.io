@@ -1,6 +1,27 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement friendly URL routing for documentation pages and update navigation links",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/72864eeb9ad59cad698d53f8f95272d4f31ef0a3",
+    "author": "Murat Kahveci",
+    "date": "2026-05-11T03:03:39Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement NEXAIE integration for dossier review, technical reporting, and publication workflows",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7d7cd3669dbe695e684cbee917e949aff2350d74",
+    "author": "Murat Kahveci",
+    "date": "2026-05-11T02:49:35Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1457e5f5bc8dbba0fc428307fbc6b2cc25cfbd64",
+    "author": "github-actions[bot]",
+    "date": "2026-05-10T02:51:50Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: add public slug retrieval to prompt queries and update prompt_edit UI with public view links",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/9a9ddfc7eef1081ffdffc033621e15a564a10dbe",
     "author": "Murat Kahveci",
@@ -1328,20 +1349,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/89c035726f21a9623869f7091c3658b06ed361e3",
     "author": "github-actions[bot]",
     "date": "2026-04-16T02:35:39Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: append timestamp to social card URLs to force cache invalidation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/fb8f5893106c2985bb3fbbbb06cd7e29d000e7d7",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:54:07Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add dynamic social media preview images to public-facing pages and support news item cards",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ff1c16c7167954246d048960cfe1b0336e135696",
-    "author": "mkahveci",
-    "date": "2026-04-16T01:51:24Z"
   },
   {
     "repo": "mkahveci/nexaie",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3c086a97d0a38fb6c7b6e1d58cbe9dd23a4da3d8",
     "author": "github-actions[bot]",
     "date": "2026-02-07T01:56:33Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/06edda910656e57161e86c2cb98f302bc01d9548",
-    "author": "github-actions[bot]",
-    "date": "2026-02-06T02:00:34Z"
   },
   {
     "repo": "mkahveci/academic-applications",
