@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/09f2d15ff937454f8c2ce7122937120f296deeca",
+    "author": "github-actions[bot]",
+    "date": "2026-05-11T03:27:33Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: implement friendly URL routing for documentation pages and update navigation links",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/72864eeb9ad59cad698d53f8f95272d4f31ef0a3",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/eacba8e56a4db4875a4e39b3a9a0d731521e10c1",
     "author": "github-actions[bot]",
     "date": "2026-02-08T02:29:51Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3c086a97d0a38fb6c7b6e1d58cbe9dd23a4da3d8",
-    "author": "github-actions[bot]",
-    "date": "2026-02-07T01:56:33Z"
   },
   {
     "repo": "mkahveci/academic-applications",
