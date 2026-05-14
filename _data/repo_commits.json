@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/bca1448330a4bcecf7946ce0ec3b0e9baecd1884",
+    "author": "github-actions[bot]",
+    "date": "2026-05-13T02:57:14Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: add Research Manual link to navigation dropdown",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/d3aa75f85f0b31a2d650eba2f12e3f6e8c09d2b7",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/10939ddeb0a98c3aa9fb8b9f285893d1750b98d4",
     "author": "github-actions[bot]",
     "date": "2026-02-10T02:24:48Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/07b2e78fd637124dc4a7ec6473f326c662cd890c",
-    "author": "github-actions[bot]",
-    "date": "2026-02-09T02:08:06Z"
   },
   {
     "repo": "mkahveci/academic-applications",
