@@ -1,5 +1,26 @@
 [
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: introduce dual-format BibTeX export with support for LaTeX-escaped and clean plain-text outputs.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/bbe213fae9fbe59225d2ede0be1fbaf1e9d51b90",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T00:30:47Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add BibTeX export functionality and update publication list UI for improved readability",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8c0cb1a32f973d060c4fea39c93c7181d97ff795",
+    "author": "Murat Kahveci",
+    "date": "2026-05-15T23:59:20Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/35c80ec80d841f3b00fe26ca6a5a2e989da21698",
+    "author": "github-actions[bot]",
+    "date": "2026-05-15T03:25:28Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a936ae141032f019325cc04da48ff2429596a3f0",
@@ -1335,20 +1356,6 @@
     "url": "https://github.com/mkahveci/kahveci.pw/commit/9b9206f42c5e0b33f4834195847665feeb0fc727",
     "author": "mkahveci",
     "date": "2026-04-18T19:50:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: update and clean up asset images in the public directory",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3bf7e86a5e7015216e9f125bdd78d47512a39011",
-    "author": "mkahveci",
-    "date": "2026-04-18T19:34:52Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: update social media background image asset",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/d46e95d93aa89c4f3ff8a598bb3703d26382819d",
-    "author": "mkahveci",
-    "date": "2026-04-18T19:23:17Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/145b7011b62484e3fd56269125c219bb1ff41b15",
     "author": "github-actions[bot]",
     "date": "2026-02-12T02:07:41Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/8ddcdb015333a01c2e4d0deadea0265a910459e6",
-    "author": "github-actions[bot]",
-    "date": "2026-02-11T02:13:54Z"
   },
   {
     "repo": "mkahveci/academic-applications",
