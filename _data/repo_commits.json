@@ -1,6 +1,69 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: expand PAX-1 and PAX-2 metadata parsing and template reporting in faculty application documentation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/137d51ff780ece8e83986c4dfa337c92226dd55c",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T19:33:03Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: update pax2 metadata mapping to reference new versioning and revision keys",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4ee047510ccb0e084f225a43692d43867fe08664",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T19:29:01Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "chore: update default model used in dossier injection input field",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/47e285fcbb943a54965634589cb19acdedfb2d9f",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T19:23:59Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: extract PAX markdown generation into a centralized helper and inject it into analysis prompts as a database source of truth.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8df269a55095c9475410824467d23dcba44becd5",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T19:17:36Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: filter empirical results by prompt version ID to display relevant execution data",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/316c509ffd9b8fe9bb338f7a92da3e40ed949846",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T19:06:31Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement PAX post-analysis module with dashboard filters, status tracking, and manuscript export helpers.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/41aa8f263894ce44fbfd00c3caa6c2ad1b366c0f",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T18:48:51Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add manuscript writing pipeline modules and redesign Author Sandbox layout",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/f6bd8b2ca20614833ce60c22070be843fe2ab0d5",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T04:46:49Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove interactive LlmGeneratedComponent implementation and associated scripts from prompt page",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e91f71c3e61a3342ed5393f87a427e5395e65e11",
+    "author": "Murat Kahveci",
+    "date": "2026-05-16T03:30:43Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/16f66e56bdf0743665a8203d60b72112bc38ab84",
+    "author": "github-actions[bot]",
+    "date": "2026-05-16T02:49:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: introduce dual-format BibTeX export with support for LaTeX-escaped and clean plain-text outputs.",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/bbe213fae9fbe59225d2ede0be1fbaf1e9d51b90",
     "author": "Murat Kahveci",
@@ -1295,67 +1358,11 @@
     "date": "2026-04-19T20:27:29Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add PEDAL analytics v1.5.1 documentation and LaTeX export specifications",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/dbe84ca37e2e827257221f344b0de0c738d2657b",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:21:25Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: upgrade LaTeX export to use longtable with full dataset support and character escaping",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/3c75e8bfd6765f7997f9122783f57c0463cc4804",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:14:37Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: include city data and add browser profile classification to export reports",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c85c54e769a9215d2c7c2fe43f6cb25c24680bd2",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:08:14Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add browser profile analytics and visualization to the dashboard",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2f1f11c3a3dfa510d28432570c208a6770508553",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:03:52Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: implement geographic tracking for pageviews and add publication strategy documentation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9992bf138359d7cec77f3fac55620904f14984bb",
-    "author": "mkahveci",
-    "date": "2026-04-19T19:59:53Z"
-  },
-  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0f2283c28c27053905c9db45b37718afc9aa3980",
     "author": "github-actions[bot]",
     "date": "2026-04-19T02:36:43Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: remove created_at from sitemap query and add error logging for generation failures",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/8f8ab0a3798d2c31909785367f45c86753d9692a",
-    "author": "mkahveci",
-    "date": "2026-04-18T20:23:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: enhance SEO by updating schema.org metadata and enforcing trailing slashes on URLs",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2d44254bccc70d0dcdf2848d3e0574016e6b0833",
-    "author": "mkahveci",
-    "date": "2026-04-18T20:09:34Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "chore: replace og-bg.jpg with optimized png format and remove backup file",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9b9206f42c5e0b33f4834195847665feeb0fc727",
-    "author": "mkahveci",
-    "date": "2026-04-18T19:50:12Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/957c838a7f823788a8907dc5f2433bd23ffaa314",
     "author": "github-actions[bot]",
     "date": "2026-02-13T02:10:07Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/145b7011b62484e3fd56269125c219bb1ff41b15",
-    "author": "github-actions[bot]",
-    "date": "2026-02-12T02:07:41Z"
   },
   {
     "repo": "mkahveci/academic-applications",
