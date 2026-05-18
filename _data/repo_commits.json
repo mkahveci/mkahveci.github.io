@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4bf6872b68e2bc89f5354abca1fb5db45497fa96",
+    "author": "github-actions[bot]",
+    "date": "2026-05-17T02:58:15Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: expand PAX-1 and PAX-2 metadata parsing and template reporting in faculty application documentation",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/137d51ff780ece8e83986c4dfa337c92226dd55c",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d05f3daa921489f69c6413c2a232dd8766686927",
     "author": "github-actions[bot]",
     "date": "2026-02-14T01:58:38Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/957c838a7f823788a8907dc5f2433bd23ffaa314",
-    "author": "github-actions[bot]",
-    "date": "2026-02-13T02:10:07Z"
   },
   {
     "repo": "mkahveci/academic-applications",
