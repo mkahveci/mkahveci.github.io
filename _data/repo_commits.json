@@ -1,5 +1,117 @@
 [
   {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: integrate accepted study designs from prompts as projects in CV and project listings",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/fd519018179d26dba9f14544ee08d042fc81ec7b",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T20:47:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add loading state and disable button during study design save process",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d863300861ba33cfdd9485399e3f6210499d790c",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T20:17:20Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add confirmation prompt to saveStudyDesignWorkflow to prevent accidental updates",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/b47fcf138bfc42edae5a3bcd6978ff03408b8ffd",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T20:15:36Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add custom registration and project citation fields to prompts and integrate associated preprint records into publication views",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/8c74f48b38f4c9fd80284da5d3135c85caf34b52",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T20:05:55Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "fix: extend fetch fallback logic to include 401 and 403 status codes",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/4b871a8e5f8a171f92a67f40381d5c781b76b78c",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T19:28:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add active_slug support to prompt retrieval and frontend display",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d46f8e668833d8be3c5eddbb53188d5d062d443e",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T16:21:38Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement robust JSON parsing with markdown stripping and newline escaping for PHP and JavaScript",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/9ebcb7015b0aaea7ec31841b8a28c1562e4919e7",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T16:18:12Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add study_registry_description to required study design parameters and update public URL generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d8ca5c44a66648d111eae46dcfda73111cfc711b",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T16:14:50Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add study registry description field and output card for OSF integration",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/e5a001dff5fd2fa90feb6e271301db93a1c27cfc",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T16:09:36Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement centralized card-based UI styling and theme support for prompt display components",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/42143493f20e7ad29d1da4aabed1806a9bb3f852",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:56:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: integrate accepted PEDAL study designs into publications and update UI styling for prompt displays.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/5d98cb4508add945fb58cd053361d41041079470",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:52:50Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update blueprint modal to full-screen layout with improved container spacing",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/82748bacaa28b0c26e9b726432c5f4c8b32d00d9",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:41:52Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add Human Blueprint modal and visual toggle for study design validation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/76d3707b0d5cc365a3fcb4971e745b421f8a8c80",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:39:23Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: incorporate architectural metadata into system prompt and refine JSON schema for research protocol generation",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/7618b6868a0d9b1678dfcf389d3502fadbeb90f8",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:28:07Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: implement 24-parameter study design specification framework and associated database schema for PEDAL records.",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/04d4c6a54fa6cbb69390bc8efd013f14babf86bb",
+    "author": "Murat Kahveci",
+    "date": "2026-05-18T15:17:56Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f71a24abad57b33b3dc2f5e1de96cee8a22d071a",
+    "author": "github-actions[bot]",
+    "date": "2026-05-18T03:36:24Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/4bf6872b68e2bc89f5354abca1fb5db45497fa96",
@@ -1232,88 +1344,11 @@
     "date": "2026-04-20T18:54:49Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: rewrite Markdown list parser to support true nested ol/ul lists",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/12d0950344b02b2373c596036fd4550700688237",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T18:50:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: compact list indentation and normalize nested list spacing in pub.css",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/c0fe4f755e38fdb04c48c53ffb958b165cd05c7b",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T18:46:23Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: kill SimpleMDE cm-header line-heights causing visible lines in light theme editor",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b4aa738991e3607dbc14bd1f9c4ca2142de0d178",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T18:41:40Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: update CodeMirror scrollbar styling and increment asset versioning for cache busting",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9d9d9be5d1f6093799dc04ddd08ff13a887469d1",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T16:26:46Z"
-  },
-  {
     "repo": "mkahveci/nexaie",
     "message": "Merge pull request #5507 from bozana/12565-3_5_0\n\npkp/pkp-lib12565 submodule update",
     "url": "https://github.com/mkahveci/nexaie/commit/fffe22eeb9fa43badb421ea9ad0b39ee8ede09e8",
     "author": "bozana",
     "date": "2026-04-20T16:22:45Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: refine nested list spacing and update CodeMirror light theme appearance",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a81ea84fb3403e84784a2ca240320b19bd885738",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T16:22:44Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: add list nesting indentation and refine CodeMirror editor appearance",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/27c2812e858116d14ff764d4556b0bdb1bbcbde3",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T16:15:42Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: increase CodeMirror selection opacity, disable inline markdown styling, and adjust list padding in public content",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/ee91463fd6f922f18d16ea23c73cf16000c615d1",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T16:06:22Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: simplify post URL structure and improve email sharing and social description generation",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/fe6116506659e565af4884cace4d6d158bd09cb8",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T15:35:12Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "refactor: update project page styles to use theme-aware CSS variables for text and background colors",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6092bb0ffa6e343ae9211eba31651816710891ae",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T15:15:31Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: enable auto-saving for new posts and update URL via history API without full page reload",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/fc5a7340d804c778ca12270d719e83ab7a564b89",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T15:08:24Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: remove no_user_id constraint from dossier API configuration",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/af19ea146a848d85235af31b2abade96a9ad78aa",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T15:05:21Z"
   },
   {
     "repo": "mkahveci/nexaie",
@@ -1335,34 +1370,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/92bbf2056cca87ad063f1ddcf34a2319247dbdfc",
     "author": "github-actions[bot]",
     "date": "2026-04-20T02:37:06Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: add PEDAL settings page and implement configurable versioning in the footer",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9969a66e92e9dc14d76d2c1cd78cfed3d83c8e94",
-    "author": "mkahveci",
-    "date": "2026-04-19T23:46:11Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: remove 30-character truncation limit for artifact titles in LaTeX export",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/a3d87251efad998db1caa9f5666d7a72fcb3641c",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:36:33Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: update LaTeX longtable column widths for improved layout in PEDAL analytics export",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/2cf67dc92ba5b45ea06c2283e81775060c3e40be",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:30:48Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: aggregate visit logs by date, artifact, location, and browser profile with view counts",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/77d2cdded7b933fd12a7014fe2a917d61f5eb709",
-    "author": "mkahveci",
-    "date": "2026-04-19T20:27:29Z"
   },
   {
     "repo": "mkahveci/mkahveci.github.io",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ebeba5f1ae51cc79fb018743c2ee32d6f57451f8",
     "author": "Murat Kahveci",
     "date": "2026-02-14T20:03:28Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d05f3daa921489f69c6413c2a232dd8766686927",
-    "author": "github-actions[bot]",
-    "date": "2026-02-14T01:58:38Z"
   },
   {
     "repo": "mkahveci/academic-applications",
