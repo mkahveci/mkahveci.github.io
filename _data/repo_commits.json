@@ -1,6 +1,62 @@
 [
   {
     "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update project selection UI to display slugs in dossier editors",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/97123ab8862436e15b65122975dc13a64ed482ae",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T19:18:34Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update PEDAL record query to join active slugs and improve display formatting in selection dropdown",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/0a4c09422db05f13e197e33dd9b29c28a29f3b8a",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T19:16:56Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update PEDAL record display to show slug instead of ID in publication editor",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/d365a5caaaa709236943fca2022590327632e766",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T19:15:19Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "refactor: remove redundant nested container divs in version lineage section",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/6a4d6409a2a8eba1fdfe2feb8d867e31de23bc54",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T14:58:20Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: update associated publications UI to include journal venue and standardize card styling",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/a6ad0eac626134a042278cf5d463094f96c83d5e",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T14:43:18Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: fetch and display associated publications for individual prompts",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/53e444dc0b72b05df29b9c09d2014da9f154a3d5",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T14:40:35Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
+    "message": "feat: add support for associating PEDAL archive records with publications",
+    "url": "https://github.com/mkahveci/kahveci.pw/commit/af71b2b6e2751e12283992f2b3df39bd6120cd7e",
+    "author": "Murat Kahveci",
+    "date": "2026-05-19T14:34:59Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/a104a52129032eca82452c8b64d453336b77dd37",
+    "author": "github-actions[bot]",
+    "date": "2026-05-19T03:29:25Z"
+  },
+  {
+    "repo": "mkahveci/kahveci.pw",
     "message": "feat: integrate accepted study designs from prompts as projects in CV and project listings",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/fd519018179d26dba9f14544ee08d042fc81ec7b",
     "author": "Murat Kahveci",
@@ -1281,13 +1337,6 @@
     "date": "2026-04-21T20:06:11Z"
   },
   {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "implement collaborator system with PI approval workflow, role-based visibility, and authorship tracking",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/7c0f302251a92c6b34487812c66120ad6e0a0d71",
-    "author": "Murat Kahveci",
-    "date": "2026-04-21T20:05:27Z"
-  },
-  {
     "repo": "mkahveci/nexaie",
     "message": "Track the right branch",
     "url": "https://github.com/mkahveci/nexaie/commit/d60a27fba5e3123251b40e42d4547c2e219bb10b",
@@ -1300,48 +1349,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c9675052fcd74726eaed1247eaf2586ed7786cff",
     "author": "github-actions[bot]",
     "date": "2026-04-21T02:32:32Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "feat: render LlmGeneratedComponent JSON blocks as interactive iframes in PEDAL prompt pages (Band Theory simulator)",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/50acddd79e4b851b9b3d4e4ba60982c1f9954034",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T19:15:51Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: align PEDAL prompt page typography with academic journal standard - compact headings, tighter section spacing",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/465c40f3018798fa44822b66df467930d132976f",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T19:11:52Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: constrain line width to 72ch, add h2 divider, tighten inline code, improve print CSS",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/9073a54b2be481549fa9e936b5eff16fde16d84d",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T19:05:25Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: scale down heading sizes inside post content to academic journal proportions",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/27eaed4831bd6e9ee41a54afc3cdd99244c13393",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T19:02:16Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "style: tighten pub content spacing to academic journal standard (compact paragraphs, headings, lists)",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/b5a851ad64adc248e7a6030a102cefd8a22d41a0",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T19:00:10Z"
-  },
-  {
-    "repo": "mkahveci/kahveci.pw",
-    "message": "fix: remove local SimpleMDE overrides from teaching_edit and publications_edit to unify editor styling via app.css",
-    "url": "https://github.com/mkahveci/kahveci.pw/commit/6736df711c672ce4c0bfc2798d26a180873b5965",
-    "author": "Murat Kahveci",
-    "date": "2026-04-20T18:54:49Z"
   },
   {
     "repo": "mkahveci/nexaie",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/eee9f3c23e1ffe35ea4d1efcbc0bd4d49cebb045",
     "author": "Murat Kahveci",
     "date": "2026-02-14T22:01:38Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ebeba5f1ae51cc79fb018743c2ee32d6f57451f8",
-    "author": "Murat Kahveci",
-    "date": "2026-02-14T20:03:28Z"
   },
   {
     "repo": "mkahveci/academic-applications",
