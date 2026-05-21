@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f2e8866e888eca487f6930cac027c5f8a96b2de0",
+    "author": "github-actions[bot]",
+    "date": "2026-05-20T03:29:41Z"
+  },
+  {
     "repo": "mkahveci/kahveci.pw",
     "message": "feat: update project selection UI to display slugs in dossier editors",
     "url": "https://github.com/mkahveci/kahveci.pw/commit/97123ab8862436e15b65122975dc13a64ed482ae",
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b1c5db97e11066aa7d19142e54a2211bb3e888e5",
     "author": "github-actions[bot]",
     "date": "2026-02-15T02:09:37Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/eee9f3c23e1ffe35ea4d1efcbc0bd4d49cebb045",
-    "author": "Murat Kahveci",
-    "date": "2026-02-14T22:01:38Z"
   },
   {
     "repo": "mkahveci/academic-applications",
