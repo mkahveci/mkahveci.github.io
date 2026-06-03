@@ -2,6 +2,13 @@
   {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/1800420537bf702ef5e23b264afa5c258a3e46a8",
+    "author": "github-actions[bot]",
+    "date": "2026-06-02T03:53:55Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/5d24ffa21cd80c97c6c8b205dc716514c99e72b3",
     "author": "github-actions[bot]",
     "date": "2026-06-01T03:58:17Z"
@@ -2847,13 +2854,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/d944448220c5627ecb610574af43de098088366f",
     "author": "github-actions[bot]",
     "date": "2026-02-26T02:00:32Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Merge remote-tracking branch 'origin/master'",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/31bf19e6117439c242fb8ae78b2cb10317ba25e3",
-    "author": "Murat Kahveci",
-    "date": "2026-02-25T19:03:20Z"
   },
   {
     "repo": "mkahveci/academic-applications",
