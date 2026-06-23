@@ -18,12 +18,12 @@ GEM
     equalizer (0.0.11)
     eventmachine (1.2.7)
     execjs (2.10.0)
-    faraday (2.12.2)
+    faraday (2.14.1)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.4.0)
-      net-http (>= 0.5.0)
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     faraday-retry (2.4.0)
       faraday (~> 2.0)
     ffi (1.17.1-arm64-darwin)
@@ -71,7 +71,7 @@ GEM
     jekyll-twitter-plugin (2.1.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.9.1)
+    json (2.18.1)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
@@ -80,14 +80,14 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.4)
+    logger (1.7.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mercenary (0.4.0)
     multipart-post (2.4.1)
     naught (1.1.0)
-    net-http (0.6.0)
-      uri
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     netrc (0.11.0)
     nokogiri (1.18.9-arm64-darwin)
       racc (~> 1.4)
@@ -130,7 +130,7 @@ GEM
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
     unicode-display_width (1.8.0)
-    uri (1.0.3)
+    uri (1.1.1)
     webrick (1.9.1)
 
 PLATFORMS
@@ -146,7 +146,7 @@ DEPENDENCIES
   csv
   down
   execjs
-  faraday (~> 2.0)
+  faraday (~> 2.14)
   faraday-retry
   jekyll (= 4.2.0)
   jekyll-redirect-from
