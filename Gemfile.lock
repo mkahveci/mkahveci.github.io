@@ -130,7 +130,7 @@ GEM
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
     unicode-display_width (1.8.0)
-    uri (1.0.3)
+    uri (1.0.4)
     webrick (1.9.1)
 
 PLATFORMS
