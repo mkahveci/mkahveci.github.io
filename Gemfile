@@ -7,7 +7,7 @@ gem "execjs"
 gem 'octokit'
 # build scripts (downloads + faraday retry middleware)
 gem "down"
-gem "faraday", "~> 2.0"
+gem "faraday", "~> 2.14"
 gem "faraday-retry"
 
 gem 'netrc'
