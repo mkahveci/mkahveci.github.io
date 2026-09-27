@@ -1,5 +1,26 @@
 [
   {
+    "repo": "mkahveci/trading-scripts",
+    "message": "U",
+    "url": "https://github.com/mkahveci/trading-scripts/commit/1d776aeeec9b82baac0c463200b9d387f65949b0",
+    "author": "Murat Kahveci",
+    "date": "2026-09-27T00:04:27Z"
+  },
+  {
+    "repo": "mkahveci/trading-scripts",
+    "message": "U",
+    "url": "https://github.com/mkahveci/trading-scripts/commit/d5e7008331cd25b9aa9436c642c88d0d975d795a",
+    "author": "Murat Kahveci",
+    "date": "2026-09-26T09:57:06Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/2f1390ebf230d60a99176cc7701e9d204c4d2fa1",
+    "author": "github-actions[bot]",
+    "date": "2026-09-26T03:39:37Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/62f647477444ac1eb5fdda33f5d9f3461a95ad31",
@@ -691,13 +712,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/35e01b19b0baae4e937b91205be63fb90b0e6da4",
     "author": "github-actions[bot]",
     "date": "2026-06-18T03:52:48Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0495a9fbcc3025331080ded3264d1b70aee74e6b",
-    "author": "github-actions[bot]",
-    "date": "2026-06-17T04:01:53Z"
   },
   {
     "repo": "mkahveci/kahveci.pw",
