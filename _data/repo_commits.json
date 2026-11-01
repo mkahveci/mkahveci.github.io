@@ -1,5 +1,152 @@
 [
   {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Paper style shared",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/d467f3caeb4fe770ce73f7fba3deff3d1770bab3",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:53:01Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "kahveci-paper.sty: master in shared/, local copy only on export",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/9e20885b83f691f3aa8b4ba092bb73893d116ef1",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:46:41Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "README: papers/ layout",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/1acf0f135d184fe85a3093c0f7d4a9c0d2b3744b",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:30:22Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Restore newtalk.sh",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/ad197e47a557df4b54fbd186dfe70a923706be0b",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:26:46Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Group papers under projects/papers/",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/19b4dc4a0377c7aadb7af316b34da509da678376",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:21:58Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Johnstone JCE talk: final",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/2c1950595c3b637e1a6bb359de127981cbe3d983",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:17:06Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-10-31 21:01 (1 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/56b23788d6aed63129da90ee20ebd1356d7d3cbe",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T02:01:54Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "JCE: BCCE talk in talks/2026-11-bcce",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/ae08371017f7817f1f1ebf8bfa48deda1e6c1718",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T01:54:18Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-10-31 19:53 (4 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/e10fb8b64b5c4ea93c0e46fdda67eb1a97f7ff5b",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:53:10Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "README: master bib and research talks",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/9cb0dc0a6545d4803e2186971f3a8139ca6be8c1",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:28:26Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Master kahveci-publications.bib in shared/bib",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/c56ed5f05492da4ad9a50cd0d4926f66ddefb38d",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:25:37Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Add research talk theme",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/f8430496f2204d5c213f4a4c6a6f1e9985fc39da",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:19:11Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-10-31 19:05 (1 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/fbb049ce4d0b243bf14a33060ca89ef19e8ee2fa",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:05:15Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-10-31 19:00 (5 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/5c985bc918612e4b939e689a26e0e647cb33bc56",
+    "author": "Murat Kahveci",
+    "date": "2026-11-01T00:00:33Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-10-31 18:47 (1 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/b37ebe91d10998ddb352befaf7942e8c8a92f9c0",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:47:02Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "README: letters and documents",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/82c0f81f65e24cb4329d15f65ece898dd889c724",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:38:05Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Add house-style letters and documents",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/ffc67362c978bc560b9303ca1209bd53b2364359",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:29:57Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "README: teaching and backup sections",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/5b18b591274fd4c722af41bb22945cf6e4ff9318",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:23:14Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Add sync script",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/60048b840ef8541632697513c4c9caf264f92aee",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:14:08Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Initial: papers, teaching v4, templates, scripts",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/8ad7ea2be40624e82a48045aa7844c7bcbb0caed",
+    "author": "Murat Kahveci",
+    "date": "2026-10-31T23:12:14Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/8a60ce296c736ca61da91f5d26a90beb5a9b163c",
+    "author": "github-actions[bot]",
+    "date": "2026-10-31T04:10:42Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/3c679da246d49c468f42ea5a5dc93010f7416d3d",
@@ -705,13 +852,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/14a3e9f8bcef53ce885af30dc6271a695a7c718a",
     "author": "github-actions[bot]",
     "date": "2026-07-23T02:37:06Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/854f6bd420e15db85ffab93aa752148eadee253d",
-    "author": "github-actions[bot]",
-    "date": "2026-07-22T02:32:11Z"
   },
   {
     "repo": "mkahveci/kahveci.pw",
