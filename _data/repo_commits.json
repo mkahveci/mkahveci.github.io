@@ -1,5 +1,12 @@
 [
   {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/50a81b038db219dee802942548626d2b38c340c7",
+    "author": "github-actions[bot]",
+    "date": "2026-11-03T05:26:56Z"
+  },
+  {
     "repo": "mkahveci/latex-workspace",
     "message": "Updated the first paragraph",
     "url": "https://github.com/mkahveci/latex-workspace/commit/c1461aba7e790f84cc747bda0678fddb77eddbe9",
@@ -859,13 +866,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0798057c91945e1e71cedb6155a9b3d337b11faf",
     "author": "github-actions[bot]",
     "date": "2026-07-26T02:39:45Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/ed5551e41ca3dfe6adedf33257d0b59b5a1dd9a1",
-    "author": "github-actions[bot]",
-    "date": "2026-07-25T02:32:11Z"
   },
   {
     "repo": "mkahveci/kahveci.pw",
