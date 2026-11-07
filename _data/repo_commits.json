@@ -1,5 +1,82 @@
 [
   {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Minor fix",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/628a5cfb3984b9d67f45f4eea57aa758e6854dea",
+    "author": "Murat Kahveci",
+    "date": "2026-11-07T00:00:17Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Add classical analysis scripts and eRm cross-check\n\n- R/00a_expert_ratings.R: expert clarity ratings (RQ1); 79% agree on\n  retained items, 47% on removed.\n- R/00b_classical.R: KR-20 with Feldt CI, item-total correlations,\n  answer-reason tables (RQ2-RQ3); copied from Drive _data/analysis/R,\n  paths relative to the project.\n- R/03_crosscheck.R: TAM vs eRm (CML); centered difficulties r = .999,\n  max difference 0.18 logits; threshold gaps r = .999.\n- output/: classical results, cross-check table, tex tables.\n- renv.lock: adds eRm 1.0-10 and dependencies.",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/916dbbb2e12a29b12f7d1745b513a05ccd22f93e",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T23:54:22Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "README was updated.",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/5ec6ea3cca893e98a6c186c696f31fab5ea48ca2",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T22:20:07Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Plot Wright map from WLE estimates; export PDF and PNG\n\n- Section 7 now uses wrightMap() on wle$theta instead of IRT.WrightMap(),\n  so the person histogram is the 28 students' estimates (reproducible).\n- 0.5-logit bins and logit range set from the data so the perfect\n  scorer (WLE about 4.0) is included.\n- No title; items labeled \"Item 1\"..\"Item 11\"; axis \"Students\".\n- Re-ran script: refreshed outputs.",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/b344e037e51f4cdf0c60aa0dc2144d97baff30a9",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T22:10:16Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "LaTeX table",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/c8ab621460f767a95cf58695c934906c92c1b586",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T17:03:44Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Update",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/b1716ee57c35a206d5de4447f350f43418ce6ecb",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T17:01:50Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Dana analysis",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/9630eecbda04351d4b90224db13817eb55e41998",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T16:24:58Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "README update",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/80b2d7de4b0e01c9268e7236cf32352dd9b8efcd",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T15:57:36Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Update README",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/a05d1ae4ad802668979bb7149513b00b2e6807ee",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T15:52:14Z"
+  },
+  {
+    "repo": "mkahveci/obddi-rasch",
+    "message": "Initial project setup",
+    "url": "https://github.com/mkahveci/obddi-rasch/commit/b737a44c2677e89f8fb3921d251cc21b8013d185",
+    "author": "Murat Kahveci",
+    "date": "2026-11-06T15:31:52Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/f9fccce710a8e0a91c35ec2b95f3cd4526d607b1",
+    "author": "github-actions[bot]",
+    "date": "2026-11-06T05:13:52Z"
+  },
+  {
     "repo": "mkahveci/latex-workspace",
     "message": "Auto-sync 2026-11-04 23:47 (6 files)",
     "url": "https://github.com/mkahveci/latex-workspace/commit/62e28657aa732a937b6d33a4fea99063414ba2de",
@@ -873,13 +950,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/b84525c0550a8b072a4de165b0182bf3bb952c18",
     "author": "github-actions[bot]",
     "date": "2026-07-29T02:30:44Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/0394be01783a324a8572ac9ae120930a299c937d",
-    "author": "github-actions[bot]",
-    "date": "2026-07-28T02:26:30Z"
   },
   {
     "repo": "mkahveci/kahveci.pw",
