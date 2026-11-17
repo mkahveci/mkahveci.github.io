@@ -1,5 +1,26 @@
 [
   {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-11-16 23:47 (14 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/0a197c32001e0c9aa16434d1562785d32f619280",
+    "author": "Murat Kahveci",
+    "date": "2026-11-17T05:47:02Z"
+  },
+  {
+    "repo": "mkahveci/latex-workspace",
+    "message": "Auto-sync 2026-11-15 23:47 (58 files)",
+    "url": "https://github.com/mkahveci/latex-workspace/commit/634b0d118d805c505ae115ae467784241340e771",
+    "author": "Murat Kahveci",
+    "date": "2026-11-16T05:47:01Z"
+  },
+  {
+    "repo": "mkahveci/mkahveci.github.io",
+    "message": "Update repo_commits.json",
+    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/c8227b99f2e9f1eac5982c476e40947c27ba2ba8",
+    "author": "github-actions[bot]",
+    "date": "2026-11-16T04:51:53Z"
+  },
+  {
     "repo": "mkahveci/mkahveci.github.io",
     "message": "Update repo_commits.json",
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/296aed1fa01bbbe9be73ccf379bf58cb6d4429c7",
@@ -957,13 +978,6 @@
     "url": "https://github.com/mkahveci/mkahveci.github.io/commit/661b4126bd014e5d1336be3ada3a0a01a71f7c5d",
     "author": "github-actions[bot]",
     "date": "2026-08-08T01:25:35Z"
-  },
-  {
-    "repo": "mkahveci/mkahveci.github.io",
-    "message": "Update repo_commits.json",
-    "url": "https://github.com/mkahveci/mkahveci.github.io/commit/85168c9e12b128f2ca52f43c7723d42930833135",
-    "author": "github-actions[bot]",
-    "date": "2026-08-07T02:35:24Z"
   },
   {
     "repo": "mkahveci/kahveci.pw",
